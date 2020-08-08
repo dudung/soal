@@ -1,2 +1,1 @@
-# butiran.github.io
-butiran
+# butiran
