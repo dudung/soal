@@ -20,7 +20,8 @@ li {
 .ptext_true,
 .x3dom_true,
 .threejs_true,
-._3dmol_true {
+._3dmol_true,
+.oo_true {
 	font-size: 11px;
 }
 
@@ -69,6 +70,13 @@ li {
 	color: #fff;	
 	background: #0aa;
 	border: 1px solid #0aa;
+	padding: 1px 6px;
+}
+
+.oo_true {
+	color: #fff;	
+	background: #48f;
+	border: 1px solid #48f;
 	padding: 1px 6px;
 }
 
