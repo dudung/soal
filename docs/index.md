@@ -5,8 +5,14 @@ title: butiran
 
 # butiran
 
+
+
+
+
+<!--
 [physics](physics) `|` [abm-pbsp](abm-pbsp) `|`
 [abm-traffic-log](abm-traffic-log) `|` [abm-com-seir](abm-com-seir)
+-->
 
 <!--p style="font-family: monospace">
 {% comment %}
