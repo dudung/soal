@@ -1,10 +1,15 @@
 ---
 layout: default
-title: fisika
+title: butiran
 ---
 
-# fisika
-<p style="font-family: monospace">
+# butiran
+
+[physics](physics) `|` [abm-pbsp](abm-pbsp) `|`
+[abm-traffic-log](abm-traffic-log) `|` [abm-com-seir](abm-com-seir)
+
+<!--p style="font-family: monospace">
+{% comment %}
 {% assign pad0 = '00' %}
 {% assign n = pad0 | size %}
 {% assign m = 0 | minus: n %}
@@ -16,9 +21,7 @@ title: fisika
 	{% assign k = d.first | replace: "-", "" %}
 	[{{ j }}]
 	<a href="{{ site.baseurl }}{{ post.url }}">
-		{% comment %}
-		{{ post.date | date: "%d-%b" }}
-		{% endcomment %}
-		{{ post.title }}</a>{% if j == "00" %}.{% else %},{% endif %}
+		{{ post.date | date: "%d-%b" }} {{ post.title }}</a>,
 {% endfor %}
-</p>
+{% endcomment %}
+</p-->
