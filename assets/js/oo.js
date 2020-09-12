@@ -34,6 +34,14 @@
 	1927 Work createSVG container and objects.
 	20200824
 	0359 Try make arrow.
+	20200901
+	1314 Try to fix arrow head that only horizontal to right.
+	1332 Can draw arrow in any direction.
+	1339 Add new keyword caption but not yet work.
+	1502 Can show caption and anchor using ooProcessElements().
+	1706 Can no generate second oo section.
+	1741 Fix the problem, variable shadowing in for iteration.
+	1828 Design new keyword grid.
 	
 	References
 	1. Paul Bourke, "PostScript Tutorial", Dec 1998, url
@@ -58,20 +66,22 @@ var oname = [];
 
 // Call some function to parse post content
 window.onload = function() {
-	ooProcessElements();
+	var oo = document.getElementsByTagName("oo");
+	ooProcessElements(oo);
 };
 
 
 // Process oo elements
 function ooProcessElements() {
-	oo = document.getElementsByTagName("oo");
+	var oo = arguments[0];
+	var divoo = [];
 	if(oo.length > 0) {
-		for(var i = 0; i < oo.length; i++) {
+		for(var ii = 0; ii < oo.length; ii++) {
 			var div = document.createElement("div");
 			div.style.textAlign = "center";
-			var ooContent = oo[i].innerHTML;
-			oo[i].innerHTML = "";
-			oo[i].appendChild(div);
+			var ooContent = oo[ii].innerHTML;
+			oo[ii].innerHTML = "";
+			oo[ii].appendChild(div);
 			
 			ooContent = removeFirstBlankLine(ooContent);
 			var ooHeader = getSVGHeader(ooContent);
@@ -80,16 +90,27 @@ function ooProcessElements() {
 			var svg = createSVGContainer(ooHeader);
 			div.appendChild(svg);
 			
-			var ooBody2 = translateOoText(ooBody);
+			var id = svg.getAttribute("id");
+			oname.push(id);
+			var capText = svg.getAttribute("cap");
+			var i = oname.length;
+			var iref = "<a name='" + oname[i - 1]
+				+ "' + 'style:font-weight:bold;'>" + i + "</a>";
+			var capDiv = document.createElement("div");
+			capDiv.innerHTML = "Figure " + iref + " " + capText;
+			div.append(capDiv);
 			
-			//console.log(ooBody2);
+			var ooBody2 = translateOoText(ooBody);
 			
 			var elems = createSVGObjects(ooBody2);
 			for(var j = 0; j < elems.length; j++) {
 				svg.appendChild(elems[j]);
 			}
+			
+			divoo.push(div);
 		}
 	}
+	return divoo;
 }
 
 
@@ -119,6 +140,14 @@ function translateOoText() {
 			var x2 = parseInt(cols[3]);
 			var y2 = parseInt(cols[4]);
 			oo += createArrowText(x1, y1, x2, y2) + "\n";
+		} else if(cols[0] == "grid") {
+			var x1 = parseInt(cols[1]);
+			var y1 = parseInt(cols[2]);
+			var x2 = parseInt(cols[3]);
+			var y2 = parseInt(cols[4]);
+			var sx = parseInt(cols[5]);
+			var sy = parseInt(cols[6]);
+			oo += createGridText(x1, y1, x2, y2, sx, sy) + "\n";
 		} else {
 			oo += lines[i] + "\n";
 		}
@@ -128,12 +157,50 @@ function translateOoText() {
 
 
 /*
+	createGridText()
+	
+	20200901
+	1830 Start this function.
+*/
+function createGridText() {
+	var x1 = arguments[0];
+	var y1 = arguments[1];
+	var x2 = arguments[2];
+	var y2 = arguments[3];
+	var sx = arguments[4];
+	var sy = arguments[5];
+	var oo = "";
+	
+	for(var x = x1; x <= x2; x += sx) {
+		oo += "line ";
+		oo += x + " ";
+		oo += y1 + " ";
+		oo += x + " ";
+		oo += y2 + "\n";
+	}
+	
+	for(var y = y1; y <= y2; y += sy) {
+		oo += "line ";
+		oo += x1 + " ";
+		oo += y + " ";
+		oo += x2 + " ";
+		oo += y + "\n";
+	}
+	
+	return oo;
+}
+
+/*
 	createArrowText()
 	
 	20200824
 	0400 Start this function.
 	0427 Error: <line> attribute x1: Expected length, "NaN".
 	0443 Test it and working, pause for sholat.
+	20200901
+	1317 Define qo and calculate it from dy/dx.
+	1327 Fix four main directions N, E, S, W.
+	1332 Fix the other four NW, NE, SW SE.
 */
 function createArrowText() {
 	var x1 = arguments[0];
@@ -142,26 +209,37 @@ function createArrowText() {
 	var y2 = arguments[3];
 	var oo = "";
 	
-	console.log(x1, y1, x2, y2);
+	var dy = y2 - y1;
+	var dx = x2 - x1;
+	var qo;
+	if(dx > 0 && dy == 0) {
+		qo = 180;
+	} else if(dx < 0 && dy == 0) {
+		qo = 0;
+	} else if(dx == 0 && dy < 0) {
+		qo = 90;
+	} else if(dx == 0 && dy > 0) {
+		qo = -90;
+	} else if(dx < 0) {
+		qo = Math.atan(dy/dx) * 180 / Math.PI;
+	} else if(dx > 0) {
+		qo = 180 + Math.atan(dy/dx) * 180 / Math.PI;
+	}
 	
 	var l = 12;
 	var q = 14;
-	var qu = (180 - q) * Math.PI / 180;
-	var qd = (180 + q) * Math.PI / 180;
+	var qu = (qo - q) * Math.PI / 180;
+	var qd = (qo + q) * Math.PI / 180;
 	var xu = Math.round(x2 + l * Math.cos(qu));
 	var yu = Math.round(y2 + l * Math.sin(qu));
 	var xd = Math.round(x2 + l * Math.cos(qd));
 	var yd = Math.round(y2 + l * Math.sin(qd));
-	
-	console.log(xu, yu, xd, yd);
 	
 	oo += "line " + x1 + " " + y1 + " " + x2 + " " + y2 + "\n";
 	var p = x2 + " " + y2 + " ";
 	p += xu + " " + yu + " ";
 	p += xd + " " + yd;
 	oo += "polygon " + p + "\n";
-	
-	console.log(p);
 	
 	return oo;
 }
@@ -234,15 +312,18 @@ function createSVGContainer() {
 	var line = arguments[0];
 	var url = "http://www.w3.org/2000/svg";
 	var svg = document.createElementNS(url, "svg");
-	var cols = line.split(" ");
+	var info = line.split("|");
+	var cols = info[0].split(" ");
 	var w = parseInt(cols[1]);
 	var h = parseInt(cols[2]);
 	var c = cols[3];
 	var id = cols[4];
+	var cap = info[1];
 	svg.setAttribute("width", w);
 	svg.setAttribute("height", h);
 	svg.setAttribute("style", "background:" + c);
 	svg.setAttribute("id", id);
+	svg.setAttribute("cap", cap);
 	return svg;
 }
 

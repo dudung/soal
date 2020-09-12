@@ -3,7 +3,7 @@ layout: default
 title: butiran
 ---
 
-# butiran
+# butiran -- physics in plain text
 
 <!-- Html Elements for Search -->
 <div id="search-container">
@@ -19,7 +19,7 @@ title: butiran
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  searchResultTemplate: '<li><a href="{url}" tabindex="1"><p>{title}</p><span>{url}</span></a></li>',
+  searchResultTemplate: '<li><tt><a href="{url}" tabindex="1">{title}</a></tt> {excerpt}</li>',
   noResultsText: '<li><p>No results found!</p></li>',
   json: '/search.json',
 })
