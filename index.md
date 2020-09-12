@@ -5,29 +5,22 @@ title: butiran
 
 # butiran
 
+<!-- Html Elements for Search -->
+<div id="search-container">
+<input type="text" id="search-input" placeholder="search...">
+<ul id="results-container"></ul>
+</div>
 
+<!-- Script pointing to search-script.js -->
+<script src="/assets/js/simple-jekyll-search.min.js" type="text/javascript"></script>
 
-
-
-<!--
-[physics](physics) `|` [abm-pbsp](abm-pbsp) `|`
-[abm-traffic-log](abm-traffic-log) `|` [abm-com-seir](abm-com-seir)
--->
-
-<!--p style="font-family: monospace">
-{% comment %}
-{% assign pad0 = '00' %}
-{% assign n = pad0 | size %}
-{% assign m = 0 | minus: n %}
-{% assign i = site.posts.size %}
-{% for post in site.posts %}
-	{% assign d = post.date | split: ' ' %}
-	{% assign i = i | minus: 1 | prepend: pad0 %}
-	{% assign j = i | slice: m, n %}
-	{% assign k = d.first | replace: "-", "" %}
-	[{{ j }}]
-	<a href="{{ site.baseurl }}{{ post.url }}">
-		{{ post.date | date: "%d-%b" }} {{ post.title }}</a>,
-{% endfor %}
-{% endcomment %}
-</p-->
+<!-- Configuration -->
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  searchResultTemplate: '<li><a href="{url}" tabindex="1"><p>{title}</p><span>{url}</span></a></li>',
+  noResultsText: '<li><p>No results found!</p></li>',
+  json: '/search.json',
+})
+</script>
