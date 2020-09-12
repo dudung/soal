@@ -1,6 +1,8 @@
 # docs
 blog for butiran
 
+``12 Sep 2020`` Merge pull request and give access to collaborator.
+
 ``29 Aug 2020`` Can not solve problem in here after copying.
 
 ``13 Aug 2020`` Try converging only to this project.
