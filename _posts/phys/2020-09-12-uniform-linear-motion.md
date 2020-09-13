@@ -29,12 +29,13 @@ svg 600 200 #fafafa fig:ulm-pos-velo|Objects with: (a) $x > 0$, $v > 0$, (b) $x 
 
 style lc:#000 ls:6-2 lw:0.3 lo:0.8
 grid 20 20 260 60 40 40
-style lc:#000 ls:0 lw:1 lo:1
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
 arrow 20 40 260 40
 style lc:#000 ls:0 lw:1 lo:1 fc:#000
 circle 140 40 2
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 265 40 x
+text 225 10 v
 style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
 text 17 65 -3
 text 57 65 -2
@@ -43,15 +44,20 @@ text 137 65 0
 text 177 65 1
 text 217 65 2
 text 132 90 (a)
+style lc:#080 ls:0 lw:1 lo:1 fc:#0c0
+rect 170 20 20 20
+style lc:#a00 ls:0 lw:2 lo:1 fc:#a00
+arrow 180 10 220 10
 
 style lc:#000 ls:6-2 lw:0.3 lo:0.8
 grid 320 20 560 60 40 40
-style lc:#000 ls:0 lw:1 lo:1
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
 arrow 320 40 560 40
 style lc:#000 ls:0 lw:1 lo:1 fc:#000
 circle 440 40 2
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 565 40 x
+text 365 10 v
 style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
 text 317 65 -3
 text 357 65 -2
@@ -60,15 +66,20 @@ text 437 65 0
 text 477 65 1
 text 517 65 2
 text 432 90 (c)
+style lc:#080 ls:0 lw:1 lo:1 fc:#0c0
+rect 310 20 20 20
+style lc:#a00 ls:0 lw:2 lo:1 fc:#a00
+arrow 320 10 360 10
 
 style lc:#000 ls:6-2 lw:0.3 lo:0.8
 grid 20 120 260 160 40 40
-style lc:#000 ls:0 lw:1 lo:1
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
 arrow 20 140 260 140
 style lc:#000 ls:0 lw:1 lo:1 fc:#000
 circle 140 140 2
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 265 140 x
+text 165 110 v
 style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
 text 17 165 -3
 text 57 165 -2
@@ -77,15 +88,20 @@ text 137 165 0
 text 177 165 1
 text 217 165 2
 text 132 190 (b)
+style lc:#080 ls:0 lw:1 lo:1 fc:#0c0
+rect 210 120 20 20
+style lc:#a00 ls:0 lw:2 lo:1 fc:#a00
+arrow 220 110 180 110
 
 style lc:#000 ls:6-2 lw:0.3 lo:0.8
 grid 320 120 560 160 40 40
-style lc:#000 ls:0 lw:1 lo:1
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
 arrow 320 140 560 140
 style lc:#000 ls:0 lw:1 lo:1 fc:#000
 circle 440 140 2
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 565 140 x
+text 305 110 v
 style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
 text 317 165 -3
 text 357 165 -2
@@ -94,6 +110,10 @@ text 437 165 0
 text 477 165 1
 text 517 165 2
 text 432 190 (d)
+style lc:#080 ls:0 lw:1 lo:1 fc:#0c0
+rect 350 120 20 20
+style lc:#a00 ls:0 lw:2 lo:1 fc:#a00
+arrow 360 110 320 110
 </oo>
 
 Objects with different position and velocity signs are shown in Fig. <a href="#fig:ulm-pos-velo">1</a>: (a) positive position and positive velocity, (b) positive position and negative velocity, (c) negative position and positive velocity, (d) negative position and negative velocity.
@@ -127,7 +147,7 @@ where subscripts $i$ and $f$ stand for initial and final. We will use it for bet
 ## Exercises
 1. Explain what is the relation between Eqns. \eqref{eqn:ulm-position} and \eqref{eqn:ulm-position-i-f}. Map each symbol in the first equation to the second.
 2. A particle perform a ULM and is observed at time $t = t_1$, $t = t_2$, and $t = t_3$ and its positions are recorded as $x = x_1$, $x = x_2$, and $x = x_3$ for each time. Which equation from Eqns.  Eqns. \eqref{eqn:ulm-position} - \eqref{eqn:ulm-position-i-f} is better to describe the relation between $x_2$ and $x_1$ and $x_3$ and $x_2$? Explain in brief your answer.
-
+3. Set value of velocities in Fig. <a href="#fig:ulm-pos-velo">1</a> (a) - (d) of your choice and explain why you choose such value.
 
 ## References
 1. <a name="ref2"></a>-, "Uniform Linear Motion: Constant Velocity Motion along a Line", Phyley, 3 Feb 2019, url <https://www.phyley.com/uniform-linear-motion> [20200913].
