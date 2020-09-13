@@ -215,6 +215,10 @@ Using similiar way value of $t_3$ and $x_4$ can be found.
 5. Calculate value of $x_4$ also from Fig. <a href="#fig:ulm-pos-velo-examp-1">2</a>. Explain which equation you use. Confirm the result from the figure by filling the missing axis tick marks.
 
 
+## Graphs
+In ULM we can draw at least two graphs. The first is $x - t$ graph and the second is $v - t$ graph. Beside those graphs a $x - v$ graph can be also created.
+
+
 ## References
 1. <a name="ref2"></a>-, "Uniform Linear Motion: Constant Velocity Motion along a Line", Phyley, 3 Feb 2019, url <https://www.phyley.com/uniform-linear-motion> [20200913].
 2. <a name="ref2"></a>José L. Fernández, "Equations of Constant Velocity Motion", Fisicalab, url <https://www.fisicalab.com/en/section/urm-equations> [20200913].
