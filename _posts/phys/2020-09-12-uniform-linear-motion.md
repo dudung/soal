@@ -25,7 +25,7 @@ Since an ULM is a one-dimensional motion we will use the symbol of $x$ for posit
 Position and velocity are physical quantities of type [vector](vector), which means that they have value (magnitude) and direction (sign). There should be an origin in defining position where it is indicated as $x = 0$. Position to the left of origin will have negative sign or $-$ and position to the right of origin will have positive sign or $+$. Appearance of the first is mandatory, while the second is only when necessary. And for velocity, minus sign indicates that the object moves to the left, while plus sign indicates that the object moves to the right.
 
 <oo>
-svg 240 200 #fafafa fig:vec-arrow-2|A vector $\mathbf{c} \equiv \vec{c} = 4 \hat{i} + 3 \hat{j}$ in $xy$ plane.
+svg 600 200 #fafafa fig:ulm-pos-velo|Objects with: (a) $x > 0$, $v > 0$, (b) $x > 0$, $v < 0$, (c) $x < 0$, $v > 0$, (d) $x < 0$, $v < 0$.
 
 style lc:#000 ls:6-2 lw:0.3 lo:0.8
 grid 20 20 220 180 40 40
@@ -61,11 +61,25 @@ line 20 60 180 60
 line 180 60 180 180
 </oo>
 
-Fig. <a href="#fig:vec-arrow-2">1</a> shows objects with different position and velocity signs.
+Objects with different position and velocity signs are shown in Fig. <a href="#fig:ulm-pos-velo">1</a>: (a) positive position and positive velocity, (b) positive position and negative velocity, (c) negative position and positive velocity, (d) negative position and negative velocity.
 
 
 ## Equations
-Final position $x_t$ and
+Final position $x_t$ and its relation to initial position $x_0$, velocity $v$, initial time $t_0$, and time $t$ is given by
+
+\begin{equation}
+\label{eqn:ulm-position}
+x_t = x_0 + v (t - t_0).
+\end{equation}
+
+In some books Eqn. \eqref{eqn:ulm-position} is written
+
+\begin{equation}
+\label{eqn:ulm-position-simpler}
+x = x_0 + v t.
+\end{equation}
+
+which is simpler but with the same meaning. Notice that in \eqref{eqn:ulm-position-simpler} it is assumed that $t_0 = 0$.
 
 
 ## References
