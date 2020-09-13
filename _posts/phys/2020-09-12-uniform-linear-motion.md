@@ -121,7 +121,7 @@ which is simpler but with the same meaning. Notice that in Eqn. \eqref{eqn:ulm-p
 x_f = x_i + v (t_f - t_i),
 \end{equation}
 
-where subscripts $i$ and $f$ stand for initial and final.
+where subscripts $i$ and $f$ stand for initial and final. We will use it for better understanding.
 
 
 ## Exercises
