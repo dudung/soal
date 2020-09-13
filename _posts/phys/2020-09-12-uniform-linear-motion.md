@@ -16,7 +16,7 @@ In uniform liniear motion (ULM) an object will move with constant velocty along 
 
 
 ## Parameters of motion
-In this article we only discuss [position](position), [velocity](velocity), and [time](time) as parameters of motion [[4](#ref4)], where the position includes initial and final position, displacement, distance, and path length.
+In this article we only discuss [position](position), [velocity](velocity), and [time](time) as parameters of motion [[5](#ref5)], where the position includes initial and final position, displacement, distance, and path length.
 
 Since an ULM is a one-dimensional motion we will use the symbol of $x$ for position, $v$ for velocity, and $t$ for time. It is also common to use the subscript $0$ for initial and $t$ for final position, e.g. $x_0$ and $x_t$. For clarity this subscript will also be used for time, i.e.  $t_0$ and $t$.
 
@@ -207,6 +207,10 @@ v = \frac{(-2 ) \ {\rm m} - (-4)\ {\rm m}}{4 \ {\rm s} - 2 \ {\rm s}} = \frac{(-
 Using similiar way value of $t_3$ and $x_4$ can be found.
 
 
+## Graphs
+In ULM we can draw at least two graphs. The first is $x - t$ graph and the second is $v - t$ graph. Beside those graphs a $x - v$ graph can be also created. We use term graph instead of chart since graph is  more related to mathematical function [[6](#ref6)] we try to illustrate.
+
+
 ## Exercises
 1. Explain what is the relation between Eqns. \eqref{eqn:ulm-position} and \eqref{eqn:ulm-position-i-f}. Map each symbol in the first equation to the second.
 2. A particle perform a ULM and is observed at time $t = t_1$, $t = t_2$, and $t = t_3$ and its positions are recorded as $x = x_1$, $x = x_2$, and $x = x_3$ for each time. Which equation from Eqns.  Eqns. \eqref{eqn:ulm-position} - \eqref{eqn:ulm-position-i-f} is better to describe the relation between $x_2$ and $x_1$ and $x_3$ and $x_2$? Explain in brief your answer.
@@ -215,15 +219,12 @@ Using similiar way value of $t_3$ and $x_4$ can be found.
 5. Calculate value of $x_4$ also from Fig. <a href="#fig:ulm-pos-velo-examp-1">2</a>. Explain which equation you use. Confirm the result from the figure by filling the missing axis tick marks.
 
 
-## Graphs
-In ULM we can draw at least two graphs. The first is $x - t$ graph and the second is $v - t$ graph. Beside those graphs a $x - v$ graph can be also created.
-
-
 ## References
 1. <a name="ref2"></a>-, "Uniform Linear Motion: Constant Velocity Motion along a Line", Phyley, 3 Feb 2019, url <https://www.phyley.com/uniform-linear-motion> [20200913].
 2. <a name="ref2"></a>José L. Fernández, "Equations of Constant Velocity Motion", Fisicalab, url <https://www.fisicalab.com/en/section/urm-equations> [20200913].
 3. <a name="ref3"></a>The Editors of Encyclopaedia Britannica, "Vector", Encyclopædia Britannica, 27 May 2020, url <https://www.britannica.com/science/linear-motion> [20200913].
 4. <a name="ref4"></a>Carl R. Nave, "Description of Motion", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/mot.html> [20200913].
 5. <a name="ref5"></a>David Lewis, "Answer to 'Why are speed, velocity, acceleration, distance, displacement, and time called the parameters of motion?", Quora, 21 Mar 2017, url <https://qr.ae/pNCRxz> [20200913].
+6. <a name="ref6"></a>Guffa, "Answer to 'What's the difference between a graph, a chart, and a plot?'", English Stack Exchange, 23 Sep 2011, url <https://english.stackexchange.com/a/43029> [20200913].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-09-12-uniform-linear-motion.md)
