@@ -72,14 +72,26 @@ Final position $x_t$ and its relation to initial position $x_0$, velocity $v$, i
 x_t = x_0 + v (t - t_0).
 \end{equation}
 
-In some books Eqn. \eqref{eqn:ulm-position} is written
+In some books Eqn. \eqref{eqn:ulm-position} is written in the form of
 
 \begin{equation}
 \label{eqn:ulm-position-simpler}
-x = x_0 + v t.
+x = x_0 + v t,
 \end{equation}
 
-which is simpler but with the same meaning. Notice that in \eqref{eqn:ulm-position-simpler} it is assumed that $t_0 = 0$.
+which is simpler but with the same meaning. Notice that in Eqn. \eqref{eqn:ulm-position-simpler} it is assumed that $t_0 = 0$. More general form and clearer (advisable to use it) is
+
+\begin{equation}
+\label{eqn:ulm-position-i-f}
+x_f = x_i + v (t_f - t_i),
+\end{equation}
+
+where subscripts $i$ and $f$ stand for initial and final.
+
+
+## Exercises
+1. Explain what is the relation between Eqns. \eqref{eqn:ulm-position} and \eqref{eqn:ulm-position-i-f}. Map each symbol in the first equation to the second.
+2. A particle perform a ULM and is observed at time $t = t_1$, $t = t_2$, and $t = t_3$ and its positions are recorded as $x = x_1$, $x = x_2$, and $x = x_3$ for each time. Which equation from Eqns.  Eqns. \eqref{eqn:ulm-position} - \eqref{eqn:ulm-position-i-f} is better to describe the relation between $x_2$ and $x_1$ and $x_3$ and $x_2$? Explain in brief your answer.
 
 
 ## References
