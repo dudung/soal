@@ -190,13 +190,30 @@ text 145 15 = 4 s
 text 545 20 = 14 s
 </oo>
 
-Since the particle performing a ULM then its velocity must be constant or at all time $t_1$, $t_2$, $t_3$, and $t_4$ value of $v$ should remain the same. Can we calculate the velocity $v$ from Fig. <a href="#fig:ulm-pos-velo-examp-1">2</a>? The answer is yes since all information required in Eqn. \eqref{eqn:ulm-position-i-f} are already provided in the figure.
+Since the particle performing a ULM then its velocity must be constant or at all time $t_1$, $t_2$, $t_3$, and $t_4$ value of $v$ should remain the same. Can we calculate the velocity $v$ from Fig. <a href="#fig:ulm-pos-velo-examp-1">2</a>? The answer is yes since all information required in Eqn. \eqref{eqn:ulm-position-i-f} are already provided in the figure. From the figure we can have $x_1 = -4 \ \rm m$ at $t_1 = 2 \ \rm s$ and $x_2 = -2 \ \rm m$ at $t_2 = 4 \ \rm s$. Notice that the initial time is not necessary zero. Using Eqn. \eqref{eqn:ulm-position-i-f} following relation can be obtained
+
+\begin{equation}
+\label{eqn:ulm-position-i-f-velo}
+v = \frac{x_f - x_i}{t_f - t_i} = \frac{x_2 - x_1}{t_2 - t_1},
+\end{equation}
+
+since intial $i = 1$ and final $f = 2$ in this case. Using provide information we can have
+
+\begin{equation}
+\nonumber
+v = \frac{(-2 ) \ {\rm m} - (-4)\ {\rm m}}{4 \ {\rm s} - 2 \ {\rm s}} = \frac{(-2 + 4) \ {\rm m}}{2 \ {\rm s}} = \frac22 \ {\rm m/s} = 1 \ {\rm m/s}.
+\end{equation}
+
+Using similiar way value of $t_3$ and $x_4$ can be found.
 
 
 ## Exercises
 1. Explain what is the relation between Eqns. \eqref{eqn:ulm-position} and \eqref{eqn:ulm-position-i-f}. Map each symbol in the first equation to the second.
 2. A particle perform a ULM and is observed at time $t = t_1$, $t = t_2$, and $t = t_3$ and its positions are recorded as $x = x_1$, $x = x_2$, and $x = x_3$ for each time. Which equation from Eqns.  Eqns. \eqref{eqn:ulm-position} - \eqref{eqn:ulm-position-i-f} is better to describe the relation between $x_2$ and $x_1$ and $x_3$ and $x_2$? Explain in brief your answer.
 3. Set value of velocities in Fig. <a href="#fig:ulm-pos-velo">1</a> (a) - (d) of your choice and explain why you choose such value.
+4. Calculate value of $t_3$ from Fig. <a href="#fig:ulm-pos-velo-examp-1">2</a>. Which equation you use?
+5. Calculate value of $x_4$ also from Fig. <a href="#fig:ulm-pos-velo-examp-1">2</a>. Explain which equation you use. Confirm the result from the figure by filling the missing axis tick marks.
+
 
 ## References
 1. <a name="ref2"></a>-, "Uniform Linear Motion: Constant Velocity Motion along a Line", Phyley, 3 Feb 2019, url <https://www.phyley.com/uniform-linear-motion> [20200913].
