@@ -143,6 +143,52 @@ x_f = x_i + v (t_f - t_i),
 
 where subscripts $i$ and $f$ stand for initial and final. We will use it for better understanding.
 
+<oo>
+svg 600 100 #fafafa fig:ulm-pos-velo|A particle performing uniform linear motion is observed at time $t_1$, $t_2$, $t_3$, and $t_4$.
+
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 20 40 580 80 40 40
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+arrow 20 60 580 60
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 220 60 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 585 60 x
+text 105 30 v
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 17 85 -5
+text 57 85 -4
+text 97 85 -3
+text 137 85 -2
+text 177 85 -1
+text 217 85 0
+text 257 85 1
+text 297 85 2
+text 337 85 3
+text 377 85 4
+text 417 85 5
+text 457 85 6
+text 497 85 7
+text 537 85 8
+style lc:#080 ls:0 lw:1 lo:1 fc:#0c0
+rect 50 40 20 20
+rect 130 40 20 20
+rect 290 40 20 20
+rect 530 40 20 20
+style lc:#a00 ls:0 lw:2 lo:1 fc:#a00
+arrow 60 30 100 30
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 50 15 t
+text 130 15 t
+text 290 15 t
+text 530 15 t
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 55 20 1
+text 135 20 2
+text 295 20 3
+text 535 20 4
+</oo>
+
 
 ## Exercises
 1. Explain what is the relation between Eqns. \eqref{eqn:ulm-position} and \eqref{eqn:ulm-position-i-f}. Map each symbol in the first equation to the second.
