@@ -208,7 +208,126 @@ Using similiar way value of $t_3$ and $x_4$ can be found.
 
 
 ## Graphs
-In ULM we can draw at least two graphs. The first is $x - t$ graph and the second is $v - t$ graph. Beside those graphs a $x - v$ graph can be also created. We use term graph instead of chart since graph is  more related to mathematical function [[6](#ref6)] we try to illustrate.
+In ULM we can draw at least two graphs. The first is $x - t$ graph and the second is $v - t$ graph. Beside those graphs, a $x - v$ graph can be also created. We use term graph instead of chart since graph is  more related to mathematical function [[6](#ref6)] we try to illustrate.
+
+Suppose that a particle moves with constant velocity
+
+\begin{equation}
+\label{eqn:ulm-v-t}
+v(t) = v_0, \ \ \ t \ge 0,
+\end{equation}
+
+performing a ULM. Its $v-t$ chart is simply as shown in Figs. <a href="#fig:ulm-pos-velo-graph-v-t-v0>0">3</a> and <a href="#fig:ulm-pos-velo-graph-v-t-v0<0">4</a>.
+
+<oo>
+svg 480 210 #fafafa fig:ulm-pos-velo-graph-v-t-v0>0|Velocity $v$ as function of time $t$: $v(t) = v_0$, with $v_0 > 0$.
+
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 20 20 460 180 40 40
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+arrow 20 180 460 180
+arrow 20 180 20 20
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 20 180 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 465 185 t
+text 15 15 v
+text 3 60 v
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 5 185 0
+text 17 200 0
+text 57 200 1
+text 97 200 2
+text 137 200 3
+text 177 200 4
+text 217 200 5
+text 257 200 6
+text 297 200 7
+text 337 200 8
+text 377 200 9
+text 412 200 10
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 10 65 0
+style lw:2.5 lc:#f00 fo:1
+line 20 60 420 60
+</oo>
+
+<oo>
+svg 480 210 #fafafa fig:ulm-pos-velo-graph-v-t-v0<0|Velocity $v$ as function of time $t$: $v(t) = v_0$, with $v_0 < 0$.
+
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 20 20 460 180 40 40
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+arrow 20 60 460 60
+arrow 20 180 20 20
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 20 60 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 465 65 t
+text 15 15 v
+text 3 140 v
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 5 65 0
+text 25 80 0
+text 57 80 1
+text 97 80 2
+text 137 80 3
+text 177 80 4
+text 217 80 5
+text 257 80 6
+text 297 80 7
+text 337 80 8
+text 377 80 9
+text 412 80 10
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 10 145 0
+style lw:2.5 lc:#f00 fo:1
+line 20 140 420 140
+</oo>
+
+In both previous figures the curve is simply horizontal line, the first is above $x$-axis for $v_0 > 0$ and the second is below $x$-axis for $v_0 < 0$. And how about $v_0 = 0$? Can you make the graph?
+
+Next step is to discuss $x-t$ graph related to Eqn. \eqref{eqn:ulm-v-t}. For position, the equation is
+
+\begin{equation}
+\label{eqn:ulm-x-t}
+x(t) = x_0 + v_0 (t - t_0), \ \ \ t \ge 0,
+\end{equation}
+
+where position at $t = t_0$ is $x(t_0) = x_0$. Thera are four variatons of $x-t$ graphs for Eqn. \eqref{eqn:ulm-x-t}, which are: (i) $x_0 > 0$, $v_0 > 0$, (ii) $x_0 > 0$, $v_0 < 0$, (iii) $x_0 < 0$, $v_0 > 0$, and (iv) $x_0 < 0$, $v_0 < 0$.
+
+<oo>
+svg 600 400 #fafafa fig:ulm-pos-velo-graph-x-t|Position $x$ as function of time $t$ for different sign of $x_0$ and $v_0$.
+
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 20 20 460 180 40 40
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+arrow 20 60 460 60
+arrow 20 180 20 20
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 20 60 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 465 65 t
+text 15 15 v
+text 3 140 v
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 5 65 0
+text 25 80 0
+text 57 80 1
+text 97 80 2
+text 137 80 3
+text 177 80 4
+text 217 80 5
+text 257 80 6
+text 297 80 7
+text 337 80 8
+text 377 80 9
+text 412 80 10
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 10 145 0
+style lw:2.5 lc:#f00 fo:1
+line 20 140 420 140
+</oo>
 
 
 ## Exercises
@@ -217,6 +336,7 @@ In ULM we can draw at least two graphs. The first is $x - t$ graph and the secon
 3. Set value of velocities in Fig. <a href="#fig:ulm-pos-velo">1</a> (a) - (d) of your choice and explain why you choose such value.
 4. Calculate value of $t_3$ from Fig. <a href="#fig:ulm-pos-velo-examp-1">2</a>. Which equation you use?
 5. Calculate value of $x_4$ also from Fig. <a href="#fig:ulm-pos-velo-examp-1">2</a>. Explain which equation you use. Confirm the result from the figure by filling the missing axis tick marks.
+6. Using Figs. <a href="#fig:ulm-pos-velo-graph-v-t-v0>0">3</a> and <a href="#fig:ulm-pos-velo-graph-v-t-v0<0">4</a>, make a graph of $v(t) = v_0$ for $v_0 = 0$. 
 
 
 ## References
