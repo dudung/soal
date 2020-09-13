@@ -1,7 +1,7 @@
 ---
 layout: post
 author: viridi
-title: uniform liniear motion
+title: uniform linear motion
 mathjax: true
 ptext: false
 x3dom: false
