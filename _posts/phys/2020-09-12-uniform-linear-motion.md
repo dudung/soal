@@ -16,6 +16,7 @@ In uniform liniear motion (ULM) an object will move with constant velocty along 
 
 
 ## Parameters of motion
+In this article we only discuss [position](position), [velocity](velocity), and [time](time) as parameters of motion [[4](#ref4)], where the position includes initial and final position, displacement, distance, and path of length.
 
 
 ## References
