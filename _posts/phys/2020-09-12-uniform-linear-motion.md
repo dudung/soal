@@ -141,10 +141,10 @@ which is simpler but with the same meaning. Notice that in Eqn. \eqref{eqn:ulm-p
 x_f = x_i + v (t_f - t_i),
 \end{equation}
 
-where subscripts $i$ and $f$ stand for initial and final. We will use it for better understanding.
+where subscripts $i$ and $f$ stand for initial and final. We will use it for better understanding. Let's use Eqn. \eqref{eqn:ulm-position-i-f} in solving problem in Fig. <a href="#fig:ulm-pos-velo-examp-1">2</a>.
 
 <oo>
-svg 600 100 #fafafa fig:ulm-pos-velo|A particle performing uniform linear motion is observed at time $t_1$, $t_2$, $t_3$, and $t_4$.
+svg 600 100 #fafafa fig:ulm-pos-velo-examp-1|A particle performing uniform linear motion is observed at time $t_1$, $t_2$, $t_3$, and $t_4$.
 
 style lc:#000 ls:6-2 lw:0.3 lo:0.8
 grid 20 40 580 80 40 40
@@ -167,9 +167,6 @@ text 297 85 2
 text 337 85 3
 text 377 85 4
 text 417 85 5
-text 457 85 6
-text 497 85 7
-text 537 85 8
 style lc:#080 ls:0 lw:1 lo:1 fc:#0c0
 rect 50 40 20 20
 rect 130 40 20 20
@@ -187,7 +184,13 @@ text 55 20 1
 text 135 20 2
 text 295 20 3
 text 535 20 4
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 65 15 = 2 s
+text 145 15 = 4 s
+text 545 20 = 14 s
 </oo>
+
+Since the particle performing a ULM then its velocity must be constant or at all time $t_1$, $t_2$, $t_3$, and $t_4$ value of $v$ should remain the same. Can we calculate the velocity $v$ from Fig. <a href="#fig:ulm-pos-velo-examp-1">2</a>? The answer is yes since all information required in Eqn. \eqref{eqn:ulm-position-i-f} are already provided in the figure.
 
 
 ## Exercises
