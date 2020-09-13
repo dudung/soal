@@ -28,37 +28,72 @@ Position and velocity are physical quantities of type [vector](vector), which me
 svg 600 200 #fafafa fig:ulm-pos-velo|Objects with: (a) $x > 0$, $v > 0$, (b) $x > 0$, $v < 0$, (c) $x < 0$, $v > 0$, (d) $x < 0$, $v < 0$.
 
 style lc:#000 ls:6-2 lw:0.3 lo:0.8
-grid 20 20 220 180 40 40
-
+grid 20 20 260 60 40 40
 style lc:#000 ls:0 lw:1 lo:1
-arrow 20 180 220 180
-arrow 20 180 20 20
-
+arrow 20 40 260 40
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 140 40 2
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
-text 225 185 x
-text 20 12 y
-
+text 265 40 x
 style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
-text 15 197 0
-text 55 197 1
-text 95 197 2
-text 135 197 3
-text 175 197 4
+text 17 65 -3
+text 57 65 -2
+text 97 65 -1
+text 137 65 0
+text 177 65 1
+text 217 65 2
+text 132 90 (a)
 
-text 5 185 0
-text 5 145 1
-text 5 105 2
-text 5 65 3
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 320 20 560 60 40 40
+style lc:#000 ls:0 lw:1 lo:1
+arrow 320 40 560 40
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 440 40 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 565 40 x
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 317 65 -3
+text 357 65 -2
+text 397 65 -1
+text 437 65 0
+text 477 65 1
+text 517 65 2
+text 432 90 (c)
 
-style lc:#f00 ls:0 lw:2 lo:1 fc:#f00 fo:1
-arrow 20 180 180 60
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 20 120 260 160 40 40
+style lc:#000 ls:0 lw:1 lo:1
+arrow 20 140 260 140
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 140 140 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 265 140 x
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 17 165 -3
+text 57 165 -2
+text 97 165 -1
+text 137 165 0
+text 177 165 1
+text 217 165 2
+text 132 190 (b)
 
-style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:16px
-text 95 105 c
-
-style lc:#000 ls:8-4 lw:0.8 lo:1
-line 20 60 180 60
-line 180 60 180 180
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 320 120 560 160 40 40
+style lc:#000 ls:0 lw:1 lo:1
+arrow 320 140 560 140
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 440 140 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 565 140 x
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 317 165 -3
+text 357 165 -2
+text 397 165 -1
+text 437 165 0
+text 477 165 1
+text 517 165 2
+text 432 190 (d)
 </oo>
 
 Objects with different position and velocity signs are shown in Fig. <a href="#fig:ulm-pos-velo">1</a>: (a) positive position and positive velocity, (b) positive position and negative velocity, (c) negative position and positive velocity, (d) negative position and negative velocity.
