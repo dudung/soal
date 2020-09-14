@@ -388,9 +388,20 @@ style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 383 301 x
 style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 390 306 0
+
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 312 170 x
+text 312 195 t
+text 265 182 v
+
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 300 170 &Delta;
+text 296 175 ___
+text 300 195 &Delta;
+text 280 182 =
 </oo>
 
-If $x_0 > 0$ the line crossess vertical axis above horizontal axis and if $x_0 < 0$ it crossess vertical axis below horizontal axis as shown in Fig. <a href="fig:ulm-pos-velo-graph-x-t">5</a>. Value of $v_0$ determines gradient of the line, then $v_0 > 0$ will produce line to up right direction, while $v_0 < 0$ will produce line to down right direction.
+If $x_0 > 0$ the line crossess vertical axis above horizontal axis and if $x_0 < 0$ it crossess vertical axis below horizontal axis as shown in Fig. <a href="fig:ulm-pos-velo-graph-x-t">5</a>. Value of $v_0$ determines gradient of the line, then $v_0 > 0$ will produce line to up right direction, while $v_0 < 0$ will produce line to down right direction. Dashed line show the function for $t < t_0$, where in this this example $t_0 \ge 0$.
 
 
 ## Exercises
@@ -401,6 +412,8 @@ If $x_0 > 0$ the line crossess vertical axis above horizontal axis and if $x_0 <
 5. Calculate value of $x_4$ also from Fig. <a href="#fig:ulm-pos-velo-examp-1">2</a>. Explain which equation you use. Confirm the result from the figure by filling the missing axis tick marks.
 6. Using Figs. <a href="#fig:ulm-pos-velo-graph-v-t-v0>0">3</a> and <a href="#fig:ulm-pos-velo-graph-v-t-v0<0">4</a>, make a graph of $v(t) = v_0$ for $v_0 = 0$. 
 7. Write equation for $x(t)$ for all graphs in Fig. <a href="fig:ulm-pos-velo-graph-x-t">5</a> by assuming that horizontal tick is equal to $1 \ \rm s$ and vertical tick is equal to $1 \ \rm m$. Use fraction notation instead of decimal for simpler expression.
+8. If position particle every time $t$ is given by $x(t) = (1 + 2t) \ \rm m$, draw graph showing particle position for $t = 0, 1, 4, 8 \ \rm s$.
+9. Find the equation in Fig. <a href="fig:ulm-pos-velo-graph-x-t">5</a> and explain its relation to Eqn. \eqref{eqn:ulm-x-t} or Eqn. \eqref{eqn:ulm-position-i-f-velo}.
 
 
 ## References
