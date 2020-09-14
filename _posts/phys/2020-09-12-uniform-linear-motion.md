@@ -291,43 +291,106 @@ Next step is to discuss $x-t$ graph related to Eqn. \eqref{eqn:ulm-v-t}. For pos
 
 \begin{equation}
 \label{eqn:ulm-x-t}
-x(t) = x_0 + v_0 (t - t_0), \ \ \ t \ge 0,
+x(t) = x_0 + v_0 (t - t_0), \ \ \ t \ge t_0,
 \end{equation}
 
-where position at $t = t_0$ is $x(t_0) = x_0$. Thera are four variatons of $x-t$ graphs for Eqn. \eqref{eqn:ulm-x-t}, which are: (i) $x_0 > 0$, $v_0 > 0$, (ii) $x_0 > 0$, $v_0 < 0$, (iii) $x_0 < 0$, $v_0 > 0$, and (iv) $x_0 < 0$, $v_0 < 0$.
+where position at $t = t_0$ is $x(t_0) = x_0$. Thera are four variatons of $x-t$ graphs for Eqn. \eqref{eqn:ulm-x-t}, which are: (i) $x_0 > 0$, $v_0 > 0$, (ii) $x_0 > 0$, $v_0 < 0$, (iii) $x_0 < 0$, $v_0 > 0$, and (iv) $x_0 < 0$, $v_0 < 0$. For simplification, let's choose $t_0 = 0$.
 
 <oo>
-svg 600 400 #fafafa fig:ulm-pos-velo-graph-x-t|Position $x$ as function of time $t$ for different sign of $x_0$ and $v_0$.
+svg 600 380 #fafafa fig:ulm-pos-velo-graph-x-t|Position $x$ as function of time $t$ for different sign of $x_0$ and $v_0$: (a) $x_0 > 0$, $v_0 > 0$, (b) $x_0 < 0$, $v_0 > 0$, (c) $x_0 > 0$, $v_0 < 0$, and (d) $x_0 < 0$, $v_0 < 0$.
 
 style lc:#000 ls:6-2 lw:0.3 lo:0.8
-grid 20 20 460 180 40 40
+grid 10 20 280 140 30 30
 style lc:#000 ls:0 lw:1 lo:1 fc:#000
-arrow 20 60 460 60
-arrow 20 180 20 20
+arrow 100 140 100 20
+arrow 10 80 280 80
 style lc:#000 ls:0 lw:1 lo:1 fc:#000
-circle 20 60 2
+circle 100 80 2
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
-text 465 65 t
-text 15 15 v
-text 3 140 v
+text 285 85 t
+text 97 15 x
 style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
-text 5 65 0
-text 25 80 0
-text 57 80 1
-text 97 80 2
-text 137 80 3
-text 177 80 4
-text 217 80 5
-text 257 80 6
-text 297 80 7
-text 337 80 8
-text 377 80 9
-text 412 80 10
+text 135 165 (a)
+style lc:#f00 ls:0 lw:1 lo:1 fc:#f00
+circle 100 50 2
+style lc:#f00 ls:0 lw:1 lo:1 fc:#f00
+line 100 50 280 20
+style lc:#f00 ls:6-3 lw:1 lo:1 fc:#f00
+line 100 50 10 65
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 83 41 x
 style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
-text 10 145 0
-style lw:2.5 lc:#f00 fo:1
-line 20 140 420 140
+text 90 46 0
+
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 310 20 580 140 30 30
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+arrow 400 140 400 20
+arrow 310 80 580 80
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 400 80 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 585 85 t
+text 397 15 x
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 435 165 (b)
+style lc:#f00 ls:0 lw:1 lo:1 fc:#f00
+circle 400 110 2
+style lc:#f00 ls:0 lw:1 lo:1 fc:#f00
+line 400 110 580 80
+style lc:#f00 ls:6-3 lw:1 lo:1 fc:#f00
+line 400 110 310 125
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 383 101 x
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 390 106 0
+
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 10 220 280 340 30 30
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+arrow 100 340 100 220
+arrow 10 280 280 280
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 100 280 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 285 285 t
+text 97 215 x
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 135 365 (c)
+style lc:#f00 ls:0 lw:1 lo:1 fc:#f00
+circle 100 250 2
+line 100 250 280 280
+style lc:#f00 ls:6-3 lw:1 lo:1 fc:#f00
+line 100 250 10 235
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 83 241 x
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 90 246 0
+
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 310 220 580 340 30 30
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+arrow 400 340 400 220
+arrow 310 280 580 280
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 400 280 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 585 285 t
+text 397 215 x
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 435 365 (e)
+style lc:#f00 ls:0 lw:1 lo:1 fc:#f00
+circle 400 310 2
+line 400 310 580 340
+style lc:#f00 ls:6-3 lw:1 lo:1 fc:#f00
+line 400 310 310 295
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 383 301 x
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 390 306 0
 </oo>
+
+If $x_0 > 0$ the line crossess vertical axis above horizontal axis and if $x_0 < 0$ it crossess vertical axis below horizontal axis as shown in Fig. <a href="fig:ulm-pos-velo-graph-x-t">5</a>. Value of $v_0$ determines gradient of the line, then $v_0 > 0$ will produce line to up right direction, while $v_0 < 0$ will produce line to down right direction.
 
 
 ## Exercises
@@ -337,6 +400,7 @@ line 20 140 420 140
 4. Calculate value of $t_3$ from Fig. <a href="#fig:ulm-pos-velo-examp-1">2</a>. Which equation you use?
 5. Calculate value of $x_4$ also from Fig. <a href="#fig:ulm-pos-velo-examp-1">2</a>. Explain which equation you use. Confirm the result from the figure by filling the missing axis tick marks.
 6. Using Figs. <a href="#fig:ulm-pos-velo-graph-v-t-v0>0">3</a> and <a href="#fig:ulm-pos-velo-graph-v-t-v0<0">4</a>, make a graph of $v(t) = v_0$ for $v_0 = 0$. 
+7. Write equation for $x(t)$ for all graphs in Fig. <a href="fig:ulm-pos-velo-graph-x-t">5</a> by assuming that horizontal tick is equal to $1 \ \rm s$ and vertical tick is equal to $1 \ \rm m$. Use fraction notation instead of decimal for simpler expression.
 
 
 ## References
