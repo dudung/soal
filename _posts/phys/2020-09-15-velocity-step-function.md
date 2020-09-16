@@ -223,7 +223,33 @@ circle 260 20 4
 circle 340 100 4
 </oo>
 
-Step function $f_{\rm S}(x)$ in Fig. <a href="#fig:vsf-step">3</a> requires $A_1 = 3$, $a_1 = 0$, $b_1 = 2$; $A_2 = 1$, $a_2 = 2$, $b_2 = 5$; $A_3 = 4$, $a_3 = 5$, $b_3 = 6$; and $A_4 = 2$, $a_4 = 6$, $b_4 = 8$. Can $A$ have negative value? Yes, it can. See one of the exercise.
+Step function $f_{\rm S}(x)$ in Fig. <a href="#fig:vsf-step">3</a> requires $A_1 = 3$, $a_1 = 0$, $b_1 = 2$; $A_2 = 1$, $a_2 = 2$, $b_2 = 5$; $A_3 = 4$, $a_3 = 5$, $b_3 = 6$; and $A_4 = 2$, $a_4 = 6$, $b_4 = 8$. Can $A$ have negative value? Yes, it can. See one of the exercise. Graph in Fig. <a href="#fig:vsf-step">3</a> can also be written in the following more well-known form
+
+\begin{equation}
+\label{eqn:vsf-step-function-4-intervals}
+f_{\rm S}(x) =
+\left\\{
+\begin{array}{lr}
+3, & 1 \le x \lt 2, \newline
+1, & 2 \le x \lt 5, \newline
+4, & 5 \le x \lt 6, \newline
+2, & 6 \le x \lt 8,
+\end{array}
+\right. ,
+\end{equation}
+
+instead of Eqn. \eqref{eqn:vsf-step-function}. We will use notation similar to Eqn. \eqref{eqn:vsf-step-function} when discussing velocity step function, where in each interval there is simply a ULM.
+
+
+## Uniform linear motion in each interval
+We will call type of motion discussed in this part as velocity step function or composition of ULM (in some books this topic is a part of ULM without any additional name). An ULM $v_n(x)$ in an interval $t_n \le t \lt t_{n + 1}$ is simply
+
+\begin{equation}
+\label{eqn:vsf-uniform-linear-motion}
+v_n(x) = v_{0n},
+\end{equation}
+
+where $v_{0n}$ is a constant value at $n$-th interval.
 
 
 ## Exercises
