@@ -64,16 +64,20 @@ circle 260 60 4
 
 Solid red circle in Fig. <a href="#fig:fig:vsf-boxchar">1</a> means that $f_{\rm BC}$ has value of $A$ at that position, while empty or white circle means that $f_{\rm BC}$ does not have value of $A$.
 
+{% comment %}
+
 
 ## Step function
 Function composed of several functions boxcar $f_{\rm BC}(x)$ is a step function $f_{\rm S}(x)$. Or we can say that a step function $f_{\rm S}(x)$ is a finite linear combination of boxcar functions $f_{\rm BC}(x)$ of intervals, which is simply
 
 \begin{equation}
 \label{eqn:vsf-step-function}
-{\rm step}(x) = \sum_{i = 1}^N f_{{\rm BC}, i}(x),
+{\rm step}(x) = \sum_{i = 1}^N f_{\rm BC}(x),
 \end{equation}
 
 where each $f_{{\rm BC}, i}(x)$ has its own values of $A$, $a$, and $b$.
+
+{% endcomment %}
  
 
 ## References
