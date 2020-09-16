@@ -23,14 +23,58 @@ A boxcar function has only non-zero value $A$ over a single interval, which can 
 {\rm boxcar}(x) =
 \left\\{
 \begin{array}{lc}
-A, & a \le x \le b, \newline
-0, & x < a \cup b < x.
+A, & a \le x < b, \newline
+0, & x < a \cup b \le x,
 \end{array}
 \right.
 \end{equation}
 
-The invertal has lower boundary $a$ and upper boundary $b$.
+where the interval has lower boundary $a$ and upper boundary $b$.
 
+<oo>
+svg 400 200 #fafafa fig:vsf-boxchar|A boxchar function $f_{\rm BC}(x)$ with lower boundary $a$ and upper boundary $b$.
+
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 20 20 380 180 40 40
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+arrow 20 180 380 180
+arrow 20 180 20 20
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 20 180 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 386 183 x
+text 18 14 f
+text 5 65 A
+text 135 197 a
+text 255 197 b
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 24 16 BC
+
+style lc:#f44 ls:6-4-2-4 lw:1 lo:1
+line 20 60 380 60
+line 140 180 140 60
+line 260 180 260 60
+style lc:#f00 ls:0 lw:2 lo:1
+line 140 60 260 60
+style lc:#f00 ls:0 lw:1 lo:1 fc:#f00
+circle 140 60 4
+style lc:#f00 ls:0 lw:1 lo:1 fc:#fff
+circle 260 60 4
+</oo>
+
+Solid red circle in Fig. <a href="#fig:fig:vsf-boxchar">1</a> means that $f_{\rm BC}$ has value of $A$ at that position, while empty or white circle means that $f_{\rm BC}$ does not have value of $A$.
+
+
+## Step function
+Function composed of several functions boxcar $f_{\rm BC}(x)$ is a step function $f_{\rm S}(x)$. Or we can say that a step function $f_{\rm S}(x)$ is a finite linear combination of boxcar functions $f_{\rm BC}(x)$ of intervals, which is simply
+
+\begin{equation}
+\label{eqn:vsf-step-function}
+{\rm step}(x) = \sum_{i = 1}^N f_{{\rm BC}, i}(x),
+\end{equation}
+
+where each $f_{{\rm BC}, i}(x)$ has its own values of $A$, $a$, and $b$.
+ 
 
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Step function", Wikipedia, The Free Encyclopedia, 21 Apr 2020, 04:27 UTC, <https://en.wikipedia.org/w/index.php?oldid=952221804> [20200915].
