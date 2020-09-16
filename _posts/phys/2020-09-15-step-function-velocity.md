@@ -1,7 +1,7 @@
 ---
 layout: post
 author: viridi
-title: velocity step function
+title: step function velocity
 mathjax: true
 ptext: false
 x3dom: false
@@ -10,7 +10,7 @@ oo: true
 category: physics
 tags: ["topics"]
 date: 2020-09-15 22:08:00 +07
-permalink: /physics/velocity-step-function
+permalink: /physics/step-function-velocity
 ---
 There is a type of linear motion (LM) composed of some [uniform linear motions](uniform-linear-motion) (ULMs), which is different than the nonuniform linear motion (NULM). Velocity function $v(t)$ of this type of LM is simply a step function [[1](#ref1)]. Or it can said that each ULM is a boxcar function [[2](#ref2)].
 
@@ -242,14 +242,74 @@ instead of Eqn. \eqref{eqn:vsf-step-function}. We will use notation similar to E
 
 
 ## Uniform linear motion in each interval
-We will call type of motion discussed in this part as velocity step function or composition of ULM (in some books this topic is a part of ULM without any additional name). An ULM $v_n(x)$ in an interval $t_n \le t \lt t_{n + 1}$ is simply
+We refer the type of motion discussed in this part as step function velocity or step function ULM (in some books this topic is a part of ULM without any additional name). An ULM $v_n(x)$ in an interval $t_n \le t \lt t_{n + 1}$ is simply
 
 \begin{equation}
-\label{eqn:vsf-uniform-linear-motion}
-v_n(x) = v_{0n},
+\label{eqn:vsf-ulm-v}
+v_n(t) = v_{0n},
 \end{equation}
 
-where $v_{0n}$ is a constant value at $n$-th interval.
+where $v_{0n}$ is a constant value at $n$-th interval. And velocty function will be
+
+\begin{equation}
+\label{eqn:vsf-ulm-v-function}
+v(t) = \sum_{i = 1}^N v_n(x),
+\end{equation}
+
+if there are $N$ intervals.
+
+<oo>
+svg 400 320 #fafafa fig:vsf-step|A step function velocity of five intervals.
+
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 20 20 380 300 40 40
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+arrow 20 180 380 180
+arrow 20 180 20 20
+line 20 205 20 300
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 20 180 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 386 183 t
+text 18 14 v
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 1 305 -3
+text 1 265 -2
+text 1 225 -1
+text 5 185 0
+text 5 145 1
+text 5 105 2
+text 5 65 3
+text 15 197 0
+text 55 197 1
+text 95 197 2
+text 135 197 3
+text 175 197 4
+text 215 197 5
+text 255 197 6
+text 295 197 7
+text 335 197 8
+
+style lc:#f44 ls:6-4-2-4 lw:1 lo:1
+line 100 260 100 20
+line 140 20 140 180
+line 260 20 260 100
+style lc:#f00 ls:0 lw:2 lo:1
+line 20 260 100 260
+line 100 20 140 20
+line 140 180 180 180
+	line 260 100 340 100
+style lc:#f00 ls:0 lw:1 lo:1 fc:#f00
+circle 20 260 4
+circle 100 20 4
+circle 140 180 4
+	circle 260 100 4
+style lc:#f00 ls:0 lw:1 lo:1 fc:#fff
+circle 100 260 4
+circle 140 20 4
+circle 180 180 4
+	circle 340 100 4
+</oo>
 
 
 ## Exercises
@@ -262,4 +322,4 @@ where $v_{0n}$ is a constant value at $n$-th interval.
 1. <a name="ref1"></a>Wikipedia contributors, "Step function", Wikipedia, The Free Encyclopedia, 21 Apr 2020, 04:27 UTC, <https://en.wikipedia.org/w/index.php?oldid=952221804> [20200915].
 2. <a name="ref2"></a>Wikipedia contributors, "Boxcar function", Wikipedia, The Free Encyclopedia, 1 Aug 2020, 03:12 UTC, <https://en.wikipedia.org/w/index.php?oldid=852898903> [20200915].
 
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-09-15-velocity-step-function.md)
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-09-15-step-function-velocity.md)
