@@ -76,7 +76,7 @@ Function composed of several functions boxcar $f_{\rm BC}(x)$ is a step function
 where each $f_{ {\rm BC}, i}(x)$ has its own values of $A_i$, $a_i$, and $b_i$.
 
 <oo>
-svg 400 200 #fafafa fig:vsf-step|A step function $f_{\rm S}(x)$.
+svg 400 200 #fafafa fig:vsf-step|A step function $f_{\rm S}(x)$ of four intervals.
 
 style lc:#000 ls:6-2 lw:0.3 lo:0.8
 grid 20 20 380 180 40 40
@@ -126,6 +126,8 @@ circle 220 140 4
 circle 260 20 4
 circle 340 100 4
 </oo>
+
+Step function $f_{\rm S}(x)$ in Fig. <a href="#fig:fig:vsf-step">3</a> requires $A_1 = 3$, $a_1 = 0$, $b_1 = 2$; $A_2 = 1$, $a_2 = 2$, $b_2 = 5$; $A_3 = 4$, $a_3 = 5$, $b_3 = 6$; and $A_4 = 2$, $a_4 = 6$, $b_4 = 8$. 
 
 
 ## Exercises
