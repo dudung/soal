@@ -19,7 +19,7 @@ title: butiran
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  searchResultTemplate: '<tt><a href="{url}" tabindex="1">{title}</a></tt>',
+  searchResultTemplate: '<tt><a href="{url}" tabindex="1">{title}</a></tt> ',
   noResultsText: 'No results found!',
   json: '/search.json',
 })
