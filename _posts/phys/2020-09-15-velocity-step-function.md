@@ -73,7 +73,11 @@ Function composed of several functions boxcar $f_{\rm BC}(x)$ is a step function
 {\rm step}(x) = \sum_{i = 1}^N f_{ {\rm BC}, i}(x),
 \end{equation}
 
-where each $f_{ {\rm BC}, i}(x)$ has its own values of $A_i$, $a_$, and $b_i$.
+where each $f_{ {\rm BC}, i}(x)$ has its own values of $A_i$, $a_i$, and $b_i$.
+
+
+## Exercises
+1. Suppose that there are two boxcar function with $A_1 = 2$, $a_1 = 1$, $b_1 = 2$ and $A_1 = -2$, $a_1 = 2$, $b_1 = 3$, 
 
 
 ## References
