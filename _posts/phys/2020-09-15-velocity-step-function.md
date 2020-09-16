@@ -75,6 +75,58 @@ Function composed of several functions boxcar $f_{\rm BC}(x)$ is a step function
 
 where each $f_{ {\rm BC}, i}(x)$ has its own values of $A_i$, $a_i$, and $b_i$.
 
+<oo>
+svg 400 200 #fafafa fig:vsf-step|A step function $f_{\rm S}(x)$.
+
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 20 20 380 180 40 40
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+arrow 20 180 380 180
+arrow 20 180 20 20
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 20 180 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 386 183 x
+text 18 14 f
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 24 16 S
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 5 185 0
+text 5 145 1
+text 5 105 2
+text 5 65 3
+text 15 197 0
+text 55 197 1
+text 95 197 2
+text 135 197 3
+text 175 197 4
+text 215 197 5
+text 255 197 6
+text 295 197 7
+text 335 197 8
+
+	style lc:#f44 ls:6-4-2-4 lw:1 lo:1
+	line 20 60 380 60
+	line 140 180 140 60
+	line 260 180 260 60
+
+style lc:#f00 ls:0 lw:2 lo:1
+line 20 60 100 60
+line 100 140 220 140
+line 220 20 260 20
+line 260 100 340 100
+style lc:#f00 ls:0 lw:1 lo:1 fc:#f00
+circle 20 60 4
+circle 100 140 4
+circle 220 20 4
+circle 260 100 4
+style lc:#f00 ls:0 lw:1 lo:1 fc:#fff
+circle 100 60 4
+circle 220 140 4
+circle 260 20 4
+circle 340 100 4
+</oo>
+
 
 ## Exercises
 1. Suppose that there are two boxcar function with $A_1 = 2$, $a_1 = 1$, $b_1 = 2$ and $A_1 = -2$, $a_1 = 2$, $b_1 = 3$, 
