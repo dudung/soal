@@ -62,9 +62,7 @@ style lc:#f00 ls:0 lw:1 lo:1 fc:#fff
 circle 260 60 4
 </oo>
 
-Solid red circle in Fig. <a href="#fig:fig:vsf-boxchar">1</a> means that $f_{\rm BC}$ has value of $A$ at that position, while empty or white circle means that $f_{\rm BC}$ does not have value of $A$.
-
-{% comment %}
+Solid red circle in Fig. <a href="#fig:fig:vsf-boxchar">1</a> means that $f_{\rm BC}$ has value of $A$ at that position, while empty or white circle means that $f _{\rm BC}$ does not have value of $A$.
 
 
 ## Step function
@@ -72,13 +70,11 @@ Function composed of several functions boxcar $f_{\rm BC}(x)$ is a step function
 
 \begin{equation}
 \label{eqn:vsf-step-function}
-{\rm step}(x) = \sum_{i = 1}^N f_{\rm BC}(x),
+{\rm step}(x) = \sum_{i = 1}^N f_{ {\rm BC}, i}(x),
 \end{equation}
 
-where each $f_{{\rm BC}, i}(x)$ has its own values of $A$, $a$, and $b$.
+where each $f_{ {\rm BC}, i}(x)$ has its own values of $A_i$, $a_$, and $b_i$.
 
-{% endcomment %}
- 
 
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Step function", Wikipedia, The Free Encyclopedia, 21 Apr 2020, 04:27 UTC, <https://en.wikipedia.org/w/index.php?oldid=952221804> [20200915].
