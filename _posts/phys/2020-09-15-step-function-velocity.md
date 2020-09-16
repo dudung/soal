@@ -259,7 +259,7 @@ v(t) = \sum_{i = 1}^N v_n(x),
 if there are $N$ intervals.
 
 <oo>
-svg 400 320 #fafafa fig:vsf-step|A step function velocity of five intervals.
+svg 400 320 #fafafa fig:vsf-step-5-intv|A step function velocity of five intervals.
 
 style lc:#000 ls:6-2 lw:0.3 lo:0.8
 grid 20 20 380 300 40 40
@@ -293,29 +293,38 @@ text 335 197 8
 style lc:#f44 ls:6-4-2-4 lw:1 lo:1
 line 100 260 100 20
 line 140 20 140 180
-line 260 20 260 100
+line 180 180 180 220
+line 300 220 300 60
+line 340 60 340 180
 style lc:#f00 ls:0 lw:2 lo:1
 line 20 260 100 260
 line 100 20 140 20
 line 140 180 180 180
-	line 260 100 340 100
+line 180 220 300 220
+line 300 60 340 60
 style lc:#f00 ls:0 lw:1 lo:1 fc:#f00
 circle 20 260 4
 circle 100 20 4
 circle 140 180 4
-	circle 260 100 4
+circle 180 220 4
+circle 300 60 4
 style lc:#f00 ls:0 lw:1 lo:1 fc:#fff
 circle 100 260 4
 circle 140 20 4
 circle 180 180 4
-	circle 340 100 4
+circle 300 220 4
+circle 340 60 4
 </oo>
+
+Example of step function velocity of five intervals is given in Fig. <a href="#fig:vsf-step-5-intv">4</a>.
 
 
 ## Exercises
 1. Suppose that there are two boxcar function with $A_1 = 2$, $a_1 = 1$, $b_1 = 2$ and $A_2 = -2$, $a_2 = 2$, $b_2 = 3$, draw the functions, each in a separated graph.
 2. Wite the equation of each boxchar funtion $f_{ {\rm BC}, 1}$, $f_{ {\rm BC}, 2}$, and $f_{ {\rm BC}, 3}$ in Fig. <a href="#fig:fig:vsf-boxchar-example">2</a>.
 3. What are the values of $f(7)$,  $f(1)$, and  $f(4)$ from the step function in Fig. <a href="#fig:vsf-step">3</a>?
+4. Please write the equation of step function velocity $v(t)$ from graph shown in Fig. <a href="#fig:vsf-step-5-intv">4</a>.
+5. Could you also calculate the total displacement of object $\Delta x$ from $t = 0$ to $t = 8 \ \rm s$, whose velocity function is given in Fig. <a href="#fig:vsf-step-5-intv">4</a>? Calculate it if you are able to do that.
 
 
 ## References
