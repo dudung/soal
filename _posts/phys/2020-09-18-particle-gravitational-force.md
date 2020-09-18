@@ -102,6 +102,12 @@ $$
 Note hat we use $\hat{x}$, $\hat{y}$, and $\hat{z}$ instead of $\hat{i}$, $\hat{j}$, and $\hat{k}$ in Eqn. \eqref{eqn:pgf-force-equation-component} to avoid confusion with particle index $i$ and $j$.
 
 
+## Proposed implementation
+In order to calculate Eqn. \eqref{eqn:pgf-force-equation} or \eqref{eqn:pgf-force-equation-component} numerically, there are some approaches. We will discuss only a conventional and an object oriented programming approach to differ them.
+
+
+
+
 ## Exercises
 1. By equating Eqns. \eqref{eqn:pgf-force-equation} and \eqref{eqn:pgf-force-equation-component}, show the steps to produce Eqns. \eqref{eqn:pgf-force-equation-components-x} - \eqref{eqn:pgf-force-equation-components-z}.
 2. Give your comments, which equation is easier to implement in programming, Eqn. \eqref{eqn:pgf-force-equation} or \eqref{eqn:pgf-force-equation-component}, when you use conventional programming and when you use object oriented programming (OOP).
