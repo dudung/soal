@@ -41,7 +41,70 @@ the directon of the force must be first understood, because it gives only the ma
 
 
 ## Relative position
-Since gravitational force works only along the line connected the two masses, $m_i$ and $m_j$, 
+Gravitational force works only along the line connected the two masses, $m_i$ and $m_j$ or force direction is parallel to this line. The direction is given by unit vector $\hat{r}_{ij}$, which is calculated from
+
+\begin{equation}
+\label{eqn:pgf-relative-position-unit}
+\hat{r}_{ij} = \frac{\vec{r} _{ij}}{r _{ij}},
+\end{equation}
+
+where
+
+\begin{equation}
+\label{eqn:pgf-relative-position}
+\vec{r}_{ij} = \vec{r}_i - \vec{r}_j
+\end{equation}
+
+is relative position or position of mass $m_i$ relative to position of mass $m_j$ and
+
+\begin{equation}
+\label{eqn:pgf-relative-position-magnitude}
+r_{ij} = | \vec{r} _{ij} | = \sqrt{\vec{r} _{ij} \cdot \vec{r} _{ij}}
+\end{equation}
+
+is seperation distance between mass $m_i$ and $m_j$.
+
+
+## Force components
+Eqn. \eqref{eqn:pgf-force-equation} can also be written using its components in each direction, $x$, $y$, and $z$,
+
+\begin{equation}
+\label{eqn:pgf-force-equation-component}
+\vec{F}_{ij} = F _{ij,x} \ \hat{x} + F _{ij,y} \ \hat{y} + F _{ij,z} \ \hat{z},
+\end{equation}
+
+with
+
+$$
+\begin{eqnarray}
+\label{eqn:pgf-force-equation-components-x}
+F _{ij,x} & = & -G \left( \frac{m_i m_j}{x _{ij}^2 + y _{ij}^2 + z _{ij}^2} \right) \left( \frac{x_{ij}}{\sqrt{x_{ij}^2 + y_{ij}^2 + z _{ij}^2}} \right), \\[0.5em]
+\label{eqn:pgf-force-equation-components-y}
+F _{ij,y} & = & -G \left( \frac{m_i m_j}{x _{ij}^2 + y _{ij}^2 + z _{ij}^2} \right) \left( \frac{y_{ij}}{\sqrt{x_{ij}^2 + y_{ij}^2 + z _{ij}^2}} \right), \\[0.5em]
+\label{eqn:pgf-force-equation-components-z}
+F _{ij,z} & = & -G \left( \frac{m_i m_j}{x _{ij}^2 + y _{ij}^2 + z _{ij}^2} \right) \left( \frac{z_{ij}}{\sqrt{x_{ij}^2 + y_{ij}^2 + z _{ij}^2}} \right).
+\end{eqnarray}
+$$
+
+And similar to Eqn. \eqref{eqn:pgf-relative-position}
+
+$$
+\begin{eqnarray}
+\label{eqn:pgf-relative-position-x}
+x_{ij} & = & x_i - x_j, \\[0.5em]
+\label{eqn:pgf-relative-position-y}
+y_{ij} & = & y_i - y_j, \\[0.5em]
+\label{eqn:pgf-relative-position-z}
+z_{ij} & = & z_i - z_j.
+\end{eqnarray}
+$$
+
+Note hat we use $\hat{x}$, $\hat{y}$, and $\hat{z}$ instead of $\hat{i}$, $\hat{j}$, and $\hat{k}$ in Eqn. \eqref{eqn:pgf-force-equation-component} to avoid confusion with particle index $i$ and $j$.
+
+
+## Exercises
+1. By equating Eqns. \eqref{eqn:pgf-force-equation} and \eqref{eqn:pgf-force-equation-component}, show the steps to produce Eqns. \eqref{eqn:pgf-force-equation-components-x} - \eqref{eqn:pgf-force-equation-components-z}.
+2. Give your comments, which equation is easier to implement in programming, Eqn. \eqref{eqn:pgf-force-equation} or \eqref{eqn:pgf-force-equation-component}, when you use conventional programming and when you use object oriented programming (OOP).
 
 
 ## References
