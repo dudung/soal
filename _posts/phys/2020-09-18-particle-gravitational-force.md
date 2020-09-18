@@ -150,6 +150,7 @@ Can you see how compact the last code is? It seems simple since the complexity i
 3. Give your comments, which equation is easier to implement in programming, Eqn. \eqref{eqn:pgf-force-equation} or \eqref{eqn:pgf-force-equation-component}, when you use conventional programming and when you use object oriented programming (OOP).
 4. Propose your idea how the `Particle` class might be.
 5. Propose also about the `GravitationalForce` class.
+6. Have you any idea about gravitational force near surface of a planet? Explain in brief how is the formulation.
 
 
 ## References
