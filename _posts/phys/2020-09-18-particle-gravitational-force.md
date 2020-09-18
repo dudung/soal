@@ -103,9 +103,32 @@ Note hat we use $\hat{x}$, $\hat{y}$, and $\hat{z}$ instead of $\hat{i}$, $\hat{
 
 
 ## Proposed implementation
-In order to calculate Eqn. \eqref{eqn:pgf-force-equation} or \eqref{eqn:pgf-force-equation-component} numerically, there are some approaches. We will discuss only a conventional and an object oriented programming approach to differ them.
+In order to calculate Eqn. \eqref{eqn:pgf-force-equation} or \eqref{eqn:pgf-force-equation-component} numerically, there are some approaches. We will discuss only a conventional and an object oriented programming approach (OOP) to differ them. It is easier to illustrate first how to calculate Eqn. \eqref{eqn:pgf-force-equation-component}. We will use JavaScript (JS) programming language.
 
+```javascript
+var G = 6.6725985E-11; // m^3.kg^-1.s^-2
 
+var m1 = 8; // kg
+var x1 = 1; // m
+var y1 = 1; // m
+var z1 = 1; // m
+
+var m2 = 2; // kg
+var x2 = 5; // m
+var y2 = 1; // m
+var z2 = 1; // m
+
+var x12 = x1 - x2; // m
+var y12 = y1 - y2; // m
+var z12 = z1 - z2; // m
+
+var r12 = Math.sqrt(x12 * x12 + y12 * y12 + z12 * z12); // m
+var F12 = - G * (m1 * m2) / (r12 * r12); // N
+
+var F12x = F12 * x12 / r12; // N
+var F12y = F12 * y12 / r12; // N
+var F12z = F12 * z12 / r12; // N
+```
 
 
 ## Exercises
