@@ -102,7 +102,7 @@ $$
 Note hat we use $\hat{x}$, $\hat{y}$, and $\hat{z}$ instead of $\hat{i}$, $\hat{j}$, and $\hat{k}$ in Eqn. \eqref{eqn:pgf-force-equation-component} to avoid confusion with particle index $i$ and $j$.
 
 
-## Proposed implementation
+## Proposed numerical implementation
 In order to calculate Eqn. \eqref{eqn:pgf-force-equation} or \eqref{eqn:pgf-force-equation-component} numerically, there are some approaches. We will discuss only a conventional and an object oriented programming approach (OOP) to differ them. It is easier to illustrate first how to calculate Eqn. \eqref{eqn:pgf-force-equation-component}. We will use JavaScript (JS) programming language.
 
 ```javascript
@@ -130,10 +130,24 @@ var F12y = F12 * y12 / r12; // N
 var F12z = F12 * z12 / r12; // N
 ```
 
+Above code should be clear in explaining how to calculate Eqn. \eqref{eqn:pgf-force-equation-component} using Eqns. \eqref{eqn:pgf-force-equation-components-x} -  \eqref{eqn:pgf-relative-position-z}. And then see the following code.
+
+```javascript
+var Grav = new GravitationalForce({G: 6.6725985E-11});
+
+var p1 = new Particle({m: 8, r: {x: 1, y: 1, z: 1}});
+var p2 = new Particle({m: 2, r: {x: 5, y: 1, z: 1}});
+
+var F12 = Grav.force(p1, p2);
+```
+
+Can you see how compact the last code is? It seems simple since the complexity is hidden in the `GravitationalForce` and `Particle` classes.
+
 
 ## Exercises
 1. By equating Eqns. \eqref{eqn:pgf-force-equation} and \eqref{eqn:pgf-force-equation-component}, show the steps to produce Eqns. \eqref{eqn:pgf-force-equation-components-x} - \eqref{eqn:pgf-force-equation-components-z}.
-2. Give your comments, which equation is easier to implement in programming, Eqn. \eqref{eqn:pgf-force-equation} or \eqref{eqn:pgf-force-equation-component}, when you use conventional programming and when you use object oriented programming (OOP).
+2. Explain the first JS code which line is related to which equation. And what are the value of indices $i$ and $j$ in the code?
+3. Give your comments, which equation is easier to implement in programming, Eqn. \eqref{eqn:pgf-force-equation} or \eqref{eqn:pgf-force-equation-component}, when you use conventional programming and when you use object oriented programming (OOP).
 
 
 ## References
