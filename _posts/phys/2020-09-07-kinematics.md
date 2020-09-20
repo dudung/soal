@@ -16,7 +16,7 @@ In kinematics we learn about object motion without considering the cause of the 
 
 
 ## Types of motion
-In rectilinear motion or liniear motion, motion can be classified into three types based on its acceleration $a$, where the types are [uniform linear motion](uniform linear motion) ($a = 0$), uniform accelerated linear motion ($a = cte \ne 0$), and accelerated rectilinear motion ($a \ne cte$) [[3](#ref3)]. The cte term means constant [[4](#ref4)].
+In rectilinear motion or liniear motion, motion can be classified into three types based on its acceleration $a$, where the types are [uniform linear motion](uniform linear motion) ($a = 0$), uniform accelerated linear motion ($a = cte \ne 0$), and accelerated rectilinear motion ($a \ne cte$) [[3](#ref3)]. The cte term means constant, from the French word 'constante' [[4](#ref4)].
 
 
 ## References
