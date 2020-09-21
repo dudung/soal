@@ -15,6 +15,9 @@ permalink: /physics/acceleration
 Acceleration..
 
 {% comment %}
+
+https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/
+
 Position [[1](#ref1)], relative position [[2](#ref2)], displacement [[3](#ref3)], distance [[4](#ref4)], and path length [[5](#ref5)]  will be discussed here. These concepts are important in any types of motion in physics, but sometimes the relation between them are still confusing. Even in one dimension, magnitude of dispacement may or may not equal to distance [[6](#ref6)].
 
 ## Notation

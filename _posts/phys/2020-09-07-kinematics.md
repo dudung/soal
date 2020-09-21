@@ -25,6 +25,4 @@ In rectilinear motion or liniear motion, motion can be classified into three typ
 3. <a name="ref3"></a>José L. Fernández, "Types of Motions According to the Acceleration", Fisicalab, url <https://www.fisicalab.com/en/section/motion-according-to-acceleration> [20200919].
 4. <a name="ref4"></a>David Giraudo, "Answer to 'Question on a French math text by P. Masani'", Mathematics, 13 May 2013, url <https://math.stackexchange.com/a/390623> [20200919].
 
-
-
-+ [Article history](https://github.com/dudung/butiran/commits/master/docs/_posts/phys/2020-09-07-kinematics.md)
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-09-07-kinematics.md)
