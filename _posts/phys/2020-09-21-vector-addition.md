@@ -81,7 +81,7 @@ We will discuss first vectors in two-dimensional space since they are easier to 
 This method related to the two-dimensional form, i.e. parallelogram, that is constructed by the two vectors used as operands in the vector addition.
 
 <oo>
-svg 600 200 #fafafa fig:vadd-graph|Vectors $\vec{r}_1$ and $\vec{r}_2$, and addition of them to produce $\vec{r}_3$.
+svg 600 200 #fafafa fig:vadd-graph-parallelogram|Vectors $\vec{r}_1$ and $\vec{r}_2$, and addition of them to produce $\vec{r}_3$ with parallelogram method.
 
 // Cartesian 1
 style lc:#000 ls:6-2 lw:0.3 lo:0.8
@@ -194,11 +194,225 @@ style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:10px
 text 527 125 3
 </oo>
 
-Fig. <a href="#fig:vadd-graph">1</a> shows that $\vec{r}_1 = 3 \ \hat{x} + \hat{y}$, $\vec{r}_2 = \hat{x} + 2 \ \hat{y}$, and $\vec{r}_3 = 4 \ \hat{x} + 3 \ \hat{y}$. The result of $\vec{r}_3$ is simply according to Eqns. \eqref{eqn:vadd-addition-x} and \eqref{eqn:vadd-addition-y}. This graphical method known as parallelogram method. You can find tutorial about this method [[3](#ref3)]. You can see in Fig. <a href="#fig:vadd-graph">1</a> that vector $\vec{r}_1$ (solid green line) with its pair (dashed green line) and vector $\vec{r}_2$ (solid blue line) with its pair (dashed blue line) construct a parallelogram where the result is simply the diagonal between the two vectors (solid red line).
+Fig. <a href="#fig:vadd-graph-parallelogram">1</a> shows that $\vec{r}_1 = 3 \ \hat{x} + \hat{y}$, $\vec{r}_2 = \hat{x} + 2 \ \hat{y}$, and $\vec{r}_3 = 4 \ \hat{x} + 3 \ \hat{y}$. The result of $\vec{r}_3$ is simply according to Eqns. \eqref{eqn:vadd-addition-x} and \eqref{eqn:vadd-addition-y}. This graphical method known as parallelogram method. You can find tutorial about this method [[3](#ref3)]. You can see in Fig. <a href="#fig:vadd-graph-parallelogram">1</a> that vector $\vec{r}_1$ (solid green line) with its pair (dashed green line) and vector $\vec{r}_2$ (solid blue line) with its pair (dashed blue line) construct a parallelogram where the result is simply the diagonal between the two vectors (solid red line).
 
 ### Polygon method
-In this method, which is simply put end of a vector to to front of another vector [[4](#ref4)]
+In this method, which is simply put start point of a vector to end point of another vector [[4](#ref4)].
 
+<oo>
+svg 600 200 #fafafa fig:vadd-graph-polygon|Vectors $\vec{r}_1$ and $\vec{r}_2$, and addition of them to produce $\vec{r}_3$ with polygon method.
+
+// Cartesian 1
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 20 20 180 180 40 40
+style lc:#000 ls:0 lw:1 lo:1
+arrow 20 180 180 180
+arrow 20 180 20 20
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 185 185 x
+text 20 12 y
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 15 197 0
+text 55 197 1
+text 95 197 2
+text 135 197 3
+text 5 185 0
+text 5 145 1
+text 5 105 2
+text 5 65 3
+
+// Vector 1
+style lc:#0c0 ls:0 lw:2 lo:1 fc:#0c0
+arrow 20 180 140 140
+style lc:#0c0 ls:6-4 lw:2 lo:1 fc:#0c0
+line 140 180 140 140
+line 140 140 20 140
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:16px
+text 100 170 r
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:10px
+text 107 175 1
+
+// Cartesian 2
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 220 20 380 180 40 40
+style lc:#000 ls:0 lw:1 lo:1
+arrow 220 180 380 180
+arrow 220 180 220 20
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 385 185 x
+text 220 12 y
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 215 197 0
+text 255 197 1
+text 295 197 2
+text 335 197 3
+text 205 185 0
+text 205 145 1
+text 205 105 2
+text 205 65 3
+
+// Vector 2
+style lc:#00f ls:0 lw:2 lo:1 fc:#00f
+arrow 220 180 260 100
+style lc:#00f ls:6-4 lw:2 lo:1 fc:#00f
+line 260 180 260 100
+line 220 100 260 100
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:16px
+text 225 125 r
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:10px
+text 232 130 2
+
+// Cartesian 3
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 420 20 580 180 40 40
+style lc:#000 ls:0 lw:1 lo:1
+arrow 420 180 580 180
+arrow 420 180 420 20
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 585 185 x
+text 420 12 y
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 415 197 0
+text 455 197 1
+text 495 197 2
+text 535 197 3
+text 405 185 0
+text 405 145 1
+text 405 105 2
+text 405 65 3
+
+// Vector 1 -- dashed
+style lc:#0c0 ls:0 lw:2 lo:1 fc:#0c0
+arrow 420 180 540 140
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:16px
+text 500 170 r
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:10px
+text 507 175 1
+
+// Vector 2 -- dased
+style lc:#00f ls:0 lw:2 lo:1 fc:#00f
+arrow 540 140 580 60
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:16px
+text 558 125 r
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:10px
+text 565 130 2
+
+// Vector 3 -- resultant
+style lc:#f00 ls:0 lw:2 lo:1 fc:#f00
+arrow 420 180 580 60
+style lc:#f00 ls:6-4 lw:2 lo:1 fc:#f00
+line 580 180 580 60
+line 580 60 420 60
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:16px
+text 480 115 r
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:10px
+text 487 120 3
+</oo>
+
+Fig. <a href="#fig:vadd-graph-polygon">2</a> (right) show the difference of this method from the previous one. The start point of vector $\vec{r}_2$ is put to the end point of vector $\vec{r}_1$ and the result is from start point of the first vector to the end point of the last vector. The given example of addition of two vectors does not really show the difference between this two methods. It requires more vectors to show the advantage of the second method compared the first one.
+
+### Addition of four vectors
+As an example, we will considered four vectors that their sum or resultant will be calculated. Not all vector are drawn simultaneously in Fig. <a href="#fig:vadd-graph-parallelogram-4v">3</a>, but only one additional vector in each graph.
+
+<oo>
+svg 600 200 #fafafa fig:vadd-graph-parallelogram-4v|Addition of four vectors, $\vec{r}_1$, $\vec{r}_2$, $\vec{r}_3$, $\vec{r}_4$ using parallelogram method.
+
+// Cartesian 1
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 20 20 180 180 40 40
+style lc:#000 ls:0 lw:1 lo:1
+arrow 20 180 180 180
+arrow 20 180 20 20
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 185 185 x
+text 20 12 y
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 15 197 0
+text 55 197 1
+text 95 197 2
+text 135 197 3
+text 5 185 0
+text 5 145 1
+text 5 105 2
+text 5 65 3
+
+style lc:#0c0 ls:0 lw:2 lo:1 fc:#0c0
+arrow 20 180 100 140
+style lc:#0c0 ls:6-4 lw:2 lo:1 fc:#0c0
+line 20 140 100 100
+
+style lc:#f00 ls:0 lw:2 lo:1 fc:#f00
+arrow 20 180 20 140
+style lc:#f00 ls:6-4 lw:2 lo:1 fc:#f00
+line 100 140 100 100
+
+style lc:#00f ls:0 lw:2 lo:1 fc:#00f
+arrow 20 180 100 100
+
+// Cartesian 2
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 220 20 380 180 40 40
+style lc:#000 ls:0 lw:1 lo:1
+arrow 220 180 380 180
+arrow 220 180 220 20
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 385 185 x
+text 220 12 y
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 215 197 0
+text 255 197 1
+text 295 197 2
+text 335 197 3
+text 205 185 0
+text 205 145 1
+text 205 105 2
+text 205 65 3
+
+style lc:#00f ls:0 lw:2 lo:1 fc:#00f
+arrow 220 180 300 100
+style lc:#00f ls:6-4 lw:2 lo:1 fc:#00f
+line 260 180 340 100
+
+style lc:#f0f ls:0 lw:2 lo:1 fc:#f0f
+arrow 220 180 260 180
+style lc:#f0f ls:6-4 lw:2 lo:1 fc:#f0f
+line 300 100 340 100
+
+style lc:#ce0 ls:0 lw:2 lo:1 fc:#ce0
+arrow 220 180 340 100
+
+// Cartesian 3
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 420 20 580 180 40 40
+style lc:#000 ls:0 lw:1 lo:1
+arrow 420 180 580 180
+arrow 420 180 420 20
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 585 185 x
+text 420 12 y
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 415 197 0
+text 455 197 1
+text 495 197 2
+text 535 197 3
+text 405 185 0
+text 405 145 1
+text 405 105 2
+text 405 65 3
+
+style lc:#ce0 ls:0 lw:2 lo:1 fc:#ce0
+arrow 420 180 540 100
+style lc:#ce0 ls:6-4 lw:2 lo:1 fc:#ce0
+line 460 100 580 20
+
+style lc:#f88 ls:0 lw:2 lo:1 fc:#f88
+arrow 420 180 460 100
+style lc:#f88 ls:6-4 lw:2 lo:1 fc:#f88
+line 540 100 580 20
+
+style lc:#8b8 ls:0 lw:2 lo:1 fc:#8b8
+arrow 420 180 580 20
+</oo>
 
 ## Exercises
 1. Using similar way as in Eqn. \eqref{eqn:vadd-addition-result}, find formulation for $C_x$ and $C_y$, if $\vec{C} = \vec{A} + \vec{B}$. Use $\vec{A} = A_x \ \hat{x} + A_y \ \hat{y}$, $\vec{B} = B_x \ \hat{x} + B_y \ \hat{y}$, and $\vec{C} = C_x \ \hat{x} + C_y \ \hat{y}$.
