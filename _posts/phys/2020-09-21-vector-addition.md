@@ -75,7 +75,10 @@ with $i = 1, 2, 3$ as in Eqns. \eqref{eqn:vadd-r1} - \eqref{eqn:vadd-addition}. 
 
 
 ## Graphical addition
-We will discuss first vectors in two-dimensional space since they are easier to visualize than the one in three-dimensional space. The vectors are $\vec{r}_1$ and $\vec{r}_2$ as described in Eqns \eqref{eqn:vadd-r1} and \eqref{eqn:vadd-r2}.
+We will discuss first vectors in two-dimensional space since they are easier to visualize than the one in three-dimensional space. The vectors are $\vec{r}_1$ and $\vec{r}_2$ as described in Eqns \eqref{eqn:vadd-r1} and \eqref{eqn:vadd-r2}. Two methods will discussed in this part.
+
+### Parallelogram method
+This method related to the two-dimensional form, i.e. parallelogram, that is constructed by the two vectors used as operands in the vector addition.
 
 <oo>
 svg 600 200 #fafafa fig:vadd-graph|Vectors $\vec{r}_1$ and $\vec{r}_2$, and addition of them to produce $\vec{r}_3$.
@@ -105,6 +108,10 @@ arrow 20 180 140 140
 style lc:#0c0 ls:6-4 lw:2 lo:1 fc:#0c0
 line 140 180 140 140
 line 140 140 20 140
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:16px
+text 100 170 r
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:10px
+text 107 175 1
 
 // Cartesian 2
 style lc:#000 ls:6-2 lw:0.3 lo:0.8
@@ -131,6 +138,10 @@ arrow 220 180 260 100
 style lc:#00f ls:6-4 lw:2 lo:1 fc:#00f
 line 260 180 260 100
 line 220 100 260 100
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:16px
+text 225 125 r
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:10px
+text 232 130 2
 
 // Cartesian 3
 style lc:#000 ls:6-2 lw:0.3 lo:0.8
@@ -156,23 +167,37 @@ style lc:#0c0 ls:0 lw:2 lo:1 fc:#0c0
 arrow 420 180 540 140
 style lc:#0c0 ls:6-4 lw:2 lo:1 fc:#0c0
 line 460 100 580 60
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:16px
+text 500 170 r
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:10px
+text 507 175 1
 
 // Vector 2 -- dased
 style lc:#00f ls:0 lw:2 lo:1 fc:#00f
 arrow 420 180 460 100
 style lc:#00f ls:6-4 lw:2 lo:1 fc:#00f
 line 540 140 580 60
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:16px
+text 425 125 r
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:10px
+text 432 130 2
 
 // Vector 3 -- resultant
 style lc:#f00 ls:0 lw:2 lo:1 fc:#f00
 arrow 420 180 580 60
-
 style lc:#f00 ls:6-4 lw:2 lo:1 fc:#f00
 line 580 180 580 60
 line 580 60 420 60
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:16px
+text 520 120 r
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:10px
+text 527 125 3
 </oo>
 
-Fig. <a href="#fig:vadd-graph">1</a> shows that $\vec{r}_1 = 3 \ \hat{x} + \hat{y}$, $\vec{r}_2 = \hat{x} + 2 \ \hat{y}$, and $\vec{r}_3 = 4 \ \hat{x} + 3 \ \hat{y}$. The result of $\vec{r}_3$ is simply according to Eqns. \eqref{eqn:vadd-addition-x} and \eqref{eqn:vadd-addition-y}. This graphical method known as parallelogram method.
+Fig. <a href="#fig:vadd-graph">1</a> shows that $\vec{r}_1 = 3 \ \hat{x} + \hat{y}$, $\vec{r}_2 = \hat{x} + 2 \ \hat{y}$, and $\vec{r}_3 = 4 \ \hat{x} + 3 \ \hat{y}$. The result of $\vec{r}_3$ is simply according to Eqns. \eqref{eqn:vadd-addition-x} and \eqref{eqn:vadd-addition-y}. This graphical method known as parallelogram method. You can find tutorial about this method [[3](#ref3)]. You can see in Fig. <a href="#fig:vadd-graph">1</a> that vector $\vec{r}_1$ (solid green line) with its pair (dashed green line) and vector $\vec{r}_2$ (solid blue line) with its pair (dashed blue line) construct a parallelogram where the result is simply the diagonal between the two vectors (solid red line).
+
+### Polygon method
+In this method, which is simply put end of a vector to to front of another vector [[4](#ref4)]
 
 
 ## Exercises
@@ -185,6 +210,8 @@ Fig. <a href="#fig:vadd-graph">1</a> shows that $\vec{r}_1 = 3 \ \hat{x} + \hat{
 ## References
 1. <a name="ref1"></a>Carl R. Nave, "Graphical Vector Addition", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/vect.html#vec1> [20200921].
 2. <a name="ref2"></a>Eric W. Weisstein, "Vector Addition", from MathWorld--A Wolfram Web Resource, url  <https://mathworld.wolfram.com/VectorAddition.html> [20200921].
+3. <a name="ref3"></a>Math and Stats Help, "Find the Resultant Force using the Parallelogram Method", YouTube, 18.11.2019, url <https://www.youtube.com/watch?v=WhHO77rEIfk> [20200921].
+4. <a name="ref4"></a>Simon Plus, "Episode 5: Polygon Method for Vector Addition", YouTube, 24.04.2017, url <https://www.youtube.com/watch?v=r-iKebb2FIg> [20200921].
 
 
 
