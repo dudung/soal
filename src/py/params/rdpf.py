@@ -9,6 +9,7 @@
 # 1723 Collect references [1-4].
 # 1735 Test simple args and add [5].
 # 1751 Get newline problem in printing output.
+# 1828 Solve it using python 3 [6].
 # 
 # References
 # 1. agold, "Asnwer to 'Python file naming convention?'", 
@@ -25,6 +26,9 @@
 #    /argument-parsing-in-python [20200922].
 # 5. -, "Open a File on the Server", W3Schools, url https://www
 #    .w3schools.com/python/python_file_open.asp [20200922].
+# 6. codelogic, "Answer to 'How to print without newline or
+#    space?'", StackOverflow, 29 Jan 2009, url https://
+#    stackoverflow.com/a/493399 [20200922].
 # 
 
 import sys
@@ -40,4 +44,4 @@ fp = open(fn, "r")
 
 # Show parameters
 for line in fp:
-	print(line + "")
+	print(line, end="")

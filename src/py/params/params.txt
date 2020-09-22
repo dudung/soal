@@ -1,3 +1,5 @@
+TITL 2d-Lissajous pattern generator
+
 AMPX 1
 TPEX 1
 PHAX 0
