@@ -1,15 +1,18 @@
 # 
 # rdpf.py
-# Read parameters file
+# Read parameters file and show its content
 # 
 # Sparisoma Viridi | https://github.com/dudung
+# 
+# Execute: python3 rdpf.py params.txt
 # 
 # 20200922
 # 1637 Start this example.
 # 1723 Collect references [1-4].
 # 1735 Test simple args and add [5].
 # 1751 Get newline problem in printing output.
-# 1828 Solve it using python 3 [6].
+# 1828 Solve it using Python 3 [6].
+# 1916 Finalize comments.
 # 
 # References
 # 1. agold, "Asnwer to 'Python file naming convention?'", 
@@ -31,6 +34,7 @@
 #    stackoverflow.com/a/493399 [20200922].
 # 
 
+# Import necessary modules
 import sys
 
 # Get command line arguments
@@ -42,6 +46,9 @@ fn = argv[1]
 # Open parameters file
 fp = open(fn, "r")
 
-# Show parameters
+# Show parameters line by line
 for line in fp:
 	print(line, end="")
+
+# Close file
+fp.close()
