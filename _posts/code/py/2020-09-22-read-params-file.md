@@ -2,7 +2,7 @@
 layout: post
 author: viridi
 title: read params file
-mathjax: false
+mathjax: true
 ptext: false
 x3dom: false
 threejs: false
@@ -130,7 +130,43 @@ as expected.
 
 ## Exercises
 1. Modify `params.txt` and see the output result.
-2. 
+2. Type following code and show the result.
+```python
+import sys
+argv = sys.argv
+fn = argv[1]
+fp = open(fn, "r")
+params = []
+for line in fp:
+	line2 = line.rstrip("\n")
+	params.append(line2)
+fp.close()
+for p in params:
+	b = p.split();
+	if b:
+		print("Name = ", b[0])
+		print("Value = ", b[1])
+```
+3. Explain the last 6 lines from previous code. Modify it in order to produce
+```batch
+TITL = 2d-Lissajous pattern generator
+AMPX = 1
+TPEX = 1
+..
+TSTP = 0.1
+```
+4. Following equations is necessary for creating 2-d Lissajous pattern.
+\begin{equation}
+\label{eqn:pyrdpf-x}
+x(t) = A_x \sin \left( \frac{2\pi}{T_x} t + \phi_x \right)
+\end{equation}
+and
+\begin{equation}
+\label{eqn:pyrdpf-y}
+y(t) = A_y \sin \left( \frac{2\pi}{T_y} t + \phi_y \right).
+\end{equation}
+Map the relation beween parameters in Eqns. \eqref{eqn:pyrdpf-x} and \eqref{eqn:pyrdpf-y}, e.g. $A_x$, $\dots$, $\phi_y$, to parameters in `params.txt` file., e.g. `AMPX`, $\dots$, `PHAY`.
+5. Design your own parameters file and explain the use of each line in that file.
 
 
 ## References
