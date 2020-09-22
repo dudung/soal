@@ -1,4 +1,4 @@
-TITL 2d-Lissajous pattern generator
+TITL 2d-Lissajous-pattern-generator
 
 AMPX 1
 TPEX 1

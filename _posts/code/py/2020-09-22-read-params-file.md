@@ -19,7 +19,7 @@ An example of Python 3 code is discussed in here. It is named in lower case [[1]
 A plain text file containing parameters, named `params.txt` in this case, has following content.
 
 ```javascript
-TITL 2d-Lissajous pattern generator
+TITL 2d-Lissajous-pattern-generator
 
 AMPX 1
 TPEX 1
@@ -110,7 +110,7 @@ $ python3 rdpf.py params.txt
 and will produce
 
 ```javascript
-TITL 2d-Lissajous pattern generator
+TITL 2d-Lissajous-pattern-generator
 
 AMPX 1
 TPEX 1
@@ -129,7 +129,8 @@ as expected.
 
 
 ## Exercises
-1. 
+1. Modify `params.txt` and see the output result.
+2. 
 
 
 ## References
