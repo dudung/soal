@@ -312,7 +312,7 @@ text 487 120 3
 Fig. <a href="#fig:vadd-graph-polygon">2</a> (right) show the difference of this method from the previous one. The start point of vector $\vec{r}_2$ is put to the end point of vector $\vec{r}_1$ and the result is from start point of the first vector to the end point of the last vector. The given example of addition of two vectors does not really show the difference between this two methods. It requires more vectors to show the advantage of the second method compared the first one.
 
 ### Addition of four vectors
-As an example, we will considered four vectors that their sum or resultant will be calculated. Not all vector are drawn simultaneously in Fig. <a href="#fig:vadd-graph-parallelogram-4v">3</a>, but only one additional vector in each graph.
+As an example, we will considered four vectors that their sum or resultant will be calculated. Not all vector are drawn simultaneously in Fig. <a href="#fig:vadd-graph-parallelogram-4v">3</a>, but only one additional vector in each graph, in order showing how the method works.
 
 <oo>
 svg 600 200 #fafafa fig:vadd-graph-parallelogram-4v|Addition of four vectors, $\vec{r}_1$, $\vec{r}_2$, $\vec{r}_3$, $\vec{r}_4$ using parallelogram method.
@@ -412,13 +412,173 @@ line 540 100 580 20
 
 style lc:#8b8 ls:0 lw:2 lo:1 fc:#8b8
 arrow 420 180 580 20
+
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:16px
+text 5 160 r
+text 65 170 r
+text 65 100 r
+text 265 100 r
+text 232 192 r
+text 332 120 r
+text 532 120 r
+text 432 120 r
+text 520 20 r
+
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:10px
+text 12 163 1
+text 72 173 2
+text 72 103 1+2
+text 272 103 1+2
+text 239 195 3
+text 339 123 1+2+3
+text 539 123 1+2+3
+text 439 123 4
+text 527 23 1+2+3+4
 </oo>
+
+Fig. <a href="#fig:vadd-graph-parallelogram-4v">3</a> shows the results of $\vec{r} _{1+2} = \vec{r}_1 + \vec{r}_2$ (left), $\vec{r} _{1+2+3} = \vec{r}_3 + \vec{r} _{1+2}$ (center), and $\vec{r} _{1+2+3+4} = \vec{r}_4 + \vec{r} _{1+2+3}$ (right), where in each step only one vector is added to the other. Actually, we can also do in another way, e.g. $(\vec{r}_1 + \vec{r}_2) + (\vec{r}_3 + \vec{r}_4) = \vec{r} _{1+2} + \vec{r} _{3+4} = \vec{r} _{1+2+3+4}$.
+
+Now let's see how the polygon method works for those four vectors.
+
+<oo>
+svg 600 200 #fafafa fig:vadd-graph-polygon-4v|Addition of four vectors, $\vec{r}_1$, $\vec{r}_2$, $\vec{r}_3$, $\vec{r}_4$ using polygon method.
+
+// Cartesian 1
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 20 20 180 180 40 40
+style lc:#000 ls:0 lw:1 lo:1
+arrow 20 180 180 180
+arrow 20 180 20 20
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 185 185 x
+text 20 12 y
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 15 197 0
+text 55 197 1
+text 95 197 2
+text 135 197 3
+text 5 185 0
+text 5 145 1
+text 5 105 2
+text 5 65 3
+
+style lc:#0c0 ls:0 lw:2 lo:1 fc:#0c0
+arrow 20 140 100 100
+
+style lc:#f00 ls:0 lw:2 lo:1 fc:#f00
+arrow 20 180 20 140
+
+style lc:#00f ls:0 lw:2 lo:1 fc:#00f
+arrow 20 180 100 100
+
+// Cartesian 2
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 220 20 380 180 40 40
+style lc:#000 ls:0 lw:1 lo:1
+arrow 220 180 380 180
+arrow 220 180 220 20
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 385 185 x
+text 220 12 y
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 215 197 0
+text 255 197 1
+text 295 197 2
+text 335 197 3
+text 205 185 0
+text 205 145 1
+text 205 105 2
+text 205 65 3
+
+style lc:#f00 ls:0 lw:2 lo:1 fc:#f00
+arrow 220 180 220 140
+
+style lc:#0c0 ls:0 lw:2 lo:1 fc:#0c0
+arrow 220 140 300 100
+
+style lc:#f0f ls:0 lw:2 lo:1 fc:#f0f
+arrow 300 100 340 100
+
+style lc:#ce0 ls:0 lw:2 lo:1 fc:#ce0
+arrow 220 180 340 100
+
+// Cartesian 3
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 420 20 580 180 40 40
+style lc:#000 ls:0 lw:1 lo:1
+arrow 420 180 580 180
+arrow 420 180 420 20
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 585 185 x
+text 420 12 y
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 415 197 0
+text 455 197 1
+text 495 197 2
+text 535 197 3
+text 405 185 0
+text 405 145 1
+text 405 105 2
+text 405 65 3
+
+style lc:#f00 ls:0 lw:2 lo:1 fc:#f00
+arrow 420 180 420 140
+
+style lc:#0c0 ls:0 lw:2 lo:1 fc:#0c0
+arrow 420 140 500 100
+
+style lc:#f0f ls:0 lw:2 lo:1 fc:#f0f
+arrow 500 100 540 100
+
+style lc:#f88 ls:0 lw:2 lo:1 fc:#f88
+arrow 540 100 580 20
+
+style lc:#8b8 ls:0 lw:2 lo:1 fc:#8b8
+arrow 420 180 580 20
+
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:16px
+text 5 160 r
+text 40 115 r
+text 65 150 r
+
+text 205 160 r
+text 240 115 r
+text 325 90 r
+text 305 140 r
+
+text 405 160 r
+text 440 115 r
+text 525 90 r
+text 560 80 r
+text 520 20 r
+
+style lw:0 fc:#000 fo:1 ts:normal tw:bold tf:Times tz:10px
+text 12 163 1
+text 47 118 2
+text 72 153 1+2
+
+text 212 163 1
+text 247 118 2
+text 332 93 3
+text 312 143 1+2+3
+
+text 412 163 1
+text 447 118 2
+text 532 93 3
+text 567 83 4
+text 527 23 1+2+3+4
+</oo>
+
+Fig. <a href="#fig:vadd-graph-polygon-4v">4</a> shows the results of $\vec{r} _{1+2} = \vec{r}_1 + \vec{r}_2$ (left), $\vec{r} _{1+2+3} = \vec{r}_1 + \vec{r}_2 + \vec{r}_3$ (center), and $\vec{r} _{1+2+3+4} = \vec{r}_1 + \vec{r}_2 + \vec{r}_3 + \vec{r}_4$ (right) using polygon method. With this method all vectors can still be drawn and their contribution to the resultan are clear.
+
+This method will be used later in summing phasors (or rotating vectors), in explaining the interference of multiple slits and diffraction.
 
 ## Exercises
 1. Using similar way as in Eqn. \eqref{eqn:vadd-addition-result}, find formulation for $C_x$ and $C_y$, if $\vec{C} = \vec{A} + \vec{B}$. Use $\vec{A} = A_x \ \hat{x} + A_y \ \hat{y}$, $\vec{B} = B_x \ \hat{x} + B_y \ \hat{y}$, and $\vec{C} = C_x \ \hat{x} + C_y \ \hat{y}$.
 2. Calculate $\vec{G} = \vec{D} + \vec{E}$, if $\vec{D} = 2 \ \hat{x} + 3 \ \hat{y}$ and $\vec{E} = 3 \ \hat{x} - 4 \ \hat{y}$.
 3. There are two vectors, $\vec{B} = 12 \ \hat{x} + 3 \ \hat{y}$ and $\vec{C} = -7 \ \hat{x} + 9 \ \hat{y}$, calculate vector $\vec{D} = \vec{B} + \vec{C}$ and also its magnitude $\|\vec{D}\|$.
 4. <a name="exc4"></a>Find the formulation to calculate $x_3$, $y_3$, and $z_3$ for vector addition $\vec{r}_3 = \vec{r}_1 + \vec{r}_2$, with $\vec{r}_i$ is defined in Eqn. \eqref{eqn:vadd-ri}.
+5. Fig. <a href="#fig:vadd-graph-parallelogram-4v">3</a> show the process of four vectors addition $(((\vec{r}_1 + \vec{r}_2) + \vec{r}_3) + \vec{r}_4)$, draw similar graphs for the process $(\vec{r}_1 + \vec{r}_2) + (\vec{r}_3 + \vec{r}_4)$.
 
 
 ## References
