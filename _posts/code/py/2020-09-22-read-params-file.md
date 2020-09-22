@@ -14,6 +14,17 @@ permalink: /code/py/read-params-file
 ---
 ..
 
+
+## References
+1. <a name="ref1"></a>agold, "Asnwer to 'Python file naming convention?'", Software Engineering, 6 Jun 2019, url https://softwareengineering.stackexchange.com/a/308976 [20200922].
+2. <a name="ref2"></a>Dan Bader, "Python Multi-line Comments: Your Two Best Options", url https://dbader.org/blog/python-multiline-comment [20200922].
+3. <a name="ref3"></a>-,"1. Command line and environment", Python, 22 Sep 2020, url https://docs.python.org/3/using/cmdline.html [20200922].
+4. <a name="ref4"></a>Sayak Paul, "Argument Parsing in Python", DataCamp, 16 May 2019, url https://www.datacamp.com/community/tutorials/argument-parsing-in-python [20200922].
+5. <a name="ref5"></a>-, "Open a File on the Server", W3Schools, url https://www.w3schools.com/python/python_file_open.asp [20200922].
+6. <a name="ref6"></a>codelogic, "Answer to 'How to print without newline or space?'", StackOverflow, 29 Jan 2009, url https://stackoverflow.com/a/493399 [20200922].
+
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/code/py/2020-09-22-read-params-file.md)
+
 {% comment %}
 Addition of [vectors](vector) can be peformed graphically [[1](#ref1)] or by adding the corresponding components [[2](#ref2)]. We can also use trigonometry through law of sines and cosines.
 
@@ -597,6 +608,5 @@ Law of cosines and sines can also be used to calculate vector addition or result
 4. <a name="ref4"></a>Simon Plus, "Episode 5: Polygon Method for Vector Addition", YouTube, 24.04.2017, url <https://www.youtube.com/watch?v=r-iKebb2FIg> [20200921].
 5. <a name="ref5"></a>-, "Calculating the Resultant using the Law of Cosines and Sines", Alberta Learning, 16 Jun 2004, url <http://www.learnalberta.ca/content/sep20u/html/java/vector_addition_numerical/applethelp/lesson_1.html#2> [20200922].
 
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-09-21-vector-addition.md)
 
 {% endcomment %}
