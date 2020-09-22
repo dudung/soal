@@ -79,7 +79,7 @@ for p in params:
 o = (255, 255, 255)
 i = (255, 0, 0)
 
-# Ilustrate plus or '+' in a PNG file
+# Ilustrate plus or '+' in a PNG file -- not used
 pixels = [
 	[o, o, o, o, i, i, o, o, o, o],
 	[o, o, o, o, i, i, o, o, o, o],
