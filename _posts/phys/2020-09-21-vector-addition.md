@@ -12,7 +12,7 @@ date: 2020-09-21 11:30:00 +07
 tags: ["topics"]
 permalink: /physics/vector-addition
 ---
-Addition of [vectors](vector) can be peformed graphically [[1](#ref1)] or by adding the corresponding components [[2](#ref2)].
+Addition of [vectors](vector) can be peformed graphically [[1](#ref1)] or by adding the corresponding components [[2](#ref2)]. We can also use trigonometry through law of sines and cosines.
 
 
 ## Components addition
@@ -571,7 +571,13 @@ text 527 23 1+2+3+4
 
 Fig. <a href="#fig:vadd-graph-polygon-4v">4</a> shows the results of $\vec{r} _{1+2} = \vec{r}_1 + \vec{r}_2$ (left), $\vec{r} _{1+2+3} = \vec{r}_1 + \vec{r}_2 + \vec{r}_3$ (center), and $\vec{r} _{1+2+3+4} = \vec{r}_1 + \vec{r}_2 + \vec{r}_3 + \vec{r}_4$ (right) using polygon method. With this method all vectors can still be drawn and their contribution to the resultan are clear.
 
-This method will be used later in summing phasors (or rotating vectors), in explaining the interference of multiple slits and diffraction.
+This method will be used later in summing phasors (or rotating vectors), in explaining the interference of multiple slit and diffraction.
+
+
+## Trigonometry addition
+Law of cosines and sines can also be used to calculate vector addition or resultan of two vectors [[5](#ref5)]. Length of both vectors and the angle between them are required fot this method.
+
+
 
 ## Exercises
 1. Using similar way as in Eqn. \eqref{eqn:vadd-addition-result}, find formulation for $C_x$ and $C_y$, if $\vec{C} = \vec{A} + \vec{B}$. Use $\vec{A} = A_x \ \hat{x} + A_y \ \hat{y}$, $\vec{B} = B_x \ \hat{x} + B_y \ \hat{y}$, and $\vec{C} = C_x \ \hat{x} + C_y \ \hat{y}$.
@@ -586,7 +592,6 @@ This method will be used later in summing phasors (or rotating vectors), in expl
 2. <a name="ref2"></a>Eric W. Weisstein, "Vector Addition", from MathWorld--A Wolfram Web Resource, url  <https://mathworld.wolfram.com/VectorAddition.html> [20200921].
 3. <a name="ref3"></a>Math and Stats Help, "Find the Resultant Force using the Parallelogram Method", YouTube, 18.11.2019, url <https://www.youtube.com/watch?v=WhHO77rEIfk> [20200921].
 4. <a name="ref4"></a>Simon Plus, "Episode 5: Polygon Method for Vector Addition", YouTube, 24.04.2017, url <https://www.youtube.com/watch?v=r-iKebb2FIg> [20200921].
-
-
+5. <a name="ref5"></a>-, "Calculating the Resultant using the Law of Cosines and Sines", Alberta Learning, 16 Jun 2004, url <http://www.learnalberta.ca/content/sep20u/html/java/vector_addition_numerical/applethelp/lesson_1.html#2> [20200922].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-09-21-vector-addition.md)
