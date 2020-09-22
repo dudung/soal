@@ -7,7 +7,7 @@
 # Execute: python3 rdpf2.py params.txt
 # 
 # 20200922
-# 2001 Derive it from redpf2.py
+# 2001 Derive it from redpf.py
 # 2009 Removel trailing newline from file [1] and append array.
 # 2025 Split line [2].
 # 2029 Print non-empty array [3].
