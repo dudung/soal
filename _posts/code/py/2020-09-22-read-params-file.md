@@ -178,4 +178,3 @@ Map the relation beween parameters in Eqns. \eqref{eqn:pyrdpf-x} and \eqref{eqn:
 6. <a name="ref6"></a>codelogic, "Answer to 'How to print without newline or space?'", StackOverflow, 29 Jan 2009, url <https://stackoverflow.com/a/493399> [20200922].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/code/py/2020-09-22-read-params-file.md)
-
