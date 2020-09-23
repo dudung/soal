@@ -1,7 +1,7 @@
 ---
 layout: post
 author: viridi
-title: lissajour pattern generator
+title: lissajous pattern generator
 mathjax: true
 ptext: false
 x3dom: false
