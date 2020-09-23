@@ -184,7 +184,7 @@ new_image.save(fn2)
 which will be called using command line as
 
 ```
-$ python3 lissajous.py params.txt
+$ python3.8 lissajous.py params.txt
 ```
 
 and produce `lissajous-pattern.png` file.
