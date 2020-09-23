@@ -190,7 +190,18 @@ $ python3 lissajous.py params.txt
 and produce `lissajous-pattern.png` file.
 
 
+## Exercise
+1. What is the name of parameters file? Show which part of the code that supports your answer.
+2. In which part of the parameters file and the code you can find the output filename `lissajous-pattern.png`?
+3. What is the result of the code for the given parameters file? Refer it to an image in the internet as the answer.
+4. Compare the default result with an internet result [[2](#ref2)]. Can you confirm that those results are the same? Compare also with [[3](#ref3)].
+5. See first row and third column from left in the first figure [[4](#ref4)]. Can you determine the parameters and produce the curve using `lissajous.py` code? Specify the parameters value.
+
+
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Lissajous curve", Wikipedia, The Free Encyclopedia, 17 Aug 2020, 12:46 UTC, <https://en.wikipedia.org/w/index.php?oldid=973478979> [20200923].
+2. <a name="ref2"></a>Lee Teschler, "Lissajous patterns: using a scope for display signals", Test & Measurement Tips -- an EE World Online Resources, 11 Aug 2016, url <https://www.testandmeasurementtips.com/using-scope-display-lissajous-patterns/> [20200923].
+3. <a name="ref3"></a>-, "Lissajous curve", Desmos, url <https://www.desmos.com/calculator/tti5dasmc4?lang=de> [20200923].
+4. <a name="ref3"></a>Eric W. Weisstein, "Lissajous Curve", from MathWorld--A Wolfram Web Resource, url <https://mathworld.wolfram.com/LissajousCurve.html> [20200923].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/code/py/2020-09-23-lissajous-pattern-generator.md)
