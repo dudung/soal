@@ -5,7 +5,7 @@
 # 
 # Sparisoma Viridi | https://github.com/dudung
 # 
-# Execute: python3 lissajous.py params.txt out.png
+# Execute: python3 lissajous.py params.txt
 # 
 # 20200922
 # 2108 Derive it from redpf2.py and plan to implement [1].
@@ -19,6 +19,7 @@
 # 0517 Create emty white PNG image with size (2Ax)x(2Ay).
 # 0543 Change pixel color in two-dimensional array [3], pixels.
 # 0553 Reduce Ax and Ay with 0.98 for better Lissajous curve.
+# 1704 Remove out.png from execute information.
 # 
 # References
 # 1. Jebby, "Answer to 'How to create image from a list of
