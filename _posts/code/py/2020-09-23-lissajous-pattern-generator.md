@@ -12,7 +12,13 @@ date: 2020-09-23 06:29:00 +07
 tags: ["topics"]
 permalink: /code/py/lissajous-pattern-generator
 ---
-..
+A simple program writen in Python to produce Lissajous curve [[1](#ref1)] is presented here.
+
+
+## References
+1. <a name="ref1"></a>Wikipedia contributors, "Lissajous curve", Wikipedia, The Free Encyclopedia, 17 Aug 2020, 12:46 UTC, <https://en.wikipedia.org/w/index.php?oldid=973478979> [20200923].
+
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/code/py/2020-09-23-lissajous-pattern-generator.md)
 
 {% comment %}
 An example of Python 3 code is discussed in here. It is named in lower case [[1](#ref1)] and uses suggested comment style [[2](#ref2)]. The program is called from command line [[3](#ref3)] and is able to process the arguments [[4](#ref4)] providing a filename to be opened [[5](#ref5)] showing its content without addition newline [[6](#ref6)].
