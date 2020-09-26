@@ -43,10 +43,6 @@ will produce
 
 where `https://goo.gl/maps/` + `gmap` will produce Google Maps short url to the location, `la` and `lo` are the Goole Maps coordinates (latitude and longitude), and `name` is the station name.  
 
-<script src="https://rawcdn.githack.com/butiran/butiran.github.io/e091db33db7d5885481704c0a18be3922fcb24b4/src/js/abm/station.js">
-</script>
-
-
 ## Coordinate transformation
 A simple and very rough formulation in the form of [[3](#ref3)]
 
@@ -70,6 +66,10 @@ will be used to transform $(la, lo)$ to $(x, y)$ for drawing. Notice that $la$ a
 \end{equation}
 
 for the conversion from $^\circ$ to $\rm rad$.
+
+<script src="/assets/js/station.js">
+</script>
+
 
  
 ## References
