@@ -13,12 +13,17 @@
 	2226 Find information about Cilangkap and Pondok Bitung [1].
 	2303 Create Google Maps link for CKP and PDB.
 	2306 Note the base url for Google Maps https://goo.gl/maps/.
+	2310 Add reference for commuter map [2].
 	
 	References
 	1. Bramantiyo Marjuki, "Jalur Kereta Api SS/KAI Tanah Abang
 	   - Rangkasbitung (1899 - sekarang)", 23 Oct 2017, url
 		 https://javarailmaps.blogspot.com/2017/10/jalur-kereta-api
 		 -sskai-tanah-abang.html [20200926].
+	2. Kontributor Wikipedia, "KRL Commuter Line", Wikipedia,
+	   Ensiklopedia Bebas, 24 September 2020, 15.47 UTC, url
+	   https://id.wikipedia.org/w/index.php?oldid=17435179
+	 	 [20200926].
 */
 
 var StationInfo = {
