@@ -108,3 +108,19 @@ var StationInfoPTKCI = {
 	CTR:  {gmap:"Tgy2s9A6QwqZmdHT8", la:-6.3338452, lo:106.3302688, name:"Citeras", },
 	RK:   {gmap:"kpuPGe49DFcBfVzSA", la:-6.3526599, lo:106.2427967, name:"Rangkasbitung", },
 };
+
+
+// Transform (la, lo) to (x, y)
+function toXYFrom() {
+	var la = arguments[0];
+	var lo = arguments[1];
+	
+	var rad = 2 * Math.pi / 180;
+	la = rad * la;
+	lo = rad * lo;
+	
+	var x = 111.320 * Math.cos(la) * lo;
+	var y = 110.574 * Math.cos(la);
+	
+	return {x: x, y: y};
+}
