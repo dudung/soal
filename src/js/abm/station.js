@@ -1,10 +1,8 @@
 /*
-	StasionInfo.js
-	Information about Stations of PT Kereta Commuter Indonesia
+	station.js
+	Information about train stations
 	
 	Sparisoma Viridi | https://github.com/dudung
-	
-	Usage: StationInfo[XXX], XXX = station code, e.g. NMO
 	
 	20200926
 	1907 Advance StationInfo from abm-com-seir.js file.
@@ -15,6 +13,8 @@
 	2306 Note the base url for Google Maps https://goo.gl/maps/.
 	2310 Add reference for commuter map [2].
 	2319 Add reference for simple conversion (la,lo)->(x,y) [3].
+	20200927
+	0508 Rename the key value array to StationInfoPTKCI.
 	
 	References
 	1. Bramantiyo Marjuki, "Jalur Kereta Api SS/KAI Tanah Abang
@@ -30,7 +30,9 @@
 		 2009, url https://stackoverflow.com/a/1253545 [20200926]. 
 */
 
-var StationInfo = {
+
+// Stations of PT Kereta Commuter Indonesia
+var StationInfoPTKCI = {
 	NMO:  {gmap:"9cF3yJYsegh5WwTn7", la:-6.4662291, lo:106.9040266, name:"Nambo", },
 	GPI:  {gmap:"HrVo9GoqmtdKxemr9", la:-6.4718045, lo:106.8863609, name:"Gunung Putri", },
 	CBN:  {gmap:"KWGWQmEbWJNW2Ae37", la:-6.4642644, lo:106.8502809, name:"Cibinong", },
