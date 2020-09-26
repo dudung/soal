@@ -14,6 +14,7 @@
 	2303 Create Google Maps link for CKP and PDB.
 	2306 Note the base url for Google Maps https://goo.gl/maps/.
 	2310 Add reference for commuter map [2].
+	2319 Add reference for simple conversion (la,lo)->(x,y) [3].
 	
 	References
 	1. Bramantiyo Marjuki, "Jalur Kereta Api SS/KAI Tanah Abang
@@ -24,6 +25,9 @@
 	   Ensiklopedia Bebas, 24 September 2020, 15.47 UTC, url
 	   https://id.wikipedia.org/w/index.php?oldid=17435179
 	 	 [20200926].
+	3. Jim Lewis, "Answer to 'Simple calculations for working
+	   with lat/lon and km distance?'", StackOverflow, 10 Aug
+		 2009, url https://stackoverflow.com/a/1253545 [20200926]. 
 */
 
 var StationInfo = {
