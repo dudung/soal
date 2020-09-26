@@ -7,7 +7,7 @@
 	Usage: StationInfo[XXX], XXX = station code, e.g. NMO
 	
 	20200926
-	1907 Move it from abm-com-seir.js file.
+	1907 Advance StationInfo from abm-com-seir.js file.
 	1949 Complete until JNG, search for Pondok Betung abvr. (x).
 	2000 Accomplish CKY, MJ, CTR, RK stations.
 */
@@ -45,7 +45,7 @@ var StationInfo = {
 	TPK:  {gmap:"ukrDFNA474KvtMNAA", la:-6.1120380, lo:106.8760139, name:"Tanjung Priok", },
 	AC:   {gmap:"edYKjSTnMVUqjXfd7", la:-6.1215668, lo:106.8382612, name:"Ancol", },
 	KPB:  {gmap:"Qno5GFA2tw1nM88L9", la:-6.1322199, lo:106.8265271, name:"Kampung Bandan", },
-	JNG:  {gmap:"", la:, lo:, name:"Jatinegara", },
+	JNG:  {gmap:"PNJ7GPh4xPwSMN19A", la:-6.2152144, lo:106.8680843, name:"Jatinegara", },
 	POK:  {gmap:"", la:, lo:, name:"Pondok Jati", },
 	KMT:  {gmap:"", la:, lo:, name:"Kramat", },
 	GST:  {gmap:"", la:, lo:, name:"Gang Sentiong", },
