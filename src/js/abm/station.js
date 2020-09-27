@@ -17,6 +17,10 @@
 	0508 Rename the key value array to StationInfoPTKCI.
 	0631 Create transformToXY function.
 	0641 Calculate avarage of la and lo for all stations.
+	0814 Miss stations to Cikarang, add stations id.
+	0910 Assume [3] already in deg as checked with Google Maps.
+	0946 Finish all 87 stations and draw all in canvas.
+	1005 Add AK and ask team to make illustration as in [2].
 	
 	References
 	1. Bramantiyo Marjuki, "Jalur Kereta Api SS/KAI Tanah Abang
@@ -109,7 +113,22 @@ var StationInfoPTKCI = {
 	MJ:   {gmap:"RmUBCq9hpxHq66mq6", la:-6.3338860, lo:106.3941802, name:"Maja", },
 	CTR:  {gmap:"Tgy2s9A6QwqZmdHT8", la:-6.3338452, lo:106.3302688, name:"Citeras", },
 	RK:   {gmap:"kpuPGe49DFcBfVzSA", la:-6.3526599, lo:106.2427967, name:"Rangkasbitung", },
+	CPN:  {gmap:"kbz7JyBW9zLNuxVJ7", la:-6.2143352, lo:106.8844360, name:"Cipinang", },
+	KLD:  {gmap:"FDyterC5JWrXi4mm8", la:-6.2135200, lo:106.8986500, name:"Klender", },
+	BUA:  {gmap:"uEXuQueR9jKLW7xW9", la:-6.2182466, lo:106.9203397, name:"Buaran", },
+	KLDB: {gmap:"V2SKe5hLcC8oYSEE6", la:-6.2176471, lo:106.9401219, name:"Klender Baru", },
+	CUK:  {gmap:"SeAQp2PzMFQggbXk7", la:-6.2191346, lo:106.9523570, name:"Cakung", },
+	RWB:  {gmap:"1viKG1Yd2TS9tE5C6", la:-6.2190921, lo:106.9525856, name:"Rawabebek", },
+	KRI:  {gmap:"ivoRyMiodGNjtS4E7", la:-6.2245125, lo:106.9798459, name:"Kranji", },
+	BKS:  {gmap:"LsBokmQ8w4RQbChe6", la:-6.2366208, lo:106.9992014, name:"Bekasi", },
+	BKST: {gmap:"jdS3bEHpkDnUAQUbA", la:-6.2468343, lo:106.9830389, name:"Bekasi Timur", },
+	TB:   {gmap:"UXiWYqqoCF4Pnk8U8", la:-6.2587119, lo:107.0558270, name:"Tambung", },
+	CIT:  {gmap:"ZZjJ4cYhSRALFHJQ6", la:-6.2618862, lo:107.0836313, name:"Cibitung", },
+	MTM:  {gmap:"K2gpStVhScdAfPndA", la:-6.2571524, lo:107.0936672, name:"Metland Telaga Murni", },
+	CKR:  {gmap:"iRXetk3PS2ncVuAn6", la:-6.2553738, lo:107.1450583, name:"Cikarang", },
+	AK:   {gmap:"9xj48bECuUqyRTNL9", la:-6.1446789, lo:106.7986757, name:"Angke", },
 };
+
 
 
 // Transform to (x, y) from (la, lo)
@@ -117,12 +136,9 @@ function transformToXY() {
 	var la = arguments[0];
 	var lo = arguments[1];
 	
-	var rad = 2 * Math.PI / 180;
-	la = rad * la;
-	lo = rad * lo;
-	
+	// Already in degree while checked with Google Maps
 	var x = 111.320 * Math.cos(la) * lo;
-	var y = 110.574 * Math.cos(la);
+	var y = 110.574 * la;
 	
 	return {x: x, y: y};
 }
@@ -156,7 +172,8 @@ class Station {
 				this.name = s.name;
 				var la = s.la;
 				var lo = s.lo;
-				var r = transformToXY(la, lo);
+				var c = getCenter();
+				var r = transformToXY(la - c.la, lo - c.lo);
 				this.position = {x: r.x, y: r.y};
 			} else {
 				console.error(this.id + " station does not exist");
@@ -174,3 +191,105 @@ for(id in StationInfoPTKCI) {
 }
 
 
+// Calculate range of positition
+function getXYRange() {
+	var s = arguments[0];
+	var N = s.length;
+	
+	var xmin = s[0].position.x;
+	var xmax = s[0].position.x;
+	var ymin = s[0].position.y;
+	var ymax = s[0].position.y;
+	
+	for(var i = 1; i < N; i++) {
+		var x = s[i].position.x;
+		if(x < xmin) xmin = x;
+		if(x > xmax) xmax = x;
+
+		var y = s[i].position.y;
+		if(y < ymin) ymin = y;
+		if(y > xmax) ymax = y;
+	}
+	
+	var xrange = xmax - xmin;
+	var yrange = ymax - ymin;
+	
+	var padx = 0.1 * xrange;
+	var pady = 0.1 * yrange;
+	
+	xmax += padx;
+	xmin -= padx;
+	
+	ymax += pady;
+	ymin -= pady;
+	
+	return {xmin: xmin, ymin: ymin, xmax: xmax, ymax: ymax};
+}
+
+
+// Set global coordinates
+var coord = getXYRange(stations);
+coord.dx = coord.xmax - coord.xmin;
+coord.dy = coord.ymax - coord.ymin;
+var zoom = 8;
+var XMIN = 0;
+var XMAX = XMIN + zoom * Math.round(coord.dx);
+var YMAX = 0;
+var YMIN = YMAX + zoom * Math.round(coord.dy);
+
+
+// Create canvas
+var can = document.createElement("canvas");
+can.width = XMAX - XMIN;
+can.height = YMIN - YMAX;
+can.style.width = can.width + "px";
+can.style.height = can.height + "px";
+can.style.background = "#fcfcfc";
+document.body.append(can);
+
+
+function transformX() {
+	var x = arguments[0];
+	var X = (x - coord.xmin) / coord.dx * (XMAX - XMIN) + XMIN;
+	return X;
+}
+
+function transformY() {
+	var y = arguments[0];
+	var Y = (y - coord.ymin) / coord.dy * (YMAX - YMIN) + YMIN;
+	return Y;
+}
+
+
+// Draw all stations
+function drawStation() {
+	var s = arguments[0];
+	var c = arguments[1];
+	var N = s.length;
+	
+	var cx = can.getContext("2d");
+	
+	for(var i = 0; i < N; i++) {
+		var x = s[i].position.x;
+		var y = s[i].position.y;
+		
+		var X = transformX(x);
+		var Y = transformY(y);
+		var R = 4;
+		
+		cx.beginPath();
+		cx.arc(X, Y, R, 0, 2 * Math.PI);
+		cx.fillStyle = "#faa";
+		cx.fill();
+		cx.lineWidth = 1;
+		cx.strokeStyle = "#a00";
+		cx.stroke();
+		
+		cx.fillStyle = "#000";
+		cx.fillText(s[i].id, X + 5, Y + 10);
+	}
+}
+
+
+// Perform drawing all stations
+drawStation(stations, can);
