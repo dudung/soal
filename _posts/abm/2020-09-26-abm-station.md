@@ -32,7 +32,7 @@ which is, this time, only for PT Kereta Commuter Indonesia (KCI) stations. There
 The information can be obtained using station `id` as the key, e.g.
 
 ```javascript
-console.log("" + StationInfoPTKCI["JAKK"]);
+console.log(StationInfoPTKCI["JAKK"]);
 ```
 
 will produce
