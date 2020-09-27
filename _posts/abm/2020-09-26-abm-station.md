@@ -429,7 +429,7 @@ style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 363 42 AK
 </oo>
 
-Unfortunately, the density of stations per area is not the same at different places. Perhaps an illustratif network [[1](#ref1)] is preferable.
+Unfortunately, the density of stations per area is not the same at different places. Perhaps an illustrative network [[1](#ref1)] is preferable than network with the real distance in Fig. <a href="#fig:ambs-stations-position">1</a>.
 
 
 ## JS file
