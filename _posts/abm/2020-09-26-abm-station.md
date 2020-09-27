@@ -770,12 +770,13 @@ which can be a subject of modification by the team.
 
 
 ## Note
-Conversion from $(la, lo)$ to $(x, y)$ using Eqns. \eqref{eqn:abms-lalo-y} and \eqref{eqn:abms-lalo-x} should be further tested, since the current test (27/9) is only roughly using Google Maps ruler between two points. Some differences about $1-3 \ km$ are still obtained. 
+Conversion from $(la, lo)$ to $(x, y)$ using Eqns. \eqref{eqn:abms-lalo-y} and \eqref{eqn:abms-lalo-x} should be further tested, since the current test (27/9) is only rough approximation while measureing distance between two points using a feature from Google Maps [[4](#ref4)]. Some differences about $1-3 \ \rm km$ are still obtained.
 
 
 ## References
 1. <a name="ref1"></a>Kontributor Wikipedia, "KRL Commuter Line", Wikipedia, Ensiklopedia Bebas, 24 September 2020, 15.47 UTC, url <https://id.wikipedia.org/w/index.php?oldid=17435179> [20200926].
 2. <a name="ref2"></a>Bramantiyo Marjuki, "Jalur Kereta Api SS/KAI Tanah Abang - Rangkasbitung (1899 - sekarang)", 23 Oct 2017, url <https://javarailmaps.blogspot.com/2017/10/jalur-kereta-api-sskai-tanah-abang.html> [20200926].
 3. <a name="ref3"></a>Jim Lewis, "Answer to 'Simple calculations for working with lat/lon and km distance?'", StackOverflow, 10 Aug 2009, url <https://stackoverflow.com/a/1253545> [20200926].
+4. <a name="ref4"></a>-, "Measure distance between points", Google Maps Help, url <https://support.google.com/maps/answer/1628031> [20200927].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/abm/2020-09-26-abm-station.md)
