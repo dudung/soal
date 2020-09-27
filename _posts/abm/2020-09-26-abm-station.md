@@ -770,7 +770,7 @@ which can be a subject of modification by the team.
 
 
 ## Note
-Converstion from $(la, lo)$ to $(x, y)$ using Eqns. \eqref{eqn:abms-lalo-y} and \eqref{eqn:abms-lalo-x} should be further tested, since the current test (27/9) is only roughly using Google Maps ruler between two points. Some differences about $1-3 \ km$ are still obtained. 
+Conversion from $(la, lo)$ to $(x, y)$ using Eqns. \eqref{eqn:abms-lalo-y} and \eqref{eqn:abms-lalo-x} should be further tested, since the current test (27/9) is only roughly using Google Maps ruler between two points. Some differences about $1-3 \ km$ are still obtained. 
 
 
 ## References
