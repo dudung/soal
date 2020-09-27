@@ -21,6 +21,7 @@
 	0910 Assume [3] already in deg as checked with Google Maps.
 	0946 Finish all 87 stations and draw all in canvas.
 	1005 Add AK and ask team to make illustration as in [2].
+	1236 Make SVG text for viewing stations with oo.
 	
 	References
 	1. Bramantiyo Marjuki, "Jalur Kereta Api SS/KAI Tanah Abang
@@ -231,7 +232,7 @@ function getXYRange() {
 var coord = getXYRange(stations);
 coord.dx = coord.xmax - coord.xmin;
 coord.dy = coord.ymax - coord.ymin;
-var zoom = 8;
+var zoom = 5;
 var XMIN = 0;
 var XMAX = XMIN + zoom * Math.round(coord.dx);
 var YMAX = 0;
@@ -293,3 +294,34 @@ function drawStation() {
 
 // Perform drawing all stations
 drawStation(stations, can);
+
+
+// Generate SVG for oo in butiran
+function generateStationSVGText() {
+	var s = arguments[0];
+	var N = s.length;
+	var ooT = "";
+	
+	for(var i = 0; i < N; i++) {
+		var x = s[i].position.x;
+		var y = s[i].position.y;
+		
+		var X = Math.round(transformX(x));
+		var Y = Math.round(transformY(y));
+		var R = 4;
+		
+		ooT += "style lc:#a00 ls:0 lw:1 lo:1 fc:#faa" + "\n";
+		ooT += "circle " + X + " " + Y + " " + R + "\n";
+		
+		ooT += "style lw:0 fc:#000 fo:1 ts:normal tw:normal ";
+		ooT += "tf:Times tz:10px" + "\n";
+		X += 5;
+		Y += 10;
+		ooT += "text " + X + " " + Y + " " + s[i].id + "\n";
+	}
+	
+	return ooT;
+}
+
+var ooText = generateStationSVGText(stations, XMAX - XMIN, YMIN - YMAX);
+console.log(ooText);
