@@ -67,10 +67,6 @@ will be used to transform $(la, lo)$ to $(x, y)$ for drawing. Notice that $la$ a
 
 for the conversion from $^\circ$ to $\rm rad$.
 
-<script src="/assets/js/station.js">
-</script>
-
-
  
 ## References
 1. <a name="ref1"></a>Kontributor Wikipedia, "KRL Commuter Line", Wikipedia, Ensiklopedia Bebas, 24 September 2020, 15.47 UTC, url <https://id.wikipedia.org/w/index.php?oldid=17435179> [20200926].

@@ -15,6 +15,8 @@
 	2319 Add reference for simple conversion (la,lo)->(x,y) [3].
 	20200927
 	0508 Rename the key value array to StationInfoPTKCI.
+	0631 Create transformToXY function.
+	0641 Calculate avarage of la and lo for all stations.
 	
 	References
 	1. Bramantiyo Marjuki, "Jalur Kereta Api SS/KAI Tanah Abang
@@ -110,12 +112,12 @@ var StationInfoPTKCI = {
 };
 
 
-// Transform (la, lo) to (x, y)
-function toXYFrom() {
+// Transform to (x, y) from (la, lo)
+function transformToXY() {
 	var la = arguments[0];
 	var lo = arguments[1];
 	
-	var rad = 2 * Math.pi / 180;
+	var rad = 2 * Math.PI / 180;
 	la = rad * la;
 	lo = rad * lo;
 	
@@ -124,3 +126,51 @@ function toXYFrom() {
 	
 	return {x: x, y: y};
 }
+
+
+// Calculate average of la and lo as center
+function getCenter() {
+	var lac = 0;
+	var loc = 0;
+	var N = 0;
+	for(var k in StationInfoPTKCI) {
+		lac += StationInfoPTKCI[k].la;
+		loc += StationInfoPTKCI[k].lo;
+		N++;
+	}
+	lac /= N;
+	loc /= N;
+	return {la: lac, lo: loc};
+}
+
+
+// Class of Station
+class Station {
+	constructor() {
+		if(arguments.length < 1) {
+			console.error("Station must provide stationID");
+		} else {
+			if(arguments[0] in StationInfoPTKCI) {
+				this.id = arguments[0];
+				var s = StationInfoPTKCI[this.id];
+				this.name = s.name;
+				var la = s.la;
+				var lo = s.lo;
+				var r = transformToXY(la, lo);
+				this.position = {x: r.x, y: r.y};
+			} else {
+				console.error(this.id + " station does not exist");
+			}
+		}
+	}
+}
+
+
+// Create array for all stations
+var stations = [];
+for(id in StationInfoPTKCI) {
+	var s = new Station(id);
+	stations.push(s);
+}
+
+
