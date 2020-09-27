@@ -69,6 +69,7 @@ for the conversion from $^\circ$ to $\rm rad$. After testing the results from so
 
 
 ## Result
+Using the stations data from PT KCI (only the name) and positions (from Google Maps and Wikipedia) a map of commuter network can be produced as shown in following Fig. <a href="#fig:ambs-stations-position">1</a>.
 
 <oo>
 svg 600 305 #fafafa fig:ambs-stations-position|Position of all stations supervised by PT KCI.
@@ -428,7 +429,22 @@ style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 363 42 AK
 </oo>
 
- 
+Unfortunately, the density of stations per area is not the same at different places. Perhaps an illustratif network [[1](#ref1)] is preferable.
+
+
+## JS file
+Content of `station.js` is as for
+
+```javascript
+```
+
+which can be a subject of modification by the team.
+
+
+## Note
+Converstion from $(la, lo)$ to $(x, y)$ using Eqns. \eqref{eqn:abms-lalo-y} and \eqref{eqn:abms-lalo-x} should be further tested, since the current test (27/9) is only roughly using Google Maps ruler between two points. Some differences about $1-2 \ km$ are still obtained. 
+
+
 ## References
 1. <a name="ref1"></a>Kontributor Wikipedia, "KRL Commuter Line", Wikipedia, Ensiklopedia Bebas, 24 September 2020, 15.47 UTC, url <https://id.wikipedia.org/w/index.php?oldid=17435179> [20200926].
 2. <a name="ref2"></a>Bramantiyo Marjuki, "Jalur Kereta Api SS/KAI Tanah Abang - Rangkasbitung (1899 - sekarang)", 23 Oct 2017, url <https://javarailmaps.blogspot.com/2017/10/jalur-kereta-api-sskai-tanah-abang.html> [20200926].

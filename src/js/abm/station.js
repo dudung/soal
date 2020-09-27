@@ -22,6 +22,7 @@
 	0946 Finish all 87 stations and draw all in canvas.
 	1005 Add AK and ask team to make illustration as in [2].
 	1236 Make SVG text for viewing stations with oo.
+	1302 Close this version and update related article.
 	
 	References
 	1. Bramantiyo Marjuki, "Jalur Kereta Api SS/KAI Tanah Abang
