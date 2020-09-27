@@ -65,7 +65,7 @@ will be used to transform $(la, lo)$ to $(x, y)$ for drawing. Notice that $la$ a
 \theta = \left( \theta \ {\rm ^\circ} \times \frac{2\pi \ \rm rad}{180 ^\circ} \right) \ {\rm rad}
 \end{equation}
 
-for the conversion from $^\circ$ to $\rm rad$. After testing the results from some pairs of stations and compare it Google Maps, it is already in $^\circ$. Conversion to $rad$ is not necessary.
+for the conversion from $^\circ$ to $\rm rad$. After testing the results from some pairs of stations and compare it with Google Maps, it is already in $^\circ$. Conversion to $rad$ is not necessary.
 
 
 ## Result
