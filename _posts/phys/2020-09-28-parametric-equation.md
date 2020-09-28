@@ -72,6 +72,22 @@ y = y_0 + \left( \frac{x - x_0}{v_{0x}} \right) v_{0y} - \frac12 g \left( \frac{
 the relation between $y$ and $x$.
 
 
+## Circular motion
+In a circular motion a particle is moving along a circular path or a circle. One way to construct such motion is using an oscillation motion in $x$ and $y$ direction, e.g.
+
+\begin{equation}
+\label{eqn:pe-cm-x-cos-t}
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:pe-cm-y-sin-t},
+\end{equation}
+
+where $r$ and $(x_c, y_c)$ are radius and center of the circle, respectively.
+
+
 ## Exercises
 1. Eqn. \eqref{eqn:pe-pm-x} will give $x = x_0$ and Eqn. \eqref{eqn:pe-pm-y} will give $y = y_0$ when $t = t_0$. In the Eqn. \eqref{eqn:pe-pm-y=y(x)} we can not find $t$, can you still show that it still holds for $y = y_0$ when $x = x_0$? Show how you do that. Does Eqn. \eqref{eqn:pe-pm-y=y(x)} always hold for every $y$ and $x$ at time $t$? 
 
