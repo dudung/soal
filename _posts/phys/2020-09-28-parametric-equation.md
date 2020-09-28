@@ -16,7 +16,7 @@ A type of equation that employs an independent variable (parameter) is parametri
 
 
 ## Equation
-As an example we choose a two-dimensional motion, e.g. parabolic, circular motion, and motion with [step function velocity](step-function-velocity). Each coordinate, $x$ and $y$, will have an independent function
+As an example we choose a two-dimensional motion, e.g. parabolic motion, circular motion, and motion with [step function velocity](step-function-velocity). Each coordinate, $x$ and $y$, will have an independent function
 
 \begin{equation}
 \label{eqn:pe-x=f(t)}
@@ -30,7 +30,7 @@ and
 y = g(t),
 \end{equation}
 
-where $f(t)$ and $g(t)$ are function of time $t$. In Eqns. \eqref{eqn:pe-x=f(t)} and \eqref{eqn:pe-y=g(t)} variabel $t$ is the parameter of the parametric equations. Actually, you can define any arbitraty variable as parameter. Eqn. \eqref{eqn:pe-x=f(t)} can be further written as
+where $f(t)$ and $g(t)$ are function of time $t$. In Eqns. \eqref{eqn:pe-x=f(t)} and \eqref{eqn:pe-y=g(t)} $t$ is the variable (parameter) of the parametric equations. Actually, you can define any arbitraty variable as parameter. Eqn. \eqref{eqn:pe-x=f(t)} can be further written as
 
 \begin{equation}
 \label{eqn:pe-t=f^-1(x)}
@@ -70,6 +70,10 @@ y = y_0 + \left( \frac{x - x_0}{v_{0x}} \right) v_{0y} - \frac12 g \left( \frac{
 \end{equation}
 
 the relation between $y$ and $x$.
+
+
+## Exercises
+1. Eqn. \eqref{eqn:pe-pm-x} will give $x = x_0$ and Eqn. \eqref{eqn:pe-pm-y} will give $y = y_0$ when $t = t_0$. In the Eqn. \eqref{eqn:pe-pm-y=y(x)} we can not find $t$, can you still show that it still holds for $y = y_0$ when $x = x_0$? Show how you do that. Does Eqn. \eqref{eqn:pe-pm-y=y(x)} always hold for every $y$ and $x$ at time $t$? 
 
 
 ## References
