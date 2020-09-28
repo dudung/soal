@@ -12,7 +12,7 @@ tags: ["topics"]
 date: 2020-09-28 18:12:00 +07
 permalink: /physics/parametric-equation
 ---
-A type of equation that employs an independent variable (parameter) is parametric equation [[1](#ref1)]. It provides a convenient way to represent curves and surfaces [[2](#ref2)]. Equations of this type are commonly used in kinematics, where the trajectory of an object is represented by equations depending on time as the parameter [[3](#ref3)].
+A type of equation that employs an independent variable (parameter) is parametric equation [[1](#ref1)]. It provides a convenient way to represent curves and surfaces [[2](#ref2)]. Equations of this type are commonly used in kinematics, where the trajectory of an object is represented by equations depending on time $t$ as the parameter [[3](#ref3)].
 
 
 ## Equation
@@ -77,15 +77,17 @@ In a circular motion a particle is moving along a circular path or a circle. One
 
 \begin{equation}
 \label{eqn:pe-cm-x-cos-t}
+x = R \cos \omega t
 \end{equation}
 
 and
 
 \begin{equation}
-\label{eqn:pe-cm-y-sin-t},
+\label{eqn:pe-cm-y-sin-t}
+y = R \sin \omega t,
 \end{equation}
 
-where $r$ and $(x_c, y_c)$ are radius and center of the circle, respectively.
+where $r$ and $(x_c, y_c)$ are radius and center of the circle, respectively. There is also $\omega$, which is angular velocity.
 
 
 ## Exercises
