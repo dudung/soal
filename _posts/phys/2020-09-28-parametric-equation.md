@@ -112,10 +112,62 @@ which shows $y = y(x)$ explicitly.
 
 
 ## Motion with step function velocity
+In this part $x$ and $y$ will be in $\rm m$ and $t$ in $\rm s$. These units will not be written in the function for simplicity.
+
+A motion can have [step function velocity](step-function-velocity) in both $x$ and $y$ directions, e.g.
+
+\begin{equation}
+\label{eqn:pe-sfv-x-1}
+x = \left\\{
+\begin{array}{lc}
+t + 1, & 0 \le t \le 4, \newline
+2t - 3, & 4 \le t \le 5, \newline
+\end{array}
+\right.
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:pe-sfv-y-1}
+y = \left\\{
+\begin{array}{lc}
+1, & 0 \le t \le 2, \newline
+t - 1, & 2 \le t \le 4, \newline
+3, & 4 \le t \le 5.
+\end{array}
+\right.
+\end{equation}
+
+Since there are three different time intervals, $0 \le t \le 2$, $2 \le t \le 4$, and $4 \le t \le 5$, we must find $y = x$ in those time intervals. Note that Eqn. \eqref{eqn:pe-sfv-x-1} can be also be written in three time intervals similar to time intervals in Eqn. \eqref{eqn:pe-sfv-y-1}. After change the time intervals we can have
+
+\begin{equation}
+\label{eqn:pe-sfv-y(x)-1}
+y = \left\\{
+\begin{array}{lc}
+1, & 1 \le x \le 3, \newline
+x - 2, & 3 \le x \le 5, \newline
+3, & 5 \le x \le 7.
+\end{array}
+\right.
+\end{equation}
+
+Using Eqns. \eqref{eqn:pe-sfv-x-1} and \eqref{eqn:pe-sfv-y-1} following table can be obtained.
+
+$t \ (\rm s)$ | $x \ (\rm m)$ | $y \ (\rm s)$
+0 | 1 | 1
+1 | 2 | 1
+2 | 3 | 1
+3 | 4 | 2
+4 | 5 | 3
+5 | 7 | 3
+
+Confirmation of Eqn. \eqref{eqn:pe-sfv-y(x)-1} can be seen in the second and third columns of previous table.
+
 Another motion, with [step function velocity](step-function-velocity) in both $x$ and $y$ directions, can have following functions
 
 \begin{equation}
-\label{eqn:pe-sfv-x}
+\label{eqn:pe-sfv-x-2}
 x = \left\\{
 \begin{array}{lc}
 1 + t, & 0 \le t \le 2, \newline
@@ -129,7 +181,7 @@ x = \left\\{
 and
 
 \begin{equation}
-\label{eqn:pe-sfv-y}
+\label{eqn:pe-sfv-y-2}
 y = \left\\{
 \begin{array}{lc}
 1, & 0 \le t \le 2, \newline
@@ -147,6 +199,8 @@ For this type of motion it is not possible, as far as I know, to obtained simple
 1. Eqn. \eqref{eqn:pe-pm-x} will give $x = x_0$ and Eqn. \eqref{eqn:pe-pm-y} will give $y = y_0$ when $t = t_0$. In the Eqn. \eqref{eqn:pe-pm-y=y(x)} we can not find $t$, can you still show that it still holds for $y = y_0$ when $x = x_0$? Show how you do that. Does Eqn. \eqref{eqn:pe-pm-y=y(x)} always hold for every $y$ and $x$ at time $t$? 
 2. Derive Eqn. \eqref{eqn:pe-cm-x2+y2=R} using Eqns. \eqref{eqn:pe-cm-x-cos-t}, \eqref{eqn:pe-cm-y-sin-t}, and \eqref{eqn:pe-cm-cos2+sin2=1}.
 3. How you can introduce $x_0$ and $y_0$ for $t = t_0$ in Eqns. \eqref{eqn:pe-cm-x-cos-t} and \eqref{eqn:pe-cm-y-sin-t}? Explain in brief.
+4. Draw graph $x-t$ for Eqn. \eqref{eqn:pe-sfv-x-1}, $y-t$ for Eqn. \eqref{eqn:pe-sfv-y-1}, and $y-x$ for Eqn. \eqref{eqn:pe-sfv-y(x)-1}.
+5. Draw the trajectory specified by Eqns. \eqref{eqn:pe-sfv-x-2} and \eqref{eqn:pe-sfv-y-2}.
 
 
 ## References
