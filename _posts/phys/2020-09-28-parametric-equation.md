@@ -77,26 +77,82 @@ In a circular motion a particle is moving along a circular path or a circle. One
 
 \begin{equation}
 \label{eqn:pe-cm-x-cos-t}
-x = R \cos \omega t
+x = R \cos \omega t + x_c
 \end{equation}
 
 and
 
 \begin{equation}
 \label{eqn:pe-cm-y-sin-t}
-y = R \sin \omega t,
+y = R \sin \omega t + y_c,
 \end{equation}
 
-where $r$ and $(x_c, y_c)$ are radius and center of the circle, respectively. There is also $\omega$, which is angular velocity.
+where $r$ and $(x_c, y_c)$ are radius and center of the circle, respectively. There is also $\omega$, which is angular velocity. For this case it is not easy to follow the procedure in obtaining Egn. \eqref{eqn:pe-pm-y=y(x)} through invers function. Since we know the relation of
+
+\begin{equation}
+\label{eqn:pe-cm-cos2+sin2=1}
+\cos^2 \beta +  \sin^2 \beta = 1,
+\end{equation}
+
+we can have
+
+\begin{equation}
+\label{eqn:pe-cm-x2+y2=R}
+(x - x_c)^2 + (y - y_c)^2 = R^2,
+\end{equation}
+
+equation of a circle. Eqn. \eqref{eqn:pe-cm-x2+y2=R} is more convenient to use instead of
+
+\begin{equation}
+\label{eqn:pe-cm-y=y(x)}
+ y = y_c \pm \sqrt{R^2 - (x - x_c)^2},
+\end{equation}
+
+which shows $y = y(x)$ explicitly.
+
+
+## Motion with step function velocity
+Another motion, with [step function velocity](step-function-velocity) in both $x$ and $y$ directions, can have following functions
+
+\begin{equation}
+\label{eqn:pe-sfv-x}
+x = \left\\{
+\begin{array}{lc}
+1 + t, & 0 \le t \le 2, \newline
+3, & 2 \le t \le 4, \newline
+7 - t, & 4 \le t \le 6, \newline
+1, & 6 \le t \le 8
+\end{array}
+\right.
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:pe-sfv-y}
+y = \left\\{
+\begin{array}{lc}
+1, & 0 \le t \le 2, \newline
+t - 1, & 2 \le t \le 4, \newline
+3, & 4 \le t \le 6, \newline
+9 - t, & 6 \le t \le 8.
+\end{array}
+\right.
+\end{equation}
+
+For this type of motion it is not possible, as far as I know, to obtained simple form of $y = y(x)$. It is because in this type of motion we can not make a map from $x$ to $y$, where a map is a special function that corresponds exactly one value of $x$ to one value of $y$ [[4](#ref4)].
 
 
 ## Exercises
 1. Eqn. \eqref{eqn:pe-pm-x} will give $x = x_0$ and Eqn. \eqref{eqn:pe-pm-y} will give $y = y_0$ when $t = t_0$. In the Eqn. \eqref{eqn:pe-pm-y=y(x)} we can not find $t$, can you still show that it still holds for $y = y_0$ when $x = x_0$? Show how you do that. Does Eqn. \eqref{eqn:pe-pm-y=y(x)} always hold for every $y$ and $x$ at time $t$? 
+2. Derive Eqn. \eqref{eqn:pe-cm-x2+y2=R} using Eqns. \eqref{eqn:pe-cm-x-cos-t}, \eqref{eqn:pe-cm-y-sin-t}, and \eqref{eqn:pe-cm-cos2+sin2=1}.
+3. How you can introduce $x_0$ and $y_0$ for $t = t_0$ in Eqns. \eqref{eqn:pe-cm-x-cos-t} and \eqref{eqn:pe-cm-y-sin-t}? Explain in brief.
 
 
 ## References
 1. <a name="ref1"></a>Meltem Ucal, Erik Gregersen, Thinley Kalsang Bhutia, "Parametric equation", Encyclopædia Britannica, 14 Sep 2015, url <https://www.britannica.com/science/parametric-equation> [20200928].
 2. <a name="ref2"></a>Eric W. Weisstein, "Parametric Equations", from MathWorld--A Wolfram Web Resource, url <https://mathworld.wolfram.com/ParametricEquations.html> [20200928].
 3. <a name="ref3"></a>Wikipedia contributors, "Parametric equation", Wikipedia, The Free Encyclopedia, 16 Aug 2020, 19:10 UTC, <https://en.wikipedia.org/w/index.php?oldid=973351978> [20200928].
+4. <a name="ref4"></a>Wikipedia contributors, "Map (mathematics)", Wikipedia, The Free Encyclopedia, 26 May 2020, 18:22 UTC, <https://en.wikipedia.org/w/index.php?oldid=959005370> [20200929].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-09-28-parametric-equation.md)
