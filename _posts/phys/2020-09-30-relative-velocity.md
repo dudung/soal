@@ -15,6 +15,12 @@ permalink: /physics/relative-velocity
 
 
 
+## References
+1. <a name="ref1"></a>Wikipedia contributors, "Relative velocity", Wikipedia, The Free Encyclopedia, 28 Aug 2020, 03:46 UTC, <https://en.wikipedia.org/w/index.php?oldid=975368160> [20200930].
+
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-09-05-velocity.md)
+
+
 
 {% comment %}
 A physical quantity, designates how fast and in what direction a point is moving, is velocity [[1](#ref1)].
