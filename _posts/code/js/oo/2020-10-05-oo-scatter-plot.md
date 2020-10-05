@@ -12,7 +12,7 @@ tags: ["js"]
 date: 2020-09-28 18:12:00 +07
 permalink: /code/js/oo-scatter-plot
 ---
-A conversion from JS array to scatter plot [[1](#ref1)], which is displayed using `oo` [[2](#ref2)] is presented in this article.
+A conversion from JavaScript (JS) array to scatter plot [[1](#ref1)], which is displayed using `oo` [[2](#ref2)] is presented in this article.
 
 
 ## oo tag
@@ -91,6 +91,40 @@ circle 140 100 3
 ```
 
 where the point must be determined manually by viewing it repeatedly, which is not so efficient.
+
+
+## JS function
+A function using JS can be constructed to automatize the process. First make an array of the data
+
+```batch
+data = `
+0, 2
+0.5, 2.5
+1, 3
+1.5, 3.125
+2, 3
+2.5, 2.5
+3, 2
+`;
+```
+
+<script>
+var data = `
+0, 2
+0.5, 2.5
+1, 3
+1.5, 3.125
+2, 3
+2.5, 2.5
+3, 2
+`;
+
+
+
+
+console.log(data);
+</script>
+
 
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Scatter plot", Wikipedia, The Free Encyclopedia, 10 Sep 2020, 22:11 UTC, <https://en.wikipedia.org/w/index.php?oldid=977773986> [20201005].
