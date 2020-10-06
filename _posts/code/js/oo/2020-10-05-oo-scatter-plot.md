@@ -285,7 +285,7 @@ Previously given codes are not entirely code snippets, where some are already so
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/code/js/oo/2020-10-05-oo-scatter-plot.md)
 
-{ %comment% }
+{% comment %}
 <script>
 class Conversion {
 	constructor() {
@@ -386,4 +386,4 @@ function ooLineTextFromXYPoints() {
 	return ooText;
 }
 </script>
-{ %endcomment% }
+{% endcomment %}
