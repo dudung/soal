@@ -7,7 +7,7 @@ ptext: false
 x3dom: false
 threejs: false
 oo: true
-category: 
+category: code
 tags: ["js"]
 date: 2020-09-28 18:12:00 +07
 permalink: /code/js/oo-scatter-plot
@@ -90,7 +90,7 @@ circle 140 100 3
 </oo>
 ```
 
-where the point must be determined manually by viewing it repeatedly, which is not so efficient.
+where the point must be determined manually by viewing it repeatedly, switch between texteditor and browser, which is not so efficient.
 
 
 ## JS code
@@ -205,7 +205,7 @@ And to produce connected line or a polyline
 
 ```javascript
 var style2 = "lc:#f00 ls:0 lw:1.5 lo:1";
-var oot2 = ooLineTextFromXYPoints(X, Y, 3, style);
+var oot2 = ooLineTextFromXYPoints(X, Y, style);
 ```
 
 which requires
@@ -214,8 +214,7 @@ which requires
 function ooLineTextFromXYPoints() {
 	var X = arguments[0];
 	var Y = arguments[1];
-	var ps = arguments[2];
-	var style = arguments[3];
+	var style = arguments[2];
 	
 	var N = Math.min(X.length, Y.length);
 	var ooText = "";
@@ -230,7 +229,7 @@ function ooLineTextFromXYPoints() {
 }
 ```
 
-and the results, especially the line, is shown in Fig. <a href="#fig:osp-yx-line">2</a>
+and the results, especially the additional lines, is shown in Fig. <a href="#fig:osp-yx-line">2</a>
 
 <oo>
 svg 200 200 #fafafa fig:osp-yx-line|Scatter of $y$ againts $x$ with line.
@@ -275,9 +274,8 @@ circle 140 100 3
 </oo>
 
 
-
-
-
+## Note
+Previously given codes are not entirely code snippets, where some are already so obvious and some are for `oo` but also reusable for other purposes.
 
 
 ## References
@@ -287,6 +285,7 @@ circle 140 100 3
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/code/js/oo/2020-10-05-oo-scatter-plot.md)
 
+{ %comment% }
 <script>
 class Conversion {
 	constructor() {
@@ -368,13 +367,12 @@ function ooPointTextFromXYPoints() {
 }
 
 var style2 = "lc:#f00 ls:0 lw:1.5 lo:1";
-var oot2 = ooLineTextFromXYPoints(X, Y, 3, style);
+var oot2 = ooLineTextFromXYPoints(X, Y, style);
 
 function ooLineTextFromXYPoints() {
 	var X = arguments[0];
 	var Y = arguments[1];
-	var ps = arguments[2];
-	var style = arguments[3];
+	var style = arguments[2];
 	
 	var N = Math.min(X.length, Y.length);
 	var ooText = "";
@@ -388,3 +386,4 @@ function ooLineTextFromXYPoints() {
 	return ooText;
 }
 </script>
+{ %endcomment% }
