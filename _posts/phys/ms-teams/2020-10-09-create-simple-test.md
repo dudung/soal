@@ -19,7 +19,7 @@ A step-by-step how to make a simple test for physics lecture using Microsoft Tea
 Usually you will have access through your institution using the link <https://teams.microsoft.com/> and will be asked to sign in with your institutional account. It is also assumed that you have already a team for virtual room in creating a test. The team should be the type of Class.
 
 
-## Creating an assigment of type Choice
+## Creating a quiz of type Choice using Forms
 1. In a team of type Class find the tab **Assignments** and click it.
 2. Click **Create** button and choose **Quiz**.
 3. By Assuming this is the first quis, choose **+ New Quiz**.
@@ -40,10 +40,22 @@ Usually you will have access through your institution using the link <https://te
 18. After inputting all trial questions, click **Share** on the tab.
 19. Choose **Copy** to get the link and you can share it to your target audience, which for this example is as [[2](#ref2)].
 20. If you like, you can change the option from **Only people in my organization can respond** to **Anyone with the link can respond**. For now just use the first option.
-21. Now the form with name "Kinematics 1-d" is ready but not yet assigned to the class. Choose again a team and followed by choosing **Assignments** tab.
-22. Click **Create** button.
-23. Choose **Quiz** but now **Choose a Quiz** and pick "Kinematics 1-d". Click **Next** button.
-24. Modify the **Title** to "Quiz 2 Kinematics 1-d".
+21. Now the form with name "Kinematics 1-d" is ready but not yet assigned to the class.
+
+
+## Assign a quiz to the class
+1. Choose again a team and followed by choosing **Assignments** tab.
+2. Click **Create** button.
+3. Choose **Quiz** but now **Choose a Quiz** and pick "Kinematics 1-d". Click **Next** button.
+4. Modify the **Title** to something, e,g. "Kinematics 1-d".
+5. Make a new category if necessary, e.g. "Quiz" and **Add category**.
+6. Fill **Instructions", e.g. "Individual quiz".
+7. Set ***Date due** and **TIme due** for the quiz, e.g. "Sat, Oct 10, 2020" and "11:59 PM". 
+8. Choose **Save** if you want to change it later or simply **Assign** to make it available to the students.
+9. Now an assigment is available in **General**.
+10. Click **View assignment** to see it.
+11. There is tab named **To return(xx)**, where `xx` is number of assigned students.
+12. You can see students' name is in **Name** column, status (Not turned in, Viewed, Turned in) is available in **Status** column, score is in the last column.
 
 
 ## Trial questions
@@ -54,128 +66,12 @@ Following trial questions are only for creating the quiz.
 4. What is the possible value of displacement compared to distance? You must choose all available right answers. (a) magnitude of displacement can be equal to distance, (b) distance can be negative as the magnitude of displacement (c) value of distance can be larger then magnitude of displacement, (d) distance can be zero but magnitude of displacement can not. Points: 25. Multiple answes: true. Required: true. Answer: a and c.
 
 
+## Note
+Other types of question can be also chosen and used. Purpose of this article is only to show how it works with only of type Choice.
+
+
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Microsoft Teams", Wikipedia, The Free Encyclopedia, 9 Oct 2020, 03:46 UTC, <https://en.wikipedia.org/w/index.php?oldid=982604302> [20201009].
 2. <a name="ref2"></a> url <https://forms.office.com/Pages/ResponsePage.aspx?id=gxFu22VMXECCznzVP6bp3NGUp4ijN01Ks-VZMpTE-hpUODBOUUhYRUhVTDVDMldZVlM3MUg0MUVWUC4u> [20201009].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/ms-teams/2020-10-09-create-simple-test.md)
-
-
-
-{% comment %}
-A physical quantity, designates how fast and in what direction a point is moving, is velocity [[1](#ref1)].
-
-
-## Notation
-Velocity in vector form is presented using $\vec{v}$, sometimes is also $\vec{u}$. In general velocity
-
-\begin{equation}
-\label{eqn:velo-t}
-\vec{v} = \vec{v}(t)
-\end{equation}
-
-is function of time $t$ and also its components
-
-\begin{equation}
-\label{eqn:velo-t-components}
-\vec{v}(t) = v_x(t) \hat{i} + v_y(t) \hat{j} + v_z(t) \hat{k}.
-\end{equation}
-
-The functions $x(t)$, $y(t)$, and $z(t)$ can also be a constant value or simply zero.
-
-
-## Relation to position
-When we have position $\vec{r}$, velocity $\vec{v}$ can be obtained from it
-
-\begin{equation}
-\label{eqn:velo-from-r}
-\vec{v} = \frac{d\vec{r}}{dt}
-\end{equation}
-
-using differential. Suppose we have
-
-\begin{equation}
-\label{eqn:velo-r-example-1}
-\vec{r} = (t + 10) \hat{i} + (t^2 - 2t + 1) \hat{j} + 4 \hat{k},
-\end{equation}
-
-then the velocity is simply
-
-\begin{equation}
-\label{eqn:velo-v-example-1}
-\vec{v} = \hat{i} + (2t - 2) \hat{j}
-\end{equation}
-
-using Eqn. \eqref{eqn:velo-from-r}.
-
-
-## Relation to acceleration
-If we have acceleration $\vec{a}$, velocity $\vec{v}$ can also be obtained from it
-
-\begin{equation}
-\label{eqn:velo-from-a}
-\vec{v} = \int \vec{a} \ dt
-\end{equation}
-
-using integral. An initial condition in the form of $\vec{v}(t_0)$ is also required. Suppose we have
-
-\begin{equation}
-\label{eqn:velo-a-example-2}
-\vec{a} = 3t^2 \ \hat{i} + (2t + 1) \hat{j} + \hat{k},
-\end{equation}
-
-and initial condition
-
-\begin{equation}
-\label{eqn:velo-a-example-2-ic}
-\vec{v}(0) = \hat{i} + 2 \hat{j} + 3 \hat{k},
-\end{equation}
-
-where we choose that $t_0 = 0$. By introducing the lower and upper bounds to the integral in Eqn. \eqref{eqn:velo-from-a}, we can have
-
-\begin{equation}
-\label{eqn:velo-v-example-2}
-\vec{v}(t) - \vec{v}(0) = \int_0^{t} \vec{a} \ dt.
-\end{equation}
-
-Substitution of Eqns. \eqref{eqn:velo-a-example-2} and \eqref{eqn:velo-a-example-2-ic} to Eqn. \eqref{eqn:velo-v-example-2} will produce
-
-\begin{equation}
-\label{eqn:velo-v-example-2-2}
-\vec{v}(t) - \left( \hat{i} + 2 \hat{j} + 3 \hat{k} \right) = \int_0^{t} \left[ 3t^2 \ \hat{i} + (2t + 1) \hat{j} + \hat{k} \right] \ dt.
-\end{equation}
-
-Solution of Eqn. \eqref{eqn:velo-v-example-2-2} is
-
-\begin{equation}
-\label{eqn:velo-v-example-2-3}
-\begin{array}{rl}
-\vec{v}(t) & = & \left[ t^3 \ \hat{i} + (t^2 + t) \hat{j} + t \ \hat{k} \right]_{t = 0}^t +
-\left( \hat{i} + 2 \hat{j} + 3 \hat{k} \right) \newline
-& = & (t^3 + 1) \hat{i} + (t^2 + t + 2) \hat{j} + (t + 3) \hat{k}.
-\end{array}
-\end{equation}
-
-You can put $t = 0$ into Eqn. \eqref{eqn:velo-v-example-2-3} to obtain Eqn. \eqref{eqn:velo-a-example-2-ic} and differentiate it to obtain Eqn. \eqref{eqn:velo-a-example-2}.
-
-
-## Quantity with the same dimension
-Velocity in Eqn. \eqref{eqn:velo-t} is known also as instantaneous velocity or velocity at specific time of the particle in a point along particle trajectory [[2](#ref2)]. This type of velocity is presented in a function of time $t$, that can be a continuous function or a discrete function such [step function velocity](step-function-velocity). Related to (instantaneous) velocity there are average velocity, speed, and [relative velocity](relative-velocity), which have the same dimension as velocity.
-
-
-## Exercises
-1. Find the velocity of a particle that has position of $\vec{r} = (t^4 - \cos 2t) \hat{i} + (1 - t^2) \hat{j} + 2 \hat{k}$. Remember hat $(d/dt)(\cos at) = - a\sin at$.
-2. A particle has $a = (4t^3 - 2t) \ \rm m/s^2$. Find its velocity if $v(0) = 2 \ \rm m/s$.
-3. Find velocity of a particle with acceleration $a = (-3t^2 + 5) \ \rm m/s^2$, where the initial velocity is $v(2) = 5 \ \rm m/s$.
-4. A particle has a position of $\vec{r} = (2 \cos 0.25\pi t) \hat{i} + (2 \sin 0.25\pi t) \hat{j}$. Draw its position for $t = 0, 1, \dots, 7, 8$ and at each position draw its velocity vector. What form is the of particle trajectory?
-5. A particle move with $x = 0.5 t^2$ and $a_y = 4$. If $v_{0y}(1) = 3$, find $\vec{v}$. 
-
-
-## References
-1. <a name="ref1"></a>The Editors of Encyclopaedia Britannica, Piyush Bhathya, Yamini Chauhan, William L. Hosch, Emily Rodriguez, "Vector", Encyclopædia Britannica, 14 Apr 2016, url <https://www.britannica.com/science/velocity> [20200929].
-2. <a name="ref1"></a>José L. Fernández, "Instantaneous velocity", Fisicalab, url <https://www.fisicalab.com/en/section/instantaneous-velocity>
-[20200929].
-
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-09-05-velocity.md)
-
-{% endcomment %}
