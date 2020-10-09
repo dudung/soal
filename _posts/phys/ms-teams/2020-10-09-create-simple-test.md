@@ -1,7 +1,7 @@
 ---
 layout: post
 author: viridi
-title: relative velocity
+title: create simple test using ms-teams
 mathjax: true
 ptext: false
 x3dom: false
@@ -12,7 +12,20 @@ tags: ["ms-teams"]
 date: 2020-10-09 15:21:00 +07
 permalink: /physics/ms-teams/create-simple-test
 ---
-A step-by-step how to make a simple test for physics lecture using MS Teams [[1](#ref1)] is discussed here.
+A step-by-step how to make a simple test for physics lecture using Microsoft Teams [[1](#ref1)] is discussed here.
+
+
+## Microsoft Teams
+Usually you will have access through your institution using the link <https://teams.microsoft.com/> and will be asked to sign in with your institutional account. It is also assumed that you have already a team for virtual room in creating a test. The team should be the type of Class.
+
+
+## Creating an assigment
+1. In a team of type Class find the tab **Assignments** and click it.
+2. Click **Create** button and choose **Quiz**.
+3. By Assuming this is the first quis, choose **+ New Quiz**.
+4. Click **Unnamed Quiz** and change it to a name you desired, e.g. "Kinematics 1-d".
+5. Do **Enter a description** with some information, e.g. "Quiz about 1-d kinematics".
+6. Click **+ Add new**.
 
 
 ## References
