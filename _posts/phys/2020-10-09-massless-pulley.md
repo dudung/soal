@@ -180,6 +180,10 @@ T = \left( \frac{2 m_1 m_2}{m_1 + m_2} \right) g.
 by subtituting Eqn. \eqref{eqn:mp-newton2-m1-sol-a} into Eqn. \eqref{eqn:mp-newton2-m1-sol} or \eqref{eqn:mp-newton2-m2-sol}.
 
 
+## Note
+If we do not know the values of $m_1$ and $m_2$, we still can assume that, e.g. $m_2 > m_1$ and then if the final answer is right then the assumption is right, but when the final answer is negative of the predicted value then the assumption is false, e.g. it should be $m_1 > m_2$ and we must change the sign.
+
+
 ## Exercises
 1. What are an ideal string and an ideal pulley? Explain in brief the criteria.
 2. If Eqn. \eqref{eqn:mp-w=mg} is for earth gravitational force near earth surface, find the expression for more general gravitational force, which also holds for object far from earth surface.
