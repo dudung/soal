@@ -83,6 +83,8 @@ text 40 160 w
 text 140 175 w
 text 5 120 a
 text 180 95 a
+text 25 45 T
+text 160 45 T
 
 style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 52 100 1
@@ -91,6 +93,8 @@ text 52 165 1
 text 152 180 2
 text 15 125 1
 text 190 100 2
+text 35 50 1
+text 170 50 2
 
 style lc:#0e0 ls:0 lw:2 lo:1 fc:#0e0 fo:1
 arrow 90 20 90 60
