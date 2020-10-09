@@ -130,7 +130,7 @@ when we consider that the object is move from left to right. In the future, the 
 We can also have an uncommon coordinate system, where we want to keep the $x$-axis is always parallel to earth surface and $y$-axis is perpendicular to earth surface (or parallel to earth gravitational acceleration $\vec{g}$). Using this uncommon coordinate system, system in Fig. <a href="#fig:ic-incline-downward-coordinate">3</a> and Fig. <a href="#fig:ic-incline-upward-coordinate">4</a> will be changed as follow.
 
 <oo>
-svg 200 190 #fafafa fig:ic-incline-uncommon-coordinate|Angle of inclination of a downward incline, denoted by $\theta$.
+svg 400 190 #fafafa fig:ic-incline-uncommon-coordinate|Uncommon coordinate system for downward incline (left) and updward incline (right).
 
 style lc:#000 ls:0 lw:1 lo:1
 line 20 60 180 170
