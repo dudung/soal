@@ -38,7 +38,7 @@ Usually you will have access through your institution using the link <https://te
 16. Use the button **Back** on top of the preview to continue editing the question.
 17. Continue to add more questions using **+ Add new**. See the next section for the other question beside the first one.
 18. After inputting all trial questions, click **Share** on the tab.
-19. Choose **Copy** to get the link and you can share it to your target audience, which for this example is <https://forms.office.com/Pages/ResponsePage.aspx?id=gxFu22VMXECCznzVP6bp3NGUp4ijN01Ks-VZMpTE-hpUODBOUUhYRUhVTDVDMldZVlM3MUg0MUVWUC4u>.
+19. Choose **Copy** to get the link and you can share it to your target audience, which for this example is as [[2](#ref2)].
 20. If you like, you can change the option from **Only people in my organization can respond** to **Anyone with the link can respond**. For now just use the first option.
 
 
@@ -52,6 +52,7 @@ Following trial questions are only for creating the quiz.
 
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Microsoft Teams", Wikipedia, The Free Encyclopedia, 9 Oct 2020, 03:46 UTC, <https://en.wikipedia.org/w/index.php?oldid=982604302> [20201009].
+2. <a name="ref2"></a> url <https://forms.office.com/Pages/ResponsePage.aspx?id=gxFu22VMXECCznzVP6bp3NGUp4ijN01Ks-VZMpTE-hpUODBOUUhYRUhVTDVDMldZVlM3MUg0MUVWUC4u> [20201009].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/ms-teams/2020-10-09-create-simple-test.md)
 
