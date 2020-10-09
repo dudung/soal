@@ -132,23 +132,47 @@ We can also have an uncommon coordinate system, where we want to keep the $x$-ax
 <oo>
 svg 400 190 #fafafa fig:ic-incline-uncommon-coordinate|Uncommon coordinate system for downward incline (left) and updward incline (right).
 
-style lc:#000 ls:0 lw:1 lo:1
+style lc:#000 ls:0 lw:2 lo:1
 line 20 60 180 170
 
-style lc:#000 ls:0 lw:2 lo:1 fc:#000 fo:1
-arrow 20 60 60 87
-arrow 20 60 47 20
+	style lc:#000 ls:0 lw:2 lo:1 fc:#000 fo:1
+	arrow 20 60 60 87
+	arrow 20 60 47 20
 
-style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
-text 5 60 o
-text 55 20 y
-text 65 80 x
+	style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+	text 5 60 o
+	text 55 20 y
+	text 65 80 x
 
 style lc:#000 ls:8-4 lw:0.8 lo:1 fo:0
 line 180 170 20 170
 
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 120 160 &theta;
+
+style lc:#000 ls:0 lw:2 lo:1
+line 220 170 380 60
+
+style lc:#000 ls:8-4 lw:0.8 lo:1 fo:0
+line 220 170 380 170
+
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 260 160 &theta;
+
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 200 40 g
+style lc:#0e0 ls:0 lw:2 lo:1 fc:#0e0 fo:1
+arrow 190 20 190 60
+
+style lc:#000 ls:0 lw:2 lo:1 fc:#000 fo:1
+circle 20 60 2
+circle 220 170 2
+
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 15 50 o
+text 215 160 o
+
+
 </oo>
 
 ## References
