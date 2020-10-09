@@ -78,7 +78,7 @@ Both angles $\theta$ in Fig. <a href="#fig:ic-incline-angle">2</a> are measured 
 Usually an incline in Fig. <a href="#fig:ic-incline-angle">2</a> (left) will have following coordinate system
 
 <oo>
-svg 200 190 #fafafa fig:ic-incline-downward-coordinate|Angle of inclination of a downward incline, denoted by $\theta$.
+svg 200 190 #fafafa fig:ic-incline-downward-coordinate|Common coordinate system for downward incline (from left to right).
 
 style lc:#000 ls:0 lw:1 lo:1
 line 20 60 180 170
@@ -102,7 +102,7 @@ text 120 160 &theta;
 and for Fig. <a href="#fig:ic-incline-angle">2</a> (right) is as follow
 
 <oo>
-svg 240 150 #fafafa fig:ic-incline-upward-coordinate|Angle of inclination of an upward incline, denoted by $\theta$.
+svg 240 150 #fafafa fig:ic-incline-upward-coordinate|Common coordinate system for upward incline (from left to right).
 
 style lc:#000 ls:0 lw:1 lo:1
 line 60 130 220 20
@@ -127,8 +127,29 @@ when we consider that the object is move from left to right. In the future, the 
 
 
 ## Uncommon coordinate system
-We can also have an uncommon coordinate system, where we want to keep the $x$-axis is always parallel to earth surface and $y$-axis is perpendicular to earth surface (or parallel to earth gravitational acceleration $\vec{g}$).
+We can also have an uncommon coordinate system, where we want to keep the $x$-axis is always parallel to earth surface and $y$-axis is perpendicular to earth surface (or parallel to earth gravitational acceleration $\vec{g}$). Using this uncommon coordinate system, system in Fig. <a href="#fig:ic-incline-downward-coordinate">3</a> and Fig. <a href="#fig:ic-incline-upward-coordinate">4</a> will be changed as follow.
 
+<oo>
+svg 200 190 #fafafa fig:ic-incline-uncommon-coordinate|Angle of inclination of a downward incline, denoted by $\theta$.
+
+style lc:#000 ls:0 lw:1 lo:1
+line 20 60 180 170
+
+style lc:#000 ls:0 lw:2 lo:1 fc:#000 fo:1
+arrow 20 60 60 87
+arrow 20 60 47 20
+
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 5 60 o
+text 55 20 y
+text 65 80 x
+
+style lc:#000 ls:8-4 lw:0.8 lo:1 fo:0
+line 180 170 20 170
+
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 120 160 &theta;
+</oo>
 
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Inclined plane", Wikipedia, The Free Encyclopedia, 29 Sep 2020, 20:12 UTC, <https://en.wikipedia.org/w/index.php?oldid=981018186> [20201010].
