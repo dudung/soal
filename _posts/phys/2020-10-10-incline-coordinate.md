@@ -80,8 +80,17 @@ Usually an incline in Fig. <a href="#fig:ic-incline-angle">2</a> (left) will hav
 <oo>
 svg 200 190 #fafafa fig:ic-incline-downward-coordinate|Angle of inclination of a downward incline, denoted by $\theta$.
 
-style lc:#000 ls:0 lw:2 lo:1
-line 180 170 20 60
+style lc:#000 ls:0 lw:1 lo:1
+line 20 60 180 170
+
+style lc:#000 ls:0 lw:2 lo:1 fc:#000 fo:1
+arrow 20 60 60 87
+arrow 20 60 47 20
+
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 5 60 o
+text 55 20 y
+text 65 80 x
 
 style lc:#000 ls:8-4 lw:0.8 lo:1 fo:0
 line 180 170 20 170
@@ -95,8 +104,17 @@ and for Fig. <a href="#fig:ic-incline-angle">2</a> (right) is as follow
 <oo>
 svg 240 150 #fafafa fig:ic-incline-upward-coordinate|Angle of inclination of an upward incline, denoted by $\theta$.
 
-style lc:#000 ls:0 lw:2 lo:1
+style lc:#000 ls:0 lw:1 lo:1
 line 60 130 220 20
+
+style lc:#000 ls:0 lw:2 lo:1 fc:#000 fo:1
+arrow 60 130 100 103
+arrow 60 130 33 90
+
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 45 135 o
+text 95 95 x
+text 35 80 y
 
 style lc:#000 ls:8-4 lw:0.8 lo:1 fo:0
 line 60 130 220 130
@@ -105,7 +123,11 @@ style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 100 120 &theta;
 </oo>
 
-when we consider that the object is move from left to right.
+when we consider that the object is move from left to right. In the future, the axes are not necessarily drawn on the incline line, but could be a little bit off to give a clearer illustration, meanwhile the point $o$ (origint) is better put on the line (or the surface) of the incline. Arrow of the axes are showing the direction, while the point $o$ is indicating the $(0, 0)$ coordinates, a reference point.
+
+
+## Uncommon coordinate system
+We can also have an uncommon coordinate system, where we want to keep the $x$-axis is always parallel to earth surface and $y$-axis is perpendicular to earth surface (or parallel to earth gravitational acceleration $\vec{g}$).
 
 
 ## References
