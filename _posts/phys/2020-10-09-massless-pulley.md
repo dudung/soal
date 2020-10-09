@@ -52,6 +52,17 @@ arrow 20 20 20 60
 In the system illustrated by Fig. <a href="#fig:mp-system">1</a> there are masses $m_1$ and $m_2$, pulley $\rm P$, ceiling where the pulley is attached on, and string connecting the two masses through the pulley. Here we consider an ideal pulley and an ideal string, and also that the pulley remains stationary, which leaves only the two masses to discuss. 
 
 
+## Considered forces
+For each mass there are only two cosidered forces, where the first is string tension $T$ and the second is
+
+\begin{equation}
+\label{eqn:mp-w=mg}
+w = mg,
+\end{equation}
+
+the earth gravitational force near earth surface.
+
+
 ## Free-body diagram
 Since Newtons' first and second laws deal with all forces working on an isolated object, we require to have a free-body diagrams for $m_1$ and $m_2$. Assuming that $m_2 > m_1$ than accelerations $\vec{a}$ are drawn for each mass as shown in Fig. <a href="#fig:mp-free-body-diagram">2</a>.
 
@@ -70,11 +81,16 @@ text 140 95 m
 text 100 40 g
 text 40 160 w
 text 140 175 w
+text 5 120 a
+text 180 95 a
+
 style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 52 100 1
 text 152 100 2
 text 52 165 1
 text 152 180 2
+text 15 125 1
+text 190 100 2
 
 style lc:#0e0 ls:0 lw:2 lo:1 fc:#0e0 fo:1
 arrow 90 20 90 60
@@ -87,13 +103,88 @@ style lc:#00f ls:0 lw:2 lo:1 fc:#00f fo:1
 arrow 50 105 50 145
 arrow 150 105 150 160
 
-
+style lc:#f0f ls:0 lw:2 lo:1 fc:#f0f fo:1
+arrow 10 105 10 65
+arrow 190 105 190 145
 </oo>
 
+Due to ideal string and pulley then as consequences
+
+\begin{equation}
+\label{eqn:mp-a1=a2=a}
+a_1 = a_2 = a
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:mp-T1=T2=T}
+T_1 = T_2 = T,
+\end{equation}
+
+which will be used later.
+
+
+## Newtons' 2nd law
+Using Fig. <a href="#fig:mp-free-body-diagram">2</a> we can write for the mass $m_1$ that
+
+\begin{equation}
+\label{eqn:mp-newton2-m1}
+\begin{array}{rcl}
+\sum F_1 & = & m_1 a_1 \newline
+T_1 - w_1 & = & m_1 a_1 \newline
+T_1 & = & w_1 + m_1 a_1
+\end{array}
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:mp-newton2-m2}
+\begin{array}{rcl}
+\sum F_2 & = & m_2 a_2 \newline
+w_2 - T_2 & = & m_2 a_2 \newline
+w_2 - m_2 a_2& = & T_2.
+\end{array}
+\end{equation}
+
+## Solution
+Substitution of Eqns. \eqref{eqn:mp-w=mg}, \eqref{eqn:mp-a1=a2=a}, and \eqref{eqn:mp-T1=T2=T} into Eqns. \eqref{eqn:mp-newton2-m1} and \eqref{eqn:mp-newton2-m2}, will produce
+
+\begin{equation}
+\label{eqn:mp-newton2-m1-sol}
+T = m_1 g + m_1 a
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:mp-newton2-m2-sol}
+T = m_2 g - m_2 a
+\end{equation}
+
+Equating the last two equations, Eqns. \eqref{eqn:mp-newton2-m1-sol} and \eqref{eqn:mp-newton2-m2-sol} will give
+
+\begin{equation}
+\label{eqn:mp-newton2-m1-sol-a}
+a = \left( \frac{m_2 - m_1}{m_2 + m_1} \right) g.
+\end{equation}
+
+We can also obtain
+
+\begin{equation}
+\label{eqn:mp-newton2-m1-sol-T}
+T = \left( \frac{2 m_1 m_2}{m_1 + m_2} \right) g.
+\end{equation}
+
+by subtituting Eqn. \eqref{eqn:mp-newton2-m1-sol-a} into Eqn. \eqref{eqn:mp-newton2-m1-sol} or \eqref{eqn:mp-newton2-m2-sol}.
 
 
 ## Exercises
 1. What are an ideal string and an ideal pulley? Explain in brief the criteria.
+2. If Eqn. \eqref{eqn:mp-w=mg} is for earth gravitational force near earth surface, find the expression for more general gravitational force, which also holds for object far from earth surface.
+3. Prove Eqn. \eqref{eqn:mp-newton2-m1-sol-a} from Eqns. \eqref{eqn:mp-newton2-m1-sol} and \eqref{eqn:mp-newton2-m2-sol}.
+4. Show how to obtain Eqn. \eqref{eqn:mp-newton2-m1-sol-T}.
 
 
 ## References
