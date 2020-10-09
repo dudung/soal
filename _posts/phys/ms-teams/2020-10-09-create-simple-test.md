@@ -37,13 +37,17 @@ Usually you will have access through your institution using the link <https://te
 15. You can use **Preview** on the tab to see how the question is displayed in different gadgets, e.g. **Computer** and **Mobile**.
 16. Use the button **Back** on top of the preview to continue editing the question.
 17. Continue to add more questions using **+ Add new**. See the next section for the other question beside the first one.
+18. After inputting all trial questions, click **Share** on the tab.
+19. Choose **Copy** to get the link and you can share it to your target audience, which for this example is <https://forms.office.com/Pages/ResponsePage.aspx?id=gxFu22VMXECCznzVP6bp3NGUp4ijN01Ks-VZMpTE-hpUODBOUUhYRUhVTDVDMldZVlM3MUg0MUVWUC4u>.
+20. If you like, you can change the option from **Only people in my organization can respond** to **Anyone with the link can respond**. For now just use the first option.
+
 
 ## Trial questions
 Following trial questions are only for creating the quiz.
-1. A particle is at position $x_1$ at time $t_1$ and at position $x_2$ at time $t_2$. A physical quantity obtained using $(x_2 - x_1) / (t_2 - t_1)$ is (a) acceleration, (b) instantanenous velocity, (c) average velocity, (d) average acceleration. Points: 25. Required: true. Answer: c.
-2. At $t = 0 \ \rm s$ a partikel has velocity of $1 \ \rm m/s$ and at $t = 1 \ \rm s$ it has velocity of $5 \ \rm m/s$. If it is an non-uniform linear motion, what is its acceleration? (a) 1 m/s^2, (b) 2 m/s^2, (c) 3 m/s^2, (d) 4 m/s^2. Points: 25. Required: true. Answer: d.
-3. Following are time $t$ (in $\rm s$) and position of particle $x$ (in $\rm m$) along $x$ axis, $(0, 1)$, $(1, 5)$, $(2, 6)$, $(3, 5)$, $(4, 5)$. What is average velocity and average speed of the particle between $t = 1 \ \rm s$ and $t = 3 \ \rm s$? (a) $0 \ \rm m/s$ and $0 \ \rm m/s$, (b) $0 \ \rm m/s$ and $1 \ \rm m/s$, (c) $1 \ \rm m/s$ and $0 \ \rm m/s$, (d) $1 \ \rm m/s$ and $1 \ \rm m/s$. Points: 25. Required: true. Answer: b.
-4. 
+1. A particle is at position $x_1$ at time $t_1$ and at position $x_2$ at time $t_2$. A physical quantity obtained using $(x_2 - x_1) / (t_2 - t_1)$ is (a) acceleration, (b) instantanenous velocity, (c) average velocity, (d) average acceleration. Points: 25. Multiple answes: false. Required: true. Answer: c.
+2. At $t = 0 \ \rm s$ a partikel has velocity of $1 \ \rm m/s$ and at $t = 1 \ \rm s$ it has velocity of $5 \ \rm m/s$. If it is an non-uniform linear motion, what is its acceleration? (a) 1 m/s^2, (b) 2 m/s^2, (c) 3 m/s^2, (d) 4 m/s^2. Points: 25. Multiple answes: false. Required: true. Answer: d.
+3. Following are time $t$ (in $\rm s$) and position of particle $x$ (in $\rm m$) along $x$ axis, $(0, 1)$, $(1, 5)$, $(2, 6)$, $(3, 5)$, $(4, 5)$. What is average velocity and average speed of the particle between $t = 1 \ \rm s$ and $t = 3 \ \rm s$? (a) $0 \ \rm m/s$ and $0 \ \rm m/s$, (b) $0 \ \rm m/s$ and $1 \ \rm m/s$, (c) $1 \ \rm m/s$ and $0 \ \rm m/s$, (d) $1 \ \rm m/s$ and $1 \ \rm m/s$. Points: 25. Multiple answes: false. Required: true. Answer: b.
+4. What is the possible value of displacement compared to distance? You must choose all available right answers. (a) magnitude of displacement can be equal to distance, (b) distance can be negative as the magnitude of displacement (c) value of distance can be larger then magnitude of displacement, (d) distance can be zero but magnitude of displacement can not. Points: 25. Multiple answes: true. Required: true. Answer: a and c.
 
 
 ## References
