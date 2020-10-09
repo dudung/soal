@@ -40,6 +40,10 @@ Usually you will have access through your institution using the link <https://te
 18. After inputting all trial questions, click **Share** on the tab.
 19. Choose **Copy** to get the link and you can share it to your target audience, which for this example is as [[2](#ref2)].
 20. If you like, you can change the option from **Only people in my organization can respond** to **Anyone with the link can respond**. For now just use the first option.
+21. Now the form with name "Kinematics 1-d" is ready but not yet assigned to the class. Choose again a team and followed by choosing **Assignments** tab.
+22. Click **Create** button.
+23. Choose **Quiz** but now **Choose a Quiz** and pick "Kinematics 1-d". Click **Next** button.
+24. Modify the **Title** to "Quiz 2 Kinematics 1-d".
 
 
 ## Trial questions
