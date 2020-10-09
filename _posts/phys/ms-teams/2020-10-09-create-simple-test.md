@@ -19,13 +19,29 @@ A step-by-step how to make a simple test for physics lecture using Microsoft Tea
 Usually you will have access through your institution using the link <https://teams.microsoft.com/> and will be asked to sign in with your institutional account. It is also assumed that you have already a team for virtual room in creating a test. The team should be the type of Class.
 
 
-## Creating an assigment
+## Creating an assigment of type Choice
 1. In a team of type Class find the tab **Assignments** and click it.
 2. Click **Create** button and choose **Quiz**.
 3. By Assuming this is the first quis, choose **+ New Quiz**.
 4. Click **Unnamed Quiz** and change it to a name you desired, e.g. "Kinematics 1-d".
 5. Do **Enter a description** with some information, e.g. "Quiz about 1-d kinematics".
 6. Click **+ Add new**.
+7. There are types of Choice, Text, Rating, Date, Ranking, Likert, File upload, Net Promoter Score, and Section. Choose **Choice** this time.
+8. Fill **Question** with your question, e.g. A particle is at position x1 at time t1 and at position x2 at time t2. A physical quantity obtained using (x2 - x1) / (t2 - t1) is
+9. Fill **Option 1** with "acceleration".
+10. Fill **Option 2** with "instantanenous velocity".
+11. Click **+ Add option** and fill **Option 3** with "average velocity". Click **✓** on the right of the option to mark it as right answer.
+12. Click **+ Add option** and fill **Option 4** with "average acceleration".
+13. Set **Points**, e.g. 25.
+14. Activate **Required** to assure that it must be answered.
+15. You can use **Preview** on the tab to see how the question is displayed in different gadgets, e.g. **Computer** and **Mobile**.
+16. Use the button **Back** on top of the preview to continue editing the question.
+17. Continue to add more questions using **+ Add new**. See the next section for the other question beside the first one.
+
+## Trial questions
+Following trial questions are only for creating the quiz.
+1. A particle is at position $x_1$ at time $t_1$ and at position $x_2$ at time $t_2$. A physical quantity obtained using $(x_2 - x_1) / (t_2 - t_1)$ is (a) acceleration, (b) instantanenous velocity, (c) average velocity, (d) average acceleration. Points: 25. Required: true. Answer: c.
+2. At t = 0 s a partikel has velocity of 1 m/s and at t = 1 s it has velocity of 5 m/s. If it is an nonuniform motion, what is its acceleration? (a) 1 m/s^2, (b) 2 m/s^2, (c) 3 m/s^2, (d) 4 m/s^2. Points: 25. Required: true. Answer: d.
 
 
 ## References
