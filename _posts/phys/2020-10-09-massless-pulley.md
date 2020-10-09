@@ -112,7 +112,7 @@ arrow 10 105 10 65
 arrow 190 105 190 145
 </oo>
 
-Due to ideal string and pulley then as consequences
+Due to ideal string and pulley we have
 
 \begin{equation}
 \label{eqn:mp-a1=a2=a}
@@ -126,7 +126,7 @@ and
 T_1 = T_2 = T,
 \end{equation}
 
-which will be used later.
+as the consequences, that will be used later.
 
 
 ## Newtons' 2nd law
