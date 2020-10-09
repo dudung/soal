@@ -189,6 +189,8 @@ If we do not know the values of $m_1$ and $m_2$, we still can assume that, e.g. 
 2. If Eqn. \eqref{eqn:mp-w=mg} is for earth gravitational force near earth surface, find the expression for more general gravitational force, which also holds for object far from earth surface.
 3. Prove Eqn. \eqref{eqn:mp-newton2-m1-sol-a} from Eqns. \eqref{eqn:mp-newton2-m1-sol} and \eqref{eqn:mp-newton2-m2-sol}.
 4. Show how to obtain Eqn. \eqref{eqn:mp-newton2-m1-sol-T}.
+5. Try to find the acceleration $a$ and the tension $T$ if $m_1 = 4 \ \rm kg$ and $m_2 = 6 \ \rm kg$.
+6. Do it again with by assuming $m_2 > m_1$. And after you find the solution, use the value of $m_1 = 6 \ \rm kg$ and $m_2 = 2 \ \rm kg$. Discuss the results.
 
 
 ## References
