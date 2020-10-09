@@ -198,6 +198,6 @@ If we do not know the values of $m_1$ and $m_2$, we still can assume that, e.g. 
 
 
 ## References
-1. <a name="ref1"></a>Wikipedia contributors, "Relative velocity", Wikipedia, The Free Encyclopedia, 16 Jul 2020, 17:36 UTC, <https://en.wikipedia.org/w/index.php?oldid=968011332> [20201009].
+1. <a name="ref1"></a>Wikipedia contributors, "Atwood machine", Wikipedia, The Free Encyclopedia, 16 Jul 2020, 17:36 UTC, <https://en.wikipedia.org/w/index.php?oldid=968011332> [20201009].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-10-09-massless-pulley.md)
