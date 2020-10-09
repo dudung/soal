@@ -14,6 +14,7 @@ permalink: /physics/incline-coordinate
 ---
 On an incline [[1](#ref1)] we can choose a coordinate system that reduces complexity of the problem [[2](#ref2)].
 
+
 ## Angle of inclination
 Angle of inclination is measured from $x$-axis in counterclockwise direction, which give values between $0^\circ$ and $180^\circ$ [[3](#ref3)], as shown in following Fig. <a href="#fig:ic-angle-of-inclination">1</a>.
 
@@ -57,9 +58,54 @@ Using this convention we can have following inclines, where the right if as in p
 <oo>
 svg 400 150 #fafafa fig:ic-incline-angle|Angle of inclination of an incline, denoted by $\theta$.
 
+style lc:#000 ls:0 lw:2 lo:1
+line 180 130 20 20
+line 220 130 380 20
 
+style lc:#000 ls:8-4 lw:0.8 lo:1 fo:0
+line 180 130 20 130
+line 220 130 380 130
 
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 120 120 &theta;
+text 260 120 &theta;
 </oo>
+
+Both angles $\theta$ in Fig. <a href="#fig:ic-incline-angle">2</a> are measured from horizontal line, where the left is measured in clockwise direction, while the right is measured in counterclockwise direction.
+
+
+## Common coordinate system
+Usually an incline in Fig. <a href="#fig:ic-incline-angle">2</a> (left) will have following coordinate system
+
+<oo>
+svg 200 190 #fafafa fig:ic-incline-downward-coordinate|Angle of inclination of a downward incline, denoted by $\theta$.
+
+style lc:#000 ls:0 lw:2 lo:1
+line 180 170 20 60
+
+style lc:#000 ls:8-4 lw:0.8 lo:1 fo:0
+line 180 170 20 170
+
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 120 160 &theta;
+</oo>
+
+and for Fig. <a href="#fig:ic-incline-angle">2</a> (right) is as follow
+
+<oo>
+svg 240 150 #fafafa fig:ic-incline-upward-coordinate|Angle of inclination of an upward incline, denoted by $\theta$.
+
+style lc:#000 ls:0 lw:2 lo:1
+line 60 130 220 20
+
+style lc:#000 ls:8-4 lw:0.8 lo:1 fo:0
+line 60 130 220 130
+
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 100 120 &theta;
+</oo>
+
+when we consider that the object is move from left to right.
 
 
 ## References
