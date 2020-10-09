@@ -41,7 +41,9 @@ Usually you will have access through your institution using the link <https://te
 ## Trial questions
 Following trial questions are only for creating the quiz.
 1. A particle is at position $x_1$ at time $t_1$ and at position $x_2$ at time $t_2$. A physical quantity obtained using $(x_2 - x_1) / (t_2 - t_1)$ is (a) acceleration, (b) instantanenous velocity, (c) average velocity, (d) average acceleration. Points: 25. Required: true. Answer: c.
-2. At t = 0 s a partikel has velocity of 1 m/s and at t = 1 s it has velocity of 5 m/s. If it is an nonuniform motion, what is its acceleration? (a) 1 m/s^2, (b) 2 m/s^2, (c) 3 m/s^2, (d) 4 m/s^2. Points: 25. Required: true. Answer: d.
+2. At $t = 0 \ \rm s$ a partikel has velocity of $1 \ \rm m/s$ and at $t = 1 \ \rm s$ it has velocity of $5 \ \rm m/s$. If it is an non-uniform linear motion, what is its acceleration? (a) 1 m/s^2, (b) 2 m/s^2, (c) 3 m/s^2, (d) 4 m/s^2. Points: 25. Required: true. Answer: d.
+3. Following are time $t$ (in $\rm s$) and position of particle $x$ (in $\rm m$) along $x$ axis, $(0, 1)$, $(1, 5)$, $(2, 6)$, $(3, 5)$, $(4, 5)$. What is average velocity and average speed of the particle between $t = 1 \ \rm s$ and $t = 3 \ \rm s$? (a) $0 \ \rm m/s$ and $0 \ \rm m/s$, (b) $0 \ \rm m/s$ and $1 \ \rm m/s$, (c) $1 \ \rm m/s$ and $0 \ \rm m/s$, (d) $1 \ \rm m/s$ and $1 \ \rm m/s$. Points: 25. Required: true. Answer: b.
+4. 
 
 
 ## References
