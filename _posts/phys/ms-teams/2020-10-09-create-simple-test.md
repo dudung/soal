@@ -67,7 +67,7 @@ Following trial questions are only for creating the quiz.
 
 
 ## Note
-Other types of question can be also chosen and used. Purpose of this article is only to show how it works with only of type Choice.
+Other types of question can be also chosen and used. Purpose of this article is only to show how it works and question of type Choice is the simplest way.
 
 
 ## References
