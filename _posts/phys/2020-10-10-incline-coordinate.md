@@ -135,14 +135,13 @@ svg 400 190 #fafafa fig:ic-incline-uncommon-coordinate|Uncommon coordinate syste
 style lc:#000 ls:0 lw:2 lo:1
 line 20 60 180 170
 
-	style lc:#000 ls:0 lw:2 lo:1 fc:#000 fo:1
-	arrow 20 60 60 87
-	arrow 20 60 47 20
+style lc:#000 ls:0 lw:2 lo:1 fc:#000 fo:1
+arrow 160 100 200 100
+arrow 160 100 160 60
 
-	style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
-	text 5 60 o
-	text 55 20 y
-	text 65 80 x
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 205 100 x
+text 155 50 y
 
 style lc:#000 ls:8-4 lw:0.8 lo:1 fo:0
 line 180 170 20 170
@@ -171,9 +170,10 @@ circle 220 170 2
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 15 50 o
 text 215 160 o
-
-
 </oo>
+
+Note that in Fig. <a href="#fig:ic-incline-uncommon-coordinate">5</a> we put the points $o$ for each incline but only once draw the axes since it holds for both incline, $y$-axis parallel to $\vec{g}$ (but in opposite direction) and $x$-axis is perpendicular to $\vec{g}$ (with positive direction is to the right).
+
 
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Inclined plane", Wikipedia, The Free Encyclopedia, 29 Sep 2020, 20:12 UTC, <https://en.wikipedia.org/w/index.php?oldid=981018186> [20201010].
