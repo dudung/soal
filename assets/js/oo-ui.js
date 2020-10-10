@@ -8,11 +8,40 @@
 	1827 Start this file after confused with right directory.
 	1838 It must be included first before called.
 	1936 Test displaySimpleUI and it works.
+	1959 Copy class Conversion from 2020-10-05-oo-scatter-plot.
+	2009 Start to design a basic UI.
 */
 
 
-// An UI
+// Design a basic UI
+function displayBasicUI() {
+	var div = document.createElement("div");
+	div.style.border = "1px solid #ccf";
+	div.style.background = "#fafaff";
+	
+	
+	document.body.append(div);
+}
 
+
+// Class of Conversion
+class Conversion {
+	constructor() {
+		this.min = arguments[0];
+		this.max = arguments[1];
+		this.MIN = arguments[2];
+		this.MAX = arguments[3];
+	}
+	
+	// Convert from x in [min, max] to X in [MIN, MAX]
+	from() {
+		var i = arguments[0];
+		var I = (i - this.min) / (this.max - this.min);
+		I *= (this.MAX - this.MIN);
+		I += this.MIN;
+		return I;
+	}
+};
 
 
 // Display button than can show message when it is clicked
