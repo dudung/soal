@@ -186,6 +186,65 @@ $y$-direction | $\sum F_y = 0$ (ULM) | $\sum F_y = m a_y$ (NLM)
 
 From previous table common CS will have uniform linier motion (ULM) in $y$-direction and non-uniform linear motion (NLM) in $x$-direction, while uncommon CS will have NLM in $x$ and $y$-directions. Which CS do you think that will more simplify the problem?
 
+### Solution for common CS
+For the common CS we have the solution of
+
+\begin{equation}
+\label{eqn:ic-common-cs-solution-x}
+a_x = g \sin \theta
+\end{equation}
+
+for $x$-direction and
+
+\begin{equation}
+\label{eqn:ic-common-cs-solution-y}
+a_y = 0
+\end{equation}
+
+for $y$-direction. From Eqns. \eqref{eqn:ic-common-cs-solution-x} and \eqref{eqn:ic-common-cs-solution-y} we can get $v_x(t)$, $v_y(t)$, $x(t)$, and $y(t)$ using kinematics.
+
+### Solution for uncommon CS
+But for uncommon CS it is not so easy to get the solution. From the table we can have
+
+\begin{equation}
+\label{eqn:ic-uncommon-cs-solution-xy}
+a_x - a_y \tan \theta = g \tan \theta,
+\end{equation}
+
+which requires additional constraint to solve it. The constraint is
+
+\begin{equation}
+\label{eqn:ic-uncommon-cs-constraint-xy}
+y = (-\tan \theta) x,
+\end{equation}
+
+where it is simply the incline that restricts the motion. Differentiate Eqn. \eqref{eqn:ic-uncommon-cs-constraint-xy} twice with respect to time $t$ will produce
+
+\begin{equation}
+\label{eqn:ic-uncommon-cs-constraint-axay}
+a_y = (-\tan \theta) a_x.
+\end{equation}
+
+Substitution of Eqn. \eqref{eqn:ic-uncommon-cs-constraint-axay} into Eqn. \eqref{eqn:ic-uncommon-cs-solution-xy} will give
+
+\begin{equation}
+\label{eqn:ic-uncommon-cs-solution-ax}
+a_x = g \sin \theta \cos \theta
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:ic-uncommon-cs-solution-ay}
+a_y = -g \sin^2 \theta.
+\end{equation}
+
+Again, using Eqns. \eqref{eqn:ic-uncommon-cs-solution-ax} and \eqref{eqn:ic-uncommon-cs-solution-ay} with kinematics, solution for $v_x(t)$, $v_y(t)$, $x(t)$, and $y(t)$ can be found.
+
+
+## Note
+Detail of object motion on an incline will be discussed in another article. 
+
 
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Inclined plane", Wikipedia, The Free Encyclopedia, 29 Sep 2020, 20:12 UTC, <https://en.wikipedia.org/w/index.php?oldid=981018186> [20201010].
