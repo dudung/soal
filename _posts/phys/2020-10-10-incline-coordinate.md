@@ -175,6 +175,10 @@ text 215 160 o
 Note that in Fig. <a href="#fig:ic-incline-uncommon-coordinate">5</a> we put the points $o$ for each incline but only once draw the axes since it holds for both incline, $y$-axis parallel to $\vec{g}$ (but in opposite direction) and $x$-axis is perpendicular to $\vec{g}$ (with positive direction is to the right).
 
 
+## Consequences
+By choosing common or uncommon coordinate system there will be some consequences. Let's take only the downward incline as the examples.
+
+
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Inclined plane", Wikipedia, The Free Encyclopedia, 29 Sep 2020, 20:12 UTC, <https://en.wikipedia.org/w/index.php?oldid=981018186> [20201010].
 2. <a name="ref2"></a>H. Trevor Johnson-Steigelman, "Inclined Plane Coordinate System", physicsthisweek.com, a branch of  Coaches of Technology, Inc., 29 Sept 2014, url <https://www.physicsthisweek.com/physics-i/inclined-plane/inclined-plane-coordinate-system/> [20201010].
