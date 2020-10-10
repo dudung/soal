@@ -176,7 +176,15 @@ Note that in Fig. <a href="#fig:ic-incline-uncommon-coordinate">5</a> we put the
 
 
 ## Consequences
-By choosing common or uncommon coordinate system there will be some consequences. Let's take only the downward incline as the examples.
+By choosing common or uncommon coordinate system (CS) there will be some consequences. Let's take only the downward incline as the examples. Assume that the plane is frictionless and there is not any external force other than force due to gravity $w$ and normal force $N$.
+
+**Components** | **Common CS** | **Uncommon CS**
+$x$-direction | $\sum F_x = m a_x$ (NLM) | $\sum F_x = m a_x$ (NLM)
+| $w \sin \theta = m a_x$ | $N \sin \theta = m a_x$
+$y$-direction | $\sum F_y = 0$ (ULM) | $\sum F_y = m a_y$ (NLM)
+| $N - w \cos \theta = 0$ | $N \cos \theta - w = m a_y$
+
+From previous table common CS will have uniform linier motion (ULM) in $y$-direction and non-uniform linear motion (NLM) in $x$-direction, while uncommon CS will have NLM in $x$ and $y$-directions. Which CS do you think that will more simplify the problem?
 
 
 ## References
