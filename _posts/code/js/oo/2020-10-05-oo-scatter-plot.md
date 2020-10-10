@@ -9,7 +9,7 @@ threejs: false
 oo: true
 category: code
 tags: ["js"]
-date: 2020-09-28 18:12:00 +07
+date: 2020-10-05 18:12:00 +07
 permalink: /code/js/oo-scatter-plot
 ---
 A conversion from JavaScript (JS) array to scatter plot [[1](#ref1)], which is displayed using `oo` [[2](#ref2)] is presented in this article.
