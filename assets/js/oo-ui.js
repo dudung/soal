@@ -19,8 +19,17 @@ function displayBasicUI() {
 	div.style.border = "1px solid #ccf";
 	div.style.background = "#fafaff";
 	
+	var taIn = document.createElement("textarea");
+	taIn.style.overflowY = "scroll";
+	taIn.style.height = "100px";
+	
+	var taOut = document.createElement("textarea");
+	taOut.style.overflowY = "scroll";
+	taOut.style.height = "100px";
 	
 	document.body.append(div);
+	div.append(taIn);
+	div.append(taOut);
 }
 
 
