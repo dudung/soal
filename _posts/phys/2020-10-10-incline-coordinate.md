@@ -246,6 +246,12 @@ Again, using Eqns. \eqref{eqn:ic-uncommon-cs-solution-ax} and \eqref{eqn:ic-unco
 Detail of object motion on an incline will be discussed in another article. 
 
 
+## Exercises
+1. Draw a free-body diagram to obtain Eqns. \eqref{eqn:ic-common-cs-solution-x} and \eqref{eqn:ic-common-cs-solution-y}.
+2. Using uncommon CS draw the free-body diagram and write the Newtons' 2nd law of the system.
+3. Show how to obtain Eqns. \eqref{eqn:ic-uncommon-cs-solution-ax} and \eqref{eqn:ic-uncommon-cs-solution-ay}.
+
+
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Inclined plane", Wikipedia, The Free Encyclopedia, 29 Sep 2020, 20:12 UTC, <https://en.wikipedia.org/w/index.php?oldid=981018186> [20201010].
 2. <a name="ref2"></a>H. Trevor Johnson-Steigelman, "Inclined Plane Coordinate System", physicsthisweek.com, a branch of  Coaches of Technology, Inc., 29 Sept 2014, url <https://www.physicsthisweek.com/physics-i/inclined-plane/inclined-plane-coordinate-system/> [20201010].
