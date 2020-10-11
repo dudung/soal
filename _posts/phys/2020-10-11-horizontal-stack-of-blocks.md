@@ -12,7 +12,29 @@ tags: ["block"]
 date: 2020-10-10 04:45:00 +07
 permalink: /physics/horizontal-stack-of-blocks
 ---
-Stack of blocks in horizontal arrangement pushed by a horizontal force is an interested topic to discussed, e.g. for two blocks [[1](#ref1), [2](#ref2), [3](#ref3)] and three blocks [[4](#ref4), [5](#ref5), [6](#ref6), [7](#ref7), [8](#ref8), [9](#ref9)] on a frictionless floor or on a floor with friction [[10](#ref10)].
+Stack of blocks in horizontal arrangement pushed by a horizontal external force is an interested topic to discussed, e.g. for two blocks [[1](#ref1), [2](#ref2), [3](#ref3)] and three blocks [[4](#ref4), [5](#ref5), [6](#ref6), [7](#ref7), [8](#ref8), [9](#ref9)] moving on a frictionless floor or on a floor with friction [[10](#ref10)].
+
+
+## System of four blocks
+Since system of two and three blocks are already in common, we will discuss a system of four blocks in order to give a more general description about a horizontal stack of blocks system moving on a frictionless horizontal surface due to a horizontal external force.
+
+<oo>
+svg 400 150 #fafafa fig:hsb-4-m|On a frictionless horizontal surface four blocks pushed by a horizontal external force is moving from left to right.
+
+style lc:#000 ls:0 lw:2 lo:1
+line 180 130 20 20
+line 220 130 380 20
+
+style lc:#000 ls:8-4 lw:0.8 lo:1 fo:0
+line 180 130 20 130
+line 220 130 380 130
+
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 120 120 &theta;
+text 260 120 &theta;
+</oo>
+
+System of four bloks with mass $m_1$, $m_2$, $m_3$, and $m_4$, pushed by a horizontal external force $F$, moving on a frictionless horizontal surface $\mu_k = 0$, is given in Fig. <a href="#fig:hsb-4-m">1</a>.
 
 
 ## References
