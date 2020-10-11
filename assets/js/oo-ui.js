@@ -15,21 +15,57 @@
 
 // Design a basic UI
 function displayBasicUI() {
+	var height = 200;
+	
 	var div = document.createElement("div");
 	div.style.border = "1px solid #ccf";
 	div.style.background = "#fafaff";
+	div.style.height = (height + 6) + "px";
 	
 	var taIn = document.createElement("textarea");
 	taIn.style.overflowY = "scroll";
-	taIn.style.height = "100px";
+	taIn.style.height = height + "px";
+	taIn.style.float = "left";
 	
+	var btOO = document.createElement("button");
+	btOO.innerHTML = "OO";
+	btOO.style.float = "left";
+		
 	var taOut = document.createElement("textarea");
 	taOut.style.overflowY = "scroll";
-	taOut.style.height = "100px";
+	taOut.style.height = height + "px";
+	taOut.style.float = "left";
 	
 	document.body.append(div);
-	div.append(taIn);
-	div.append(taOut);
+		div.append(taIn);
+		div.append(btOO);
+		div.append(taOut);
+	
+	setDefParams();
+	
+	
+	function setDefParams() {
+		var content = "";
+		
+		content += "# Coordinates\n";
+		content += "XSVGE 20 180\n";
+		content += "YSVGE 180 20\n";
+		content += "XREAL 0 10\n";
+		content += "YREAL 0 10\n";
+		
+		content += "\n";
+		
+		content += "# Data\n";
+		content += "DATA 5 2\n";
+		content += "0 0\n";
+		content += "1 1\n";
+		content += "2 4\n";
+		content += "3 9\n";
+		content += "4 16";
+		
+		taIn.innerHTML = content;
+		taIn.scrollTop = taIn.scrollHeight;
+	}
 }
 
 
