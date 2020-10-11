@@ -283,6 +283,230 @@ text 235 140 N
 Fig. <a href="#fig:hsb-4-m-fbd-m1234">6</a> can only be used when the whole system is moving as a unit and all block have the same acceleration.
 
 
+## Newton's laws of motion
+We will use 1st, 2nd, and 3rd Newton's laws of (linear) motion to solve the problem. The laws will be abbreviated as Nl-I, Nl-II, Nl-III.
+
+### Block $m_1$
+Let's see again the free-body diagram.
+
+<oo>
+svg 400 130 #fafafa fig:hsb-4-m-fbd-m1-nl|Free-body diagram of $m_1 = 3 \ \rm kg$.
+
+# Red block m1 = 3 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#faa fo:1
+rect 100 30 60 60
+
+style lc:#f00 ls:0 lw:2 lo:1 fc:#f00 fo:1
+arrow 130 60 130 90
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 120 55 w
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 132 60 1
+
+style lc:#f00 ls:0 lw:2 lo:1 fc:#f00 fo:1
+arrow 140 120 140 90
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 150 115 N
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 162 120 1
+
+# External force F
+style lc:#f88 ls:0 lw:3 lo:1 fc:#f88 fo:1
+arrow 20 60 100 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 50 45 F
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:10px
+text 58 50 ext
+
+# Normal force N12
+style lc:#f88 ls:0 lw:3 lo:1 fc:#f88 fo:1
+arrow 216 60 160 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 180 45 N
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 192 50 12
+</oo>
+
+### Block $m_2$
+Let's see again the free-body diagram.
+
+<oo>
+svg 400 130 #fafafa fig:hsb-4-m-fbd-m2-nl|Free-body diagram of $m_2 = 1 \ \rm kg$.
+
+# Green block m2 = 1 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#afa fo:1
+rect 160 50 40 40
+
+style lc:#0f0 ls:0 lw:2 lo:1 fc:#0f0 fo:1
+arrow 180 70 180 80
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 170 65 w
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 182 70 2
+
+style lc:#0f0 ls:0 lw:2 lo:1 fc:#0f0 fo:1
+arrow 190 100 190 90
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 200 115 N
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 212 120 2
+
+# Normal force N21
+style lc:#8f8 ls:0 lw:3 lo:1 fc:#8f8 fo:1
+arrow 104 60 160 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 120 45 N
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 132 50 21
+
+# Normal force N23
+style lc:#8f8 ls:0 lw:3 lo:1 fc:#8f8 fo:1
+arrow 248 60 200 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 210 45 N
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 222 50 23
+</oo>
+
+### Block $m_3$
+Let's see again the free-body diagram.
+
+<oo>
+svg 400 130 #fafafa fig:hsb-4-m-fbd-m3-nl|Free-body diagram of $m_3 = 4 \ \rm kg$.
+
+# Blue block m3 = 4 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#aaf fo:1
+rect 200 20 70 70
+
+style lc:#00f ls:0 lw:2 lo:1 fc:#00f fo:1
+arrow 235 55 235 95
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 230 50 w
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 242 55 3
+
+style lc:#00f ls:0 lw:2 lo:1 fc:#00f fo:1
+arrow 250 130 250 90
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 255 120 N
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 267 125 3
+
+# Normal force N32
+style lc:#88f ls:0 lw:3 lo:1 fc:#88f fo:1
+arrow 152 60 200 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 170 45 N
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 182 50 32
+
+# Normal force N34
+style lc:#88f ls:0 lw:3 lo:1 fc:#88f fo:1
+arrow 286 60 270 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 280 45 N
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 292 50 34
+</oo>
+
+### Block $m_4$
+Let's see again the free-body diagram.
+
+<oo>
+svg 400 130 #fafafa fig:hsb-4-m-fbd-m4-nl|Free-body diagram of $m_4 = 2 \ \rm kg$.
+
+# Yellow block m4 = 2 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#ffa fo:1
+rect 270 40 50 50
+
+style lc:#cc0 ls:0 lw:2 lo:1 fc:#cc0 fo:1
+arrow 295 65 295 85
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 285 60 w
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 297 65 4
+
+style lc:#cc0 ls:0 lw:2 lo:1 fc:#cc0 fo:1
+arrow 305 110 305 90
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 310 120 N
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 322 125 4
+
+# Normal force N43
+style lc:#dd8 ls:0 lw:3 lo:1 fc:#dd8 fo:1
+arrow 254 60 270 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 240 45 N
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 252 50 43
+</oo>
+
+### Block $m_1 + m_2 + m_3 + m_4$
+Let's see again the free-body diagram.
+
+<oo>
+svg 400 150 #fafafa fig:hsb-4-m-fbd-m1234-nl|Free-body diagram for the $m = m_1 + m_2 + m_3 + m_4 = 10 \ \rm kg$.
+
+# Red block m1 = 3 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#faa fo:1
+rect 100 30 60 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 120 65 m
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 132 70 1
+
+# Green block m2 = 1 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#afa fo:1
+rect 160 50 40 40
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 170 75 m
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 182 80 2
+
+# Blue block m3 = 4 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#aaf fo:1
+rect 200 20 70 70
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 230 60 m
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 242 65 3
+
+# Yellow block m4 = 2 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#ffa fo:1
+rect 270 40 50 50
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 285 70 m
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 297 75 4
+
+# External force \vec{F}
+style lc:#f88 ls:0 lw:3 lo:1 fc:#f88 fo:1
+arrow 20 60 100 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 50 45 F
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:10px
+text 58 50 ext
+
+# Whole block m1 + m2 + m3 + m4 = 10 kg
+style lc:#f00 ls:4-4 lw:2 lo:1 fc:#f00 fo:0.2
+rect 100 20 220 70
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 120 65 m
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 132 70 1
+
+style lc:#a0f ls:0 lw:3 lo:1 fc:#a0f fo:1
+arrow 215 55 215 115
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 210 50 w
+
+style lc:#a0f ls:0 lw:3 lo:1 fc:#a0f fo:1
+arrow 225 150 225 90
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 235 140 N
+</oo>
+
 ## References
 1. <a name="ref1"></a>-, "A single horizontal force F...", toppr, url <https://www.toppr.com/ask/question/a-single-horizontal-force-f-is-applied-to-a-blockof-mass-displaystyle-m> [20201011].
 2. <a name="ref2"></a>-, "A Force F Of 14N Acts On Two Blocks On A Frictionless...", Chegg Study,  url <https://www.chegg.com/homework-help/questions-and-answers/force-f-14n-acts-two-blocks-frictionless-surface-figure-1--part-acceleration-system-expres-q5157730> [20201011].
