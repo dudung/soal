@@ -70,7 +70,7 @@ System of four bloks with mass $m_1$, $m_2$, $m_3$, and $m_4$, pushed by a horiz
 
 
 ## Free-body diagram
-For each block we can draw a free-body diagram
+For each block we can draw a free-body diagram. Suppose that there an external force $F_{ext} = 10 \ \rm N$ and $m_1 = 3 \ \rm kg$, $m_2 = 1 \ \rm kg$, $m_3 = 4 \ \rm kg$, $m_4 = 2 \ \rm kg$.
 
 <oo>
 svg 400 130 #fafafa fig:hsb-4-m-fbd-m1|Free-body diagram of $m_1 = 3 \ \rm kg$.
@@ -141,7 +141,7 @@ text 132 50 21
 
 # Normal force N23
 style lc:#8f8 ls:0 lw:3 lo:1 fc:#8f8 fo:1
-arrow 236 60 200 60
+arrow 248 60 200 60
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 210 45 N
 style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
@@ -168,6 +168,22 @@ style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 255 120 N
 style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 267 125 3
+
+# Normal force N32
+style lc:#88f ls:0 lw:3 lo:1 fc:#88f fo:1
+arrow 152 60 200 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 170 45 N
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 182 50 32
+
+# Normal force N34
+style lc:#88f ls:0 lw:3 lo:1 fc:#88f fo:1
+arrow 286 60 270 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 280 45 N
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 292 50 34
 </oo>
 
 <oo>
@@ -190,7 +206,81 @@ style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 310 120 N
 style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 322 125 4
+
+# Normal force N43
+style lc:#dd8 ls:0 lw:3 lo:1 fc:#dd8 fo:1
+arrow 254 60 270 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 240 45 N
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 252 50 43
 </oo>
+
+Beside free-body diagram for each block in Figs. Fig. <a href="#fig:hsb-4-m-fbd-m1">2</a>, <a href="#fig:hsb-4-m-fbd-m2">3</a>, <a href="#fig:hsb-4-m-fbd-m3">4</a>, and <a href="#fig:hsb-4-m-fbd-m4">5</a>, we can also have a free-body diagram for the whole system.
+
+<oo>
+svg 400 150 #fafafa fig:hsb-4-m-fbd-m1234|Free-body diagram for the $m = m_1 + m_2 + m_3 + m_4 = 10 \ \rm kg$.
+
+# Red block m1 = 3 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#faa fo:1
+rect 100 30 60 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 120 65 m
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 132 70 1
+
+# Green block m2 = 1 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#afa fo:1
+rect 160 50 40 40
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 170 75 m
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 182 80 2
+
+# Blue block m3 = 4 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#aaf fo:1
+rect 200 20 70 70
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 230 60 m
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 242 65 3
+
+# Yellow block m4 = 2 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#ffa fo:1
+rect 270 40 50 50
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 285 70 m
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 297 75 4
+
+# External force \vec{F}
+style lc:#f88 ls:0 lw:3 lo:1 fc:#f88 fo:1
+arrow 20 60 100 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 50 45 F
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:10px
+text 58 50 ext
+
+# Whole block m1 + m2 + m3 + m4 = 10 kg
+style lc:#f00 ls:4-4 lw:2 lo:1 fc:#f00 fo:0.2
+rect 100 20 220 70
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 120 65 m
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 132 70 1
+
+style lc:#a0f ls:0 lw:3 lo:1 fc:#a0f fo:1
+arrow 215 55 215 115
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 210 50 w
+
+style lc:#a0f ls:0 lw:3 lo:1 fc:#a0f fo:1
+arrow 225 150 225 90
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 235 140 N
+</oo>
+
+Fig. <a href="#fig:hsb-4-m-fbd-m1234">6</a> can only be used when the whole system is moving as a unit and all block have the same acceleration.
 
 
 ## References
