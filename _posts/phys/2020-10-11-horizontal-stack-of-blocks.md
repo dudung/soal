@@ -12,13 +12,7 @@ tags: ["block"]
 date: 2020-10-10 04:45:00 +07
 permalink: /physics/horizontal-stack-of-blocks
 ---
-[[1](#ref1), [2](#ref2), [3](#ref3)]
-
-[[4](#ref4), [5](#ref5), [6](#ref6), [7](#ref7), [8](#ref8), [9](#ref9)]
-
-[[10](#ref10)]
-
-
+Stack of blocks in horizontal arrangement pushed by a horizontal force is an interested topic to discussed, e.g. for two blocks [[1](#ref1), [2](#ref2), [3](#ref3)] and three blocks [[4](#ref4), [5](#ref5), [6](#ref6), [7](#ref7), [8](#ref8), [9](#ref9)] on a frictionless floor or on a floor with friction [[10](#ref10)].
 
 
 ## References
