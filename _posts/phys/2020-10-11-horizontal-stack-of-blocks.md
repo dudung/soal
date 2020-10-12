@@ -714,6 +714,7 @@ Suppose there a system as in Fig. <a href="#fig:hsb-4-m">1</a> with $m_1 = 4 \ \
 1. Find $a_x$, $N_{12}$, $N_{21}$,  $N_{23}$,  $N_{32}$, $N_{34}$, and  $N_{43}$ if the floor is frictionless.
 2. Find $a_x$, $N_{12}$, $N_{21}$,  $N_{23}$,  $N_{32}$, $N_{34}$, and  $N_{43}$ if there is friction between the floor and all blocks with $\mu_k = 0.1$.
 
++ [Submit answer](https://forms.office.com/Pages/ResponsePage.aspx?id=gxFu22VMXECCznzVP6bp3NGUp4ijN01Ks-VZMpTE-hpUNUUxRFBGUlVTR1ZRTlAxSzFLVFAwVzVaUi4u)
 
 ## References
 1. <a name="ref1"></a>-, "A single horizontal force F...", toppr, url <https://www.toppr.com/ask/question/a-single-horizontal-force-f-is-applied-to-a-blockof-mass-displaystyle-m> [20201011].
