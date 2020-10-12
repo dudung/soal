@@ -48,6 +48,8 @@ W = \vec{F} \cdot\int d\vec{s} = \vec{F} \cdot \vec{s}.
 The vector $\vec{F}$ can be moved outside of integral since it is not function of $\vec{s}$. We still have dot operation in Eqn. \eqref{eqn:wket-work-integral-force-constant-magnitude
 } since the force can still have variation in its direction even its magnitude is constant or $\|\vec{F}\| = F_0$, where $F_0$ is a constant value.
 
+### Force with constant direction
+We can also have a force with constant direction but it still a function of $s$, which will make \eq
 
 ## Excersices
 1. Find the kinetic energy of an object with mass $0.5 \ \rm kg$ and moving with velocity $2 \ \rm m/s$.
