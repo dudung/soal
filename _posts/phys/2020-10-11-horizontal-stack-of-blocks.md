@@ -712,7 +712,7 @@ Using Eqns. \eqref{eqn:hsb-m1-SFx-muk}, \eqref{eqn:hsb-m2-SFx-muk}, \eqref{eqn:h
 ## Quiz
 Suppose there a system as in Fig. <a href="#fig:hsb-4-m">1</a> with $m_1 = 4 \ \rm kg$, $m_2 = 3 \ \rm kg$, $m_3 = 2 \ \rm kg$, $m_4 = 3 \ \rm kg$, and external force $F_{\rm ext} = 24 \ \rm N$.
 1. Find $a_x$, $N_{12}$, $N_{21}$,  $N_{23}$,  $N_{32}$, $N_{34}$, and  $N_{43}$ if the floor is frictionless.
-2. Find $a_x$, $N_{12}$, $N_{21}$,  $N_{23}$,  $N_{32}$, $N_{34}$, and  $N_{43}$ if there is friction between the floor and all blocks with $\mu_k = 0.05$.
+2. Find $a_x$, $N_{12}$, $N_{21}$,  $N_{23}$,  $N_{32}$, $N_{34}$, and  $N_{43}$ if there is friction between the floor and all blocks with $\mu_k = 0.1$.
 
 
 ## References
