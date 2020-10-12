@@ -34,7 +34,19 @@ In general work done by an object applyingg force $\vec{F}$ that can be varied w
 W = \int \vec{F} \cdot d\vec{s},
 \end{equation}
 
-which is presented in form of force-displacement path integral using calculus [[2](#ref2)].
+which is presented in form of force-displacement path integral using calculus [[2](#ref2)]. Eqn. \eqref{eqn:wket-work-integral} seems complicated and not practical since it is a general form, where $\vec{F} = \vec{F}(\vec{s})$. We will discuss some special cases of it.
+
+### Force with constant magnitude
+If we deal with a force with constant magnitude or $\vec{F} \ne \vec{F}(\vec{s})$ then Eqn. \eqref{eqn:wket-work-integral} will be simplified into
+
+\begin{equation}
+\label{eqn:wket-work-integral-force-constant-magnitude
+}
+W = \vec{F} \cdot\int d\vec{s} = \vec{F} \cdot \vec{s}.
+\end{equation}
+
+The vector $\vec{F}$ can be moved outside of integral since it is not function of $\vec{s}$. We still have dot operation in Eqn. \eqref{eqn:wket-work-integral-force-constant-magnitude
+} since the force can still have variation in its direction even its magnitude is constant or $\|\vec{F}\| = F_0$, where $F_0$ is a constant value.
 
 
 ## Excersices
