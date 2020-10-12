@@ -676,8 +676,44 @@ N_{43} = m_4 a_x.
 
 Eqn. \eqref{eqn:hsb-m4-SFx-N43} can also be obtained from Eqn. \eqref{eqn:hsb-m3-SFx-N34} using Eqn. \eqref{eqn:hsb-m3-m4}.
 
+
+## Floor with friction
+What will hapen when there is friction between all blocks and the floor? Suppose that between block $i$ and the floor the coefficient of kinetic friction is $\mu_{ki}$ with $i = 1, 2, 3, 4$. Then Eqn. \eqref{eqn:hsb-m1-SFx} will become
+
+\begin{equation}
+\label{eqn:hsb-m1-SFx-muk}
+\sum F_x = m_1 a_{1x} \Rightarrow F_{\rm ext} - \mu_{k1} N_1 - N_{12} = m_1 a_{1x},
+\end{equation}
+
+Eqn. \eqref{eqn:hsb-m2-SFx} will become
+
+\begin{equation}
+\label{eqn:hsb-m2-SFx-muk}
+\sum F_x = m_2 a_{2x} \Rightarrow N_{21} - \mu_{k2} N_2 - N_{23} = m_2 a_{2x}.
+\end{equation}
+
+Eqn. \eqref{eqn:hsb-m3-SFx} will become
+
+\begin{equation}
+\label{eqn:hsb-m3-SFx-muk}
+\sum F_x = m_3 a_{3x} \Rightarrow N_{32} - \mu_{k3} N_3 - N_{34} = m_3 a_{3x}.
+\end{equation}
+
+and Eqn. \eqref{eqn:hsb-m4-SFx} will become
+
+\begin{equation}
+\label{eqn:hsb-m4-SFx-muk}
+\sum F_x = m_4 a_{4x} \Rightarrow N_{43} - \mu_{k4} N_4 = m_4 a_{4x}.
+\end{equation}
+
+Using Eqns. \eqref{eqn:hsb-m1-SFx-muk}, \eqref{eqn:hsb-m2-SFx-muk}, \eqref{eqn:hsb-m3-SFx-muk}, \eqref{eqn:hsb-m4-SFx-muk} in Eqn. \eqref{eqn:hsb-SFx+1+2+3+4} will produce the solution.
+
+
 ## Quiz
 Suppose there a system as in Fig. <a href="#fig:hsb-4-m">1</a> with $m_1 = 4 \ \rm kg$, $m_2 = 3 \ \rm kg$, $m_3 = 2 \ \rm kg$, $m_4 = 3 \ \rm kg$, and external force $F_{\rm ext} = 24 \ \rm N$.
+1. Find $a_x$, $N_{12}$, $N_{21}$,  $N_{23}$,  $N_{32}$, $N_{34}$, and  $N_{43}$ if the floor is frictionless.
+2. Find $a_x$, $N_{12}$, $N_{21}$,  $N_{23}$,  $N_{32}$, $N_{34}$, and  $N_{43}$ if there is friction between the floor and all blocks with $\mu_k = 0.05$.
+
 
 ## References
 1. <a name="ref1"></a>-, "A single horizontal force F...", toppr, url <https://www.toppr.com/ask/question/a-single-horizontal-force-f-is-applied-to-a-blockof-mass-displaystyle-m> [20201011].
