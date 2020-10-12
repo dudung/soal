@@ -62,7 +62,7 @@ style lc:#f88 ls:0 lw:3 lo:1 fc:#f88 fo:1
 arrow 20 60 100 60
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 50 45 F
-style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:10px
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 58 50 ext
 </oo>
 
@@ -98,7 +98,7 @@ style lc:#f88 ls:0 lw:3 lo:1 fc:#f88 fo:1
 arrow 20 60 100 60
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 50 45 F
-style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:10px
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 58 50 ext
 
 # Normal force N12
@@ -258,7 +258,7 @@ style lc:#f88 ls:0 lw:3 lo:1 fc:#f88 fo:1
 arrow 20 60 100 60
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 50 45 F
-style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:10px
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 58 50 ext
 
 # Whole block m1 + m2 + m3 + m4 = 10 kg
@@ -315,7 +315,7 @@ style lc:#f88 ls:0 lw:3 lo:1 fc:#f88 fo:1
 arrow 20 60 100 60
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 50 45 F
-style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:10px
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 58 50 ext
 
 # Normal force N12
@@ -326,6 +326,20 @@ text 180 45 N
 style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 192 50 12
 </oo>
+
+Since $m_1$ does not move in $y$-direction, Nl-I will give
+
+\begin{equation}
+\label{eqn:hsb-m1-SFy}
+\sum F_y = 0 \Rightarrow N_1 - w_1 = 0 \Rightarrow N_1 = w_1 = m_1 g.
+\end{equation}
+
+It moves with acceleration in $x$-direction, then Nl-II governs that
+
+\begin{equation}
+\label{eqn:hsb-m1-SFx}
+\sum F_x = m_1 a_{1x} \Rightarrow F_{\rm ext} - N_{12} = m_1 a_{1x}.
+\end{equation}
 
 ### Block $m_2$
 Let's see again the free-body diagram.
@@ -368,6 +382,20 @@ style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 222 50 23
 </oo>
 
+Since $m_2$ does not move in $y$-direction, Nl-I will give
+
+\begin{equation}
+\label{eqn:hsb-m2-SFy}
+\sum F_y = 0 \Rightarrow N_2 - w_2 = 0 \Rightarrow N_2 = w_2 = m_2 g.
+\end{equation}
+
+It moves with acceleration in $x$-direction, then Nl-II governs that
+
+\begin{equation}
+\label{eqn:hsb-m2-SFx}
+\sum F_x = m_2 a_{2x} \Rightarrow N_{21} - N_{23} = m_2 a_{2x}.
+\end{equation}
+
 ### Block $m_3$
 Let's see again the free-body diagram.
 
@@ -409,6 +437,20 @@ style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 292 50 34
 </oo>
 
+Since $m_3$ does not move in $y$-direction, Nl-I will give
+
+\begin{equation}
+\label{eqn:hsb-m3-SFy}
+\sum F_y = 0 \Rightarrow N_3 - w_3 = 0 \Rightarrow N_3 = w_3 = m_3 g.
+\end{equation}
+
+It moves with acceleration in $x$-direction, then Nl-II governs that
+
+\begin{equation}
+\label{eqn:hsb-m3-SFx}
+\sum F_x = m_3 a_{3x} \Rightarrow N_{32} - N_{34} = m_3 a_{3x}.
+\end{equation}
+
 ### Block $m_4$
 Let's see again the free-body diagram.
 
@@ -442,7 +484,21 @@ style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 252 50 43
 </oo>
 
-### Block $m_1 + m_2 + m_3 + m_4$
+Since $m_3$ does not move in $y$-direction, Nl-I will give
+
+\begin{equation}
+\label{eqn:hsb-m4SFy}
+\sum F_y = 0 \Rightarrow N_4 - w_4 = 0 \Rightarrow N_4 = w_4 = m_4 g.
+\end{equation}
+
+It moves with acceleration in $x$-direction, then Nl-II governs that
+
+\begin{equation}
+\label{eqn:hsb-m4-SFx}
+\sum F_x = m_4 a_{4x} \Rightarrow N_{43} = m_4 a_{4x}.
+\end{equation}
+
+### Whole block $m = m_1 + m_2 + m_3 + m_4$
 Let's see again the free-body diagram.
 
 <oo>
@@ -485,7 +541,7 @@ style lc:#f88 ls:0 lw:3 lo:1 fc:#f88 fo:1
 arrow 20 60 100 60
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 50 45 F
-style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:10px
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
 text 58 50 ext
 
 # Whole block m1 + m2 + m3 + m4 = 10 kg
@@ -506,6 +562,122 @@ arrow 225 150 225 90
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
 text 235 140 N
 </oo>
+
+Since the whole system does not move in $y$-direction, Nl-I will give
+
+\begin{equation}
+\label{eqn:hsb-m1234SFy}
+\sum F_y = 0 \Rightarrow N - w = 0 \Rightarrow N = w = m g.
+\end{equation}
+
+It moves with acceleration in $x$-direction, then Nl-II governs that
+
+\begin{equation}
+\label{eqn:hsb-m1234-SFx}
+\sum F_x = m a_x \Rightarrow F_{\rm ext} = m a_x.
+\end{equation}
+
+And as whole system
+
+\begin{equation}
+\label{eqn:hsb-m1234-m}
+m = m_1 + m_2 + m_3 + m_4
+\end{equation}
+
+and all are moving together
+
+\begin{equation}
+\label{eqn:hsb-m1234-a}
+a_{1x} = a_{2x} = a_{3x} = a_{4x} = a_x.
+\end{equation}
+
+### Between blocks $m_1$ and $m_2$
+According to Nl-III we can have
+
+\begin{equation}
+\label{eqn:hsb-m1-m2}
+N_{21} = N_{12}.
+\end{equation}
+
+### Between blocks $m_2$ and $m_3$
+According to Nl-III we can have
+
+\begin{equation}
+\label{eqn:hsb-m2-m3}
+N_{32} = N_{23}.
+\end{equation}
+
+### Between blocks $m_3$ and $m_4$
+According to Nl-III we can have
+
+\begin{equation}
+\label{eqn:hsb-m3-m4}
+N_{43} = N_{34}.
+\end{equation}
+
+
+## Solution
+
+Sum of Eqns. \eqref{eqn:hsb-m1-SFx}, \eqref{eqn:hsb-m2-SFx}, \eqref{eqn:hsb-m3-SFx}, and \eqref{eqn:hsb-m4-SFx} will produce
+
+\begin{equation}
+\label{eqn:hsb-SFx+1+2+3+4}
+\begin{array}{rcl}
+F_{\rm ext} - N_{12} & = & m_1 a_{1x} \newline
+N_{21} - N_{23} & = & m_2 a_{2x} \newline
+N_{32} - N_{34} & = & m_3 a_{3x} \newline
+N_{43} & = & m_4 a_{4x} \newline
+------------ & -- & --------- \newline
+F_{\rm ext} & = & m_1 a_{1x} + m_2 a_{2x} + m_3 a_{3x} + m_4 a_{4x} \end{array}
+\end{equation}
+
+and subsitute Eqn. \eqref{eqn:hsb-m1234-a} into Eqn. \eqref{eqn:hsb-SFx+1+2+3+4}
+
+\begin{equation}
+\label{eqn:hsb-SFx+1+2+3+4-a}
+a_x = \frac{F_{\rm ext}}{m_1 + m_2 + m_3 + m_4}.
+\end{equation}
+
+### Normal force $N_{12}$
+Substitute Eqn. \eqref{eqn:hsb-SFx+1+2+3+4-a} into \eqref{eqn:hsb-m1-SFx} will give
+
+\begin{equation}
+\label{eqn:hsb-m1-SFx-N12}
+N_{12} = F_{\rm ext} - m_1 a_x.
+\end{equation}
+
+### Normal force $N_{23}$
+Substitute Eqn. \eqref{eqn:hsb-SFx+1+2+3+4-a} into \eqref{eqn:hsb-m2-SFx} will give
+
+\begin{equation}
+\label{eqn:hsb-m2-SFx-N23}
+N_{23} = N_{21} - m_2 a_x,
+\end{equation}
+
+where $N_{21}$ is obtained from Eqn. \eqref{eqn:hsb-m1-SFx-N12} using Eqn. \eqref{eqn:hsb-m1-m2}.
+
+### Normal force $N_{34}$
+Substitute Eqn. \eqref{eqn:hsb-SFx+1+2+3+4-a} into \eqref{eqn:hsb-m3-SFx} will give
+
+\begin{equation}
+\label{eqn:hsb-m3-SFx-N34}
+N_{34} = N_{32} - m_3 a_x,
+\end{equation}
+
+where $N_{32}$ is obtained from Eqn. \eqref{eqn:hsb-m2-SFx-N23} using Eqn. \eqref{eqn:hsb-m2-m3}.
+
+### Normal force $N_{43}$
+Substitute Eqn. \eqref{eqn:hsb-SFx+1+2+3+4-a} into \eqref{eqn:hsb-m4-SFx} will give
+
+\begin{equation}
+\label{eqn:hsb-m4-SFx-N43}
+N_{43} = m_4 a_x.
+\end{equation}
+
+Eqn. \eqref{eqn:hsb-m4-SFx-N43} can also be obtained from Eqn. \eqref{eqn:hsb-m3-SFx-N34} using Eqn. \eqref{eqn:hsb-m3-m4}.
+
+## Quiz
+Suppose there a system as in Fig. <a href="#fig:hsb-4-m">1</a> with $m_1 = 4 \ \rm kg$, $m_2 = 3 \ \rm kg$, $m_3 = 2 \ \rm kg$, $m_4 = 3 \ \rm kg$, and external force $F_{\rm ext} = 24 \ \rm N$.
 
 ## References
 1. <a name="ref1"></a>-, "A single horizontal force F...", toppr, url <https://www.toppr.com/ask/question/a-single-horizontal-force-f-is-applied-to-a-blockof-mass-displaystyle-m> [20201011].
