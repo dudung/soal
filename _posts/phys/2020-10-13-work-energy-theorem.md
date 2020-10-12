@@ -23,12 +23,27 @@ A particle with mass $m$ and moving with velocity $\vec{v}$ will have kinetic en
 K = \frac12 m (\vec{v} \cdot \vec{v}) = \frac12 m v^2.
 \end{equation}
 
-The last term in Eqn. \eqref{eqn:wket-kinetic-energy} is more common then its preceeding term, which is the application of [dot product of two vectors](vector#dot-product).
+The last term in Eqn. \eqref{eqn:wket-kinetic-energy} is more common then its preceeding term, which is showing the application of [two vectors dot product](vector#dot-product). Kinetic energy has the unit of $\rm J$ or joule.
 
 
+## Work
+In general work done by an object applyingg force $\vec{F}$ that can be varied with small displacement $d\vec{s}$ is
+
+\begin{equation}
+\label{eqn:wket-work-integral}
+W = \int \vec{F} \cdot d\vec{s},
+\end{equation}
+
+which is presented in form of force-displacement path integral using calculus [[2](#ref2)].
+
+
+## Excersices
+1. Find the kinetic energy of an object with mass $0.5 \ \rm kg$ and moving with velocity $2 \ \rm m/s$.
+2. A particle is moving with velocty $\vec{v} = (12 \hat{i} + 3 \hat{j} + 4 \hat{j}) \ \rm m/s$. If it has mass of 2 kg, calculate its kinetic energy.
 
 
 ## References
 1. <a name="ref1"></a>-, "Work-Energy Theorem", in Boundless Physics, Lumen Learning, url <https://courses.lumenlearning.com/boundless-physics/chapter/work-energy-theorem/> [20201013].
+2. <a name="ref2"></a>Glenn Elert, "Work", The Physics Hypertextbook, 2020, url <https://physics.info/work/> [20201013].
  
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/tutorial/2020-10-13-work-energy-theorem.md)
