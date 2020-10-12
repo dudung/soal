@@ -1,7 +1,7 @@
 ---
 layout: post
 author: viridi
-title: work - kinetic energy theorem
+title: work-energy theorem
 mathjax: true
 ptext: false
 x3dom: false
@@ -10,7 +10,7 @@ oo: true
 category: physics
 tags: ["tutorial"]
 date: 2020-10-13 04:46:00 +07
-permalink: /physics/work-kinetic-energy-theorem
+permalink: /physics/work-energy-theorem
 ---
 Here we will discuss about work-kinetic energy theorem [[1](#ref1)] and how it helps to solve a problem in easier way compared to the use of dynamics and work concepts together.
 
