@@ -76,16 +76,13 @@ which is one of the well-known kinematics formula.
 
 
 ## Horizontal surface with friction
-Consider a horizontal surface, where an object is moving on it with coefficient of kinetic friction $\mu_k$. While moves from point $A$ to point $B$ the object is also under influence of an external force $F_{\rm ext}$ besides the kinetic friction $f_k$. The object has mass $m$. Velocity at the points are $v_A$ and $v_B$, respectively. The distance between the points are $\Delta x = x_B - x_A$ and the time required to go from point $A$ to point $B$ is $\Delta t = t_B - t_A$. Show the relation between mentioned physical quantities.
 
-
-## Incline with friction
-..
 
 
 ## Exercises
 1. An object has initial velocity of $4 \ \rm m/s$ to a certain direction and final velocity of $(3 \hat{i} + 4 \hat{j}) \ \rm m/s$. Find its initial kinetic energy, final kinetic energy, and change in object's kinetic energy.
 2. Show how to obtain Eqn. \eqref{eqn:wet-theorem-proof-kinematics} from Eqn. \eqref{eqn:wet-theorem}.
+3. Consider a horizontal surface, where an object is moving on it with coefficient of kinetic friction $\mu_k$. While moves from point $A$ to point $B$ the object is also under influence of an external force $F_{\rm ext}$ besides the kinetic friction $f_k$. The object has mass $m$. Velocity at the points are $v_A$ and $v_B$, respectively. The distance between the points are $\Delta x = x_B - x_A$ and the time required to go from point $A$ to point $B$ is $\Delta t = t_B - t_A$. Show the relation between mentioned physical quantities.
 
 
 ## Quiz
