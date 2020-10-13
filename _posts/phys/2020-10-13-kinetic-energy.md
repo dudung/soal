@@ -28,7 +28,7 @@ The last term in Eqn. \eqref{eqn:wket-kinetic-energy} is more common then its pr
 
 ## Excersices
 1. Find the kinetic energy of an object with mass $0.5 \ \rm kg$ and moving with velocity $2 \ \rm m/s$.
-2. A particle is moving with velocty $\vec{v} = (12 \hat{i} + 3 \hat{j} + 4 \hat{k}) \ \rm m/s$. If it has mass of 2 kg, calculate its kinetic energy.
+2. A particle is moving with velocty $\vec{v} = (12 \hat{i} + 3 \hat{j} + 4 \hat{k}) \ \rm m/s$. If it has mass of $2 \ \rm kg$, calculate its kinetic energy.
 
 
 ## References
