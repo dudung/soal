@@ -34,4 +34,4 @@ The last term in Eqn. \eqref{eqn:wket-kinetic-energy} is more common then its pr
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Kinetic energy", Wikipedia, The Free Encyclopedia, 8 Oct 2020, 21:25 UTC, <https://en.wikipedia.org/w/index.php?oldid=982553053> [20201013].
  
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/tutorial/2020-10-13-work-energy-theorem.md)
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-10-13-kinetic-energy.md)
