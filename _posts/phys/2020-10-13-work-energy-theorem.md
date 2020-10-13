@@ -151,9 +151,67 @@ style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
 text 165 20 = 100 N
 style lc:#000 ls:4-2 lw:1 lo:1 fc:#000 fo:1
 line 120 60 160 60
+style lc:#f88 ls:4-2 lw:2 lo:1 fc:#f88 fo:1
+arrow 340 60 380 30
+
+# tan \theta
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 190 60 tan
+text 225 60 = 3/4
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 212 60 &theta;
+
 </oo>
 
-Value of some physical quantities are given in Fig. <a href="#fig:wet-horiz-surf-fric-fext">1</a>.
+Value of some physical quantities are given in Fig. <a href="#fig:wet-horiz-surf-fric-fext">1</a>. (a) Determine when the block passes point $B$ and its velocity at that point using dynamics and kinematics. (b) Find the kinetic energy at point $B$ using previous solution and using work-energy theorem.
+
+### Free-body diagram
+Free-body diagram of the block is as shown in Fig. <a href="#fig:wet-horiz-surf-fric-fext-fbd">2</a>
+
+### Newtons' laws
+Using Fig. <a href="#fig:wet-horiz-surf-fric-fext-fbd">2</a> we can have in $y$-direction
+
+\begin{equation}
+\label{eqn:wet-hsf-fext-fbd-y}
+\begin{array}{rcl}
+\sum F_y & = & 0 \newline 
+F_{\rm ext} \ \sin \theta + N - w & = & 0 \newline
+N & = & w - F_{\rm ext} \ \sin \theta
+\end{array}
+\end{equation}
+
+and in $x$-direction
+
+\begin{equation}
+\label{eqn:wet-hsf-fext-fbd-x}
+\begin{array}{rcl}
+\sum F_x & = & m a_x \newline 
+F_{\rm ext} \ \cos \theta - f_k & = & m a_x \newline
+a_x & = & \displaystyle \frac{F_{\rm ext} \ \cos \theta - f_k}{m}.
+\end{array}
+\end{equation}
+
+### Weight and kinetic friction
+Weight of the block
+
+\begin{equation}
+\label{eqn:wet-hsf-fext-w}
+w = mg
+\end{equation}
+
+and kinetic friction
+
+\begin{equation}
+\label{eqn:wet-hsf-fext-fk}
+f_k = \mu_k N.
+\end{equation}
+
+Substitute Eqn. \eqref{eqn:wet-hsf-fext-w} into Eqn. \eqref{eqn:wet-hsf-fext-fbd-y}, then the result into Eqn. \eqref{eqn:wet-hsf-fext-fk}, finally into Eqn. \eqref{eqn:wet-hsf-fext-fbd-x}, will give
+
+\begin{equation}
+\label{eqn:wet-hsf-fext-fbd-solution}
+a_x = \frac{F_{\rm ext}}{m}(\cos \theta + \mu_k \sin \theta) - \mu_k g.
+\end{equation}
 
 
 ## Exercises
