@@ -82,6 +82,8 @@ which is one of the well-known kinematics formula.
 ## Quiz
 Suppose that there is a particle with mass $m = 2 \ \rm kg$ moving on a horizontal surface with coefficient of kinetic friction 0.1. It has initial velocity of $5 \ \rm m/s$ and a constant force $F_1 = 4 \ \rm N$ parallel to the surfrace and in the direction of the velocity is always applied to the particle. Find particle final velocity using (a) dynamics and then kinematics, (b) work-energy theorem, and (c) compare number of steps required to solve the problem and discuss which one is preferable.
 
++ [Submit answer]()
+
 
 ## References
 1. <a name="ref1"></a>-, "Work-Energy Theorem", in Boundless Physics, Lumen Learning, url <https://courses.lumenlearning.com/boundless-physics/chapter/work-energy-theorem/> [20201013].
