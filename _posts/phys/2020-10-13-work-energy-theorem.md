@@ -251,27 +251,47 @@ that will give
 t_B = t_A + \frac{v_B - v_A}{a_x}.
 \end{equation}
 
-where $v_B$ is obtained from Eqn. \eqref{eqn:wet-hsf-fext-vB2-2}.
+where $v_B$ is obtained from Eqn. \eqref{eqn:wet-hsf-fext-vB2-2} and $a_x$ from Eqn. \eqref{eqn:wet-hsf-fext-fbd-solution-ax}.
+
+### Work of net force
+Using Eqn. \eqref{eqn:wet-hsf-fext-fbd-net-force} work of net force can be calculated
 
 \begin{equation}
-\label{eqn:wet-hsf-fext-tB-2}
-t_B = t_A + \frac{1}{a_x} \sqrt{v_A^2 + 2 \left[ \frac{F_{\rm ext}}{m}(\cos \theta + \mu_k \sin \theta) - \mu_k g \right] (x_B - x_A)} - \frac{v_A}{a_x}.
+\label{eqn:wet-hsf-fext-fbd-net-force-work}
+W = \left[ F_{\rm ext} (\cos \theta + \mu_k \sin \theta) - \mu_k mg \right] (x_B - x_A)
 \end{equation}
+
+### Kinetic energy at point $B$
+Using Eqn. \eqref{eqn:wet-hsf-fext-vB2-2} we can can kinetic energy at point $B$
 
 \begin{equation}
-\label{eqn:wet-hsf-fext-tB-3}
-t_B = t_A + \sqrt{ \frac{m v_A^2}{F_{\rm ext}(\cos \theta + \mu_k \sin \theta) - \mu_k mg} + 2 (x_B - x_A)} - \frac{v_A}{a_x}.
+\label{eqn:wet-hsf-fext-KB}
+\begin{array}{rcl}
+K_B & = & \frac12 m v_B^2 \newline
+& = & \frac12 m \left\\{ v_A^2 + 2 \left[ \frac{F_{\rm ext}}{m}(\cos \theta + \mu_k \sin \theta) - \mu_k g \right] (x_B - x_A) \right\\}
+\end{array}
 \end{equation}
 
+or using Eqn. \eqref{eqn:wet-theorem}
 
+\begin{equation}
+\label{eqn:wet-hsf-fext-fbd-net-force-work-KB}
+\begin{array}{rcl}
+K_B & = & W_{\rm net} + K_A \newline
+& = & (\Sigma F) \Delta s + K_A \newline
+& = & ma_x (x_B - x_A) + \frac12 m v_A^2 \newline
+& = & \left[ F_{\rm ext} (\cos \theta + \mu_k \sin \theta) - \mu_k mg \right] (x_B - x_A) + \frac12 m v_A^2.
+\end{array}
+\end{equation}
 
-
+Note that last line of Eqns. \eqref{eqn:wet-hsf-fext-KB} and \eqref{eqn:wet-hsf-fext-fbd-net-force-work-KB} are identical.
 
 
 ## Exercises
 1. An object has initial velocity of $4 \ \rm m/s$ to a certain direction and final velocity of $(3 \hat{i} + 4 \hat{j}) \ \rm m/s$. Find its initial kinetic energy, final kinetic energy, and change in object's kinetic energy.
 2. Show how to obtain Eqn. \eqref{eqn:wet-theorem-proof-kinematics} from Eqn. \eqref{eqn:wet-theorem}.
 3. Consider a horizontal surface, where an object is moving on it with coefficient of kinetic friction $\mu_k$. While moves from point $A$ to point $B$ the object is also under influence of an external force $F_{\rm ext}$ besides the kinetic friction $f_k$. The object has mass $m$. Velocity at the points are $v_A$ and $v_B$, respectively. The distance between the points are $\Delta x = x_B - x_A$ and the time required to go from point $A$ to point $B$ is $\Delta t = t_B - t_A$. Show the relation between mentioned physical quantities.
+4. Use value of physics quantities in Fig. <a href="#fig:wet-horiz-surf-fric-fext">1</a> to find $a_x$, $v_B$, $t_B$, and $k_B$.
 
 
 ## Quiz
