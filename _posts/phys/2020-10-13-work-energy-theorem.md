@@ -76,57 +76,84 @@ which is one of the well-known kinematics formula.
 
 
 ## Moving on a horizontal surface with friction
-A block with mass $m$ is moving on a horizontal surface with friction $\mu_k$ and is continuously pulled with a constant force $F_{\rm ext}$ that has an angle $\theta$ with the floor in the direction of the motion. Observation is taken place at two points, $x_A$ and $x_B$, where the block passes them at time $t_A$ and $t_B$, respectively.
+A block with mass $m$ is moving on a horizontal surface with friction $\mu_k$ and is continuously pulled with a constant force $F_{\rm ext}$ that has an angle $\theta$ with the horizontal in the direction of the motion. Observation is taken place at two points, $x_A$ and $x_B$, where the block passes them at time $t_A$ and $t_B$, respectively.
 
 <oo>
-svg 400 200 #fafafa fig:wet-horiz-surf-fric-fext|A block is moving on a horizontal surface with friction and is pulled by a constant $F_{\rm ext}$.
+svg 400 200 #fafafa fig:wet-horiz-surf-fric-fext|A block with mass $m$ is moving on a horizontal surface with friction $\mu_k$ and is pulled by a constant force $F_{\rm ext}$.
+
+# Standard gravity
+style lc:#0c0 ls:0 lw:2 lo:1 fc:#0c0 fo:1
+arrow 20 30 20 70
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 15 20 g
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 30 20 = 10 m/s
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 87 15 2
 
 # Horizontal floor
 style lc:#000 ls:0 lw:2 lo:1
 line 20 120 380 120
-
-# Block at
-style lc:#000 ls:0 lw:2 lo:1 fc:#faa fo:1
-rect 100 30 60 60
 style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
-text 120 65 m
+text 193 140 &mu;
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:10px
+text 200 145 k
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 210 140 = 0.2
+
+# Block at xA
+style lc:#000 ls:0 lw:2 lo:1 fc:#ddd fo:1
+rect 60 60 60 60
+style lc:#000 ls:0 lw:2 lo:1 fc:#000 fo:1
+circle 90 120 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 83 140 x
+text 83 170 t
+text 130 100 v
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:10px
+text 90 145 A
+text 90 175 A
+text 137 105 A
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 100 140 = 4 m
+text 100 170 = 2 s
+text 147 100 = 7 m/s
+style lc:#00f ls:0 lw:2 lo:1 fc:#00f fo:1
+arrow 130 80 150 80
+
+# Block at xB
+style lc:#000 ls:4-2 lw:1 lo:1 fc:#eee fo:1
+rect 280 60 60 60
+style lc:#000 ls:0 lw:2 lo:1 fc:#000 fo:1
+circle 310 120 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 303 140 x
+text 303 170 t
+text 350 100 v
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:10px
+text 310 145 B
+text 310 175 B
+text 357 105 B
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 320 140 = 100 m
+style lc:#00f ls:0 lw:2 lo:1 fc:#00f fo:1
+arrow 350 80 380 80
+
+# External force Fext
+style lc:#f88 ls:0 lw:3 lo:1 fc:#f88 fo:1
+arrow 120 60 160 30
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 140 20 F
+text 140 57 &theta;
 style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
-text 132 70 1
-
-	# Green block m2 = 1 kg
-	style lc:#000 ls:0 lw:2 lo:1 fc:#afa fo:1
-	rect 160 50 40 40
-	style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
-	text 170 75 m
-	style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
-	text 182 80 2
-
-	# Blue block m3 = 4 kg
-	style lc:#000 ls:0 lw:2 lo:1 fc:#aaf fo:1
-	rect 200 20 70 70
-	style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
-	text 230 60 m
-	style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
-	text 242 65 3
-
-	# Yellow block m4 = 2 kg
-	style lc:#000 ls:0 lw:2 lo:1 fc:#ffa fo:1
-	rect 270 40 50 50
-	style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
-	text 285 70 m
-	style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
-	text 297 75 4
-
-	# External force \vec{F}
-	style lc:#f88 ls:0 lw:3 lo:1 fc:#f88 fo:1
-	arrow 20 60 100 60
-	style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
-	text 50 45 F
-	style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
-	text 58 50 ext
+text 148 25 ext
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 165 20 = 100 N
+style lc:#000 ls:4-2 lw:1 lo:1 fc:#000 fo:1
+line 120 60 160 60
 </oo>
 
-Fig. <a href="#fig:wet-horiz-surf-fric-fext">1</a>.
+Value of some physical quantities are given in Fig. <a href="#fig:wet-horiz-surf-fric-fext">1</a>.
 
 
 ## Exercises
