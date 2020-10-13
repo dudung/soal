@@ -23,7 +23,7 @@ A particle with mass $m$ and moving with velocity $\vec{v}$ will have kinetic en
 K = \frac12 m (\vec{v} \cdot \vec{v}) = \frac12 m v^2.
 \end{equation}
 
-The last term in Eqn. \eqref{eqn:wket-kinetic-energy} is more common then its preceeding term, which is showing the application of [two vectors dot product](vector#dot-product). Kinetic energy has the unit of $\rm J$ or joule.
+The last term in Eqn. \eqref{eqn:wket-kinetic-energy} is more common then its preceeding term, which is showing the application of [two vectors dot product](vector#dot-product). Kinetic energy has the unit of $\rm J$ or joule. Eqn. \eqref{eqn:wket-kinetic-energy} is for translational motion, while rotational motion will have another form of kinetic energy related to the moment of inertia $I$ instead of mass $m$.
 
 
 ## Excersices
