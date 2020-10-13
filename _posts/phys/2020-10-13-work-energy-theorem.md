@@ -14,9 +14,15 @@ permalink: /physics/work-energy-theorem
 ---
 Here we will discuss about work-energy theorem [[1](#ref1)] and how it helps to solve a problem in easier way compared to the use of dynamics and work concepts together.
 
-## Change kinetic energy
+## Change in kinetic energy
 If at initial time $t_i$ a particle with mass $m$ has velocity of $v_i$ and at final time $t_f$ it has velocity of $v_f$ then change of particle's kinetic energy is
 
+\begin{equation}
+\label{eqn:wet-work-integral}
+\Delta K = K_f - K_i = \frac12 m v_f^2 - \frac12 m v_i^2,
+\end{equation}
+
+where the subscript $i$ and $f$ can be any subscript provided by a problem.
 
 
 ## References
