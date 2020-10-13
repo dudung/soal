@@ -76,7 +76,7 @@ which is one of the well-known kinematics formula.
 
 
 ## Horizontal surface with friction
-..
+Consider a horizontal surface, where an object is moving on it with coefficient of kinetic friction $\mu_k$. While moves from point $A$ to point $B$ the object is also under influence of an external force $F_{\rm ext}$ besides the kinetic friction $f_k$. The object has mass $m$. Velocity at the points are $v_A$ and $v_B$, respectively. The distance between the points are $\Delta x = x_B - x_A$ and the time required to go from point $A$ to point $B$ is $\Delta t = t_B - t_A$. Show the relation between mentioned physical quantities.
 
 
 ## Incline with friction
