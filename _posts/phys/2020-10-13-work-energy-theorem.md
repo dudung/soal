@@ -206,12 +206,66 @@ and kinetic friction
 f_k = \mu_k N.
 \end{equation}
 
-Substitute Eqn. \eqref{eqn:wet-hsf-fext-w} into Eqn. \eqref{eqn:wet-hsf-fext-fbd-y}, then the result into Eqn. \eqref{eqn:wet-hsf-fext-fk}, finally into Eqn. \eqref{eqn:wet-hsf-fext-fbd-x}, will give
+### Net force and Acceleration
+Substitute Eqn. \eqref{eqn:wet-hsf-fext-w} into Eqn. \eqref{eqn:wet-hsf-fext-fbd-y}, then the result into Eqn. \eqref{eqn:wet-hsf-fext-fk}, finally into Eqn. \eqref{eqn:wet-hsf-fext-fbd-x}, will give net force
 
 \begin{equation}
-\label{eqn:wet-hsf-fext-fbd-solution}
+\label{eqn:wet-hsf-fext-fbd-net-force}
+m a_x = F_{\rm ext} (\cos \theta + \mu_k \sin \theta) - \mu_k mg
+\end{equation}
+
+and acceleration
+
+\begin{equation}
+\label{eqn:wet-hsf-fext-fbd-solution-ax}
 a_x = \frac{F_{\rm ext}}{m}(\cos \theta + \mu_k \sin \theta) - \mu_k g.
 \end{equation}
+
+### Velocity $v_B$
+Velocity at point $B$ can be obtained using
+
+\begin{equation}
+\label{eqn:wet-hsf-fext-vB2}
+v_B^2 = v_A^2 + 2a_x (x_B - x_A).
+\end{equation}
+
+Substitute Eqn. \eqref{eqn:wet-hsf-fext-fbd-solution-ax} into Eqn. \eqref{eqn:wet-hsf-fext-vB2} will give
+
+\begin{equation}
+\label{eqn:wet-hsf-fext-vB2-2}
+v_B^2 = v_A^2 + 2 \left[ \frac{F_{\rm ext}}{m}(\cos \theta + \mu_k \sin \theta) - \mu_k g \right] (x_B - x_A).
+\end{equation}
+
+### Time $t_B$
+To get the time the block passes point $B$ we use
+
+\begin{equation}
+\label{eqn:wet-hsf-fext-vB-ax}
+v_B = v_A + a_x (t_B - t_A),
+\end{equation}
+
+that will give
+
+\begin{equation}
+\label{eqn:wet-hsf-fext-tB}
+t_B = t_A + \frac{v_B - v_A}{a_x}.
+\end{equation}
+
+where $v_B$ is obtained from Eqn. \eqref{eqn:wet-hsf-fext-vB2-2}.
+
+\begin{equation}
+\label{eqn:wet-hsf-fext-tB-2}
+t_B = t_A + \frac{1}{a_x} \sqrt{v_A^2 + 2 \left[ \frac{F_{\rm ext}}{m}(\cos \theta + \mu_k \sin \theta) - \mu_k g \right] (x_B - x_A)} - \frac{v_A}{a_x}.
+\end{equation}
+
+\begin{equation}
+\label{eqn:wet-hsf-fext-tB-3}
+t_B = t_A + \sqrt{ \frac{m v_A^2}{F_{\rm ext}(\cos \theta + \mu_k \sin \theta) - \mu_k mg} + 2 (x_B - x_A)} - \frac{v_A}{a_x}.
+\end{equation}
+
+
+
+
 
 
 ## Exercises
