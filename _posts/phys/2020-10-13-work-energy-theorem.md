@@ -75,6 +75,14 @@ v_f^2 = v_i^2 + 2a(x_f - x_i),
 which is one of the well-known kinematics formula.
 
 
+## Horizontal surface with friction
+..
+
+
+## Incline with friction
+..
+
+
 ## Exercises
 1. An object has initial velocity of $4 \ \rm m/s$ to a certain direction and final velocity of $(3 \hat{i} + 4 \hat{j}) \ \rm m/s$. Find its initial kinetic energy, final kinetic energy, and change in object's kinetic energy.
 2. Show how to obtain Eqn. \eqref{eqn:wet-theorem-proof-kinematics} from Eqn. \eqref{eqn:wet-theorem}.
