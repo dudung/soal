@@ -28,4 +28,4 @@ where the subscript $i$ and $f$ can be any subscript provided by a problem.
 ## References
 1. <a name="ref1"></a>-, "Work-Energy Theorem", in Boundless Physics, Lumen Learning, url <https://courses.lumenlearning.com/boundless-physics/chapter/work-energy-theorem/> [20201013].
 
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/tutorial/2020-10-13-work-energy-theorem.md)
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-10-13-work-energy-theorem.md)
