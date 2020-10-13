@@ -85,7 +85,6 @@ Suppose that there is a particle with mass $m = 2 \ \rm kg$ moving on a horizont
 + [Submit answer](https://forms.office.com/Pages/ResponsePage.aspx?id=gxFu22VMXECCznzVP6bp3NGUp4ijN01Ks-VZMpTE-hpUN1VJQVRKMTNXNlM4TUwwMkxWMTJQTFZFVC4u)
 
 
-
 ## References
 1. <a name="ref1"></a>-, "Work-Energy Theorem", in Boundless Physics, Lumen Learning, url <https://courses.lumenlearning.com/boundless-physics/chapter/work-energy-theorem/> [20201013].
 
