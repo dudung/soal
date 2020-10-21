@@ -51,6 +51,64 @@ Model proposed by Leslie
 where $N_t$ is vector of age structure at time $t$ and $M$ is population projection matrix, where it has been further developed [[3](#ref3)].
 
 
+## Causal loop diagrams
+Relation between population with births and deaths can be illustrated using a causal loop diagram [[6](#ref6)].
+
+<oo>
+svg 400 120 #fafafa fig:sdpg-pop-cld|Causal loop diagram for population relation with births and deaths.
+
+# Horizontal floor
+style lc:#000 ls:0 lw:2 lo:1
+line 20 90 380 90
+
+# Red block m1 = 3 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#faa fo:1
+rect 100 30 60 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 120 65 m
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 132 70 1
+
+# Green block m2 = 1 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#afa fo:1
+rect 160 50 40 40
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 170 75 m
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 182 80 2
+
+# Blue block m3 = 4 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#aaf fo:1
+rect 200 20 70 70
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 230 60 m
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 242 65 3
+
+# Yellow block m4 = 2 kg
+style lc:#000 ls:0 lw:2 lo:1 fc:#ffa fo:1
+rect 270 40 50 50
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 285 70 m
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 297 75 4
+
+# External force \vec{F}
+style lc:#f88 ls:0 lw:3 lo:1 fc:#f88 fo:1
+arrow 20 60 100 60
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 50 45 F
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
+text 58 50 ext
+</oo>
+
+
+## Proposed model
+Using SD and causal loop diagram in Fig. <a href="#fig:sdpg-pop-cld">1</a>., following equations are proposed
+
+..
+
+
 ## References
 1. <a name="ref1"></a>A. Tsoularis, J. Wallace, "Analysis of logistic growth models", Mathematical Biosciences [Math. Biosci.], vol. 179, no. 1, pp. 21-55, Jul-Aug 2002, url <https://doi.org/10.1016/S0025-5564(02)00096-2>
 2. <a name="ref2"></a>Sebastian J. Schreiber, "Allee effects, extinctions, and chaotic transients in simple population models", Theoretical Population Biology [Theor. Popul. Biol.], vol. 64, no. 2, pp. 201-209, Sep 2003, url <https://doi.org/10.1016/s0040-5809(03)00072-8>
