@@ -15,10 +15,6 @@ permalink: /sd/pm25-coronavirus-hypothesis
 One approach to understand a complex sytem over time is system dynamics [[1](#ref1)]. It can accomodate flows, loops, table functions, and time delays. Relation between pm2.5
 
 
-
-
-
-
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "System dynamics", Wikipedia, The Free Encyclopedia, 1 Jun 2020, 01:14 UTC, <https://en.wikipedia.org/w/index.php?oldid=960079253> [20200923].
 2. <a name="ref2"></a>Maria A. Zoran, Roxana S. Savastru, Dan M. Savastru, Marina N. Tautan, "Assessing the relationship between surface levels of PM2.5 and PM10 particulate matter impact on COVID-19 in Milan, Italy", Science of The Total Environment [Sci. Total Environ.], 
