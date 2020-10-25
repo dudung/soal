@@ -44,13 +44,50 @@ where Eqn. \eqref{eqn:lcm-dp/dt=F-com} can be rewritten in the form of
 
 \begin{equation}
 \label{eqn:lcm-dp/dt=F-com-without-dt}
-d\vec{P} = 0.
+d\vec{P} = 0
 \end{equation}
 
+and can be approximated later with
+
+\begin{equation}
+\label{eqn:lcm-dp/dt=F-com-without-dt-approx}
+d\vec{P} \approx \Delta\vec{P}.
+\end{equation}
+
+Using
+
+\begin{equation}
+\label{eqn:lcm-dP}
+\Delta\vec{P} = \vec{P}_f - \vec{P}_i
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:lcm-dP-1}
+\Delta\vec{p}_1 = \vec{p} _{1f} - \vec{p} _{1i},
+\end{equation}
+
+which also holds for particle $2$, we can have that
+
+\begin{equation}
+\label{eqn:lcm-dP-dp}
+\Delta\vec{P} = \Delta\vec{p}_1 + \Delta\vec{p}_2.
+\end{equation}
+
+Substitute Eqn. \eqref{eqn:lcm-dP-dp} into Eqn. \eqref{eqn:lcm-dp/dt=F-com-without-dt-approx} will give
+
+\begin{equation}
+\label{eqn:lcm-dP-dp = 0}
+\Delta\vec{p}_1 + \Delta\vec{p}_2 = 0.
+\end{equation}
+
+Eqn. \eqref{eqn:lcm-dP-dp = 0} will lead us to Eqn. \eqref{eqn:lcm-law-of-conservation-of-momentum}.
 
 
 ## Exercises
 1. Two particles with mass $1 \ {\rm kg}$ and $2 \ {\rm kg}$ move along $x$ direction with initial velocity $4 \ {\rm m/s}$ and $-2 \ {\rm m/s}$. If final velocity of the first particle is $-1 \ {\rm m/s}$ find final velocity of the second particle.
+2. Prove that Eqn. \eqref{eqn:lcm-law-of-conservation-of-momentum} can be obtained from Eqn. \eqref{eqn:lcm-dP-dp = 0}.
 
 
 ## References
