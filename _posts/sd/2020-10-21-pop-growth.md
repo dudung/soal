@@ -103,6 +103,17 @@ text 58 50 ext
 </oo>
 
 
+
+Consider a frictionless track $(\mu_k = 0)$ consisted of linear and semicircular parts as shown in Fig. <a href="#fig:lce-fsct-problem">1</a>. The first part is denoted by segment $A-B$ and the second by segments $B-C$, $C-D$, $D-E$, and $E-F$.
+
+{:refdef: style="text-align: center;"}
+![an object moves along a frictionless semicircular track](/assets/img/fsct.png)
+<br />
+Figure <a name="fig:lce-fsct-problem">1</a> An object moves along a frictionless semicircular track through points $A - F$.
+{: refdef}
+
+
+
 ## Proposed model
 Using SD and causal loop diagram in Fig. <a href="#fig:sdpg-pop-cld">1</a>., following equations are proposed
 
