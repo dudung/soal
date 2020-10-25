@@ -78,7 +78,14 @@ and the death rate
 D = \mu_{DP} P,
 \end{equation}
 
-with $\mu_{BP}$ and $\mu_{DP}$ are the coefficients relating the birt and death rates to population.
+with $\mu_{BP}$ and $\mu_{DP}$ are the coefficients relating the birt and death rates to population. Using Eqns. \eqref{eqn:sdpg-birth-rate} and \eqref{eqn:sdpg-death-rate} we will have
+
+\begin{equation}
+\label{eqn:sdpg-pop-change}
+\frac{dP}{dt} = B - D.
+\end{equation}
+
+Notice that the relation between $B$ and $P$ in Eqn. \eqref{eqn:sdpg-birth-rate} and $D$ and $P$ in Eqn. \eqref{eqn:sdpg-death-rate} is different than between $P$ and $B$ and $P$ and $D$ in Eqn. \eqref{eqn:sdpg-pop-change}. The firt two is a proportional relation, while the last two is accumulation (integral). There could be another in the form of difference (differential).
 
 
 ## References
