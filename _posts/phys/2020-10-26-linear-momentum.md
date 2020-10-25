@@ -77,20 +77,85 @@ Eqn. \eqref{eqn:linmom-dp/dt=F} hold also for system of particles, where we will
 
 \begin{equation}
 \label{eqn:linmom-total-mass}
-m = m_1 + m_2
+M = m_1 + m_2
 \end{equation}
 
 and momentum of the system
 
 \begin{equation}
 \label{eqn:linmom-total-momentum}
-\vec{p} = \vec{p}_1 + \vec{p}_2.
+\vec{P} = \vec{p}_1 + \vec{p}_2,
 \end{equation}
+
+with
+
+\begin{equation}
+\label{eqn:linmom-momentum-i}
+\vec{p}_i = m_i \vec{v}_i
+\end{equation}
+
+with $i = 1, 2$, for each particle. We can define center of mass velocity of the system $\vec{V}_{\rm com}$, which makes
+
+\begin{equation}
+\label{eqn:linmom-total-momentum-mcom}
+\vec{P} = M \vec{V}_{\rm com}.
+\end{equation}
+
+Substitute Eqn. \eqref{eqn:linmom-total-mass} to the right side of Eqn. \eqref{eqn:linmom-total-momentum-mcom} and Eqn. \eqref{eqn:linmom-total-momentum} to the left side, we will have
+
+\begin{equation}
+\label{eqn:linmom-vcom-derivation}
+\begin{array}{rcl}
+\vec{p}_1 + \vec{p}_2 & = & (m_1 + m_2) \ \vec{V} _{\rm com} \newline
+m_1 \vec{v}_1 + m_2 \vec{v}_2 & = & (m_1 + m_2) \ \vec{V} _{\rm com} \newline
+\displaystyle \frac{m_1 \vec{v}_1 + m_2 \vec{v}_2}{m_1 + m_2} & = & \ \vec{V} _{\rm com},
+\end{array}
+\end{equation}
+
+which defines the $\vec{V}_{\rm com}$.
+
+
+## COM parameters of motion
+As in [kinematics](kinematics), in COM reference of frame there will be also position and acceleration. For $N$ particles, the position, velocity, and acceleration are Eqn. \eqref{eqn:linmom-vcom-derivation}.
+
+\begin{equation}
+\label{eqn:linmom-Rcom}
+\vec{R} _{\rm com} = \frac{\sum _{i = 1} ^N m_i \vec{r}_i}{\sum _{i = 1} ^N m_i},
+\end{equation}
+
+\begin{equation}
+\label{eqn:linmom-Vcom}
+\vec{V} _{\rm com} = \frac{\sum _{i = 1} ^N m_i \vec{v}_i}{\sum _{i = 1} ^N m_i},
+\end{equation}
+
+\begin{equation}
+\label{eqn:linmom-Acom}
+\vec{A} _{\rm com} = \frac{\sum _{i = 1} ^N m_i \vec{a}_i}{\sum _{i = 1} ^N m_i}.
+\end{equation}
+
+Eqns. \eqref{eqn:linmom-Rcom}, \eqref{eqn:linmom-Vcom}, and \eqref{eqn:linmom-Acom} will also have similar relations
+
+\begin{equation}
+\label{eqn:linmom-Vcom-Rcom}
+\vec{V} _{\rm com} = \frac{d\vec{R} _{\rm com}}{dt}
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:linmom-Acom-Vcom}
+\vec{A} _{\rm com} = \frac{d\vec{V} _{\rm com}}{dt}.
+\end{equation}
+
+Eqns. \eqref{eqn:linmom-Vcom-Rcom} and \eqref{eqn:linmom-Acom-Vcom} can be proven using relation for each particle $i$ through $\vec{v}_i = d\vec{r}_i/dt$ and $\vec{a}_i = d\vec{v}_i/dt$ and Eqns. \eqref{eqn:linmom-Rcom}, \eqref{eqn:linmom-Vcom}, \eqref{eqn:linmom-Acom}.
 
 
 ## Exercises
 1. A $100 \ \rm g$-particle moves with velocity $1 \ \rm dm/s$ to $+x$ direction. Find its momentum and present it SI unit and vector. Remember that $1 \ {\rm kg} = 1000 \ {\rm g}$, $1 \ {\rm dm} = 0.1 \ {\rm m}$, and unit vector for $+x$ direction can be $\hat{i}$, $\hat{x}$, or $\hat{e}_x$.
 2. Net fore on a particle is $\vec{F} = [(2t - 1) \hat{i} + t^2 \hat{j} + \hat{k}] \ {\rm N}$. Find its momentum and velocity at $t = 5 \ {\rm s}$, if mass of the particle is $0.1 \ {\rm kg}$.
+3. Find expression for $\vec{R} _{\rm com}$ and $\vec{A} _{\rm com}$ for system of two particles as in Eqn. \eqref{eqn:linmom-vcom-derivation}.
+4. There are three particles with mass $1 \ {\rm kg}$, $2 \ {\rm kg}$, and $3 \ {\rm kg}$, where their position are given by $\vec{r}_1 = [ t^3 \hat{i} + t^2 \hat{j} + t \hat{k} ] \ {\rm m}$, $\vec{r}_2 = [ (t^2 - 1) \hat{i} + (1 - 3t) \hat{j} - 10 \hat{k} ] \ {\rm m}$, and $\vec{r}_3 = [ t \hat{i} + (10 - t^2) \hat{k} ] \ {\rm m}$. Find position, velocity, and acceleration of system center of mass $\vec{R} _{\rm com}$, $\vec{V} _{\rm com}$, and $\vec{A} _{\rm com}$.
+5. With the information for each particle $i$ that $\vec{v}_i = d\vec{r}_i/dt$ and $\vec{a}_i = d\vec{v}_i/dt$, proove Eqns. \eqref{eqn:linmom-Vcom-Rcom} and \eqref{eqn:linmom-Acom-Vcom}.
 
 
 ## References
