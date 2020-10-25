@@ -54,68 +54,17 @@ where $N_t$ is vector of age structure at time $t$ and $M$ is population project
 ## Causal loop diagrams
 Relation between population with births and deaths can be illustrated using a causal loop diagram [[6](#ref6)].
 
-<oo>
-svg 400 120 #fafafa fig:sdpg-pop-cld|Causal loop diagram for population relation with births and deaths.
-
-# Horizontal floor
-style lc:#000 ls:0 lw:2 lo:1
-line 20 90 380 90
-
-# Red block m1 = 3 kg
-style lc:#000 ls:0 lw:2 lo:1 fc:#faa fo:1
-rect 100 30 60 60
-style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
-text 120 65 m
-style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
-text 132 70 1
-
-# Green block m2 = 1 kg
-style lc:#000 ls:0 lw:2 lo:1 fc:#afa fo:1
-rect 160 50 40 40
-style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
-text 170 75 m
-style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
-text 182 80 2
-
-# Blue block m3 = 4 kg
-style lc:#000 ls:0 lw:2 lo:1 fc:#aaf fo:1
-rect 200 20 70 70
-style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
-text 230 60 m
-style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
-text 242 65 3
-
-# Yellow block m4 = 2 kg
-style lc:#000 ls:0 lw:2 lo:1 fc:#ffa fo:1
-rect 270 40 50 50
-style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
-text 285 70 m
-style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
-text 297 75 4
-
-# External force \vec{F}
-style lc:#f88 ls:0 lw:3 lo:1 fc:#f88 fo:1
-arrow 20 60 100 60
-style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
-text 50 45 F
-style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:10px
-text 58 50 ext
-</oo>
-
-
-
-Consider a frictionless track $(\mu_k = 0)$ consisted of linear and semicircular parts as shown in Fig. <a href="#fig:lce-fsct-problem">1</a>. The first part is denoted by segment $A-B$ and the second by segments $B-C$, $C-D$, $D-E$, and $E-F$.
+Consider .. as shown in Fig. <a href="#fig:sdpg-pop-cld">1</a>.
 
 {:refdef: style="text-align: center;"}
-![an object moves along a frictionless semicircular track](/assets/img/fsct.png)
+![an object moves along a frictionless semicircular track](/assets/img/sd/cau-loop-pop.png)
 <br />
-Figure <a name="fig:lce-fsct-problem">1</a> An object moves along a frictionless semicircular track through points $A - F$.
+Figure <a name="fig:sdpg-pop-cld">1</a> Relation between .. and ...
 {: refdef}
 
 
-
 ## Proposed model
-Using SD and causal loop diagram in Fig. <a href="#fig:sdpg-pop-cld">1</a>., following equations are proposed
+Using SD and causal loop diagram in Fig. <a href="#fig:sdpg-pop-cld">1</a> following equations are proposed
 
 ..
 
