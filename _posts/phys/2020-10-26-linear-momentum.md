@@ -59,10 +59,10 @@ If we limit our discussion to constant mass $m$ or $dm/dt = 0$ then Eqn. \eqref{
 
 \begin{equation}
 \label{eqn:linmom-dp/dt=ma}
-\frac{d\vec{p}}{dt} = m\left(\frac{d\vec{v}}{dt}\right) = m \vec{a}.
+\frac{d\vec{p}}{dt} = m\left(\frac{d\vec{v}}{dt}\right) = m \vec{a},
 \end{equation}
 
-Using Eqns. \eqref{eqn:linmom-newton-2nd-law-F} and \eqref{eqn:linmom-dp/dt=ma} we will have
+with kinematics relation between acceleration and velocity, $\vec{a} = d\vec{v}/dt$. Using Eqns. \eqref{eqn:linmom-newton-2nd-law-F} and \eqref{eqn:linmom-dp/dt=ma} we will have
 
 \begin{equation}
 \label{eqn:linmom-dp/dt=F}
@@ -70,6 +70,22 @@ Using Eqns. \eqref{eqn:linmom-newton-2nd-law-F} and \eqref{eqn:linmom-dp/dt=ma} 
 \end{equation}
 
 which is the relation between momentum $\vec{p}$ and net force $\vec{F}$ of a particle.
+
+
+## Two particle system
+Eqn. \eqref{eqn:linmom-dp/dt=F} hold also for system of particles, where we will take only system consisted of two particles as the example. Now, mass $m$ is total mass of the system
+
+\begin{equation}
+\label{eqn:linmom-total-mass}
+m = m_1 + m_2
+\end{equation}
+
+and momentum of the system
+
+\begin{equation}
+\label{eqn:linmom-total-momentum}
+\vec{p} = \vec{p}_1 + \vec{p}_2.
+\end{equation}
 
 
 ## Exercises
