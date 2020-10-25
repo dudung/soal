@@ -107,7 +107,7 @@ Using Eqns. \eqref{eqn:com-dp/dt=F} and \eqref{eqn:linmom-total-momentum-mcom} t
 \frac{d\vec{P}}{dt} = \vec{F}_{\rm com},
 \end{equation}
 
-where $\vec{P}$ is total momentum and $\vec{F}_{\rm com}$ is external force acted upon system center of mass. Eqn. \eqref{eqn:com-dp/dt=F-com} is 2nd Newton's law of system of particles.
+where $\vec{P}$ is total momentum and $\vec{F}_{\rm com}$ is external force acted upon system center of mass. Eqn. \eqref{eqn:com-dp/dt=F-com} is 2nd Newton's law of system of particles. And the 1st Newton's law of system of particles will lead us to [conservation of momentum](conservation-of-momentum).
 
 
 ## Exercises
