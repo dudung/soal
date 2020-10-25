@@ -52,9 +52,7 @@ where $N_t$ is vector of age structure at time $t$ and $M$ is population project
 
 
 ## Causal loop diagrams
-Relation between population with births and deaths can be illustrated using a causal loop diagram [[6](#ref6)].
-
-Consider .. as shown in Fig. <a href="#fig:sdpg-pop-cld">1</a>.
+Relation between population with births and deaths can be illustrated using a causal loop diagram [[6](#ref6)],
 
 {:refdef: style="text-align: center;"}
 ![an object moves along a frictionless semicircular track](/assets/img/sd/cau-loop-pop.png)
@@ -62,11 +60,25 @@ Consider .. as shown in Fig. <a href="#fig:sdpg-pop-cld">1</a>.
 Figure <a name="fig:sdpg-pop-cld">1</a> Relation between .. and ...
 {: refdef}
 
+where $P$ stands for population, $D$ for death, and $B$ for birth. The left loop is a reinforcing loop (R), while right loop is a balancing loop.
+
 
 ## Proposed model
-Using SD and causal loop diagram in Fig. <a href="#fig:sdpg-pop-cld">1</a> following equations are proposed
+Using SD and causal loop diagram in Fig. <a href="#fig:sdpg-pop-cld">1</a> we can have the birth rate
 
-..
+\begin{equation}
+\label{eqn:sdpg-birth-rate}
+B = \mu_{BP} P
+\end{equation}
+
+and the death rate
+
+\begin{equation}
+\label{eqn:sdpg-death-rate}
+D = \mu_{DP} P,
+\end{equation}
+
+with $\mu_{BP}$ and $\mu_{DP}$ are the coefficients relating the birt and death rates to population.
 
 
 ## References
