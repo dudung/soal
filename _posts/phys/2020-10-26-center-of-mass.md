@@ -117,6 +117,6 @@ where $\vec{P}$ is total momentum and $\vec{F}_{\rm com}$ is external force acte
 
 
 ## References
-1. <a name="ref2"></a>Wikipedia contributors, "Center of mass", Wikipedia, The Free Encyclopedia, 25 Oct 2020, 04:07 UTC, <https://en.wikipedia.org/w/index.php?oldid=985295653> [20201026].
+1. <a name="ref1"></a>Wikipedia contributors, "Center of mass", Wikipedia, The Free Encyclopedia, 25 Oct 2020, 04:07 UTC, <https://en.wikipedia.org/w/index.php?oldid=985295653> [20201026].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-10-26-center-of-mass.md)
