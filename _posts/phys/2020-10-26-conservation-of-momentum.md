@@ -40,7 +40,7 @@ where
 \vec{P} = \vec{p}_1 + \vec{p}_2,
 \end{equation}
 
-where Eqn. \eqref{eqn:lcm-dp/dt=F-com} can be rewritten in the form of
+where Eqn. \eqref{eqn:lcm-dp/dt=F-com=0} can be rewritten in the form of
 
 \begin{equation}
 \label{eqn:lcm-dp/dt=F-com-without-dt}
