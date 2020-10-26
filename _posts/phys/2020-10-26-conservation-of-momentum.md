@@ -29,7 +29,7 @@ where $i$ and $f$ stand for initial dan final condition.
 From [center of mass](center-of-mass) implication of 1st Newton's law of motion for system of particles will be in the form of
 
 \begin{equation}
-\label{eqn:lcm-dp/dt=F-com}
+\label{eqn:lcm-dp/dt=F-com=0}
 \frac{d\vec{P}}{dt} = 0,
 \end{equation}
 
@@ -78,16 +78,20 @@ which also holds for particle $2$, we can have that
 Substitute Eqn. \eqref{eqn:lcm-dP-dp} into Eqn. \eqref{eqn:lcm-dp/dt=F-com-without-dt-approx} will give
 
 \begin{equation}
-\label{eqn:lcm-dP-dp = 0}
+\label{eqn:lcm-dP-dp=0}
 \Delta\vec{p}_1 + \Delta\vec{p}_2 = 0.
 \end{equation}
 
-Eqn. \eqref{eqn:lcm-dP-dp = 0} will lead us to Eqn. \eqref{eqn:lcm-law-of-conservation-of-momentum}.
+Eqn. \eqref{eqn:lcm-dP-dp=0} will lead us to Eqn. \eqref{eqn:lcm-law-of-conservation-of-momentum}.
+
+
+## Limitation
+Since Eqn. \eqref{eqn:lcm-law-of-conservation-of-momentum} is derived using Eqn. \eqref{eqn:lcm-dp/dt=F-com=0} or without external force, then law of conservation of momentum holds only when during the collision there is not any external force working on the system or any external force during $\Delta t$ can be negelected, where $\Delta t$ is collision (interaction) time.
 
 
 ## Exercises
 1. Two particles with mass $1 \ {\rm kg}$ and $2 \ {\rm kg}$ move along $x$ direction with initial velocity $4 \ {\rm m/s}$ and $-2 \ {\rm m/s}$. If final velocity of the first particle is $-1 \ {\rm m/s}$ find final velocity of the second particle.
-2. Prove that Eqn. \eqref{eqn:lcm-law-of-conservation-of-momentum} can be obtained from Eqn. \eqref{eqn:lcm-dP-dp = 0}.
+2. Prove that Eqn. \eqref{eqn:lcm-law-of-conservation-of-momentum} can be obtained from Eqn. \eqref{eqn:lcm-dP-dp=0}.
 
 
 ## References
