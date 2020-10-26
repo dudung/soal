@@ -14,6 +14,7 @@ permalink: /physics/conservation-of-momentum
 ---
 Conservation of momentum [[1](#ref1)] is discussed in this post.
 
+
 ## Law
 Law of conservation of linear momentum of two particles $1$ and $2$ is
 
