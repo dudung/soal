@@ -96,6 +96,7 @@ function simulate() {
 		GTEC = 1.0;
 		GDPP = 1000;
 		GDPU = 1000;
+		PCTC = 100;
 		
 		c_TRAD_GDPU = 0.001;
 		c_PDEM_TRAD = 1;
@@ -111,16 +112,10 @@ function simulate() {
 		c_WATO_GTEC = 0.1;
 		
 		c_PPRE_PDEM = 1;
-		c_GDPU_PPRE = 1;
+		c_GDPU_PPRE = 20;
 		
-		ENEO = 1.000;
-		WATO = 1.000;
-		WASD = 1.000;
-				
-		RESL = 1.000;
-		LIFQ = 1.000;
-		
-		PCTC = 100;
+		c_PINV_GDPU = 0.01;
+		c_PCTC_PINV = 0.1;
 		
 		tout(
 			"TIME  GDPP   GDPU   ENEO   WASD   WATO "
@@ -134,12 +129,17 @@ function simulate() {
 	WASD = c_WASD_GDPP * GDPP - c_WASD_GTEC * GTEC;
 	WATO = c_WATO_GDPP * GDPP - c_WATO_GTEC * GTEC;
 	
+	// Port
 	TRAD = c_TRAD_GDPU * GDPU;
 	PDEM = c_PDEM_TRAD * TRAD;
 	PCTX = c_PCTX_PDEM * PDEM;
 	
-	PPRE = c_PPRE_PDEM * PDEM;
+	PPRE = c_PPRE_PDEM * PDEM / PCTC;
 	
+	PINV = c_PINV_GDPU * GDPU;
+	PCTC = PCTC + c_PCTC_PINV * PINV;
+	
+	// GDP
 	GDPP = GDPP + c_GDPP_PCTX * PCTX;
 	GDPU = GDPU + c_GDPU_GDPP * GDPP - c_GDPU_PPRE * PPRE;
 	
@@ -149,7 +149,7 @@ function simulate() {
 		("0000" + t).slice(-4) + "  " +
 		("0000" + Math.round(GDPP)).slice(-5) + "  " +
 		("0000" + Math.round(GDPU)).slice(-5) + "  " +
-		("0000" + Math.round(PDEM)).slice(-5) + "\n"
+		("0000" + Math.round(PCTC)).slice(-5) + "\n"
 	);
 	
 	// Stop simulation when tend is reached
