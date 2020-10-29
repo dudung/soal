@@ -52,7 +52,7 @@ function resize() {
 function initParams() {
 	// Set time parameters
 	tbeg = 0;
-	tend = 12 * 1;
+	tend = 12 * 10; // ten years
 	dt = 1;
 	t = tbeg;
 	
@@ -177,6 +177,7 @@ function simulate() {
 			"HRIS   " +
 			"POPU   " +
 			"LIFQ   " +
+			"SHOC   " +
 			"\n"
 		);
 	}
@@ -189,6 +190,8 @@ function simulate() {
 	
 	RESL = c_RESL_ENEO * ENEO + c_RESL_WATO * WATO;
 	ENVQ = c_ENVQ_WASD / WASD - c_ENVQ_SHOC * SHOC;
+	ENVQ = (ENVQ < 0) ? 0 : ENVQ;
+	
 	LIFQ = c_LIFQ_POPU / POPU;
 	
 	HRIS = c_HRIS_RESL * RESL - c_HRIS_ENVQ * ENVQ;
@@ -198,8 +201,10 @@ function simulate() {
 	IINV = c_IINV_GDPU * GDPU;
 	INFI = INFI + c_INFI_IINV * IINV;
 	INDI = c_INDI_INFI * INFI - c_INDI_INFO * INFO;
+	INDI = (INDI < 0) ? 0 : INDI;
 	
 	INDO = c_INDO_INFO * INFO - c_INDO_INFI * INFI;
+	INDO = (INDO < 0) ? 0 : INDO;
 	
 	// Port
 	TRAD = c_TRAD_GDPU * GDPU;
@@ -229,23 +234,42 @@ function simulate() {
 	POPI = c_POPI_GDPU * GDPP;
 	POPU = POPU + (POPB - POPD + POPI);
 		
+	
+	// Set display factors
+	var fGDPP = 1;
+	var fGDPU = 1;
+	var fTRAD = 1000;
+	var fINDI = 100;
+	var fINDO = 100;
+	var fPCTX = 100;
+	var fPCTC = 100;
+	var fENEO = 100;
+	var fWATO = 100;
+	var fWASD = 100;
+	var fENVQ = 1000;
+	var fHRIS = 100;
+	var fPOPU = 1;
+	var fLIFQ = 1000;
+	var fSHOC = 10000;
+	
 	// Display variables on textarea
 	tout(
 		("0000" + t).slice(-4) + "  " +
-		("0000" + Math.round(GDPP)).slice(-5) + "  " +
-		("0000" + Math.round(GDPU)).slice(-5) + "  " +
-		("0000" + Math.round(TRAD)).slice(-5) + "  " +
-		("0000" + Math.round(INDI)).slice(-5) + "  " +
-		("0000" + Math.round(INDO)).slice(-5) + "  " +
-		("0000" + Math.round(PCTX)).slice(-5) + "  " +
-		("0000" + Math.round(PCTC)).slice(-5) + "  " +
-		("0000" + Math.round(ENEO)).slice(-5) + "  " +
-		("0000" + Math.round(WATO)).slice(-5) + "  " +
-		("0000" + Math.round(WASD)).slice(-5) + "  " +
-		("0000" + Math.round(ENVQ)).slice(-5) + "  " +
-		("0000" + Math.round(HRIS)).slice(-5) + "  " +
-		("0000" + Math.round(POPU)).slice(-5) + "  " +
-		("0000" + Math.round(LIFQ)).slice(-5) + "  " +
+		("0000" + Math.round(fGDPP * GDPP)).slice(-5) + "  " +
+		("0000" + Math.round(fGDPU * GDPU)).slice(-5) + "  " +
+		("0000" + Math.round(fTRAD * TRAD)).slice(-5) + "  " +
+		("0000" + Math.round(fINDI * INDI)).slice(-5) + "  " +
+		("0000" + Math.round(fINDO * INDO)).slice(-5) + "  " +
+		("0000" + Math.round(fPCTX * PCTX)).slice(-5) + "  " +
+		("0000" + Math.round(fPCTC * PCTC)).slice(-5) + "  " +
+		("0000" + Math.round(fENEO * ENEO)).slice(-5) + "  " +
+		("0000" + Math.round(fWATO * WATO)).slice(-5) + "  " +
+		("0000" + Math.round(fWASD * WASD)).slice(-5) + "  " +
+		("0000" + Math.round(fENVQ * ENVQ)).slice(-5) + "  " +
+		("0000" + Math.round(fHRIS * HRIS)).slice(-5) + "  " +
+		("0000" + Math.round(fPOPU * POPU)).slice(-5) + "  " +
+		("0000" + Math.round(fLIFQ * LIFQ)).slice(-5) + "  " +
+		("0000" + Math.round(fSHOC * SHOC)).slice(-5) + "  " +
 		"\n"
 	);
 	
