@@ -116,6 +116,9 @@ function simulate() {
 		
 		c_PINV_GDPU = 0.01;
 		c_PCTC_PINV = 0.1;
+		c_PREV_PCTX = 0.2;
+		c_PPRO_PREV = 0.2;
+		c_PINV_PPRO = 0.5;
 		
 		tout(
 			"TIME  GDPP   GDPU   ENEO   WASD   WATO "
@@ -131,12 +134,16 @@ function simulate() {
 	
 	// Port
 	TRAD = c_TRAD_GDPU * GDPU;
-	PDEM = c_PDEM_TRAD * TRAD;
-	PCTX = c_PCTX_PDEM * PDEM;
 	
+	PDEM = c_PDEM_TRAD * TRAD;
 	PPRE = c_PPRE_PDEM * PDEM / PCTC;
 	
-	PINV = c_PINV_GDPU * GDPU;
+	PCTX = c_PCTX_PDEM * PDEM; //? PCTC
+	
+	PREV = c_PREV_PCTX * PCTX;
+	PPRO = c_PPRO_PREV * PREV;
+	
+	PINV = c_PINV_GDPU * GDPU + c_PINV_PPRO * PPRO;
 	PCTC = PCTC + c_PCTC_PINV * PINV;
 	
 	// GDP
@@ -149,7 +156,7 @@ function simulate() {
 		("0000" + t).slice(-4) + "  " +
 		("0000" + Math.round(GDPP)).slice(-5) + "  " +
 		("0000" + Math.round(GDPU)).slice(-5) + "  " +
-		("0000" + Math.round(PCTC)).slice(-5) + "\n"
+		("0000" + Math.round(PCTX)).slice(-5) + "\n"
 	);
 	
 	// Stop simulation when tend is reached
