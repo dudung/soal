@@ -93,6 +93,16 @@ function simulate() {
 	// Initialize all variables and coefficient
 	if(t == tbeg) {
 		
+		GTEC = 1.0;
+		GDPP = 1000;
+		GDPU = 1000;
+		
+		c_TRAD_GDPU = 0.001;
+		c_PDEM_TRAD = 1;
+		c_PCTX_PDEM = 1;
+		c_GDPP_PCTX = 1;
+		c_GDPU_GDPP = 0.05;
+	
 		c_ENEO_GDPP = 0.2;
 		c_ENEO_GTEC = 0.1;
 		c_WASD_GDPP = 0.2;
@@ -100,42 +110,46 @@ function simulate() {
 		c_WATO_GDPP = 0.2;
 		c_WATO_GTEC = 0.1;
 		
-		GTEC = 1.000;
-		GDPP = 1.000;
+		c_PPRE_PDEM = 1;
+		c_GDPU_PPRE = 1;
 		
 		ENEO = 1.000;
 		WATO = 1.000;
 		WASD = 1.000;
-		
-		GDPU = 1.000;
-		
+				
 		RESL = 1.000;
 		LIFQ = 1.000;
 		
-		
-		
+		PCTC = 100;
 		
 		tout(
-			"TIME  GDPP  GTEC  ENEO  WASD  WATO"
+			"TIME  GDPP   GDPU   ENEO   WASD   WATO "
 			+ "\n"
 		);
 	} else {
-		
-		
-		// Green Technology
-		ENEO = c_ENEO_GDPP * GDPP - c_ENEO_GTEC * GTEC;
-		WASD = c_WASD_GDPP * GDPP - c_WASD_GTEC * GTEC;
-		WATO = c_WATO_GDPP * GDPP - c_WATO_GTEC * GTEC;
-		
 	}
+		
+	// Green Technology
+	ENEO = c_ENEO_GDPP * GDPP - c_ENEO_GTEC * GTEC;
+	WASD = c_WASD_GDPP * GDPP - c_WASD_GTEC * GTEC;
+	WATO = c_WATO_GDPP * GDPP - c_WATO_GTEC * GTEC;
+	
+	TRAD = c_TRAD_GDPU * GDPU;
+	PDEM = c_PDEM_TRAD * TRAD;
+	PCTX = c_PCTX_PDEM * PDEM;
+	
+	PPRE = c_PPRE_PDEM * PDEM;
+	
+	GDPP = GDPP + c_GDPP_PCTX * PCTX;
+	GDPU = GDPU + c_GDPU_GDPP * GDPP - c_GDPU_PPRE * PPRE;
+	
 	
 	// Display variables on textarea
 	tout(
-		("0000" + t).slice(-4) + " " +
-		(GDPP) + " " +
-		(ENEO) + " " +
-		(WASD) + " " +
-		(WATO) + "\n"
+		("0000" + t).slice(-4) + "  " +
+		("0000" + Math.round(GDPP)).slice(-5) + "  " +
+		("0000" + Math.round(GDPU)).slice(-5) + "  " +
+		("0000" + Math.round(PDEM)).slice(-5) + "\n"
 	);
 	
 	// Stop simulation when tend is reached
