@@ -110,6 +110,7 @@ function simulate() {
 		c_RESL_ENEO = 1;
 		c_RESL_WATO = 1;
 		c_ENVQ_WASD = 1000;
+		c_ENVQ_SHOC = 1;
 		c_HRIS_RESL = 1;
 		c_HRIS_ENVQ = 1;
 		
@@ -119,9 +120,9 @@ function simulate() {
 		c_WASD_GDPP = 0.2;
 		c_WATO_GDPP = 0.2;
 
-		c_WASD_GTEC = 1;
-		c_ENEO_GTEC = 1;
-		c_WATO_GTEC = 1;
+		c_WASD_GTEC = 1*100; // 0-100
+		c_ENEO_GTEC = 1*100; // 0-100
+		c_WATO_GTEC = 1*100; // 0-100
 		
 		c_GDPU_HRIS = 0.1;
 		
@@ -169,6 +170,9 @@ function simulate() {
 			"INDO   " +
 			"PCTX   " +
 			"PCTC   " +
+			"ENEO   " +
+			"WATO   " +
+			"WASD   " +
 			"ENVQ   " +
 			"HRIS   " +
 			"POPU   " +
@@ -176,14 +180,15 @@ function simulate() {
 			"\n"
 		);
 	}
-		
+	SHOC = c_SHOC_PCTC * PCTC;
+			
 	// Green Technology
 	ENEO = c_ENEO_GDPP * GDPP - c_ENEO_GTEC * GTEC;
 	WASD = c_WASD_GDPP * GDPP - c_WASD_GTEC * GTEC;
 	WATO = c_WATO_GDPP * GDPP - c_WATO_GTEC * GTEC;
 	
 	RESL = c_RESL_ENEO * ENEO + c_RESL_WATO * WATO;
-	ENVQ = c_ENVQ_WASD / WASD;
+	ENVQ = c_ENVQ_WASD / WASD - c_ENVQ_SHOC * SHOC;
 	LIFQ = c_LIFQ_POPU / POPU;
 	
 	HRIS = c_HRIS_RESL * RESL - c_HRIS_ENVQ * ENVQ;
@@ -200,8 +205,6 @@ function simulate() {
 	TRAD = c_TRAD_GDPU * GDPU;
 	TRAD +=  c_TRAD_INDI * INDI;
 	TRAD +=  c_TRAD_INDO * INDO;
-	
-	SHOC = c_SHOC_PCTC * PCTC;
 	
 	PDEM = c_PDEM_TRAD * TRAD;
 	PPRE = c_PPRE_PDEM * PDEM / PCTC;
@@ -236,6 +239,9 @@ function simulate() {
 		("0000" + Math.round(INDO)).slice(-5) + "  " +
 		("0000" + Math.round(PCTX)).slice(-5) + "  " +
 		("0000" + Math.round(PCTC)).slice(-5) + "  " +
+		("0000" + Math.round(ENEO)).slice(-5) + "  " +
+		("0000" + Math.round(WATO)).slice(-5) + "  " +
+		("0000" + Math.round(WASD)).slice(-5) + "  " +
 		("0000" + Math.round(ENVQ)).slice(-5) + "  " +
 		("0000" + Math.round(HRIS)).slice(-5) + "  " +
 		("0000" + Math.round(POPU)).slice(-5) + "  " +
