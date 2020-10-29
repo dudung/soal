@@ -9,6 +9,13 @@
 	0827 Start to code.
 	0946 Able to resize textarea while window.
 	1008 Try to show time stamp.
+	1250 Test some + and - loop, and ok.
+	1437 Start again.
+	1505 PCTC can limit PCTX.
+	1527 Finish internal port nodes interaction.
+	1601 Finish cross influence of internal-external industries.
+	1641 Finish implement green technology, does not work good.
+	1654 Finish connecting all nodes but with arbitrary coeffs.
 */
 
 
@@ -93,23 +100,36 @@ function simulate() {
 	// Initialize all variables and coefficient
 	if(t == tbeg) {
 		
-		GTEC = 1.0;
+		GTEC = 1;
 		GDPP = 1000;
 		GDPU = 1000;
 		PCTC = 100;
+		
+		POPU = 10000;
+		
+		c_RESL_ENEO = 1;
+		c_RESL_WATO = 1;
+		c_ENVQ_WASD = 1000;
+		c_HRIS_RESL = 1;
+		c_HRIS_ENVQ = 1;
+		
+		c_HRIS_LIFQ = 10;
+		
+		c_ENEO_GDPP = 0.2;
+		c_WASD_GDPP = 0.2;
+		c_WATO_GDPP = 0.2;
+
+		c_WASD_GTEC = 1;
+		c_ENEO_GTEC = 1;
+		c_WATO_GTEC = 1;
+		
+		c_GDPU_HRIS = 0.1;
 		
 		c_TRAD_GDPU = 0.001;
 		c_PDEM_TRAD = 1;
 		c_PCTX_PDEM = 1;
 		c_GDPP_PCTX = 1;
 		c_GDPU_GDPP = 0.05;
-	
-		c_ENEO_GDPP = 0.2;
-		c_ENEO_GTEC = 0.1;
-		c_WASD_GDPP = 0.2;
-		c_WASD_GTEC = 0.1;
-		c_WATO_GDPP = 0.2;
-		c_WATO_GTEC = 0.1;
 		
 		c_PPRE_PDEM = 1;
 		c_GDPU_PPRE = 20;
@@ -120,11 +140,41 @@ function simulate() {
 		c_PPRO_PREV = 0.2;
 		c_PINV_PPRO = 0.5;
 		
-		tout(
-			"TIME  GDPP   GDPU   ENEO   WASD   WATO "
-			+ "\n"
+		c_SHOC_PCTC = 0.01;
+		c_PCTX_SHOC = 0.01;
+		
+		INFO = 100;
+		INFI = 1;
+		c_IINV_GDPU = 0.1 * 1;
+		c_INDI_INFO = 0.01 * 1;
+		c_INDO_INFI = 0.01 * 1;
+		c_TRAD_INDI = 0.01 * 1;
+		c_TRAD_INDO = 0.01 * 1;
+		c_INFI_IINV = 0.1 * 1;
+		c_INDI_INFI	= 0.1 * 1;
+		c_INDO_INFO = 0.1 * 1;
+		
+		c_POPB_POPU = 0.010;
+		c_POPD_POPU = 0.001;
+		c_POPI_GDPU = 0.001;
+		
+		c_LIFQ_POPU = 100000;
+		
+	tout(
+			"TIME  " +
+			"GDPP   " +
+			"GDPU   " +
+			"TRAD   " +
+			"INDI   " +
+			"INDO   " +
+			"PCTX   " +
+			"PCTC   " +
+			"ENVQ   " +
+			"HRIS   " +
+			"POPU   " +
+			"LIFQ   " +
+			"\n"
 		);
-	} else {
 	}
 		
 	// Green Technology
@@ -132,13 +182,32 @@ function simulate() {
 	WASD = c_WASD_GDPP * GDPP - c_WASD_GTEC * GTEC;
 	WATO = c_WATO_GDPP * GDPP - c_WATO_GTEC * GTEC;
 	
+	RESL = c_RESL_ENEO * ENEO + c_RESL_WATO * WATO;
+	ENVQ = c_ENVQ_WASD / WASD;
+	LIFQ = c_LIFQ_POPU / POPU;
+	
+	HRIS = c_HRIS_RESL * RESL - c_HRIS_ENVQ * ENVQ;
+	HRIS += -c_HRIS_LIFQ * LIFQ;
+	
+	// Industry
+	IINV = c_IINV_GDPU * GDPU;
+	INFI = INFI + c_INFI_IINV * IINV;
+	INDI = c_INDI_INFI * INFI - c_INDI_INFO * INFO;
+	
+	INDO = c_INDO_INFO * INFO - c_INDO_INFI * INFI;
+	
 	// Port
 	TRAD = c_TRAD_GDPU * GDPU;
+	TRAD +=  c_TRAD_INDI * INDI;
+	TRAD +=  c_TRAD_INDO * INDO;
+	
+	SHOC = c_SHOC_PCTC * PCTC;
 	
 	PDEM = c_PDEM_TRAD * TRAD;
 	PPRE = c_PPRE_PDEM * PDEM / PCTC;
 	
-	PCTX = c_PCTX_PDEM * PDEM; //? PCTC
+	PCTX = c_PCTX_PDEM * PDEM - c_PCTX_SHOC * SHOC;
+	PCTX = (PCTX < PCTC) ? PCTX : PCTC;
 	
 	PREV = c_PREV_PCTX * PCTX;
 	PPRO = c_PPRO_PREV * PREV;
@@ -149,14 +218,29 @@ function simulate() {
 	// GDP
 	GDPP = GDPP + c_GDPP_PCTX * PCTX;
 	GDPU = GDPU + c_GDPU_GDPP * GDPP - c_GDPU_PPRE * PPRE;
+	GDPU += -c_GDPU_HRIS * HRIS;
 	
-	
+	// Population
+	POPB = c_POPB_POPU * POPU;
+	POPD = c_POPD_POPU * POPU;
+	POPI = c_POPI_GDPU * GDPP;
+	POPU = POPU + (POPB - POPD + POPI);
+		
 	// Display variables on textarea
 	tout(
 		("0000" + t).slice(-4) + "  " +
 		("0000" + Math.round(GDPP)).slice(-5) + "  " +
 		("0000" + Math.round(GDPU)).slice(-5) + "  " +
-		("0000" + Math.round(PCTX)).slice(-5) + "\n"
+		("0000" + Math.round(TRAD)).slice(-5) + "  " +
+		("0000" + Math.round(INDI)).slice(-5) + "  " +
+		("0000" + Math.round(INDO)).slice(-5) + "  " +
+		("0000" + Math.round(PCTX)).slice(-5) + "  " +
+		("0000" + Math.round(PCTC)).slice(-5) + "  " +
+		("0000" + Math.round(ENVQ)).slice(-5) + "  " +
+		("0000" + Math.round(HRIS)).slice(-5) + "  " +
+		("0000" + Math.round(POPU)).slice(-5) + "  " +
+		("0000" + Math.round(LIFQ)).slice(-5) + "  " +
+		"\n"
 	);
 	
 	// Stop simulation when tend is reached
