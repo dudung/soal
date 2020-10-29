@@ -14,7 +14,8 @@
 
 // Define global variables
 var ta, dw, dh;
-var proc, Tproc, tmin, tmax, dt, t;
+var proc, Tproc, tbeg, tend, dt, t;
+var l, x, a, b, c;
 
 
 // Initialize visual elements
@@ -42,12 +43,21 @@ function resize() {
 
 // Initialize parameters
 function initParams() {
-	tmin = 0;
-	tmax = 12 * 20;
+	// Set time parameters
+	tbeg = 0;
+	tend = 12 * 1;
 	dt = 1;
-	t = tmin;
+	t = tbeg;
 	
-	Tproc = 100;
+	// Set interval parameter
+	Tproc = 10;
+	
+	// Initialize variables and parameters
+	l = [];
+	x = [];
+	a = [];
+	b = [];
+	c = [];
 }
 
 
@@ -71,11 +81,65 @@ function tout() {
 }
 
 
+// Add label and value
+function addValue() {
+	l.push(arguments[0]);
+	x.push(arguments[1]);
+}
+
+
 // Simulate
 function simulate() {
-	tout(t + "\n");
+	// Initialize all variables and coefficient
+	if(t == tbeg) {
+		
+		c_ENEO_GDPP = 0.2;
+		c_ENEO_GTEC = 0.1;
+		c_WASD_GDPP = 0.2;
+		c_WASD_GTEC = 0.1;
+		c_WATO_GDPP = 0.2;
+		c_WATO_GTEC = 0.1;
+		
+		GTEC = 1.000;
+		GDPP = 1.000;
+		
+		ENEO = 1.000;
+		WATO = 1.000;
+		WASD = 1.000;
+		
+		GDPU = 1.000;
+		
+		RESL = 1.000;
+		LIFQ = 1.000;
+		
+		
+		
+		
+		tout(
+			"TIME  GDPP  GTEC  ENEO  WASD  WATO"
+			+ "\n"
+		);
+	} else {
+		
+		
+		// Green Technology
+		ENEO = c_ENEO_GDPP * GDPP - c_ENEO_GTEC * GTEC;
+		WASD = c_WASD_GDPP * GDPP - c_WASD_GTEC * GTEC;
+		WATO = c_WATO_GDPP * GDPP - c_WATO_GTEC * GTEC;
+		
+	}
 	
-	if(t >= tmax) {
+	// Display variables on textarea
+	tout(
+		("0000" + t).slice(-4) + " " +
+		(GDPP) + " " +
+		(ENEO) + " " +
+		(WASD) + " " +
+		(WATO) + "\n"
+	);
+	
+	// Stop simulation when tend is reached
+	if(t >= tend) {
 		stop();
 	} else {
 		t += dt;
@@ -87,6 +151,7 @@ function simulate() {
 function main() {
 	initElements();
 	initParams();
+	start();
 }
 
 
