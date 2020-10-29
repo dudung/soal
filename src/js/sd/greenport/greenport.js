@@ -16,11 +16,12 @@
 	1601 Finish cross influence of internal-external industries.
 	1641 Finish implement green technology, does not work good.
 	1654 Finish connecting all nodes but with arbitrary coeffs.
+	1827 Start to find good charts.
 */
 
 
 // Define global variables
-var ta, dw, dh;
+var ta, dw, dh, tah;
 var proc, Tproc, tbeg, tend, dt, t;
 var l, x, a, b, c;
 
@@ -29,11 +30,21 @@ var l, x, a, b, c;
 function initElements() {
 	// Create textarea
 	dw = 20;
-	dh = 26;
+	dh = 2 * 26;
+	
+	tah = document.createElement("textarea");
+	tah.style.width = (window.innerWidth - dw) + "px";
+	tah.style.height = "16px";
+	tah.style.background = "#090";
+	tah.style.color = "#fff";
+	tah.disabled = true;
+	document.body.appendChild(tah);
+	
 	ta = document.createElement("textarea");
 	ta.style.overflowY = "scroll";
 	ta.style.width = (window.innerWidth - dw) + "px";
 	ta.style.height = (window.innerHeight - dh) + "px";
+	ta.disabled = true;
 	document.body.appendChild(ta);
 	
 	// Add listener for resize event
@@ -43,6 +54,7 @@ function initElements() {
 
 // Resize textarea according to window inner size
 function resize() {
+	tah.style.width = (window.innerWidth - dw) + "px";
 	ta.style.width = (window.innerWidth - dw) + "px";
 	ta.style.height = (window.innerHeight - dh) + "px";
 }
@@ -52,7 +64,7 @@ function resize() {
 function initParams() {
 	// Set time parameters
 	tbeg = 0;
-	tend = 12 * 10; // ten years
+	tend = 12 * 20; // 20 years
 	dt = 1;
 	t = tbeg;
 	
@@ -82,7 +94,8 @@ function stop() {
 
 // Add line to textrea
 function tout() {
-	var line = arguments[0];
+	var ta = arguments[0];
+	var line = arguments[1];
 	ta.value += line;
 	ta.scrollTop = ta.scrollHeight;
 }
@@ -103,7 +116,7 @@ function simulate() {
 		GTEC = 1;
 		GDPP = 1000;
 		GDPU = 1000;
-		PCTC = 100;
+		PCTC = 5;
 		
 		POPU = 10000;
 		
@@ -120,9 +133,9 @@ function simulate() {
 		c_WASD_GDPP = 0.2;
 		c_WATO_GDPP = 0.2;
 
-		c_WASD_GTEC = 1*100; // 0-100
-		c_ENEO_GTEC = 1*100; // 0-100
-		c_WATO_GTEC = 1*100; // 0-100
+		c_WASD_GTEC = 10;
+		c_ENEO_GTEC = 100;
+		c_WATO_GTEC = 100;
 		
 		c_GDPU_HRIS = 0.1;
 		
@@ -130,38 +143,38 @@ function simulate() {
 		c_PDEM_TRAD = 1;
 		c_PCTX_PDEM = 1;
 		c_GDPP_PCTX = 1;
-		c_GDPU_GDPP = 0.05;
+		c_GDPU_GDPP = 0.04;
 		
 		c_PPRE_PDEM = 1;
 		c_GDPU_PPRE = 20;
 		
 		c_PINV_GDPU = 0.01;
-		c_PCTC_PINV = 0.1;
+		c_PCTC_PINV = 0.001;
 		c_PREV_PCTX = 0.2;
 		c_PPRO_PREV = 0.2;
 		c_PINV_PPRO = 0.5;
 		
 		c_SHOC_PCTC = 0.01;
-		c_PCTX_SHOC = 0.01;
+		c_PCTX_SHOC = 0.001;
 		
 		INFO = 100;
 		INFI = 1;
-		c_IINV_GDPU = 0.1 * 1;
-		c_INDI_INFO = 0.01 * 1;
-		c_INDO_INFI = 0.01 * 1;
-		c_TRAD_INDI = 0.01 * 1;
-		c_TRAD_INDO = 0.01 * 1;
-		c_INFI_IINV = 0.1 * 1;
-		c_INDI_INFI	= 0.1 * 1;
-		c_INDO_INFO = 0.1 * 1;
+		c_IINV_GDPU = 0.1;
+		c_INDI_INFO = 0.01;
+		c_INDO_INFI = 0.01;
+		c_TRAD_INDI = 0.01;
+		c_TRAD_INDO = 0.01;
+		c_INFI_IINV = 0.1;
+		c_INDI_INFI	= 0.1;
+		c_INDO_INFO = 0.1;
 		
 		c_POPB_POPU = 0.010;
 		c_POPD_POPU = 0.001;
 		c_POPI_GDPU = 0.001;
 		
 		c_LIFQ_POPU = 100000;
-		
-	tout(
+
+		var header =
 			"TIME  " +
 			"GDPP   " +
 			"GDPU   " +
@@ -178,8 +191,10 @@ function simulate() {
 			"POPU   " +
 			"LIFQ   " +
 			"SHOC   " +
-			"\n"
-		);
+			"";
+			
+		tout(tah, header);
+		tout(ta, header + "\n");
 	}
 	SHOC = c_SHOC_PCTC * PCTC;
 			
@@ -241,19 +256,19 @@ function simulate() {
 	var fTRAD = 1000;
 	var fINDI = 100;
 	var fINDO = 100;
-	var fPCTX = 100;
-	var fPCTC = 100;
+	var fPCTX = 10;
+	var fPCTC = 10;
 	var fENEO = 100;
 	var fWATO = 100;
 	var fWASD = 100;
 	var fENVQ = 1000;
-	var fHRIS = 100;
+	var fHRIS = 10;
 	var fPOPU = 1;
 	var fLIFQ = 1000;
-	var fSHOC = 10000;
+	var fSHOC = 1000;
 	
 	// Display variables on textarea
-	tout(
+	tout(ta,
 		("0000" + t).slice(-4) + "  " +
 		("0000" + Math.round(fGDPP * GDPP)).slice(-5) + "  " +
 		("0000" + Math.round(fGDPU * GDPU)).slice(-5) + "  " +
