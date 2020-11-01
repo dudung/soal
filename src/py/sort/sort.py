@@ -8,6 +8,7 @@
 # 
 # 20201101
 # 1534 Start this example from median.py file.
+# 1539 Finish this example.
 # 
 # References
 # 1. -, "Python List sort()", Programiz, Parewa Labs, url
