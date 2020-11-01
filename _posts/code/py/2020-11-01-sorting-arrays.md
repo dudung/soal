@@ -19,6 +19,16 @@ Three examples and their result are given as follow.
 
 ### Iteration
 ```python
+# Create an array, sort, find its min, max, med (all manually)
+x = [9, 1, 9, 2, 3, 3, 1, 5, 7, 9, 6, 5, 4, 4, 8, 6, 0]
+print("init =", x)
+N = len(x)
+print("N =", N)
+for i in range(0, N - 1):
+	for j in range(i + 1, N):
+		if x[i] > x[j]:
+			x[i], x[j] = x[j], x[i]
+print("sort =", x)
 ```
 
 whose result is
@@ -31,6 +41,11 @@ sort = [0, 1, 1, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 8, 9, 9, 9]
 
 ### sort() method
 ```python
+# Create an array, sort using sort() method
+y = [9, 1, 9, 2, 3, 3, 1, 5, 7, 9, 6, 5, 4, 4, 8, 6, 0]
+print("init =", y)
+y.sort()
+print("sort =", y)
 ```
 
 whose result is
@@ -42,6 +57,11 @@ sort = [0, 1, 1, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 8, 9, 9, 9]
 
 ### sorted() function
 ```python
+# Create an array, sort using sorted() function
+z = [9, 1, 9, 2, 3, 3, 1, 5, 7, 9, 6, 5, 4, 4, 8, 6, 0]
+a = sorted(z)
+print("init =", z)
+print("sort =", a)
 ```
 
 whose result is
