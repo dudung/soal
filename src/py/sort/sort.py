@@ -36,7 +36,7 @@ print("sort =", x)
 # Add blank line
 print()
 
-# Create an array, sort, find its min, max, med (manually)
+# Create an array, sort using sort() method
 y = [9, 1, 9, 2, 3, 3, 1, 5, 7, 9, 6, 5, 4, 4, 8, 6, 0]
 print("init =", y)
 y.sort()
@@ -45,7 +45,7 @@ print("sort =", y)
 # Add blank line
 print()
 
-# Create an array, sort, find its min, max, med (manually)
+# Create an array, sort using sorted() function
 z = [9, 1, 9, 2, 3, 3, 1, 5, 7, 9, 6, 5, 4, 4, 8, 6, 0]
 a = sorted(z)
 print("init =", z)
