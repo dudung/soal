@@ -33,6 +33,7 @@ Following concepts are required in solving the problem
 2. Conservation of energy
 3. Conservation of momentum
 
+
 ## Note
 There are some assumption used in solving this problem.
 
