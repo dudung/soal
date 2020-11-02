@@ -52,7 +52,7 @@ Regular form objects have a well-known moment of inertia. Some examples of them 
 {:refdef: style="text-align: center;"}
 ![example of common moment of inertia](/assets/img/phys/moi-common-forms.png)
 <br />
-Figure <a name="fig:moi-common-form">1</a> Commont moment of inertia.
+Figure <a name="fig:moi-common-form">1</a> Commont moments of inertia.
 {: refdef}
 
 
