@@ -40,13 +40,20 @@ I = \int r_\perp^2 \ dm.
 Illustration of both systems is given in following Fig. <a href="#fig:moi-discrete-continuum">1</a>.
 
 {:refdef: style="text-align: center;"}
-![an object moves along a frictionless semicircular track](/assets/img/phys/moi-disc-cont.png)
+![moment of inertia of dicrete and continuum systems](/assets/img/phys/moi-disc-cont.png)
 <br />
 Figure <a name="fig:moi-discrete-continuum">1</a> A discrete system consisted of four objects (left) and a continuum system (right).
 {: refdef}
 
 
+## Commont moment of inertia
+Regular form objects have a well-known moment of inertia. Some examples of them are shown in Fig. <a href="#fig:moi-common-form">2</a>.
 
+{:refdef: style="text-align: center;"}
+![example of common moment of inertia](/assets/img/phys/moi-common-forms.png)
+<br />
+Figure <a name="fig:moi-common-form">1</a> Commont moment of inertia.
+{: refdef}
 
 
 ## References
