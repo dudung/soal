@@ -15,6 +15,16 @@ permalink: /physics/rolling-down-an-incline
 Discussing an object rolling down an incline is interesting, since it brings in many different concepts in introductory physics [[1](#ref1)], where the object can be sphere, hoop, or cylinder [[2](#ref2)]. It is also fun to observe the race of rolling objects with different moment of inertia [[3](#ref3)].
 
 
+{:refdef: style="text-align: center;"}
+![down an incline](/assets/img/phys/down-an-incline.png)
+<br />
+Figure <a name="fig:rdai-down-an-incline">1</a> A point mass slides down an incline (left) and rigid body rolls down an incline (right).
+{: refdef}
+
+
+rdai-free-body-diagram.png
+
+
 ## References
 1. <a name="ref1"></a>Rhett Allain, "Rolling Object Accelerating Down an Incline", Wired, 29 Sep 2014, url <https://www.wired.com/2014/07/a-rolling-object-accelerating-down-an-incline/> [20201102].
 2. <a name="ref2"></a>Carl R. Nave, "Rolling Objects", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/rotwe.html#ro> [20201102].
