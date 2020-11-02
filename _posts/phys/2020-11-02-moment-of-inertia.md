@@ -77,3 +77,4 @@ where $l$ is the distance for another axis to the main axis.
 2. <a name="ref2"></a>Wikipedia contributors, "Moment of inertia", Wikipedia, The Free Encyclopedia, 19 Oct 2020, 05:51 UTC, <https://en.wikipedia.org/w/index.php?oldid=984272703> [20201102].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-11-02-moment-of-inertia.md)
+
