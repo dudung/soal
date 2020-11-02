@@ -120,20 +120,23 @@ Using Eqn. \eqref{eqn:rdai-pure-rolling-alpha-a} in Eqn. \eqref{eqn:rdai-pr-thet
 f = \frac{Ia}{R^2}.
 \end{equation}
 
-Substitution of Eqn. \eqref{eqn:rdai-pr-f} to Eqn. \eqn{eqn:rdai-pr-x} will produce
+Substitution of Eqn. \eqref{eqn:rdai-pr-f} to Eqn. \eqref{eqn:rdai-pr-x} will produce
 
 \begin{equation}
 \label{eqn:rdai-pr-solution-x}
 \begin{array}{rcl}
-\displaystyle m g \sin \theta - \frac{Ia}{R^2} & = & m a_x \newline
+\displaystyle m g \sin \theta - \frac{Ia}{R^2} & = & m a \newline
 m g \sin \theta & = & \displaystyle \left( m + \frac{I}{R^2} \right) a \newline
-a & = & \displaystyle \left( \frac{m}{m + I/R^2} \right) g \sin \theta \newline
+a & = & \displaystyle \left( \frac{m}{m + I/R^2} \right) g \sin \theta.
 \end{array}
 \end{equation}
 
+For non-rotating point mass particle or rigid body with $I = 0$, Eqn. \eqref{eqn:rdai-pr-solution-x} will turn into Eqn. \eqref{eqn:rdai-slides-down-uk=0}. Notice that $a$ in Eqn. \eqref{eqn:rdai-pr-f} and $a_x$ in Eqn. \eqref{eqn:rdai-pr-x} are the same.
 
-{eqn:rdai-slides-down-uk=0}
 
+## Exercises
+1. Find information about moments of inertia of hoop, solid cylinder, solid sphere, and thin spherical shell. Use the information in Eqn. \eqref{eqn:rdai-pr-solution-x} to find the acceleration.
+2. See [[3](#ref3)] and use previous result to confirm it.
 
 
 ## References
