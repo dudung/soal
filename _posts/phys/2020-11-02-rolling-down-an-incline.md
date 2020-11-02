@@ -16,7 +16,7 @@ Discussing an object rolling down an incline is interesting, since it brings in 
 
 
 ## Down an incline
-Fig. <a href="#fig:rdai-down-an-incline">1</a>
+While down an incline, object can performm a sliding or a rolling, where both ways are shown in Fig. <a href="#fig:rdai-down-an-incline">1</a>. Using the first way object can be still considered as a point mass and it requires that $\tan \theta > \mu_s > \mu_k$, while using the second way object must be considered as a rigid body.
 
 {:refdef: style="text-align: center;"}
 ![down an incline](/assets/img/phys/down-an-incline.png)
@@ -24,9 +24,32 @@ Fig. <a href="#fig:rdai-down-an-incline">1</a>
 Figure <a name="fig:rdai-down-an-incline">1</a> A point mass slides down an incline (left) and rigid body rolls down an incline (right).
 {: refdef}
 
+As a point mass $m$ slides down an incline, it velocity $v$ changes due to its acceleration $a$. And as a rigid body rolls down an incline, its angular velocity $\omega$ changes due to its angular acceleration $\alpha$, where for pure rolling we have that
+
+\begin{equation}
+\label{eqn:rdai-pure-rolling-omega-v}
+v = \omega R
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:rdai-pure-rolling-alpha-a}
+a = \alpha R
+\end{equation}
+
+with $R$ is radius of the object. For simplicity only pure rolling is considered in this discussion. We can have
+
+\begin{equation}
+\label{eqn:rdai-slides-down}
+a = g (\sin \theta - \mu_k \cos \theta) 
+\end{equation}
+
+for Fig. <a href="#fig:rdai-down-an-incline">1 (left)</a> from prevous discussion.
+
 
 ## Free-body diagram
-Fig. <a href="#fig:rdai-free-body-diagram">2</a>
+Let's see the case in Fig. <a href="#fig:rdai-down-an-incline">1 (right)</a>, where its free-body diagram can be obtained as shown in Fig. <a href="#fig:rdai-free-body-diagram">2</a>.
 
 {:refdef: style="text-align: center;"}
 ![down an incline](/assets/img/phys/rdai-free-body-diagram.png)
