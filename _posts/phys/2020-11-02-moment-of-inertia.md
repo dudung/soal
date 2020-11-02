@@ -46,7 +46,7 @@ Figure <a name="fig:moi-discrete-continuum">1</a> A discrete system consisted of
 {: refdef}
 
 
-## Commont moment of inertia
+## Common moment of inertia
 Regular form objects have a well-known moment of inertia. Some examples of them are shown in Fig. <a href="#fig:moi-common-form">2</a>.
 
 {:refdef: style="text-align: center;"}
