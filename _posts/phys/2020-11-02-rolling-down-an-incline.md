@@ -12,21 +12,18 @@ tags: [""]
 date: 2020-11-02 11:33:00 +07
 permalink: /physics/rolling-down-an-incline
 ---
-Discussing an object rolling down an incline is interesting, since it brings in many different concepts in introductory physics [[1](#ref1)], where the object can be sphere, hoop, or cylinder [[2](#ref2)].
-
-
-
-
+Discussing an object rolling down an incline is interesting, since it brings in many different concepts in introductory physics [[1](#ref1)], where the object can be sphere, hoop, or cylinder [[2](#ref2)]. It is also fun to observe the race of rolling objects with different moment of inertia [[3](#ref3)].
 
 
 ## References
 1. <a name="ref1"></a>Rhett Allain, "Rolling Object Accelerating Down an Incline", Wired, 29 Sep 2014, url <https://www.wired.com/2014/07/a-rolling-object-accelerating-down-an-incline/> [20201102].
 2. <a name="ref2"></a>Carl R. Nave, "Rolling Objects", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/rotwe.html#ro> [20201102].
+3. Flipping Physics, "Which Will Be First? (Rolling Down an Incline)", YouTube, 17 Mar 2019, url <https://www.youtube.com/watch?v=jaqS5dJlrjY> [20201002].
 
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-11-02-moment-of-inertia.md)
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-11-02-rolling-down-an-incline.md)
 
 
-
+{% comment %}
 ## Definition
 Moment of inertia $I$ is as defined product of mass of a section or part of an object $m$ and the square distance between that center of that part to a reference axis $r_\perp^2$, which 
 
@@ -89,3 +86,4 @@ where $l$ is the distance for another axis to the main axis.
 2. <a name="ref2"></a>Wikipedia contributors, "Moment of inertia", Wikipedia, The Free Encyclopedia, 19 Oct 2020, 05:51 UTC, <https://en.wikipedia.org/w/index.php?oldid=984272703> [20201102].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-11-02-moment-of-inertia.md)
+{% endcomment %}
