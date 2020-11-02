@@ -16,7 +16,14 @@ Discussing an object rolling down an incline is interesting, since it brings in 
 
 
 ## Down an incline
-While down an incline, object can performm a sliding or a rolling, where both ways are shown in Fig. <a href="#fig:rdai-down-an-incline">1</a>. Using the first way object can be still considered as a point mass and it requires that $\tan \theta > \mu_s > \mu_k$, while using the second way object must be considered as a rigid body.
+While down an incline, object can performm a sliding or a rolling, where both ways are shown in Fig. <a href="#fig:rdai-down-an-incline">1</a>. Using the first way object can be still considered as a point mass and it requires that
+
+\begin{equation}
+\label{eqn:rdai-slides-requirement}
+\tan \theta > \mu_s,
+\end{equation}
+
+to be able to slide down with normally $\mu_s > \mu_k$, while using the second way object must be considered as a rigid body and $\mu_s > \mu_k > 0$.
 
 {:refdef: style="text-align: center;"}
 ![down an incline](/assets/img/phys/down-an-incline.png)
@@ -45,7 +52,7 @@ with $R$ is radius of the object. For simplicity only pure rolling is considered
 a = g (\sin \theta - \mu_k \cos \theta) 
 \end{equation}
 
-for Fig. <a href="#fig:rdai-down-an-incline">1 (left)</a> from prevous discussion.
+for Fig. <a href="#fig:rdai-down-an-incline">1 (left)</a> from previous discussion.
 
 
 ## Free-body diagram
@@ -56,6 +63,8 @@ Let's see the case in Fig. <a href="#fig:rdai-down-an-incline">1 (right)</a>, wh
 <br />
 Figure <a name="fig:rdai-free-body-diagram">2</a> Free-body diagram of an object rolling down an incline.
 {: refdef}
+
+Fig. <a href="#fig:rdai-free-body-diagram">2 (left)</a> is showing the forces acteing upon the object, while the forces and also decompotision of weight $w$ along $x$ and $y$ directions is given in Fig. <a href="#fig:rdai-free-body-diagram">2 (right)</a>. Using the last part of the figure we will apply Newton's laws.
 
 
 ## References
