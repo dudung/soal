@@ -69,6 +69,7 @@ where $l$ is the distance for another axis to the main axis.
 
 ## Exercises
 1. Use Eqn. \eqref{eqn:moi-def-parallel-axis-theorem} to prove the formulation of two moment of inertia in the last rows in Fig. <a href="#fig:moi-common-form">2</a>. Which formulation is showing the $I_{\rm com}$?
+2. Revisit the system of two masses and a pulley. Solve it by considering that the pulley has moment of inertia now. Compare the difference with previous solution.
 
 
 ## References
