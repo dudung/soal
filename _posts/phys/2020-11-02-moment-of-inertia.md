@@ -15,6 +15,31 @@ permalink: /physics/moment-of-inertia
 Some concepts are related to moment of inertia, e.g. Newton's 2nd law for rotation, rotational kinetic energy, angular momentum, mass distribution, parallel and perpendicular axis theorems, etc [[1](#ref1)]. Moment of inertia is also known as mass moment of inertia, angular mass, or rotational intertia [[2](#ref2)].
 
 
+## Definition
+Moment of inertia $I$ is as defined product of mass of a section or part of an object $m$ and the square distance between that center of that part to a reference axis $r_\perp^2$, which 
+
+\begin{equation}
+\label{eqn:moi-def}
+I = m r_\perp^2,
+\end{equation}
+
+where for system with many objects, e.g. $N$ body system, it becomes
+
+\begin{equation}
+\label{eqn:moi-def-discrete}
+I = \sum_{i = 1}^N m_i r_{\perp, i}^2,
+\end{equation}
+
+since it is an extensive physical property that has additive feature. Eqn. \eqref{eqn:moi-def-discrete} can also be seen as a discrete system, while for a continuum system, it must use integral
+
+\begin{equation}
+\label{eqn:moi-def-continuum}
+I = \int r_\perp^2 \ dm.
+\end{equation}
+
+
+
+
 ## References
 1. <a name="ref1"></a>Carl R. Nave, "Moment of Intertia Concepts", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/inecon.html> [20201102].
 2. <a name="ref2"></a>Wikipedia contributors, "Moment of inertia", Wikipedia, The Free Encyclopedia, 19 Oct 2020, 05:51 UTC, <https://en.wikipedia.org/w/index.php?oldid=984272703> [20201102].
