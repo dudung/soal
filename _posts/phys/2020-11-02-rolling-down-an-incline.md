@@ -15,6 +15,9 @@ permalink: /physics/rolling-down-an-incline
 Discussing an object rolling down an incline is interesting, since it brings in many different concepts in introductory physics [[1](#ref1)], where the object can be sphere, hoop, or cylinder [[2](#ref2)]. It is also fun to observe the race of rolling objects with different moment of inertia [[3](#ref3)].
 
 
+## Down an incline
+Fig. <a href="#fig:rdai-down-an-incline">1</a>
+
 {:refdef: style="text-align: center;"}
 ![down an incline](/assets/img/phys/down-an-incline.png)
 <br />
@@ -22,7 +25,14 @@ Figure <a name="fig:rdai-down-an-incline">1</a> A point mass slides down an incl
 {: refdef}
 
 
-rdai-free-body-diagram.png
+## Free-body diagram
+Fig. <a href="#fig:rdai-free-body-diagram">2</a>
+
+{:refdef: style="text-align: center;"}
+![down an incline](/assets/img/phys/rdai-free-body-diagram.png)
+<br />
+Figure <a name="fig:rdai-free-body-diagram">2</a> Free-body diagram of an object rolling down an incline.
+{: refdef}
 
 
 ## References
@@ -74,6 +84,8 @@ Regular form objects have a well-known moment of inertia. Some examples of them 
 Figure <a name="fig:moi-common-form">2</a> Common moments of inertia.
 {: refdef}
 
+
+Fig. <a href="#fig:moi-discrete-continuum">1</a>
 
 ## Parallel axis theorem
 If moment of inertia through center of mass $I_{\rm com}$ is known then moment of inertia about to another axis parallel to the main axis can be calculated
