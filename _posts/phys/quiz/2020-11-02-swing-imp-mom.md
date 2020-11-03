@@ -1,14 +1,14 @@
 ---
 layout: post
 author: viridi
-title: swinging pendulum momentum
+title: swinging pendulum - momentum
 mathjax: true
 ptext: false
 x3dom: false
 threejs: false
 oo: true
 category: physics
-tags: ["conservation of momentum", "impulse"]
+tags: ["conservation of energy", "pendulum", "conservation of momentum", "impulse"]
 date: 2020-11-02 19:58:00 +07
 permalink: /physics/quiz/swing-imp-mom
 ---
