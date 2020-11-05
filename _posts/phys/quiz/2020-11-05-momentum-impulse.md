@@ -90,4 +90,5 @@ An average force $F_{\rm avg}$ is applied to a $200 \ \rm g$-particle, which is 
 ## P10
 ..
 
+
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/quiz/2020-11-05-momentum-impulse.md)
