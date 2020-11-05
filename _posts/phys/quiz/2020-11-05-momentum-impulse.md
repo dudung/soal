@@ -85,7 +85,11 @@ A force $F$ is drawn in a graph of $F$ versus $t$, which consisted of two lines 
 
 
 ## P08
-A force in two-dimensional is given to a particle with initial velocity of $\vec{v} = (2 \ \hat{i} + 6 \hat{j}) \ \rm m/s$ and mass of $0.5 \ \rm kg$.
+A force in two-dimensional is given to a particle with initial velocity of $\vec{v} = (2 \ \hat{i} + 6 \hat{j}) \ \rm m/s$ and mass of $0.5 \ \rm kg$. In graph of $F_x$ againts $t$ we have lines connecting the points $(0.02, 0)$, $(0.02, 200)$, $(0.04, 200)$, and $(0.04, 0)$, while in graph of $F_y$ versus $t$ we have the lines connecting the points $(0.02, 0)$, $(0.04, 200)$, and $(0.04, 0)$.
++ Find the final velocity componen in $x$-direction or $v_x$.
++ Find the final velocity componen in $y$-direction or $v_y$.
++ Write the final velocity in vector form.
++ Calculate the magnitude of the final velocity.
 
 
 ## P09
