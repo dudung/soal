@@ -93,7 +93,7 @@ A force in two-dimensional is given to a particle with initial velocity of $\vec
 
 
 ## P09
-..
+There are two particles perform a two-dimensional collision on top of a level and frictionless surface. We well see the collsion from above and take a horizontal line as reference where the first particle moves to the right parallel to this line witht initial velocity of $\vec{v}_i = (3 \ \hat{i}) \ \rm m/s$. Mass of the first particle is $2 \ \rm kg$, while the second is $\sqrt{3} \ \rm kg$.
 
 
 ## P10
