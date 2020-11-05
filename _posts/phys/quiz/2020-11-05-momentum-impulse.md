@@ -72,7 +72,10 @@ An average force $F_{\rm avg}$ is applied to a $200 \ \rm g$-particle, which is 
 
 
 ## P06
-..
+In a graph of $F$ againts $t$ there are lines connecting the points $(0.01, 0)$, $(0.02, 100)$, $(0.03, 100)$, and $(0.05, 0)$. In the bracket $()$, first variable is for time $t$, while the second is for force $F$.
++ Divide the area into three part I, II, and III.
++ Calculate the area of each part.
++ Sum all area to get the impulse $I$.
 
 
 ## P07
