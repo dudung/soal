@@ -85,7 +85,7 @@ A force $F$ is drawn in a graph of $F$ versus $t$, which consisted of two lines 
 
 
 ## P08
-..
+A force in two-dimensional is given to a particle with initial velocity of $\vec{v} = (2 \ \hat{i} + 6 \hat{j}) \ \rm m/s$ and mass of $0.5 \ \rm kg$.
 
 
 ## P09
