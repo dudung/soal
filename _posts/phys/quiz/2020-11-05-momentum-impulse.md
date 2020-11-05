@@ -10,7 +10,7 @@ oo: true
 category: physics
 tags: ["conservation of energy", "pendulum", "conservation of momentum", "impulse", "elastic collision"]
 date: 2020-11-05 07:57:00 +07
-permalink: /physics/quiz/swing-imp-mom
+permalink: /physics/quiz/mom-imp
 ---
 Examples of momentum and impulse are discussed here.
 
