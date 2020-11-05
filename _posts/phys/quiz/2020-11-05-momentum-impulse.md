@@ -73,6 +73,13 @@ An average force $F_{\rm avg}$ is applied to a $200 \ \rm g$-particle, which is 
 
 ## P06
 In a graph of $F$ againts $t$ there are lines connecting the points $(0.01, 0)$, $(0.02, 100)$, $(0.03, 100)$, and $(0.05, 0)$. In the bracket $()$, first variable is for time $t$, while the second is for force $F$.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/imp-force-00.png)
+<br />
+Figure <a name="fig:qmi-imp-force-00">1</a> Force given between $0.01 \ \rm s$ and $0.05 \ \rm s$.
+{: refdef}
+
 + Divide the area into three part I, II, and III.
 + Calculate the area of each part.
 + Sum all area to get the impulse $I$.
@@ -80,12 +87,26 @@ In a graph of $F$ againts $t$ there are lines connecting the points $(0.01, 0)$,
 
 ## P07
 A force $F$ is drawn in a graph of $F$ versus $t$, which consisted of two lines connecting points $(0.01, 0)$, $(0.02, 100)$, and $(0.03, 0)$.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/imp-force-01.png)
+<br />
+Figure <a name="fig:qmi-imp-force-01">2</a> Force given between $0.01 \ \rm s$ and $0.03 \ \rm s$..
+{: refdef}
+
 + Find the impulse due to the given force.
 + There is a particle with mass of $2 \ \rm kg$ and initial velocity of $1 \ \rm m/s$. Find its final velocity due to the impulse induced by the given force.
 
 
 ## P08
 A force in two-dimensional is given to a particle with initial velocity of $\vec{v} = (2 \ \hat{i} + 6 \hat{j}) \ \rm m/s$ and mass of $0.5 \ \rm kg$. In graph of $F_x$ againts $t$ we have lines connecting the points $(0.02, 0)$, $(0.02, 200)$, $(0.04, 200)$, and $(0.04, 0)$, while in graph of $F_y$ versus $t$ we have the lines connecting the points $(0.02, 0)$, $(0.04, 200)$, and $(0.04, 0)$.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/imp-force-02.png)
+<br />
+Figure <a name="fig:qmi-imp-force-02">3</a> Force given between $0.01 \ \rm s$ and $0.05 \ \rm s$ in $x$ and $y$ directions.
+{: refdef}
+
 + Find the final velocity componen in $x$-direction or $v_x$.
 + Find the final velocity componen in $y$-direction or $v_y$.
 + Write the final velocity in vector form.
@@ -117,5 +138,9 @@ v_{2f} = \left( \frac{(1 + e) m_1}{m_1 + m_2} \right) v_{1i} + \left( \frac{m_2 
 where $e$ is the COR.
 + Show how Eqns. \eqref{eq:qmi-cor-collision-1d-v1f} and \eqref{eq:qmi-cor-collision-1d-v2f} can be changed to previous Eqns. \eqref{eq:qmi-elastic-collision-1d-v1f} and \eqref{eq:qmi-elastic-collision-1d-v2f}.
 + Which equations are the more general form? Why?
+
+
+## Note
+..
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/quiz/2020-11-05-momentum-impulse.md)
