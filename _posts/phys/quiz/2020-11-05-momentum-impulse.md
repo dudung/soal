@@ -141,6 +141,6 @@ where $e$ is the COR.
 
 
 ## Note
-..
+There is not any note for now.
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/quiz/2020-11-05-momentum-impulse.md)
