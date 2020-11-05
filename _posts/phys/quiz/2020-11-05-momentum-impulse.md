@@ -79,7 +79,9 @@ In a graph of $F$ againts $t$ there are lines connecting the points $(0.01, 0)$,
 
 
 ## P07
-..
+A force $F$ is drawn in a graph of $F$ versus $t$, which consisted of two lines connecting points $(0.01, 0)$, $(0.02, 100)$, and $(0.03, 0)$.
++ Find the impulse due to the given force.
++ There is a particle with mass of $2 \ \rm kg$ and initial velocity of $1 \ \rm m/s$. Find its final velocity due to the impulse induced by the given force.
 
 
 ## P08
