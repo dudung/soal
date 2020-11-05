@@ -125,14 +125,14 @@ In a one-dimensional collision of two particles, where the collision has a certa
 
 \begin{equation}
 \label{eq:qmi-cor-collision-1d-v1f}
-v_{1f} = \left( \frac{m_1 - e m_2}{m_1 + m_2} \right) v_{1i} + \left( \frac{(1 + e) m_2}{m_1 + m_2} \right) v_{2i}
+v_{1f} = \left[ \frac{m_1 - e m_2}{m_1 + m_2} \right] v_{1i} + \left[ \frac{(1 + e) m_2}{m_1 + m_2} \right] v_{2i}
 \end{equation}
 
 and
 
 \begin{equation}
 \label{eq:qmi-cor-collision-1d-v2f}
-v_{2f} = \left( \frac{(1 + e) m_1}{m_1 + m_2} \right) v_{1i} + \left( \frac{m_2 - e m_1}{m_1 + m_2} \right) v_{2i},
+v_{2f} = \left[ \frac{(1 + e) m_1}{m_1 + m_2} \right] v_{1i} + \left[ \frac{m_2 - e m_1}{m_1 + m_2} \right] v_{2i},
 \end{equation}
 
 where $e$ is the COR.
