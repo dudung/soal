@@ -14,25 +14,43 @@ permalink: /physics/quiz/swing-imp-mom
 ---
 Examples of momentum and impulse are discussed here.
 
+## P01
+..
+
+
+## P02
+..
+
+
+## P03
+..
+
+
+## P04
+..
+
+
+## P05
+..
+
+
+## P06
+..
+
+
+## P07
+..
+
+
+## P08
+..
+
+
+## P09
+..
+
+
+## P10
+..
+
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/quiz/2020-11-05-momentum-impulse.md)
-
-## Problems
-1.
-
-2.
-
-3.
-
-4.
-
-5.
-
-6.
-
-7.
-
-8.
-
-9.
-
-10.
