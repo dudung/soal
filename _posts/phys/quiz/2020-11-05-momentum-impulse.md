@@ -93,11 +93,26 @@ A force in two-dimensional is given to a particle with initial velocity of $\vec
 
 
 ## P09
-There are two particles perform a two-dimensional collision on top of a level and frictionless surface. We well see the collsion from above and take a horizontal line as reference where the first particle moves to the right parallel to this line witht initial velocity of $\vec{v}_i = (3 \ \hat{i}) \ \rm m/s$. Mass of the first particle is $2 \ \rm kg$, while the second is $\sqrt{3} \ \rm kg$.
+There are two particles perform a two-dimensional collision on top of a level and frictionless surface. We well see the collsion from above and take a horizontal line as reference where the first particle moves to the right parallel to this line witht initial velocity of $\vec{v}_i = (3 \ \hat{i}) \ \rm m/s$. Mass of the first particle is $2 \ \rm kg$, while the second is $\sqrt{3} \ \rm kg$. After the collsion the firt particle moves with certain velocity that makes an angel about $30^\circ$ below the horizontal line, while the second moves with certain velocity that makes an angel about $60^\circ$ above the line.
++ Write the equation of initial and final velocities of two particles in $x$-direction (parallel to the horizontal line).
++ Write the equation of initial and final velocities of two particles in $y$-direction (perpendicular to the horizontal line)
++ Find the final velocities of each particles and represent them in vector form.
 
 
 ## P10
-..
+In a one-dimensional collision of two particles, where the collision has a certain coefficient of restitution (COR), the formulation will be different than in Eqns. \eqref{eq:qmi-elastic-collision-1d-v1f} and \eqref{eq:qmi-elastic-collision-1d-v2f}, which will be as follow
+
+\begin{equation}
+\label{eq:qmi-cor-collision-1d-v1f}
+v_{1f} = \left( \frac{m_1 - m_2}{m_1 + m_2} \right) v_{1i} + \left( \frac{2 m_2}{m_1 + m_2} \right) v_{2i}
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eq:qmi-cor-collision-1d-v2f}
+v_{2f} = \left( \frac{2 m_1}{m_1 + m_2} \right) v_{1i} + \left( \frac{m_2 - m_1}{m_1 + m_2} \right) v_{2i}
+\end{equation}
 
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/quiz/2020-11-05-momentum-impulse.md)
