@@ -19,6 +19,11 @@
 	1045 Can draw a single growing circular cell.
 	1321 Try normal force.
 	1453 Normal and gravitational forces work a little bit.
+	1811 Start to budding.
+	1842 Can have budding state every tBud.
+	1857 Still explode by budding.
+	1940 Add empty feature for fission.
+	1946 Fix budding for next instead of first only.
 */
 
 
@@ -72,7 +77,6 @@ class Process {
 	stop() {
 		clearInterval(this.id);
 	}
-	
 }
 
 
@@ -166,6 +170,7 @@ class Growable {
 		this.state = arguments[0];
 		this.max = arguments[1];
 		this.rate = arguments[2];
+		this.end = false;
 	}
 	
 	setState() {
@@ -181,10 +186,14 @@ class Growable {
 	}
 	
 	grow() {
-		var dt = arguments[0];
-		var newState = this.state + this.rate * dt;
-		if(newState <= this.max) {
-			this.state = newState;
+		if(!this.end) {
+			var dt = arguments[0];
+			var newState = this.state + this.rate * dt;
+			if(newState <= this.max) {
+				this.state = newState;
+			} else {
+				this.end = true;
+			}
 		}
 	}
 }
@@ -193,12 +202,62 @@ class Growable {
 // Define spherical cell Cell
 class Cell {
 	constructor() {
-		this.D = new Growable(1, 10, 0.1);
+		this.D = new Growable(2, 10, 0.1);
 		this.m = 1;
 		this.q = 0;
 		this.r = new Vect3(50, 50, 0);
 		this.v = new Vect3();
-		this.c = new Color(blue, "#adf");
+		this.c = new Color(blue, "rgba(79, 129, 189, 0.5)");
+		this.age = 1;
+	}
+	
+	setMode() {
+		this.mode = arguments[0];
+		if(this.mode == "budding") {
+			this.tBud = 200;
+			this.iBud = this.tBud;
+			this.budding = false;
+		} else if(this.mode == "fission") {
+			this.tFis = 200;
+			this.iFis = this.tFis;
+			this.fission = false;
+		}
+	}
+	
+	grow() {
+		var dt = arguments[0];
+		this.D.grow(dt);
+		
+		if(this.D.end) {
+			if(this.mode == "budding") {
+				
+				if(this.tBud == this.iBud) {
+					this.budding = true;
+				} else {
+					this.budding = false;
+				}
+				this.iBud--;
+				
+				if(this.iBud <= 0) {
+					this.iBud = this.tBud;
+				}
+				
+			} else if(this.mode == "fission") {
+				
+				if(this.tFis == this.iFis) {
+					this.fission = true;
+				} else {
+					this.fission = false;
+				}
+				this.iFis--;
+			
+				if(this.iFis <= 0) {
+					this.iFis = this.tFis;
+				}
+			}
+		}
+		
+		this.age++;
 	}
 };
 
@@ -226,10 +285,10 @@ function initParams() {
 	dh = ch;
 	
 	// Set conversion parameters for drawing
-	var xmin = 0;
+	var xmin = -100;
 	var xmax = 100;
 	var rngx = new Range(xmin, xmax);
-	var ymin = 0;
+	var ymin = -100;
 	var ymax = 100;
 	var rngy = new Range(ymin, ymax);
 	var XMIN = 0;
@@ -249,7 +308,7 @@ function initParams() {
 
 	// Set time parameters and proces
 	tbeg = 0;
-	tend = 500;
+	tend = 1000;
 	dt = 1;
 	t = tbeg;
 	Tproc = 10;
@@ -329,18 +388,16 @@ function draw() {
 			var can = arguments[0];
 			var ctx = can.getContext("2d");
 			
-			ctx.lineWidth = 4;
+			ctx.lineWidth = 2;
 			ctx.beginPath();
 			
 			ctx.strokeStyle = outline;
 			ctx.arc(X, Y, R, 0, 2 * Math.PI);
 			ctx.stroke();
 			
-			/**/
 			ctx.fillStyle = fill;
 			ctx.arc(X, Y, R, 0, 2 * Math.PI);
 			ctx.fill();
-			/**/
 		}
 	};
 	
@@ -377,24 +434,21 @@ function simulate() {
 	// Initialize all variables and coefficient
 	if(proc.cur == proc.beg) {
 		
-		var c0 = new Cell();
-		c0.r = new Vect3(48, 50, 0);
-		c0.D = new Growable(4, 20, 0.1);
-		cell.push(c0);
-
-		var c1 = new Cell();
-		c1.r = new Vect3(52, 50, 0);
-		c1.D = new Growable(4, 30, 0.1);
-		cell.push(c1);
+		var first = new Cell();
+		first.setMode("budding");
+		first.r = new Vect3(0, 0, 0);
+		first.D = new Growable(2, 10, 0.1);
+		cell.push(first);
 		
 		FN = new Normal();
-		FN.setConstants(0.1, 0.1);
+		FN.setConstants(0.2, 0.05);
 
 		FG = new Gravitational();
 		FG.setConstant(0.8);
 		
 		var header =
 			"TIME  " +
+			"CNUM  " +
 			"";
 			
 		tout(tah, header);
@@ -413,13 +467,37 @@ function simulate() {
 	t = proc.cur;
 	tout(ta,
 		("0000" + t).slice(-4) + "  " +
+		("0000" + N).slice(-4) + "  " +
 		"\n"
 	);
 		
 	// Grow cells
 	var N = cell.length;
 	for(var i = 0; i < N; i++) {
-		cell[i].D.grow(dt);
+		cell[i].grow(dt);
+		
+		if(cell[i].budding) {
+			var x = cell[i].r.x;
+			var y = cell[i].r.y;
+			var r = 0.5 * cell[i].D.state;
+			var theta =  Math.random() * 2 * Math.PI;
+			var dx = r * Math.cos(theta);
+			var dy = r * Math.sin(theta);
+			
+			var next = new Cell();
+			next.setMode("budding");
+			next.r = new Vect3(x + dx, y + dy, 0);
+			next.D = new Growable(2, 10, 0.1);
+			cell.push(next);
+			
+			var j = cell.length;
+			/*
+			console.log(
+				t + ": cell " + i +
+				" buds cell " + j
+			);
+			*/
+		}
 	}
 	
 	// Move cells
