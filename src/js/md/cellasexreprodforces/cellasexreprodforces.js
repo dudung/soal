@@ -373,13 +373,15 @@ function simulate() {
 	// Initialize all variables and coefficient
 	if(proc.cur == proc.beg) {
 		
-		var first = new Cell();
-		first.r = new Vect3(48, 50, 0);
-		cell.push(first);
+		var c0 = new Cell();
+		c0.r = new Vect3(40, 50, 0);
+		c0.D.setMax(20);
+		cell.push(c0);
 
-		var second = new Cell();
-		second.r = new Vect3(52, 50, 0);
-		cell.push(second);
+		var c1 = new Cell();
+		c1.r = new Vect3(60, 50, 0);
+		c1.D.setMax(30);
+		cell.push(c1);
 		
 		var header =
 			"TIME  " +
