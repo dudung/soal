@@ -254,9 +254,6 @@ function initParams() {
 	
 	// Initialize variables and parameters
 	cell = [];
-	var first = new Cell();
-	cell.push(first);
-	
 }
 
 
@@ -328,16 +325,18 @@ function draw() {
 			var can = arguments[0];
 			var ctx = can.getContext("2d");
 			
-			ctx.lineWidth = 3;
+			ctx.lineWidth = 2;
 			ctx.beginPath();
 			
 			ctx.strokeStyle = outline;
 			ctx.arc(X, Y, R, 0, 2 * Math.PI);
 			ctx.stroke();
 			
+			/*
 			ctx.fillStyle = fill;
 			ctx.arc(X, Y, R, 0, 2 * Math.PI);
 			ctx.fill();
+			*/
 		}
 	};
 	
@@ -373,7 +372,15 @@ main();
 function simulate() {
 	// Initialize all variables and coefficient
 	if(proc.cur == proc.beg) {
+		
+		var first = new Cell();
+		first.r = new Vect3(48, 50, 0);
+		cell.push(first);
 
+		var second = new Cell();
+		second.r = new Vect3(52, 50, 0);
+		cell.push(second);
+		
 		var header =
 			"TIME  " +
 			"";
