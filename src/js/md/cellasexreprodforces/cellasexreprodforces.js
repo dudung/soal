@@ -17,6 +17,8 @@
 	1024 Clean all lines of code.
 	1034 Set absolute of distance in Conversion.
 	1045 Can draw a single growing circular cell.
+	1321 Try normal force.
+	1453 Normal and gravitational forces work a little bit.
 */
 
 
@@ -196,7 +198,7 @@ class Cell {
 		this.q = 0;
 		this.r = new Vect3(50, 50, 0);
 		this.v = new Vect3();
-		this.c = new Color(blue, "#fff");
+		this.c = new Color(blue, "#adf");
 	}
 };
 
@@ -207,10 +209,11 @@ var ta, tw, th, tah;
 var div;
 var can, cw, ch;
 var proc, Tproc, tbeg, tend, dt, t;
-var cell;
 var cx, xmin, xmax, XMIN, XMAX;
 var cy, ymin, ymax, YMIN, YMAX;
-
+var cell;
+var lint;
+var FN, FG;
 
 // Initialize parameters
 function initParams() {
@@ -254,6 +257,7 @@ function initParams() {
 	
 	// Initialize variables and parameters
 	cell = [];
+	lint = {};
 }
 
 
@@ -325,18 +329,18 @@ function draw() {
 			var can = arguments[0];
 			var ctx = can.getContext("2d");
 			
-			ctx.lineWidth = 2;
+			ctx.lineWidth = 4;
 			ctx.beginPath();
 			
 			ctx.strokeStyle = outline;
 			ctx.arc(X, Y, R, 0, 2 * Math.PI);
 			ctx.stroke();
 			
-			/*
+			/**/
 			ctx.fillStyle = fill;
 			ctx.arc(X, Y, R, 0, 2 * Math.PI);
 			ctx.fill();
-			*/
+			/**/
 		}
 	};
 	
@@ -374,14 +378,20 @@ function simulate() {
 	if(proc.cur == proc.beg) {
 		
 		var c0 = new Cell();
-		c0.r = new Vect3(40, 50, 0);
-		c0.D.setMax(20);
+		c0.r = new Vect3(48, 50, 0);
+		c0.D = new Growable(4, 20, 0.1);
 		cell.push(c0);
 
 		var c1 = new Cell();
-		c1.r = new Vect3(60, 50, 0);
-		c1.D.setMax(30);
+		c1.r = new Vect3(52, 50, 0);
+		c1.D = new Growable(4, 30, 0.1);
 		cell.push(c1);
+		
+		FN = new Normal();
+		FN.setConstants(0.1, 0.1);
+
+		FG = new Gravitational();
+		FG.setConstant(0.8);
 		
 		var header =
 			"TIME  " +
@@ -414,7 +424,39 @@ function simulate() {
 	
 	// Move cells
 	var N = cell.length;
+	var SF = [];
 	for(var i = 0; i < N; i++) {
+		var fi = new Vect3();
+		for(var j = 0; j < N; j++) {
+			if(i != j) {
+				var gi = new Grain();
+				gi.r = cell[i].r;
+				gi.v = cell[i].v;
+				gi.m = cell[i].m;
+				gi.D = cell[i].D.state;
+				
+				var gj = new Grain();
+				gj.r = cell[j].r;
+				gj.v = cell[j].v;
+				gj.m = cell[j].m;
+				gj.D = cell[j].D.state;
+				
+				var fn = FN.force(gi, gj);
+				fi = Vect3.add(fi, fn);
+				
+				var fg = FG.force(gi, gj);
+				fi = Vect3.add(fi, fg);			
+			}
+		}
+		SF.push(fi);
+	}
+	
+	for(var i = 0; i < N; i++) {
+		var a = Vect3.div(SF[i], cell[i].m);
+		var v = Vect3.add(cell[i].v, Vect3.mul(a, dt));
+		var r = Vect3.add(cell[i].r, Vect3.mul(v, dt));
 		
+		cell[i].r = r;
+		cell[i].v = v;
 	}
 }

@@ -3,6 +3,7 @@
 0341 Rename it to cellasexreprodforces, more clear only forces to investigate.
 0342 Rename log.txt to README.md for better reading.
 0444 Add butiran.min.js to use.
+1543 Break for moderating ICSPMB first.
 
 ## 20201105
 2040 Learn from (AK Lectures, 2014).
