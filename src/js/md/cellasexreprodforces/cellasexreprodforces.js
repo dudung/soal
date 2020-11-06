@@ -9,7 +9,151 @@
 	0344 Use greenport as template.
 	0516 Still do the layout.
 	0641 Create Growable class.
+	0738 Create Color class.
+	0900 Finish create Range and Conversion classes.
+	0915 Create Process class.
+	0946 Process does not work.
+	1020 It can work now, using arguments in setInterval.
+	1024 Clean all lines of code.
 */
+
+
+// Define a process of a function every period
+class Process {
+	constructor() {
+		this.func = arguments[0];
+		this.period = arguments[1];
+		this.beg = arguments[2];	
+		this.end = arguments[3];
+		this.inc = arguments[4];
+		
+		this.cur = this.beg;
+	}
+	
+	setPeriod() {
+		this.period = arguments[0];
+	}
+	
+	setFunction() {
+		this.func = arguments[0];
+	}
+	
+	setIteration() {
+		this.beg = arguments[0];	
+		this.end = arguments[1];
+		this.inc = arguments[2];	
+		
+		this.cur = this.beg;
+	}
+	
+	step() {
+		this.cur = this.cur + this.inc;
+		if(this.cur > this.end) {
+			this.cur = this.end;
+			this.stop();
+		}
+	}
+	
+	start() {
+		this.id = setInterval(
+			function() {
+				arguments[0].func();
+				arguments[0].step();
+			},
+			this.period,
+			this
+		);
+	}
+	
+	stop() {
+		clearInterval(this.id);
+	}
+	
+}
+
+
+// Define a conversion
+class Conversion {
+	constructor() {
+		this.src = arguments[0];
+		this.dest = arguments[1];
+	}
+	
+	setSrc() {
+		this.src = arguments[0];
+	}
+	
+	setDest() {
+		this.dest = arguments[0];
+	}
+	
+	coordinate() {
+		var x = arguments[0];
+		
+		var min = this.src.min;
+		var max = this.src.max;
+		
+		var MIN = this.dest.min;
+		var MAX = this.dest.max;
+		
+		var X = (x - min) / (max - min);
+		X *= (MAX - MIN);
+		X += MIN;
+		
+		return X;
+	}
+	
+	distance() {
+		var a = 0;
+		var b = arguments[0];
+		var A = this.coordinate(a);
+		var B = this.coordinate(b);
+		var L = B - A;
+		return L;
+	}
+}
+
+
+// Define a range
+class Range {
+	constructor() {
+		this.min = arguments[0];
+		this.max = arguments[1];
+	}
+	
+	setMin() {
+		this.min = arguments[0];
+	}
+	
+	setMax() {
+		this.max = arguments[0];
+	}
+}
+
+
+// Define outline and fill colors
+class Color {
+	constructor() {
+		if(arguments.length == 0) {
+			this.outline = "#000";
+			this.fill = "#fff";
+		} else if(arguments.length == 1) {
+			this.outline = arguments[0];
+			this.fill = "#fff";
+		} else if(arguments.length == 2) {
+			this.outline = arguments[0];
+			this.fill = arguments[1];
+		}
+	}
+	
+	setOutline() {
+		this.outline = arguments[0];
+	}
+	
+	setFill() {
+		this.fill = arguments[0];
+	}
+}
 
 
 // Define something that can grow linearly
@@ -50,6 +194,7 @@ class Cell {
 		this.q = 0;
 		this.r = new Vect3();
 		this.v = new Vect3();
+		this.c = new Color(blue, "#000");
 	}
 };
 
@@ -61,14 +206,67 @@ var div;
 var can, cw, ch;
 var proc, Tproc, tbeg, tend, dt, t;
 var cell;
+var cx, xmin, xmax, XMIN, XMAX;
+var cy, ymin, ymax, YMIN, YMAX;
+
+
+// Initialize parameters
+function initParams() {
+	// Set elements (c, t, d) width and height
+	cw = 400;
+	ch = 400;
+	tw = 400;
+	th = ch - 30;
+	dw = tw + 6;
+	dh = ch;
+	
+	// Set conversion parameters for drawing
+	var xmin = 0;
+	var xmax = 100;
+	var rngx = new Range(xmin, xmax);
+	var ymin = 0;
+	var ymax = 100;
+	var rngy = new Range(ymin, ymax);
+	var XMIN = 0;
+	var XMAX = cw;
+	var RNGX = new Range(XMIN, XMAX);
+	var YMIN = ch;
+	var YMAX = 0;
+	var RNGY = new Range(YMIN, YMAX);
+	cx = new Conversion(rngx, RNGX);
+	cy = new Conversion(rngy, RNGY);
+	
+	// Set blue color
+	blue = "#"
+		+ (079).toString(16)
+		+ (129).toString(16)
+		+ (189).toString(16);
+
+	// Set time parameters and proces
+	tbeg = 0;
+	tend = 10;
+	dt = 1;
+	t = tbeg;
+	Tproc = 100;
+	proc = new Process(simulate, Tproc, tbeg, tend, dt);
+	
+	// Initialize variables and parameters
+	cell = [];
+	var first = new Cell();
+	cell.push(first);
+	
+}
+
 
 // Initialize visual elements
 function initElements() {
 	// Create canvas
 	can = document.createElement("canvas");
 	can.style.float = "left";
-	can.style.width = cw + "px";
-	can.style.height = ch + "px";
+	can.width = cw;
+	can.height = ch;
+	can.style.width = can.width + "px";
+	can.style.height = can.height + "px";
 	can.style.border = blue + " 1px solid";
 	
 	// Create div
@@ -99,62 +297,7 @@ function initElements() {
 }
 
 
-// Resize textarea according to window inner size
-function resize() {
-	// When textarea is the only element
-	var dw = 20;
-	var dh = 2 * 26;
-	tah.style.width = (window.innerWidth - dw) + "px";
-	ta.style.width = (window.innerWidth - dw) + "px";
-	ta.style.height = (window.innerHeight - dh) + "px";
-}
-
-
-// Initialize parameters
-function initParams() {
-	// Set elements (c, t, d) width and height
-	cw = 400;
-	ch = 400;
-	tw = 400;
-	th = ch - 30;
-	dw = tw + 6;
-	dh = ch;
-
-	// Set blue color
-	blue = "#"
-		+ (079).toString(16)
-		+ (129).toString(16)
-		+ (189).toString(16);
-
-	// Set time parameters
-	tbeg = 0;
-	tend = 10;
-	dt = 1;
-	t = tbeg;
-	
-	// Set interval parameter
-	Tproc = 10;
-	
-	// Initialize variables and parameters
-	cell = [];
-	var first = new Cell();
-	cell.push(first);
-}
-
-
-// Start simulation
-function start() {
-	proc = setInterval(simulate, Tproc);
-}
-
-
-// Stop simulation
-function stop() {
-	clearInterval(proc);
-}
-
-
-// Add line to textrea
+// Add line to textarea
 function tout() {
 	var ta = arguments[0];
 	var line = arguments[1];
@@ -163,17 +306,70 @@ function tout() {
 }
 
 
-// Add label and value
-function addValue() {
-	l.push(arguments[0]);
-	x.push(arguments[1]);
+// Draw a cell on canvas
+function draw() {
+	var cell = arguments[0];
+	
+	var x = cell.r.x;
+	var y = cell.r.y;
+	var r = 0.5 * cell.D.state;
+	
+	var X = cx.coordinate(x);
+	var Y = cy.coordinate(y);
+	var R = 0.5 * (cx.distance(r) + cy.distance(r));
+	
+	var outline = cell.c.outline;
+	var fill = cell.c.fill;
+	
+	var val = {
+		on() {
+			var can = arguments[0];
+			var ctx = can.getContext("2d");
+			
+			ctx.strokeStyle = outline;
+			ctx.beginPath();
+			ctx.arc(X, Y, R, 0, 2 * Math.pi);
+			ctx.stroke();
+			
+			ctx.fillStyle = fill;
+			ctx.beginPath();
+			ctx.arc(X, Y, R, 0, 2 * Math.pi);
+			ctx.fill();
+		}
+	};
+	
+	return val;
 }
 
 
-// Simulate
+// Clear canvas and textarea
+function clear() {
+	var el = arguments[0];
+	if(el instanceof HTMLTextAreaElement) {
+		el.value = "";
+	} else if(el instanceof HTMLCanvasElement) {
+		var cx = el.getContext("2d");
+		cx.clearRect(0, 0, cw, ch);
+	}
+}
+
+
+// Define main function
+function main() {
+	initParams();
+	initElements();
+	proc.start();
+}
+
+
+// Execute program
+main();
+
+
+// Perform simulation
 function simulate() {
 	// Initialize all variables and coefficient
-	if(t == tbeg) {
+	if(proc.cur == proc.beg) {
 
 		var header =
 			"TIME  " +
@@ -184,27 +380,15 @@ function simulate() {
 	}
 	
 	// Display variables on textarea
+	t = proc.cur;
 	tout(ta,
 		("0000" + t).slice(-4) + "  " +
 		"\n"
 	);
-	
-	// Stop simulation when tend is reached
-	if(t >= tend) {
-		stop();
-	} else {
-		t += dt;
-	}
+		
+	// Test something
+	var N = cell.length;
+	for(var i = 0; i < N; i++) {
+		cell[i].D.grow(dt);
+	}	
 }
-
-
-// Define main function
-function main() {
-	initParams();
-	initElements();
-	start();
-}
-
-
-// Execute program
-main();
