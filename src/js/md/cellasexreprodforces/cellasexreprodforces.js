@@ -24,6 +24,8 @@
 	1857 Still explode by budding.
 	1940 Add empty feature for fission.
 	1946 Fix budding for next instead of first only.
+	2045 Can perform (binary) fission.
+	2117 Can not find the right parameters.
 */
 
 
@@ -270,8 +272,7 @@ var can, cw, ch;
 var proc, Tproc, tbeg, tend, dt, t;
 var cx, xmin, xmax, XMIN, XMAX;
 var cy, ymin, ymax, YMIN, YMAX;
-var cell;
-var lint;
+var cell, mode;
 var FN, FG;
 
 // Initialize parameters
@@ -316,7 +317,8 @@ function initParams() {
 	
 	// Initialize variables and parameters
 	cell = [];
-	lint = {};
+	
+	mode = "fission";
 }
 
 
@@ -435,16 +437,16 @@ function simulate() {
 	if(proc.cur == proc.beg) {
 		
 		var first = new Cell();
-		first.setMode("budding");
+		first.setMode(mode);
 		first.r = new Vect3(0, 0, 0);
 		first.D = new Growable(2, 10, 0.1);
 		cell.push(first);
 		
 		FN = new Normal();
-		FN.setConstants(0.2, 0.05);
+		FN.setConstants(0.2, 0.1);
 
 		FG = new Gravitational();
-		FG.setConstant(0.8);
+		FG.setConstant(1);
 		
 		var header =
 			"TIME  " +
@@ -485,7 +487,7 @@ function simulate() {
 			var dy = r * Math.sin(theta);
 			
 			var next = new Cell();
-			next.setMode("budding");
+			next.setMode(mode);
 			next.r = new Vect3(x + dx, y + dy, 0);
 			next.D = new Growable(2, 10, 0.1);
 			cell.push(next);
@@ -497,6 +499,29 @@ function simulate() {
 				" buds cell " + j
 			);
 			*/
+		}
+		
+		if(cell[i].fission) {
+			var x = cell[i].r.x;
+			var y = cell[i].r.y;
+			var r = 0.5 * cell[i].D.state;
+			var theta =  Math.random() * 2 * Math.PI;
+			var dx = r * Math.cos(theta);
+			var dy = r * Math.sin(theta);
+			
+			cell[i].r.x = x + 0.5 * dx;
+			cell[i].r.y = y + 0.5 * dy;
+			cell[i].D.state = r;
+			cell[i].D.end = false;
+			cell[i].fission = false;
+			
+			var next = new Cell();
+			next.setMode(mode);
+			next.r = new Vect3(x - 0.5 * dx, y - 0.5 * dy, 0);
+			next.D = new Growable(2, 10, 0.1);
+			next.D.state = r;
+			cell.push(next);
+			
 		}
 	}
 	
