@@ -15,6 +15,8 @@
 	0946 Process does not work.
 	1020 It can work now, using arguments in setInterval.
 	1024 Clean all lines of code.
+	1034 Set absolute of distance in Conversion.
+	1045 Can draw a single growing circular cell.
 */
 
 
@@ -105,10 +107,10 @@ class Conversion {
 	
 	distance() {
 		var a = 0;
-		var b = arguments[0];
+		var b = a + arguments[0];
 		var A = this.coordinate(a);
 		var B = this.coordinate(b);
-		var L = B - A;
+		var L = Math.abs(B - A);
 		return L;
 	}
 }
@@ -192,9 +194,9 @@ class Cell {
 		this.D = new Growable(1, 10, 0.1);
 		this.m = 1;
 		this.q = 0;
-		this.r = new Vect3();
+		this.r = new Vect3(50, 50, 0);
 		this.v = new Vect3();
-		this.c = new Color(blue, "#000");
+		this.c = new Color(blue, "#fff");
 	}
 };
 
@@ -244,10 +246,10 @@ function initParams() {
 
 	// Set time parameters and proces
 	tbeg = 0;
-	tend = 10;
+	tend = 500;
 	dt = 1;
 	t = tbeg;
-	Tproc = 100;
+	Tproc = 10;
 	proc = new Process(simulate, Tproc, tbeg, tend, dt);
 	
 	// Initialize variables and parameters
@@ -314,9 +316,9 @@ function draw() {
 	var y = cell.r.y;
 	var r = 0.5 * cell.D.state;
 	
-	var X = cx.coordinate(x);
-	var Y = cy.coordinate(y);
-	var R = 0.5 * (cx.distance(r) + cy.distance(r));
+	var X = Math.round(cx.coordinate(x));
+	var Y = Math.round(cy.coordinate(y));
+	var R = Math.round(0.5 * (cx.distance(r) + cy.distance(r)));
 	
 	var outline = cell.c.outline;
 	var fill = cell.c.fill;
@@ -326,14 +328,15 @@ function draw() {
 			var can = arguments[0];
 			var ctx = can.getContext("2d");
 			
-			ctx.strokeStyle = outline;
+			ctx.lineWidth = 3;
 			ctx.beginPath();
-			ctx.arc(X, Y, R, 0, 2 * Math.pi);
+			
+			ctx.strokeStyle = outline;
+			ctx.arc(X, Y, R, 0, 2 * Math.PI);
 			ctx.stroke();
 			
 			ctx.fillStyle = fill;
-			ctx.beginPath();
-			ctx.arc(X, Y, R, 0, 2 * Math.pi);
+			ctx.arc(X, Y, R, 0, 2 * Math.PI);
 			ctx.fill();
 		}
 	};
@@ -379,6 +382,14 @@ function simulate() {
 		tout(ta, header + "\n");
 	}
 	
+	
+	// Draw cells
+	var N = cell.length;
+	clear(can);
+	for(var i = 0; i < N; i++) {
+		draw(cell[i]).on(can);
+	}	
+	
 	// Display variables on textarea
 	t = proc.cur;
 	tout(ta,
@@ -386,9 +397,15 @@ function simulate() {
 		"\n"
 	);
 		
-	// Test something
+	// Grow cells
 	var N = cell.length;
 	for(var i = 0; i < N; i++) {
 		cell[i].D.grow(dt);
-	}	
+	}
+	
+	// Move cells
+	var N = cell.length;
+	for(var i = 0; i < N; i++) {
+		
+	}
 }
