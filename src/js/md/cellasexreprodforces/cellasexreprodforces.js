@@ -26,6 +26,12 @@
 	1946 Fix budding for next instead of first only.
 	2045 Can perform (binary) fission.
 	2117 Can not find the right parameters.
+	20201107
+	0445 Continue improving the program.
+	0516 Mass ratio through D^3 does not work, but the inverse?
+	0553 Gravout replace Gravitational and it works.
+	0631 Change color according to size of the cell.
+	0653 Can pause for every tpause for saving image manually.
 */
 
 
@@ -37,6 +43,7 @@ class Process {
 		this.beg = arguments[2];	
 		this.end = arguments[3];
 		this.inc = arguments[4];
+		this.pse = arguments[5]
 		
 		this.cur = this.beg;
 	}
@@ -55,6 +62,10 @@ class Process {
 		this.inc = arguments[2];	
 		
 		this.cur = this.beg;
+	}
+	
+	setPause() {
+		this.pse = arguments[0];
 	}
 	
 	step() {
@@ -78,6 +89,16 @@ class Process {
 	
 	stop() {
 		clearInterval(this.id);
+	}
+	
+	pause() {
+		this.pse = arguments[0];
+		if(this.cur < this. end) {
+			this.end = this.pse;
+		} else {
+			this.end += this.pse;
+		}
+		this.start();
 	}
 }
 
@@ -272,7 +293,7 @@ var can, cw, ch;
 var proc, Tproc, tbeg, tend, dt, t;
 var cx, xmin, xmax, XMIN, XMAX;
 var cy, ymin, ymax, YMIN, YMAX;
-var cell, mode;
+var cell, mode, crad;
 var FN, FG;
 
 // Initialize parameters
@@ -286,7 +307,7 @@ function initParams() {
 	dh = ch;
 	
 	// Set conversion parameters for drawing
-	var xmin = -100;
+	var xmin = -100; // -100
 	var xmax = 100;
 	var rngx = new Range(xmin, xmax);
 	var ymin = -100;
@@ -313,12 +334,12 @@ function initParams() {
 	dt = 1;
 	t = tbeg;
 	Tproc = 10;
-	proc = new Process(simulate, Tproc, tbeg, tend, dt);
+	tpause = 90;
+	proc = new Process(simulate, Tproc, tbeg, tend, dt, tpause);
 	
 	// Initialize variables and parameters
 	cell = [];
-	
-	mode = "fission";
+	mode = "budding";
 }
 
 
@@ -423,7 +444,8 @@ function clear() {
 function main() {
 	initParams();
 	initElements();
-	proc.start();
+	proc.pause(250);
+	//proc.start();
 }
 
 
@@ -445,23 +467,58 @@ function simulate() {
 		FN = new Normal();
 		FN.setConstants(0.2, 0.1);
 
-		FG = new Gravitational();
+		FG = new Gravout();
 		FG.setConstant(1);
 		
 		var header =
 			"TIME  " +
 			"CNUM  " +
+			"CRAD      " +
+			"EKIN  " +
 			"";
 			
 		tout(tah, header);
 		tout(ta, header + "\n");
 	}
 	
+	// Calculate position of center of mass
+	var rcom = new Vect3();
+	var m = 0;
+	var N = cell.length;
+	for(var i = 0; i < N; i++) {
+		var mi = cell[i].m;
+		m += mi;
+		var miri = Vect3.mul(cell[i].r, cell[i].m);
+		rcom = Vect3.add(rcom, miri);
+	}
+	rcom = Vect3.div(rcom, N);
+	
+	var crad = 0;
+	for(var i = 0; i < N; i++) {
+		var ri = cell[i].r;
+		var rad = Vect3.sub(ri, rcom).len();
+		if(rad > crad) {
+			crad = rad;
+		}
+	}
+	
+	// Calculate kinetic energy
+	var K = 0;
+	for(var i = 0; i < N; i++) {
+		var mi = cell[i].m;
+		var vi = cell[i].v.len();
+		var Ki = 0.5 * mi * vi * vi;
+		K += Ki;
+	}
 	
 	// Draw cells
 	var N = cell.length;
 	clear(can);
 	for(var i = 0; i < N; i++) {
+		var D = cell[i].D.state;
+		var Dmax = cell[i].D.max;
+		var alpha = 0.5 + (1 - D / Dmax);
+		cell[i].c.fill = "rgba(79, 129, 189, " + alpha + ")";
 		draw(cell[i]).on(can);
 	}	
 	
@@ -470,6 +527,8 @@ function simulate() {
 	tout(ta,
 		("0000" + t).slice(-4) + "  " +
 		("0000" + N).slice(-4) + "  " +
+		crad.toExponential(3) + "  " +
+		K.toExponential(3) + "  " +
 		"\n"
 	);
 		
@@ -554,12 +613,16 @@ function simulate() {
 		SF.push(fi);
 	}
 	
+	
 	for(var i = 0; i < N; i++) {
+		// Euler algoritm in MD
 		var a = Vect3.div(SF[i], cell[i].m);
 		var v = Vect3.add(cell[i].v, Vect3.mul(a, dt));
 		var r = Vect3.add(cell[i].r, Vect3.mul(v, dt));
 		
+		// Update cell parameters of motion
 		cell[i].r = r;
 		cell[i].v = v;
+		
 	}
 }
