@@ -339,7 +339,7 @@ function initParams() {
 	
 	// Initialize variables and parameters
 	cell = [];
-	mode = "budding";
+	mode = "fission";
 }
 
 
