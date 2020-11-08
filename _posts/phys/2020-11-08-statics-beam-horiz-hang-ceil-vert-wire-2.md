@@ -18,4 +18,4 @@ A uniform beam is hung horizontally from ceiling through two vertical wires atta
 ## References
 1. <a name="ref1"></a>Richard Fitzpatrick, "Rods and cables", in Classical Mechanics: an introductory course, The University of Texas at Austin, 2 Feb 2006, url <http://farside.ph.utexas.edu/teaching/301/lectures/node128.html> [20201108].
 
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/statics-beam-horiz-hang-ceil-vert-wire-2.md)
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-11-08-statics-beam-horiz-hang-ceil-vert-wire-2.md)
