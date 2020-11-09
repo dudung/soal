@@ -12,23 +12,20 @@ tags: ["statics"]
 date: 2020-11-09 20:54:00 +07
 permalink: /physics/statics-beam-horiz-hang-ceil-diag-wire-2
 ---
-..
-
-{% comment %}
-A uniform beam is hung horizontally from ceiling through two vertical wires attached at some positions on the beam. It is a general case of a horizontal rod suspended by two vertical cables [[1](#ref1)].
-
+A uniform beam is hung horizontally from ceiling through two wires attached at some positions on the beam, where each wire has different angle with vertical direction. It is a simpler case of a horizontal beam suspended by two cables, where a person standing on one of the end of the beam [[1](#ref1)].
 
 ## Problem
-An uniform beam with mass $m$ and length $L$ is supported horizontally by two vertical wires attached to ceiling as show in following Fig. <a href="#fig:shbar-vwire2-0">1</a>.
+An uniform beam is supported horizontally by two wires attached to ceiling, where each wire has different angle with vertical direction as shown in following Fig. <a href="#fig:shbar-vwire2-0">1</a>. The beam is in a stable condition.
 
 {:refdef: style="text-align: center;"}
-![horizontal beam suspended by two vertical wires](/assets/img/phys/hbar-vwire2-0.png)
+![horizontal beam suspended by two vertical wires](/assets/img/phys/hbar-dwire2-0.png)
 <br />
 Figure <a name="fig:shbar-vwire2-0">1</a> A beam supported horizontally by two vertical wires.
 {: refdef}
 
-Tension of left wire is marked as $T_1$, while tension of the other wire is marked as $T_2$. Length of the beam is $2 \ \rm m$ and its mass is $15 \ \rm kg$. Point $O$ is position of center of the mass of the beam. Distance of point $B$ from point $O$ or $l_1$ is $80 \ \rm cm$ and distance of point $D$ from point $O$ or $l_2$ is $40 \ \rm cm$. Find tension $T_1$ and $T_2$.
+Tension of left wire is marked as $T_1$, while tension of the other wire is marked as $T_2$. Length of the beam is $L$ and its mass is $m$. Point $O$ is position of center of the mass of the beam. Distance of point $B$ from point $O$ is $l_1$ and distance of point $D$ from point $O$ is $l_2$. If angle of the left wire with vertical direction is $\theta_1$ and angle of the right wire with vertical direction is $\theta_2$, find tension formulation of $T_1$ and $T_2$ as function of the other parameters.
 
+{% comment %}
 
 ## Theory
 The problem in Fig. <a href="#fig:shbar-vwire2-0">1</a> is part of statics, where we will use Newton's first law for linear motion
@@ -218,10 +215,10 @@ There are two ways to get $T_1$ and $T_2$
 + two steps through Eqns. \eqref{eqn:shbar-sum-tau=0-applied-B} and \eqref{eqn:shbar-sum-tau=0-applied-D}.
 You can determine which way is better compared to the other based on your own experience.
 
+{% endcomment %}
+
 
 ## References
-1. <a name="ref1"></a>Richard Fitzpatrick, "Rods and cables", in Classical Mechanics: an introductory course, The University of Texas at Austin, 2 Feb 2006, url <http://farside.ph.utexas.edu/teaching/301/lectures/node128.html> [20201108].
-
-{% endcomment %}
+1. <a name="ref1"></a>-, "QQuestion: A Horizontal Beam Of Mass M And Length L Is Hanging From 2 Massless Wires Attached To The Ceiling, As Shown In The Figure Below. Both Wires Come Out A...", Chegg Study, url <https://www.chegg.com/homework-help/questions-and-answers/horizontal-beam-mass-m-length-l-hanging-2-massless-wires-attached-ceiling-shown-figure--wi-q41054526> [20201110].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-11-09-statics-beam-horiz-hang-ceil-diag-wire-2.md)
