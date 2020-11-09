@@ -16,7 +16,7 @@ A uniform beam is hung horizontally from ceiling through two vertical wires atta
 
 
 ## Problem
-An uniform beam with mass $m$ and length $L$ is supported horizontally by two vertical wires attached to ceiling as show in following Fig. <a href="#fig:shbar-vwire2-0">1</a>.
+An uniform beam with mass $m$ and length $L$ is supported horizontally by two vertical wires attached to ceiling as shown in following Fig. <a href="#fig:shbar-vwire2-0">1</a>.
 
 {:refdef: style="text-align: center;"}
 ![horizontal beam suspended by two vertical wires](/assets/img/phys/hbar-vwire2-0.png)
