@@ -12,10 +12,10 @@ tags: ["statics"]
 date: 2020-11-09 20:54:00 +07
 permalink: /physics/statics-beam-horiz-hang-ceil-diag-wire-2
 ---
-A uniform beam is hung horizontally from ceiling through two wires attached at some positions on the beam, where each wire has different angle with vertical direction. It is a simpler case of a horizontal beam suspended by two cables, where a person standing on one of the end of the beam [[1](#ref1)].
+A uniform beam is hung horizontally from ceiling through two wires attached at some positions on the beam, where each wire has different angle with horizontal direction. It is a simpler case of a horizontal beam suspended by two cables, where a person standing on one of the end of the beam [[1](#ref1)].
 
 ## Problem
-An uniform beam is supported horizontally by two wires attached to ceiling, where each wire has different angle with vertical direction as shown in following Fig. <a href="#fig:shbar-vwire2-0">1</a>. The beam is in a stable condition.
+An uniform beam is supported horizontally by two wires attached to ceiling, where each wire has different angle with horizontal direction as shown in following Fig. <a href="#fig:shbar-vwire2-0">1</a>. The beam is in a stable condition.
 
 {:refdef: style="text-align: center;"}
 ![horizontal beam suspended by two vertical wires](/assets/img/phys/hbar-dwire2-0.png)
@@ -23,7 +23,7 @@ An uniform beam is supported horizontally by two wires attached to ceiling, wher
 Figure <a name="fig:shbar-vwire2-0">1</a> A beam supported horizontally by two vertical wires.
 {: refdef}
 
-Tension of left wire is marked as $T_1$, while tension of the other wire is marked as $T_2$. Length of the beam is $L$ and its mass is $m$. Point $O$ is position of center of the mass of the beam. Distance of point $B$ from point $O$ is $l_1$ and distance of point $D$ from point $O$ is $l_2$. If angle of the left wire with vertical direction is $\theta_1$ and angle of the right wire with vertical direction is $\theta_2$, find tension formulation of $T_1$ and $T_2$ as function of the other parameters.
+Tension of left wire is marked as $T_1$, while tension of the other wire is marked as $T_2$. Length of the beam is $L$ and its mass is $m$. Point $O$ is position of center of the mass of the beam. Distance of point $B$ from point $O$ is $l_1$ and distance of point $D$ from point $O$ is $l_2$. If angle of the left wire with horizontal direction is $\theta_1$ and angle of the right wire with horizontal direction is $\theta_2$, find tension formulation of $T_1$ and $T_2$ as function of the other parameters.
 
 {% comment %}
 
