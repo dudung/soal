@@ -12,16 +12,14 @@ tags: ["statics"]
 date: 2020-11-10 05:30:00 +07
 permalink: /physics/statics-beam-diag-fless-wall-fric-floor
 ---
-..
+A uniform beam is diagonally positioned in such posture, so that left end of the beam is on a frictionless wall and the right end of the beam is on a floor with friction. The left end is at higher position in vertical direction compared to the right end. It is usually related to ladder [[1](#ref1)].
 
-{% comment %}
-A uniform beam is hung horizontally from ceiling through two wires attached at some positions on the beam, where each wire has different angle with horizontal direction. It is a simpler case of a horizontal beam suspended by two cables, where a person standing on one of the end of the beam [[1](#ref1)].
 
 ## Problem
 An uniform beam is supported horizontally by two wires attached to ceiling, where each wire has different angle with horizontal direction as shown in following Fig. <a href="#fig:shbar-vwire2-0">1</a>. The beam is in a stable condition.
 
 {:refdef: style="text-align: center;"}
-![horizontal beam suspended by two vertical wires](/assets/img/phys/hbar-dwire2-0.png)
+![diagonal beam frictionless wall rough floor](/assets/img/phys/dbar-floor-wall-0.png)
 <br />
 Figure <a name="fig:shbar-vwire2-0">1</a> A beam supported horizontally by two vertical wires.
 {: refdef}
@@ -222,8 +220,6 @@ You can determine which way is better compared to the other based on your own ex
 
 
 ## References
-1. <a name="ref1"></a>-, "QQuestion: A Horizontal Beam Of Mass M And Length L Is Hanging From 2 Massless Wires Attached To The Ceiling, As Shown In The Figure Below. Both Wires Come Out A...", Chegg Study, url <https://www.chegg.com/homework-help/questions-and-answers/horizontal-beam-mass-m-length-l-hanging-2-massless-wires-attached-ceiling-shown-figure--wi-q41054526> [20201110].
-
-{% endcomment %}
+1. <a name="ref1"></a>William Moebs, Samuel J. Ling, Jeff Sanny, "Figure 12.14 A 5.0-m-long ladder rests against a frictionless wall.", in 12.2 Examples of Static Equilibrium, University Physics, vol. 1, OpenStax, 2016, url <https://opentextbc.ca/universityphysicsv1openstax/chapter/12-2-examples-of-static-equilibrium/> [20201111]..
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-11-10-statics-beam-diag-fless-wall-fric-floor.md)
