@@ -16,15 +16,15 @@ A uniform beam is diagonally positioned in such posture, so that left end of the
 
 
 ## Problem
-An uniform beam is supported horizontally by two wires attached to ceiling, where each wire has different angle with horizontal direction as shown in following Fig. <a href="#fig:shbar-vwire2-0">1</a>. The beam is in a stable condition.
+A ladder, represented by an uniform beam, is positioned diagonally as shown in Fig. <a href="#dbar-floor-wall-0">1</a>, where the beam is in a stable condition. The wall is frictionless, while there is friction between right end of the beam and the floor.
 
 {:refdef: style="text-align: center;"}
 ![diagonal beam frictionless wall rough floor](/assets/img/phys/dbar-floor-wall-0.png)
 <br />
-Figure <a name="fig:shbar-vwire2-0">1</a> A beam supported horizontally by two vertical wires.
+Figure <a name="dbar-floor-wall-0">1</a> A beam supported horizontally by two vertical wires.
 {: refdef}
 
-Tension of left wire is marked as $T_1$, while tension of the other wire is marked as $T_2$. Length of the beam is $L$ and its mass is $m$. Point $O$ is position of center of the mass of the beam. Distance of point $B$ from point $O$ is $l_1$ and distance of point $D$ from point $O$ is $l_2$. If angle of the left wire with horizontal direction is $\theta_1$ and angle of the right wire with horizontal direction is $\theta_2$, find tension formulation of $T_1$ and $T_2$ as function of the other parameters.
+Normal force from the wall to the beam is $N_{\rm wall}$ and form the floor $N_{\rm floor}$. There is also static friction between the beam and and the floor, named as $f_{\rm floor}$. Gravitational force $w$ is from point $O$ downward in the same direction with gravitational acceleration $\vec{g}$. Draw the free-body diagram of the beam and write all relations between $w$, $N_{\rm wall}$, $N_{\rm floor}$, and $f_{\rm floor}$ through length of the beam $L$ and angle of the beam with horizontal direction $\theta$.
 
 {% comment %}
 
