@@ -228,4 +228,4 @@ You can determine which way is better compared to the other based on your own ex
 
 {% endcomment %}
 
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-11-10-statics-beam-diag-fless-wall-fric-floor.md)
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-11-12-simple-harmonic-motion.md)

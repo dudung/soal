@@ -14,6 +14,15 @@ permalink: /abm/population-grow
 ---
 ..
 
+
+## Exponential
+
+
+## Pairing
+
+
+
+
 {% comment %}
 Demographics information of Indonesia will be discussed here.
 
