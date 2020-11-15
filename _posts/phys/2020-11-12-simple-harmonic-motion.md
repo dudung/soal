@@ -30,6 +30,22 @@ which give soulution of
 x(t) = A \sin (\omega t + \varphi_0).
 \end{equation}
 
+From Eqn. \eqref{eqn:shm-diff-eqn-soulution} we can have
+
+\begin{equation}
+\label{eqn:shm-diff-eqn-soulution-ddt}
+\frac{dx}{dt} = \omega A \cos (\omega t + \varphi_0).
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:shm-diff-eqn-soulution-d2dtd}
+\frac{d^2x}{dt^2} = -\omega^2 A \sin (\omega t + \varphi_0).
+\end{equation}
+
+Substitute Eqns. \eqref{eqn:shm-diff-eqn-soulution} and \eqref{eqn:shm-diff-eqn-soulution-d2dtd} to Eqn. \eqref{eqn:shm-diff-eqn} will make left side of the equation zero as the right side.
+
 
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Simple harmonic motion", Wikipedia, The Free Encyclopedia, 19 Oct 2020, 03:17 UTC, url <https://en.wikipedia.org/w/index.php?oldid=984257153> [20201115].
