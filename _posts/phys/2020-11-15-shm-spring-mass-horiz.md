@@ -79,11 +79,38 @@ Eqn. \eqref{eqn:shm-sms-hfless-system-formulation} is a differential equation of
 x(t) = A \sin (\omega t + \varphi_0),
 \end{equation}
 
-with $\varphi_0$ is initial phase of the oscillation.
+with $\varphi_0$ is initial phase of the oscillation. Its unit is $\rm rad$.
 
 
 ## Some relations
-Related to the solution given by Eqn. \eqref{eqn:shm-sms-diff-eqn-soulution}
+Related to the solution given by Eqn. \eqref{eqn:shm-sms-diff-eqn-soulution} there are some relations that are already common
+
+\begin{equation}
+\label{eqn:shm-sms-diff-eqn-soulution-rel-0}
+\omega = 2\pi f,
+\end{equation}
+
+\begin{equation}
+\label{eqn:shm-sms-diff-eqn-soulution-rel-1}
+T = \frac{1}{f},
+\end{equation}
+
+\begin{equation}
+\label{eqn:shm-sms-diff-eqn-soulution-rel-2}
+x_\max = A,
+\end{equation}
+
+\begin{equation}
+\label{eqn:shm-sms-diff-eqn-soulution-rel-3}
+v_\max = \omega A,
+\end{equation}
+
+\begin{equation}
+\label{eqn:shm-sms-diff-eqn-soulution-rel-4}
+a_\max = \omega^2 A,
+\end{equation}
+
+where $\omega$ is angular frequency and $f$ is frequency. Their unit are $\rm rad/s$ and $\rm Hz$, respectively. Unit of $A$ and $x$ are length unit, eq. $\rm m$, $\rm cm$, or $\rm mm$.
 
 
 ## References
