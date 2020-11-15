@@ -6,7 +6,7 @@ mathjax: true
 ptext: false
 x3dom: false
 threejs: false
-oo: true
+oo: false
 category: physics
 tags: ["statics"]
 date: 2020-11-14 18:23:00 +07
