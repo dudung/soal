@@ -12,10 +12,29 @@ tags: ["statics"]
 date: 2020-11-12 19:30:00 +07
 permalink: /physics/simple-harmonic-motion
 ---
-A special type of periodic motion is simple harmonic motion (SHM), where object displacement causes restoring force in opposite direction and always towards the equilibrium position of the object performing SHM [[1](#ref1)].
+A special type of periodic motion is simple harmonic motion (SHM), where object displacement causes restoring force in opposite direction and always towards the equilibrium position of the object performing SHM [[1](#ref1)]. Pendulum and spring-mass systems are examples of periodic motion  [[2](#ref2)].
+
+
+## Differential equation
+A system performing SHM will have a differential equation in the form of [[3](#ref3)]
+
+\begin{equation}
+\label{eqn:shm-diff-eqn}
+\frac{d^2 x}{dt^2} + \omega^2 x = 0,
+\end{equation}
+
+which give soulution of
+
+\begin{equation}
+\label{eqn:shm-diff-eqn-soulution}
+x(t) = A \sin (\omega t + \varphi_0).
+\end{equation}
 
 
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Simple harmonic motion", Wikipedia, The Free Encyclopedia, 19 Oct 2020, 03:17 UTC, url <https://en.wikipedia.org/w/index.php?oldid=984257153> [20201115].
+2. <a name="ref2"></a>Carl R. Nave, "Periodic Motion", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/permot.html> [20201115].
+3. <a name="ref3"></a>-, "Simple Harmonic Motion", BYJU'S The Learning App, url <https://byjus.com/jee/simple-harmonic-motion-shm/> [20201115].
+
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-11-12-simple-harmonic-motion.md)
