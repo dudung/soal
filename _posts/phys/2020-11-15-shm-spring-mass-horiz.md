@@ -113,6 +113,12 @@ a_\max = \omega^2 A,
 where $\omega$ is angular frequency and $f$ is frequency. Their unit are $\rm rad/s$ and $\rm Hz$, respectively. Unit of $A$ and $x$ are length unit, eq. $\rm m$, $\rm cm$, or $\rm mm$.
 
 
+## Exercises
+1. <a name="prob1"></a>A $100 \ \rm g$-mass is attached on an ideal spring (linear, massless) with spring constant $4000 \pi^2 \ \rm N/m$ and moving on a frictionless horizontal surface. Find oscillation angular frequency, frequency, and period of the system.
+{% comment %} Answer: $\omega = 200\pi \ \rm rad/s$, $f = 200 \ \rm Hz$, $T = 0.01 \ \rm s$. {% endcomment %}
+2. 
+
+
 ## References
 1. <a name="ref1"></a>Sydney Redner, "Mass on a Horizontal Spring", PY211 Lecture Notes, Boston University, Spring 2006, url <http://physics.bu.edu/~redner/211-sp06/class-oscillations/spring_mass.html> [20201116].
 2. <a name="ref2"></a>Wikipedia contributors, "Simple harmonic motion", Wikipedia, The Free Encyclopedia, 19 Oct 2020, 03:17 UTC, url <https://en.wikipedia.org/w/index.php?oldid=984257153> [20201115].
