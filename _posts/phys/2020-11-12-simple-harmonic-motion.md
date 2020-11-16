@@ -47,10 +47,21 @@ and
 Substitute Eqns. \eqref{eqn:shm-diff-eqn-soulution} and \eqref{eqn:shm-diff-eqn-soulution-d2dtd} to Eqn. \eqref{eqn:shm-diff-eqn} will make left side of the equation zero as the right side.
 
 
+## Application
+Some examples of oscillating system are as follow.
+
+**System** | **Restoring force** | **SHM** | **&omega;**
+[spring-mass](shm-spring-mass-horiz) | spring force | yes | $\sqrt{k/m}$
+[simple pendulum](shm-simple-pendulum) | gravitational force | only for small angle | $\sqrt{g/l}$
+thin film [[4](#ref4)] | elastic force | no | $$
+torsional system (rod) [[5](#ref5)] | elastic torque | yes | $\sqrt{\kappa/I}$
+
+
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Simple harmonic motion", Wikipedia, The Free Encyclopedia, 19 Oct 2020, 03:17 UTC, url <https://en.wikipedia.org/w/index.php?oldid=984257153> [20201115].
 2. <a name="ref2"></a>Carl R. Nave, "Periodic Motion", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/permot.html> [20201115].
 3. <a name="ref3"></a>-, "Simple Harmonic Motion", BYJU'S The Learning App, url <https://byjus.com/jee/simple-harmonic-motion-shm/> [20201115].
-
+4. <a name="ref4"></a>Scott Whitney, "Vibrations of Cantilever Beams: Deflection, Frequency, and Research Uses", EngrM 325H, Dr. Negahban (ed.), 23 Apr 1999, url <http://emweb.unl.edu/Mechanics-Pages/Scott-Whitney/325hweb/Beams.htm> [20201116].
+5. <a name="ref5"></a>-, "Question: Calculate The Natural Frequency Omega_n Of Oscillation Of The Torsional System Given Below. You Are Given That The Equivalent Torsional Stiffness Of The Rod Is K_t, Eq = GJ_p/l Where J_p Is The", Chegg Study, url <https://www.chegg.com/homework-help/questions-and-answers/calculate-natural-frequency-omegan-oscillation-torsional-system-given--given-equivalent-to-q16591427> [20201116].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-11-12-simple-harmonic-motion.md)
