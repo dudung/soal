@@ -159,3 +159,4 @@ Fig. <a href="#fig:x">1</a>.
 Figure <a name="fig:x">1</a> ...
 {: refdef}
 {% endcomment %}
+
