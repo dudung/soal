@@ -119,7 +119,7 @@ We can view the SHM as an analogy of circular motion. A nice simulation using Ge
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/gg/shm-geogebra-ftas.png)
 <br />
-Figure <a name="fig:shm-sms-geogebra-ftas">1</a> Simulation of a spring-mass sytem and how its parameters of motion, e.g. position $x$, velocity $v$, acceleration $a$, are evolving.
+Figure <a name="fig:shm-sms-geogebra-ftas">4</a> Simulation of a spring-mass sytem and how its parameters of motion, e.g. position $x$, velocity $v$, acceleration $a$, are evolving.
 {: refdef}
 
 You can have explore the simulation [here](https://www.geogebra.org/m/sgsvd7js). Amplitude $A$ and frequency $f$ can be changed. Animation speed might be also adjusted for better view. You can also drag the time slide bar to see position of the object at a certain desired time $t$.
@@ -159,4 +159,3 @@ Fig. <a href="#fig:x">1</a>.
 Figure <a name="fig:x">1</a> ...
 {: refdef}
 {% endcomment %}
-
