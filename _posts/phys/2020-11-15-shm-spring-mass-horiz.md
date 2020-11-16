@@ -116,9 +116,10 @@ where $\omega$ is angular frequency and $f$ is frequency. Their unit are $\rm ra
 ## Exercises
 1. <a name="prob1"></a>A $100 \ \rm g$-mass is attached on an ideal spring (linear, massless) with spring constant $4000 \pi^2 \ \rm N/m$ and moving on a frictionless horizontal surface. Find oscillation angular frequency, frequency, and period of the system.
 {% comment %} Answer: $\omega = 200\pi \ \rm rad/s$, $f = 200 \ \rm Hz$, $T = 0.01 \ \rm s$. {% endcomment %}
-2. <a name="prob2"></a>A spring-mass system on a frictionless horizontal surface is performing a simple harmonic motion with oscillation period of $0.1 \ \rm s$. If the system amplitude is $1 \ \rm cm$, find oscillation frequency and angular frequency, then calculate the object maximum velocity and acceleration.
+2. <a name="prob2"></a>A spring-mass system on a frictionless horizontal surface is performing a simple harmonic motion (SHM) with oscillation period of $0.1 \ \rm s$. If the system amplitude is $1 \ \rm cm$, find oscillation frequency and angular frequency, then calculate the object maximum velocity and acceleration.
 {% comment %} Answer: $f = 10 \ \rm Hz$, $\omega = 20\pi \ \rm rad/s$, $v_\max = 0.2\pi \ \rm m/s$, $a_\max = 4\pi^2 \ \rm m/s^2$. {% endcomment %}
-3. 
+3. A mass $m$ attached on an ideal spring is performing an SHM on a frictionless horizontal surface with maxsimum acceleration $0.2\pi^2 \ \rm m/s^2$ and maksimum velocity $0.1\pi \ \rm m/s$. Find oscillation angular velocity and amplitude. If $m = 1000/\pi^2 \ \rm g$, find the spring constant.
+{% comment %} Answer: $\omega = 2\pi \ \rm rad/s$, $A = 0.05 \ \rm m$, $k = 4 \ \rm N/m$. {% endcomment %}
 
 
 ## References
