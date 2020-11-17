@@ -76,7 +76,9 @@ See the torsion test demonstration of cast iron and carbon steel [[7](#ref7)].
 
 
 ## P05
-..
+Read the formulation of cantilever beam for single load at the end and its maximum deflection [[8](#ref8)]. And then see the video about related experiment [[9](#ref9)].
+
+**Question** Find the data of beam deflection for each given mass from the experiment. Plot the curve and describe how to get the elastic modulus.
 
 
 ## Note
@@ -91,7 +93,13 @@ There is not any note for now.
 5. <a name="ref5"></a>amritacreate, "Young's Modulus - MeitY OLabs", YouTube, 06.02.2017, url <https://www.youtube.com/watch?v=50VYcOryCXo> [20201117].
 6. <a name="ref6"></a>-, "Trendline", Excel Easy, url <https://www.excel-easy.com/examples/trendline.html> [20201117].
 7. <a name="ref7"></a>Engineers Academy, "Torsion Test Demonstration: Cast Iron and Carbon Steel", YouTube, 28.08.2018, url <https://www.youtube.com/watch?v=qPIug2sewFA> [20201117].
+8. <a name="ref8"></a>-, "Cantilever Beams - Moments and Deflections", The Engineering ToolBox, 2013, url <https://www.engineeringtoolbox.com/cantilever-beams-d_1848.html> [20201117].
+9. <a name="ref9"></a>Diogo Montalvao, "Cantilever beam Experiment.mp4", YouTube, 25.02.2013, url <https://www.youtube.com/watch?v=P3rcO1UMxYw> [20201117].
+10. <a name="ref10"></a>-, "Young’s Modulus Practice Problems Answer Key", Teach Engineering, url <https://www.teachengineering.org/content/van_/lessons/van_floppy/van_floppy_lesson02_practice_problemsas_v2_tedl_dwc.pdf> [20201117].
+11. <a name="ref11"></a>-, "Solved Example Problems for Moduli of elasticity", BrainKart.com, url <http://www.brainkart.com/article/Solved-Example-Problems-for-Moduli-of-elasticity_36177/> [20201117].
+12. <a name="ref12"></a>-, "Young's Modulus Problems", IIT JEE Physics, 2015, url <https://www.concepts-of-physics.com/mechanics/youngs-modulus.php> [20201117].
 
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/quiz/2020-11-17-elasticity.md)
 
 {% comment %}
 Fig. <a href="#fig:vec-arrow-1">1</a>.
