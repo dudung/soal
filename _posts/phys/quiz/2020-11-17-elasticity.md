@@ -44,7 +44,9 @@ which turns Eqn. \eqref{eq:qelas-young-modulus} to
 E = \frac{F/A}{\Delta L / L} = \frac{FL}{A\Delta L}.
 \end{equation}
 
-In the stress-strain graph Young's modulus is the gradient of the curve in the elastic region. Using the table provided in [[1](#ref1)] draw illustratively in a $\sigma-\varepsilon$ graph the elastic region of steel (solid line -----), glass (dashed line - - -), concerete (dotted line $\cdots$), and wood (dotted-dashed line $-\cdot-\cdot-$).
+In the stress-strain graph Young's modulus is the gradient of the curve in the elastic region.
+
+**Question** Using the table provided in [[1](#ref1)] draw illustratively in a $\sigma-\varepsilon$ graph the elastic region of steel (solid line -----), glass (dashed line - - -), concerete (dotted line $\cdots$), and wood (dotted-dashed line $-\cdot-\cdot-$).
 
 
 ## P02
@@ -55,180 +57,32 @@ Shear modulus is defined as
 G = \frac{F/A}{\Delta x / L},
 \end{equation}
 
-as illustrated in [[2](#ref2)], where $F/A$ is shear stress, $\Delta x$ is transverse displacement, and $L$ is initial length. Notice that $F$ paralel to the surface $A$.
+as illustrated in [[2](#ref2)], where $F/A$ is shear stress, $\Delta x$ is transverse displacement, and $L$ is initial length. Notice that $F$ paralel to the surface $A$ in shear modulus, while in Young's modulus $F$ is perpendicular to $A$. Instead of $G$, we can also use $S$ for shear modulus [[3](#ref3)]. In [[4](#ref4)] people use the configuration of quad shear test specimen to measure the shear modulus of GC1280 polyurethane compound.
 
+**Question** Explain why the quad shear test method is chosen for finding the shear modulus of the GC1280 polyurethane compound? Write also the constant quantities provided from the measurement setup to be used in Eqn. \eqref{eq:qelas-shear-modulus} for dinding the shear modulus.
+{% comment %} Answer: The quad shear test method is chosen because it subjects the polyurethane to only shear loading. {% endcomment %}
+
+
+## P03
+See the tutorial on how to perform an experiment to measure Young's modulus of a wire [[5](#ref5)].
+
+**Question** Make a quantitative graph of stress $\sigma$ againts strain $\varepsilon$ and determine the gradient to get the Young's modulus. Compare the result with provided illustrative graph from the video.
+
+
+## P04
+..
 
 
 ## References
 1. <a name="ref1"></a>Carl R. Nave, "Young's Modulus", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/permot3.html#c2> [20201117].
 2. <a name="ref2"></a>Wikipedia contributors, "Shear modulus", Wikipedia, The Free Encyclopedia, 6 Jul 2020, 19:11 UTC, <https://en.wikipedia.org/w/index.php?oldid=966374343> [20201117].
-
-## Note
-There is not any note for now.
-
-
-
-
-2. <a name="ref2"></a>The Editors of Encyclopaedia Britannica, "Vector", Encyclopædia Britannica, 27 May 2020, url <https://www.britannica.com/science/vector-physics> [20200901].
-3. <a name="ref3"></a>Daniel Haas, "Answer to 'What is a vector?", Quora, 17 Dec 2012, url <https://qr.ae/pNYJ1p> [20200901].
-4. <a name="ref4"></a>Eric W. Weisstein, "Vector", from MathWorld--A Wolfram Web Resource, url <https://mathworld.wolfram.com/Vector.html> [20200901].
-
-6. <a name="ref6"></a>David Frank, Duane Q. Nykamp, "An introduction to vectors", from Math Insight, url <https://mathinsight.org/vector_introduction> [20200901].
-7. <a name="ref7"></a>Khan Academy, "Intro to vectors & scalars \| One-dimensional motion \| Physics \| Khan Academy", YouTube, 12.06.2011, url <https://www.youtube.com/watch?v=ihNZlp7iUHE> [20200901].
-8. <a name="ref8"></a>GCSE Physics, "Vector Diagrams", GCSE Physics, Singapore, 21 Jun 2010, url <http://olevelphysicsblog.blogspot.com/2010/06/vector-diagrams.html> [20200901].
-
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/quiz/2020-11-17-elasticity.md)
-
-
-
-
-
-
-{% comment %}
-## P01
-Two point mass particles perform a one-dimensional collision. Mass of the first particle is $2 \ \rm kg$ and of the second is $1 \ \rm kg$. Before the collision their velocities are $2 \ \rm m/s$ and $-4 \ \rm m/s$. After the collision velocity of the second particle is $2 \ \rm m/s$.
-+ Find final velocity of the first particle.
-+ Calculate total kinetic energy of the system before collision.
-+ Calculate total kinetic energy of the system after collision.
-+ Calculate the change of kinetic energy during the collision and determine whether it is an elastic collision or not.
-
-
-## P02
-In a one-dimensional collision of two point mass particle initial velocities of first and second particles are $2 \ \rm m/s$ and $-4 \ \rm m/s$, respectively. Final velocity of the first particle is $-2 \ \rm m/s$. Mass of the particles are $2 \ \rm kg$ and $1 \ \rm kg$.
-+ Find final velocity of the second particle.
-+ Calculate velocity of center of mass of the system before and after + Find change of kinetic due to collision.
-collision.
-+ Determine whether it is an elastic collision or not.
-
-
-## P03
-First particle moves with initial velocity $4 \ \rm m/s$ collides a stationary second particle. After the collision the first particle stops and the second moves with a certain velociyt. Both particles have identical mass.
-+ Calculate velocity of center of mass of the system before collision.
-+ What suppose the velocity of center of mass after collision? Why>
-+ Find final velocity of the the second particle.
-+ Calculate the coefficient of restitution (COR) between two paricles
-\begin{equation}
-\label{eq:qmi-cor}
-e = - \left( \frac{v_{1f} - v_{2f}}{v_{1i} - v_{2i}} \right).
-\end{equation}
-
-
-## P04
-In one-dimensional elastic collision or $e = 1$ following formulations
-
-\begin{equation}
-\label{eq:qmi-elastic-collision-1d-v1f}
-v_{1f} = \left( \frac{m_1 - m_2}{m_1 + m_2} \right) v_{1i} + \left( \frac{2 m_2}{m_1 + m_2} \right) v_{2i}
-\end{equation}
-
-and
-
-\begin{equation}
-\label{eq:qmi-elastic-collision-1d-v2f}
-v_{2f} = \left( \frac{2 m_1}{m_1 + m_2} \right) v_{1i} + \left( \frac{m_2 - m_1}{m_1 + m_2} \right) v_{2i}
-\end{equation}
-
-hold. Two particle with mass of $1 \ \rm kg$ and $1 \ \rm kg$ have initial velocities of $2 \ \rm m/s$ and $-4 \ \rm m/s$, respectively.
-
-+ Find final velocity of the first particle.
-+ Find final velocity of the second particle.
-+ Calculate change of kinetic energy due to collsion.
-+ Calculate COR using Eqn. \eqref{eq:qmi-cor}.
-
-
-## P05
-An average force $F_{\rm avg}$ is applied to a $200 \ \rm g$-particle, which is initially at rest. Later, the particle is moving with velocity of $1 \ \rm m/s$.
-+ Find the impulse applied to the particle.
-+ Find the average force $F_{\rm avg}$ if it works on the particle about $0.01 \ \rm s$.
-
-
-## P06
-In a graph of $F$ againts $t$ there are lines connecting the points $(0.01, 0)$, $(0.02, 100)$, $(0.03, 100)$, and $(0.05, 0)$. In the bracket $()$, first variable is for time $t$, while the second is for force $F$.
-
-{:refdef: style="text-align: center;"}
-![..](/assets/img/phys/imp-force-00.png)
-<br />
-Figure <a name="fig:qmi-imp-force-00">1</a> Force given between $0.01 \ \rm s$ and $0.05 \ \rm s$.
-{: refdef}
-
-+ Divide the area into three part I, II, and III.
-+ Calculate the area of each part.
-+ Sum all area to get the impulse $I$.
-
-
-## P07
-A force $F$ is drawn in a graph of $F$ versus $t$, which consisted of two lines connecting points $(0.01, 0)$, $(0.02, 100)$, and $(0.03, 0)$.
-
-{:refdef: style="text-align: center;"}
-![..](/assets/img/phys/imp-force-01.png)
-<br />
-Figure <a name="fig:qmi-imp-force-01">2</a> Force given between $0.01 \ \rm s$ and $0.03 \ \rm s$..
-{: refdef}
-
-+ Find the impulse due to the given force.
-+ There is a particle with mass of $2 \ \rm kg$ and initial velocity of $1 \ \rm m/s$. Find its final velocity due to the impulse induced by the given force.
-
-
-## P08
-A force in two-dimensional is given to a particle with initial velocity of $\vec{v} = (2 \ \hat{i} + 6 \hat{j}) \ \rm m/s$ and mass of $0.5 \ \rm kg$. In graph of $F_x$ againts $t$ we have lines connecting the points $(0.02, 0)$, $(0.02, 200)$, $(0.04, 200)$, and $(0.04, 0)$, while in graph of $F_y$ versus $t$ we have the lines connecting the points $(0.02, 0)$, $(0.04, 200)$, and $(0.04, 0)$.
-
-{:refdef: style="text-align: center;"}
-![..](/assets/img/phys/imp-force-02.png)
-<br />
-Figure <a name="fig:qmi-imp-force-02">3</a> Force given between $0.01 \ \rm s$ and $0.05 \ \rm s$ in $x$ and $y$ directions.
-{: refdef}
-
-+ Find the final velocity componen in $x$-direction or $v_x$.
-+ Find the final velocity componen in $y$-direction or $v_y$.
-+ Write the final velocity in vector form.
-+ Calculate the magnitude of the final velocity.
-
-
-## P09
-There are two particles perform a two-dimensional collision on top of a level and frictionless surface. We well see the collsion from above and take a horizontal line as reference where the first particle moves to the right parallel to this line witht initial velocity of $\vec{v}_i = (3 \ \hat{i}) \ \rm m/s$. Mass of the first particle is $2 \ \rm kg$, while the second is $\sqrt{3} \ \rm kg$. After the collsion the firt particle moves with certain velocity that makes an angel about $30^\circ$ below the horizontal line, while the second moves with certain velocity that makes an angel about $60^\circ$ above the line.
-+ Write the equation of initial and final velocities of two particles in $x$-direction (parallel to the horizontal line).
-+ Write the equation of initial and final velocities of two particles in $y$-direction (perpendicular to the horizontal line)
-+ Find the final velocities of each particles and represent them in vector form.
-
-
-## P10
-In a one-dimensional collision of two particles, where the collision has a certain coefficient of restitution (COR), the formulation will be different than in Eqns. \eqref{eq:qmi-elastic-collision-1d-v1f} and \eqref{eq:qmi-elastic-collision-1d-v2f}, which will be as follow
-
-\begin{equation}
-\label{eq:qmi-cor-collision-1d-v1f}
-v_{1f} = \left[ \frac{m_1 - e m_2}{m_1 + m_2} \right] v_{1i} + \left[ \frac{(1 + e) m_2}{m_1 + m_2} \right] v_{2i}
-\end{equation}
-
-and
-
-\begin{equation}
-\label{eq:qmi-cor-collision-1d-v2f}
-v_{2f} = \left[ \frac{(1 + e) m_1}{m_1 + m_2} \right] v_{1i} + \left[ \frac{m_2 - e m_1}{m_1 + m_2} \right] v_{2i},
-\end{equation}
-
-where $e$ is the COR.
-+ Show how Eqns. \eqref{eq:qmi-cor-collision-1d-v1f} and \eqref{eq:qmi-cor-collision-1d-v2f} can be changed to previous Eqns. \eqref{eq:qmi-elastic-collision-1d-v1f} and \eqref{eq:qmi-elastic-collision-1d-v2f}.
-+ Which equations are the more general form? Why?
+3. <a name="ref3"></a>Vatche Deyirmenjian, David Harrison (eds.), "Shear Modulus", First Year Physics Laboratory, University of Toronto, 2 Mar 2020, url <https://faraday.physics.utoronto.ca/IYearLab/WilberforceRefShear4of8.pdf> [20201117].
+4. <a name="ref4"></a>Gallagher Corporation, "Determining the Shear Modulus of Polyurethane \| Gallagher Corporation", YouTube, 03.02.2015, url <https://www.youtube.com/watch?v=TSXDdyvJ_uc> [20201117].
+5. <a name="ref5"></a>amritacreate, "Young's Modulus - MeitY OLabs", YouTube, 06.02.2017, url <https://www.youtube.com/watch?v=50VYcOryCXo> [20201117].
 
 
 ## Note
 There is not any note for now.
-
-
-## References
-1. <a name="ref1"></a>Carl R. Nave, "Basic Vector Operations", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/vect.html> [20200901].
-2. <a name="ref2"></a>The Editors of Encyclopaedia Britannica, "Vector", Encyclopædia Britannica, 27 May 2020, url <https://www.britannica.com/science/vector-physics> [20200901].
-3. <a name="ref3"></a>Daniel Haas, "Answer to 'What is a vector?", Quora, 17 Dec 2012, url <https://qr.ae/pNYJ1p> [20200901].
-4. <a name="ref4"></a>Eric W. Weisstein, "Vector", from MathWorld--A Wolfram Web Resource, url <https://mathworld.wolfram.com/Vector.html> [20200901].
-5. <a name="ref5"></a>Wikipedia contributors, "Vector (mathematics and physics)", Wikipedia, The Free Encyclopedia, 22 August 2020, 14:24 UTC, <https://en.wikipedia.org/w/index.php?oldid=974354203> [20200901].
-6. <a name="ref6"></a>David Frank, Duane Q. Nykamp, "An introduction to vectors", from Math Insight, url <https://mathinsight.org/vector_introduction> [20200901].
-7. <a name="ref7"></a>Khan Academy, "Intro to vectors & scalars \| One-dimensional motion \| Physics \| Khan Academy", YouTube, 12.06.2011, url <https://www.youtube.com/watch?v=ihNZlp7iUHE> [20200901].
-8. <a name="ref8"></a>GCSE Physics, "Vector Diagrams", GCSE Physics, Singapore, 21 Jun 2010, url <http://olevelphysicsblog.blogspot.com/2010/06/vector-diagrams.html> [20200901].
-
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/quiz/2020-11-17-elasticity.md)
-
-{% endcomment %}
-
 
 
 {% comment %}
