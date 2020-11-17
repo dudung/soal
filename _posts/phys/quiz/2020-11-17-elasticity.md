@@ -81,6 +81,12 @@ Read the formulation of cantilever beam for single load at the end and its maxim
 **Question** Find the data of beam deflection for each given mass from the experiment. Plot the curve and describe how to get the elastic modulus.
 
 
+## P06
+Read [[10](#ref10) - [12](#ref12)] and think about an applications.
+
+**Question** Create a question and also its answer from the given examples.
+
+
 ## Note
 There is not any note for now.
 
