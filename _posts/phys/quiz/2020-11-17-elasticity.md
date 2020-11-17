@@ -14,8 +14,77 @@ permalink: /physics/quiz/elasticity
 ---
 Examples of elasticity are discussed here.
 
-[[1](#ref1)]
 
+## P01
+Young's modulus $E$ is defined as ratio of stress $\sigma$ to strain $\varepsilon$
+
+\begin{equation}
+\label{eq:qelas-young-modulus}
+E = \frac{\sigma}{\varepsilon}
+\end{equation}
+
+where stress is
+
+\begin{equation}
+\label{eq:qelas-young-modulus-stress}
+\sigma = \frac{F}{A}
+\end{equation}
+
+and strain is
+
+\begin{equation}
+\label{eq:qelas-young-modulus-strain}
+\varepsilon = \frac{\Delta L}{L},
+\end{equation}
+
+which turns Eqn. \eqref{eq:qelas-young-modulus} to
+
+\begin{equation}
+\label{eq:qelas-young-modulus-2}
+E = \frac{F/A}{\Delta L / L} = \frac{FL}{A\Delta L}.
+\end{equation}
+
+In the stress-strain graph Young's modulus is the gradient of the curve in the elastic region. Using the table provided in [[1](#ref1)] draw illustratively in a $\sigma-\varepsilon$ graph the elastic region of steel (solid line -----), glass (dashed line - - -), concerete (dotted line $\cdots$), and wood (dotted-dashed line $-\cdot-\cdot-$).
+
+
+## P02
+Shear modulus is defined as
+
+\begin{equation}
+\label{eq:qelas-shear-modulus}
+G = \frac{F/A}{\Delta x / L},
+\end{equation}
+
+as illustrated in [[2](#ref2)], where $F/A$ is shear stress, $\Delta x$ is transverse displacement, and $L$ is initial length. Notice that $F$ paralel to the surface $A$.
+
+
+
+## References
+1. <a name="ref1"></a>Carl R. Nave, "Young's Modulus", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/permot3.html#c2> [20201117].
+2. <a name="ref2"></a>Wikipedia contributors, "Shear modulus", Wikipedia, The Free Encyclopedia, 6 Jul 2020, 19:11 UTC, <https://en.wikipedia.org/w/index.php?oldid=966374343> [20201117].
+
+## Note
+There is not any note for now.
+
+
+
+
+2. <a name="ref2"></a>The Editors of Encyclopaedia Britannica, "Vector", Encyclopædia Britannica, 27 May 2020, url <https://www.britannica.com/science/vector-physics> [20200901].
+3. <a name="ref3"></a>Daniel Haas, "Answer to 'What is a vector?", Quora, 17 Dec 2012, url <https://qr.ae/pNYJ1p> [20200901].
+4. <a name="ref4"></a>Eric W. Weisstein, "Vector", from MathWorld--A Wolfram Web Resource, url <https://mathworld.wolfram.com/Vector.html> [20200901].
+
+6. <a name="ref6"></a>David Frank, Duane Q. Nykamp, "An introduction to vectors", from Math Insight, url <https://mathinsight.org/vector_introduction> [20200901].
+7. <a name="ref7"></a>Khan Academy, "Intro to vectors & scalars \| One-dimensional motion \| Physics \| Khan Academy", YouTube, 12.06.2011, url <https://www.youtube.com/watch?v=ihNZlp7iUHE> [20200901].
+8. <a name="ref8"></a>GCSE Physics, "Vector Diagrams", GCSE Physics, Singapore, 21 Jun 2010, url <http://olevelphysicsblog.blogspot.com/2010/06/vector-diagrams.html> [20200901].
+
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/quiz/2020-11-17-elasticity.md)
+
+
+
+
+
+
+{% comment %}
 ## P01
 Two point mass particles perform a one-dimensional collision. Mass of the first particle is $2 \ \rm kg$ and of the second is $1 \ \rm kg$. Before the collision their velocities are $2 \ \rm m/s$ and $-4 \ \rm m/s$. After the collision velocity of the second particle is $2 \ \rm m/s$.
 + Find final velocity of the first particle.
@@ -156,6 +225,18 @@ There is not any note for now.
 7. <a name="ref7"></a>Khan Academy, "Intro to vectors & scalars \| One-dimensional motion \| Physics \| Khan Academy", YouTube, 12.06.2011, url <https://www.youtube.com/watch?v=ihNZlp7iUHE> [20200901].
 8. <a name="ref8"></a>GCSE Physics, "Vector Diagrams", GCSE Physics, Singapore, 21 Jun 2010, url <http://olevelphysicsblog.blogspot.com/2010/06/vector-diagrams.html> [20200901].
 
-
-
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/quiz/2020-11-17-elasticity.md)
+
+{% endcomment %}
+
+
+
+{% comment %}
+Fig. <a href="#fig:vec-arrow-1">1</a>.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/imp-force-01.png)
+<br />
+Figure <a name="fig:qmi-imp-force-01">2</a> Force given between $0.01 \ \rm s$ and $0.03 \ \rm s$..
+{: refdef}
+{% endcomment %}
