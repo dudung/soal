@@ -66,11 +66,21 @@ as illustrated in [[2](#ref2)], where $F/A$ is shear stress, $\Delta x$ is trans
 ## P03
 See the tutorial on how to perform an experiment to measure Young's modulus of a wire [[5](#ref5)].
 
-**Question** Make a quantitative graph of stress $\sigma$ againts strain $\varepsilon$ and determine the gradient to get the Young's modulus. Compare the result with provided illustrative graph from the video.
+**Question** Make a quantitative graph of stress $\sigma$ againts strain $\varepsilon$ and determine the gradient to get the Young's modulus. Simply use a spreadsheet application, e.g. MS Excel, and its trendline feature [[6](#ref6)]. Compare the result with provided illustrative graph from the video.
 
 
 ## P04
+See the torsion test demonstration of cast iron and carbon steel [[7](#ref7)].
+
+**Question** Determine first the twist degree every click and then find the data of torque (in $\rm N \cdot m$) and the twist angle (in $\rm rad$) for the cast iron and $0.4\%$ carbon steel. Plot the curve or torque versus twist angle. Explain the modulus their plasticity feature.
+
+
+## P05
 ..
+
+
+## Note
+There is not any note for now.
 
 
 ## References
@@ -79,10 +89,8 @@ See the tutorial on how to perform an experiment to measure Young's modulus of a
 3. <a name="ref3"></a>Vatche Deyirmenjian, David Harrison (eds.), "Shear Modulus", First Year Physics Laboratory, University of Toronto, 2 Mar 2020, url <https://faraday.physics.utoronto.ca/IYearLab/WilberforceRefShear4of8.pdf> [20201117].
 4. <a name="ref4"></a>Gallagher Corporation, "Determining the Shear Modulus of Polyurethane \| Gallagher Corporation", YouTube, 03.02.2015, url <https://www.youtube.com/watch?v=TSXDdyvJ_uc> [20201117].
 5. <a name="ref5"></a>amritacreate, "Young's Modulus - MeitY OLabs", YouTube, 06.02.2017, url <https://www.youtube.com/watch?v=50VYcOryCXo> [20201117].
-
-
-## Note
-There is not any note for now.
+6. <a name="ref6"></a>-, "Trendline", Excel Easy, url <https://www.excel-easy.com/examples/trendline.html> [20201117].
+7. <a name="ref7"></a>Engineers Academy, "Torsion Test Demonstration: Cast Iron and Carbon Steel", YouTube, 28.08.2018, url <https://www.youtube.com/watch?v=qPIug2sewFA> [20201117].
 
 
 {% comment %}
