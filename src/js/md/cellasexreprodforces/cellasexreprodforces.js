@@ -32,6 +32,9 @@
 	0553 Gravout replace Gravitational and it works.
 	0631 Change color according to size of the cell.
 	0653 Can pause for every tpause for saving image manually.
+	20201107
+	0335 Try to seperate two mechanismm for report.
+	0502 Try to create initial configuration.
 */
 
 
@@ -225,7 +228,7 @@ class Growable {
 // Define spherical cell Cell
 class Cell {
 	constructor() {
-		this.D = new Growable(2, 10, 0.1);
+		this.D = new Growable(2, 21, 0.1);
 		this.m = 1;
 		this.q = 0;
 		this.r = new Vect3(50, 50, 0);
@@ -236,12 +239,13 @@ class Cell {
 	
 	setMode() {
 		this.mode = arguments[0];
+		var Trepro = arguments[1];
 		if(this.mode == "budding") {
-			this.tBud = 200;
+			this.tBud = Trepro;
 			this.iBud = this.tBud;
 			this.budding = false;
 		} else if(this.mode == "fission") {
-			this.tFis = 200;
+			this.tFis = Trepro;
 			this.iFis = this.tFis;
 			this.fission = false;
 		}
@@ -295,6 +299,7 @@ var cx, xmin, xmax, XMIN, XMAX;
 var cy, ymin, ymax, YMIN, YMAX;
 var cell, mode, crad;
 var FN, FG;
+var Dmin, Dmax, dD, Trepro;
 
 // Initialize parameters
 function initParams() {
@@ -339,7 +344,17 @@ function initParams() {
 	
 	// Initialize variables and parameters
 	cell = [];
-	mode = "fission";
+	mode = "budding";
+	Dmin = 1;
+	Dmax = 11;
+	dD = 0.1;
+	initConfMode = 2;
+	
+	if(mode == "budding") {
+		Trepro = 100;
+	} else if(mode == "fission") {
+		Trepro = 100;
+	}
 }
 
 
@@ -444,7 +459,7 @@ function clear() {
 function main() {
 	initParams();
 	initElements();
-	proc.pause(250);
+	//proc.pause(125);
 	//proc.start();
 }
 
@@ -458,15 +473,63 @@ function simulate() {
 	// Initialize all variables and coefficient
 	if(proc.cur == proc.beg) {
 		
-		var first = new Cell();
-		first.setMode(mode);
-		first.r = new Vect3(0, 0, 0);
-		first.D = new Growable(2, 10, 0.1);
-		cell.push(first);
+		if(initConfMode == 0) {
+			var first;
+			
+			first = new Cell();
+			first.setMode(mode, Trepro);
+			first.r = new Vect3(0, 0, 0);
+			first.D = new Growable(Dmin, Dmax, dD);
+			cell.push(first);
+		}
+		
+		if(initConfMode == 1) {
+			var first;
+			
+			first = new Cell();
+			first.setMode(mode, Trepro);
+			first.r = new Vect3(-4 * Dmax, 0, 0);
+			first.D = new Growable(Dmin, Dmax, dD);
+			cell.push(first);
+			
+			first = new Cell();
+			first.setMode(mode, Trepro);
+			first.r = new Vect3(4 * Dmax, 0, 0);
+			first.D = new Growable(Dmin, Dmax, dD);
+			cell.push(first);
+		}
+
+		if(initConfMode == 2) {
+			var first;
+			
+			first = new Cell();
+			first.setMode(mode, Trepro);
+			first.r = new Vect3(-4 * Dmax, -4 * Dmax, 0);
+			first.D = new Growable(Dmin, Dmax, dD);
+			cell.push(first);
+			
+			first = new Cell();
+			first.setMode(mode, Trepro);
+			first.r = new Vect3(4 * Dmax, -4 * Dmax, 0);
+			first.D = new Growable(Dmin, Dmax, dD);
+			cell.push(first);
+			
+			first = new Cell();
+			first.setMode(mode, Trepro);
+			first.r = new Vect3(-4 * Dmax, 4 * Dmax, 0);
+			first.D = new Growable(Dmin, Dmax, dD);
+			cell.push(first);
+			
+			first = new Cell();
+			first.setMode(mode, Trepro);
+			first.r = new Vect3(4 * Dmax, 4 * Dmax, 0);
+			first.D = new Growable(Dmin, Dmax, dD);
+			cell.push(first);
+		}
 		
 		FN = new Normal();
 		FN.setConstants(0.2, 0.1);
-
+		
 		FG = new Gravout();
 		FG.setConstant(1);
 		
@@ -515,9 +578,9 @@ function simulate() {
 	var N = cell.length;
 	clear(can);
 	for(var i = 0; i < N; i++) {
-		var D = cell[i].D.state;
-		var Dmax = cell[i].D.max;
-		var alpha = 0.5 + (1 - D / Dmax);
+		var cD = cell[i].D.state;
+		var cDmax = cell[i].D.max;
+		var alpha = 0.5 + (1 - cD / cDmax);
 		cell[i].c.fill = "rgba(79, 129, 189, " + alpha + ")";
 		draw(cell[i]).on(can);
 	}	
@@ -548,7 +611,7 @@ function simulate() {
 			var next = new Cell();
 			next.setMode(mode);
 			next.r = new Vect3(x + dx, y + dy, 0);
-			next.D = new Growable(2, 10, 0.1);
+			next.D = new Growable(Dmin, Dmax, dD);
 			cell.push(next);
 			
 			var j = cell.length;
@@ -577,9 +640,11 @@ function simulate() {
 			var next = new Cell();
 			next.setMode(mode);
 			next.r = new Vect3(x - 0.5 * dx, y - 0.5 * dy, 0);
-			next.D = new Growable(2, 10, 0.1);
+			next.D = new Growable(Dmin, Dmax, dD);
 			next.D.state = r;
 			cell.push(next);
+			
+			//console.log(r, Dmin, Dmax);
 			
 		}
 	}
