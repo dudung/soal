@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["statics"]
-date: 2020-11-16 05:41:00 +07
+date: 2020-11-18 20:12:00 +07
 permalink: /physics/hydrostatics
 ---
 In hydrostatics many phenomena of everyday life related to fluids and pressure are explained and discussed [[1](#ref1)], where static fluid pressure does not depend on the shape, total mass, or surface of the liquid but onlye the height above the point is one of them [[2](#ref2)].
