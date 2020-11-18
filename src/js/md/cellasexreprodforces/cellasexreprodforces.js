@@ -351,7 +351,7 @@ function initParams() {
 	Dmin = 1;
 	Dmax = 11;
 	dD = 0.1;
-	initConfMode = 0;
+	initConfMode = 1;
 	
 	if(mode == "budding") {
 		Trepro = 100;
