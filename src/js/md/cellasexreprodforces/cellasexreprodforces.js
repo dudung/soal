@@ -35,6 +35,9 @@
 	20201107
 	0335 Try to seperate two mechanismm for report.
 	0502 Try to create initial configuration.
+	20201118
+	0554 Set all parameters for variation purpose.
+	1527 Rename the program, forgot it about two weeks ago.
 */
 
 
