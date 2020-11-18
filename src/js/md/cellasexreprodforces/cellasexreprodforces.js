@@ -344,17 +344,18 @@ function initParams() {
 	
 	// Initialize variables and parameters
 	cell = [];
-	mode = "budding";
+	mode = "fission";
 	Dmin = 1;
 	Dmax = 11;
 	dD = 0.1;
-	initConfMode = 2;
+	initConfMode = 0;
 	
 	if(mode == "budding") {
 		Trepro = 100;
 	} else if(mode == "fission") {
 		Trepro = 100;
 	}
+	Trepro = 100;
 }
 
 
