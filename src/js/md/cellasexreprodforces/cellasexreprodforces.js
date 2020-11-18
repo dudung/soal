@@ -1,6 +1,6 @@
 /*
-	greenpot.js
-	Simulation of a green sea port using system dynamics
+	cellasexreprodforces.js
+	Simulation of cell asexual reproduction with two mechanismm
 	
 	Sparisom Viridi | gs _HjSaE0AAAAJ
 	Suprijadi       | gs MJJnvxUAAAAJ
