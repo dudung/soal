@@ -24,3 +24,15 @@ SimpleJekyllSearch({
   json: '{{ site.baseurl }}/search.json'
 })
 </script>
+
+<!--
+20201119
+1818 Still error
+
+simple-jekyll-search.min.js:6 Uncaught Error: SimpleJekyllSearch --- failed to get JSON (/search.json)
+    at S (simple-jekyll-search.min.js:6)
+    at simple-jekyll-search.min.js:6
+    at XMLHttpRequest.<anonymous> (simple-jekyll-search.min.js:6)
+
+Try to see https://blog.webjeda.com/instant-jekyll-search/ later
+-->
