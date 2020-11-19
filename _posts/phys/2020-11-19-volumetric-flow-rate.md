@@ -23,7 +23,10 @@ One of the definition of volume flow rate is
 Q = \vec{v} \cdot \vec{A}
 \end{equation}
 
-vhere $\vec{v}$ is flow velocity and $\vec{A}$ is cross-sectional vector surface / area.
+vhere $\vec{v}$ is flow velocity and $\vec{A}$ is cross-sectional vector surface / area. Eqn. \eqref{eqn:volumetric-flow-rate-plane} holds for planar velocity profile. For general velocity profile
+
+
+is used.
 
 
 ## References
