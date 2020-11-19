@@ -7,7 +7,7 @@ title: butiran
 
 <!-- Html Elements for Search -->
 <div id="search-container">
-<input type="text" id="search-input" placeholder="search...">
+<input type="text" id="search-input"  autocomplete="on" placeholder="search..." />
 <ul id="results-container"></ul>
 </div>
 
@@ -21,6 +21,6 @@ SimpleJekyllSearch({
   resultsContainer: document.getElementById('results-container'),
   searchResultTemplate: '<tt><a href="{url}" tabindex="1">{title}</a></tt> ',
   noResultsText: 'No results found!',
-  json: '/search.json',
+  json: '{{ site.baseurl }}/search.json'
 })
 </script>
