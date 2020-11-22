@@ -21,11 +21,13 @@ SimpleJekyllSearch({
   resultsContainer: document.getElementById('results-container'),
   searchResultTemplate: '<tt><a href="{url}" tabindex="1">{title}</a></tt> ',
   noResultsText: 'No results found!',
-  json: '{{ site.baseurl }}/search.json'
+  json: '{{site.baseurl}}/search.json'
 })
 </script>
 
 <!--
+20201122
+1112 Try again. Still not.
 20201119
 1818 Still error
 
