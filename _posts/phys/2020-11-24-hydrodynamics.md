@@ -67,6 +67,20 @@ Figure <a name="fig:hdyn-bernoulli">2</a> Regions 1 and 2 are related through Be
 The indices $i$ and $j$ in Eqn. \eqref{eqn:hdyn-bernoulli-equation} are set to be $1$ and $2$ in Fig. <a href="#fig:hdyn-bernoulli">2</a>. Note that the reference for calculating fluid's potential energy using $y_1$ and $y_2$ should be the same.
 
 
+## Volumetric flow rate
+For incompressible steady flow the volumetric flow rate $Q$ can be obtained using Eqns. \eqref{eqn:hdyn-continuity-incompressible} and \eqref{eqn:hdyn-bernoulli-equation}
+
+\begin{equation}
+\label{eqn:hdyn-volumetric-flow}
+\begin{array}{rcl}
+2p_i + \rho v_i^2 + 2\rho g y_i & = & 2p_j + \rho v_j^2 + 2\rho g y_j \newline
+\rho (v_i^2 - v_j^2) & = & 2(p_j - p_i) + 2\rho g (y_j - y_i) \newline
+\end{array}
+\end{equation}
+
+which is ...
+
+
 ## References
 1. <a name="ref1"></a>Carl R. Nave, "Fluids", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/fluid.html> [20201124].
 2. <a name="ref2"></a>Wikipedia contributors, "Fluid dynamics", Wikipedia, The Free Encyclopedia, 19 Nov 2020, 07:11 UTC, url <https://en.wikipedia.org/w/index.php?oldid=989485057> [20201124].
