@@ -34,7 +34,7 @@ is used, where $\vec{v} = \vec{v}(\vec{A})$ and $\vec{A} = \vec{A}(\vec{s})$ wit
 
 
 ## Illustration
-..
+
 
 
 ## References
