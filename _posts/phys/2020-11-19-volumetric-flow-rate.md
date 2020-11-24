@@ -25,8 +25,16 @@ Q = \vec{v} \cdot \vec{A}
 
 vhere $\vec{v}$ is flow velocity and $\vec{A}$ is cross-sectional vector surface / area. Eqn. \eqref{eqn:volumetric-flow-rate-plane} holds for planar velocity profile. For general velocity profile
 
+\begin{equation}
+\label{eqn:volumetric-flow-rate-plane-integral}
+Q = \int \vec{v} \cdot d\vec{A}
+\end{equation}
 
-is used.
+is used, where $\vec{v} = \vec{v}(\vec{A})$ and $\vec{A} = \vec{A}(\vec{s})$ with $vec{s}$ is a coordinate along the flow direction.
+
+
+## Illustration
+..
 
 
 ## References
