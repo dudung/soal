@@ -75,10 +75,27 @@ For incompressible steady flow the volumetric flow rate $Q$ can be obtained usin
 \begin{array}{rcl}
 2p_i + \rho v_i^2 + 2\rho g y_i & = & 2p_j + \rho v_j^2 + 2\rho g y_j \newline
 \rho (v_i^2 - v_j^2) & = & 2(p_j - p_i) + 2\rho g (y_j - y_i) \newline
+\rho v_i^2 \left( 1 - \frac{A_i^2}{A_j^2} \right) & = & 2(p_j - p_i) + 2\rho g (y_j - y_i) \newline
+v_i & = & \displaystyle \sqrt{ \frac{2(p_j - p_i) + 2\rho g (y_j - y_i)}{\rho (1- A_i^2/A_j^2)} }.
 \end{array}
 \end{equation}
 
-which is ...
+In a typical venturimeter fluid flow from point $i = 1$ to point $j = 2$ with $A_1 > A_2$, $y_1 = y_2$, and $p_1 > p_2$, which turns Eqn. \eqref{eqn:hdyn-volumetric-flow} into
+
+\begin{equation}
+\label{eqn:hdyn-venturimeter}
+v_1 = \displaystyle \sqrt{ \left( \frac{2}{\rho} \right) \cdot \frac{p_1 - p_2}{ \left( \frac{A_1}{A_2} \right)^2 - 1} }.
+\end{equation}
+
+And the volumetric flow rate can be obtained as [[4](#ref4)]
+
+\begin{equation}
+\label{eqn:hdyn-venturimeter-Q}
+Q = A_1 \displaystyle \sqrt{ \left( \frac{2}{\rho} \right) \cdot \frac{p_1 - p_2}{ \left( \frac{A_1}{A_2} \right)^2 - 1} } = A_2 \displaystyle \sqrt{ \left( \frac{2}{\rho} \right) \cdot \frac{p_1 - p_2}{ \left( 1 - \frac{A_2}{A_1} \right)^2} }.
+\end{equation}
+
+
+
 
 
 ## References
