@@ -16,7 +16,7 @@ Hydrodynamics is part of fluid concept [[1](#ref1)], which describes the flow of
 
 
 ## Continuity equation
-In steady flow along a chanell with only one inlet and one outlet amount of fluid flowing passed every point must be the same or the mass flow rate is constant, which is essentially a statement of the law of coservation of mass. Then, the formula of continuity is
+In steady flow along a chanell with only one inlet and one outlet amount of fluid flowing passed every point must be the same or the mass flow rate is constant, which is essentially a statement of the law of coservation of mass. Then, the formula of continuity is [[3](#ref3)]
 
 \begin{equation}
 \label{eqn:hdyn-continuity}
@@ -38,6 +38,33 @@ Q_i = Q_j.
 \end{equation}
 
 using the [volumetric flow rate](volumetric-flow-rate) term.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/hydrodynamics/vfr-constant-cross-section.png)
+<br />
+Figure <a name="fig:hdyn-continuity">1</a> A channel with one inlet and outlet has three different regions $n = 1, 2, 3$.
+{: refdef}
+
+The three different regions in Fig. <a href="#fig:hdyn-continuity">1</a> will have the same volumetric flow rate $Q$ according to continuity equation in Eqn. \eqref{eqn:hdyn-continuity-incompressible-Q} or simply that $Q_1 = Q_2 = Q3$ as shown in the figure.
+
+
+## Bernoulli principle
+There is relation between speed of fluid flow $v$, static pressure $p$, and fluid's potential energy $U$ through Bernoulli's equation
+
+\begin{equation}
+\label{eqn:hdyn-bernoulli-equation}
+p_i + \frac12 \rho v_i^2 + \rho g y_i = p_j + \frac12 \rho v_j^2 + \rho g y_j,
+\end{equation}
+
+where $i$ and $j$ are two different regions. Note that Eqn. \eqref{eqn:hdyn-bernoulli-equation} is the form for incompressible flow.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/hydrodynamics/bernoulli-principle.png)
+<br />
+Figure <a name="fig:hdyn-bernoulli">2</a> Regions 1 and 2 are related through Bernoulli equation.
+{: refdef}
+
+The indices $i$ and $j$ in Eqn. \eqref{eqn:hdyn-bernoulli-equation} are set to be $1$ and $2$ in Fig. <a href="#fig:hdyn-bernoulli">2</a>. Note that the reference for calculating fluid's potential energy using $y_1$ and $y_2$ should be the same.
 
 
 ## References
