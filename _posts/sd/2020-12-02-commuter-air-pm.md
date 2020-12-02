@@ -24,7 +24,7 @@ Some nodes related to environmental parameters ($h_{\rm prep}$, $v_{\rm wind}$, 
 Figure <a name="fig:commuter-pm-v1">1</a> Causal loop for passanger in and out, denoted by $N_{s,\rm in}$ and $N_{s,\rm out}$, at station $s$ to existence of SARS-COV-2 $n_{\rm SARS-COV-2}$.
 {: refdef}
 
-$\rm IQ$, $\rm EQ$, $\rm SQ$, and $\rm TQ$ are related to education level, information literacy, and responsibility of a person to follow the health protocols ($\rm HP$) in reducing the existence of SARS-COV-2 $n_{\rm SARS-COV-2}$ in the ambient air of a station $\rm STA$.
+$\rm IQ$, $\rm EQ$, $\rm SQ$, and $\rm TQ$ are related to education level, information literacy, and responsibility of a person to follow the health protocols ($\rm HP$) in reducing the existence of SARS-COV-2 $n_{\rm SARS-COV-2}$ in the ambient air of a station $\rm STA$. This version has not been tested yet.
 
 
 ## Causal loop v2.1
@@ -36,7 +36,16 @@ A modification is adde to the two sub-loops, whare one is a balancing loop ($B$)
 Figure <a name="fig:commuter-pm-v2.1">1</a> Sub-loops showing balancing $B$ and reinforcing $R$ loops, modified from previous version of causal loop diagram.
 {: refdef}
 
-The version 2.1 in Fig. <a href="#fig:commuter-pm-v2.1">2</a> is created for testing the relation in more simpler way.
+The version 2.1 in Fig. <a href="#fig:commuter-pm-v2.1">2</a> is created for testing the relation in more simpler way. Suppose that all the $\rm HP$ are simply reduced to single value $\rm HP \in [0, 1]$ and can not stop completely $n_{\rm SARS-COV-2}$. The difference between $N_{\rm inf}$ and $N_{\rm case}$ is also must be made clear, since they are both required to perform the reinforce loop ($R$). From the test clinic and hospital we can get number of the case $N_{\rm case}$, which does not reflect the real number of infected person $N_{\rm inf}$ due to small number of test compared to the sub-district population $P_{\rm sub-district}$ around a station $\rm STA$. A relation between $N_{\rm inf}$ and $N_{\rm case}$ can be as follow
+
+\begin{equation}
+\label{eqn:compm-N-case-N-inf}
+N_{\rm case} = \alpha N_{\rm inf},
+\end{equation}
+
+where $\alpha$ is a predicted ratio of $N_{\rm case}$ to $N_{\rm inf}$, which could be function of time $t$.
+
+
 
 
 ## References
