@@ -43,7 +43,7 @@ The version 2.1 in Fig. <a href="#fig:commuter-pm-v2.1">2</a> is created for tes
 N_{\rm case} = \alpha N_{\rm inf},
 \end{equation}
 
-where $\alpha$ is a predicted ratio of $N_{\rm case}$ to $N_{\rm inf}$, which could be function of time $t$.
+where $\alpha$ is a predicted ratio of $N_{\rm case}$ to $N_{\rm inf}$, which could be function of time $t$. It should be that $0 \le \alpha \lt\lt 1$.
 
 
 
