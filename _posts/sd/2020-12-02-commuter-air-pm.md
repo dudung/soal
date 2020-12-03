@@ -57,7 +57,14 @@ where $\beta$ is also can be function of time $t$. Sub-district population aroun
 P_{\rm sub-district}(t + \Delta t) = P_{\rm sub-district}(t) - N_{\rm death},
 \end{equation}
 
-with $\Delta t$ is taken to one day and unit of $t$ is day.
+with $\Delta t$ is taken to one day and unit of $t$ is day. The last relation for balancing loop ($B$) is between $P_{\rm sub-district}$ and $N_{\rm inf}$ through
+
+\begin{equation}
+\label{eqn:compm-N-inf-P-sub-district}
+N_{\rm inf} = \gamma P_{\rm sub-district},
+\end{equation}
+
+where $\gamma$ is unknown since $N_{\rm inf}$ is also uknown. We can only have the information of $N_{\rm case}$ and reported $N_{\rm death}$, when the $N_{\rm death}$ is related to Covid-19 cases.
 
 
 ## References
