@@ -43,9 +43,21 @@ The version 2.1 in Fig. <a href="#fig:commuter-pm-v2.1">2</a> is created for tes
 N_{\rm case} = \alpha N_{\rm inf},
 \end{equation}
 
-where $\alpha$ is a predicted ratio of $N_{\rm case}$ to $N_{\rm inf}$, which could be function of time $t$. It should be that $0 \le \alpha \lt\lt 1$.
+where $\alpha$ is a predicted ratio of $N_{\rm case}$ to $N_{\rm inf}$, which could be function of time $t$. It should be that $0 \le \alpha \lt\lt 1$. We can use similar way to define the relation between $N_{\rm death}$ and $N_{\rm case}$ through
 
+\begin{equation}
+\label{eqn:compm-N-death-N-case}
+N_{\rm death} = \beta N_{\rm case},
+\end{equation}
 
+where $\beta$ is also can be function of time $t$. Sub-district population around the station will be changed
+
+\begin{equation}
+\label{eqn:compm-P-sub-district}
+P_{\rm sub-district}(t + \Delta t) = P_{\rm sub-district}(t) - N_{\rm death},
+\end{equation}
+
+with $\Delta t$ is taken to one day and unit of $t$ is day.
 
 
 ## References
