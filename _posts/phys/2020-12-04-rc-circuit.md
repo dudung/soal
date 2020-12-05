@@ -16,7 +16,40 @@ An electronic circuit composed of resistotrs and capacitors known as RC circuit 
 
 
 ## first-order circuit
-The simplest circuit composed of one resistor $R$ and capacitor $C$ is named first-order RC circuit. The circuit can a first-order series RC circuit [[4](#ref4)] or a paralel one [[5](#ref5)].
+The simplest circuit composed of one resistor $R$ and capacitor $C$ is named first-order RC circuit. The circuit can a first-order series RC circuit [[4](#ref4)] or a paralel one [[5](#ref5)]. Fig. <a href="#fig:rc-circuit-first-order-open">1</a> shows the series and parallel first-order RC circuits.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/circuit/rc-circuit-first-order-open.png)
+<br />
+Figure <a name="fig:rc-circuit-first-order-open">1</a> First order RC circuits arranged in series (left) and parallel (right), both are open.
+{: refdef}
+
+An switch $S$ is an additional component for controlling when the current flows from battery $\epsilon$ through resistor $R$ and capacitor $C$. The unit for $R$ is $\rm \Omega$ (ohm), for $\epsilon$ is $\rm V$ (volt), and for $C$ is $\rm F$ (farad).
+
+
+## Series circuit
+Using series RC circuit in Fig. <a href="#fig:rc-circuit-first-order-open">1</a> (left) we can charge and discharge a capacitor.
+
+### Charging a capacitor
+At time $t < 0$ it is assumed that the capacitor $C$ does not have any charge $q$ in it. Charging process starts at time $t = 0$ when the switch $S$ is close for the first time and current $I$ begins to flow from the battery $\epsilon$ and pass through the resistor $R$ and capacitor $C$. There will be sudden high value of $I$ and then it is decreasing to zero.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/circuit/rc-series-charging.png)
+<br />
+Figure <a name="fig:rc-series-charging">2</a> Charging a capacitor: $t < 0$ (left) and $t = 0$ (right).
+{: refdef}
+
+
+
+
+### Discharging a capacitor
+..
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/circuit/rc-series-discharging.png)
+<br />
+Figure <a name="fig:rc-series-charging">3</a> Discharging a capacitor: $t < 0$ (left) and $t = 0$ (right).
+{: refdef}
 
 
 ## References
