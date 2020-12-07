@@ -29,6 +29,7 @@ class Nucleon {
 		}
 		
 		this.color = Palette[this.type];
+		this.geometry = Shape[this.type];
 	}	
 }
 
