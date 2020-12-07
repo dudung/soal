@@ -22,3 +22,4 @@ var Palette = {};
 // Colors for liquid drop model
 Palette["neutron"] = "#ccc";
 Palette["proton"] = "#fcc";
+

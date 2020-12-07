@@ -9,6 +9,7 @@
 	20201207
 	1633 Start designing class of Nucleon.
 	1722 Finish class of Nucleon, only simple structure.
+	1842 Add nucleon color from Palette.
 */
 
 class Nucleon {
@@ -26,5 +27,8 @@ class Nucleon {
 				this.type = "proton";
 			}
 		}
+		
+		this.color = Palette[this.type];
 	}	
 }
+
