@@ -10,6 +10,7 @@
 	1633 Start designing class of Nucleon.
 	1722 Finish class of Nucleon, only simple structure.
 	1842 Add nucleon color from Palette.
+	1959 Add geometry
 */
 
 class Nucleon {
