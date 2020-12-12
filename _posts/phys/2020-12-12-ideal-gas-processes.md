@@ -23,7 +23,14 @@ There is relation between pressure $p$, volume $V$, amount $n$, and temperature 
 pV = nRT,
 \end{equation}
 
-which is known as ideal gas law [[2](#ref2)]. $R$ is gas constant with value of $8.314 472(15) \ \rm J \cdot K^{-1} \cdot mol^{-1}$ [[3](#ref3)]. The units are $\rm N/m^2$ for $p$, $\rm m^3$ for $V$, $\rm mol$ for $n$, and $\rm K$ for $T$.
+which is known as ideal gas law [[2](#ref2)]. $R$ is gas constant with value of $8.314 472(15) \ \rm J \cdot K^{-1} \cdot mol^{-1}$ [[3](#ref3)]. The units are $\rm N/m^2$ or $\rm Pa$ for $p$, $\rm m^3$ for $V$, $\rm mol$ for $n$, and $\rm K$ for $T$. With Eqn. \eqref{eqn:igproc-ideal-gas-law} we can have the relation that
+
+\begin{equation}
+\label{eqn:igproc-ideal-gas-law-stp}
+1 \ {\rm mole} \approx 22.4 \ {\rm l}
+\end{equation}
+
+at standar temperature and pressure (STP) [[4](#ref4)], where $1 \ {\rm l} = 10^{-3} \ {\rm m^3}$, where $T = 0 \ {\rm ^\circ C} = 273.5 \ {\rm K}$ and $p = 1 \ {\rm atm} = 1.01325 \times 10^5 \ {\rm Pa}$.
 
 
 ## References
