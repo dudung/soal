@@ -1,7 +1,7 @@
 ---
 layout: post
 author: viridi
-title: idea gas processes
+title: ideal gas processes
 mathjax: true
 ptext: false
 x3dom: false
