@@ -23,12 +23,13 @@ There is relation between pressure $p$, volume $V$, amount $n$, and temperature 
 pV = nRT,
 \end{equation}
 
-which is known as ideal gas law [[2](#ref2)].
+which is known as ideal gas law [[2](#ref2)]. $R$ is gas constant with value of $8.314 472(15) \ \rm J \cdot K^{-1} \cdot mol^{-1}$ [[3](#ref3)]. The units are $\rm N/m^2$ for $p$, $\rm m^3$ for $V$, $\rm mol$ for $n$, and $\rm K$ for $T$.
 
 
 ## References
 1. <a name="ref1"></a> P. Mudga, "Ideal Gases and Ideal Gas Processes (With Equation) \| Thermodynamics", Engineering Notes, url <https://www.engineeringenotes.com/thermal-engineering/thermodynamics/ideal-gases-and-ideal-gas-processes-with-equation-thermodynamics> [20201212].
 2. <a name="ref2"></a>Duke LeTran, "The Ideal Gas Law", Chemistry LibreTexts, 16 Aug 2020, url <https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/States_of_Matter/Properties_of_Gases/Gas_Laws/The_Ideal_Gas_Law> [20201212].
+3. <a name="ref3"></a>IUPAC. Compendium of Chemical Terminology, 2nd ed. (the "Gold Book"). Compiled by A. D. McNaught and A. Wilkinson. Blackwell Scientific Publications, Oxford (1997). Online version (2019-) created by S. J. Chalk. ISBN 0-9678550-9-8. url <https://doi.org/10.1351/goldbook.G02579> [20201212].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-12-12-ideal-gas-processes.md)
 
