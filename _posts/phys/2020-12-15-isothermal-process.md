@@ -20,7 +20,7 @@ In an isothermal process temperature is constant or temperature change is zero [
 1. <a name="ref1"></a>Wikipedia contributors, "Isothermal process", Wikipedia, The Free Encyclopedia, 22 Oct 2020, 07:36 UTC, url <https://en.wikipedia.org/w/index.php?oldid=984813134> [20201215].
 2. <a name="ref2"></a>Carl R. Nave, "Kinetic Theory", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/isoth.html> [20201210].
 
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/2020-12-15-isothermal-process.md)
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-12-15-isothermal-process.md)
 
 {% comment %}
 ## References
