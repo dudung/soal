@@ -86,7 +86,7 @@ A $0.2405 \ \rm mol$ ideal gas has initial pressure $10^5 \ \rm Pa$ and volume $
 T_1 = \frac{p_1 V_1}{n R} = \frac{(10^5 \ {\rm N/m^2}) \ (0.01 \ {\rm m^3})}{(0.24 \ {\rm mol}) \ (8.314 \ \rm J/mol \cdot K)} = 500.12 \ {\rm K} \approx 500 \ {\rm K}
 \end{equation}
 	and $T_2 = T_1 = 500 \ {\rm K}$ since it is an isothermal process.
-+ Then
++ Final volume is twice of initial volume, then $V_2 = 2 V_1 = 0.02 \ {\rm m^3}$.
 
 
 ## References
