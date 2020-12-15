@@ -75,8 +75,31 @@ W_{1 \rightarrow 2} = nRT \ln \frac{V_2}{V_1}
 
 with $V_1$ and $V_2$ are initial anda final volumes, respectively.
 
-
 ### Example 1
+At $400 \ {\rm K}$ a $1.2027 \ {\rm mol}$ ideal gas begins an isothermal process with initial volume $2\times10^{-2} \ {\rm m^3}$ and initial pressure $2\times10^5 \ {\rm N/m^2}$ and ends the process with final pressure $4\times10^5 \ {\rm N/m^2}$ and final volume $10^{-2} \ {\rm m^3}$.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/thermodynamics/isothermal-compression-process.png)
+<br />
+Figure <a name="fig:isoproc-compression-isothermal-process">1</a> Isothermal compression process with $V_2 = \frac12 V_1$, $p_2 = 2 p_1$, and $n = 1.2027 \ {\rm mol}$.
+{: refdef}
+
+Find the work during the process.
+
++ It is a compression process since final volume is less than initial volume.
++ Work done by gas can be calculate through
+\begin{equation}
+\label{eqn:isoproc-example-1-1}
+\begin{array}{rcl}
+W & = & \displaystyle nRT \ln \frac{V_2}{V_1} \newline
+& = & \displaystyle (1.2027 \ {\rm mol}) \ (8.314 \ \rm J/mol \cdot K)(400 \ {\rm K}) \ln \left( \frac{0.01 \ {\rm m^3}}{0.02 \ {\rm m^3}} \right) \newline 
+& = & -2.772 \times 10^3 \ {\rm J} \approx -2.77 \ {\rm kJ}.
+\end{array}
+\end{equation}
++ Negative value of work means the gas do a negative work or the work is done to the gas from the environment (increase of pressure).
++ The answer: the work during the isothermal compression process is  $-2.77 \ {\rm kJ}$.
+
+### Example 2
 A $0.2405 \ \rm mol$ ideal gas has initial pressure $10^5 \ \rm Pa$ and volume $10 \ l$. From initial state the gas performs a isothermal expansion so that the final volume will be twice the initial volume.
 
 {:refdef: style="text-align: center;"}
@@ -91,7 +114,7 @@ Find (a) gas temperature, (b) gas final pressure, (c) work done by gas during th
 + Convert volume from $l$ to $\rm m^3$ and we get $V_1 = 10 \ l \times 10^{-3} {\rm m^3} / l = 0.01 \ {\rm m^3}$.
 + Calculate gas temperature
 \begin{equation}
-\label{eqn:isoproc-example-1-1}
+\label{eqn:isoproc-example-2-1}
 \begin{array}{rcl}
 T_1 & = & \displaystyle \frac{p_1 V_1}{n R} \newline
 & = & \displaystyle \frac{(10^5 \ {\rm N/m^2}) \ (0.01 \ {\rm m^3})}{(0.2405 \ {\rm mol}) \ (8.314 \ \rm J/mol \cdot K)} \newline
@@ -102,7 +125,7 @@ and $T_2 = T_1 = 500 \ {\rm K}$ since it is an isothermal process.
 + Final volume is twice initial volume, then $V_2 = 2 V_1 = 0.02 \ {\rm m^3}$.
 + Final pressure then will be obtained through
 \begin{equation}
-\label{eqn:isoproc-example-1-2}
+\label{eqn:isoproc-example-2-2}
 \begin{array}{rcl}
 p_2 & = & \displaystyle \frac{n R T_2}{V_2} \newline
 & = & \displaystyle \frac{(0.2405 \ {\rm mol}) \ (8.314 \ \rm J/mol \cdot K)(500 \ {\rm K})}{(0.02 \ {\rm m^3})} \newline 
@@ -111,14 +134,14 @@ p_2 & = & \displaystyle \frac{n R T_2}{V_2} \newline
 \end{equation}
 + Work done by gas is
 \begin{equation}
-\label{eqn:isoproc-example-1-3}
+\label{eqn:isoproc-example-2-3}
 \begin{array}{rcl}
 W & = & \displaystyle nRT \ln \frac{V_2}{V_1} \newline
 & = & \displaystyle (0.2405 \ {\rm mol}) \ (8.314 \ \rm J/mol \cdot K)(500 \ {\rm K}) \ln \left( \frac{0.02 \ {\rm m^3}}{0.01 \ {\rm m^3}} \right) \newline 
-& = & 1,999 \ {\rm J} \approx 2 \ {\rm kJ}.
+& = & 6.9298 \times 10^2 \ {\rm J} \approx 693 \ {\rm J}.
 \end{array}
 \end{equation}
-+ Then the answers are: (a) $T_1 = T_2 = 500 \ {\rm K}$, (b) $p_2 = 50 \ {\rm kPa}$, (c)  $W_{1 \rightarrow 2} = 2 \ {\rm kJ}$.
++ Then the answers are: (a) $T_1 = T_2 = 500 \ {\rm K}$, (b) $p_2 = 50 \ {\rm kPa}$, (c)  $W_{1 \rightarrow 2} = 693 \ {\rm J}$.
 
 
 ## References
@@ -126,24 +149,3 @@ W & = & \displaystyle nRT \ln \frac{V_2}{V_1} \newline
 2. <a name="ref2"></a>Carl R. Nave, "Kinetic Theory", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/isoth.html> [20201210].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-12-15-isothermal-process.md)
-
-{% comment %}
-## References
-1. <a name="ref1"></a> -, "Kinetic Theory of Gases", Glenn Research Center, National Aeronautics and Space Administration, url <https://www.grc.nasa.gov/www/k-12/airplane/kinth.html> [20201210].
-2. <a name="ref2"></a>-, "6.1 Kinetic Theory of Gases", Introductory Chemistry, v. 1.0, url <https://saylordotorg.github.io/text_introductory-chemistry/s10-01-kinetic-theory-of-gases.html> [20201210].
-3. <a name="ref3"></a>The Editors of Encyclopaedia Britannica, Kanchan Gupta, Thinley Kalsang Bhutia, Erik Gregersen, "Kinetic theory of gases", Britannica, url <https://www.britannica.com/science/kinetic-theory-of-gases> [20201210].
-4. <a name="ref4"></a>Jessie A. Key, David W. Ball, "Kinetic Molecular Theory of Gases", in Introductory Chemistry, 1st Canadian Edn., Chap. 6. Gases, url <https://opentextbc.ca/introductorychemistry/chapter/kinetic-molecular-theory-of-gases-2/> [20201210].
-5. <a name="ref5"></a>Carl R. Nave, "Kinetic Theory", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/Kinetic/kinthe.html> [20201210].
-6. <a name="ref6"></a>Wikipedia contributors, "Kinetic theory of gases", Wikipedia, The Free Encyclopedia, 2 Dec 2020, 21:15 UTC, url <https://en.wikipedia.org/w/index.php?oldid=991982665> [20201210].
-7. <a name="ref7"></a>-, "Kinetic Theory of Gases", in Calculus-Based General Physics, 22, 1975, url <https://digitalcommons.unl.edu/calculusbasedphysics/22/> [20201210].
-
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/001-01-01-blank.md)
-
-Fig. <a href="#fig:x">1</a>.
-
-{:refdef: style="text-align: center;"}
-![..](/assets/img/phys/x.png)
-<br />
-Figure <a name="fig:x">1</a> ...
-{: refdef}
-{% endcomment %}
