@@ -27,6 +27,68 @@ Figure <a name="fig:isoproc-isothermal-process">1</a> Isothermal process: expans
 Expansion is when final volume is larger than initial one, where in Fig. <a href="#fig:isoproc-isothermal-process">1</a> the initial volume is $V_1$ and final volume is $V_2$, while compression is when final volume is smaller than the initial. Fig. <a href="#fig:isoproc-isothermal-process">1</a> (left) shows isothermal expansion process ($V_2 > V_1$) and the (right) shows isothermal compression process ($V_2 < V_1$).
 
 
+## Ideal gas law
+For an isothermal process the ideal gas law can be used to write a relation
+
+\begin{equation}
+\label{eqn:isoproc-ideal-gas-law}
+pV = c_0, 
+\end{equation}
+
+where
+
+\begin{equation}
+\label{eqn:isoproc-ideal-gas-law-c0}
+c_0 = nRT
+\end{equation}
+
+is a constant.
+
+## Work done by gas
+Gas performs work to its environment in the form of
+
+\begin{equation}
+\label{eqn:isoproc-ideal-gas-work-by-gas}
+W = \int p dV.
+\end{equation}
+
+Substitution of Eqn. \eqref{eqn:isoproc-ideal-gas-law} into Eqn. \eqref{eqn:isoproc-ideal-gas-work-by-gas} will produce
+
+\begin{equation}
+\label{eqn:isoproc-ideal-gas-work-by-gas-p}
+W = \int \frac{c_0}{V} dV = c_0 \int \frac{dV}{V} = c_0 \ln V + c_1.
+\end{equation}
+
+Substitute Eqn. \eqref{eqn:isoproc-ideal-gas-law-c0} into Eqn. {eqn:isoproc-ideal-gas-work-by-gas-p} will give
+
+\begin{equation}
+\label{eqn:isoproc-ideal-gas-work-by-gas-isothermal}
+W = nRT \ln V + c_1,
+\end{equation}
+
+which is work done by ideal gas in isothermal process. Note that $c_1$ is arbitrary constant due to integration. Eqn. \eqref{eqn:isoproc-ideal-gas-work-by-gas-isothermal} in the indefinite integral $\int p(V) dV$. When we put the lower and upper limits of the integral Eqn. \eqref{eqn:isoproc-ideal-gas-work-by-gas-isothermal} will become
+
+\begin{equation}
+\label{eqn:isoproc-ideal-gas-work-by-gas-isothermal-V1-V2}
+W_{1 \rightarrow 2} = nRT \ln \frac{V_2}{V_1}
+\end{equation}
+
+with $V_1$ and $V_2$ are initial anda final volumes, respectively.
+
+
+### Example 1
+A $0.2405 \ \rm mol$ ideal gas has initial pressure $10^5 \ \rm Pa$ and volume $10 \ l$. From initial state the gas performs a isothermal expansion so that the final volume will be twice the initial volume. Find (a) gas temperature, (b) gas final pressure, (c) work done by gas during the process. Use gas constant $R = 8.314 \ \rm J/mol \cdot K$.
+
++ Convert pressure from $\rm Pa$ to $\rm N/m^2$ and we get $p_1 = 10^5 \ {\rm Pa} \times 1 \ {\rm (N/m^2) / Pa} = 10^5 \ {\rm N/m^2}$.
++ Convert volume from $l$ to $\rm m^3$ and we get $V_1 = 10 \ l \times 10^{-3} {\rm m^3} / l = 0.01 \ {\rm m^3}$.
++ Calculate gas temperature
+\begin{equation}
+T_1 = \frac{p_1 V_1}{n R} = \frac{(10^5 \ {\rm N/m^2}) \ (0.01 \ {\rm m^3})}{(0.24 \ {\rm mol}) \ (8.314 \ \rm J/mol \cdot K)} = 500.12 \ {\rm K} \approx 500 \ {\rm K}
+\end{equation}
+	and $T_2 = T_1 = 500 \ {\rm K}$ since it is an isothermal process.
++ Then
+
+
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Isothermal process", Wikipedia, The Free Encyclopedia, 22 Oct 2020, 07:36 UTC, url <https://en.wikipedia.org/w/index.php?oldid=984813134> [20201215].
 2. <a name="ref2"></a>Carl R. Nave, "Kinetic Theory", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/isoth.html> [20201210].
