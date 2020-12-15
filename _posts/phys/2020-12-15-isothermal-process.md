@@ -15,6 +15,17 @@ permalink: /physics/isothermal-process
 In an isothermal process temperature is constant or temperature change is zero [[1](#ref1)], where for ideal gas the change in internal energy is zero during the process [[2](#ref2)].
 
 
+## Process in $p-V$ diagram
+Fig. <a href="#fig:isoproc-isothermal-process">1</a>. shows the isothermal process, which can be an expansion of compression, where $X_{1 \rightarrow 2}$ is a process variable from point $1$ to point $2$, e.g. work $W$, heat $Q$, or change in internal energy $\Delta U$.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/thermodynamics/isothermal-process.png)
+<br />
+Figure <a name="fig:isoproc-isothermal-process">1</a> Isothermal process: expansion (left) and compression (right).
+{: refdef}
+
+Expansion is when final volume is larger than initial one, where in Fig. <a href="#fig:isoproc-isothermal-process">1</a> the initial volume is $V_1$ and final volume is $V_2$, while compression is when final volume is smaller than the initial. Fig. <a href="#fig:isoproc-isothermal-process">1</a> (left) shows isothermal expansion process ($V_2 > V_1$) and the (right) shows isothermal compression process ($V_2 < V_1$).
+
 
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "Isothermal process", Wikipedia, The Free Encyclopedia, 22 Oct 2020, 07:36 UTC, url <https://en.wikipedia.org/w/index.php?oldid=984813134> [20201215].
