@@ -84,16 +84,33 @@ A $0.2405 \ \rm mol$ ideal gas has initial pressure $10^5 \ \rm Pa$ and volume $
 + Calculate gas temperature
 \begin{equation}
 \label{eqn:isoproc-example-1-1}
-T_1 = \frac{p_1 V_1}{n R} = \frac{(10^5 \ {\rm N/m^2}) \ (0.01 \ {\rm m^3})}{(0.24 \ {\rm mol}) \ (8.314 \ \rm J/mol \cdot K)} = 500.12 \ {\rm K} \approx 500 \ {\rm K}
+\begin{array}{rcl}
+T_1 & = & \displaystyle \frac{p_1 V_1}{n R} \newline
+& = & \displaystyle \frac{(10^5 \ {\rm N/m^2}) \ (0.01 \ {\rm m^3})}{(0.2405 \ {\rm mol}) \ (8.314 \ \rm J/mol \cdot K)} \newline
+& = & 500.12 \ {\rm K} \approx 500 \ {\rm K}
+\end{array}
 \end{equation}
 and $T_2 = T_1 = 500 \ {\rm K}$ since it is an isothermal process.
 + Final volume is twice initial volume, then $V_2 = 2 V_1 = 0.02 \ {\rm m^3}$.
 + Final pressure then will be obtained through
 \begin{equation}
 \label{eqn:isoproc-example-1-2}
-p_2 = \frac{n R T_2}{V_2} = \frac{(0.24 \ {\rm mol}) \ (8.314 \ \rm J/mol \cdot K)(500 \ {\rm K})}{(0.02 \ {\rm m^3})} =  \ {\rm N/m^2} \approx  \ {\rm N/m^2}.
+\begin{array}{rcl}
+p_2 & = & \displaystyle \frac{n R T_2}{V_2} \newline
+& = & \displaystyle \frac{(0.2405 \ {\rm mol}) \ (8.314 \ \rm J/mol \cdot K)(500 \ {\rm K})}{(0.02 \ {\rm m^3})} \newline 
+& = & 49,987 \ {\rm N/m^2} \approx 5 \times 10^4 \ {\rm N/m^2}.
+\end{array}
 \end{equation}
-
++ Work done by gas is
+\begin{equation}
+\label{eqn:isoproc-example-1-3}
+\begin{array}{rcl}
+W & = & \displaystyle nRT \ln \frac{V_2}{V_1} \newline
+& = & \displaystyle (0.2405 \ {\rm mol}) \ (8.314 \ \rm J/mol \cdot K)(500 \ {\rm K}) \ln \left( \frac{0.02 \ {\rm m^3}}{0.01 \ {\rm m^3}} \right) \newline 
+& = & 1,999 \ {\rm J} \approx 2 \ {\rm kJ}.
+\end{array}
+\end{equation}
++ Then the answers are: (a) $T_1 = T_2 = 500 \ {\rm K}$, (b) $p_2 = 50 \ {\rm kPa}$, (c)  $W_{1 \rightarrow 2} = 2 \ {\rm kJ}$.
 
 
 ## References
