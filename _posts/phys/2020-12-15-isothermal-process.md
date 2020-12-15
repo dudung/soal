@@ -83,10 +83,17 @@ A $0.2405 \ \rm mol$ ideal gas has initial pressure $10^5 \ \rm Pa$ and volume $
 + Convert volume from $l$ to $\rm m^3$ and we get $V_1 = 10 \ l \times 10^{-3} {\rm m^3} / l = 0.01 \ {\rm m^3}$.
 + Calculate gas temperature
 \begin{equation}
+\label{eqn:isoproc-example-1-1}
 T_1 = \frac{p_1 V_1}{n R} = \frac{(10^5 \ {\rm N/m^2}) \ (0.01 \ {\rm m^3})}{(0.24 \ {\rm mol}) \ (8.314 \ \rm J/mol \cdot K)} = 500.12 \ {\rm K} \approx 500 \ {\rm K}
 \end{equation}
-	and $T_2 = T_1 = 500 \ {\rm K}$ since it is an isothermal process.
-+ Final volume is twice of initial volume, then $V_2 = 2 V_1 = 0.02 \ {\rm m^3}$.
+and $T_2 = T_1 = 500 \ {\rm K}$ since it is an isothermal process.
++ Final volume is twice initial volume, then $V_2 = 2 V_1 = 0.02 \ {\rm m^3}$.
++ Final pressure then will be obtained through
+\begin{equation}
+\label{eqn:isoproc-example-1-2}
+p_2 = \frac{n R T_2}{V_2} = \frac{(0.24 \ {\rm mol}) \ (8.314 \ \rm J/mol \cdot K)(500 \ {\rm K})}{(0.02 \ {\rm m^3})} =  \ {\rm N/m^2} \approx  \ {\rm N/m^2}.
+\end{equation}
+
 
 
 ## References
