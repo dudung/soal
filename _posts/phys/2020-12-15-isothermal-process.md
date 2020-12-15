@@ -77,7 +77,15 @@ with $V_1$ and $V_2$ are initial anda final volumes, respectively.
 
 
 ### Example 1
-A $0.2405 \ \rm mol$ ideal gas has initial pressure $10^5 \ \rm Pa$ and volume $10 \ l$. From initial state the gas performs a isothermal expansion so that the final volume will be twice the initial volume. Find (a) gas temperature, (b) gas final pressure, (c) work done by gas during the process. Use gas constant $R = 8.314 \ \rm J/mol \cdot K$.
+A $0.2405 \ \rm mol$ ideal gas has initial pressure $10^5 \ \rm Pa$ and volume $10 \ l$. From initial state the gas performs a isothermal expansion so that the final volume will be twice the initial volume.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/thermodynamics/isothermal-expansion-process.png)
+<br />
+Figure <a name="fig:isoproc-expansion-isothermal-process">1</a> Isothermal expansion process with $V_2 = 2V_1$, $p_1 = 10^5 \ {\rm Pa}$, and $n = 0.2405 \ {\rm mol}$.
+{: refdef}
+
+Find (a) gas temperature, (b) gas final pressure, (c) work done by gas during the process. Use gas constant $R = 8.314 \ \rm J/mol \cdot K$.
 
 + Convert pressure from $\rm Pa$ to $\rm N/m^2$ and we get $p_1 = 10^5 \ {\rm Pa} \times 1 \ {\rm (N/m^2) / Pa} = 10^5 \ {\rm N/m^2}$.
 + Convert volume from $l$ to $\rm m^3$ and we get $V_1 = 10 \ l \times 10^{-3} {\rm m^3} / l = 0.01 \ {\rm m^3}$.
