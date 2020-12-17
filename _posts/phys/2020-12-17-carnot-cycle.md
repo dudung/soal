@@ -19,6 +19,7 @@ In heat engines Carnot cycle is an ideal cyclical sequence of changes of pressur
 1. <a name="ref1"></a>The Editors of Encyclopaedia Britannica, Gloria Lotha, Deepti Mahajan, Emily Rodiquez, "Carnot cycle", Encyclopædia Britannica, 27 Jul 2018, url <https://www.britannica.com/science/Carnot-cycle> [20201217].
 2. <a name="ref2"></a>Wikipedia contributors, "Kinetic theory of gases", Wikipedia, The Free Encyclopedia, 2 Dec 2020, 21:15 UTC, url <https://en.wikipedia.org/w/index.php?oldid=991982665> [20201217].
 3. <a name="ref3"></a>Carl R. Nave, "Kinetic Theory", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/carnotcon.html> [20201217].
+4. <a name="ref4"></a>Narlin Beaty, "Carnot Engine Practice Problem", GeoGebra, 8 Sep 2016, url <https://www.geogebra.org/m/vyXcfAKS> [20201217].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-12-17-carnot-cycle.md)
 
