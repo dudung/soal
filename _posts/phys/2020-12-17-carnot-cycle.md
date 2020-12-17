@@ -24,7 +24,7 @@ According to [[1](#ref1)].
 6. <a name="ref6"></a>Wikipedia contributors, "Kinetic theory of gases", Wikipedia, The Free Encyclopedia, 2 Dec 2020, 21:15 UTC, url <https://en.wikipedia.org/w/index.php?oldid=991982665> [20201210].
 7. <a name="ref7"></a>-, "Kinetic Theory of Gases", in Calculus-Based General Physics, 22, 1975, url <https://digitalcommons.unl.edu/calculusbasedphysics/22/> [20201210].
 
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/physics/2020-12-17-carnot-cycle.md)
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-12-17-carnot-cycle.md)
 
 {% comment %}
 Fig. <a href="#fig:x">1</a>.
