@@ -38,10 +38,12 @@ pV = nRT,
 then following table can be created to relate two states from aprocess.
 
 **State** | $p$ | $V$ | $T$ | **Relation(s) to other state**
-1 | $p_1$ | $V_1$ | $T_1$ |
-2 | $p_2$ | $V_2$ | $T_2$ | $T_2 = T_1$
-3 | $p_3$ | $V_3$ | $T_3$ |
-4 | $p_4$ | $V_4$ | $T_4$ | $T_4 = T_3$
+1 | $p_1$ | $V_1$ | $T_1$ | $T_1 = T_2$, &nbsp; $p_1 V_1 = p_2 V_2$ &nbsp; $p_1 V_1^\gamma = p_4 V_4^\gamma$
+2 | $p_2$ | $V_2$ | $T_2$ | $T_2 = T_1$, &nbsp; $p_2 V_2 = p_1 V_1$, &nbsp; $p_2 V_2^\gamma = p_3 V_3^\gamma$
+3 | $p_3$ | $V_3$ | $T_3$ | $T_3 = T_4$, &nbsp; $p_3 V_3 = p_4 V_4$ &nbsp; $p_3 V_3^\gamma = p_2 V_2^\gamma$
+4 | $p_4$ | $V_4$ | $T_4$ | $T_4 = T_3$, &nbsp; $p_4 V_4 = p_3 V_3$ &nbsp; $p_4 V_4^\gamma = p_1 V_1^\gamma$
+
+Last column of the previous table is obtained from Eqn. \eqref{eqn:carnotc-ideal-gas-law} and the relation between two states in an adiabatic process.
 
 
 ## References
