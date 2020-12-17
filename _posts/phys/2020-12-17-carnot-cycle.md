@@ -12,22 +12,13 @@ tags: ["", "", "", ""]
 date: 2020-12-17 11:11:00 +07
 permalink: /physics/carnot-cycle
 ---
-According to [[1](#ref1)].
+In heat engines Carnot cycle is an ideal cyclical sequence of changes of pressure and temperature of a fluid, which is used as a standard of performance of all heat enginges operating between a high and a low temperature [[1](#ref1)]. It is only a theoretical construct since it is not an actual thermodynamic cycle, but it provides upper limit on the efficiency that any classical thermodynamic engine can achieve during the conversion of heat into work [[2](#ref2)]. This cycle concept is related to other concepts in thermodynamics, e.g isothermal and adiabatic processes, second law of thermodynamics, entropy, etc [[3](#ref3)].
 
 
 ## References
-1. <a name="ref1"></a>The Editors of Encyclopaedia Britannica, Kanchan Gupta, Thinley Kalsang Bhutia, Erik Gregersen, "Carnot cycle", Encyclopædia Britannica, url <https://www.britannica.com/science/kinetic-theory-of-gases> [20201217].
+1. <a name="ref1"></a>The Editors of Encyclopaedia Britannica, Gloria Lotha, Deepti Mahajan, Emily Rodiquez, "Carnot cycle", Encyclopædia Britannica, 27 Jul 2018, url <https://www.britannica.com/science/Carnot-cycle> [20201217].
 2. <a name="ref2"></a>Wikipedia contributors, "Kinetic theory of gases", Wikipedia, The Free Encyclopedia, 2 Dec 2020, 21:15 UTC, url <https://en.wikipedia.org/w/index.php?oldid=991982665> [20201217].
-3. <a name="ref3"></a>Carl R. Nave, "Kinetic Theory", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/Kinetic/kinthe.html> [20201217].
-
-
-1. <a name="ref1"></a> -, "Kinetic Theory of Gases", Glenn Research Center, National Aeronautics and Space Administration, url <https://www.grc.nasa.gov/www/k-12/airplane/kinth.html> [20201210].
-2. <a name="ref2"></a>-, "6.1 Kinetic Theory of Gases", Introductory Chemistry, v. 1.0, url <https://saylordotorg.github.io/text_introductory-chemistry/s10-01-kinetic-theory-of-gases.html> [20201210].
-
-4. <a name="ref4"></a>Jessie A. Key, David W. Ball, "Kinetic Molecular Theory of Gases", in Introductory Chemistry, 1st Canadian Edn., Chap. 6. Gases, url <https://opentextbc.ca/introductorychemistry/chapter/kinetic-molecular-theory-of-gases-2/> [20201210].
-
-
-7. <a name="ref7"></a>-, "Kinetic Theory of Gases", in Calculus-Based General Physics, 22, 1975, url <https://digitalcommons.unl.edu/calculusbasedphysics/22/> [20201210].
+3. <a name="ref3"></a>Carl R. Nave, "Kinetic Theory", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/carnotcon.html> [20201217].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-12-17-carnot-cycle.md)
 
