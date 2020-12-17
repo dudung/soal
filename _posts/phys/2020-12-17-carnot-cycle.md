@@ -420,13 +420,3 @@ Substitute final line of Eqn. \eqref{eqn:carnotc-ideal-gas-law-adiabatic-v1-2-3-
 7. <a name="ref7"></a>Chris Hamper, "Carnot cycle ( with energies and efficiency)", GeoGebra, 17 Jan 2015, url <https://www.geogebra.org/m/dW93FqWd> [20201217].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-12-17-carnot-cycle.md)
-
-{% comment %}
-Fig. <a href="#fig:x">1</a>.
-
-{:refdef: style="text-align: center;"}
-![..](/assets/img/phys/x.png)
-<br />
-Figure <a name="fig:x">1</a> ...
-{: refdef}
-{% endcomment %}
