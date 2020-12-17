@@ -408,6 +408,7 @@ Substitute final line of Eqn. \eqref{eqn:carnotc-ideal-gas-law-adiabatic-v1-2-3-
 ## Exercises
 1. Open a web reference [[6](#ref6)], answer `Ans 1` - `Ans 8`, change the parameters $n$, $p_1$, $V_1$, $V_3$, and $V_4$, and reanswer `Ans 1` - `Ans 8` until you understand how to obtain the right answer. Section [Relation between states](#relation-between-states) will help.
 2. Open a web reference [[7](#ref7)] and exercise to calculate eficiency from net work $W$, heat in $Q_H$, heat out $Q_C$ and also from higher temperature $T_H = T_1$, lower temperature $T_C = T_2$.
+3. See [Carnot cyle example 1](carnot-cycle-example-1) for a numerical example.
 
 
 ## References
