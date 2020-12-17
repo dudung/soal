@@ -60,6 +60,17 @@ holds. Note that the ${\rm const}$ in Eqns. \eqref{eqn:carnotc-ideal-gas-law-iso
 Last column of the previous table is obtained using Eqns. \eqref{eqn:carnotc-ideal-gas-law-isothermal} and \eqref{eqn:carnotc-ideal-gas-law-adiabatic}.
 
 
+## Work
+..
+
+## Change in internal energy
+..
+
+
+## Heat
+..
+
+
 ## References
 1. <a name="ref1"></a>The Editors of Encyclopaedia Britannica, Gloria Lotha, Deepti Mahajan, Emily Rodiquez, "Carnot cycle", Encyclopædia Britannica, 27 Jul 2018, url <https://www.britannica.com/science/Carnot-cycle> [20201217].
 2. <a name="ref2"></a>Wikipedia contributors, "Kinetic theory of gases", Wikipedia, The Free Encyclopedia, 2 Dec 2020, 21:15 UTC, url <https://en.wikipedia.org/w/index.php?oldid=991982665> [20201217].
