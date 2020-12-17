@@ -77,11 +77,24 @@ W_{i \rightarrow f} = \frac{c_0}{1 - \gamma} \left(V_f^{1-\gamma} - V_i^{1-\gamm
 
 with $c_0 = nRTV^{\gamma - 1}$. And for monoatomic gas $\gamma = 5/3$ since $C_p = \frac52 R$ and $C_V = \frac32 R$.
 
+### Isothermal expansion process
+Process $1 \rightarrow 2$ is a isothermal expansion process, where the work in this process is shown in Fig. <a href="#fig:carnotc-carnot-cycle-work-isothermal-expansion">2</a> as area with gray parallel lines.
+
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/thermodynamics/carnot-cycle-work-isothermal-expansion.png)
 <br />
 Figure <a name="fig:carnotc-carnot-cycle-work-isothermal-expansion">2</a>..
 {: refdef}
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-work-isothermal-expansion}
+W_{1 \rightarrow 2} = ,
+\end{equation}
+
+..
+
+### Adiabatic expansion process
+..
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/thermodynamics/carnot-cycle-work-adiabatic-expansion.png)
@@ -89,11 +102,31 @@ Figure <a name="fig:carnotc-carnot-cycle-work-isothermal-expansion">2</a>..
 Figure <a name="fig:carnotc-carnot-cycle-work-adiabatic-expansion">3</a>..
 {: refdef}
 
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-work-adiabatic-expansion}
+W_{2 \rightarrow 3} = ,
+\end{equation}
+
+..
+
+### Isothermal compression process
+..
+
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/thermodynamics/carnot-cycle-work-isothermal-compression.png)
 <br />
 Figure <a name="fig:carnotc-carnot-cycle-work-isothermal-compression">4</a>..
 {: refdef}
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-work-isothermal-compression}
+W_{3 \rightarrow 4} = ,
+\end{equation}
+
+..
+
+### Adiabatic compression process
+..
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/thermodynamics/carnot-cycle-work-adiabatic-compression.png)
@@ -101,11 +134,30 @@ Figure <a name="fig:carnotc-carnot-cycle-work-isothermal-compression">4</a>..
 Figure <a name="fig:carnotc-carnot-cycle-work-adiabatic-compression">5</a>..
 {: refdef}
 
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-work-adiabatic-compression}
+W_{4 \rightarrow 1} = ,
+\end{equation}
+
+..
+
+### Closed cycle
+When previous work is summed up, then total work for the cycle is obtained as shown Fig. <a href="#fig:carnotc-carnot-cycle-work-total">6</a> as area with gray parallel lines.
+
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/thermodynamics/carnot-cycle-work-total.png)
 <br />
-Figure <a name="fig:carnotc-carnot-cycle-work-total">6</a>..
+Figure <a name="fig:carnotc-carnot-cycle-work-total">6</a> Total work of a Carnot cycle.
 {: refdef}
+
+The total work is
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-work-total}
+W_{\rm closed \ cycle} = W_{1 \rightarrow 2} + W_{2 \rightarrow 3} + W_{3 \rightarrow 4} + W_{4 \rightarrow 1},
+\end{equation}
+
+where each terms in the right side of Eqn. \eqref{eqn:carnotc-ideal-gas-law-work-total} are from Eqns. \eqref{eqn:carnotc-ideal-gas-law-work-isothermal-expansion}, \eqref{eqn:carnotc-ideal-gas-law-work-adiabatic-expansion}, \eqref{eqn:carnotc-ideal-gas-law-work-isothermal-compression}, and \eqref{eqn:carnotc-ideal-gas-law-work-adiabatic-compression}.
 
 
 ## Change in internal energy
