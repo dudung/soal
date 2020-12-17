@@ -61,14 +61,57 @@ Last column of the previous table is obtained using Eqns. \eqref{eqn:carnotc-ide
 
 
 ## Work
-..
+For the isothermal process, which is $1 \rightarrow 2$ and $3 \rightarrow 4$ processes in Fig. <a href="#fig:carnotc-carnot-cycle">1</a>, the work of gas is
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-isothermal-work}
+W_{i \rightarrow f} = nRT \ln \left( \frac{V_f}{V_i} \right),
+\end{equation}
+
+where $i$ is for initial state and $f$ for final state, e.g. for $4 \rightarrow `$ process $i = 4$ and $f = 1$. And for adiabatic process, the work is
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-adiabatic-work}
+W_{i \rightarrow f} = \frac{c_0}{1 - \gamma} \left(V_f^{1-\gamma} - V_i^{1-\gamma} \right) = \frac{nR}{1-\gamma} (T_f - T_i).
+\end{equation}
+
+with $c_0 = nRTV^{\gamma - 1}$. And for monoatomic gas $\gamma = 5/3$ since $C_p = \frac52 R$ and $C_V = \frac32 R$.
+
 
 ## Change in internal energy
-..
+An ideal gas for any process will have change in internal energy
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-adiabatic-DU}
+\Delta U_{i \rightarrow f} = \frac32 nR(T_f - T_i),
+\end{equation}
+
+which depends only on final and initial temperatures and does not depend on the trajectory of the process in $p-V$ diagram.
 
 
 ## Heat
-..
+For isobaric process heat can be obtained through
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-heat-isobaric}
+Q_{i \rightarrow f} = C_p n (T_f - T_i)
+\end{equation}
+
+for isochoric (isovolume) process through
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-heat-isochoric}
+Q_{i \rightarrow f} = C_V n (T_f - T_i)
+\end{equation}
+
+and for other process the first law
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-heat-first-law}
+Q = \Delta U + W
+\end{equation}
+
+can be used to get the heat.
 
 
 ## References
