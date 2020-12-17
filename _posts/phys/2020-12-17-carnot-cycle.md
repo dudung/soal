@@ -8,7 +8,7 @@ x3dom: false
 threejs: false
 oo: false
 category: physics
-tags: ["", "", "", ""]
+tags: ["cycle", "thermodynamics", "efficiency", "engine"]
 date: 2020-12-17 11:11:00 +07
 permalink: /physics/carnot-cycle
 ---
