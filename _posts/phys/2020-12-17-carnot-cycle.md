@@ -309,10 +309,105 @@ Carnot cycle is a heat engine with efficiency defined as
 
 \begin{equation}
 \label{eqn:carnotc-ideal-gas-law-efficiency}
-\eta = \frac{W}{Q_H} = \frac{Q_H - Q_C}{Q_H} = \frac{T_H - T_C}{T_H},
+\eta = \frac{W}{|Q_H|} = \frac{|Q_H| - |Q_C|}{|Q_H|} = 1 - \left| \frac{Q_C}{Q_H} \right|
 \end{equation}
 
-where hot temperature $T_H = T_1 = T_2$ and cold temperature $T_C = T_3 = T_4$. Note that term in the right side of Eqn. \eqref{eqn:carnotc-ideal-gas-law-efficiency} holds only for Carnot cycle [[6](#ref5)].
+where hot temperature $T_H = T_1 = T_2$ and cold temperature $T_C = T_3 = T_4$. From Eqn. \eqref{eqn:carnotc-ideal-gas-law-heat-first-law-1->2} and \eqref{eqn:carnotc-ideal-gas-law-heat-first-law-3->4} we can have
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-heat-first-law-1->2-QH}
+|Q_H| = Q_H = nRT_H \ln \left( \frac{V_2}{V_1} \right)
+\end{equation}
+
+since $V_2 > V_1$
+
+and
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-heat-first-law-3->4-QC}
+|Q_C| = -Q_C = -nRT_C \ln \left( \frac{V_4}{V_3} \right) = nRT_C \ln \left( \frac{V_3}{V_4} \right)
+\end{equation}
+
+since $V_4 < V_3$. Substitution of Eqns. \eqref{eqn:carnotc-ideal-gas-law-heat-first-law-1->2-QH} and \eqref{eqn:carnotc-ideal-gas-law-heat-first-law-3->4-QC} into Eqn. \eqref{eqn:carnotc-ideal-gas-law-efficiency will produce
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-efficiency-2}
+\eta = 1 - \frac{nRT_C \ln \left( \frac{V_3}{V_4} \right)}{nRT_H \ln \left( \frac{V_2}{V_1} \right)} = 1 - \frac{T_C}{T_H}
+\end{equation}
+
+due to Eqn. \eqref{eqn:carnotc-ideal-gas-law-adiabatic}, which holds only for Carnot cycle [[5](#ref5)].
+
+### Proof
+Using Eqn. \eqref{eqn:carnotc-ideal-gas-law-adiabatic} we can relate $V_2$ with $V_3$ and $V_4$ and $V_1$ through
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-adiabatic-2-3}
+p_2 V_2^\gamma = p_3 V_3^\gamma
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-adiabatic-4-1}
+p_4 V_4^\gamma = p_1 V_1^\gamma.
+\end{equation}
+
+From Eqn. \eqref{eqn:carnotc-ideal-gas-law} we can have
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-1-2-3-4}
+\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2} = \frac{p_3 V_3}{T_3} = \frac{p_4 V_4}{T_4} = nR.
+\end{equation}
+
+We can rewrite
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-adiabatic-pVT}
+p_i V_i^\gamma = p_i V_i V_i^{\gamma - 1},
+\end{equation}
+
+which can be implemented in Eqn. \eqref{eqn:carnotc-ideal-gas-law-adiabatic-2-3} then gives
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-adiabatic-2-3--1}
+\begin{array}{rcl}
+p_2 V_2 V_2^{\gamma-1} & = & p_3 V_3 V_3^{\gamma-1} \newline
+\displaystyle \left( \frac{T_2}{T_3} p_3 V_3 \right) V_2^{\gamma-1} & = & p_3 V_3 V_3^{\gamma-1} \newline
+\displaystyle \frac{T_2}{T_3} & = & \displaystyle \left( \frac{V_3}{V_2} \right)^{\gamma-1} \newline
+\displaystyle \frac{T_H}{T_C} & = & \displaystyle \left( \frac{V_3}{V_2} \right)^{\gamma-1},
+\end{array}
+\end{equation}
+
+and also implemented in Eqn. \eqref{eqn:carnotc-ideal-gas-law-adiabatic-4-1} then gives
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-adiabatic-4-1--1}
+\begin{array}{rcl}
+p_4 V_4 V_4^{\gamma-1} & = & p_1 V_1 V_1^{\gamma-1} \newline
+\displaystyle \left( \frac{T_4}{T_1} p_1 V_1 \right) V_4^{\gamma-1} & = & p_1 V_1 V_1^{\gamma-1} \newline
+\displaystyle \frac{T_4}{T_1} & = & \displaystyle \left( \frac{V_1}{V_4} \right)^{\gamma-1} \newline
+\displaystyle \frac{T_C}{T_H} & = & \displaystyle \left( \frac{V_1}{V_4} \right)^{\gamma-1}.
+\end{array}
+\end{equation}
+
+Multiply Eqn. \eqref{eqn:carnotc-ideal-gas-law-adiabatic-2-3--1} with Eqn. \eqref{eqn:carnotc-ideal-gas-law-adiabatic-4-1--1} will produce
+
+\begin{equation}
+\label{eqn:carnotc-ideal-gas-law-adiabatic-v1-2-3-4}
+\begin{array}{rcl}
+\displaystyle \left( \frac{V_3}{V_2} \right)^{\gamma-1} & = & \displaystyle \left( \frac{V_4}{V_1} \right)^{\gamma-1} \newline
+\displaystyle \frac{V_3}{V_2} & = & \displaystyle \frac{V_4}{V_1} \newline
+\displaystyle \frac{V_3}{V_4} & = & \displaystyle \frac{V_2}{V_1} \newline
+\displaystyle \ln \left( \frac{V_3}{V_4} \right) & = & \ln \left( \displaystyle \frac{V_2}{V_1} \right).
+\end{array}
+\end{equation}
+
+Substitute final line of Eqn. \eqref{eqn:carnotc-ideal-gas-law-adiabatic-v1-2-3-4} into middle side of Eqn. \eqref{eqn:carnotc-ideal-gas-law-efficiency-2} will produce the right side of Eqn. \eqref{eqn:carnotc-ideal-gas-law-efficiency-2}.
+
+
+## Exercises
+1. Open a web reference [[6](#ref6)], answer `Ans 1` - `Ans 8`, change the parameters $n$, $p_1$, $V_1$, $V_3$, and $V_4$, and reanswer `Ans 1` - `Ans 8` until you understand how to obtain the right answer. Section [Relation between states](#relation-between-states) will help.
+2. Open a web reference [[7](#ref7)] and exercise to calculate eficiency from net work $W$, heat in $Q_H$, heat out $Q_C$ and also from higher temperature $T_H = T_1$, lower temperature $T_C = T_2$.
 
 
 ## References
@@ -322,7 +417,7 @@ where hot temperature $T_H = T_1 = T_2$ and cold temperature $T_C = T_3 = T_4$. 
 4. <a name="ref4"></a>-, "What are PV diagrams?", Khan Academy, url <https://www.khanacademy.org/science/physics/thermodynamics/laws-of-thermodynamics/a/what-are-pv-diagrams> [20201217].
 5. <a name="ref5"></a>Carl R. Nave, "Carnot efficiency", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/carnot.html> [20201217].
 6. <a name="ref6"></a>Narlin Beaty, "Carnot Engine Practice Problem", GeoGebra, 8 Sep 2016, url <https://www.geogebra.org/m/vyXcfAKS> [20201217].
-
+7. <a name="ref7"></a>Chris Hamper, "Carnot cycle ( with energies and efficiency)", GeoGebra, 17 Jan 2015, url <https://www.geogebra.org/m/dW93FqWd> [20201217].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/2020-12-17-carnot-cycle.md)
 
