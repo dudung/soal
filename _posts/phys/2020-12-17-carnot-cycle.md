@@ -77,6 +77,36 @@ W_{i \rightarrow f} = \frac{c_0}{1 - \gamma} \left(V_f^{1-\gamma} - V_i^{1-\gamm
 
 with $c_0 = nRTV^{\gamma - 1}$. And for monoatomic gas $\gamma = 5/3$ since $C_p = \frac52 R$ and $C_V = \frac32 R$.
 
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/thermodynamics/carnot-cycle-work-isothermal-expansion.png)
+<br />
+Figure <a name="fig:carnotc-carnot-cycle-work-isothermal-expansion">2</a>..
+{: refdef}
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/thermodynamics/carnot-cycle-work-adiabatic-expansion.png)
+<br />
+Figure <a name="fig:carnotc-carnot-cycle-work-adiabatic-expansion">3</a>..
+{: refdef}
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/thermodynamics/carnot-cycle-work-isothermal-compression.png)
+<br />
+Figure <a name="fig:carnotc-carnot-cycle-work-isothermal-compression">4</a>..
+{: refdef}
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/thermodynamics/carnot-cycle-work-adiabatic-compression.png)
+<br />
+Figure <a name="fig:carnotc-carnot-cycle-work-adiabatic-compression">5</a>..
+{: refdef}
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/thermodynamics/carnot-cycle-work-total.png)
+<br />
+Figure <a name="fig:carnotc-carnot-cycle-work-total">6</a>..
+{: refdef}
+
 
 ## Change in internal energy
 An ideal gas for any process will have change in internal energy
