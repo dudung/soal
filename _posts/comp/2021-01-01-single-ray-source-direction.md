@@ -46,16 +46,36 @@ if the laser is turned on at $t = t_0$. Since the time $t$ is disrete in numeric
 
 \begin{equation}
 \label{eqn:srsd-time-update}
-t = t + \Delta t,
+t \equiv t_n = t_{n-1} + \Delta t,
 \end{equation}
 
-where $\Delta t$ is time step of the simulation. Eqn. \eqref{eqn:srsd-lbwf} in better form
+where $\Delta t$ is time step of the simulation and $n$ is $n$-th step in the iteration. We can also write Eqn. \eqref{eqn:srsd-time-update} in other form
 
+\begin{equation}
+\label{eqn:srsd-time-t}
+t = t_0 + n \Delta t,
+\end{equation}
 
-using 
+with $n = 0, 1, 2, .., N$. Eqn. \eqref{eqn:srsd-lbwf} in better form
 
+\begin{equation}
+\label{eqn:srsd-lbwf-u}
+\vec{r}_{\rm waf} (t) = \vec{r} _{\rm src} +  \hat{n} _{\rm dir} \ u(t - t_0) \ v _{\rm ray} \ (t - t_0)
+\end{equation}
 
-to assure that the laser beam wavefront moves only when $t \ge t_0$.
+using unit step function [[7](#ref7)]
+
+\begin{equation}
+\label{eqn:srsd-u}
+u(t- t_0) = \left\\{
+\begin{array}{lr}
+0, & t < t_0, \newline
+1, & t \ge t_0,
+\end{array}
+\right.
+\end{equation}
+
+to assure that the laser beam wavefront is propagating only when $t \ge t_0$.
 
 
 ## references
@@ -65,6 +85,7 @@ to assure that the laser beam wavefront moves only when $t \ge t_0$.
 4. <a name="ref4"></a>O. B. Kovaleva, I. O. Kovaleva, and V. V. Belyaev, "Ray tracing method for simulation of laser beam interaction with random packings of powders", AIP Conference Proceedings [AIP Conf. Proc.], vol. 1939, no. 1, p. 020028, Mar 2018, url <https://doi.org/10.1063/1.5027340>
 5. <a name="ref5"></a>Eric W. Weisstein, "Spherical Coordinates", from MathWorld--A Wolfram Web Resource, url <https://mathworld.wolfram.com/SphericalCoordinates.html> [20200101].
 6. <a name="ref6"></a>Leno S. Pedrotti, "Basic Geometrical Optics", in Chandra Roychoudhuri (ed), Fundamentals of Photonics, 2008, pp. 73-116, url <https://doi.org/10.1117/3.784938.ch3>
+7. <a name="ref7"></a>William F. Trenchm "8.4: The Unit Step Function", MTH 225 Differential Equations, Mathematics, LibreTexts, 7 Jan 2020, url <https://math.libretexts.org/Courses/Monroe_Community_College/MTH_225_Differential_Equations/8:_Laplace_Transforms/8.4:_The_Unit_Step_Function> [20210101].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/comp/2021-01-01-single-ray-source-direction.md)
 
