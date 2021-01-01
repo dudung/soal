@@ -79,7 +79,7 @@ to assure that the laser beam wavefront is propagating only when $t \ge t_0$.
 
 
 ## implementation with js
-Using JavaScript (JS) Eqn. \eqref{eqn:srsd-time-t} and \eqref{eqn:srsd-lbwf-u} can calculated using following snippets [[8](#ref8)]. One way to implement Eqn. \eqref{eqn:srsd-lbwf-u} is
+Using JavaScript (JS) Eqns. \eqref{eqn:srsd-time-t} and \eqref{eqn:srsd-lbwf-u} can calculated using following snippets [[8](#ref8)]. One way to implement Eqn. \eqref{eqn:srsd-lbwf-u} is
 
 ```javascript
 function getBeamWavefrontPosition(r_src, n_dir, v_ray, t_0, t) {
@@ -91,7 +91,16 @@ function getBeamWavefrontPosition(r_src, n_dir, v_ray, t_0, t) {
 }
 ```
 
-with `Vect3` is a class for 3d [vector](/physics/vector).
+with `Vect3` is a class for 3d [vector](/physics/vector). And for Eqn. \eqref{eqn:srsd-time-t} is simply
+
+```javascript
+function advanceTime(dt, t) {
+	var t_new = t + dt;
+	return t_new;
+}
+```
+
+where `t = t + dt` is still the simplest form. For drawing the ray trajectory array of `Vect3` is required.
 
 
 ## references
