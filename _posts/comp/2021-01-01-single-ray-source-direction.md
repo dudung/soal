@@ -78,6 +78,9 @@ u(t- t_0) = \left\\{
 to assure that the laser beam wavefront is propagating only when $t \ge t_0$.
 
 
+## implementation with js
+Using JavaScript (JS) Eqn. \eqref{eqn:srsd-time-t} and \eqref{eqn:srsd-lbwf-u} can calculated using following snippet [[8](#ref8)].
+
 ## references
 1. <a name="ref1"></a>Wikipedia contributors, "Ray tracing (physics)", Wikipedia, The Free Encyclopedia, 20 Dec 2020, 01:37 UTC, url <https://en.wikipedia.org/w/index.php?oldid=995258966> [20210101].
 2. <a name="ref2"></a>Thomas V. Higgins, "All rays lead to geometrical optics", Laser Focus World, 1 Dec 2000, url <https://www.laserfocusworld.com/optics/article/16555510/all-rays-lead-to-geometrical-optics> [20210101].
@@ -86,7 +89,7 @@ to assure that the laser beam wavefront is propagating only when $t \ge t_0$.
 5. <a name="ref5"></a>Eric W. Weisstein, "Spherical Coordinates", from MathWorld--A Wolfram Web Resource, url <https://mathworld.wolfram.com/SphericalCoordinates.html> [20200101].
 6. <a name="ref6"></a>Leno S. Pedrotti, "Basic Geometrical Optics", in Chandra Roychoudhuri (ed), Fundamentals of Photonics, 2008, pp. 73-116, url <https://doi.org/10.1117/3.784938.ch3>
 7. <a name="ref7"></a>William F. Trenchm "8.4: The Unit Step Function", MTH 225 Differential Equations, Mathematics, LibreTexts, 7 Jan 2020, url <https://math.libretexts.org/Courses/Monroe_Community_College/MTH_225_Differential_Equations/8:_Laplace_Transforms/8.4:_The_Unit_Step_Function> [20210101].
-
+8. <a name="ref8"></a>Wikipedia contributors, "Snippet (programming)", Wikipedia, The Free Encyclopedia, 19 Dec 2020, 05:43 UTC, url <https://en.wikipedia.org/w/index.php?oldid=995096644> [20210102].
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/comp/2021-01-01-single-ray-source-direction.md)
 
 {% comment %}
