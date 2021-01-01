@@ -79,7 +79,20 @@ to assure that the laser beam wavefront is propagating only when $t \ge t_0$.
 
 
 ## implementation with js
-Using JavaScript (JS) Eqn. \eqref{eqn:srsd-time-t} and \eqref{eqn:srsd-lbwf-u} can calculated using following snippet [[8](#ref8)].
+Using JavaScript (JS) Eqn. \eqref{eqn:srsd-time-t} and \eqref{eqn:srsd-lbwf-u} can calculated using following snippets [[8](#ref8)]. One way to implement Eqn. \eqref{eqn:srsd-lbwf-u} is
+
+```javascript
+function getBeamWavefrontPosition(r_src, n_dir, v_ray, t_0, t) {
+	var dt = t - t_0;
+	var u = (t >= t_0) ? 1 : 0;
+	var dr = Vect3.Mul(n_dir, u * v_ray * dt);
+	var r_waf = Vect3.add(r_src, dr);
+	return r_waf;
+}
+```
+
+with `Vect3` is a class for 3d [vector](/physics/vector).
+
 
 ## references
 1. <a name="ref1"></a>Wikipedia contributors, "Ray tracing (physics)", Wikipedia, The Free Encyclopedia, 20 Dec 2020, 01:37 UTC, url <https://en.wikipedia.org/w/index.php?oldid=995258966> [20210101].
