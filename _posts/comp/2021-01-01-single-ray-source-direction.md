@@ -1,28 +1,25 @@
 ---
 layout: post
 author: viridi
-title: aingle ray source direction
+title: single ray source direction
 mathjax: true
 ptext: false
 x3dom: false
 threejs: false
 oo: false
-category: physics
-tags: ["", "", "", ""]
+category: computation
+tags: ["geometrical otpics", "finite difference", "javascript"]
 date: 2021-01-01 20:17:00 +07
 permalink: /comp/single-ray-source-direction
 ---
-According to [[1](#ref1)].
+
+Using ray tracing [[1](#ref1)], where the modern optical design is still involving the method but as a computer-aided technique [[2](#ref2)], simulator can be developed [[3](#ref3)]. 
 
 
 ## References
-1. <a name="ref1"></a> -, "Kinetic Theory of Gases", Glenn Research Center, National Aeronautics and Space Administration, url <https://www.grc.nasa.gov/www/k-12/airplane/kinth.html> [20201210].
-2. <a name="ref2"></a>-, "6.1 Kinetic Theory of Gases", Introductory Chemistry, v. 1.0, url <https://saylordotorg.github.io/text_introductory-chemistry/s10-01-kinetic-theory-of-gases.html> [20201210].
-3. <a name="ref3"></a>The Editors of Encyclopaedia Britannica, Kanchan Gupta, Thinley Kalsang Bhutia, Erik Gregersen, "Kinetic theory of gases", Encyclopædia Britannica, url <https://www.britannica.com/science/kinetic-theory-of-gases> [20201210].
-4. <a name="ref4"></a>Jessie A. Key, David W. Ball, "Kinetic Molecular Theory of Gases", in Introductory Chemistry, 1st Canadian Edn., Chap. 6. Gases, url <https://opentextbc.ca/introductorychemistry/chapter/kinetic-molecular-theory-of-gases-2/> [20201210].
-5. <a name="ref5"></a>Carl R. Nave, "Kinetic Theory", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/Kinetic/kinthe.html> [20201210].
-6. <a name="ref6"></a>Wikipedia contributors, "Kinetic theory of gases", Wikipedia, The Free Encyclopedia, 2 Dec 2020, 21:15 UTC, url <https://en.wikipedia.org/w/index.php?oldid=991982665> [20201210].
-7. <a name="ref7"></a>-, "Kinetic Theory of Gases", in Calculus-Based General Physics, 22, 1975, url <https://digitalcommons.unl.edu/calculusbasedphysics/22/> [20201210].
+1. <a name="ref1"></a>Wikipedia contributors, "Ray tracing (physics)", Wikipedia, The Free Encyclopedia, 20 Dec 2020, 01:37 UTC, url <https://en.wikipedia.org/w/index.php?oldid=995258966> [20210101].
+2. <a name="ref2"></a>Thomas V. Higgins, "All rays lead to geometrical optics", Laser Focus World, 1 Dec 2000, url <https://www.laserfocusworld.com/optics/article/16555510/all-rays-lead-to-geometrical-optics> [20210101].
+3. <a name="ref3"></a>Johnson Rick Tu, "Ray Optics Simulation", GitHub, 20 Aug 2018, url <https://ricktu288.github.io/ray-optics/>
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/comp/2021-01-01-single-ray-source-direction.md)
 
