@@ -17,7 +17,15 @@ Using ray tracing [[1](#ref1)], where the modern optical design is still involvi
 
 
 ## light source
-Two parameters are required to define a light source emitting a single ray. The first is 
+Two parameters are required to define a light source emitting a single ray as shown in Fig. <a href="#fig:srsd-lsd">1</a>.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/comp/ray-source-direction.png)
+<br />
+Figure <a name="fig:srsd-lsd">1</a> A light source is positioned at $\vec{r} _{\rm src}$ with direction of $\hat{n} _{\rm dir}$, where $\theta = 0.5 \pi$ in this case ($\theta$ is measured from $z$ axis to the direction of $x$ axis).
+{: refdef}
+
+The first is 
 
 \begin{equation}
 \label{eqn:srsd-lso}
@@ -113,13 +121,3 @@ where `t = t + dt` is still the simplest one. For drawing the ray trajectory arr
 7. <a name="ref7"></a>William F. Trenchm "8.4: The Unit Step Function", MTH 225 Differential Equations, Mathematics, LibreTexts, 7 Jan 2020, url <https://math.libretexts.org/Courses/Monroe_Community_College/MTH_225_Differential_Equations/8:_Laplace_Transforms/8.4:_The_Unit_Step_Function> [20210101].
 8. <a name="ref8"></a>Wikipedia contributors, "Snippet (programming)", Wikipedia, The Free Encyclopedia, 19 Dec 2020, 05:43 UTC, url <https://en.wikipedia.org/w/index.php?oldid=995096644> [20210102].
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/comp/2021-01-01-single-ray-source-direction.md)
-
-{% comment %}
-Fig. <a href="#fig:x">1</a>.
-
-{:refdef: style="text-align: center;"}
-![..](/assets/img/phys/x.png)
-<br />
-Figure <a name="fig:x">1</a> ...
-{: refdef}
-{% endcomment %}
