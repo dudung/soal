@@ -12,7 +12,7 @@ tags: ["geometrical otpics", "finite difference", "javascript"]
 date: 2021-01-02 12:53:00 +07
 permalink: /comp/single-ray-reflection-sphere
 ---
-Reflection of laser beam on spherical particle acting as mirror is discussed here.
+Reflection of single ray of laser beam on particle acting as spherical convex mirror [[1](#ref1)] based on the law of reflection [[2](#ref2)] is discussed here.
 
 
 ## root finding
@@ -48,6 +48,16 @@ f(t_C) = 0
 with $t_A \le t_C \le t_B$. In Fig. <a href="#fig:srfs-ray-reflection-site">1</a> $t_A = t$ and $t_B = t + \Delta t$, where $t_C$ is not known.
 
 Eqn. \eqref{eqn:srfs-lbwf-u-root-function-solution} do gives the root since $f(t_A) > 0$ and $f(t_B) < 0$, or $f(t_A) f(t_B) < 0$. 
+
+
+## ray direction after reflection
+Using the law of reflection [[2](#ref2)], vector formulation of ray direction after reflection can be obtained [[3](#ref3)]
+
+# references
+1. <a name="ref1"></a>Richard Fitzpatrick, "Image Formation by Convex Mirrors", Electromagnetism and Optics: An introductory course, The University of Texas at Austin, 14 Jul 2007, url http://farside.ph.utexas.edu/teaching/302l/lectures/node138.html [20210103].
+2. <a name="ref2"></a>Carl R. Nave, "Law of Reflection", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/phyopt/Fermat.html> [20210103].
+2. <a name="ref3"></a>Wikipedia contributors, "Specular reflection", Wikipedia, The Free Encyclopedia, 18 Dec 2020, 14:02 UTC, url <https://en.wikipedia.org/w/index.php?oldid=994967599> [20210103].
+
 
 {% comment %}
 Using ray tracing [[1](#ref1)], where the modern optical design is still involving the method but as a computer-aided technique [[2](#ref2)], simulator can be developed [[3](#ref3)]. Simulation of laser beam interaction with random packings of mono-size and poly-size spherical particles implements this method [[4](#ref4)].
