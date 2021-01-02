@@ -38,28 +38,48 @@ as in [single ray from a source to a certain direction](/comp/single-ray-source-
 f(t) = \| \vec{r}_{\rm waf} (t) - \vec{r}_O \| - R _{\rm par},
 \end{equation}
 
-where $\vec{r}_O$ is position of center of spherical particle. Solution of Eqn. \eqref{eqn:srfs-lbwf-u-root-function} is when
+where $\vec{r}_O$ is position of center of spherical particle. Solution of Eqn. \eqref{eqn:srfs-lbwf-u-root-function} is found when
 
 \begin{equation}
 \label{eqn:srfs-lbwf-u-root-function-solution}
-f(t_C) = 0
+f(t) = 0 \rightarrow t = t_C
 \end{equation}
 
-with $t_A \le t_C \le t_B$. In Fig. <a href="#fig:srfs-ray-reflection-site">1</a> $t_A = t$ and $t_B = t + \Delta t$, where $t_C$ is not known.
-
-Eqn. \eqref{eqn:srfs-lbwf-u-root-function-solution} do gives the root since $f(t_A) > 0$ and $f(t_B) < 0$, or $f(t_A) f(t_B) < 0$. 
+with $t_A \le t_C \le t_B$. In Fig. <a href="#fig:srfs-ray-reflection-site">1</a> $t_A = t$ and $t_B = t + \Delta t$, where $t_C$ is not known. Eqn. \eqref{eqn:srfs-lbwf-u-root-function-solution} do gives the root since $f(t_A) > 0$ and $f(t_B) < 0$, or $f(t_A) f(t_B) < 0$. 
 
 ## secant method
-Root of Eqn. \eqref{eqn:srfs-lbwf-u-root-function} can be find numerically, e.g. using secant method, which its iterative formula si 
+Root of Eqn. \eqref{eqn:srfs-lbwf-u-root-function} can be find numerically, e.g. using secant method, which its iterative formula tion is  [[3](#ref3)]
+
+\begin{equation}
+\label{eqn:srfs-lbwf-u-root-solution-secant}
+t_n = t _{n-1} - \left( \frac{x _{n-1} - x _{n-2}}{f _{n-1} - f _{n-2}} \right) f _{n-1},
+\end{equation}
+
+where $f_n = f(t_n)$. Since the method requires two pointm i.e. $(t _{n-1}, f _{n-1})$ and $(t _{n-2}, f _{n-2})$, we can simply use 
+
+\begin{equation}
+\label{eqn:srfs-lbwf-u-root-solution-secant-tn-2}
+t _{n-2} = t_A
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:srfs-lbwf-u-root-solution-secant-tn-1}
+t _{n-1} = t_B
+\end{equation}
+
+which are provided as in [single ray from a source to a certain direction](/comp/single-ray-source-direction) for `getBeamWavefrontPosition` function.
 
 
 ## ray direction after reflection
 Using the law of reflection [[2](#ref2)], vector formulation of ray direction after reflection can be obtained [[4](#ref4)]
 
+
 ## references
-1. <a name="ref1"></a>Richard Fitzpatrick, "Image Formation by Convex Mirrors", Electromagnetism and Optics: An introductory course, The University of Texas at Austin, 14 Jul 2007, url http://farside.ph.utexas.edu/teaching/302l/lectures/node138.html [20210103].
+1. <a name="ref1"></a>Richard Fitzpatrick, "Image Formation by Convex Mirrors", Electromagnetism and Optics: An introductory course, The University of Texas at Austin, 14 Jul 2007, url <http://farside.ph.utexas.edu/teaching/302l/lectures/node138.html> [20210103].
 2. <a name="ref2"></a>Carl R. Nave, "Law of Reflection", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/phyopt/Fermat.html> [20210103].
-3. <a name="ref3"></a>
+3. <a name="ref3"></a>Eric W. Weisstein, "Secant Method", from MathWorld--A Wolfram Web Resource, url <https://mathworld.wolfram.com/SecantMethod.html> [20200101].
 4. <a name="ref4"></a>Wikipedia contributors, "Specular reflection", Wikipedia, The Free Encyclopedia, 18 Dec 2020, 14:02 UTC, url <https://en.wikipedia.org/w/index.php?oldid=994967599> [20210103].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/comp/2021-01-02-single-ray-reflection-sphere.md)
