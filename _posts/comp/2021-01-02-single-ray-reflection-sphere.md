@@ -12,14 +12,42 @@ tags: ["geometrical otpics", "finite difference", "javascript"]
 date: 2021-01-02 12:53:00 +07
 permalink: /comp/single-ray-reflection-sphere
 ---
-..
+Reflection of laser beam on spherical particle acting as mirror is discussed here.
 
+
+## root finding
+Assuming that there is `getBeamWavefrontPosition` function as in [single ray from a source to a certain direction](/comp/single-ray-source-direction), which can produce point $A$ at time $t$ and point $B$ at time $t + \Delta t$ as shown in Fig. <a href="#fig:srfs-ray-reflection-site">1</a>, where the actual reflection occurs at point $C$ with $\overline{OC} = R_{\rm par}$ is radius of spherical particle. Center of the particle is point $O$.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/comp/ray-reflection-sphere.png)
 <br />
-Figure <a name="fig:srfs-ray-reflection">1</a> Ray reflection on a spherical particle.
+Figure <a name="fig:srfs-ray-reflection-site">1</a> Ray reflection site $C$ on a spherical particle centered at $O$ with particle radius $R_{\rm par} = \overline{OC}$.
 {: refdef}
+
+Wavefront of the ray is propagating in $\hat{n} _{\rm dir}$ direction with position advancement $v _{\rm ray} \Delta t$ at each iteration. Obtaining point $C$ from point $A$ (out of the particle) and point $B$ (in the particle) is actually a root finding problem. Position of light beam wavefront is
+
+\begin{equation}
+\label{eqn:srfs-lbwf-u}
+\vec{r}_{\rm waf} (t) = \vec{r} _{\rm src} +  \hat{n} _{\rm dir} \ u(t - t_0) \ v _{\rm ray} \ (t - t_0)
+\end{equation}
+
+as in [single ray from a source to a certain direction](/comp/single-ray-source-direction). Using Eqn. \eqref{eqn:srfs-lbwf-u} we can define
+
+\begin{equation}
+\label{eqn:srfs-lbwf-u-root-function}
+f(t) = \| \vec{r}_{\rm waf} (t) - \vec{r}_O \| - R _{\rm par},
+\end{equation}
+
+where $\vec{r}_O$ is position of center of spherical particle. Solution of Eqn. \eqref{eqn:srfs-lbwf-u-root-function} is when
+
+\begin{equation}
+\label{eqn:srfs-lbwf-u-root-function-solution}
+f(t_C) = 0
+\end{equation}
+
+with $t_A \le t_C \le t_B$. In Fig. <a href="#fig:srfs-ray-reflection-site">1</a> $t_A = t$ and $t_B = t + \Delta t$, where $t_C$ is not known.
+
+Eqn. \eqref{eqn:srfs-lbwf-u-root-function-solution} do gives the root since $f(t_A) > 0$ and $f(t_B) < 0$, or $f(t_A) f(t_B) < 0$. 
 
 {% comment %}
 Using ray tracing [[1](#ref1)], where the modern optical design is still involving the method but as a computer-aided technique [[2](#ref2)], simulator can be developed [[3](#ref3)]. Simulation of laser beam interaction with random packings of mono-size and poly-size spherical particles implements this method [[4](#ref4)].
