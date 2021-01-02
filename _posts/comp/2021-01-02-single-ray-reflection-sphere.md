@@ -35,17 +35,28 @@ as in [single ray from a source to a certain direction](/comp/single-ray-source-
 
 \begin{equation}
 \label{eqn:srfs-lbwf-u-root-function}
-f(t) = \| \vec{r}_{\rm waf} (t) - \vec{r}_O \| - R _{\rm par},
+f_{\rm root}(t) = \| \vec{r}_{\rm waf} (t) - \vec{r}_O \| - R _{\rm par},
 \end{equation}
 
 where $\vec{r}_O$ is position of center of spherical particle. Solution of Eqn. \eqref{eqn:srfs-lbwf-u-root-function} is found when
 
 \begin{equation}
 \label{eqn:srfs-lbwf-u-root-function-solution}
-f(t) = 0 \rightarrow t = t_C
+f _{\rm root}(t) = 0 \rightarrow t = t_C
 \end{equation}
 
-with $t_A \le t_C \le t_B$. In Fig. <a href="#fig:srfs-ray-reflection-site">1</a> $t_A = t$ and $t_B = t + \Delta t$, where $t_C$ is not known. Eqn. \eqref{eqn:srfs-lbwf-u-root-function-solution} do gives the root since $f(t_A) > 0$ and $f(t_B) < 0$, or $f(t_A) f(t_B) < 0$. 
+with $t_A \le t_C \le t_B$. In Fig. <a href="#fig:srfs-ray-reflection-site">1</a> $t_A = t$ and $t_B = t + \Delta t$, where $t_C$ is not known. Eqn. \eqref{eqn:srfs-lbwf-u-root-function-solution} do gives the root since $f _{\rm root}(t_A) > 0$ and $f _{\rm root}(t_B) < 0$, or $f _{\rm root}(t_A) f _{\rm root}(t_B) < 0$. And implementation of $f _{\rm root}$ in JS is simply
+
+```javascript
+function f_root(r_wav, r_O, R_par) {
+	var dist = Vect3.sub(r_waf, r_O).len();
+	var f = dist - Rpar;
+	return f;
+}
+```
+
+by assuming that `getBeamWavefrontPosition` function exists, which calculate `r_waf` value for the `f_root` function.
+
 
 ## secant method
 Root of Eqn. \eqref{eqn:srfs-lbwf-u-root-function} can be find numerically, e.g. using secant method, which its iterative formula tion is  [[3](#ref3)]
