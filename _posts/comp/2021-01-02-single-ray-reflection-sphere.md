@@ -55,7 +55,7 @@ function f_root(r_wav, r_O, R_par) {
 }
 ```
 
-by assuming that `getBeamWavefrontPosition` function exists, which calculate `r_waf` value for the `f_root` function.
+by assuming that `getBeamWavefrontPosition` function exists, which calculate `r_waf` value for one of the arguments of `f_root` function.
 
 
 ## secant method
@@ -80,8 +80,16 @@ and
 t _{n-1} = t_B
 \end{equation}
 
-which are provided as in [single ray from a source to a certain direction](/comp/single-ray-source-direction) for `getBeamWavefrontPosition` function.
+which are provided as in [single ray from a source to a certain direction](/comp/single-ray-source-direction) for `getBeamWavefrontPosition` function. Eqn. \eqref{eqn:srfs-lbwf-u-root-solution-secant} can be implemented in JS as follow
 
+
+```javascript
+function getReflectionSite(t_A, t_B, N, f_root) {
+	
+}
+```
+
+using previous snippet of `f_root`.
 
 ## ray direction after reflection
 Using the law of reflection [[2](#ref2)], vector formulation of ray direction after reflection can be obtained [[4](#ref4)]
