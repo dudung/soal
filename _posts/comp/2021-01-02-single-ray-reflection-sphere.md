@@ -14,6 +14,13 @@ permalink: /comp/single-ray-reflection-sphere
 ---
 ..
 
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/comp/ray-reflection-sphere.png)
+<br />
+Figure <a name="fig:srfs-ray-reflection">1</a> Ray reflection on a spherical particle.
+{: refdef}
+
 {% comment %}
 Using ray tracing [[1](#ref1)], where the modern optical design is still involving the method but as a computer-aided technique [[2](#ref2)], simulator can be developed [[3](#ref3)]. Simulation of laser beam interaction with random packings of mono-size and poly-size spherical particles implements this method [[4](#ref4)].
 
