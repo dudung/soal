@@ -130,7 +130,7 @@ for(var n = 0; n <= N; n++) {
 drawPolyline(trajectory);
 ```
 
-where `drawPolyline` is required for drawing the laser beam. Previous snippet does not give animation view since JS will finish first iteration and then do the instruction after that. You can add the animation inside the `drawPolyline` by using `setInterval` or `requestAnimationFrame` functions, or with another way.
+where `drawPolyline` is required for drawing the laser beam. Previous snippet does not give animation view since JS will finish first iteration and then do the instruction after that. You can add the animation inside the `drawPolyline` by using `setInterval` or `requestAnimationFrame` functions, or using another way.
 
 
 ## references
