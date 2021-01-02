@@ -108,7 +108,29 @@ function advanceTime(dt, t) {
 }
 ```
 
-where `t = t + dt` is still the simplest one. For drawing the ray trajectory array of `Vect3` is required.
+where `t = t + dt` is still the simplest one. For drawing the ray trajectory array of `Vect3` is required. For example in the main function we can have
+
+```javascript
+var t_0 = 0;
+var dt = 1;
+var t = -10 * t_0;
+
+var trajectory = [];
+var r_src = new Vect3(1, 0, 0);
+var n_dir = new Vect3(-0.8, 0.6, 0);
+var v_ray = 0.1;
+
+var N = 90;
+for(var n = 0; n <= N; n++) {
+	var r_waf = getBeamWavefrontPosition(r_src, n_dir, v_ray, t_0, t);
+	trajectory.push(r_waf);
+	t = advanceTime(dt, t);
+}
+
+drawPolyline(trajectory);
+```
+
+where `drawPolyline` is required for drawing the laser beam. Previous snippet does not give animation view since JS will finish first iteration and then do the instruction after that. You can add the animation inside the `drawPolyline` by using `setInterval` or `requestAnimationFrame` functions, or with another way.
 
 
 ## references
