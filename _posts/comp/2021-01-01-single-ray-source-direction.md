@@ -100,7 +100,7 @@ function advanceTime(dt, t) {
 }
 ```
 
-where `t = t + dt` is still the simplest form. For drawing the ray trajectory array of `Vect3` is required.
+where `t = t + dt` is still the simplest one. For drawing the ray trajectory array of `Vect3` is required.
 
 
 ## references
@@ -123,4 +123,3 @@ Fig. <a href="#fig:x">1</a>.
 Figure <a name="fig:x">1</a> ...
 {: refdef}
 {% endcomment %}
-
