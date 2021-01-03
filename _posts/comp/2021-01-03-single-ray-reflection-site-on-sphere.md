@@ -104,7 +104,7 @@ using previous snippet of `f_root`, where $N$ is number of iteration.
 
 
 ## finding reflection site
-In the `main` function the use of previous function can be as follow
+In the `main` function the use of two previous functions can be as follow
 
 ```javascript
 var t_0 = 0;
@@ -132,9 +132,9 @@ for(var n = 0; n <= N; n++) {
 	var r_waf = getBeamWavefrontPosition(r_src, n_dir, v_ray, t_0, t);
 	var fB = f_root(r_waf, r_O, R_par);
 	
-	if(fA * fB < 1) {
+	if(fA * fB < 0) {
 		var N_irf = 10;
-		var tC = rootSecant(f_root, tA, tB, N2);
+		var tC = rootSecant(f_root, tA, tB, N_irf);
 		
 		var r_waf = getBeamWavefrontPosition(r_src, n_dir, v_ray, t_0, tC);
 		trajectory.push(r_waf);
@@ -146,7 +146,7 @@ for(var n = 0; n <= N; n++) {
 drawPolyline(trajectory);
 ```
 
-which draws the trajectory of laser beam from the source $\vec{r} _{\rm src}$ until it touches the spherical particle, i.e. the reflection site at $\vec{r} _{\rm waf}(t_C)$.
+which draws the trajectory of laser beam from the source $\vec{r} _{\rm src}$ until it touches the spherical particle, i.e. the reflection site at $\vec{r} _{\rm waf}(t_C)$. Instead of using $\epsilon$ for accuracy of solution, we use $N _{\rm irf}$ or number of iteration for root finding process, which guarantees that the iteration will be terminated.
 
 
 ## note
