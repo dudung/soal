@@ -146,11 +146,11 @@ for(var n = 0; n <= N; n++) {
 drawPolyline(trajectory);
 ```
 
-which draws the trajectory of laser beam from the source $\vec{r} _{\rm src}$ until it touches the spharical particle, i.e. the reflection site at $\vec{r} _{\rm waf}(t_C)$.
+which draws the trajectory of laser beam from the source $\vec{r} _{\rm src}$ until it touches the spherical particle, i.e. the reflection site at $\vec{r} _{\rm waf}(t_C)$.
 
 
-## Note
-Notice that $\vec{r} _{\rm waf}$ as one of the arguments of `f_root` function is obtained using `getBeamWavefrontPosition` function, which requires information of time $t$. This $t$ is not given explicitly in `f_root` function for simplicity.
+## note
+Notice that $\vec{r} _{\rm waf}$ as one of the arguments of `f_root` function is obtained using `getBeamWavefrontPosition` function, which requires information of time $t$. This $t$ is not given explicitly in `f_root` function for simplicity. Information about `getBeamWavefrontPosition` function can be found in [single ray from a source to a certain direction](/comp/single-ray-source-direction).
 
 
 ## references
