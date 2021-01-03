@@ -16,7 +16,14 @@ A particle, which performs as spherical convex mirror [[1](#ref1)], can reflect 
 
 
 ## ray direction after reflection
-Using the law of reflection [[2](#ref2)], vector formulation of ray direction after reflection can be obtained [[3](#ref3)].
+Using the law of reflection [[2](#ref2)], vector formulation of ray direction after reflection can be obtained [[3](#ref3)]. At the reflection site $\vec{r}_C$ we will have incident ray direction $\hat{n} _{\rm dir}$, and normal direction $\hat{n} _{\rm par}$ on the particle surface, which is simply
+
+\begin{equation}
+\label{eqn:srrs-normal-par}
+\hat{n}_{\rm par} = \frac{\vec{r}_C - \vec{r}_O}{ \left| \vec{r}_C - \vec{r}_O \right|}
+\end{equation}
+
+with $\vec{r}_O$ is position of particle center.
 
 
 ## references
