@@ -12,12 +12,7 @@ tags: ["geometrical otpics", "finite difference", "javascript"]
 date: 2021-01-02 12:53:00 +07
 permalink: /comp/single-ray-reflection-site-on-sphere
 ---
-Reflection of single ray of laser beam on particle acting as spherical convex mirror [[1](#ref1)] requires the determination of reflection site on the particle surface, which is actually a root finding problem [[2](#ref2)]
-
-
-Eugeniy E. Mikhailov, "Programming with MATLAB for Scientists: A Beginner’s Introduction", CRC Press, 1st edition, Jan 2018, pp. [93-94](http://physics.wm.edu/~evmik/classes/matlab_book/ch_root_finding/ch_root_finding.pdf), url <https://isbnsearch.org/isbn/9781498738286>  [20200103].
-
-based on the law of reflection [[2](#ref2)] is discussed here.
+Reflection of single ray of laser beam on particle acting as spherical convex mirror [[1](#ref1)] requires the determination of reflection site on the particle surface, which is actually a root finding problem [[2](#ref2)]. Illustration how to obtain the reflection site sing secant method [[3](#ref3)] is discussed here.
 
 
 ## root finding
@@ -150,12 +145,13 @@ drawPolyline(trajectory);
 which draws the trajectory of laser beam until it touches the spharical particle, i.e. the reflection site.
 
 
-## ray direction after reflection
-Using the law of reflection [[2](#ref2)], vector formulation of ray direction after reflection can be obtained [[4](#ref4)]
-
-
 ## references
 1. <a name="ref1"></a>Richard Fitzpatrick, "Image Formation by Convex Mirrors", Electromagnetism and Optics: An introductory course, The University of Texas at Austin, 14 Jul 2007, url <http://farside.ph.utexas.edu/teaching/302l/lectures/node138.html> [20210103].
+2. <a name="ref2"></a>Eugeniy E. Mikhailov, "Programming with MATLAB for Scientists: A Beginner’s Introduction", CRC Press, 1st edition, Jan 2018, pp. [93-94](http://physics.wm.edu/~evmik/classes/matlab_book/ch_root_finding/ch_root_finding.pdf), url <https://isbnsearch.org/isbn/9781498738286>  [20200103].
+
+
+
+
 2. <a name="ref2"></a>Carl R. Nave, "Law of Reflection", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/phyopt/Fermat.html> [20210103].
 3. <a name="ref3"></a>Eric W. Weisstein, "Secant Method", from MathWorld--A Wolfram Web Resource, url <https://mathworld.wolfram.com/SecantMethod.html> [20200101].
 4. <a name="ref4"></a>Wikipedia contributors, "Specular reflection", Wikipedia, The Free Encyclopedia, 18 Dec 2020, 14:02 UTC, url <https://en.wikipedia.org/w/index.php?oldid=994967599> [20210103].
