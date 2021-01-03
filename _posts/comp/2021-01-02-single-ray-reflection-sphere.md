@@ -48,7 +48,7 @@ f _{\rm root}(t) = 0 \rightarrow t = t_C
 with $t_A \le t_C \le t_B$. In Fig. <a href="#fig:srfs-ray-reflection-site">1</a> $t_A = t$ and $t_B = t + \Delta t$, where $t_C$ is not known. Eqn. \eqref{eqn:srfs-lbwf-u-root-function-solution} do gives the root since $f _{\rm root}(t_A) > 0$ and $f _{\rm root}(t_B) < 0$, or $f _{\rm root}(t_A) f _{\rm root}(t_B) < 0$. And implementation of $f _{\rm root}$ in JS is simply
 
 ```javascript
-function f_root(r_wav, r_O, R_par) {
+function f_root(r_waf, r_O, R_par) {
 	var dist = Vect3.sub(r_waf, r_O).len();
 	var f = dist - Rpar;
 	return f;
@@ -82,7 +82,6 @@ t _{n-1} = t_B
 
 which are provided as in [single ray from a source to a certain direction](/comp/single-ray-source-direction) for `getBeamWavefrontPosition` function. Eqn. \eqref{eqn:srfs-lbwf-u-root-solution-secant} can be implemented in JS as follow
 
-
 ```javascript
 function rootSecant(f, tA, tB, N) {
 	var tn_2 = tB;
@@ -101,7 +100,50 @@ function rootSecant(f, tA, tB, N) {
 }
 ```
 
-using previous snippet of `f_root`, where $N$ is number of iteration.
+using previous snippet of `f_root`, where $N$ is number of iteration. In the `main` function the use of previous function can be as follow
+
+```javascript
+var t_0 = 0;
+var dt = 1;
+var t = -10 * t_0;
+
+var trajectory = [];
+var r_src = new Vect3(1, 0, 0);
+var n_dir = new Vect3(-0.8, 0.6, 0);
+var v_ray = 0.1;
+
+var r_O = new Vect3(-2, 4, 0);
+var R_par = 0.1;
+
+var N = 90;
+for(var n = 0; n <= N; n++) {
+	var r_waf = getBeamWavefrontPosition(r_src, n_dir, v_ray, t_0, t);
+	trajectory.push(r_waf);
+	
+	var tA = t;
+	var fA = f_root(r_waf, r_O, R_par);
+	
+	t = advanceTime(dt, t);
+	var tB = t;
+	var r_waf = getBeamWavefrontPosition(r_src, n_dir, v_ray, t_0, t);
+	var fB = f_root(r_waf, r_O, R_par);
+	
+	if(fA * fB < 1) {
+		var N_irf = 10;
+		var tC = rootSecant(f_root, tA, tB, N2);
+		
+		var r_waf = getBeamWavefrontPosition(r_src, n_dir, v_ray, t_0, tC);
+		trajectory.push(r_waf);
+		
+		break;
+	}
+}
+
+drawPolyline(trajectory);
+```
+
+which draws the trajectory of laser beam until it touches the spharical particle, i.e. the reflection site.
+
 
 ## ray direction after reflection
 Using the law of reflection [[2](#ref2)], vector formulation of ray direction after reflection can be obtained [[4](#ref4)]
