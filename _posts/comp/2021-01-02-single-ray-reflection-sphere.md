@@ -63,7 +63,7 @@ Root of Eqn. \eqref{eqn:srfs-lbwf-u-root-function} can be find numerically, e.g.
 
 \begin{equation}
 \label{eqn:srfs-lbwf-u-root-solution-secant}
-t_n = t _{n-1} - \left( \frac{x _{n-1} - x _{n-2}}{f _{n-1} - f _{n-2}} \right) f _{n-1},
+t_n = t _{n-1} - \left( \frac{t _{n-1} - t _{n-2}}{f _{n-1} - f _{n-2}} \right) f _{n-1},
 \end{equation}
 
 where $f_n = f(t_n)$. Since the method requires two pointm i.e. $(t _{n-1}, f _{n-1})$ and $(t _{n-2}, f _{n-2})$, we can simply use 
@@ -84,12 +84,24 @@ which are provided as in [single ray from a source to a certain direction](/comp
 
 
 ```javascript
-function getReflectionSite(t_A, t_B, N, f_root) {
-	
+function rootSecant(f, tA, tB, N) {
+	var tn_2 = tB;
+	var tn_1 = tA;
+	var tn;
+	for(var n = 0; n < N; n++) {
+		var fn_2 = f(tn_2);
+		var fn_1 = f(tn_1);
+		
+		tn = tn_1 - ( (tn_1 - tn_2) / (fn_1 - fn_2) ) * fn_1;
+		
+		tn_2 = tn_1;
+		tn_1 = tn;
+	}
+	return tn;
 }
 ```
 
-using previous snippet of `f_root`.
+using previous snippet of `f_root`, where $N$ is number of iteration.
 
 ## ray direction after reflection
 Using the law of reflection [[2](#ref2)], vector formulation of ray direction after reflection can be obtained [[4](#ref4)]
