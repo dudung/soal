@@ -12,7 +12,7 @@ tags: ["geometrical otpics", "finite difference", "javascript"]
 date: 2021-01-02 12:53:00 +07
 permalink: /comp/single-ray-reflection-sphere
 ---
-A particle, which performs as spherical convex mirror [[1](#ref1)], can reflect single ray of laser beam based on the law of reflection [[2](#ref2)]. We can consider that the reflection site as a new light source, similar as it [travels from original light source to a certain direction](/comp/single-ray-source-direction) until it arrives at [the reflection site on the spherical particle](/comp/single-ray-reflection-site-on-sphere).
+A particle, which performs as spherical convex mirror [[1](#ref1)], can reflect single ray of laser beam based on the law of reflection [[2](#ref2)]. We can consider that the reflection site as a new light source, similar as it [travels from original light source to a certain direction](/comp/single-ray-source-direction) until it arrives at [the reflection site on the surface of spherical particle](/comp/single-ray-reflection-site-on-sphere).
 
 
 ## ray direction after reflection
