@@ -16,7 +16,7 @@ A particle, which performs as spherical convex mirror [[1](#ref1)], can reflect 
 
 
 ## normal direction
-Illustration how a single ray of laser beam reflected by a particle acting as spherical mirror is given in Fig. <a name="#fig:srrs-inc-ref-beam">1</a>.
+Illustration how a single ray of laser beam reflected by a particle acting as spherical mirror is given in Fig. <a ref="#fig:srrs-inc-ref-beam">1</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/comp/ray-reflected-sphere-0.png)
@@ -35,7 +35,7 @@ with $\vec{r} _O$  is position of particle center. The normal vector $\hat{n} _{
 
 
 ## ray direction after reflection
-By simplying previous figure we can have Fig. <a name="#fig:srrs-reflected-ray-derivation">2</a>.
+By simplying previous figure we can have Fig. <a ref="#fig:srrs-reflected-ray-derivation">2</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/comp/ray-reflected-sphere-1.png)

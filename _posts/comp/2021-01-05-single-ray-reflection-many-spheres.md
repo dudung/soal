@@ -27,6 +27,25 @@ Figure <a name="fig:srrs-inc-ref-beam">1</a> Single ray of laser beam reflected 
 In each reflection on a spherical particles law of relection [[1](#ref1)] always holds.
 
 
+## reflection on 1st sphere
+For the first sphere as shown in Fig. <a href="fig:srrms-ray-reflection-sphere-1">1</a>
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/comp/reflection-on-shpere-1.png)
+<br />
+Figure <a name="fig:srrms-ray-reflection-sphere-1">1</a> Single ray of laser beam reflected on the first sphere located at $\vec{r} _{O,1}$.
+{: refdef}
+
+following relation holds
+
+\begin{equation}
+\label{eqn:srrms-reflection-sphere-1}
+\hat{n} _{\rm ref,1} = \hat{n} _{\rm dir} - 2 (\hat{n} _{\rm dir} \cdot \hat{n} _{\rm par,1}) \hat{n} _{\rm par,1},
+\end{equation}
+
+where the derivation has been discussed in [single ray reflection on a single sphere](/comp/single-ray-reflection-sphere)
+
+
 ## references
 1. <a name="ref1"></a>Carl R. Nave, "Law of Reflection", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/phyopt/Fermat.html> [20210105].
 
