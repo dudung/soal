@@ -15,7 +15,7 @@ permalink: /comp/single-ray-reflection-many-spheres
 Reflection of single ray of laser beam on many spheres can be performed using [single ray reflection on a single sphere](/comp/single-ray-reflection-sphere) consecutively until the beam leaving the observation region or arrving at a light sensor.
 
 
-## muny spheres system
+## many spheres system
 Fig. <a name="#fig:srrms-many-spheres-system">1</a> shows the illustration how a single ray of laser beam reflected multiple times by many spheres.
 
 {:refdef: style="text-align: center;"}
@@ -24,7 +24,7 @@ Fig. <a name="#fig:srrms-many-spheres-system">1</a> shows the illustration how a
 Figure <a name="fig:srrs-inc-ref-beam">1</a> Single ray of laser beam reflected multiple times in a many spheres system.
 {: refdef}
 
-In each reflection on a spherical particles law of relection [[1](#ref1)] holds.
+In each reflection on a spherical particles law of relection [[1](#ref1)] always holds.
 
 
 ## references
