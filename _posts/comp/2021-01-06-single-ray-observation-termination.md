@@ -10,7 +10,7 @@ oo: false
 category: computation
 tags: ["geometrical otpics", "finite difference", "javascript"]
 date: 2021-01-06 07:48:00 +07
-permalink: /comp/single-ray-reflection-many-spheres
+permalink: /comp/single-ray-observation-termination
 ---
 ..
 
