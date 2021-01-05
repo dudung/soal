@@ -21,7 +21,7 @@ Fig. <a name="#fig:srrms-many-spheres-system">1</a> shows the illustration how a
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/comp/ray-reflected-many-spheres.png)
 <br />
-Figure <a name="fig:srrs-inc-ref-beam">1</a> Single ray of laser beam reflected multiple times in a many spheres system.
+Figure <a name="fig:srrs-inc-ref-beam">1</a> Single ray of laser beam reflected multiple times in a many spheres system ($N = 6$).
 {: refdef}
 
 In each reflection on a spherical particles law of relection [[1](#ref1)] always holds.
