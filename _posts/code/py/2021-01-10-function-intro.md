@@ -44,7 +44,8 @@ which is only an illustration.
 
 
 ## note
-Function name should represent purpose of the function and argument(s) should be defined to give a clear description and usage of the function.
++ Function name should represent purpose of the function and argument(s) should be defined to give a clear description and usage of the function.
++ Codes are tested with Python 3.7 using Cygwin (x86) in Windows 10 Home (x64).
 
 
 ## references
