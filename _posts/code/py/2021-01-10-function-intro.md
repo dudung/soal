@@ -34,11 +34,20 @@ A univariate polynomial [[3](#ref3)] can be expressed, e.g. with order of two, i
 P(x) = c_0 + c_1 \ x + c_2 x^2,
 \end{equation}
 
-where $c_0$, $c_1$, $c_2$ are coefficients.
+where $c_0$, $c_1$, $c_2$ are coefficients. We will use list, a generic containers in Python [[4](#ref4)], instead of array to store the coefficients
+
+```python
+c0 = 6
+c1 = -5
+c2 = 1
+coeff = [c0, c1, c2]
+```
+
+where `coeff` is a Python list. We can also using number directyl in the list, between `[` and `]`, the square brackets. Previous example still uses `c0`, `c1`, and `c2` only to give better relation to Eqn. \eqref{fintro-polynomial-2}.
 
 
-## code
-In Python we can define a function [[4](#ref4)] as follow
+## syntax
+In Python we can define a function [[5](#re5), [6](#re6)] as follow
 
 ```python
 def function_name(argument):
@@ -47,7 +56,7 @@ def function_name(argument):
 	return processed_value
 ```
 
-which is only an illustration.
+which is an illustration of a user-defined function.
 
 
 ## example
@@ -57,12 +66,15 @@ which is only an illustration.
 ## note
 + Function name should represent purpose of the function and argument(s) should be defined to give a clear description and usage of the function.
 + Codes are tested with Python 3.7 using Cygwin (x86) in Windows 10 Home (x64).
++ It would be better if a function also includes doctring (documentation string), which has not yet been used in here.
 
 
 ## references
 1. <a name="ref1"></a>Wikipedia contributors, "Function (mathematics)", Wikipedia, The Free Encyclopedia, 9 Jan 2021, 17:09 UTC, <https://en.wikipedia.org/w/index.php?oldid=999330249> [20210110].
 2. <a name="ref2"></a>Wikipedia-Autoren, "Abhängige und unabhängige Variable", Wikipedia, Die freie Enzyklopädie, 1 Dez 2020, 17:28 UTC, <https://de.wikipedia.org/w/index.php?oldid=206134794> [20210110].
 3. <a name="ref3"></a>Eric W. Weisstein,  "Univariate Polynomial", from MathWorld--A Wolfram Web Resource, url <https://mathworld.wolfram.com/UnivariatePolynomial.html> [20210111].
-4. <a name="ref4"></a>-, "Python Functions", W3Schools, url <https://www.w3schools.com/python/python_functions.asp> [20210110].
+4. <a name="ref4"></a>Shreya Khare, "Array in Python \| Set 1 (Introduction and Functions)", GeeksforGeeks, 07 Oct 2020, url <https://www.w3schools.com/python/python_functions.asp> [20210111].
+5. <a name="ref5"></a>-, "Python Functions", Programiz, url <https://www.programiz.com/python-programming/function> [20210111].
+6. <a name="ref6"></a>-, "Python Functions", W3Schools, url <https://www.w3schools.com/python/python_functions.asp> [20210110].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/code/py/2021-01-10-function-intro.md)
