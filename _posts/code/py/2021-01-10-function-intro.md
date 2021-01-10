@@ -12,7 +12,7 @@ date: 2021-01-10 21:23:00 +07
 tags: ["function"]
 permalink: /code/py/function-intro
 ---
-Brief introduction to function in Python with example is presented here.
+Brief introduction to function in Python with an example is presented here.
 
 
 ## function
