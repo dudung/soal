@@ -116,15 +116,24 @@ x3 = 4, fun(x3) = 2
 when executed. Notice that $f(x)$ in Eqn. \eqref{fintro-example-quadratic} is represented as `fun(x)` in the code.
 
 
-## exercises
-1. 
-
-
 ## note
 + Function name should represent purpose of the function and argument(s) should be defined to give a clear description and usage of the function.
 + Codes are tested with Python 3.7 using Cygwin (x86) in Windows 10 Home (x64).
 + It would be better if a function also includes doctring (documentation string), which has not yet been used in here.
 
+
+## exercises
+1. Execute `funx.py` to get the output and compare it with previously given information. You can access the source [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/fun/funx.py).
+2. Modify `funx.py` to show value of $f(x)$ in Eqn. \eqref{fintro-example-quadratic} for $x = 1, 3, 5$. Name the new code as `funx_ex2.py`.
+3. Modify `funx.py` to calculate another function $g(x) = 1 + x + x^2 + x^3$ for $x = 0, 1, 2, 3$. Rename the code as `funx_ex3.py` to store the modification.
+4. Look at the following snippet
+```python
+def volume(l, w, h):
+	V = l * w * h
+	return V;
+```
+What is the purpose of it? Explain in brief.
+5. ..
 
 ## references
 1. <a name="ref1"></a>Wikipedia contributors, "Function (mathematics)", Wikipedia, The Free Encyclopedia, 9 Jan 2021, 17:09 UTC, <https://en.wikipedia.org/w/index.php?oldid=999330249> [20210110].
