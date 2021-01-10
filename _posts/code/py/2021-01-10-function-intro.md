@@ -43,7 +43,7 @@ c2 = 1
 coeff = [c0, c1, c2]
 ```
 
-where `coeff` is a Python list. We can also using number directyl in the list, between `[` and `]`, the square brackets. Previous example still uses `c0`, `c1`, and `c2` only to give better relation to Eqn. \eqref{fintro-polynomial-2}.
+where `coeff` is variable with type of Python list. We can also using number directyl in the list, between `[` and `]`, the square brackets. Previous example still uses `c0`, `c1`, and `c2` only to give better relation to Eqn. \eqref{fintro-polynomial-2}.
 
 
 ## syntax
@@ -60,7 +60,60 @@ which is an illustration of a user-defined function.
 
 
 ## example
-..
+Suppose that we have following quadratic equation
+
+\begin{equation}
+\label{fintro-example-quadratic}
+f(x) = x^2 - 5x + 6,
+\end{equation}
+
+that has values of $x$ and $y$
+
+$x$ | 0 | 1 | 2 | 3 | 4 | 5
+$y$ | 6 | 2 | 0 | 0 | 2 | 6
+
+Eqn. \eqref{fintro-example-quadratic} can be implemented in Python (there are some other ways) as follow
+
+```python
+# 
+# funx.py
+# Example of function in Python 3.7
+#
+# Sparisoma Viridi | https://github.com/dudung
+# 
+# 20210110
+# 1920 Create this example, test it, and it works.
+# 1925 Add another output for clearer meaning.
+# 1938 Change f1 to fA to fun for function of x.
+#
+
+# Define function fun with argument x
+def fun(x):
+	c = [6, -5, 1]
+	y = c[2] * x**2 + c[1] * x + c[0];
+	return y;
+
+# Define some x and use the function
+x1 = 0; y1 = fun(x1)
+x2 = 2; y2 = fun(x2)
+x3 = 4; y3 = fun(x3)
+
+# Display the results
+print("x1 = ", x1, ", fun(x1) = ", y1, sep="")
+print("x2 = ", x2, ", fun(x2) = ", y2, sep="")
+print("x3 = ", x3, ", fun(x3) = ", y3, sep="")
+```
+
+that produces some output from previous table
+
+```cmd
+$ python3.7 fun/funx.py
+x1 = 0, fun(x1) = 6
+x2 = 2, fun(x2) = 0
+x3 = 4, fun(x3) = 2
+```
+
+when executed. Notice that $f(x)$ in Eqn. \eqref{fintro-example-quadratic} is represented as `fun(x)` in the code.
 
 
 ## note
