@@ -116,6 +116,10 @@ x3 = 4, fun(x3) = 2
 when executed. Notice that $f(x)$ in Eqn. \eqref{fintro-example-quadratic} is represented as `fun(x)` in the code.
 
 
+## exercises
+1. 
+
+
 ## note
 + Function name should represent purpose of the function and argument(s) should be defined to give a clear description and usage of the function.
 + Codes are tested with Python 3.7 using Cygwin (x86) in Windows 10 Home (x64).
