@@ -133,7 +133,8 @@ def volume(l, w, h):
 	return V;
 ```
 What is the purpose of it? Explain in brief.
-5. ..
+5. Create a code named `funvol.py` and implement previous snippet. Calculate five different blocks and shows the results.
+
 
 ## references
 1. <a name="ref1"></a>Wikipedia contributors, "Function (mathematics)", Wikipedia, The Free Encyclopedia, 9 Jan 2021, 17:09 UTC, <https://en.wikipedia.org/w/index.php?oldid=999330249> [20210110].
