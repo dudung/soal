@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["", "", "", ""]
-date: 2020-12-17 00:00:00 +07
+date: 2021-01-11 21:01:00 +07
 permalink: /electrostatics/coulomb-force
 ---
 According to [[1](#ref1)].
