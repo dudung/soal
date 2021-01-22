@@ -14,6 +14,7 @@ permalink: /fi3201/quadratic-formula
 ---
 One way to get the solution of a quadratic equation is using the quadratic formula [[1](#ref1)]. Here how the formula can be written in some programming languages are shown.
 
+
 ## equation and solution
 For an unknown $x$, a general quadratic equation can be written in form of
 
@@ -22,7 +23,7 @@ For an unknown $x$, a general quadratic equation can be written in form of
 ax^2 + bx + c = 0,
 \end{equation}
 
-where $a$, $b$, and $c$ represent constants. Solution of Eqn. \eqref{eqn:qf-quadratic-equation} can be obtained using quadratic formula
+where $a$, $b$, and $c$ represent constants. Solution of Eqn. \eqref{eqn:qf-quadratic-equation} can be obtained using the quadratic formula
 
 \begin{equation}
 \label{eqn:qf-quadratic-formula}
@@ -30,6 +31,7 @@ x_{1, 2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 \end{equation}
 
 with $a \ne 0$. Note that a quadratic equation has two solutions, that is given by $x_1$ and $x_2$.
+
 
 ## algorithm
 From Eqns. \eqref{eqn:qf-quadratic-equation} and \eqref{eqn:qf-quadratic-formula}, there are four input parameters $a$, $b$, $c$, and $x$, and there are two output values $x_1$ and $x_2$.
@@ -50,6 +52,33 @@ Figure <a name="fig:qf-quadratic-formula-flow-chart">1</a> A quadratic equation 
 {: refdef}
 
 Algorithm and flow chart have their own advantages and disadvantages [[3](#ref3)], and it also depends on the complexity of the problem you are trying to solve. It might be better if you try to exercise which one suits you and on what kind of problem.
+
+
+## implementation
+Flow chart in Fig. <a href="#fig:qf-quadratic-formula-flow-chart">1</a> and algorithm in Alg. <a href="#alg:qf-quadratic-formula-algorithm">1</a> will be implemented in, at least, one programming language. Since there is a lot of variation in writing program, following codes are not the only solution to the problem.
+
+### output
+Independent of the programming language
+```batch
+Equation: ax^2 + bx + c = 0
+Constant: a = 1, b = -5, c = 4
+Solution: x1 = 4, x2 = 1
+```
+should be output of the program.
+
+### javascript
+```javascript
+```
+
+### c++
+```c++
+```
+
+### python
+```python
+```
+
+To test the given codes online you use [online compilers](online-compiler).
 
 
 ## exercises
