@@ -1,7 +1,7 @@
 ---
 layout: post
 author: viridi
-title: phython intro
+title: python intro
 mathjax: true
 ptext: false
 x3dom: false
@@ -15,16 +15,114 @@ permalink: /fi3201/python-intro
 Some examples of python are presented here, including the hello world program [[1](#ref1)].
 
 
+## applications
+You can use various types of plain text editors, e.g. Notepad++ [[2](#ref2)] to write a Python code. To execute the code we can install Cygwin, which is a large collection of GNU and Open Source tools which provide functionality similar to a Linux distribution on Windows [[3](#ref3)], use online compiler [[4](#ref4)], or install a Python 3 compiler [[5](#ref5)] on your local computer.
+
+
 ## hello world
+Look at the following code
+```python
+# 
+# hello.py
+# Display 'Hello, world!' in Python 3.7
+# 
+# Sparisoma Viridi | https://github.com/dudung
+# 
+# Execute: python3.7 hello.py
+# 
+# 20210122
+# 0647 Create this example, test it, and it works.
+# 
+
+print("Hello, world!")
+```
+
+that can be executed as
 
 ```batch
 $ python3.7 hello.py
 Hello, world!
 ```
 
+to produce desired result. In the previous example we can see that the actual line to produce the output is only
+
+```python
+print("Hello, world!")
+```
+
+where the other lines are comments that are suggested to put in a program to explain the program, e.g. purpose of the program, how to execute the program, what is output of the program, etc.
+
+
+## for
+Using `for` [[6](#ref6)] we will reduce our effort in doing a repetition work.
+
+```python
+# 
+# for.py
+# Use for to display lines of number in Python 3.7
+# 
+# Sparisoma Viridi | https://github.com/dudung
+# 
+# Execute: python3.7 for.py
+# 
+# 20210122
+# 0921 Create this example, test it, and it works.
+# 
+
+for i in range(1, 10):
+	print(i)
+```
+
+will produce
+
+```batch
+$ python3.7 for.py
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+as executed. Previous result can also be obtained when we use following code
+
+```
+print(1)
+print(2)
+print(3)
+print(4)
+print(5)
+print(6)
+print(7)
+print(8)
+print(9)
+```
+
+which still works but not so efficient compered to
+
+```python
+for i in range(1, 10):
+	print(i)
+```
+
+Note that there is tabulator or tab charater in front of `print` statement. This tab charater or `\t` must be used in every sub-block in iteration `for` or condition `if`.
+
+
+## Exercices
+1. What is the ASCII character that we need to put in the beginning of a line to indicate that the line is a comment (not a Python statement)? What about a multi-line commment in Python? Is there any pair of `/*` and `*/`in Python as in C++ language?
+
 
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "'Hello, World!' program", Wikipedia, The Free Encyclopedia, 20 Jan 2021, 01:21 UTC, url <https://en.wikipedia.org/w/index.php?oldid=1001702830> [20210122].
+2. <a name="ref2"></a>-, "Notepad++", Version 7.9.2, release Date 2021-01-01, url <https://notepad-plus-plus.org/downloads/> [20210122].
+3. <a name="ref3"></a>-, "Cygwin", Version 3.1.6-1, url <https://www.cygwin.com/> [20210122].
+4. <a name="ref4"></a>-, "Python Online Compiler", Programiz, url <https://www.programiz.com/python-programming/online-compiler/> [20210122].
+5. <a name="ref5"></a>-, "Python Releases for Windows", Latest Python 3 Release - Python 3.9.1, url <https://www.python.org/downloads/windows/> [20210122].
+6. <a name="ref6"></a>-, "Python For Loops", W3Schools, url <https://www.w3schools.com/python/python_for_loops.asp. [20210122].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi3201/2021-01-22-python-intro.md)
 
