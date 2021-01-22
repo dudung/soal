@@ -1,15 +1,13 @@
 # 
-# for-nested-if.py
-# Use nested for and if to display something in Python 3.7
+# for-if.py
+# Use for and if to display something in Python 3.7
 # 
 # Sparisoma Viridi | https://github.com/dudung
 # 
 # Execute: python3.7 for-nested-if.py
 # 
 # 20210122
-# 1203 Create this example form for only.
-# 1457 Choose on of the output
-# 1637 Rename from for-if.py previously.
+# 1639 Create this example only from nested-for-if.py file.
 # 
 
 for i in range(4, 10):
