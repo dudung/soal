@@ -262,14 +262,53 @@ $ python3.7 list-for.py
 In the last example `i` is actualy element of `x` and not only index of `x`. This is a difference that should be noted.
 
 
+## for and if
+
+
+## nested for and if
+In the next example we will show the use of `if` in a `for` loop.
+
+```python
+for i in range(4, 10):
+	for j in range(4, 10):
+		k = i * j
+		if i == j:
+			print(k, end=" ")
+		else:
+			print("00", end=" ")
+	print()
+```
+
+which produces
+
+```python
+$ python3.7 for-if.py
+16 00 00 00 00 00
+00 25 00 00 00 00
+00 00 36 00 00 00
+00 00 00 49 00 00
+00 00 00 00 64 00
+00 00 00 00 00 81
+```
+
+where the rule is simply
+
+\begin{equation}
+\label{eqn:pyint-matrix-example}
+m_{ij} = \left\\{
+\begin{array}{cc}
+(i + 3)(j + 3), & i = j, \newline
+0, & i \ne j,
+\end{array}
+\right.
+\end{equation}
+
+for the matrix elemement with $i = 1, .., 6$ and $j = 1, .., 6$.
+
+
 ## Exercices
 1. What is the ASCII character that we need to put in the beginning of a line to indicate that the line is a comment (not a Python statement)? What about a multi-line commment in Python? Is there any pair of `/*` and `*/`in Python as in C++ language?
 2. Explain the use of `range` in a `for` loop. What are the parameters required? What is the minimum number of parameters? Read reference about it [[7](#ref7)], whenever necessary.
-
-
-## for and if
-In the next example we will show the use of `if` in a `for` loop.
-
 
 
 ## References
