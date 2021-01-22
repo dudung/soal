@@ -4,7 +4,7 @@
 # 
 # Sparisoma Viridi | https://github.com/dudung
 # 
-# Execute: python3.7 list-for.py
+# Execute: python3.7 triangle-number-lines-up.py
 # 
 # 20210122
 # 1709 Create this example, test it, and it works.

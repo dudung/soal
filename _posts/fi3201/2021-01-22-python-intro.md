@@ -345,7 +345,17 @@ You can use [[4](#ref4)] to do that.
 1
 ```
 and name it as `triangle-number-lines-down.py`.
-
+5. Study following lines
+```python
+N = 5
+for i in range(2, N + 2):
+	for j in range(1, N + 2 - i):
+		print(" ", end=" ")
+	for j in range(1, i):
+		print("0", end=" ")
+	print()
+```
+and shown the output. Explain how it can produce such result.
 
 ## References
 1. <a name="ref1"></a>Wikipedia contributors, "'Hello, World!' program", Wikipedia, The Free Encyclopedia, 20 Jan 2021, 01:21 UTC, url <https://en.wikipedia.org/w/index.php?oldid=1001702830> [20210122].
