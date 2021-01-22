@@ -263,6 +263,25 @@ In the last example `i` is actualy element of `x` and not only index of `x`. Thi
 
 
 ## for and if
+Following code
+
+```python
+for i in range(0, 10):
+	if i > 5:
+		print(i)
+```
+
+is supposed to produce number more than 5 and the resulta are
+
+```
+$ python3.7 for-if.py
+6
+7
+8
+9
+```
+
+as expected.
 
 
 ## nested for and if
@@ -306,9 +325,26 @@ m_{ij} = \left\\{
 for the matrix elemement with $i = 1, .., 6$ and $j = 1, .., 6$.
 
 
-## Exercices
+## Exercises
 1. What is the ASCII character that we need to put in the beginning of a line to indicate that the line is a comment (not a Python statement)? What about a multi-line commment in Python? Is there any pair of `/*` and `*/`in Python as in C++ language?
 2. Explain the use of `range` in a `for` loop. What are the parameters required? What is the minimum number of parameters? Read reference about it [[7](#ref7)], whenever necessary.
+3. What is the output of following code?
+```python
+for i in range(2, 7):
+	for j in range(1, i):
+		print(j, end=" ")
+	print()
+```
+You can use [[4](#ref4)] to do that.
+4. Write a code to produce following output
+```
+12345
+1234
+123
+12
+1
+```
+and name it as `triangle-number-lines-down.py`.
 
 
 ## References

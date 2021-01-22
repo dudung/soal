@@ -8,13 +8,9 @@
 # 
 # 20210122
 # 1639 Create this example only from nested-for-if.py file.
+# 1647 Test it.
 # 
 
-for i in range(4, 10):
-	for j in range(4, 10):
-		k = i * j
-		if i == j:
-			print(k, end=" ")
-		else:
-			print("00", end=" ")
-	print()
+for i in range(0, 10):
+	if i > 5:
+		print(i)
