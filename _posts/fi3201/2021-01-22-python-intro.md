@@ -12,7 +12,7 @@ tags: ["fi3201", "python", "intro"]
 date: 2021-01-22 06:22:00 +07
 permalink: /fi3201/python-intro
 ---
-Some examples of python are presented here, including the hello world program [[1](#ref1)].
+Some simple examples of python are presented here, including the hello world program [[1](#ref1)]. It is not a realy complete introduction to Python but only a first glance of taste in entering Computational Physics course in beginning of 2021.
 
 
 ## applications
@@ -111,9 +111,165 @@ for i in range(1, 10):
 
 Note that there is tabulator or tab charater in front of `print` statement. This tab charater or `\t` must be used in every sub-block in iteration `for` or condition `if`.
 
+## nested for
+From now on the comments will not be displayed when they are not so important, in order to focus on the essential lines only. Pay attention to the following code saved as `for-nested.py`
+
+```python
+for i in range(1, 5):
+	for j in range(1, 4):
+		print(i, j)
+```
+
+that produces
+
+```python
+$ python3.7 for-nested.py
+1 1
+1 2
+1 3
+2 1
+2 2
+2 3
+3 1
+3 2
+3 3
+4 1
+4 2
+4 3
+```
+
+and `for-nested-3.py`
+
+```python
+for i in range(1, 5):
+	for j in range(1, 4):
+		for k in range(0, 2):
+			print(i, j, k)
+```
+
+that produces
+
+```python
+$ python3.7 for-nested-3.py
+1 1 0
+1 1 1
+1 2 0
+1 2 1
+1 3 0
+1 3 1
+2 1 0
+2 1 1
+2 2 0
+2 2 1
+2 3 0
+2 3 1
+3 1 0
+3 1 1
+3 2 0
+3 2 1
+3 3 0
+3 3 1
+4 1 0
+4 1 1
+4 2 0
+4 2 1
+4 3 0
+4 3 1
+```
+
+Can you deduce the funtion of `for` and `range` statements?
+
+
+## list and for
+Using list and `for` in Pyhton, we can have following example
+
+```python
+# Define a list
+x = [1, 7, 8, 5, 4]
+
+# Get length of the list
+N = len(x)
+
+for i in range(0, N, 1):
+	print(x[i])
+```
+
+that produces
+
+```python
+$ python3.7 list-for.py
+1
+7
+8
+5
+4
+```
+
+and
+
+```python
+for i in range(0, N):
+	print(x[i])
+```
+
+that produces
+
+```python
+$ python3.7 list-for.py
+1
+7
+8
+5
+4
+```
+
+and
+
+```python
+for i in range(N):
+	print(x[i])
+```
+
+that produces
+
+```python
+$ python3.7 list-for.py
+1
+7
+8
+5
+4
+```
+
+and
+
+```python
+for i in x:
+	print(i)
+```
+
+that produces
+
+```python
+$ python3.7 list-for.py
+1
+7
+8
+5
+4
+```
+
+In the last example `i` is actualy element of `x` and not only index of `x`. This is a difference that should be noted.
+
 
 ## Exercices
 1. What is the ASCII character that we need to put in the beginning of a line to indicate that the line is a comment (not a Python statement)? What about a multi-line commment in Python? Is there any pair of `/*` and `*/`in Python as in C++ language?
+2. Explain the use of `range` in a `for` loop. What are the parameters required? What is the minimum number of parameters? Read reference about it [[7](#ref7)], whenever necessary.
+
+
+## for and if
+In the next example we will show the use of `if` in a `for` loop.
+
 
 
 ## References
@@ -123,6 +279,7 @@ Note that there is tabulator or tab charater in front of `print` statement. This
 4. <a name="ref4"></a>-, "Python Online Compiler", Programiz, url <https://www.programiz.com/python-programming/online-compiler/> [20210122].
 5. <a name="ref5"></a>-, "Python Releases for Windows", Latest Python 3 Release - Python 3.9.1, url <https://www.python.org/downloads/windows/> [20210122].
 6. <a name="ref6"></a>-, "Python For Loops", W3Schools, url <https://www.w3schools.com/python/python_for_loops.asp. [20210122].
+7. <a name="ref7"></a>Vishal Hule, "Python range() function explained with examples", PYnative - Python Programming, 15 Dec 2020, url <https://pynative.com/python-range-function/> [20210122].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi3201/2021-01-22-python-intro.md)
 
