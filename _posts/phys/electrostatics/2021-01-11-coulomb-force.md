@@ -127,16 +127,27 @@ Consider two charges are located in $xy$ plane as shown in Fig. <a href="#fig:cf
 Figure <a name="fig:cf-coulomb-force-1nd-d">6</a> System of two charges: negative-positive (left), positive-positive (center), and negative-negative (right). 
 {: refdef}
 
-Coordinates of $x$ and $y$ in Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a> are in $\rm \mu m$ and $q_1 = +1 \ \rm mC$, $q_2 = -25 \ \rm mC$, $q_3 = +2 \ \rm mC$, $q_4 = +4 \ \rm mC$, $q_5 = -2 \ \rm mC$, $q_6 = -1 \ \rm mC$. To calculate the electrostatic force we use Eqns. \eqref{eqn:cf-coulomb's-law} - \eqref{eqn:cf-relative-position-unit-vector}.
-
-### force on $q_2$ due to existence of $q_1$
-..
-
-### force on $q_3$ due to existence of $q_4$
-..
+Coordinates of $x$ and $y$ in Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a> are in $\rm \mu m$ and $q_1 = +1 \ \rm nC$, $q_2 = -25 \ \rm nC$, $q_3 = +4 \ \rm nC$, $q_4 = +8 \ \rm nC$, $q_5 = -2 \ \rm nC$, $q_6 = -1 \ \rm nC$. To calculate the electrostatic force we use Eqns. \eqref{eqn:cf-coulomb's-law} - \eqref{eqn:cf-relative-position-unit-vector}.
 
 ### force on $q_5$ due to existence of $q_6$
 ..
+
+
+### force on $q_2$ due to existence of $q_1$
+$\vec{r}_2 = (\hat{x} + 2\hat{y}) \ \rm \mu m$. \
+$\vec{r}_1 = (5\hat{x} + 5\hat{y})  \ \rm \mu m$. \
+$\vec{r} _{21} = \vec{r}_2 - \vec{r}_1 = (1-5)\hat{x} + (2-5)\hat{y} = (-4\hat{x} - 3\hat{y}) \ \rm \mu m$. \
+$r _{21} = \| \vec{r} _{21} \| = \sqrt{\vec{r} _{21} \cdot \vec{r} _{21}} = \sqrt{(-4\hat{x} - 3\hat{y}) \cdot (-4\hat{x} - 3\hat{y})} = \sqrt{(-4)^2 + (-3)^2} = 5  \ \rm \mu m$. \
+$\displaystyle \hat{r} _{21} = \frac{\vec{r} _{21}}{r _{21}} = \frac{-4\hat{x} - 3\hat{y}}{5} = (-0.8\hat{x} - 0.6\hat{y})$. \
+$\displaystyle \hat{F} _{21} = k \frac{q_2 q_1}{r^2 _{21}} \hat{r} _{21} = (9\times 10^9) \frac{(-25\times 10^{-9})(+1\times 10^{-9})}{(5\times 10^{-6})^2} (-0.8\hat{x} - 0.6\hat{y}) = (9\times 10^3)(0.8\hat{x} + 0.6\hat{y}) \ \rm N$.
+
+### force on $q_3$ due to existence of $q_4$
+$\vec{r}_3 = (6\hat{x} + 2\hat{y}) \ \rm \mu m$. \
+$\vec{r}_4 = (6\hat{x} + 10\hat{y})  \ \rm \mu m$. \
+$\vec{r} _{34} = \vec{r}_3 - \vec{r}_4 = (6-6)\hat{x} + (2-10)\hat{y} = (-8\hat{y}) \ \rm \mu m$. \
+$r _{34} = \| \vec{r} _{34} \| = \sqrt{\vec{r} _{34} \cdot \vec{r} _{34}} = \sqrt{(-8\hat{y}) \cdot (-8\hat{y})} = \sqrt{(-8)^2} = 8  \ \rm \mu m$. \
+$\displaystyle \hat{r} _{34} = \frac{\vec{r} _{34}}{r _{34}} = \frac{-8\hat{y}}{8} = (-\hat{y})$. \
+$\displaystyle \hat{F} _{34} = k \frac{q_3 q_4}{r^2 _{34}} \hat{r} _{34} = (9\times 10^9) \frac{(+4\times 10^{-9})(+8\times 10^{-9})}{(8\times 10^{-6})^2} (-\hat{y}) = (4.5\times 10^3)(-\hat{y}) \ \rm N$.
 
 
 ## exercises
