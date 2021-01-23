@@ -66,8 +66,13 @@ Unit vector $\hat{r} _{ij}$ is related to relative positiion $\vec{r} {ij}$ and 
 Eqn. \eqref{eqn:cf-relative-position-unit-vector} explains the relation between middle site and right side of Eqn. \eqref{eqn:cf-coulomb's-law}.
 
 
+## case of $q_i q_j > 0$
+Let us simplify the illustration in previous Fig. <a href="#fig:cf-coulomb-force">1</a> with two-dimensional projection as shown in Fig. <a href="#fig:cf-coulomb-force-1">2</a> for the case of $q_i q_j > 0$.
+
+
 ## exercises
 1. What is the definition of $\vec{F} _{ji}$? Modify the related sentence in the Coulomb's law section.
+2. Write the first two sides from the left of Eqn. \eqref{eqn:cf-coulomb's-law} and try to get the right side of it using Eqn. \eqref{eqn:cf-relative-position-unit-vector}.
 
 
 ## references
