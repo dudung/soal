@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["", "", "", ""]
-date: 2021-01-11 21:01:00 +07
+date: 2021-01-24 05:48:00 +07
 permalink: /electrostatics/coulomb-force
 ---
 When there are two charges in space, they will interact through electrostatic force formulated by Coulomb's law [[1](#ref1)]. In the case of attractive force between two point charges Coulomb force does behave like the gravitational force between two point masses [[2](#ref2)].
