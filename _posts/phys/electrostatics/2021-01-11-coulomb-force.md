@@ -28,7 +28,7 @@ In vector form Coulomb's law is
 
 \begin{equation}
 \label{eqn:cf-coulomb's-law}
-\vec{F} _{ij} = k \frac{q_i q_j}{r _{ij}^2} \ \hat{r} _{ij}
+\vec{F} _{ij} = k \frac{q_i q_j}{r _{ij}^2} \ \hat{r} _{ij} = k \frac{q_i q_j}{r _{ij}^3} \ \vec{r} _{ij}
 \end{equation}
 
 with
@@ -40,6 +40,32 @@ k = \frac{1}{4 \pi \epsilon_0} \approx 9 \times 10^9 \ {\rm N \cdot m^2 / C^2}
 
 is Coulomb's constant.
 
+
+## detail use
+Notation of $\vec{r} _{ij}$ in Eqn. \eqref{eqn:cf-coulomb's-law} stands for [relative position](/physics/position#relative-position) of charge $q_i$ relative to charge $q_j$
+
+\begin{equation}
+\label{eqn:cf-relative-position}
+\vec{r} _{ij} = \vec{r}_i - \vec{r}_j.
+\end{equation}
+
+And the [distance](/physics/position#distance) between two charges is
+
+\begin{equation}
+\label{eqn:cf-distance-two-charges}
+r_{ij} = \| \vec{r} _{ij} \| =  \sqrt{\vec{r} _{ij} \cdot \vec{r} _{ij}}.
+\end{equation}
+
+Unit vector $\hat{r} _{ij}$ is related to relative positiion $\vec{r} {ij}$ and distance $r _{ij}$ through
+
+\begin{equation}
+\label{eqn:cf-relative-position-unit-vector}
+\hat{r} _{ij} = \frac{\vec{r} _{ij}}{r _{ij}}.
+\end{equation}
+
+Eqn. \eqref{eqn:cf-relative-position-unit-vector} explains the relation between middle site and right side of Eqn. \eqref{eqn:cf-coulomb's-law}.
+
+
 ## exercises
 1. What is the definition of $\vec{F} _{ji}$? Modify the related sentence in the Coulomb's law section.
 
@@ -49,21 +75,3 @@ is Coulomb's constant.
 2. <a name="ref2"></a>Wikipedia-Autoren, "Coulombsches Gesetz", Wikipedia, Die freie Enzyklopädie, 29 Sep 2020, 08:15 UTC, url <https://en.wikipedia.org/w/index.php?oldid=204085948> [20210123].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/electrostatics/2021-01-11-coulomb-force.md)
-
-{% comment %}
-Fig. <a href="#fig:x">1</a>.
-
-{:refdef: style="text-align: center;"}
-![..](/assets/img/phys/x.png)
-<br />
-Figure <a name="fig:x">1</a> ...
-{: refdef}
-
-1. <a name="ref1"></a> -, "Kinetic Theory of Gases", Glenn Research Center, National Aeronautics and Space Administration, url <https://www.grc.nasa.gov/www/k-12/airplane/kinth.html> [20201210].
-2. <a name="ref2"></a>-, "6.1 Kinetic Theory of Gases", Introductory Chemistry, v. 1.0, url <https://saylordotorg.github.io/text_introductory-chemistry/s10-01-kinetic-theory-of-gases.html> [20201210].
-3. <a name="ref3"></a>The Editors of Encyclopaedia Britannica, Kanchan Gupta, Thinley Kalsang Bhutia, Erik Gregersen, "Kinetic theory of gases", Encyclopædia Britannica, url <https://www.britannica.com/science/kinetic-theory-of-gases> [20201210].
-4. <a name="ref4"></a>Jessie A. Key, David W. Ball, "Kinetic Molecular Theory of Gases", in Introductory Chemistry, 1st Canadian Edn., Chap. 6. Gases, url <https://opentextbc.ca/introductorychemistry/chapter/kinetic-molecular-theory-of-gases-2/> [20201210].
-6. <a name="ref6"></a>Wikipedia contributors, "Kinetic theory of gases", Wikipedia, The Free Encyclopedia, 2 Dec 2020, 21:15 UTC, url <https://en.wikipedia.org/w/index.php?oldid=991982665> [20201210].
-7. <a name="ref7"></a>-, "Kinetic Theory of Gases", in Calculus-Based General Physics, 22, 1975, url <https://digitalcommons.unl.edu/calculusbasedphysics/22/> [20201210].
-
-{% endcomment %}
