@@ -34,7 +34,7 @@ with $a \ne 0$. Note that a quadratic equation has two solutions, that is given 
 
 
 ## algorithm
-From Eqns. \eqref{eqn:qf-quadratic-equation} and \eqref{eqn:qf-quadratic-formula}, there are four input parameters $a$, $b$, $c$, and $x$, and there are two output values $x_1$ and $x_2$.
+From Eqns. \eqref{eqn:qf-quadratic-equation} and \eqref{eqn:qf-quadratic-formula}, there are four input parameters $a$, $b$, $c$, and $x$, and there are two output values $x_1$ and $x_2$. We can make the following algorithm using previous information.
 
 Algorithm <a name="alg:qf-quadratic-formula-algorithm">1</a> Quadratic formula. \
 `I`: $a$, $b$, $c$, $x$ \
@@ -68,14 +68,42 @@ should be output of the program.
 
 ### javascript
 ```javascript
+var a = 1, b = -5, c = 4;
+var D = b*b - 4*a*c;
+var x1 = (-b + Math.sqrt(D))/(2*a);
+var x2 = (-b - Math.sqrt(D))/(2*a);
+console.log("Equation: ax^2 + bx + c = 0");
+console.log("Constant: a = " + a + ", b = " + b + ", c = " + c);
+console.log("Solution: x1 = " + x1 + ", x2 = " + x2);
 ```
 
 ### c++
 ```c++
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(int argc, char *argv[]) {
+    double a = 1, b = -5, c = 4;
+    double D = b*b - 4*a*c;
+    double x1 = (-b + sqrt(D))/(2*a);
+    double x2 = (-b - sqrt(D))/(2*a);
+    cout << "Equation: ax^2 + bx + c = 0" << endl;
+    cout << "Constant: a = " << a << ", b = " << b << ", c = " << c << endl;
+    cout << "Solution: x1 = " << x1 << ", x2 = " << x2 << endl;
+    return 0;
+}
 ```
 
 ### python
 ```python
+a = 1; b = -5; c = 4
+D = b*b - 4*a*c
+x1 = (-b + D**0.5)/(2*a)
+x2 = (-b - D**0.5)/(2*a)
+print("Equation: ax^2 + bx + c = 0")
+print("Constant: a = ", a, ", b = ", b, ", c = ", c, sep="")
+print("Solution: x1 = ", x1, ", x2 = ", x2, sep="")
 ```
 
 To test the given codes online you use [online compilers](online-compiler).
