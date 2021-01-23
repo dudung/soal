@@ -143,6 +143,9 @@ Coordinates of $x$ and $y$ in Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a> a
 1. What is the definition of $\vec{F} _{ji}$? Modify the related sentence in the Coulomb's law section.
 2. Write the first two sides from the left of Eqn. \eqref{eqn:cf-coulomb's-law} and try to get the right side of it using Eqn. \eqref{eqn:cf-relative-position-unit-vector}.
 3. Open [[3](#ref3)] and find the four properties of the electric force for charges at rest. Explain it in brief whether those properties are already contained in the Eqn. \eqref{eqn:cf-coulomb's-law} or not.
+4. Using the previous examples in Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a>, caculate $\vec{F} _{12}$.
+5. Repeat using Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a> to caculate $\vec{F} _{43}$.
+6. Caculate $\vec{F} _{65}$ using Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a>.
 
 
 ## references
