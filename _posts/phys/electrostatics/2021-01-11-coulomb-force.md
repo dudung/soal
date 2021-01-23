@@ -118,10 +118,29 @@ Figure <a name="fig:cf-coulomb-force-attractive">5</a> Attractive Coulomb force 
 From the both cases we can have that like charges repel each other, while unlike charges attract each other  [[3](#ref3)].
 
 
+## examples
+Consider two charges are located in $xy$ plane as shown in Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a>, where they have the same or opposite signs.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/coulomb-force-1n2-d.png)
+<br />
+Figure <a name="fig:cf-coulomb-force-1nd-d">6</a> System of two charges: negative-positive (left), positive-positive (center), and negative-negative (right). 
+{: refdef}
+
+### force on $q_2$ due to existence of $q_1$
+..
+
+### force on $q_3$ due to existence of $q_4$
+..
+
+### force on $q_5$ due to existence of $q_6$
+..
+
+
 ## exercises
 1. What is the definition of $\vec{F} _{ji}$? Modify the related sentence in the Coulomb's law section.
 2. Write the first two sides from the left of Eqn. \eqref{eqn:cf-coulomb's-law} and try to get the right side of it using Eqn. \eqref{eqn:cf-relative-position-unit-vector}.
-3. Open [[3](#ref3)] and find the four properties of the electric force for charges at rest. Are those properties already contained in the Eqn. \eqref{eqn:cf-coulomb's-law}? Explain it in brief.
+3. Open [[3](#ref3)] and find the four properties of the electric force for charges at rest. Explain it in brief whether those properties are already contained in the Eqn. \eqref{eqn:cf-coulomb's-law} or not.
 
 
 ## references
