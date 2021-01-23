@@ -127,6 +127,8 @@ Consider two charges are located in $xy$ plane as shown in Fig. <a href="#fig:cf
 Figure <a name="fig:cf-coulomb-force-1nd-d">6</a> System of two charges: negative-positive (left), positive-positive (center), and negative-negative (right). 
 {: refdef}
 
+Coordinates of $x$ and $y$ in Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a> are in $\rm \mu m$ and $q_1 = +1 \ \rm mC$, $q_2 = -25 \ \rm mC$, $q_3 = +2 \ \rm mC$, $q_4 = +4 \ \rm mC$, $q_5 = -2 \ \rm mC$, $q_6 = -1 \ \rm mC$. To calculate the electrostatic force we use Eqns. \eqref{eqn:cf-coulomb's-law} - \eqref{eqn:cf-relative-position-unit-vector}.
+
 ### force on $q_2$ due to existence of $q_1$
 ..
 
