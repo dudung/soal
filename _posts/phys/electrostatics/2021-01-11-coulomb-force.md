@@ -92,21 +92,41 @@ Similar to the previous discussion direction of $\vec{F} _{ij}$ will be determin
 
 ## the two cases
 Direction of repulsive force holds for the case of $q_i q_j > 0$ and it can be one of the two condition
-+ $q_i > 0$ and $q_j > 0$ (both charges are positive), or
-+ $q_i < 0$ and $q_j < 0$ (both charges are negative),
++ $q_i < 0$ and $q_j < 0$ (both charges are negative), or
++ $q_i > 0$ and $q_j > 0$ (both charges are positive),
+
+as shwon in Figure <a name="fig:cf-coulomb-force-repulsive">4</a>
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/coulomb-force-repulsive.png)
+<br />
+Figure <a name="fig:cf-coulomb-force-repulsive">4</a> repulsive Coulomb force of between two charges: all negative (left) and all positive (right).
+{: refdef}
 
 while direction of attractive force holds for the case of $q_i q_j < 0$ and it can be one of the two condition
 + $q_i < 0$ and $q_j > 0$ (negative and positive), or
-+ $q_i > 0$ and $q_j < 0$ (positive and negative).
++ $q_i > 0$ and $q_j < 0$ (positive and negative)
+
+as shwon in Figure <a name="fig:cf-coulomb-force-attractive">5</a>.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/coulomb-force-attractive.png)
+<br />
+Figure <a name="fig:cf-coulomb-force-attractive">5</a> Attractive Coulomb force between two charges: negative-positive (left) and positive-negative (right).
+{: refdef}
+
+From the both cases we can have that like charges repel each other, while unlike charges attract each other  [[3](#ref3)].
 
 
 ## exercises
 1. What is the definition of $\vec{F} _{ji}$? Modify the related sentence in the Coulomb's law section.
 2. Write the first two sides from the left of Eqn. \eqref{eqn:cf-coulomb's-law} and try to get the right side of it using Eqn. \eqref{eqn:cf-relative-position-unit-vector}.
+3. Open [[3](#ref3)] and find the four properties of the electric force for charges at rest. Are those properties already contained in the Eqn. \eqref{eqn:cf-coulomb's-law}? Explain it in brief.
 
 
 ## references
 1. <a name="ref1"></a>Carl R. Nave, "Coulomb's Law", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/electric/elefor.html> [20210123].
 2. <a name="ref2"></a>Wikipedia-Autoren, "Coulombsches Gesetz", Wikipedia, Die freie Enzyklopädie, 29 Sep 2020, 08:15 UTC, url <https://en.wikipedia.org/w/index.php?oldid=204085948> [20210123].
+3. <a name="ref3"></a>The Editors of Encyclopaedia Britannica, William L. Hosch, Parul Jain, Thinley Kalsang, Bhutia, Adam Augustyn, "Coulomb's law", Encyclopaedia Britannica, 11 Jan 2019, url <https://www.britannica.com/science/Coulombs-law> [20210123].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/electrostatics/2021-01-11-coulomb-force.md)
