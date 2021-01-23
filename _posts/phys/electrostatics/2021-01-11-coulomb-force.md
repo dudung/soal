@@ -67,7 +67,7 @@ Eqn. \eqref{eqn:cf-relative-position-unit-vector} explains the relation between 
 
 
 ## case of $q_i q_j > 0$
-Let us simplify the illustration in previous Fig. <a href="#fig:cf-coulomb-force">1</a> with two-dimensional projection as shown in Fig. <a href="#fig:cf-coulomb-force-1">2</a> for the case of $q_i q_j > 0$.
+Let us simplify the illustration in previous Fig. <a href="#fig:cf-coulomb-force">1</a> with two-dimensional projection as shown in Fig. <a href="#fig:cf-coulomb-force-1">2</a> for the case of $q_i q_j > 0$. We will concentrate on $q_i$ firs, since it will be the same for $q_j$.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/coulomb-force-qiqj-gt0.png)
@@ -75,9 +75,14 @@ Let us simplify the illustration in previous Fig. <a href="#fig:cf-coulomb-force
 Figure <a name="fig:cf-coulomb-force-1">2</a> Coulomb force on $q_i$ due to existence of $q_j$ for $q_i q_j > 0$.
 {: refdef}
 
+From Fig. <a href="#fig:cf-coulomb-force-1">2</a> we can have relative position of charge $q_i$ to charge $q_j$, which is denoted as $\vec{r} _{ij}$ as given previously in Eqn. \eqref{eqn:cf-relative-position}. Then using Eqn. \eqref{eqn:cf-distance-two-charges}, which is always positive since it is length of a vector, and Eqn. \eqref{eqn:cf-relative-position-unit-vector} we can have the unit vector $\hat{r} _{ij}$ to be used in Eqn. \eqref{eqn:cf-coulomb's-law}. Vector $\vec{r} _{ij}$, scalar $r _{ij}$, and vector $\hat{r} _{ij}$ are shown in Fig. <a href="#fig:cf-coulomb-force-1">2</a> (center). And the last term direction is toward charge $q_i$ from charge $q_j$. Combining all terms in Eqn. \eqref{eqn:cf-coulomb's-law} we can have that what determines direction of $\vec{F} _{ij}$ is the term $q_i q_j$ since $r _ij$ and $k$ are already positive. For this case $q_i q_j > 0$ then $\vec{F} _{ij}$ will have the same direction with $\hat{F} _{ij}$ or the force on $q_i$ will have direction away from $q_j$ (and also vice versa), which is showing a repulsion force.
+
+Direction of repulsion force holds for the case of $q_i q_j >0$ and it can be one of the two condition
++ $q_i > 0$ and $q_j > 0$ (both charges are positive), or
++ $q_i < 0$ and $q_j < 0$ (both charges are negative).
 
 ## case of $q_i q_j < 0$
-Now we consider the case of $q_i q_j > 0$ as given in Fig. <a href="#fig:cf-coulomb-force-2">3</a>.
+Now we consider the case of $q_i q_j < 0$ as given in Fig. <a href="#fig:cf-coulomb-force-2">3</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/coulomb-force-qiqj-lt0.png)
