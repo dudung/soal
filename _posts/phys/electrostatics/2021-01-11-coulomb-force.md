@@ -24,6 +24,21 @@ Suppose that there are two charges $q_i$ and $q_j$ in space, where each is locat
 Figure <a name="fig:cf-coulomb-force">1</a> Coulomb force between two charges $q_i$ and $q_j$.
 {: refdef}
 
+In vector form Coulomb's law is
+
+\begin{equation}
+\label{eqn:cf-coulomb's-law}
+\vec{F} _{ij} = k \frac{q_i q_j}{r _{ij}^2} \ \hat{r} _{ij}
+\end{equation}
+
+with
+
+\begin{equation}
+\label{eqn:cf-coulomb's-constant}
+k = \frac{1}{4 \pi \epsilon_0} \approx 9 \times 10^9 \ {\rm N \cdot m^2 / C^2}
+\end{equation}
+
+is Coulomb's constant.
 
 ## exercises
 1. What is the definition of $\vec{F} _{ji}$? Modify the related sentence in the Coulomb's law section.
