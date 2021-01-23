@@ -69,6 +69,22 @@ Eqn. \eqref{eqn:cf-relative-position-unit-vector} explains the relation between 
 ## case of $q_i q_j > 0$
 Let us simplify the illustration in previous Fig. <a href="#fig:cf-coulomb-force">1</a> with two-dimensional projection as shown in Fig. <a href="#fig:cf-coulomb-force-1">2</a> for the case of $q_i q_j > 0$.
 
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/coulomb-force-qiqj-gt0.png)
+<br />
+Figure <a name="fig:cf-coulomb-force-1">2</a> Coulomb force on $q_i$ due to existence of $q_j$ for $q_i q_j > 0$.
+{: refdef}
+
+
+## case of $q_i q_j < 0$
+Now we consider the case of $q_i q_j > 0$ as given in Fig. <a href="#fig:cf-coulomb-force-2">3</a>.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/coulomb-force-qiqj-lt0.png)
+<br />
+Figure <a name="fig:cf-coulomb-force-2">3</a> Coulomb force on $q_i$ due to existence of $q_j$ for $q_i q_j < 0$.
+{: refdef}
+
 
 ## exercises
 1. What is the definition of $\vec{F} _{ji}$? Modify the related sentence in the Coulomb's law section.
