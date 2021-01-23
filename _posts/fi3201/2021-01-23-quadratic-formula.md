@@ -106,7 +106,7 @@ print("Constant: a = ", a, ", b = ", b, ", c = ", c, sep="")
 print("Solution: x1 = ", x1, ", x2 = ", x2, sep="")
 ```
 
-To test the given codes online you use [online compilers](online-compiler).
+To test the given codes you can use [online compilers](online-compiler).
 
 
 ## exercises
