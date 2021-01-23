@@ -111,6 +111,12 @@ To test the given codes online you use [online compilers](online-compiler).
 
 ## exercises
 1. Discriminant $D$ in Alg. <a href="#alg:qf-quadratic-formula-algorithm">1</a>. seems not too essential, since it can be directly substitute to the formula for $x_1$ and $x_2$. Explain why it is defined as separate term $D$? Can you guess? The hint is number of solutions.
+2. Modify the given JavaScript program for calculating solution of a quadratic equation $2x^2 - 5x + 2 = 0$.
+3. Modify the given C++ program for calculating solution of a quadratic equation $4x^2 - 9$.
+4. Modify the given Python program for calculating solution of a quadratic equation $5x^2 - 125x = 0$.
+5. Make program in BASIC to calculate solution of a quadratic equation $x^2 - 10x + 9 = 0$.
+
+
 
 
 ## references
