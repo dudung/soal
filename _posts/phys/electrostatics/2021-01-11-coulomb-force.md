@@ -127,11 +127,7 @@ Consider two charges are located in $xy$ plane as shown in Fig. <a href="#fig:cf
 Figure <a name="fig:cf-coulomb-force-1nd-d">6</a> System of two charges: negative-positive (left), positive-positive (center), and negative-negative (right). 
 {: refdef}
 
-Coordinates of $x$ and $y$ in Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a> are in $\rm \mu m$ and $q_1 = +1 \ \rm nC$, $q_2 = -25 \ \rm nC$, $q_3 = +4 \ \rm nC$, $q_4 = +8 \ \rm nC$, $q_5 = -2 \ \rm nC$, $q_6 = -1 \ \rm nC$. To calculate the electrostatic force we use Eqns. \eqref{eqn:cf-coulomb's-law} - \eqref{eqn:cf-relative-position-unit-vector}.
-
-### force on $q_5$ due to existence of $q_6$
-..
-
+Coordinates of $x$ and $y$ in Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a> are in $\rm \mu m$ and $q_1 = +1 \ \rm nC$, $q_2 = -25 \ \rm nC$, $q_3 = +4 \ \rm nC$, $q_4 = +8 \ \rm nC$, $q_5 = -2 \ \rm nC$, $q_6 = -0.5 \ \rm nC$. To calculate the electrostatic force we use Eqns. \eqref{eqn:cf-coulomb's-law} - \eqref{eqn:cf-relative-position-unit-vector}.
 
 ### force on $q_2$ due to existence of $q_1$
 $\vec{r}_2 = (\hat{x} + 2\hat{y}) \ \rm \mu m$. \
@@ -148,6 +144,14 @@ $\vec{r} _{34} = \vec{r}_3 - \vec{r}_4 = (6-6)\hat{x} + (2-10)\hat{y} = (-8\hat{
 $r _{34} = \| \vec{r} _{34} \| = \sqrt{\vec{r} _{34} \cdot \vec{r} _{34}} = \sqrt{(-8\hat{y}) \cdot (-8\hat{y})} = \sqrt{(-8)^2} = 8  \ \rm \mu m$. \
 $\displaystyle \hat{r} _{34} = \frac{\vec{r} _{34}}{r _{34}} = \frac{-8\hat{y}}{8} = (-\hat{y})$. \
 $\displaystyle \hat{F} _{34} = k \frac{q_3 q_4}{r^2 _{34}} \hat{r} _{34} = (9\times 10^9) \frac{(+4\times 10^{-9})(+8\times 10^{-9})}{(8\times 10^{-6})^2} (-\hat{y}) = (4.5\times 10^3)(-\hat{y}) \ \rm N$.
+
+### force on $q_5$ due to existence of $q_6$
+$\vec{r}_5 = (0.5\hat{x} + 2\hat{y}) \ \rm \mu m$. \
+$\vec{r}_6 = (2.5\hat{x} + 2\hat{y})  \ \rm \mu m$. \
+$\vec{r} _{56} = \vec{r}_5 - \vec{r}_6 = (0.5-2.5)\hat{x} + (2-2)\hat{y} = (-2\hat{x}) \ \rm \mu m$. \
+$r _{56} = \| \vec{r} _{56} \| = \sqrt{\vec{r} _{56} \cdot \vec{r} _{56}} = \sqrt{(-2\hat{x}) \cdot (-2\hat{x})} = \sqrt{(-2)} = 2  \ \rm \mu m$. \
+$\displaystyle \hat{r} _{56} = \frac{\vec{r} _{56}}{r _{56}} = \frac{-2\hat{x}}{2} = (-\hat{x})$. \
+$\displaystyle \hat{F} _{56} = k \frac{q_5 q_6}{r^2 _{56}} \hat{r} _{56} = (9\times 10^9) \frac{(-2\times 10^{-9})(-0.5\times 10^{-9})}{(2\times 10^{-6})^2} (-\hat{x}) = (2.25\times 10^3)(-\hat{x}) \ \rm N$.
 
 
 ## exercises
