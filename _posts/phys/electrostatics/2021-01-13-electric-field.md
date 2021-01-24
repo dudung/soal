@@ -39,6 +39,14 @@ and set the the unit positive test charge as $q_i$ then we have
 
 where the last term means "due to charge $q_j$ located at $\vec{r}_j$ there will be electric field observed at position $\vec{r}_i$".
 
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/electric-field-from-force-point-charge.png)
+<br />
+Figure <a name="fig:ef-electric-field-from-force-point-charge>1</a> Electric field $\vec{E}_j$ from a point charge: $q_j < 0$ (left) and $q_j > 0$ (right).
+{: refdef}
+
+
+
 
 ## electric field due to point charge
 
