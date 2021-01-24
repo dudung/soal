@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["", "", "", ""]
-date: 2021-01-24 11:40:00 +07
+date: 2021-01-24 21:18:00 +07
 permalink: /electrostatics/electric-field
 ---
 When charge, in any form, is present there will be an electric property associated with each point in space, where this property is known as electric field [[1](#ref1)], which is important in many areas of physics [[2](#ref2)]. Electric field can also be viewed as the region around the electric charge in which the stress or electric force act [[3](#ref3)].
