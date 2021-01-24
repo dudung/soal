@@ -42,10 +42,10 @@ where the last term means "due to charge $q_j$ located at $\vec{r}_j$ there will
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/electric-field-from-force-point-charge.png)
 <br />
-Figure <a name="fig:ef-electric-field-from-force-point-charge>1</a> Electric field $\vec{E}_j$ from a point charge: $q_j < 0$ (left) and $q_j > 0$ (right).
+Figure <a name="fig:ef-electric-field-from-force-point-charge">1</a> Electric field $\vec{E}_j$ from a point charge: $q_j < 0$ (left) and $q_j > 0$ (right).
 {: refdef}
 
-
+Illustration to obtain electric field from a point charge $q_j$, where it can negative or positive, is given in Fig. <a ref="#fig:ef-electric-field-from-force-point-charge">1</a>. Implicitly source charge $q_j$ and unit positive test charge $q_i$ are located at $\vec{r}_j$ and $\vec{r}_i$, respectively.
 
 
 ## electric field due to point charge
@@ -57,8 +57,7 @@ By changing $\vec{r}_i$ to more general position $\vec{r}$ and using the [relati
 \vec{E}_j(\vec{r}) = k \frac{q_j}{\| \vec{r} - \vec{r}_j \|^3} \ (\vec{r} - \vec{r}_j),
 \end{equation}
 
-which is electric field at arbitraty position $\vec{r}$ due to existence of charge $q_j$ located at $\vec{r}_j$.
-
+which is electric field at arbitraty position $\vec{r}$ due to existence of charge $q_j$ located at $\vec{r}_j$. Illustration of Eqn. \eqref{eqn:ef-electric-field-point-charge} is given in Fig. <a ref="#fig:ef-electric-field-point-charge">2</a>.
 
 
 ## references
