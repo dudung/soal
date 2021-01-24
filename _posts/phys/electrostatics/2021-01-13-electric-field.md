@@ -66,6 +66,18 @@ Figure <a name="fig:ef-electric-field-point-charge">2</a> Electric field $\vec{E
 
 We can see from Fig. <a ref="#fig:ef-electric-field-point-charge">2</a> that what matter related to position is only relative position of observation point $\vec{r}$ to the position of source charge $q_j$ located at $\vec{r}_j$ or simply $\vec{r} - \vec{r}_j$.
 
+### example
+At position $\vec{r}_j = (2\hat{x} + 3\hat{y} + 4\hat{z}) \ \rm \mu m$ there is a point charge $q_j = 169 \ \rm nC$. Find the electric field at position $\vec{r} = (5\hat{x} + 7\hat{y} + 16\hat{z}) \ \rm \mu m$. What is the magnitude and unit vector of the electric field?
+
+$\vec{r} - \vec{r}_j = (5-2)\hat{x} + (7-3)\hat{y} + (16-4)\hat{z} = (3\hat{x} + 4\hat{y} + 12\hat{z}) \ \rm \mu m$. \
+$\| \vec{r} - \vec{r}_j \| = \sqrt{(\vec{r} - \vec{r}_j)\cdot(\vec{r} - \vec{r}_j)} = \sqrt{(3\hat{x} + 4\hat{y} + 12\hat{z})\cdot(3\hat{x} + 4\hat{y} + 12\hat{z})}$ \
+$ = \sqrt{(3)^2 + (4)^2 + (12)^2} = \sqrt{9 + 16 + 144} = \sqrt{169} = 13 \ \rm \mu m$. \
+$\displaystyle \vec{E}_j(\vec{r}) = (9\times 10^9) \frac{169\times 10^{-9}}{(13\times 10^{-6})^3} (3\hat{x} + 4\hat{y} + 12\hat{z}) \times 10^{-6} $ \
+$ = (9\times 10^{12}) \left( \frac{3}{13}\hat{x} + \frac{4}{13}\hat{y} + \frac{12}{13}\hat{z} \right) \ \rm N/C$. \
+Since $\vec{E}_j = E_j \ \hat{E}_j$, \
+$E_j = \| \vec{E}_j \| = 9\times 10^{12} \ \rm N/C$, \
+$\hat{E}_j = \vec{E}_j / E_j = \left( \frac{3}{13}\hat{x} + \frac{4}{13}\hat{y} + \frac{12}{13}\hat{z} \right)$.
+
 
 ## electric field due to charge distribution
 In real world it is difficult to have a point charge, but group of charges that can assemble a charge distribution $dq_j$, which illustation is given in Fig. <a ref="#fig:ef-electric-field-charge-distribution">3</a>.
@@ -94,7 +106,30 @@ simply do the integration.
 
 
 ## charge distribution
-Element of charge distribution $dq_j$ in Eqn. \eqref{eqn:ef-electric-field-charge-distribution} can be in the form of
+Element of charge distribution $dq_j$ in Eqn. \eqref{eqn:ef-electric-field-charge-distribution} can be in the form of line charge density $\lambda$, surface charge density $\sigma$, or volume charge density $\rho$ through
+
+\begin{equation}
+\label{eqn:ef-charge-distribution-line}
+dq_j = \lambda dl,
+\end{equation}
+
+where $dl$ can be $dx$, $dy$, $dz$, $dr$, $rd\theta$, etc, 
+
+\begin{equation}
+\label{eqn:ef-charge-distribution-surface}
+dq_j = \sigma dA,
+\end{equation}
+
+where $dA$ can be $(dx)(dy)$, $(dy)(dz)$, $(dx)(dz)$, $(dr)(dz)$, $(dr)(rd\theta)$, etc,
+
+\begin{equation}
+\label{eqn:ef-charge-distribution-volume}
+dq_j = \rho dV,
+\end{equation}
+
+where $dV$ can be $(dx)(dy)(dz)$, $(dr)(rd\theta)(r\sin\theta d\phi)$, etc.
+
+In general $\lambda$, $\sigma$, and $\rho$ are not constant and depend on coordinates. In case of constant the materials are homogeneous and isotropic [[6](#ref6)].
 
 
 ## references
@@ -103,6 +138,7 @@ Element of charge distribution $dq_j$ in Eqn. \eqref{eqn:ef-electric-field-charg
 3. <a name="ref3"></a>-, "Electric Field", Circuit globe, url <https://circuitglobe.com/electric-field.html> [20210113].
 4. <a name="ref4"></a>Carl R. Nave, "Electric Field", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/electric/elefie.html> [20210113].
 5. <a name="ref5"></a>Willy McAllister, "Electric field", Khan Academy, url <https://www.khanacademy.org/science/electrical-engineering/ee-electrostatics/ee-electric-force-and-electric-field/a/ee-electric-field> [20210113].
+6. <a name="ref6"></a>Kate Becker, "What do 'homogeneity' and 'isotropy' mean? (Intermediate)", Ask an Astronomer, 27 Jun 2015, url <http://curious.astro.cornell.edu/about-us/101-the-universe/cosmology-and-the-big-bang/general-questions/574-what-do-homogeneity-and-isotropy-mean-intermediate> [20210124].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/electrostatics/2021-01-13-electric-field.md)
 
