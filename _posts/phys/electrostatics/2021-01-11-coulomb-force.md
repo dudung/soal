@@ -155,7 +155,20 @@ $\displaystyle \hat{F} _{56} = k \frac{q_5 q_6}{r^2 _{56}} \hat{r} _{56} = (9\ti
 
 
 ## 1-d, 2-d, and 3-d examples
-Fig. <a href="#fig:cf-coulomb-force-123-d">7</a> shows examples of 1-d, 2-d, and 3-d configuration of two charges.
+Fig. <a href="#fig:cf-coulomb-force-2-charges-123-d">7</a> shows examples of 1-d, 2-d, and 3-d configuration of two charges. The difference than previous Fig. <a href="#fig:cf-coulomb-force-1n2-d">6</a> is that the position of one of the two charges might has additional $z$ component.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/coulomb-force-2-charges-123-d.png)
+<br />
+Figure <a name="fig:cf-coulomb-force-2-charges-123-d">7</a> System of two charges: 1-d positive-negative (left), 2-d positive-positive (center), and 3-d negative-negative (right). 
+{: refdef}
+
+Position of the charges are given as follow.
+
+**charge** | $q_1 > 0$ | $q_2 < 0$ | $q_3 > 0$ | $q_4 < 0$   
+**position** | $\vec{r}_1 = s_x \hat{x}$ | $\vec{r}_2 = s_x \hat{x} + s_y \hat{y}$ | $\vec{r}_3 = s_y \hat{y}$ | $\vec{r}_4 = s_z \hat{z}$
+
+Using the provided information we can obtain values of $\vec{r} _{12}$, $\vec{r} _{13}$, and $\vec{r} _{24}$ in order to calculate $\vec{F} _{12}$, $\vec{F} _{13}$, and $\vec{F} _{24}$. Do it in the exercises 7-9.
 
 
 ## exercises
@@ -165,6 +178,11 @@ Fig. <a href="#fig:cf-coulomb-force-123-d">7</a> shows examples of 1-d, 2-d, and
 4. Using the previous 2-d and 1-d examples in Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a>, caculate $\vec{F} _{12}$.
 5. Repeat using Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a> to caculate $\vec{F} _{43}$.
 6. Caculate $\vec{F} _{65}$ using Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a>.
+7. If $s_x = s_y = s_z = 2 \ \rm \mu m$, $q_1 = +2 \ \rm nC$, and $q_2 = -1 \ \rm nC$, calculate $\vec{F} _{12}$ using Fig. <a href="#fig:cf-coulomb-force-2-charges-123-d">7</a>.
+8. If $s_x = s_y = s_z = 2 \ \rm \mu m$, $q_1 = +2 \ \rm nC$, and $q_3 = +\sqrt{2} \ \rm nC$, calculate $\vec{F} _{13}$ using Fig. <a href="#fig:cf-coulomb-force-2-charges-123-d">7</a>.
+9. If $s_x = s_y = s_z = 2 \ \rm \mu m$, $q_2 = -1 \ \rm nC$,
+and $q_4 = -\sqrt{3} \ \rm nC$, calculate $\vec{F} _{24}$ using Fig. <a href="#fig:cf-coulomb-force-2-charges-123-d">7</a>.
+10. Draw you own 2-d configuration and calculate electrostatic force on a charge due to existence of the other charge.
 
 
 ## references
