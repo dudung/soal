@@ -171,6 +171,12 @@ Position of the charges are given as follow.
 Using the provided information we can obtain values of $\vec{r} _{12}$, $\vec{r} _{13}$, and $\vec{r} _{24}$ in order to calculate $\vec{F} _{12}$, $\vec{F} _{13}$, and $\vec{F} _{24}$. Do it in the exercises 7-9.
 
 
+## superposition of forces
+Until now we only consider electrostatic force acted upon a charge do to existence of the other charge. It is a two-charges system. How is about a system consisted of three or more charges? Can we calculate the forces on a charge due to existence of the other charges? Using superposition of forces [[4](#ref4)] we can calculate force on a charge due to the other charge at a time, repeat it due to the next charge, and then sum the all forces using vector addition [[5](#ref5)], since force is a vector.
+
+You can access a visualization of four point charges and how forces acted upon each charge due to existence of the other three charges are calculated in an interactive GeoGebra page [[6](#ref6)].
+
+
 ## exercises
 1. What is the definition of $\vec{F} _{ji}$? Modify the related sentence in the Coulomb's law section.
 2. Write the first two sides from the left of Eqn. \eqref{eqn:cf-coulomb's-law} and try to get the right side of it using Eqn. \eqref{eqn:cf-relative-position-unit-vector}.
@@ -183,11 +189,15 @@ Using the provided information we can obtain values of $\vec{r} _{12}$, $\vec{r}
 9. If $s_x = s_y = s_z = 2 \ \rm \mu m$, $q_2 = -1 \ \rm nC$,
 and $q_4 = -\sqrt{3} \ \rm nC$, calculate $\vec{F} _{24}$ using Fig. <a href="#fig:cf-coulomb-force-2-charges-123-d">7</a>.
 10. Draw you own 2-d configuration and calculate electrostatic force on a charge due to existence of the other charge.
+11. Open [[6](#ref6)] and learn the superposition principle of forces.
 
 
 ## references
 1. <a name="ref1"></a>Carl R. Nave, "Coulomb's Law", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/electric/elefor.html> [20210123].
 2. <a name="ref2"></a>Wikipedia-Autoren, "Coulombsches Gesetz", Wikipedia, Die freie Enzyklopädie, 29 Sep 2020, 08:15 UTC, url <https://en.wikipedia.org/w/index.php?oldid=204085948> [20210123].
 3. <a name="ref3"></a>The Editors of Encyclopaedia Britannica, William L. Hosch, Parul Jain, Thinley Kalsang, Bhutia, Adam Augustyn, "Coulomb's law", Encyclopaedia Britannica, 11 Jan 2019, url <https://www.britannica.com/science/Coulombs-law> [20210123].
+4. <a name="ref4"></a>-, "Coulomb’s Law" in Boundless Physics, Lumen Learning, url <https://courses.lumenlearning.com/boundless-physics/chapter/coulombs-law/> [20210125].
+5. <a name="ref5"></a>Eric W. Weisstein, "Vector Addition" from MathWorld--A Wolfram Web Resource, url <https://mathworld.wolfram.com/VectorAddition.html> [20210125].
+6. <a name="ref6"></a>Fiki Akbar, "Electrostatic Forces", GeoGebra, url <https://www.geogebra.org/m/ndcsgbzb> [20210125].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/electrostatics/2021-01-11-coulomb-force.md)
