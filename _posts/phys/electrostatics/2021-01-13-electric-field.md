@@ -132,6 +132,11 @@ where $dV$ can be $(dx)(dy)(dz)$, $(dr)(rd\theta)(r\sin\theta d\phi)$, etc.
 In general $\lambda$, $\sigma$, and $\rho$ are not constant and depend on coordinates. In case of constant the materials are homogeneous and isotropic [[6](#ref6)].
 
 
+## exercises
+1. At position $\vec{r}_j = (10\hat{x} + 10\hat{y} + 4\hat{z}) \ \rm \mu m$ there is a point charge $q_j = 25 \ \rm nC$. Find the electric field at position $\vec{r} = (6\hat{x} + 13\hat{y} + 4\hat{z}) \ \rm \mu m$. What is the magnitude and unit vector of the electric field?
+2. At position $\vec{r}_j = (2\hat{x} + 6\hat{y} + 14\hat{z}) \ \rm \mu m$ there is a point charge $q_j = 20 \ \rm nC$. Find the electric field at position $\vec{r} = (10\hat{x} + 6\hat{y} + 8\hat{z}) \ \rm \mu m$. What is the magnitude and unit vector of the electric field?
+
+
 ## references
 1. <a name="ref1"></a>The Editors of Encyclopaedia Britannica, Adam Augustyn, Erik Gregersen, Thinley Kalsang Bhutia, Deepti Mahajan, Dutta Promeet, "Electric field", Encyclopædia Britannica, 7 Jan 2019, url <https://www.britannica.com/science/electric-field> [20210113].
 2. <a name="ref2"></a>Wikipedia contributors, "Electric field", Wikipedia, The Free Encyclopedia, 15 Dec 2020, 05:55 UTC, url <https://en.wikipedia.org/w/index.php?oldid=994341755> [20210113].
