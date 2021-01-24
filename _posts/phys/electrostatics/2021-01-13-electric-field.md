@@ -49,7 +49,6 @@ Illustration to obtain electric field from a point charge $q_j$, where it can ne
 
 
 ## electric field due to point charge
-
 By changing $\vec{r}_i$ to more general position $\vec{r}$ and using the [relative position](/physics/position#relative-position) we can write
 
 \begin{equation}
@@ -58,6 +57,44 @@ By changing $\vec{r}_i$ to more general position $\vec{r}$ and using the [relati
 \end{equation}
 
 which is electric field at arbitraty position $\vec{r}$ due to existence of charge $q_j$ located at $\vec{r}_j$. Illustration of Eqn. \eqref{eqn:ef-electric-field-point-charge} is given in Fig. <a ref="#fig:ef-electric-field-point-charge">2</a>.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/electric-field-point-charge.png)
+<br />
+Figure <a name="fig:ef-electric-field-point-charge">2</a> Electric field $\vec{E}_j$ due to a point charge $q_j$.
+{: refdef}
+
+We can see from Fig. <a ref="#fig:ef-electric-field-point-charge">2</a> that what matter related to position is only relative position of observation point $\vec{r}$ to the position of source charge $q_j$ located at $\vec{r}_j$ or simply $\vec{r} - \vec{r}_j$.
+
+
+## electric field due to charge distribution
+In real world it is difficult to have a point charge, but group of charges that can assemble a charge distribution $dq_j$, which illustation is given in Fig. <a ref="#fig:ef-electric-field-charge-distribution">3</a>.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/electric-field-charge-distribution.png)
+<br />
+Figure <a name="fig:ef-electric-field-charge-distribution">3</a> Element of electric field $d\vec{E}_j$ due to element of charge distribution $q_j$.
+{: refdef}
+
+Instead of electric field $\vec{E}_j$ as in Eqn. \eqref{eqn:ef-electric-field-point-charge}, Fig. <a ref="#fig:ef-electric-field-charge-distribution">3</a> gives the element of electric field $d\vec{E}_j$ due to element of charge distribution $q_j$, which is formulated as
+
+\begin{equation}
+\label{eqn:ef-electric-field-charge-distribution}
+d\vec{E}_j(\vec{r}) = k \frac{dq_j}{\| \vec{r} - \vec{r}_j \|^3} \ (\vec{r} - \vec{r}_j),
+\end{equation}
+
+and to get the electric field field from Eqn. \eqref{eqn:ef-electric-field-charge-distribution}
+
+\begin{equation}
+\label{eqn:ef-electric-field-charge-distribution-int}
+\vec{E}_j(\vec{r}) = \int d\vec{E}_j(\vec{r}),
+\end{equation}
+
+simply do the integration.
+
+
+## charge distribution
+Element of charge distribution $dq_j$ in Eqn. \eqref{eqn:ef-electric-field-charge-distribution} can be in the form of
 
 
 ## references
