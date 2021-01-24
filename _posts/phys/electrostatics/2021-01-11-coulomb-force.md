@@ -118,8 +118,8 @@ Figure <a name="fig:cf-coulomb-force-attractive">5</a> Attractive Coulomb force 
 From the both cases we can have that like charges repel each other, while unlike charges attract each other  [[3](#ref3)].
 
 
-## examples
-Consider two charges are located in $xy$ plane as shown in Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a>, where they have the same or opposite signs.
+## 2-d and 1-d examples
+Consider two charges are located in $xy$ plane as shown in Fig. <a href="#fig:cf-coulomb-force-1n2-d">6</a>, where they have the same or opposite signs.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/coulomb-force-1n2-d.png)
@@ -154,11 +154,15 @@ $\displaystyle \hat{r} _{56} = \frac{\vec{r} _{56}}{r _{56}} = \frac{-2\hat{x}}{
 $\displaystyle \hat{F} _{56} = k \frac{q_5 q_6}{r^2 _{56}} \hat{r} _{56} = (9\times 10^9) \frac{(-2\times 10^{-9})(-0.5\times 10^{-9})}{(2\times 10^{-6})^2} (-\hat{x}) = (2.25\times 10^3)(-\hat{x}) \ \rm N$.
 
 
+## 1-d, 2-d, and 3-d examples
+Fig. <a href="#fig:cf-coulomb-force-123-d">7</a> shows examples of 1-d, 2-d, and 3-d configuration of two charges.
+
+
 ## exercises
 1. What is the definition of $\vec{F} _{ji}$? Modify the related sentence in the Coulomb's law section.
 2. Write the first two sides from the left of Eqn. \eqref{eqn:cf-coulomb's-law} and try to get the right side of it using Eqn. \eqref{eqn:cf-relative-position-unit-vector}.
 3. Open [[3](#ref3)] and find the four properties of the electric force for charges at rest. Explain it in brief whether those properties are already contained in the Eqn. \eqref{eqn:cf-coulomb's-law} or not.
-4. Using the previous examples in Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a>, caculate $\vec{F} _{12}$.
+4. Using the previous 2-d and 1-d examples in Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a>, caculate $\vec{F} _{12}$.
 5. Repeat using Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a> to caculate $\vec{F} _{43}$.
 6. Caculate $\vec{F} _{65}$ using Fig. <a href="#fig:cf-coulomb-force-1nd-d">6</a>.
 
