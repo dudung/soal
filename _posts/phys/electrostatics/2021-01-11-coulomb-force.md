@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["", "", "", ""]
-date: 2021-01-24 10:53:00 +07
+date: 2021-01-25 07:53:00 +07
 permalink: /electrostatics/coulomb-force
 ---
 When there are two charges in space, they will interact through electrostatic force formulated by Coulomb's law [[1](#ref1)]. In the case of attractive force between two point charges Coulomb force does behave like the gravitational force between two point masses [[2](#ref2)].
@@ -95,7 +95,7 @@ Direction of repulsive force holds for the case of $q_i q_j > 0$ and it can be o
 + $q_i < 0$ and $q_j < 0$ (both charges are negative), or
 + $q_i > 0$ and $q_j > 0$ (both charges are positive),
 
-as shwon in Figure <a name="fig:cf-coulomb-force-repulsive">4</a>
+as shwon in Fig. <a href="#fig:cf-coulomb-force-repulsive">4</a>
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/coulomb-force-repulsive.png)
@@ -107,7 +107,7 @@ while direction of attractive force holds for the case of $q_i q_j < 0$ and it c
 + $q_i < 0$ and $q_j > 0$ (negative and positive), or
 + $q_i > 0$ and $q_j < 0$ (positive and negative)
 
-as shwon in Figure <a name="fig:cf-coulomb-force-attractive">5</a>.
+as shwon in Fig. <a href="#fig:cf-coulomb-force-attractive">5</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/coulomb-force-attractive.png)
@@ -172,15 +172,14 @@ Using the provided information we can obtain values of $\vec{r} _{12}$, $\vec{r}
 
 
 ## superposition of forces
-Until now we only consider electrostatic force acted upon a charge do to existence of the other charge. It is a two-charges system. How is about a system consisted of three or more charges? Can we calculate the forces on a charge due to existence of the other charges? Using superposition of forces [[4](#ref4)] we can calculate force on a charge due to the other charge at a time, repeat it due to the next charge, and then sum the all forces using vector addition [[5](#ref5)], since force is a vector.
+Until now we only consider electrostatic force acted upon a charge do to existence of the other charge. It is a two-charges system. How is about a system consisted of three or more charges? Can we calculate the forces on a charge due to existence of the other charges? Using superposition of forces [[4](#ref4)] we can calculate force on a charge due to the other charge at a time, repeat it due to the next charge, and then sum the all forces using vector addition [[5](#ref5)], since force is a vector. Illustration for system of three charges is given in Fig. <a href="#fig:coulomb-force-superposition-3-charges">8</a>.
 
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/coulomb-force-superposition-3-charges.png)
 <br />
-Figure <a name="fig:coulomb-force-superposition-3-charges">8</a> System of two charges: 1-d positive-negative (left), 2-d positive-positive (center), and 3-d negative-negative (right). 
+Figure <a name="fig:coulomb-force-superposition-3-charges">8</a> System of three charges: (a) $q_1 > 0$, $q_2 >0$, $q_3 < 0$, (b) $\vec{F} _{12}$, a repulsive force, (c) $\vec{F} _{23}$, an attractive force, and (d) $\vec{F}_2 = \vec{F} _{21} + \vec{F} _{23}$, net force acted upon $q_2$ due to existence of $q_1$ and $q_3$. 
 {: refdef}
-
 
 You can access a visualization of four point charges and how forces acted upon each charge due to existence of the other three charges are calculated in an interactive GeoGebra page [[6](#ref6)].
 
@@ -198,6 +197,7 @@ You can access a visualization of four point charges and how forces acted upon e
 and $q_4 = -\sqrt{3} \ \rm nC$, calculate $\vec{F} _{24}$ using Fig. <a href="#fig:cf-coulomb-force-2-charges-123-d">7</a>.
 10. Draw you own 2-d configuration and calculate electrostatic force on a charge due to existence of the other charge.
 11. Open [[6](#ref6)] and learn the superposition principle of forces.
+12. Use Fig. <a href="#fig:coulomb-force-superposition-3-charges">8</a> and draw net force on $q_3$ due to existence of the other two charges, $q_1$ adn $q_2$.
 
 
 ## references
