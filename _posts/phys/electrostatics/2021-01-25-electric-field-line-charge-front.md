@@ -118,21 +118,22 @@ Figure <a name="fig:eflicf-electric-field-charge-distribution-back">1</a> Electr
 {: refdef}
 
 Using Eqn. \eqref{eqn:eflicf-electric-field-charge-distribution} and Fig. <a href="#fig:eflicf-electric-field-charge-distribution-back">2</a> we can have \
-$\vec{r} - \vec{r}_j = [(b+l) - x] \hat{x}$. \
-$\|\vec{r} - \vec{r}_j \| = \|(b+l) - x\|$. \
+$\vec{r} - \vec{r}_j = [(a-l) - x] \hat{x}$. \
+$\|\vec{r} - \vec{r}_j \| = \|(a-l) - x\|$. \
 $\displaystyle \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = \hat{x}$. \
-$\|\vec{r} - \vec{r}_j \|^2 =[(b+l) - x]^2 = (b+l-x)^2$. \
+$\|\vec{r} - \vec{r}_j \|^2 =[(a-l) - x]^2 = (a-l-x)^2$. \
 $b - a = L$ or $b = a + L$.
 
-
-{% comment %}
 And from Eqns. \eqref{eqn:eflicf-line-charge-density} and \eqref{eqn:eflicf-line-charge-density-qj} \
 $dq_j = \lambda \ dx$. \
 $q_j = \lambda L$.
 
 Then using previous equations \
-$\displaystyle d\vec{E}_j = k \ \frac{dq_j}{\|\vec{r} - \vec{r}_j \|^2} \ \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = k \ \frac{\lambda dx}{(b+l-x)^2} \ \hat{x}$ \
-$\displaystyle \vec{E}_j = \hat{x} k \lambda \int_a^b \frac{dx}{(b+l-x)^2}$.
+$\displaystyle d\vec{E}_j = k \ \frac{dq_j}{\|\vec{r} - \vec{r}_j \|^2} \ \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = k \ \frac{\lambda dx}{(a-l-x)^2} \ \hat{x}$ \
+$\displaystyle \vec{E}_j = \hat{x} k \lambda \int_a^b \frac{dx}{(a-l-x)^2}$.
+
+{% comment %}
+
 
 From [list of integrals 0](/math/list-of-integrals-0#in-front-line-of-charge) we can have the solution \
 $\displaystyle \vec{E}_j = \hat{x} k \lambda \frac{L}{l(L+l)} = k \ \frac{\lambda L}{l(L+l)} \ \hat{x} = k \ \frac{q_j}{l(L+l)} \ \hat{x}$.
