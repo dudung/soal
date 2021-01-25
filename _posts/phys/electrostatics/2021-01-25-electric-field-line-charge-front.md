@@ -84,12 +84,20 @@ For this case more specific illustration than the general in Fig. <a href="#fig:
 Figure <a name="fig:eflicf-electric-field-charge-distribution-front">1</a> Electric field in front of line of charge (top) and contribution of differential charge element $dq_j$ to element of electric field $d\vec{E}_j$.
 {: refdef}
 
-Using Eqn. \eqref{eqn:eflicf-electric-field-charge-distribution} and Fig. <a href="#fig:eflicf-electric-field-charge-distribution-front">2</a> we can have
-
+Using Eqn. \eqref{eqn:eflicf-electric-field-charge-distribution} and Fig. <a href="#fig:eflicf-electric-field-charge-distribution-front">2</a> we can have \
 $\vec{r} - \vec{r}_j = [(b+l) - x] \hat{x}$. \
 $\|\vec{r} - \vec{r}_j \| = \|(b+l) - x\|$. \
-$\displaystyle \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = \hat{x}$.
-$\|\vec{r} - \vec{r}_j \|^2 =[(b+l) - x]^2$.
+$\displaystyle \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = \hat{x}$. \
+$\|\vec{r} - \vec{r}_j \|^2 =[(b+l) - x]^2 = (b+l-x)^2$. \
+$b - a = L$ or $b = a + L$.
+
+And from Eqn. \eqref{eqn:eflicf-line-charge-density} \
+$dq_j = \lambda \ dx$.
+
+Then using previous equations \
+$\displaystyle d\vec{E}_j = k \ \frac{dq_j}{\|\vec{r} - \vec{r}_j \|^2} \ \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = k \ \frac{\lambda dx}{(b+l-x)^2} \ \hat{x}$ \
+$\displaystyle \vec{E}_j = \hat{x} k \lambda \int_a^b \frac{dx}{(b+l-x)^2}$.
+
 
 
 ## references
