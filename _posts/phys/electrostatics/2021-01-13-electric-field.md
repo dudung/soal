@@ -51,6 +51,14 @@ Illustration to obtain electric field from a point charge $q_j$, where it can ne
 ## electric field lines
 By observing many points in space around a source charge, previous Fig. <a ref="#fig:ef-electric-field-from-force-point-charge">1</a> could give help how we can draw electric field lines of a point charge. It should begin from a positive charge and end to a negative charge. For an isolated single positive change and also a single negative one, the electric field lines is given in Fig. <a ref="#fig:ef-electric-field-lines-1-charge">2</a>.
 
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/electric-field-lines-1-charge.png)
+<br />
+Figure <a name="fig:ef-electric-field-lines-1-charge">2</a> Electric field lines of a point charge: out of a positive charge (left) and into a negative charge (right).
+{: refdef}
+
+For more point charges or chage distribution the electric field lines can be constructed as superposition of the two basic types, negative and positive charges. There are available visualization of two or more charges that can be used to see how the electric field lines drawn [[6](#ref6),[7](#ref7)].
+
 
 ## electric field due to point charge
 By changing $\vec{r}_i$ to more general position $\vec{r}$ and using the [relative position](/physics/position#relative-position) we can write
@@ -133,7 +141,7 @@ dq_j = \rho dV,
 
 where $dV$ can be $(dx)(dy)(dz)$, $(dr)(rd\theta)(r\sin\theta d\phi)$, etc.
 
-In general $\lambda$, $\sigma$, and $\rho$ are not constant and depend on coordinates. In case of constant the materials are homogeneous and isotropic [[6](#ref6)].
+In general $\lambda$, $\sigma$, and $\rho$ are not constant and depend on coordinates. In case of constant the materials are homogeneous and isotropic [[8](#ref8)].
 
 
 ## exercises
@@ -147,16 +155,8 @@ In general $\lambda$, $\sigma$, and $\rho$ are not constant and depend on coordi
 3. <a name="ref3"></a>-, "Electric Field", Circuit globe, url <https://circuitglobe.com/electric-field.html> [20210113].
 4. <a name="ref4"></a>Carl R. Nave, "Electric Field", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/electric/elefie.html> [20210113].
 5. <a name="ref5"></a>Willy McAllister, "Electric field", Khan Academy, url <https://www.khanacademy.org/science/electrical-engineering/ee-electrostatics/ee-electric-force-and-electric-field/a/ee-electric-field> [20210113].
-6. <a name="ref6"></a>Kate Becker, "What do 'homogeneity' and 'isotropy' mean? (Intermediate)", Ask an Astronomer, 27 Jun 2015, url <http://curious.astro.cornell.edu/about-us/101-the-universe/cosmology-and-the-big-bang/general-questions/574-what-do-homogeneity-and-isotropy-mean-intermediate> [20210124].
+6. <a name="ref6"></a>Edward Ball, "Electric field line simulator", Academo, url <https://academo.org/demos/electric-field-line-simulator/> [20210125].
+7. <a name="ref7"></a>Tom Walsh, "Electric Field Vector Field", GeoGebra, url <https://www.geogebra.org/m/KMVuhygy> [20210125].
+8. <a name="ref6"></a>Kate Becker, "What do 'homogeneity' and 'isotropy' mean? (Intermediate)", Ask an Astronomer, 27 Jun 2015, url <http://curious.astro.cornell.edu/about-us/101-the-universe/cosmology-and-the-big-bang/general-questions/574-what-do-homogeneity-and-isotropy-mean-intermediate> [20210124].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/electrostatics/2021-01-13-electric-field.md)
-
-{% comment %}
-Fig. <a href="#fig:x">1</a>.
-
-{:refdef: style="text-align: center;"}
-![..](/assets/img/phys/x.png)
-<br />
-Figure <a name="fig:x">1</a> ...
-{: refdef}
-{% endcomment %}
