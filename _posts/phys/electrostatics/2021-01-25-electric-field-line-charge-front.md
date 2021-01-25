@@ -100,7 +100,12 @@ $\displaystyle d\vec{E}_j = k \ \frac{dq_j}{\|\vec{r} - \vec{r}_j \|^2} \ \frac{
 $\displaystyle \vec{E}_j = \hat{x} k \lambda \int_a^b \frac{dx}{(b+l-x)^2}$.
 
 From [list of integrals 0](/math/list-of-integrals-0#in-front-line-of-charge) we can have the solution \
-$\displaystyle \vec{E}_j = \hat{x} k \lambda \frac{L}{l(L+l)}$.
+$\displaystyle \vec{E}_j = \hat{x} k \lambda \frac{L}{l(L+l)} = k \ \frac{\lambda L}{l(L+l)} \ \hat{x} = k \ \frac{q_j}{l(L+l)} \ \hat{x}$.
+
+If we set $l >> L$ then $L + l \approx l$ \
+$\displaystyle \vec{E}_j \approx k \ \frac{q_j}{l^2} \ \hat{x}$, \
+which gives a electric field of a point charge. From far away a finite line of charge will be seen as a point charge.
+
 
 ## references
 1. <a name="ref1"></a>Carl R. Nave, "Electric Field of Line Charge", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/electric/elelin.html> [20210125].
