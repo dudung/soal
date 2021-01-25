@@ -50,7 +50,7 @@ $\displaystyle \lambda = \frac{+Q}{L}$.
 
 
 ## electric field due to charge distribution
-A group of charges can assemble a charge distribution $dq_j$ as shown in Fig. <a href="#fig:eflicf-electric-field-charge-distribution">5</a>.
+A group of charges can assemble a charge distribution $dq_j$ as shown in Fig. <a href="#fig:eflicf-electric-field-charge-distribution">1</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/electric-field-charge-distribution.png)
@@ -72,7 +72,11 @@ and integration will produce the electric field
 \vec{E}_j(\vec{r}) = \int d\vec{E}_j(\vec{r}),
 \end{equation}
 
-simply do the integration.
+where $dq_j$ is given previouly in Eqn. \eqref{eqn:eflicf-line-charge-density}.
+
+
+## in front of line of charge
+For this case more specific illustration than the general in Fig. <a href="#fig:eflicf-electric-field-charge-distribution">1</a> is required and it will be given in following Fig. <a href="#fig:eflicf-electric-field-charge-distribution-front">2</a>.
 
 
 ## references
