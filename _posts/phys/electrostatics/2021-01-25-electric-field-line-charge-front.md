@@ -114,7 +114,7 @@ And we are going to show that.
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/line/straight-line-charge-back.png)
 <br />
-Figure <a name="fig:eflicf-electric-field-charge-distribution-back">1</a> Electric field in front of line of charge (top) and contribution of differential charge element $dq_j$ to element of electric field $d\vec{E}_j$.
+Figure <a name="fig:eflicf-electric-field-charge-distribution-back">2</a> Electric field in front of line of charge (top) and contribution of differential charge element $dq_j$ to element of electric field $d\vec{E}_j$.
 {: refdef}
 
 Using Eqn. \eqref{eqn:eflicf-electric-field-charge-distribution} and Fig. <a href="#fig:eflicf-electric-field-charge-distribution-back">2</a> we can have \
@@ -138,8 +138,25 @@ as predicted.
 
 
 ## along $x$, $y$, and $z$ directions
-Along $x$ direction there were in front and at back of the line. There are also similar cases along $y$ dan $z$ direction.
+Along $x$ direction there were in front and at back of the line. There are also similar cases along $y$ dan $z$ direction. Fig. <a href="#fig:straight-line-charge-both-ends">3</a> show the six possible cases. Notice that the axis orientation is different in each row. 
 
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/line/straight-line-charge-both-ends.png)
+<br />
+Figure <a name="fig:straight-line-charge-both-ends">3</a> Electric field at both end of line of charge, which can be along $x$ axis (top), along $y$ axis (middle), and along $z$ axis (bottom).
+{: refdef}
+
+Electric field in Fig. <a href="#fig:straight-line-charge-both-ends">3</a> can be summerized as follow
+
+**along axis of** | **negative end** | **positive end**
+$x$ | $\displaystyle \vec{E}_{1-} = k \ \frac{\lambda_1 L_1}{(L_1 + l _{1-}) l _{1-}} \ (-\hat{x})$ | $\displaystyle \vec{E}_{1+} = k \ \frac{\lambda_1 L_1}{(L_1 + l _{1+}) l _{1+}} \ (+\hat{x})$
+$y$ | $\displaystyle \vec{E}_{2-} = k \ \frac{\lambda_2 L_2}{(L_2 + l _{2-}) l _{2-}} \ (-\hat{y})$ | $\displaystyle \vec{E}_{2+} = k \ \frac{\lambda_2 L_2}{(L_2 + l _{2+}) l _{2+}} \ (+\hat{y})$
+$z$ | $\displaystyle \vec{E}_{3-} = k \ \frac{\lambda_3 L_3}{(L_3 + l _{3-}) l _{3-}} \ (-\hat{z})$ | $\displaystyle \vec{E}_{3+} = k \ \frac{\lambda_3 L_3}{(L_3 + l _{3+}) l _{3+}} \ (+\hat{z})$
+
+where the patterns are so clear to notice.
+
+
+## superposition
 
 
 ## references
