@@ -98,6 +98,7 @@ Then using previous equations \
 $\displaystyle d\vec{E}_j = k \ \frac{dq_j}{\|\vec{r} - \vec{r}_j \|^2} \ \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = k \ \frac{\lambda dx}{(b+l-x)^2} \ \hat{x}$ \
 $\displaystyle \vec{E}_j = \hat{x} k \lambda \int_a^b \frac{dx}{(b+l-x)^2}$.
 
+From [list of integrals 0](/math/list-of-integrals-0#in-front-line-of-charge) we can have the solution
 
 
 ## references
