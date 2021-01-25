@@ -174,6 +174,14 @@ Using the provided information we can obtain values of $\vec{r} _{12}$, $\vec{r}
 ## superposition of forces
 Until now we only consider electrostatic force acted upon a charge do to existence of the other charge. It is a two-charges system. How is about a system consisted of three or more charges? Can we calculate the forces on a charge due to existence of the other charges? Using superposition of forces [[4](#ref4)] we can calculate force on a charge due to the other charge at a time, repeat it due to the next charge, and then sum the all forces using vector addition [[5](#ref5)], since force is a vector.
 
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/coulomb-force-superposition-3-charges.png)
+<br />
+Figure <a name="fig:coulomb-force-superposition-3-charges">8</a> System of two charges: 1-d positive-negative (left), 2-d positive-positive (center), and 3-d negative-negative (right). 
+{: refdef}
+
+
 You can access a visualization of four point charges and how forces acted upon each charge due to existence of the other three charges are calculated in an interactive GeoGebra page [[6](#ref6)].
 
 
