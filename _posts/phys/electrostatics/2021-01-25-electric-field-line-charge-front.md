@@ -107,6 +107,12 @@ $\displaystyle \vec{E}_j \approx k \ \frac{q_j}{l^2} \ \hat{x}$, \
 which gives an electric field of a point charge. From far away a finite line of charge will be seen as a point charge.
 
 
+## at back of the other end of the line
+What is the electric field of similar system shown in Fig. <a href="#fig:eflicf-electric-field-charge-distribution-back">2</a>? Do we need to calculate that?
+
+
+
+
 ## references
 1. <a name="ref1"></a>Carl R. Nave, "Electric Field of Line Charge", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/electric/elelin.html> [20210125].
 2. <a name="ref2"></a>Wikipedia contributors, "Charge density", Wikipedia, The Free Encyclopedia, 13 Jan 2021, 01:41 UTC, url <https://en.wikipedia.org/w/index.php?oldid=1000006708#Homogeneous_charge_density> [20210125].
