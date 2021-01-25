@@ -58,14 +58,14 @@ A group of charges can assemble a charge distribution $dq_j$ as shown in Fig. <a
 Figure <a name="fig:eflicf-electric-field-charge-distribution">1</a> Element of charge distribution $q_j$ produces element of electric field $d\vec{E}_j$.
 {: refdef}
 
-The element of electric field $d\vec{E}_j$ due to element of charge distribution $dq_j$ shown in Fig. <a ref="#fig:eflicf-electric-field-charge-distribution">1</a> is formulated as
+The element of electric field $d\vec{E}_j$, due to differential element of charge distribution $dq_j$ shown in Fig. <a ref="#fig:eflicf-electric-field-charge-distribution">1</a>, is formulated as
 
 \begin{equation}
 \label{eqn:eflicf-electric-field-charge-distribution}
 d\vec{E}_j(\vec{r}) = k \frac{dq_j}{\| \vec{r} - \vec{r}_j \|^3} \ (\vec{r} - \vec{r}_j),
 \end{equation}
 
-and to get the electric field field from Eqn. \eqref{eqn:eflicf-electric-field-charge-distribution}
+and integration will produce the electric field
 
 \begin{equation}
 \label{eqn:eflicf-electric-field-charge-distribution-int}
