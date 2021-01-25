@@ -118,9 +118,9 @@ Figure <a name="fig:eflicf-electric-field-charge-distribution-back">1</a> Electr
 {: refdef}
 
 Using Eqn. \eqref{eqn:eflicf-electric-field-charge-distribution} and Fig. <a href="#fig:eflicf-electric-field-charge-distribution-back">2</a> we can have \
-$\vec{r} - \vec{r}_j = [(a-l) - x] \hat{x}$. \
-$\|\vec{r} - \vec{r}_j \| = \|(a-l) - x\|$. \
-$\displaystyle \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = \hat{x}$. \
+$\vec{r} - \vec{r}_j = [(a-l) - x] \hat{x} = [x - (a-l)] (-\hat{x})$. $\leftarrow$ the form of (magnitude) (direction) \
+$\|\vec{r} - \vec{r}_j \| = \|x - (a-l)\|$. \
+$\displaystyle \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = (-\hat{x})$. \
 $\|\vec{r} - \vec{r}_j \|^2 =[(a-l) - x]^2 = (a-l-x)^2$. \
 $b - a = L$ or $b = a + L$.
 
@@ -129,16 +129,17 @@ $dq_j = \lambda \ dx$. \
 $q_j = \lambda L$.
 
 Then using previous equations \
-$\displaystyle d\vec{E}_j = k \ \frac{dq_j}{\|\vec{r} - \vec{r}_j \|^2} \ \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = k \ \frac{\lambda dx}{(a-l-x)^2} \ \hat{x}$ \
-$\displaystyle \vec{E}_j = \hat{x} k \lambda \int_a^b \frac{dx}{(a-l-x)^2}$.
+$\displaystyle d\vec{E}_j = k \ \frac{dq_j}{\|\vec{r} - \vec{r}_j \|^2} \ \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = k \ \frac{\lambda dx}{(a-l-x)^2} \ (-\hat{x})$ \
+$\displaystyle \vec{E}_j = (-\hat{x}) k \lambda \int_a^b \frac{dx}{(a-l-x)^2}$.
 
-{% comment %}
+From [list of integrals 0](/math/list-of-integrals-0#at-back-of-line-of-charge) we can have the solution \
+$\displaystyle \vec{E}_j = (-\hat{x}) k \lambda \frac{L}{l(L+l)} = k \ \frac{\lambda L}{l(L+l)} \ (-\hat{x}) = k \ \frac{q_j}{l(L+l)} \ (-\hat{x})$, \
+as predicted.
 
 
-From [list of integrals 0](/math/list-of-integrals-0#in-front-line-of-charge) we can have the solution \
-$\displaystyle \vec{E}_j = \hat{x} k \lambda \frac{L}{l(L+l)} = k \ \frac{\lambda L}{l(L+l)} \ \hat{x} = k \ \frac{q_j}{l(L+l)} \ \hat{x}$.
+## along $x$, $y$, and $z$ directions
+Along $x$ direction there were in front and at back of the line. There are also similar cases along $y$ dan $z$ direction.
 
-{% endcomment %}
 
 
 ## references
