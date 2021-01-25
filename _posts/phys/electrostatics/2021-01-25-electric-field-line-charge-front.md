@@ -104,7 +104,7 @@ $\displaystyle \vec{E}_j = \hat{x} k \lambda \frac{L}{l(L+l)} = k \ \frac{\lambd
 
 If we set $l >> L$ then $L + l \approx l$ \
 $\displaystyle \vec{E}_j \approx k \ \frac{q_j}{l^2} \ \hat{x}$, \
-which gives a electric field of a point charge. From far away a finite line of charge will be seen as a point charge.
+which gives an electric field of a point charge. From far away a finite line of charge will be seen as a point charge.
 
 
 ## references
