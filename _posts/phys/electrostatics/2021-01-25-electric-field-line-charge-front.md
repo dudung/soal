@@ -157,13 +157,38 @@ where the patterns are so clear to notice.
 
 
 ## superposition
-Suppose that there are three line of charge in along each axis as given in following Fig. <a href="#fig:straight-line-charges-3-axes">4</a>.
+Suppose that there are three line of charges in along each axis as given in following Fig. <a href="#fig:straight-line-charges-3-axes">4</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/line/straight-line-charges-3-axes.png)
 <br />
-Figure <a name="fig:straight-line-charges-3-axes">4</a> .
+Figure <a name="fig:straight-line-charges-3-axes">4</a> Three line of charges in along $x$, $y$, and $z$ axes give resultan of electric field at observation point $o$.
 {: refdef}
+
+According to previous table and Fig. <a href="#fig:straight-line-charge-both-ends">3</a>, we can have
+
+\begin{equation}
+\label{eqn:eflicf-e-field-line-x}
+\vec{E}_1 = k \ \frac{\lambda_1 L_1}{l_1 (L_1 + l_1)} \ (+\hat{x}),
+\end{equation}
+
+\begin{equation}
+\label{eqn:eflicf-e-field-line-y}
+\vec{E}_2 = k \ \frac{\lambda_2 L_2}{l_2 (L_2 + l_2)} \ (-\hat{y}),
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:eflicf-e-field-line-z}
+\vec{E}_3 = k \ \frac{\lambda_3 L_3}{l_3 (L_3 + l_3)} \ (-\hat{z})
+\end{equation}
+
+for system in Fig. <a href="#fig:straight-line-charges-3-axes">4</a>.
+
+## exercises
+1. Explain why Eqns. \eqref{eqn:eflicf-e-field-line-x}, \eqref{eqn:eflicf-e-field-line-y}, and \eqref{eqn:eflicf-e-field-line-z} have different sign of their unit vector, even they are along each principal axis?
+2. There are two line of charges along $x$ axis. The first has $\lambda_1$ and lies from $x = a$ to $x = a + L_1$, while the second has $\lambda_2$ and lies from $x = -b$ to $x = -b - L_2$. Observation point $o$ is located at $x = c$, where $-b < c < a$. Draw the system. find $\vec{E}_1$ and $\vec{E}_2$ at $o$, and calculate total electric field at the observation point. Assume that $L_1 > 0$ and $L_2 > 0$.
 
 
 ## references
