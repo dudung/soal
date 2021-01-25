@@ -57,7 +57,15 @@ By observing many points in space around a source charge, previous Fig. <a ref="
 Figure <a name="fig:ef-electric-field-lines-1-charge">2</a> Electric field lines of a point charge: out of a positive charge (left) and into a negative charge (right).
 {: refdef}
 
-For more point charges or chage distribution the electric field lines can be constructed as superposition of the two basic types, negative and positive charges. There are available visualization of two or more charges that can be used to see how the electric field lines drawn [[6](#ref6),[7](#ref7)].
+For more point charges or chage distribution the electric field lines can be constructed as superposition of the two basic types, negative and positive charges.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/eletric-field-lines-line-point-charges.png)
+<br />
+Figure <a name="fig:ef-eletric-field-lines-line-point-charges">3</a> Electric field lines of negative line charge (left) and a positive point charge (right).
+{: refdef}
+
+Electric field lines in Fig. <a href="#fig:ef-eletric-field-lines-line-point-charges">3</a> is drawn illustratively, where it might has assumptions in drawing the lines. There are available visualization of two or more charges that can be used to see how the electric field lines drawn [[6](#ref6),[7](#ref7)].
 
 
 ## electric field due to point charge
@@ -68,15 +76,15 @@ By changing $\vec{r}_i$ to more general position $\vec{r}$ and using the [relati
 \vec{E}_j(\vec{r}) = k \frac{q_j}{\| \vec{r} - \vec{r}_j \|^3} \ (\vec{r} - \vec{r}_j),
 \end{equation}
 
-which is electric field at arbitraty position $\vec{r}$ due to existence of charge $q_j$ located at $\vec{r}_j$. Illustration of Eqn. \eqref{eqn:ef-electric-field-point-charge} is given in Fig. <a ref="#fig:ef-electric-field-point-charge">3</a>.
+which is electric field at arbitraty position $\vec{r}$ due to existence of charge $q_j$ located at $\vec{r}_j$. Illustration of Eqn. \eqref{eqn:ef-electric-field-point-charge} is given in Fig. <a ref="#fig:ef-electric-field-point-charge">4</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/electric-field-point-charge.png)
 <br />
-Figure <a name="fig:ef-electric-field-point-charge">3</a> Electric field $\vec{E}_j$ due to a point charge $q_j$.
+Figure <a name="fig:ef-electric-field-point-charge">4</a> Electric field $\vec{E}_j$ due to a point charge $q_j$.
 {: refdef}
 
-We can see from Fig. <a ref="#fig:ef-electric-field-point-charge">3</a> that what matter related to position is only relative position of observation point $\vec{r}$ to the position of source charge $q_j$ located at $\vec{r}_j$ or simply $\vec{r} - \vec{r}_j$.
+We can see from Fig. <a ref="#fig:ef-electric-field-point-charge">4</a> that what matter related to position is only relative position of observation point $\vec{r}$ to the position of source charge $q_j$ located at $\vec{r}_j$ or simply $\vec{r} - \vec{r}_j$.
 
 ### example
 At position $\vec{r}_j = (2\hat{x} + 3\hat{y} + 4\hat{z}) \ \rm \mu m$ there is a point charge $q_j = 169 \ \rm nC$. Find the electric field at position $\vec{r} = (5\hat{x} + 7\hat{y} + 16\hat{z}) \ \rm \mu m$. What is the magnitude and unit vector of the electric field?
@@ -92,15 +100,15 @@ $\hat{E}_j = \vec{E}_j / E_j = \left( \frac{3}{13}\hat{x} + \frac{4}{13}\hat{y} 
 
 
 ## electric field due to charge distribution
-In real world it is difficult to have a point charge, but group of charges that can assemble a charge distribution $dq_j$, which illustation is given in Fig. <a ref="#fig:ef-electric-field-charge-distribution">4</a>.
+In real world it is difficult to have a point charge, but group of charges that can assemble a charge distribution $dq_j$, which illustation is given in Fig. <a ref="#fig:ef-electric-field-charge-distribution">5</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/electric-field-charge-distribution.png)
 <br />
-Figure <a name="fig:ef-electric-field-charge-distribution">4</a> Element of electric field $d\vec{E}_j$ due to element of charge distribution $q_j$.
+Figure <a name="fig:ef-electric-field-charge-distribution">5</a> Element of electric field $d\vec{E}_j$ due to element of charge distribution $q_j$.
 {: refdef}
 
-Instead of electric field $\vec{E}_j$ as in Eqn. \eqref{eqn:ef-electric-field-point-charge}, Fig. <a ref="#fig:ef-electric-field-charge-distribution">4</a> gives the element of electric field $d\vec{E}_j$ due to element of charge distribution $q_j$, which is formulated as
+Instead of electric field $\vec{E}_j$ as in Eqn. \eqref{eqn:ef-electric-field-point-charge}, Fig. <a ref="#fig:ef-electric-field-charge-distribution">5</a> gives the element of electric field $d\vec{E}_j$ due to element of charge distribution $q_j$, which is formulated as
 
 \begin{equation}
 \label{eqn:ef-electric-field-charge-distribution}
