@@ -157,9 +157,13 @@ where the patterns are so clear to notice.
 
 
 ## superposition
-Suppose that there are three line of charge in along each axis as given in following Fig. <a href="#fig:straight-line-charge-3-axes">4</a>.
+Suppose that there are three line of charge in along each axis as given in following Fig. <a href="#fig:straight-line-charges-3-axes">4</a>.
 
-
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/line/straight-line-charges-3-axes.png)
+<br />
+Figure <a name="fig:straight-line-charges-3-axes">4</a> .
+{: refdef}
 
 
 ## references
