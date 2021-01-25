@@ -105,10 +105,10 @@ In real world it is difficult to have a point charge, but group of charges that 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/electric-field-charge-distribution.png)
 <br />
-Figure <a name="fig:ef-electric-field-charge-distribution">5</a> Element of electric field $d\vec{E}_j$ due to element of charge distribution $q_j$.
+Figure <a name="fig:ef-electric-field-charge-distribution">5</a> Element of electric field $d\vec{E}_j$ due to element of charge distribution $dq_j$.
 {: refdef}
 
-Instead of electric field $\vec{E}_j$ as in Eqn. \eqref{eqn:ef-electric-field-point-charge}, Fig. <a href="#fig:ef-electric-field-charge-distribution">5</a> gives the element of electric field $d\vec{E}_j$ due to element of charge distribution $q_j$, which is formulated as
+Instead of electric field $\vec{E}_j$ as in Eqn. \eqref{eqn:ef-electric-field-point-charge}, Fig. <a href="#fig:ef-electric-field-charge-distribution">5</a> gives the element of electric field $d\vec{E}_j$ due to element of charge distribution $dq_j$, which is formulated as
 
 \begin{equation}
 \label{eqn:ef-electric-field-charge-distribution}

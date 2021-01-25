@@ -55,10 +55,10 @@ A group of charges can assemble a charge distribution $dq_j$ as shown in Fig. <a
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/electric-field-charge-distribution.png)
 <br />
-Figure <a name="fig:eflicf-electric-field-charge-distribution">1</a> Element of electric field $d\vec{E}_j$ due to element of charge distribution $q_j$.
+Figure <a name="fig:eflicf-electric-field-charge-distribution">1</a> Element of charge distribution $q_j$ produces element of electric field $d\vec{E}_j$.
 {: refdef}
 
-Fig. <a ref="#fig:eflicf-electric-field-charge-distribution">1</a> gives the element of electric field $d\vec{E}_j$ due to element of charge distribution $q_j$, which is formulated as
+The element of electric field $d\vec{E}_j$ due to element of charge distribution $dq_j$ shown in Fig. <a ref="#fig:eflicf-electric-field-charge-distribution">1</a> is formulated as
 
 \begin{equation}
 \label{eqn:eflicf-electric-field-charge-distribution}
