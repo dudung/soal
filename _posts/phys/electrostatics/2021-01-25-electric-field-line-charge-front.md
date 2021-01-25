@@ -157,6 +157,9 @@ where the patterns are so clear to notice.
 
 
 ## superposition
+Suppose that there are three line of charge in along each axis as given in following Fig. <a href="#fig:straight-line-charge-3-axes">4</a>.
+
+
 
 
 ## references
