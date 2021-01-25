@@ -108,9 +108,36 @@ which gives an electric field of a point charge. From far away a finite line of 
 
 
 ## at back of the other end of the line
-What is the electric field of similar system shown in Fig. <a href="#fig:eflicf-electric-field-charge-distribution-back">2</a>? Do we need to calculate that?
+What is the electric field of similar system shown in Fig. <a href="#fig:eflicf-electric-field-charge-distribution-back">2</a>? Do we need to calculate that? The result should be $\displaystyle \vec{E}_j = k \ \frac{q_j}{l(L+l)} \ (-\hat{x})$.
+And we are going to show that.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/line/straight-line-charge-back.png)
+<br />
+Figure <a name="fig:eflicf-electric-field-charge-distribution-back">1</a> Electric field in front of line of charge (top) and contribution of differential charge element $dq_j$ to element of electric field $d\vec{E}_j$.
+{: refdef}
+
+Using Eqn. \eqref{eqn:eflicf-electric-field-charge-distribution} and Fig. <a href="#fig:eflicf-electric-field-charge-distribution-back">2</a> we can have \
+$\vec{r} - \vec{r}_j = [(b+l) - x] \hat{x}$. \
+$\|\vec{r} - \vec{r}_j \| = \|(b+l) - x\|$. \
+$\displaystyle \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = \hat{x}$. \
+$\|\vec{r} - \vec{r}_j \|^2 =[(b+l) - x]^2 = (b+l-x)^2$. \
+$b - a = L$ or $b = a + L$.
 
 
+{% comment %}
+And from Eqns. \eqref{eqn:eflicf-line-charge-density} and \eqref{eqn:eflicf-line-charge-density-qj} \
+$dq_j = \lambda \ dx$. \
+$q_j = \lambda L$.
+
+Then using previous equations \
+$\displaystyle d\vec{E}_j = k \ \frac{dq_j}{\|\vec{r} - \vec{r}_j \|^2} \ \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = k \ \frac{\lambda dx}{(b+l-x)^2} \ \hat{x}$ \
+$\displaystyle \vec{E}_j = \hat{x} k \lambda \int_a^b \frac{dx}{(b+l-x)^2}$.
+
+From [list of integrals 0](/math/list-of-integrals-0#in-front-line-of-charge) we can have the solution \
+$\displaystyle \vec{E}_j = \hat{x} k \lambda \frac{L}{l(L+l)} = k \ \frac{\lambda L}{l(L+l)} \ \hat{x} = k \ \frac{q_j}{l(L+l)} \ \hat{x}$.
+
+{% endcomment %}
 
 
 ## references
