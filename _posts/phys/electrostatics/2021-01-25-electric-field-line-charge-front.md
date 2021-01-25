@@ -76,7 +76,20 @@ where $dq_j$ is given previouly in Eqn. \eqref{eqn:eflicf-line-charge-density}.
 
 
 ## in front of line of charge
-For this case more specific illustration than the general in Fig. <a href="#fig:eflicf-electric-field-charge-distribution">1</a> is required and it will be given in following Fig. <a href="#fig:eflicf-electric-field-charge-distribution-front">2</a>.
+For this case more specific illustration than the general in Fig. <a href="#fig:eflicf-electric-field-charge-distribution">1</a> is required and it will be given in following Fig. <a href="#fig:eflicf-electric-field-charge-distribution-front">2</a>. Top part of the figure shows the system where we want to obtain the electric charge due to line of charge where the observation point $o$ is located at a distance $l$ in front of the line.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/line/straight-line-charge-front.png)
+<br />
+Figure <a name="fig:eflicf-electric-field-charge-distribution-front">1</a> Electric field in front of line of charge (top) and contribution of differential charge element $dq_j$ to element of electric field $d\vec{E}_j$.
+{: refdef}
+
+Using Eqn. \eqref{eqn:eflicf-electric-field-charge-distribution} and Fig. <a href="#fig:eflicf-electric-field-charge-distribution-front">2</a> we can have
+
+$\vec{r} - \vec{r}_j = [(b+l) - x] \hat{x}$. \
+$\|\vec{r} - \vec{r}_j \| = \|(b+l) - x\|$. \
+$\displaystyle \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = \hat{x}$.
+$\|\vec{r} - \vec{r}_j \|^2 =[(b+l) - x]^2$.
 
 
 ## references
