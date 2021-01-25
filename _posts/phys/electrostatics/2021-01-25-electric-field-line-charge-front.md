@@ -91,15 +91,16 @@ $\displaystyle \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = \hat{x}$. 
 $\|\vec{r} - \vec{r}_j \|^2 =[(b+l) - x]^2 = (b+l-x)^2$. \
 $b - a = L$ or $b = a + L$.
 
-And from Eqn. \eqref{eqn:eflicf-line-charge-density} \
-$dq_j = \lambda \ dx$.
+And from Eqns. \eqref{eqn:eflicf-line-charge-density} and \eqref{eqn:eflicf-line-charge-density-qj} \
+$dq_j = \lambda \ dx$. \
+$q_j = \lambda L$.
 
 Then using previous equations \
 $\displaystyle d\vec{E}_j = k \ \frac{dq_j}{\|\vec{r} - \vec{r}_j \|^2} \ \frac{\vec{r} - \vec{r}_j}{\|\vec{r} - \vec{r}_j \|} = k \ \frac{\lambda dx}{(b+l-x)^2} \ \hat{x}$ \
 $\displaystyle \vec{E}_j = \hat{x} k \lambda \int_a^b \frac{dx}{(b+l-x)^2}$.
 
-From [list of integrals 0](/math/list-of-integrals-0#in-front-line-of-charge) we can have the solution
-
+From [list of integrals 0](/math/list-of-integrals-0#in-front-line-of-charge) we can have the solution \
+$\displaystyle \vec{E}_j = \hat{x} k \lambda \frac{L}{l(L+l)}$.
 
 ## references
 1. <a name="ref1"></a>Carl R. Nave, "Electric Field of Line Charge", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/electric/elelin.html> [20210125].
