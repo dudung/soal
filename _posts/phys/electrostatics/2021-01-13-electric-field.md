@@ -115,7 +115,7 @@ Instead of electric field $\vec{E}_j$ as in Eqn. \eqref{eqn:ef-electric-field-po
 d\vec{E}_j(\vec{r}) = k \frac{dq_j}{\| \vec{r} - \vec{r}_j \|^3} \ (\vec{r} - \vec{r}_j),
 \end{equation}
 
-and to get the electric field field from Eqn. \eqref{eqn:ef-electric-field-charge-distribution}
+and to get the electric field from Eqn. \eqref{eqn:ef-electric-field-charge-distribution}
 
 \begin{equation}
 \label{eqn:ef-electric-field-charge-distribution-int}
