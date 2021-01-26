@@ -9,14 +9,10 @@ threejs: false
 oo: false
 category: physics
 tags: ["fi3201", "root", "scanning"]
-date: 2021-01-26 07:07:00 +07
+date: 2021-01-27 06:34:00 +07
 permalink: /fi3201/root-scanning
 ---
-
-Not listed There are some algorithms in finding root of a function [[1](#ref1)], e.g.
-
-
-Even we can find root(s) of a function nowadays in a very easy way [[1](#ref1)], it is still interesting to code. And it is still worth to do that. 
+we can use a scanning method in finding root, even it is not listed There are some algorithms in finding root of a function [[1](#ref1)]. This method is not efficient, not accurate, and very step dependent.
 
 
 ## root of a function
@@ -84,6 +80,8 @@ There are some algorithms in finding root of a function [[7](#ref7)], e.g.
 + secant method
 
 and also a not-accurate, not-so-efficient, and step-dependent method is [scanning method](fi3201/root-scanning).
+
+For quadratic equation it is advised to used the [quadratic formula](/fi3201/quadratic-formula) instead of solved it numericallya, even it will work.
 
 
 ## references
