@@ -15,6 +15,14 @@ permalink: /fi3201/root-scanning
 we can use a scanning method in finding root, even it is not listed There are some algorithms in finding root of a function [[1](#ref1)]. This method is not efficient, not accurate, and very step dependent.
 
 
+## references
+1. <a name="ref1"></a>Wikipedia contributors, "Root-finding algorithms", Wikipedia, The Free Encyclopedia, 15 January 2021, 23:25 UTC, <https://en.wikipedia.org/w/index.php?oldid=1000624440> [20210126].
+
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi3201/2021-01-26-root-scanning.md)
+
+
+
+{% comment %}
 ## root of a function
 If there is a function $f(x)$ then roots are values of $x$ that satisfy the condition [[2](#ref2), [3](#ref3), [4](#ref4)]
 
@@ -82,9 +90,4 @@ There are some algorithms in finding root of a function [[7](#ref7)], e.g.
 and also a not-accurate, not-so-efficient, and step-dependent method is [scanning method](fi3201/root-scanning).
 
 For quadratic equation it is advised to used the [quadratic formula](/fi3201/quadratic-formula) instead of solved it numericallya, even it will work.
-
-
-## references
-1. <a name="ref1"></a>Wikipedia contributors, "Root-finding algorithms", Wikipedia, The Free Encyclopedia, 15 January 2021, 23:25 UTC, <https://en.wikipedia.org/w/index.php?oldid=1000624440> [20210126].
-
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi3201/2021-01-26-root-scanning.md)
+{% endcomment %}
