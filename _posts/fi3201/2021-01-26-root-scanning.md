@@ -8,12 +8,12 @@ x3dom: false
 threejs: false
 oo: false
 category: physics
-tags: ["fi3201", "root", "theory"]
+tags: ["fi3201", "root", "scanning"]
 date: 2021-01-26 07:07:00 +07
 permalink: /fi3201/root-scanning
 ---
 
-Not listed There are some algorithms in finding root of a function [[7](#ref7)], e.g.
+Not listed There are some algorithms in finding root of a function [[1](#ref1)], e.g.
 
 
 Even we can find root(s) of a function nowadays in a very easy way [[1](#ref1)], it is still interesting to code. And it is still worth to do that. 
@@ -87,12 +87,6 @@ and also a not-accurate, not-so-efficient, and step-dependent method is [scannin
 
 
 ## references
-1. <a name="ref1"></a>Crystal Fantry, "Root Finder", Wolfram \| Alpha Widgets, 1 Aug 2010, url <https://www.wolframalpha.com/widgets/view.jsp?id=a7d8ae4569120b5bec12e7b6e9648b86> [20210126].
-2. <a name="ref2"></a>Eric W. Weisstein, "Root" from MathWorld--A Wolfram Web Resource, url <https://mathworld.wolfram.com/Root.html> [20210126].
-3. <a name="ref3"></a>Wikipedia contributors, "Zero of a function", Wikipedia, The Free Encyclopedia, 1 December 2020, 03:55 UTC, <https://en.wikipedia.org/w/index.php?oldid=991651252> [20210126].
-4. <a name="ref4"></a>Dennis Theurer, "Root of a function", Easy-Math, School maths made easy, 2013, url <http://www.easy-math.net/root-of-a-function/> [20210126].
-5. <a name="ref5"></a>Christopher Stover, Eric W. Weisstein, "n-Vector" from MathWorld--A Wolfram Web Resource, url <https://mathworld.wolfram.com/n-Vector.html> [20210126].
-6. <a name="ref6"></a>-, "Precision Vs. Accuracy", Information Technology, St. Olaf College, url <https://wp.stolaf.edu/it/gis-precision-accuracy/> [20210126].
-7. <a name="ref7"></a>Wikipedia contributors, "Root-finding algorithms", Wikipedia, The Free Encyclopedia, 15 January 2021, 23:25 UTC, <https://en.wikipedia.org/w/index.php?oldid=1000624440> [20210126].
+1. <a name="ref1"></a>Wikipedia contributors, "Root-finding algorithms", Wikipedia, The Free Encyclopedia, 15 January 2021, 23:25 UTC, <https://en.wikipedia.org/w/index.php?oldid=1000624440> [20210126].
 
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi3201/2021-01-26-root.md)
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi3201/2021-01-26-root-scanning.md)
