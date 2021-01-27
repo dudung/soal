@@ -9,6 +9,17 @@
 	20210128
 	0500 Start this program.
 	0545 Test it and it works.
+	0600 Add notes 1 and 2.
+	
+	Notes
+	1. One of the output message is not related to a, x1, x2,
+	   x3, which means that if they are changed you must also
+		 change the message manually.
+	2. The main function is not essential since you can write
+	   it directly without it, but it is made so only for
+		 flexibilty, e.g you want to experiment with more than
+		 one main fucntion. It is easier to opt out a function
+		 than put some lines into comments.
 */
 
 
