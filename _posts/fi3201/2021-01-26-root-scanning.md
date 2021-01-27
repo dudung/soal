@@ -12,7 +12,7 @@ tags: ["fi3201", "root", "scanning"]
 date: 2021-01-27 06:34:00 +07
 permalink: /fi3201/root-scanning
 ---
-We can use scanning method in finding a root, even it is not listed in the list of root-finding algorithms [[1](#ref1)]. This method is not efficient, not accurate, and very step dependent.
+We can use scanning method in finding a root, even it is not listed in the list of root-finding algorithms [[1](#ref1)]. This method is not efficient, not accurate, and very step dependent, but very simple and straightforward.
 
 
 ## sign function
