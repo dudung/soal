@@ -101,7 +101,7 @@ Previous table summerized the discussed results, where all use the same initial 
 ## implementation
 We can design that the output is as follow
 
-```
+```batch
 f(x)  0.05(x+1)(x-3.45)(x-8)
 Δx    1
 xbeg  2
@@ -110,11 +110,11 @@ Nstep 3
 xroot 3.5
 ```
 
-### python
-```python
-```
+Three examples are given in the next sub-sections.
 
 ### javascript
+Following code `root-scanning.js` is tested using Node.js v10.1.0 on Windows 10 Home.
+
 ```javascript
 // Define a test function
 function test_function() {
@@ -184,8 +184,23 @@ Full source code with comments can be accessed [here](https://github.com/butiran
 ```c++
 ```
 
+### python
+```python
+```
+
+
 ## exercises
 1. Using previous C++ code compile the program to produce results for $\Delta x = 0.01$. What are the value of $N_{\rm step}$ and $x_{\rm root}$? Use the same $x_{\rm beg} = 2$.
+2. Modify `root-scanning.js` to get following result
+```batch
+f(x)  0.05(x+1)(x-3.45)(x-8)
+Δx    1
+xbeg  0
+xend  3
+Nstep 4
+xroot not found
+```
+Can you explain why such result is produced?
 
 
 ## references

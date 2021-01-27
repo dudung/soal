@@ -10,6 +10,7 @@
 	0500 Start this program.
 	0545 Test it and it works.
 	0600 Add notes 1 and 2.
+	0610 Test for xroot not found, and ok.
 	
 	Notes
 	1. One of the output message is not related to a, x1, x2,
@@ -39,8 +40,8 @@ function test_function() {
 function main() {
 	// Define input
 	var f = test_function;
-	var xbeg = 3;
-	var xend = 5;
+	var xbeg = 0;
+	var xend = 3;
 	var dx = 1;
 	
 	// Define default message
