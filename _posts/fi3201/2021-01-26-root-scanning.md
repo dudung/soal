@@ -57,6 +57,36 @@ Algorithm <a name="alg:rs-scanning-method-algorithm">1</a> Scanning method. \
 10. $x_{\rm r} \notin  [x_{\rm beg}, x_{\rm end}]$.
 11. $x_{\rm root} \leftarrow x_r$
 
+Illustration how Alg. <a href="#alg:rs-scanning-method-algorithm">1</a> works is given in Figs. <a href="#fig:rs-example-dx-1">1</a> and <a href="#fig:rs-example-dx-0.5">2</a>.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/math/root/root-scanning-dx-1-2.png)
+![..](/assets/img/math/root/root-scanning-dx-1-3.png)
+![..](/assets/img/math/root/root-scanning-dx-1-4.png)
+<br />
+Figure <a name="fig:rs-example-dx-1">1</a> Scanning a root with $x_{\rm beg} = 2$ and $\Delta x = 1$, with result of $x_{\rm root} = 3.5$, while: $x = 2$ (top), $x = 3$ (middle), and $x = 4$ (bottom). 
+{: refdef}
+
+Three steps are required to get the result of $x_{\rm root} = 3.5$ for $\Delta x = 1$ as shown in Fig. <a name="fig:rs-example-dx-1">1</a>. In each sub-figure the point being examined is indicated with vertical blue line.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/math/root/root-scanning-dx-0.5-2.0.png)
+![..](/assets/img/math/root/root-scanning-dx-0.5-2.5.png)
+![..](/assets/img/math/root/root-scanning-dx-0.5-3.0.png)
+![..](/assets/img/math/root/root-scanning-dx-0.5-3.5.png)
+<br />
+Figure <a name="fig:rs-example-dx-0.5">2</a> Scanning a root with $x_{\rm beg} = 2$ and $\Delta x = 3.5$, with result of $x_{\rm root} = 3.25$, while: $x = 2$ (top), $x = 2.5$ )second top), $x = 3$ (second bottom), and $x = 3.5$ (bottom). 
+{: refdef}
+
+If we choose $\Delta x = 0.5$ then four steps are required to produce $x_{\rm root} = 3.25$. We can also try with $\Delta x = 0.25$ and we will have seven steps that produces $x_{\rm root} = 3.375$. Then $x = 3.5$ with 9 steps for $\Delta x = 0.2$. And finally $x = 3.45$ with 16 steps for $\Delta x = 0.1$, which is the right answer.
+
+$\Delta x$ | 1 | 0.5 | 0.25 | 0.2 | 1
+$N$ | 3 | 4 | 7 |9 | 16
+$x_{\rm root}$ | 3.5 | 3.25 | 3.375 | 3.5 | 3.45
+
+Previous table summerized the discussed results.
+
+
 ## references
 1. <a name="ref1"></a>Wikipedia contributors, "Root-finding algorithms", Wikipedia, The Free Encyclopedia, 15 January 2021, 23:25 UTC, <https://en.wikipedia.org/w/index.php?oldid=1000624440> [20210126].
 2. <a name="ref1"></a>Wikipedia contributors, "Root-finding algorithms", Wikipedia, The Free Encyclopedia, 15 January 2021, 23:25 UTC, <https://en.wikipedia.org/w/index.php?oldid=1000624440> [20210126].
