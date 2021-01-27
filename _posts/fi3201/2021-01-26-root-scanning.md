@@ -75,16 +75,43 @@ Three steps are required to get the result of $x_{\rm root} = 3.5$ for $\Delta x
 ![..](/assets/img/math/root/root-scanning-dx-0.5-3.0.png)
 ![..](/assets/img/math/root/root-scanning-dx-0.5-3.5.png)
 <br />
-Figure <a name="fig:rs-example-dx-0.5">2</a> Scanning a root with $x_{\rm beg} = 2$ and $\Delta x = 3.5$, with result of $x_{\rm root} = 3.25$, while: $x = 2$ (top), $x = 2.5$ )second top), $x = 3$ (second bottom), and $x = 3.5$ (bottom). 
+Figure <a name="fig:rs-example-dx-0.5">2</a> Scanning a root with $x_{\rm beg} = 2$ and $\Delta x = 0.5$, with result of $x_{\rm root} = 3.25$, while: $x = 2$ (top), $x = 2.5$ )second top), $x = 3$ (second bottom), and $x = 3.5$ (bottom). 
 {: refdef}
 
 If we choose $\Delta x = 0.5$ then four steps are required to produce $x_{\rm root} = 3.25$. We can also try with $\Delta x = 0.25$ and we will have seven steps that produces $x_{\rm root} = 3.375$. Then $x = 3.5$ with 9 steps for $\Delta x = 0.2$. And finally $x = 3.45$ with 16 steps for $\Delta x = 0.1$, which is the right answer.
 
 $\Delta x$ | 1 | 0.5 | 0.25 | 0.2 | 1
-$N$ | 3 | 4 | 7 |9 | 16
+$N_{\rm step}$ | 3 | 4 | 7 |9 | 16
 $x_{\rm root}$ | 3.5 | 3.25 | 3.375 | 3.5 | 3.45
 
-Previous table summerized the discussed results.
+Previous table summerized the discussed results, where all use the same initial value $x_{\rm beg} = 2$.
+
+
+## implementation
+We can design that the output is as follow
+
+```
+f(x)  0.05(x+1)(x-3.45)(x-8)
+Δx    1
+xbeg  2
+Nstep 3
+xroot 3.5
+```
+
+### python
+```python
+```
+
+### javascript
+```javascript
+```
+
+### c++
+```c++
+```
+
+## exercises
+1. Using previous C++ code compile the program to produce results for $\Delta x = 0.01$. What are the value of $N_{\rm step}$ and $x_{\rm root}$? Use the same $x_{\rm beg} = 2$.
 
 
 ## references
