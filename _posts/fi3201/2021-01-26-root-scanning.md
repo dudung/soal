@@ -57,7 +57,18 @@ Algorithm <a name="alg:rs-scanning-method-algorithm">1</a> Scanning method. \
 10. $x_{\rm r} \notin  [x_{\rm beg}, x_{\rm end}]$.
 11. $x_{\rm root} \leftarrow x_r$
 
-Illustration how Alg. <a href="#alg:rs-scanning-method-algorithm">1</a> works is given in Figs. <a href="#fig:rs-example-dx-1">1</a> and <a href="#fig:rs-example-dx-0.5">2</a>.
+A function $f(x)$ will be solved using Alg. <a href="#alg:rs-scanning-method-algorithm">1</a> as discussed in following section.
+
+
+## test function
+Let us have a function
+
+\begin{equation}
+\label{eqn:rs-test-function}
+f(x) = \frac{1}{20} (x + 1) (x - 3.45) (x - 8),
+\end{equation}
+
+a polynomial function with 3rd order. Illustration how Alg. <a href="#alg:rs-scanning-method-algorithm">1</a> works for Eqn. \eqref{eqn:rs-test-function} is given in Figs. <a href="#fig:rs-example-dx-1">1</a> and <a href="#fig:rs-example-dx-0.5">2</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/root/root-scanning-dx-1-2.png)
@@ -80,7 +91,7 @@ Figure <a name="fig:rs-example-dx-0.5">2</a> Scanning a root with $x_{\rm beg} =
 
 If we choose $\Delta x = 0.5$ then four steps are required to produce $x_{\rm root} = 3.25$. We can also try with $\Delta x = 0.25$ and we will have seven steps that produces $x_{\rm root} = 3.375$. Then $x = 3.5$ with 9 steps for $\Delta x = 0.2$. And finally $x = 3.45$ with 16 steps for $\Delta x = 0.1$, which is the right answer.
 
-$\Delta x$ | 1 | 0.5 | 0.25 | 0.2 | 1
+$\Delta x$ | 1 | 0.5 | 0.25 | 0.2 | 0.1
 $N_{\rm step}$ | 3 | 4 | 7 |9 | 16
 $x_{\rm root}$ | 3.5 | 3.25 | 3.375 | 3.5 | 3.45
 
@@ -94,6 +105,7 @@ We can design that the output is as follow
 f(x)  0.05(x+1)(x-3.45)(x-8)
 Δx    1
 xbeg  2
+xend  5
 Nstep 3
 xroot 3.5
 ```
