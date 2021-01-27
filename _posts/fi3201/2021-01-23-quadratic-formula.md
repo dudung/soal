@@ -37,7 +37,7 @@ with $a \ne 0$. Note that a quadratic equation has two solutions, that is given 
 From Eqns. \eqref{eqn:qf-quadratic-equation} and \eqref{eqn:qf-quadratic-formula}, there are four input parameters $a$, $b$, $c$, and $x$, and there are two output values $x_1$ and $x_2$. We can make the following algorithm using previous information.
 
 Algorithm <a name="alg:qf-quadratic-formula-algorithm">1</a> Quadratic formula. \
-`I`: $a$, $b$, $c$, $x$ \
+`I`: $a$, $b$, $c$ \
 `O`: $x_1$, $x_2$
 1. $D \leftarrow b^2 - 4ac$.
 2. $\displaystyle x_1 \leftarrow \frac{-b + \sqrt{D}}{2a}$.

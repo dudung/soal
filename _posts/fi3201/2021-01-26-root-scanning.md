@@ -134,3 +134,9 @@ and also a not-accurate, not-so-efficient, and step-dependent method is [scannin
 
 For quadratic equation it is advised to used the [quadratic formula](/fi3201/quadratic-formula) instead of solved it numericallya, even it will work.
 {% endcomment %}
+
+
+
+
+Adrio Rivan: mengganti eqn dgn nilai abc
+Bunga a, b, c
