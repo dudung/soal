@@ -36,7 +36,7 @@ There is a built-in function in C++ standard template libray (STL) [[4](#ref4)] 
 swap(a, b)
 ```
 
-with `a` and `b` are two mandatory parameters to be swapped. Manually there are some algorithms to perform the swap process without using a temporary variable but using arithmetic or bitwise operation or mixture of them [[5](#ref5)]. We will use this function in designing more readable algorithm for bisection method.
+with `a` and `b` are two mandatory parameters to be swapped. Manually there are some algorithms to perform the swap process without using a temporary variable but using arithmetic or bitwise operation or mixture of them [[5](#ref5)] or other ways [[6](#ref6)]. We will use this function in designing more readable algorithm for bisection method.
 
 
 ## algorithm
@@ -45,17 +45,12 @@ Let us assume that there is a function $f(x)$, which holds for $f(x_{\rm beg}) f
 Algorithm <a name="alg:rb-bisection-method-algorithm">1</a> Bisection method. \
 `I`: $f(x)$, $x_{\rm beg}$, $x_{\rm end}$ \
 `O`: $x_{\rm root}$
-1. $x \leftarrow x_{\rm beg}$.
-2. $\displaystyle S_0 \leftarrow \frac{f(x)}{\|f(x)\|}$.
-3. $x \leftarrow x + \Delta x$.
-4. $\displaystyle S \leftarrow \frac{f(x)}{\|f(x)\|}$.
-5. $S_0 S < 0 \Rightarrow \rm step\ 8$
-6. $x > x_{\rm end} \Rightarrow \rm step\ 10$
-7. $\Rightarrow step\ 3$
-8. $x_{\rm r} \leftarrow x - \frac12 \Delta x$.
-9. $\Rightarrow step\ 11$
-10. $x_{\rm r} \notin  [x_{\rm beg}, x_{\rm end}]$.
-11. $x_{\rm root} \leftarrow x_r$
+1. $x_1 \leftarrow x_{\rm beg}$.
+2. $x_2 \leftarrow x_{\rm end}$.
+3. $x_3 \leftarrow \frac12 (x_{\rm beg} + x_{\rm end})$.
+4. $f(x_2) f(x_3) < 0 \Rightarrow \rm step\ 6$.
+5. ${\rm swap}(x_1, x_2)$.
+6. $\|f(x_3)\| < \epsilon \Rightarrow \rm step\ 3$ {% dD %}
 
 A function $f(x)$ as an example will be solved using Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>.
 
@@ -66,5 +61,6 @@ A function $f(x)$ as an example will be solved using Alg. <a href="#alg:rs-bisec
 3. <a name="ref3"></a>url <https://www.sciencedirect.com/topics/engineering/bisection-algorithm> [20210129].
 4. <a name="ref4"></a>Prateek Sharma 7, "swap() in C++", GeeksforGeeks, 01 May 2019, url <https://www.geeksforgeeks.org/swap-in-cpp/> [20210129].
 5. <a name="ref5"></a>GeeksforGeeks contributors (jit_t, mohit kumar 29, Chandan_Kumar, Code_Mech, ujjwalmittal, rathbhupendra, SHUBHAMSINGH10, Rajput-Ji, supershounak2001, yashbeersingh42, divyeshrabadiya07, bunnyram19, divyesh072019), "How to swap two numbers without using a temporary variable?", GeeksforGeeks, 11 Dec 2020, url <https://www.geeksforgeeks.org/swap-two-numbers-without-using-temporary-variable/> [20210129].
+6. <a name="ref6"></a>Piyush Kochhar, "10 Ways To Swap Values In JavaScript", codeburst.io, 12 Aug 2020, url <https://codeburst.io/10-ways-to-swap-values-in-javascript-8a1d056352dd> [20210129].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi3201/2021-01-29-root-bisection.md)
