@@ -265,8 +265,63 @@ double test_function(double x) {
 Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/cpp/fi3201/root/root-scanning.cpp)
 
 ### python
+Following code `root-scanning.cpp` has been tested using Python 3.7.7 through Cygwin version 2.873 on Windows 10 Home.
+
 ```python
+# Import necessary libraries
+import numpy as np
+
+# Define a test function
+def test_function(x):
+	a = 0.05
+	x1 = -1
+	x2 = 3.45
+	x3 = 8
+	y = a*(x-x1)*(x-x2)*(x-x3)
+	return y
+
+
+# Define input
+f = test_function
+xbeg = 2
+xend = 5
+dx = 1
+
+# Define default message
+xroot = "not found";
+
+# Do iteration
+Nstep = 0;
+x = xbeg;
+
+while x <= xend:
+	# Increase Nstep;
+	Nstep += 1
+	
+	# Calculate S0 and S
+	if x == xbeg:
+		S0 = np.sign(f(x))
+	else:
+		S = np.sign(f(x))
+	
+	# Check S0.S for root
+	if x > xbeg:
+		if S0 * S < 0:
+			xroot = x - 0.5 * dx;
+			break;
+	
+	x += dx;
+
+# Display result
+print("f(x)   0.05(x+1)(x-3.45)(x-8)");
+print("Δx    ", dx, sep="")
+print("xbeg  ", xbeg, sep="")
+print("xend  ", xend, sep="")
+print("Nstep ", Nstep, sep="")
+print("xroot ", xroot, sep="")
 ```
+
+Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/fi3201/root/root-scanning.cpp)
 
 
 ## exercises
