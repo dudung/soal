@@ -181,8 +181,88 @@ main();
 Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/js/fi3201/root/root-scanning.js)
 
 ### c++
+Following code `root-scanning.cpp` has been tested using g++ (GCC) 10.2.0 through Cygwin version 2.873 on Windows 10 Home.
+
 ```c++
+// Include necessary libraries
+#include <iostream>
+
+using namespace std;
+
+// Define some functions
+double sign(double);
+double test_function(double);
+
+int main(int argc, char *argv[]) {
+	// Define input
+	double xbeg = 2;
+	double xend = 5;
+	double dx = 1;
+	
+	// Define default value
+	double not_found = -2021;
+	double xroot = not_found;
+	
+	// Do iteration
+	double S0, S;
+	int Nstep = 0;
+	double x = xbeg;
+	while(x <= xend) {
+		// Increase Nstep;
+		Nstep++;
+		
+		// Calculate S0 and S
+		double fx = test_function(x);
+		if(x == xbeg) {
+			S0 = sign(fx);
+		} else {
+			S = sign(fx);
+		}
+		
+		// Check S0.S for root
+		if(x > xbeg) {
+			if(S0 * S < 0) {
+				xroot = x - 0.5 * dx;
+				break;
+			}
+		}
+		x += dx;
+	}
+	
+	// Display result
+	cout << "f(x)  0.05(x+1)(x-3.45)(x-8)" << endl;
+	cout << "Δx    " << dx << endl;
+	cout << "xbeg  " << xbeg << endl;
+	cout << "xend  " << xend << endl;
+	cout << "Nstep " << Nstep << endl;
+	if(xroot == not_found) {
+		cout << "xroot not found" << endl;
+	} else {
+		cout << "xroot " << xroot << endl;
+	}
+	
+	return 0;
+}
+
+
+// Implement sign function from [1]
+double sign(double x) {
+	return (x < 0) ? -1 : ((x > 0) ? 1 : 0);
+}
+
+
+// Define test function
+double test_function(double x) {
+	double a = 0.05;
+	double x1 = -1;
+	double x2 = 3.45;
+	double x3 = 8;
+	double y = a*(x-x1)*(x-x2)*(x-x3);
+	return y;
+}
 ```
+
+Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/cpp/fi3201/root/root-scanning.js)
 
 ### python
 ```python
