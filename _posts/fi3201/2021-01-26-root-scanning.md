@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["fi3201", "root", "scanning"]
-date: 2021-01-28 22:04:00 +07
+date: 2021-01-28 22:17:00 +07
 permalink: /fi3201/root-scanning
 ---
 We can use scanning method in finding a root, even it is not listed in the list of root-finding algorithms [[1](#ref1)]. This method is not efficient, not accurate, and very step dependent, but very simple and straightforward.
@@ -37,6 +37,8 @@ or for $x \ne 0$ it can be approximated with
 \end{equation}
 
 We will use the Eqn. \eqref{eqn:rs-sign-function-non-zero} instead of \eqref{eqn:rs-sign-function} only for simplicity.
+
+In C++ we must define the sign function since there is not any standar one [[3](#ref3)], where in Python we can use NumPy [[4](#ref4)], and Math in JS [[5](#ref5)].
 
 
 ## algorithm
@@ -354,6 +356,9 @@ Can you explain why such result is produced?
 
 ## references
 1. <a name="ref1"></a>Wikipedia contributors, "Root-finding algorithms", Wikipedia, The Free Encyclopedia, 15 January 2021, 23:25 UTC, <https://en.wikipedia.org/w/index.php?oldid=1000624440> [20210126].
-2. <a name="ref1"></a>Wikipedia contributors, "Sign function", Wikipedia, The Free Encyclopedia, 3 January 2021, 19:24 UTC, <https://en.wikipedia.org/w/index.php?oldid=998088494> [20210128].
+2. <a name="ref2"></a>Wikipedia contributors, "Sign function", Wikipedia, The Free Encyclopedia, 3 January 2021, 19:24 UTC, <https://en.wikipedia.org/w/index.php?oldid=998088494> [20210128].
+3. <a name="ref3"></a>Mark Byers, "Answer to 'Is there a standard sign function (signum, sgn) in C/C++?'", StackOverflow, 14 Dec 2009 22:3-0, url <	   https://stackoverflow.com/a/1903975> [20210128].
+4. <a name="ref4"></a>sanjoy_62, "numpy.sign() in Python", GeeksforGeeks, 03 Oct 2019, url <https://www.geeksforgeeks.org/numpy-sign-in-python/> [20210128].
+5. <a name="ref4"></a>MDN contributors (schlagi123, cedrichaase), "Math.sign()", MDN Web Docs, 16. Okt. 2020, url <https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Math/sign> [20210128].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi3201/2021-01-26-root-scanning.md)
