@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["fi3201", "root", "scanning"]
-date: 2021-01-28 21:57:00 +07
+date: 2021-01-28 22:04:00 +07
 permalink: /fi3201/root-scanning
 ---
 We can use scanning method in finding a root, even it is not listed in the list of root-finding algorithms [[1](#ref1)]. This method is not efficient, not accurate, and very step dependent, but very simple and straightforward.
@@ -350,10 +350,10 @@ xroot not found
 Can you explain why such result is produced?
 3. Explain the difference of implementation in producing the result of `xroot not found` in `root-scanning.js` and `root-scanning.cpp` programs.
 4. Is there any similiarity in implementing condition of `xroot not found` in `root-scanning.js` and `root-scanning.py` programs. Explain that in brief.
-
+5. Using one of the given programs, `root-scanning.py`, `root-scanning.js`, or `root-scanning.cpp`, calculate $x_{\rm root}$ using different step size $\Delta x$ and make a chart of obtained $x_{\rm root}$ againts $\Delta x$. Discuss the result and shown the relation between $\Delta x$ and accuracy of the results.
 
 ## references
 1. <a name="ref1"></a>Wikipedia contributors, "Root-finding algorithms", Wikipedia, The Free Encyclopedia, 15 January 2021, 23:25 UTC, <https://en.wikipedia.org/w/index.php?oldid=1000624440> [20210126].
-2. <a name="ref1"></a>Wikipedia contributors, "Root-finding algorithms", Wikipedia, The Free Encyclopedia, 15 January 2021, 23:25 UTC, <https://en.wikipedia.org/w/index.php?oldid=1000624440> [20210126].
+2. <a name="ref1"></a>Wikipedia contributors, "Sign function", Wikipedia, The Free Encyclopedia, 3 January 2021, 19:24 UTC, <https://en.wikipedia.org/w/index.php?oldid=998088494> [20210128].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi3201/2021-01-26-root-scanning.md)
