@@ -265,7 +265,7 @@ double test_function(double x) {
 Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/cpp/fi3201/root/root-scanning.cpp)
 
 ### python
-Following code `root-scanning.cpp` has been tested using Python 3.7.7 through Cygwin version 2.873 on Windows 10 Home.
+Following code `root-scanning.py` has been tested using Python 3.7.7 through Cygwin version 2.873 on Windows 10 Home.
 
 ```python
 # Import necessary libraries
