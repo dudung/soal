@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["fi3201", "root", "scanning"]
-date: 2021-01-27 06:34:00 +07
+date: 2021-01-28 21:57:00 +07
 permalink: /fi3201/root-scanning
 ---
 We can use scanning method in finding a root, even it is not listed in the list of root-finding algorithms [[1](#ref1)]. This method is not efficient, not accurate, and very step dependent, but very simple and straightforward.
@@ -57,7 +57,19 @@ Algorithm <a name="alg:rs-scanning-method-algorithm">1</a> Scanning method. \
 10. $x_{\rm r} \notin  [x_{\rm beg}, x_{\rm end}]$.
 11. $x_{\rm root} \leftarrow x_r$
 
-A function $f(x)$ will be solved using Alg. <a href="#alg:rs-scanning-method-algorithm">1</a> as discussed in following section.
+A function $f(x)$ will be solved using Alg. <a href="#alg:rs-scanning-method-algorithm">1</a> as discussed after following section.
+
+
+## flow chart
+Beside using Alg. <a href="#alg:rs-scanning-method-algorithm">1</a> we can also use a flow chart to design how steps of finding root using scanning method.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/math/root/root-scanning-flow-chart.png)
+<br />
+Figure <a name="fig:rs-scanning-method-flow-chart">1</a> Steps in scanning method are described in a flow chart. 
+{: refdef}
+
+Fig. <a href="#fig:rs-scanning-method-flow-chart">1</a> shows an alternative flow chart explaining the scanning method in finding a root from a function, where two examples are discussed in the following section.
 
 
 ## test function
@@ -68,17 +80,17 @@ Let us have a function
 f(x) = \frac{1}{20} (x + 1) (x - 3.45) (x - 8),
 \end{equation}
 
-a polynomial function with 3rd order. Illustration how Alg. <a href="#alg:rs-scanning-method-algorithm">1</a> works for Eqn. \eqref{eqn:rs-test-function} is given in Figs. <a href="#fig:rs-example-dx-1">1</a> and <a href="#fig:rs-example-dx-0.5">2</a>.
+a polynomial function with 3rd order. Illustration how Alg. <a href="#alg:rs-scanning-method-algorithm">2</a> works for Eqn. \eqref{eqn:rs-test-function} is given in Figs. <a href="#fig:rs-example-dx-1">1</a> and <a href="#fig:rs-example-dx-0.5">2</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/root/root-scanning-dx-1-2.png)
 ![..](/assets/img/math/root/root-scanning-dx-1-3.png)
 ![..](/assets/img/math/root/root-scanning-dx-1-4.png)
 <br />
-Figure <a name="fig:rs-example-dx-1">1</a> Scanning a root with $x_{\rm beg} = 2$ and $\Delta x = 1$, with result of $x_{\rm root} = 3.5$, while: $x = 2$ (top), $x = 3$ (middle), and $x = 4$ (bottom). 
+Figure <a name="fig:rs-example-dx-1">2</a> Scanning a root with $x_{\rm beg} = 2$ and $\Delta x = 1$, with result of $x_{\rm root} = 3.5$, while: $x = 2$ (top), $x = 3$ (middle), and $x = 4$ (bottom). 
 {: refdef}
 
-Three steps are required to get the result of $x_{\rm root} = 3.5$ for $\Delta x = 1$ as shown in Fig. <a name="fig:rs-example-dx-1">1</a>. In each sub-figure the point being examined is indicated with vertical blue line.
+Three steps are required to get the result of $x_{\rm root} = 3.5$ for $\Delta x = 1$ as shown in Fig. <a name="fig:rs-example-dx-1">2</a>. In each sub-figure the point being examined is indicated with vertical blue line.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/root/root-scanning-dx-0.5-2.0.png)
@@ -86,7 +98,7 @@ Three steps are required to get the result of $x_{\rm root} = 3.5$ for $\Delta x
 ![..](/assets/img/math/root/root-scanning-dx-0.5-3.0.png)
 ![..](/assets/img/math/root/root-scanning-dx-0.5-3.5.png)
 <br />
-Figure <a name="fig:rs-example-dx-0.5">2</a> Scanning a root with $x_{\rm beg} = 2$ and $\Delta x = 0.5$, with result of $x_{\rm root} = 3.25$, while: $x = 2$ (top), $x = 2.5$ )second top), $x = 3$ (second bottom), and $x = 3.5$ (bottom). 
+Figure <a name="fig:rs-example-dx-0.5">3</a> Scanning a root with $x_{\rm beg} = 2$ and $\Delta x = 0.5$, with result of $x_{\rm root} = 3.25$, while: $x = 2$ (top), $x = 2.5$ )second top), $x = 3$ (second bottom), and $x = 3.5$ (bottom). 
 {: refdef}
 
 If we choose $\Delta x = 0.5$ then four steps are required to produce $x_{\rm root} = 3.25$. We can also try with $\Delta x = 0.25$ and we will have seven steps that produces $x_{\rm root} = 3.375$. Then $x = 3.5$ with 9 steps for $\Delta x = 0.2$. And finally $x = 3.45$ with 16 steps for $\Delta x = 0.1$, which is the right answer.
