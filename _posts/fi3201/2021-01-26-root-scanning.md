@@ -337,6 +337,7 @@ xroot not found
 ```
 Can you explain why such result is produced?
 3. Explain the difference of implementation in producing the result of `xroot not found` in `root-scanning.js` and `root-scanning.cpp` programs.
+4. Is there any similiarity in implementing condition of `xroot not found` in `root-scanning.js` and `root-scanning.py` programs. Explain that in brief.
 
 
 ## references
