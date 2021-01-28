@@ -11,12 +11,17 @@
 #	1758 Continue after test_function test.
 #	1806 Add reference 1, just now about it.
 #	1828 Test it and ok.
+#	1855 Add reference 2, use it.
 #	
 #	References
 #	1. Glenn Maynard, "Answer to 'Why are there no ++ and --​
 #	   operators in Python?'", StackOverflow, 6 Sep 2010 23:57,
 #	   url https://stackoverflow.com/a/3654936 [20210128].
-#
+#	2. sanjoy_62, "numpy.sign() in Python", GeeksforGeeks,
+#	   03 Oct 2019, url
+#	   https://www.geeksforgeeks.org/numpy-sign-in-python/
+#	   [20210128].
+#	
 
 # Import necessary libraries
 import numpy as np
