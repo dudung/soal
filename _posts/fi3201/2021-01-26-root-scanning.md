@@ -262,7 +262,7 @@ double test_function(double x) {
 }
 ```
 
-Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/cpp/fi3201/root/root-scanning.js)
+Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/cpp/fi3201/root/root-scanning.cpp)
 
 ### python
 ```python

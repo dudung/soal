@@ -18,13 +18,13 @@
 	References
 	1. Mark Byers, "Answer to 'Is there a standard sign
 	   function (signum, sgn) in C/C++?'", StackOverflow,
-		 14 Dec 2009 22:3-0, url
-		 https://stackoverflow.com/a/1903975 [20210128].
+	   14 Dec 2009 22:3-0, url
+	   https://stackoverflow.com/a/1903975 [20210128].
 	
 	Notes
 	1. One of the output message is still static and does not
 	   depend on the given parameters. Remember to change it
-		 when you change the parameters.
+	   when you change the parameters.
 	2. A not_found = -2021 is defined for a state when root
 	   can not be found in the given range of x.
 */
