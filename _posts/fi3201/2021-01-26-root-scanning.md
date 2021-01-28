@@ -281,6 +281,7 @@ Nstep 4
 xroot not found
 ```
 Can you explain why such result is produced?
+3. Explain the difference of implementation in producing the result of `xroot not found` in `root-scanning.js` and `root-scanning.cpp` programs.
 
 
 ## references
