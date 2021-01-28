@@ -23,7 +23,12 @@ A swap function is a function that exchanges its two arguments value
 {\rm swap}(\vec{r}) = (\vec{r} \cdot \hat{y})\hat{x} + (\vec{r} \cdot \hat{x})\hat{y},
 \end{equation}
 
-where $\vec{r} = x\hat{x} + y\hat{r}$ is used to store two values, i.e. $x$ and $y$, in single output. If $\vec{r} = 1.5\hat{x} - 7.2\hat{y}$ then ${\rm swap}(\vec{r})$ will produce $7.2\hat{x} - 1.5\hat{y}$.
+where $\vec{r} = x\hat{x} + y\hat{r}$ is used to store two values, i.e. $x$ and $y$, in single output. If $\vec{r} = 1.5\hat{x} - 7.2\hat{y}$ then ${\rm swap}(\vec{r})$ will produce $-7.2\hat{x} + 1.5\hat{y}$ or simply
+
+\begin{equation}
+\label{eqn:rb-swap-function-example}
+(1.5, -7,2) \rightarrow (-7.2, 1.5).
+\end{equation}
 
 There is a built-in function in C++ standard template libray (STL) [[4](#ref4)] in the form of
 
@@ -31,7 +36,28 @@ There is a built-in function in C++ standard template libray (STL) [[4](#ref4)] 
 swap(a, b)
 ```
 
-with `a` and `b` are two mandatory parameters to be swapped. Manually there are some algorithms to perform the swap process without using a temporary variable but using arithmetic or bitwise operation or mixture of them [[5](#ref5)].
+with `a` and `b` are two mandatory parameters to be swapped. Manually there are some algorithms to perform the swap process without using a temporary variable but using arithmetic or bitwise operation or mixture of them [[5](#ref5)]. We will use this function in designing more readable algorithm for bisection method.
+
+
+## algorithm
+Let us assume that there is a function $f(x)$, which gives $f(x_{\rm beg}) $f(x_{\rm end}) < 0$, where $x \in [x_{\rm beg}, x_{\rm end}]$.
+
+Algorithm <a name="alg:rb-bisection-method-algorithm">1</a> Scanning method. \
+`I`: $f(x)$, $x_{\rm beg}$, $x_{\rm end}$, $\Delta x$ \
+`O`: $x_{\rm root}$
+1. $x \leftarrow x_{\rm beg}$.
+2. $\displaystyle S_0 \leftarrow \frac{f(x)}{\|f(x)\|}$.
+3. $x \leftarrow x + \Delta x$.
+4. $\displaystyle S \leftarrow \frac{f(x)}{\|f(x)\|}$.
+5. $S_0 S < 0 \Rightarrow \rm step\ 8$
+6. $x > x_{\rm end} \Rightarrow \rm step\ 10$
+7. $\Rightarrow step\ 3$
+8. $x_{\rm r} \leftarrow x - \frac12 \Delta x$.
+9. $\Rightarrow step\ 11$
+10. $x_{\rm r} \notin  [x_{\rm beg}, x_{\rm end}]$.
+11. $x_{\rm root} \leftarrow x_r$
+
+A function $f(x)$ will be solved using Alg. <a href="#alg:rs-bisection-method-algorithm">1</a> as discussed after following section.
 
 
 ## references
