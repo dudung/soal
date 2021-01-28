@@ -40,10 +40,10 @@ with `a` and `b` are two mandatory parameters to be swapped. Manually there are 
 
 
 ## algorithm
-Let us assume that there is a function $f(x)$, which gives $f(x_{\rm beg}) $f(x_{\rm end}) < 0$, where $x \in [x_{\rm beg}, x_{\rm end}]$.
+Let us assume that there is a function $f(x)$, which holds for $f(x_{\rm beg}) f(x_{\rm end}) < 0$, when $x \in [x_{\rm beg}, x_{\rm end}]$.
 
-Algorithm <a name="alg:rb-bisection-method-algorithm">1</a> Scanning method. \
-`I`: $f(x)$, $x_{\rm beg}$, $x_{\rm end}$, $\Delta x$ \
+Algorithm <a name="alg:rb-bisection-method-algorithm">1</a> Bisection method. \
+`I`: $f(x)$, $x_{\rm beg}$, $x_{\rm end}$ \
 `O`: $x_{\rm root}$
 1. $x \leftarrow x_{\rm beg}$.
 2. $\displaystyle S_0 \leftarrow \frac{f(x)}{\|f(x)\|}$.
@@ -57,7 +57,7 @@ Algorithm <a name="alg:rb-bisection-method-algorithm">1</a> Scanning method. \
 10. $x_{\rm r} \notin  [x_{\rm beg}, x_{\rm end}]$.
 11. $x_{\rm root} \leftarrow x_r$
 
-A function $f(x)$ will be solved using Alg. <a href="#alg:rs-bisection-method-algorithm">1</a> as discussed after following section.
+A function $f(x)$ as an example will be solved using Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>.
 
 
 ## references
