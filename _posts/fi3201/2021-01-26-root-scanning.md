@@ -321,7 +321,7 @@ print("Nstep ", Nstep, sep="")
 print("xroot ", xroot, sep="")
 ```
 
-Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/fi3201/root/root-scanning.cpp)
+Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/fi3201/root/root-scanning.py)
 
 
 ## exercises
