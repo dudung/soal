@@ -56,8 +56,17 @@ Algorithm <a name="alg:rb-bisection-method-algorithm">1</a> Bisection method. \
 9. $\color{blue}{\bf\scriptsize STEP} \ 4$.
 10. $x_{\rm root} \leftarrow x_n$.
 
-
 A function $f(x)$ as an example will be solved using Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>.
+
+
+## flow chart
+We can also use a flow chart to design how steps of finding root using scanning method instead of using Alg. <a href="#alg:rb-bisection-method-algorithm">1</a>.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/math/root/root-bisection-flow-chart.png)
+<br />
+Figure <a name="fig:rb-bisection-method-flow-chart">1</a> Steps in bisection method are described in a flow chart. 
+{: refdef}
 
 
 ## references
