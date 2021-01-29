@@ -75,8 +75,8 @@ Number of elements in the flowchart shown in Fig. <a href="#fig:rb-bisection-met
 
 
 ## exercises
-1. Modify the flowchart in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> so that number of elements is the same as in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>. Is it simpler or more comples compared the given flowchart? Explain in brief.
-2.
+1. Comparing the given flowchart in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> and algoritm in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>, which one suits you better? Give your opinion about it.
+2. Modify the flowchart in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> so that number of elements is the same as in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>. Is it simpler or more comples compared the given flowchart? Explain in brief.
 
 
 ## references
