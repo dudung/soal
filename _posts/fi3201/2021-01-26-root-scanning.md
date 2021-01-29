@@ -51,11 +51,11 @@ Algorithm <a name="alg:rs-scanning-method-algorithm">1</a> Scanning method. \
 2. $\displaystyle S_0 \leftarrow \frac{f(x)}{\|f(x)\|}$.
 3. $x \leftarrow x + \Delta x$.
 4. $\displaystyle S \leftarrow \frac{f(x)}{\|f(x)\|}$.
-5. $S_0 S < 0 \Rightarrow \rm step\ 8$
-6. $x > x_{\rm end} \Rightarrow \rm step\ 10$
-7. $\Rightarrow step\ 3$
+5. $S_0 S < 0 \Rightarrow \color{blue}{\bf\scriptsize STEP} \  8$
+6. $x > x_{\rm end} \Rightarrow \color{blue}{\bf\scriptsize STEP} \ 10$
+7. $\Rightarrow \color{blue}{\bf\scriptsize STEP} \ 3$
 8. $x_{\rm r} \leftarrow x - \frac12 \Delta x$.
-9. $\Rightarrow step\ 11$
+9. $\Rightarrow \color{blue}{\bf\scriptsize STEP} \ 11$
 10. $x_{\rm r} \notin  [x_{\rm beg}, x_{\rm end}]$.
 11. $x_{\rm root} \leftarrow x_r$
 
