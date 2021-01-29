@@ -43,14 +43,19 @@ with `a` and `b` are two mandatory parameters to be swapped. Manually there are 
 Let us assume that there is a function $f(x)$, which holds for $f(x_{\rm beg}) f(x_{\rm end}) < 0$, when $x \in [x_{\rm beg}, x_{\rm end}]$.
 
 Algorithm <a name="alg:rb-bisection-method-algorithm">1</a> Bisection method. \
-`I`: $f(x)$, $x_{\rm beg}$, $x_{\rm end}$ \
-`O`: $x_{\rm root}$
-1. $x_1 \leftarrow x_{\rm beg}$.
-2. $x_2 \leftarrow x_{\rm end}$.
-3. $x_3 \leftarrow \frac12 (x_{\rm beg} + x_{\rm end})$.
-4. $f(x_2) f(x_3) < 0 \Rightarrow {\rm\scriptsize STEP} \ 6$.
-5. ${\rm swap}(x_1, x_2)$.
-6. $\|f(x_3)\| < \epsilon \Rightarrow {\rm\scriptsize STEP} \ 3$
+`I`: $f(x)$, $x_{\rm beg}$, $x_{\rm end}$, $\epsilon$. \
+`O`: $x_{\rm root}$.
+1. $n = 1$.
+2. $x_n \leftarrow x_{\rm beg}$.
+3. $x_{n+1} \leftarrow x_{\rm end}$.
+4. $x_{n+2} \leftarrow \frac12 (x_{n+1} + x_n)$.
+5. $f(x_{n+1}) f(x_{n+2}) < 0 \Rightarrow \color{blue}{\bf\scriptsize STEP} \ 7$.
+6. ${\rm swap}(x_n, x_{n+1})$.
+7. $\|f(x_{n+2})\| < \epsilon \Rightarrow \color{blue}{\bf\scriptsize STEP} \ 10$.
+8. $n \leftarrow n + 1$.
+9. $\color{blue}{\bf\scriptsize STEP} \ 4$.
+10. $x_{\rm root} \leftarrow x_n$.
+
 
 A function $f(x)$ as an example will be solved using Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>.
 
