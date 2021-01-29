@@ -53,7 +53,7 @@ Algorithm <a name="alg:rb-bisection-method-algorithm">1</a> Bisection method. \
 6. ${\rm swap}(x_n, x_{n+1})$.
 7. $\|f(x_{n+2})\| < \epsilon \Rightarrow \color{blue}{\bf\scriptsize STEP} \ 10$.
 8. $n \leftarrow n + 1$.
-9. $\color{blue}{\bf\scriptsize STEP} \ 4$.
+9. $\Rightarrow \color{blue}{\bf\scriptsize STEP} \ 4$.
 10. $x_{\rm root} \leftarrow x_{n+2}$.
 
 A function $f(x)$ as an example will be solved using Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>.
