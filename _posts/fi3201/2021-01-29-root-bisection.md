@@ -78,3 +78,10 @@ Figure <a name="fig:rb-bisection-method-flow-chart">1</a> Steps in bisection met
 6. <a name="ref6"></a>Piyush Kochhar, "10 Ways To Swap Values In JavaScript", codeburst.io, 12 Aug 2020, url <https://codeburst.io/10-ways-to-swap-values-in-javascript-8a1d056352dd> [20210129].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi3201/2021-01-29-root-bisection.md)
+
+{% comment %}
+1. Adrio Rivan xn swap xn+1
+2. Felix Cahyadi: tanya bisection kelemahannya rentang terlalu besar
+3. Bunga Edenia: 18001: perihal kuliah hari Jumat
+4 Khalda Alifia: gunakan ketiga bahasa C++, JS, Python?
+{% endcomment %}
