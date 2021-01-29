@@ -48,9 +48,9 @@ Algorithm <a name="alg:rb-bisection-method-algorithm">1</a> Bisection method. \
 1. $x_1 \leftarrow x_{\rm beg}$.
 2. $x_2 \leftarrow x_{\rm end}$.
 3. $x_3 \leftarrow \frac12 (x_{\rm beg} + x_{\rm end})$.
-4. $f(x_2) f(x_3) < 0 \Rightarrow \rm step\ 6$.
+4. $f(x_2) f(x_3) < 0 \Rightarrow {\rm\scriptsize STEP} \ 6$.
 5. ${\rm swap}(x_1, x_2)$.
-6. $\|f(x_3)\| < \epsilon \Rightarrow \rm step\ 3$ {% dD %}
+6. $\|f(x_3)\| < \epsilon \Rightarrow {\rm\scriptsize STEP} \ 3$
 
 A function $f(x)$ as an example will be solved using Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>.
 
