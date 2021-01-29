@@ -54,19 +54,29 @@ Algorithm <a name="alg:rb-bisection-method-algorithm">1</a> Bisection method. \
 7. $\|f(x_{n+2})\| < \epsilon \Rightarrow \color{blue}{\bf\scriptsize STEP} \ 10$.
 8. $n \leftarrow n + 1$.
 9. $\color{blue}{\bf\scriptsize STEP} \ 4$.
-10. $x_{\rm root} \leftarrow x_n$.
+10. $x_{\rm root} \leftarrow x_{n+2}$.
 
 A function $f(x)$ as an example will be solved using Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>.
 
 
-## flow chart
-We can also use a flow chart to design how steps of finding root using scanning method instead of using Alg. <a href="#alg:rb-bisection-method-algorithm">1</a>.
+## flowchart
+We can also use a flowchart to design how steps of finding root using bisection method instead of using Alg. <a href="#alg:rb-bisection-method-algorithm">1</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/root/root-bisection-flow-chart.png)
 <br />
 Figure <a name="fig:rb-bisection-method-flow-chart">1</a> Steps in bisection method are described in a flow chart. 
 {: refdef}
+
+Number of elements in the flowchart shown in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> is more than in the Alg. <a href="#alg:rs-bisection-method-algorithm">1</a> since short expressions in every element are required, e.g. in decision block we use $f_{\rm root} < \epsilon$ instead of $\|f(x_{n+2})\| < \epsilon$ as in the algorithm.
+
+
+## implementation
+
+
+## exercises
+1. Modify the flowchart in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> so that number of elements is the same as in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>. Is it simpler or more comples compared the given flowchart? Explain in brief.
+2.
 
 
 ## references
