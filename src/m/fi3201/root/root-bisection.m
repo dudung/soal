@@ -16,6 +16,7 @@
 %	0945 Finalize and test the program, and ok.
 %	0958 Rewrite with better elseif instead of else if [3].
 %	1000 Test for not found and SHOW_PROGRESS, ok.
+%	1155 Correct output when SHOW_PROGRESS.
 %	
 %	References
 %	1. Rody Oldenhuis, "Answer to 'Octave/Matlab: Adding new
@@ -82,19 +83,22 @@ while((froot > eps) && (n < maxstep - 1))
 		if(n == 1)
 			disp(["n" "\t" "x" "\t" "f(x)"]);
 			
+			frootn = test_function(x(n));
 			s1 = num2str(n);
 			s2 = num2str(x(n));
-			s3 = num2str(froot);
+			s3 = num2str(frootn);
 			disp([s1 "\t" s2 "\t" s3]);
 			
+			frootn1 = test_function(x(n+1));
 			s1 = num2str(n+1);
 			s2 = num2str(x(n+1));
-			s3 = num2str(froot);
+			s3 = num2str(frootn1);
 			disp([s1 "\t" s2 "\t" s3]);
 		endif
+		frootn2 = test_function(x(n+2));
 		s1 = num2str(n+2);
 		s2 = num2str(x(n+2));
-		s3 = num2str(froot);
+		s3 = num2str(frootn2);
 		disp([s1 "\t" s2 "\t" s3]);
 	endif
 	
