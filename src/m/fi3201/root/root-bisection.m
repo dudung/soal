@@ -1,35 +1,35 @@
-% 
-% root-bisection.m
-% Find root of a function using bisection method
-% 
-% Sparisoma Viridi | https://github.com/dudung
-% 
-% Execute: octave -W root-bisection.m
-% 
-% 20210130
-% 0514 Start learning CLI Cywin for Octave aft-yest-install.
-% 0549 Learn disp and num2str using doc <topic>.
-% 0600 Learn about function using doc display.
-% 0634 Create function for testing, a 3rd oder polynomial.
-% 0833 Add reference 1.
-% 0900 Problem, debug, re-test test_function and ok.
-% 0945 Finalize and test the program, and ok.
-% 0958 Rewrite with better elseif instead of else if [3].
-% 1000 Test for not found and SHOW_PROGRESS, ok.
-% 
-% References
-% 1. Rody Oldenhuis, "Answer to 'Octave/Matlab: Adding new
-%    elements to a vector'", StackOverflow, 24 Apr 2013, url
-%    https://stackoverflow.com/a/16188096 [20210130].
-% 2. Jan, "Answer to 'How to swap values of two variables?'",
-%    MATLAB Answers, MathWorks, 23 Oct 2017, url
-%    https://www.mathworks.com/matlabcentral/answers
-%    /362680-how-to-swap-values-of-two-variables
-%    #answer_287217 [20210130].
-% 3. John W. Eaton, "GNU Octave", 2016, url
-%    https://octave.org/doc/v4.0.1/The-if-Statement.html
-%    [20210130].
-% 
+%	
+%	root-bisection.m
+%	Find root of a function using bisection method
+%	
+%	Sparisoma Viridi | https://github.com/dudung
+%	
+%	Execute: octave -W root-bisection.m
+%	
+%	20210130
+%	0514 Start learning CLI Cywin for Octave aft-yest-install.
+%	0549 Learn disp and num2str using doc <topic>.
+%	0600 Learn about function using doc display.
+%	0634 Create function for testing, a 3rd oder polynomial.
+%	0833 Add reference 1.
+%	0900 Problem, debug, re-test test_function and ok.
+%	0945 Finalize and test the program, and ok.
+%	0958 Rewrite with better elseif instead of else if [3].
+%	1000 Test for not found and SHOW_PROGRESS, ok.
+%	
+%	References
+%	1. Rody Oldenhuis, "Answer to 'Octave/Matlab: Adding new
+%	   elements to a vector'", StackOverflow, 24 Apr 2013, url
+%	   https://stackoverflow.com/a/16188096 [20210130].
+%	2. Jan, "Answer to 'How to swap values of two variables?'",
+%	   MATLAB Answers, MathWorks, 23 Oct 2017, url
+%	   https://www.mathworks.com/matlabcentral/answers
+%	   /362680-how-to-swap-values-of-two-variables
+%	   #answer_287217 [20210130].
+%	3. John W. Eaton, "GNU Octave", 2016, url
+%	   https://octave.org/doc/v4.0.1/The-if-Statement.html
+%	   [20210130].
+%	
 
 
 % Define a swap function according to [2]
