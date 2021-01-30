@@ -1,5 +1,5 @@
 /*
-	root-bisection.js
+	root-bisection.cpp
 	Finding root using bisection method
 	
 	Sparisoma Viridi | https://butiran.github.io/
