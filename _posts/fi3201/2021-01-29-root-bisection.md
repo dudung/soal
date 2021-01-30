@@ -94,10 +94,92 @@ Nstep 6
 xroot 2.3125
 ```
 
-with ome implementations are given here, e.g. in GNU Octave.
+with ome implementations are given here, e.g. in JavaScript, GNU Octave.
+
+### javascript
+Following code `root-bisection.js` is tested using Node.js v10.1.0 on Windows 10 Home.
+
+```javascript
+// Define test function
+function test_function() {
+	var x = arguments[0];
+	var y3 = 0.025 * x * x * x;
+	var y2 = -0.2585 * x * x;
+	var y1 = 0.243 * x;
+	var y0 = 0.5265;
+	var y = y3 + y2 + y1 + y0;
+	return y;
+}
+
+
+// Define main function
+function main() {
+	// Define input parameters
+	var xbeg = 1;
+	var xend = 8;
+	var eps = 1E-6;
+	var Nstep = 0;
+	
+	// Create variables for output
+	var f = test_function;
+	var xroot = xend;
+	var maxstep = 40;
+	var n = 0;
+	
+	// Initialize variables
+	var x = [];
+	x.push(xbeg);
+	x.push(xend);
+	var froot = Math.abs(f(x[n+1]));
+	
+	// Do iteration using bisection method
+	while((froot > eps) && (n < maxstep - 1)) {
+		// Do bisection the search range
+		x[n+2] = 0.5 * (x[n+1] + x[n]);
+		
+		// Swap if necessary
+		fn1 = f(x[n+1]);
+		fn2 = f(x[n+2]);
+		c = fn2 * fn1;
+		if(c > 0) {
+			[x[n+1], x[n]] = [x[n], x[n+1]];
+		}
+		
+		// Caculate absoulte value of the function
+		froot = Math.abs(f(x[n+2]));
+		
+		// Get the xroot
+		if(froot <= eps) {
+			Nstep = n + 2;
+			xroot = x[n+2];
+		}
+		
+		// Increase n
+		n++;
+	}
+	
+	// Case of root not found in the search range
+	if(Nstep == 0) {
+		xroot = "not found";
+		Nstep = maxstep;
+	}	
+	
+	// Display output
+	console.log("f(x)  0.025x^3 - 0.2585x^2 + 0.243x + 0.5265");
+	console.log("xbeg  " + xbeg);
+	console.log("xend  " + xend);
+	console.log("ε     " + eps);
+	console.log("Nstep " + Nstep);
+	console.log("xroot " + xroot);
+}
+
+
+// Call main function
+main();
+```
 
 ### octave
-Following code is tested using GNU Octave version 5.2.0 through Cygwin version 2.873 on Windows 10 Home.
+Following code `root-bisection.m` is tested using GNU Octave version 5.2.0 through Cygwin version 2.873 on Windows 10 Home.
 
 ```m
 % Define a swap function according to [2]
