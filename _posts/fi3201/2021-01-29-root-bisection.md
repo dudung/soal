@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["fi3201", "root", "bisection"]
-date: 2021-01-29 11:11:00 +07
+date: 2021-01-30 10:54:00 +07
 permalink: /fi3201/root-bisection
 ---
 One of the root finding algorithms is bisection method, which applies to any continuous functions that has values with opposite signs in the search range [[1](#ref1)]. It is an iterative method that divides previous internal into two subintervals and then evaluate which subintervals should be used, there the function still has value with opposite signs [[2](#ref2)]. There is a lot of use of similar principle in scientific works [[3](#ref3)].
@@ -98,15 +98,91 @@ with ome implementations are given here, e.g. in GNU Octave.
 ### octave
 Following code is tested using GNU Octave version 5.2.0 through Cygwin version 2.873 on Windows 10 Home.
 
-```octave
+```m
+% Define a swap function according to [2]
+function [b, a] = swap(a, b)
+endfunction
+
+
+% Define a function whose root to be found
+function y = test_function (x)
+y = 0.025 * x**3 - 0.2585 * x**2 + 0.243 * x + 0.5265;
+endfunction
+
+
+% Define input parameters
+xbeg = 1;
+xend = 8;
+eps = 1E-1;
+Nstep = 0;
+
+% Create variables for output
+xroot = xend;
+maxstep = 20;
+n = 1;
+
+% Initialize variables
+x = [];
+x(n) = xbeg;
+x(n+1) = xend;
+froot = abs(test_function(x(n+1)));
+
+% Do iteration using bisection method
+while((froot > eps) && (n < maxstep - 1))
+	% Do bisection the search range
+	x(n+2) = 0.5 * (x(n+1) + x(n));
+	
+	% Swap if necessary
+	fn1 = test_function(x(n+1));
+	fn2 = test_function(x(n+2));
+	c = fn2 * fn1;
+	if(c > 0)
+		[x(n+1), x(n)] = swap(x(n+1), x(n));
+	endif
+	
+	% Caculate absoulte value of the function
+	froot = abs(test_function(x(n+2)));
+		
+	% Get the xroot
+	if(froot <= eps)
+		Nstep = n + 2 ;
+		xroot = x(n+2);
+	endif
+	
+	% Increase n
+	n++;
+endwhile
+
+% Case of root not found in the search range
+if(Nstep == 0)
+	str_xroot = "not found";
+	Nstep = maxstep;
+else
+	str_xroot = num2str(xroot);
+endif
+
+% Display output
+disp(["f(x)  0.025x^3 - 0.2585x^2 + 0.243x + 0.5265"]);
+disp(["xbeg  " num2str(xbeg)]);
+disp(["xend  " num2str(xend)]);
+disp(["ε     " num2str(eps)]);
+disp(["Nstep " num2str(Nstep)]);
+disp(["xroot " str_xroot]);
 ```
 
 Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/m/fi3201/root/root-bisection.m)
+
+$\epsilon$ | $1$ | $0.1$ | $0.01$ | $10^{-3}$ | $10^{-4}$ | $10^{-5}$ | $10^{-6}$
+$N_{\rm step}$ | $4$ | $6$ | $10$ | $10$ | $10$ | $19$ | $23$
+$x_{\rm root}$ | $2.75$ | $2.3125$ | $2.3398$ | $2.3398$ | $2.3398$ | $2.34$ | $2.34$
+
+Using $x_{\rm beg} = 1$ and $x_{\rm end} = 8$ we can have results in the previous table.
 
 
 ## exercises
 1. Comparing the given flowchart in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> and algoritm in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>, which one suits you better? Give your opinion about it.
 2. Modify the flowchart in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> so that number of elements is the same as in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>. Is it simpler or more comples compared the given flowchart? Explain in brief.
+3. Not as shown in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> or Alg. <a href="#alg:rs-bisection-method-algorithm">1</a> the implementation in the given Octave program there is `maxstep` variable. Explain what the use of this variable. And why we require it?
 
 
 ## references

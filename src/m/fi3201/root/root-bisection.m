@@ -46,13 +46,13 @@ endfunction
 % Define input parameters
 xbeg = 1;
 xend = 8;
-eps = 1E-1;
+eps = 1E-6;
 Nstep = 0;
 SHOW_PROGRESS = false;
 
 % Create variables for output
 xroot = xend;
-maxstep = 20;
+maxstep = 40;
 n = 1;
 
 % Initialize variables
