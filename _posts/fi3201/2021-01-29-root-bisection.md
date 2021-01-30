@@ -112,6 +112,15 @@ Nstep 10
 xroot 2.33984375
 ```
 
+Output of program given above still show the historical orde since it is printed before the wap process and here is
+
+```
+[8, 4.5, 1, 1.875, 2.75, 2.53125, 2.421875, 2.3125, 2.3671875, 2.353515625, 2.3466796875, 2.34326171875, 2.341552734375, 2.3406982421875, 2.34027099609375, 2.33984375, 2.340057373046875, 2.3399505615234375, 2.339977264404297, 2.3399906158447266, 2.3400039672851562, 2.3399972915649414, 2.340000629425049]
+```
+
+the predictions which has the order as in Fig. <a href="#fig:rb-example">2</a>, where $x_4$ and $x_5$ are still not in the historical order since the $x_6$ has not yet been calculated at that step.
+
+
 ## implementation
 The output is designed as follow
 
@@ -503,6 +512,7 @@ Using $x_{\rm beg} = 1$ and $x_{\rm end} = 8$ we can have results in the previou
 2. Modify the flowchart in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> so that number of elements is the same as in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>. Is it simpler or more comples compared the given flowchart? Explain in brief.
 3. Not as shown in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> or Alg. <a href="#alg:rs-bisection-method-algorithm">1</a> the implementation in the given Octave program there is `maxstep` variable. Explain what the use of this variable. And why we require it?
 4. Compare the obtained $x_{\rm root}$ using different codes, e.q. `root-bisection.py`, `root-bisection.js`, `root-bisection.m`, `root-bisection.cpp` and discuss about them.
+5. Can you design some lines of code that can save the prediction of $x$ as in historical order and in the order after swap process? Explain that in brief.
 
 
 ## references
