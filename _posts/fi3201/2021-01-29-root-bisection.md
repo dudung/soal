@@ -36,7 +36,8 @@ There is a built-in function in C++ standard template libray (STL) [[4](#ref4)] 
 swap(a, b)
 ```
 
-with `a` and `b` are two mandatory parameters to be swapped. Manually there are some algorithms to perform the swap process without using a temporary variable but using arithmetic or bitwise operation or mixture of them [[5](#ref5)] or other ways [[6](#ref6)]. We will use this function in designing more readable algorithm for bisection method.
+with `a` and `b` are two mandatory parameters to be swapped. Manually there are some algorithms to perform the swap process without using a temporary variable but using arithmetic or bitwise operation or mixture of them [[5](#ref5)] or other ways [[6](#ref6)]. There is also a clever user defined function for the swap function in MATLAB [[7](#ref7)].
+We will use this function in designing more readable algorithm for bisection method.
 
 
 ## algorithm
@@ -192,6 +193,7 @@ Using $x_{\rm beg} = 1$ and $x_{\rm end} = 8$ we can have results in the previou
 4. <a name="ref4"></a>Prateek Sharma 7, "swap() in C++", GeeksforGeeks, 01 May 2019, url <https://www.geeksforgeeks.org/swap-in-cpp/> [20210129].
 5. <a name="ref5"></a>GeeksforGeeks contributors (jit_t, mohit kumar 29, Chandan_Kumar, Code_Mech, ujjwalmittal, rathbhupendra, SHUBHAMSINGH10, Rajput-Ji, supershounak2001, yashbeersingh42, divyeshrabadiya07, bunnyram19, divyesh072019), "How to swap two numbers without using a temporary variable?", GeeksforGeeks, 11 Dec 2020, url <https://www.geeksforgeeks.org/swap-two-numbers-without-using-temporary-variable/> [20210129].
 6. <a name="ref6"></a>Piyush Kochhar, "10 Ways To Swap Values In JavaScript", codeburst.io, 12 Aug 2020, url <https://codeburst.io/10-ways-to-swap-values-in-javascript-8a1d056352dd> [20210129].
+7. <a name="ref7"></a>Jan, "Answer to 'How to swap values of two variables?'", MATLAB Answers, MathWorks, 23 Oct 2017, url <https://www.mathworks.com/matlabcentral/answers/362680-how-to-swap-values-of-two-variables#answer_287217> [20210130].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi3201/2021-01-29-root-bisection.md)
 
