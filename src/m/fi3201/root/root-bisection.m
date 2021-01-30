@@ -100,7 +100,7 @@ while((froot > eps) && (n < maxstep - 1))
 	
 	% Get the xroot
 	if(froot <= eps)
-		Nstep = n + 2 ;
+		Nstep = n + 2;
 		xroot = x(n+2);
 	endif
 	
