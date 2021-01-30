@@ -16,6 +16,7 @@ With a function, its derivative, and a initial guess of a root, root of a real-v
 
 
 ## formula
+
 With initial guess of a root $x_n$, value of the function $f(x_n)$, and its derivative $f'(x_n)$, following iterative formula
 
 \begin{equation}
@@ -34,14 +35,30 @@ A tangent line to a curve at a certain point is a straight line that touches the
 Figure <a name="fig:rnr-line-tangent-1-d">1</a> Tanget line of a curve $f(x)$ at point $x = x_1$. 
 {: refdef}
 
-If the point is $x = x_1$ then the tangent should pass the point $(x_1, f(x_1))$ and the gradient of the line is simply $f'(x_1)$.
+If the point is $x = x_1$ then the tangent should pass the point $(x_1, f(x_1))$ and the gradient of the line is simply $f'(x_1)$ as shown in Fig. <a href="#fig:rnr-line-tangent-1-d">1</a>.
 
 
 ## equation of a line
-A line with gradient 
+A line with gradient $m$ and is passing point $(0, n)$ will have equation of
+
+\begin{equation}
+\label{eqn:rnr-equation-of-a-line}
+y = mx + n,
+\end{equation}
+
+which is known as equation of a line [[3](#ref3)]. If we measure the angle between the line and $x$ axis as $\theta$ then
+
+\begin{equation}
+\label{eqn:rnr-gradient-tan-theta}
+m = \tan \theta
+\end{equation}
+
+is the relation between gradient $m$ and the angle $\theta$.
+
+Fig. <a href="#fig:rnr-line-gradient-theta-intercept">2</a> shows the relation between gradient $m$ and $\tan\theta$.
 
 
-
+## derivation
 The formula in Eqn. \eqref{eqn:rnr-newton-raphson-method} can be derived using equation of a line in Eqn. \eqref{eqn:rnr-equation-of-a-line}.
 
 
