@@ -86,8 +86,10 @@ is used as test function in implementing the bisection method from the flowchart
 ![..](/assets/img/math/root/root-bisection-2.png)
 ![..](/assets/img/math/root/root-bisection-3.png)
 <br />
-Figure <a name="fig:rb-example">2</a> Scanning a root with $x_{\rm beg} = 1$ and $x_{\rm end} = 8$, the points are $x_1 = 9$, $x_2 = 1$, $x_3 = 4.5$ (top), $x_2 = 4.5$, $x_3 = 1$, $x_4 = 2.75$ (middle), and $x_3 = 1$, $x_4 = 2.75$, $x_5 = 1.875$ (bottom). 
+Figure <a name="fig:rb-example">2</a> Scanning a root with $x_{\rm beg} = 1$ and $x_{\rm end} = 8$, the points are $x_1 = 8$, $x_2 = 1$, $x_3 = 4.5$ (top), $x_2 = 4.5$, $x_3 = 1$, $x_4 = 2.75$ (middle), and $x_3 = 1$, $x_4 = 2.75$, $x_5 = 1.875$ (bottom). 
 {: refdef}
+
+Fig. <a href="#fig:rb-example">2</a> shows that root predictions are $x_1 = 8$, $x_2 = 4.5$, $x_3 = 1$, $x_4 = 2.75$, and  $x_5 = 1.875$. The swap operation changing the order or $x_{n}$ and $x_{n+1}$ will make the order of predictions not in historical order.
 
 
 ## implementation

@@ -47,7 +47,7 @@ n = 0
 
 # Define default message and parameter
 xroot = "not found"
-SHOW_PROGRESS = False
+SHOW_PROGRESS = True
 
 # Do iteration
 Nstep = 0
