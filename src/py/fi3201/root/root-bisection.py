@@ -40,7 +40,7 @@ def test_function(x):
 f = test_function
 xbeg = 1
 xend = 8
-eps = 1E-3
+eps = 1E-6
 Nstep = 0
 maxstep = 40
 n = 0
