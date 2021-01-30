@@ -91,6 +91,26 @@ Figure <a name="fig:rb-example">2</a> Scanning a root with $x_{\rm beg} = 1$ and
 
 Fig. <a href="#fig:rb-example">2</a> shows that root predictions are $x_1 = 8$, $x_2 = 4.5$, $x_3 = 1$, $x_4 = 2.75$, and  $x_5 = 1.875$. The swap operation changing the order or $x_{n}$ and $x_{n+1}$ will make the order of predictions not in historical order.
 
+```batch
+n       x       f(x)
+0       8       -1.2734999999999999
+1       1       -1.2734999999999999
+2       4.5     -1.3365000000000007
+3       2.75    -0.240234375
+4       1.875   0.23813085937499995
+5       2.3125  0.015229736328124854
+6       2.53125 -0.109217010498047
+7       2.421875        -0.04607417678833026
+8       2.3671875       -0.015180088520050261
+9       2.33984375      8.689016103746727e-05
+
+f(x)   0.025x^3 - 0.2585x^2 + 0.243x + 0.5265
+xbeg  1
+xend  8
+ε     0.001
+Nstep 10
+xroot 2.33984375
+```
 
 ## implementation
 The output is designed as follow
