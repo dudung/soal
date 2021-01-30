@@ -70,8 +70,38 @@ Figure <a name="fig:rb-bisection-method-flow-chart">1</a> Steps in bisection met
 
 Number of elements in the flowchart shown in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> is more than in the Alg. <a href="#alg:rs-bisection-method-algorithm">1</a> since short expressions in every element are required, e.g. in decision block we use $f_{\rm root} < \epsilon$ instead of $\|f(x_{n+2})\| < \epsilon$ as in the algorithm.
 
+## test function
+A function
+
+\begin{equation}
+\label{eqn:rb-test-function}
+f(x) = 0.025x^3 - 0.2585x^2 + 0.243x + 0.5265 
+\end{equation}
+
+is used as test function in implementing the bisection method from the flowchart shown in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> or Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>.
+
 
 ## implementation
+The output is designed as follow
+
+```batch
+f(x)  0.025x^3 - 0.2585x^2 + 0.243x + 0.5265
+xbeg  1
+xend  8
+ε     0.1
+Nstep 6
+xroot 2.3125
+```
+
+with ome implementations are given here, e.g. in GNU Octave.
+
+### octave
+Following code is tested using GNU Octave version 5.2.0 through Cygwin version 2.873 on Windows 10 Home.
+
+```octave
+```
+
+Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/m/fi3201/root/root-bisection.m)
 
 
 ## exercises
