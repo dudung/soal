@@ -378,6 +378,12 @@ double test_function(double x) {
 
 Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/cpp/fi3201/root/root-bisection.cpp)
 
+$\epsilon$ | $1$ | $0.1$ | $0.01$ | $10^{-3}$ | $10^{-4}$ | $10^{-5}$ | $10^{-6}$
+$N_{\rm step}$ | $4$ | $6$ | $10$ | $10$ | $10$ | $19$ | $23$
+$x_{\rm root}$ | $2.75$ | $2.3125$ | $2.3398$ | $2.3398$ | $2.3398$ | $2.34$ | $2.34$
+
+Using $x_{\rm beg} = 1$ and $x_{\rm end} = 8$ we can have results in the previous table.
+
 
 ## exercises
 1. Comparing the given flowchart in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> and algoritm in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>, which one suits you better? Give your opinion about it.

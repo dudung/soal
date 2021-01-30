@@ -35,7 +35,7 @@ function main() {
 	// Define input parameters
 	var xbeg = 1;
 	var xend = 8;
-	var eps = 1E-6;
+	var eps = 1E-0;
 	var Nstep = 0;
 	var SHOW_PROGRESS = false;
 	
