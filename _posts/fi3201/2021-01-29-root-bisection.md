@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["fi3201", "root", "bisection"]
-date: 2021-01-30 10:54:00 +07
+date: 2021-01-30 18:13:00 +07
 permalink: /fi3201/root-bisection
 ---
 One of the root finding algorithms is bisection method, which applies to any continuous functions that has values with opposite signs in the search range [[1](#ref1)]. It is an iterative method that divides previous internal into two subintervals and then evaluate which subintervals should be used, there the function still has value with opposite signs [[2](#ref2)]. There is a lot of use of similar principle in scientific works [[3](#ref3)].
