@@ -38,7 +38,7 @@ If the point is $x = x_1$ then the tangent should pass the point $(x_1, f(x_1))$
 
 
 ## equation of a line
-Gradien of a line 
+A line with gradient 
 
 
 
