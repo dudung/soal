@@ -94,7 +94,21 @@ Nstep 6
 xroot 2.3125
 ```
 
-with ome implementations are given here, e.g. in JavaScript, GNU Octave.
+with ome implementations are given here, e.g. in Python, JavaScript, GNU Octave, C++.
+
+### python
+Following code `root-bisection.py` has been tested using Python 3.7.7 through Cygwin version 2.873 on Windows 10 Home.
+
+```python
+```
+
+Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/fi3201/root/root-bisection.py)
+
+$\epsilon$ | $1$ | $0.1$ | $0.01$ | $10^{-3}$ | $10^{-4}$ | $10^{-5}$ | $10^{-6}$
+$N_{\rm step}$ | $4$ | $6$ | $10$ | $10$ | $10$ | $19$ | $23$
+$x_{\rm root}$ | $2.75$ | $2.3125$ | $2.33984375$ | $2.33984375$ | $2.33984375$ | $2.3400039672851562$ | $2.340000629425049$
+
+Using $x_{\rm beg} = 1$ and $x_{\rm end} = 8$ we can have results in the previous table.
 
 ### javascript
 Following code `root-bisection.js` is tested using Node.js v10.1.0 on Windows 10 Home.
@@ -380,7 +394,7 @@ Full source code with comments can be accessed [here](https://github.com/butiran
 
 $\epsilon$ | $1$ | $0.1$ | $0.01$ | $10^{-3}$ | $10^{-4}$ | $10^{-5}$ | $10^{-6}$
 $N_{\rm step}$ | $4$ | $6$ | $10$ | $10$ | $10$ | $19$ | $23$
-$x_{\rm root}$ | $2.75$ | $2.3125$ | $2.3398$ | $2.3398$ | $2.3398$ | $2.34$ | $2.34$
+$x_{\rm root}$ | $2.75$ | $2.3125$ | $2.33984$ | $2.33984$ | $2.33984$ | $2.34$ | $2.34$
 
 Using $x_{\rm beg} = 1$ and $x_{\rm end} = 8$ we can have results in the previous table.
 
@@ -389,6 +403,7 @@ Using $x_{\rm beg} = 1$ and $x_{\rm end} = 8$ we can have results in the previou
 1. Comparing the given flowchart in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> and algoritm in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>, which one suits you better? Give your opinion about it.
 2. Modify the flowchart in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> so that number of elements is the same as in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>. Is it simpler or more comples compared the given flowchart? Explain in brief.
 3. Not as shown in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> or Alg. <a href="#alg:rs-bisection-method-algorithm">1</a> the implementation in the given Octave program there is `maxstep` variable. Explain what the use of this variable. And why we require it?
+4. Compare the obtained $x_{\rm root}$ using different codes, e.q. `root-bisection.py`, `root-bisection.js`, `root-bisection.m`, `root-bisection.cpp` and discuss about them.
 
 
 ## references

@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 	// Define input
 	double xbeg = 1;
 	double xend = 8;
-	double eps = 1E-6;
+	double eps = 1E-0;
 	int Nstep = 0;
 	bool SHOW_PROGRESS = false;
 	
