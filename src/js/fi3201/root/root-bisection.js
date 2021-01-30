@@ -9,6 +9,7 @@
 	20210130
 	1113 Start this program from Octave code.
 	1152 Test it and ok, add some comments.
+	1209 Run for eps from 1 to 1E-6, and ok.
 	
 	References
 	1. Brian Genisio, "Answer to 'javascript function to swap

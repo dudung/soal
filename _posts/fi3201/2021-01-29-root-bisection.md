@@ -178,6 +178,14 @@ function main() {
 main();
 ```
 
+Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/js/fi3201/root/root-bisection.js)
+
+$\epsilon$ | $1$ | $0.1$ | $0.01$ | $10^{-3}$ | $10^{-4}$ | $10^{-5}$ | $10^{-6}$
+$N_{\rm step}$ | $4$ | $6$ | $10$ | $10$ | $10$ | $19$ | $23$
+$x_{\rm root}$ | $2.75$ | $2.3125$ | $2.33984375$ | $2.33984375$ | $2.33984375$ | $2.3400039672851562$ | $2.340000629425049$
+
+Using $x_{\rm beg} = 1$ and $x_{\rm end} = 8$ we can have results in the previous table.
+
 ### octave
 Following code `root-bisection.m` is tested using GNU Octave version 5.2.0 through Cygwin version 2.873 on Windows 10 Home.
 
