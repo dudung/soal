@@ -154,6 +154,14 @@ There might be many another variations of algorithm than shown in Alg. <a href="
 ## flowchart
 As alternative to Alg. <a href="#alg:rnr-newton-raphson-method-algorithm">1</a> we can also have following flowchart for Eqn. \eqref{eqn:rnr-newton-raphson-method}.
 
+{:refdef: style="text-align: center;"}
+![..](/assets/img/math/root/root-newton-raphson-flowchart.png)
+<br />
+Figure <a name="fig:rnr-newton-raphson-method-flowchart">1</a> Steps in Newton-Raphson method are described in a flow chart. 
+{: refdef}
+
+Flowchart in Fig. <a href="#fig:rnr-newton-raphson-method-flowchart">1</a> is slightly different thatn Alg. <a href="#alg:rnr-newton-raphson-method-algorithm">1</a>, e.g. the use of $c$, due to size of element block in the flowchart.
+
 
 ## exercises
 1. Study Eqns. \eqref{eqn:rnr-tangent-line-1} - \eqref{eqn:rnr-tangent-line-2} in obtaining the relation in Eqn. \eqref{eqn:rnr-newton-raphson-method}, then use it in a spreadsheet to see how it works in producing root of $x^2 - 9 = 0$ when $x_1 = 2$. What is the answer when $x_1 = -4$? Explain results difference due to the choice of initial guess.
