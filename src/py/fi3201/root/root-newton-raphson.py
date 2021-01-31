@@ -26,6 +26,7 @@ def test_function(x):
 	y = y3 + y2 + y1 + y0;
 	return y
 
+
 # Define derivative of the test function
 def derivative_test_function(x):
 	y2 = 3 * 0.01 * x * x;
