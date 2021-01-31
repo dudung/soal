@@ -55,11 +55,23 @@ m = \tan \theta
 
 is the relation between gradient $m$ and the angle $\theta$.
 
-Fig. <a href="#fig:rnr-line-gradient-theta-intercept">2</a> shows the relation between gradient $m$ and $\tan\theta$.
+{:refdef: style="text-align: center;"}
+![..](/assets/img/math/line/line-equation-1-d.png)
+<br />
+Figure <a name="fig:rnr-line-equation-1-d">2</a> A line passing $(x_1, y_1)$ has gradient of $m$ and $y$ intercept at $y = n$. 
+{: refdef}
+
+Fig. <a href="#fig:fig:rnr-line-equation-1-d">2</a> shows the relation between gradient $m$ and $\theta$ through Eqn. \eqref{eqn:rnr-gradient-tan-theta}.
 
 
 ## derivation
 The formula in Eqn. \eqref{eqn:rnr-newton-raphson-method} can be derived using equation of a line in Eqn. \eqref{eqn:rnr-equation-of-a-line}.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/math/root/root-newton-raphson.png)
+<br />
+Figure <a name="fig:rnr-root-newton-raphson">3</a> Steps performed in Newton-Raphson method in obtaning $x_1$, $x_2$, until it gets $x_\infty$ with certain accurary. 
+{: refdef}
 
 
 ## references
