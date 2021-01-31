@@ -157,6 +157,7 @@ As alternative to Alg. <a href="#alg:rnr-newton-raphson-method-algorithm">1</a> 
 
 ## exercises
 1. Study Eqns. \eqref{eqn:rnr-tangent-line-1} - \eqref{eqn:rnr-tangent-line-2} in obtaining the relation in Eqn. \eqref{eqn:rnr-newton-raphson-method}, then use it in a spreadsheet to see how it works in producing root of $x^2 - 9 = 0$ when $x_1 = 2$. What is the answer when $x_1 = -4$? Explain results difference due to the choice of initial guess.
+2. Create another variation of Alg. <a href="#alg:rnr-newton-raphson-method-algorithm">1</a>, e.g. change the order of checking $\|f(x_{n+1})\|$ and incresing $n$.
 
 
 ## references
