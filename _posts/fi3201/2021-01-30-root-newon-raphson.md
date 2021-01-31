@@ -58,10 +58,26 @@ is the relation between gradient $m$ and the angle $\theta$.
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/line/line-equation-1-d.png)
 <br />
-Figure <a name="fig:rnr-line-equation-1-d">2</a> A line passing $(x_1, y_1)$ has gradient of $m$ and $y$ intercept at $y = n$. 
+Figure <a name="fig:rnr-line-equation-1-d">2</a> A line passing $(x_1, y_1)$ has gradient of $m$ and $y$ is $n$. 
 {: refdef}
 
 Fig. <a href="#fig:fig:rnr-line-equation-1-d">2</a> shows the relation between gradient $m$ and $\theta$ through Eqn. \eqref{eqn:rnr-gradient-tan-theta}.
+
+The $y$ intercept is obtained when we set $x = 0$. And there also another way to get the equation when we know that the function is passing a point, namely $(x_1, y_1)$, through
+
+\begin{equation}
+\label{eqn:rnr-line-x1-y1}
+y = m(x - x_1) + y_1,
+\end{equation}
+
+when we know the gradient $m$ and
+
+\begin{equation}
+\label{eqn:rnr-line-x1-y1-n}
+n = y_1 - m x_1
+\end{equation}
+
+is the relation between $n$ and the point $(x_1, y_1)$, obtained by equating Eqn. \eqref{eqn:rnr-equation-of-a-line} with Eqn. \eqref{eqn:rnr-line-x1-y1}.
 
 
 ## derivation
@@ -72,6 +88,60 @@ The formula in Eqn. \eqref{eqn:rnr-newton-raphson-method} can be derived using e
 <br />
 Figure <a name="fig:rnr-root-newton-raphson">3</a> Steps performed in Newton-Raphson method in obtaning $x_1$, $x_2$, until it gets $x_\infty$ with certain accurary. 
 {: refdef}
+
+Let $x_1$ is the initial guess, then point on the function is $(x_1, f_1)$ where $f_1 = f(x_1)$ and gradient of the tangent is $f_1' = f_1'(x_1)$. Using this information we can have equation of the first tangent line using Eqn. \eqref{eqn:rnr-line-x1-y1}
+
+\begin{equation}
+\label{eqn:rnr-tangent-line-1}
+y_1^{\tan} = f_1' (x - x_1) + f_1.
+\end{equation}
+
+To find $x$ intercept of Eqn. \eqref{eqn:rnr-tangent-line-1} we set $y_1^{\tan} = 0$
+
+\begin{equation}
+\label{eqn:rnr-tangent-line-1-step-by-step}
+\begin{array}{rcl}
+0 & = & f_1' (x - x_1) + f_1 \newline
+0 & = & f_1' x - f_1' x_1 + f_1 \newline
+f_1' x_1 & = & f_1' x  + f_1 \newline
+f_1' x_1 - f_1 & = & f_1' x \newline
+f_1' x & = & f_1' x_1 - f_1 \newline
+x & = & \displaystyle x_1 - \frac{f_1}{f_1'} \newline
+x_2 & = & \displaystyle x_1 - \frac{f(x_1)}{f'(x_1)}
+\end{array}
+\end{equation}
+
+and name the solution as $x_2$. We can repeat it for using $x_2$ as updated guess
+
+\begin{equation}
+\label{eqn:rnr-tangent-line-2}
+y_2^{\tan} = f_2' (x - x_2) + f_2.
+\end{equation}
+
+Then following similar steps we can have
+
+\begin{equation}
+\label{eqn:rnr-tangent-line-2-step-by-step}
+\begin{array}{rcl}
+0 & = & f_2' (x - x_2) + f_2 \newline
+0 & = & f_2' x - f_2' x_2 + f_2 \newline
+f_2' x_2 & = & f_2' x  + f_2 \newline
+f_2' x_2 - f_2 & = & f_2' x \newline
+f_2' x & = & f_2' x_2 - f_2 \newline
+x & = & \displaystyle x_2 - \frac{f_2}{f_2'} \newline
+x_3 & = & \displaystyle x_2 - \frac{f(x_2)}{f'(x_2)}
+\end{array}
+\end{equation}
+
+and name the solution as $x_3$. By observing the relation pattern between $x_2$ and $x_1$ in Eqn. \eqref{eqn:rnr-tangent-line-1-step-by-step} and between $x_3$ and $x_2$ in Eqn. \eqref{eqn:rnr-tangent-line-2-step-by-step} we can have Eqn. \eqref{eqn:rnr-newton-raphson-method} that relates $x_{n+1}$ with $x_n$ using $f(x_n)$ and $f'(x_n)$.
+
+## algorithm
+Eqn. \eqref{eqn:rnr-newton-raphson-method} can be described in following algorithm.
+
+
+
+## exercises
+1. Study Eqns. \eqref{eqn:rnr-tangent-line-1} - \eqref{eqn:rnr-tangent-line-2} in obtaining the relation in Eqn. \eqref{eqn:rnr-newton-raphson-method}, then use it in a spreadsheet to see how it works in producing root of $x^2 - 9 = 0$ when $x_1 = 2$. What is the answer when $x_1 = -4$? Explain results difference due to the choice of initial guess.
 
 
 ## references
