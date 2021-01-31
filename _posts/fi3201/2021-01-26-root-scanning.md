@@ -66,12 +66,12 @@ A function $f(x)$ will be solved using Alg. <a href="#alg:rs-scanning-method-alg
 Beside using Alg. <a href="#alg:rs-scanning-method-algorithm">1</a> we can also use a flow chart to design how steps of finding root using scanning method.
 
 {:refdef: style="text-align: center;"}
-![..](/assets/img/math/root/root-scanning-flow-chart.png)
+![..](/assets/img/math/root/root-scanning-flowchart.png)
 <br />
-Figure <a name="fig:rs-scanning-method-flow-chart">1</a> Steps in scanning method are described in a flow chart. 
+Figure <a name="fig:rs-scanning-method-flowchart">1</a> Steps in scanning method are described in a flow chart. 
 {: refdef}
 
-Fig. <a href="#fig:rs-scanning-method-flow-chart">1</a> shows an alternative flow chart explaining the scanning method in finding a root from a function, where two examples are discussed in the following section.
+Fig. <a href="#fig:rs-scanning-method-flowchart">1</a> shows an alternative flow chart explaining the scanning method in finding a root from a function, where two examples are discussed in the following section.
 
 
 ## test function

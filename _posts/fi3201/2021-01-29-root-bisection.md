@@ -63,12 +63,12 @@ A function $f(x)$ as an example will be solved using Alg. <a href="#alg:rs-bisec
 We can also use a flowchart to design how steps of finding root using bisection method instead of using Alg. <a href="#alg:rb-bisection-method-algorithm">1</a>.
 
 {:refdef: style="text-align: center;"}
-![..](/assets/img/math/root/root-bisection-flow-chart.png)
+![..](/assets/img/math/root/root-bisection-flowchart.png)
 <br />
-Figure <a name="fig:rb-bisection-method-flow-chart">1</a> Steps in bisection method are described in a flow chart. 
+Figure <a name="fig:rb-bisection-method-flowchart">1</a> Steps in bisection method are described in a flow chart. 
 {: refdef}
 
-Number of elements in the flowchart shown in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> is more than in the Alg. <a href="#alg:rs-bisection-method-algorithm">1</a> since short expressions in every element are required, e.g. in decision block we use $f_{\rm root} < \epsilon$ instead of $\|f(x_{n+2})\| < \epsilon$ as in the algorithm.
+Number of elements in the flowchart shown in Fig. <a href="#fig:rb-bisection-method-flowchart">1</a> is more than in the Alg. <a href="#alg:rs-bisection-method-algorithm">1</a> since short expressions in every element are required, e.g. in decision block we use $f_{\rm root} < \epsilon$ instead of $\|f(x_{n+2})\| < \epsilon$ as in the algorithm.
 
 
 ## test function
@@ -79,7 +79,7 @@ A function
 f(x) = 0.025x^3 - 0.2585x^2 + 0.243x + 0.5265 
 \end{equation}
 
-is used as test function in implementing the bisection method from the flowchart shown in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> or Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>.
+is used as test function in implementing the bisection method from the flowchart shown in Fig. <a href="#fig:rb-bisection-method-flowchart">1</a> or Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/root/root-bisection-1.png)
@@ -508,9 +508,9 @@ Using $x_{\rm beg} = 1$ and $x_{\rm end} = 8$ we can have results in the previou
 
 
 ## exercises
-1. Comparing the given flowchart in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> and algoritm in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>, which one suits you better? Give your opinion about it.
-2. Modify the flowchart in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> so that number of elements is the same as in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>. Is it simpler or more comples compared the given flowchart? Explain in brief.
-3. Not as shown in Fig. <a href="#fig:rb-bisection-method-flow-chart">1</a> or Alg. <a href="#alg:rs-bisection-method-algorithm">1</a> the implementation in the given Octave program there is `maxstep` variable. Explain what the use of this variable. And why we require it?
+1. Comparing the given flowchart in Fig. <a href="#fig:rb-bisection-method-flowchart">1</a> and algoritm in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>, which one suits you better? Give your opinion about it.
+2. Modify the flowchart in Fig. <a href="#fig:rb-bisection-method-flowchart">1</a> so that number of elements is the same as in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>. Is it simpler or more comples compared the given flowchart? Explain in brief.
+3. Not as shown in Fig. <a href="#fig:rb-bisection-method-flowchart">1</a> or Alg. <a href="#alg:rs-bisection-method-algorithm">1</a> the implementation in the given Octave program there is `maxstep` variable. Explain what the use of this variable. And why we require it?
 4. Compare the obtained $x_{\rm root}$ using different codes, e.q. `root-bisection.py`, `root-bisection.js`, `root-bisection.m`, `root-bisection.cpp` and discuss about them.
 5. Can you design some lines of code that can save the prediction of $x$ as in historical order and in the order after swap process? Explain that in brief.
 
