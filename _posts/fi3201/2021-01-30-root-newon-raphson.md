@@ -135,6 +135,7 @@ x_3 & = & \displaystyle x_2 - \frac{f(x_2)}{f'(x_2)}
 
 and name the solution as $x_3$. By observing the relation pattern between $x_2$ and $x_1$ in Eqn. \eqref{eqn:rnr-tangent-line-1-step-by-step} and between $x_3$ and $x_2$ in Eqn. \eqref{eqn:rnr-tangent-line-2-step-by-step} we can have Eqn. \eqref{eqn:rnr-newton-raphson-method} that relates $x_{n+1}$ with $x_n$ using $f(x_n)$ and $f'(x_n)$.
 
+
 ## algorithm
 Eqn. \eqref{eqn:rnr-newton-raphson-method} can be described in following algorithm. We assume that at least one root does exist for $f(x)$.
 
@@ -163,16 +164,31 @@ Figure <a name="fig:rnr-newton-raphson-method-flowchart">1</a> Steps in Newton-R
 Flowchart in Fig. <a href="#fig:rnr-newton-raphson-method-flowchart">1</a> is slightly different thatn Alg. <a href="#alg:rnr-newton-raphson-method-algorithm">1</a>, e.g. the use of $c$, due to size of element block in the flowchart.
 
 
+## test function
+Following function
+
+\begin{equation}
+\label{eqn:rnr-test-function}
+f(x) = 0.01x^2 - 0.2192x^2 + 0.3056x + 1.568
+\end{equation}
+
+is used as test function, where the roots are $-2$, $3.92$, and $20$. As initial guess we will use $x_1 = 2$.
+
+2
+5.063829787
+4.009945362
+3.920832405
+
+
 ## implementation
 In implementing algorithm in Alg. <a href="#alg:rnr-newton-raphson-method-algorithm">1</a> or flowchart in Fig. <a href="#fig:rnr-newton-raphson-method-flowchart">1</a> a program can have following output
 
 ```batch
-f(x)  0.025x^3 - 0.2585x^2 + 0.243x + 0.5265
-xbeg  1
-xend  8
+f(x)  0.01x^3 - 0.2192x^2 + 0.3056x + 1.568
+xinit  1
 ε     0.1
 Nstep 6
-xroot 2.3125
+xroot 3.9
 ```
 
 where the example is given in Python.
