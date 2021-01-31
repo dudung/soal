@@ -174,10 +174,15 @@ f(x) = 0.01x^2 - 0.2192x^2 + 0.3056x + 1.568
 
 is used as test function, where the roots are $-2$, $3.92$, and $20$. As initial guess we will use $x_1 = 2$.
 
-2
-5.063829787
-4.009945362
-3.920832405
+{:refdef: style="text-align: center;"}
+![..](/assets/img/math/root/root-newton-raphson-x1.png)
+![..](/assets/img/math/root/root-newton-raphson-x2.png)
+![..](/assets/img/math/root/root-newton-raphson-x3.png)
+<br />
+Figure <a name="fig:rnr-newton-raphson-method-example">2</a> Illustration in obtaining $x_2 = 5.063829787$ from initial guess $x_1 = 2$ (top), $x_3 = 4.009945362$ from $x_2 = 5.063829787$ (middle), and $x_4 = 3.920832405$ from $x_3 = 4.009945362$ (bottom) using Newton-Raphson method for the test function. 
+{: refdef}
+
+With initial guess $x_1 = 2$ it seems that the root obtained is approximated to $3.92$ as shown in Fig. <a href="#fig:rnr-newton-raphson-method-example">2</a> as $x_4 = 3.920832405$
 
 
 ## implementation
