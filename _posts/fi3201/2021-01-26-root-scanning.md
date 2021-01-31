@@ -82,7 +82,7 @@ Let us have a function
 f(x) = \frac{1}{20} (x + 1) (x - 3.45) (x - 8),
 \end{equation}
 
-a polynomial function with 3rd order. Illustration how Alg. <a href="#alg:rs-scanning-method-algorithm">2</a> works for Eqn. \eqref{eqn:rs-test-function} is given in Figs. <a href="#fig:rs-example-dx-1">1</a> and <a href="#fig:rs-example-dx-0.5">2</a>.
+a polynomial function with 3rd order. Illustration how Alg. <a href="#alg:rs-scanning-method-algorithm">2</a> works for Eqn. \eqref{eqn:rs-test-function} is given in Figs. <a href="#fig:rs-example-dx-1">2</a> and <a href="#fig:rs-example-dx-0.5">3</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/root/root-scanning-dx-1-2.png)
