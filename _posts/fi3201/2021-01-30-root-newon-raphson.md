@@ -166,6 +166,15 @@ Flowchart in Fig. <a href="#fig:rnr-newton-raphson-method-flowchart">1</a> is sl
 ## implementation
 In implementing algorithm in Alg. <a href="#alg:rnr-newton-raphson-method-algorithm">1</a> or flowchart in Fig. <a href="#fig:rnr-newton-raphson-method-flowchart">1</a> a program can have following output
 
+```batch
+f(x)  0.025x^3 - 0.2585x^2 + 0.243x + 0.5265
+xbeg  1
+xend  8
+ε     0.1
+Nstep 6
+xroot 2.3125
+```
+
 where the example is given in Python.
 
 ### python
