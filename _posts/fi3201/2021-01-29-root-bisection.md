@@ -56,7 +56,7 @@ Algorithm <a name="alg:rb-bisection-method-algorithm">1</a> Bisection method. \
 9. $\Rightarrow \color{blue}{\bf\scriptsize STEP} \ 4$.
 10. $x_{\rm root} \leftarrow x_{n+2}$.
 
-A function $f(x)$ as an example will be solved using Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>.
+A function $f(x)$ as an example will be solved using Alg. <a href="#alg:rb-bisection-method-algorithm">1</a>.
 
 
 ## flowchart
@@ -508,9 +508,9 @@ Using $x_{\rm beg} = 1$ and $x_{\rm end} = 8$ we can have results in the previou
 
 
 ## exercises
-1. Comparing the given flowchart in Fig. <a href="#fig:rb-bisection-method-flowchart">1</a> and algoritm in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>, which one suits you better? Give your opinion about it.
-2. Modify the flowchart in Fig. <a href="#fig:rb-bisection-method-flowchart">1</a> so that number of elements is the same as in Alg. <a href="#alg:rs-bisection-method-algorithm">1</a>. Is it simpler or more comples compared the given flowchart? Explain in brief.
-3. Not as shown in Fig. <a href="#fig:rb-bisection-method-flowchart">1</a> or Alg. <a href="#alg:rs-bisection-method-algorithm">1</a> the implementation in the given Octave program there is `maxstep` variable. Explain what the use of this variable. And why we require it?
+1. Comparing the given flowchart in Fig. <a href="#fig:rb-bisection-method-flowchart">1</a> and algoritm in Alg. <a href="#alg:rb-bisection-method-algorithm">1</a>, which one suits you better? Give your opinion about it.
+2. Modify the flowchart in Fig. <a href="#fig:rb-bisection-method-flowchart">1</a> so that number of elements is the same as in Alg. <a href="#alg:rb-bisection-method-algorithm">1</a>. Is it simpler or more comples compared the given flowchart? Explain in brief.
+3. Not as shown in Fig. <a href="#fig:rb-bisection-method-flowchart">1</a> or Alg. <a href="#alg:rb-bisection-method-algorithm">1</a> the implementation in the given Octave program there is `maxstep` variable. Explain what the use of this variable. And why we require it?
 4. Compare the obtained $x_{\rm root}$ using different codes, e.q. `root-bisection.py`, `root-bisection.js`, `root-bisection.m`, `root-bisection.cpp` and discuss about them.
 5. Can you design some lines of code that can save the prediction of $x$ as in historical order and in the order after swap process? Explain that in brief.
 
