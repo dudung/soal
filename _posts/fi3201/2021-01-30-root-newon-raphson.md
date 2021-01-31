@@ -136,8 +136,23 @@ x_3 & = & \displaystyle x_2 - \frac{f(x_2)}{f'(x_2)}
 and name the solution as $x_3$. By observing the relation pattern between $x_2$ and $x_1$ in Eqn. \eqref{eqn:rnr-tangent-line-1-step-by-step} and between $x_3$ and $x_2$ in Eqn. \eqref{eqn:rnr-tangent-line-2-step-by-step} we can have Eqn. \eqref{eqn:rnr-newton-raphson-method} that relates $x_{n+1}$ with $x_n$ using $f(x_n)$ and $f'(x_n)$.
 
 ## algorithm
-Eqn. \eqref{eqn:rnr-newton-raphson-method} can be described in following algorithm.
+Eqn. \eqref{eqn:rnr-newton-raphson-method} can be described in following algorithm. We assume that at least one root does exist for $f(x)$.
 
+Algorithm <a name="alg:rnr-newton-raphson-method-algorithm">1</a> Newton-Raphson method. \
+`I`: $f(x)$, $f'(x)$, $x_1$, $\epsilon$. \
+`O`: $x_{\rm root}$.
+1. $n = 1$.
+2. $\displaystyle x_{n+1} \leftarrow x_n - \frac{f(x_n)}{f'(x_n)}$.
+3. $\|f(x_{n+1})\| < \epsilon \Rightarrow \color{blue}{\bf\scriptsize STEP} \ 6$.
+4. $n = n + 1$.
+5. $\Rightarrow \color{blue}{\bf\scriptsize STEP} \ 2$.
+6. $x_{\rm root} = x_{n+1}$.
+
+There might be many another variations of algorithm than shown in Alg. <a href="#alg:rnr-newton-raphson-method-algorithm">1</a>.
+
+
+## flowchart
+As alternative to Alg. <a href="#alg:rnr-newton-raphson-method-algorithm">1</a> we can also have following flowchart for Eqn. \eqref{eqn:rnr-newton-raphson-method}.
 
 
 ## exercises
