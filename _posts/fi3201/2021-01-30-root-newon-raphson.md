@@ -163,6 +163,20 @@ Figure <a name="fig:rnr-newton-raphson-method-flowchart">1</a> Steps in Newton-R
 Flowchart in Fig. <a href="#fig:rnr-newton-raphson-method-flowchart">1</a> is slightly different thatn Alg. <a href="#alg:rnr-newton-raphson-method-algorithm">1</a>, e.g. the use of $c$, due to size of element block in the flowchart.
 
 
+## implementation
+In implementing algorithm in Alg. <a href="#alg:rnr-newton-raphson-method-algorithm">1</a> or flowchart in Fig. <a href="#fig:rnr-newton-raphson-method-flowchart">1</a> a program can have following output
+
+where the example is given in Python.
+
+### python
+Following code `root-newton-raphson.py` has been tested using Python 3.7.7 through Cygwin version 2.873 on Windows 10 Home.
+
+```python
+```
+
+Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/fi3201/root/root-newton-raphson.py)
+
+
 ## exercises
 1. Study Eqns. \eqref{eqn:rnr-tangent-line-1} - \eqref{eqn:rnr-tangent-line-2} in obtaining the relation in Eqn. \eqref{eqn:rnr-newton-raphson-method}, then use it in a spreadsheet to see how it works in producing root of $x^2 - 9 = 0$ when $x_1 = 2$. What is the answer when $x_1 = -4$? Explain results difference due to the choice of initial guess.
 2. Create another variation of Alg. <a href="#alg:rnr-newton-raphson-method-algorithm">1</a>, e.g. change the order of checking $\|f(x_{n+1})\|$ and incresing $n$.
