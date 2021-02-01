@@ -123,7 +123,13 @@ r = \sqrt{x^2 + y^2},
 \tan\theta = \frac{y}{x}.
 \end{equation}
 
+{:refdef: style="text-align: center;"}
+![..](/assets/img/math/vector/vector-xy-rtheta.png)
+<br />
+Figure <a name="fig:uv-vectors-xy-rtheta">3</a> A vector $\vec{r} = 8\hat{x} + 6\hat{y}$ with $r = 10$ and $\theta \approx 36.87 ^\circ$.
+{: refdef}
 
+The use of Eqns. \eqref{eqn:uv-2d-vector-r} and \eqref{eqn:uv-2d-vector-theta} for a  vector $\vec{r} = 8\hat{x} + 6\hat{y}$ are given in Fig. <a href="#fig:uv-vectors-xy-rtheta">3</a>.
 
 
 ## physical quantity presentation
@@ -140,9 +146,10 @@ where $\vec{p}$ is symbol of momentum, $20$ is magnitude of the momentum, $(0.70
 ## exercises
 1. If there is a vector $\vec{c} = 3\hat{x} + 4\hat{y} + 12\hat{z}$, find its magnitude or length of the vector $c = \|\vec{c}\|$. Write also its unit vector according to third line of Eqn. \eqref{eqn:uv-unit-vector-calculation-unit-vector}.
 2. Using Eqn. \eqref{eqn:uv-unit-vector-calculation-unit-vector} prove that $\hat{s}$ from $\vec{s}$ in Fig. <a href="#fig:uv-unit-vectors-in-xy-space">1</a>.
-3. Find the direction of a vector $\vec{b} = \frac12 \hat{x} + \frac12 \sqrt{3} \hat y$. Use $x$ axis as reference.
-4. Present $\vec{F} = (-60\hat{x} + 80\hat{y}) \ {\rm N}$ using the format given in Eqn. \eqref{eqn:uv-physical-quantity-vector-presentation}.
-5. A point mass moves with velocity $\vec{v} = (-\hat{x} + \hat{y}) \ {\rm \mu m/s}$. Rewrite it in the advisable format without using SI prefixes [[6](#ref6)].
+3. Using of Eqns. \eqref{eqn:uv-2d-vector-r} and \eqref{eqn:uv-2d-vector-theta} prove that $r = 10$ and $\theta \approx 36.87 ^\circ$ for the vector $\vec{r} = 8\hat{x} + 6\hat{y}$ from Fig. <a href="#fig:uv-vectors-xy-rtheta">3</a>. Calculate also $\hat{r}$.
+4. Find the direction of a vector $\vec{b} = \frac12 \hat{x} + \frac12 \sqrt{3} \hat y$. Use $x$ axis as reference.
+5. Present $\vec{F} = (-60\hat{x} + 80\hat{y}) \ {\rm N}$ using the format given in Eqn. \eqref{eqn:uv-physical-quantity-vector-presentation}.
+6. A point mass moves with velocity $\vec{v} = (-\hat{x} + \hat{y}) \ {\rm \mu m/s}$. Rewrite it in the advisable format without using SI prefixes [[6](#ref6)].
 
 
 ## references
