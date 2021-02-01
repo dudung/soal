@@ -92,7 +92,37 @@ as advised in the next section. It might be clear if we write $\vec{a} = 0.01 (\
 
 
 ## direction
-We must specify a [vector](/physics/vector) with a magnitude and a direction [[4](#ref4)]. In a two dimensional space, e.g $xy$ space, it is easy to indentify the magnitude and the direction of a vector.
+We must specify a [vector](/physics/vector) with a magnitude and a direction [[4](#ref4)]. In a two dimensional space, e.g $xy$ space, it is easy to indentify the magnitude and the direction of a vector.  A vector in two dimension, ommitting the $z$ component in Eqn. \eqref{eqn:uv-unit-vector-calculation-vector}, can be written as
+
+\begin{equation}
+\label{eqn:uv-2d-vector}
+\hat{r} = x \hat{x} + y \hat{y} = r\cos\theta \ \hat{x} + r\sin\theta \ \hat{y}
+\end{equation}
+
+with
+
+\begin{equation}
+\label{eqn:uv-2d-vector-x}
+x = r \cos \theta,
+\end{equation}
+
+\begin{equation}
+\label{eqn:uv-2d-vector-y}
+y = r \sin \theta,
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:uv-2d-vector-r}
+r = \sqrt{x^2 + y^2},
+\end{equation}
+
+\begin{equation}
+\label{eqn:uv-2d-vector-theta}
+\tan\theta = \frac{y}{x}.
+\end{equation}
+
 
 
 
