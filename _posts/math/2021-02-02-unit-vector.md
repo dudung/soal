@@ -88,7 +88,7 @@ which is longer than the vector. It is better that Eqn. \eqref{eqn:uv-example-1-
 \vec{a} = 0.01 \sqrt{2} \ (0.7071 \hat{x} - 0.7071 \hat{y})
 \end{equation}
 
-as advised in the next section.
+as advised in the next section. It might be clear if we write $\vec{a} = 0.01 (\hat{x} - \hat{y})$ instead of Eqn. \eqref{eqn:uv-example-1-vector} and  $\vec{a} = 0.01 \sqrt{2} \ (\frac12 \sqrt{2} \hat{x} - \frac12 \sqrt{2} \hat{y})$ instead of Eqn. \eqref{eqn:uv-example-1-vector-format}.
 
 
 ## physical quantity presentation
@@ -109,7 +109,7 @@ where $\vec{p}$ is symbol of momentum, $20$ is magnitude of the momentum, $(0.70
 4. A point mass moves with velocity $\vec{v} = (-\hat{x} + \hat{y}) \ {\rm \mu m/s}$. Rewrite it in the advisable format without using SI prefixes [[5](#ref5)].
 
 
-## References
+## references
 1. <a name="ref1"></a>Wikipedia contributors, "Unit vector", Wikipedia, The Free Encyclopedia, 1 Feb 2021, 05:06 UTC, url <https://en.wikipedia.org/w/index.php?oldid=1004126622> [20210202].
 2. <a name="ref2"></a>Carl R. Nave, "Unit Vectors", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/vbas.html#c2> [20210202].
 3. <a name="ref3"></a>Z. Blakley, "Unit Vector", GeoGebra, November 24, 2016 - 7:49 AM, url <https://www.geogebra.org/m/Qk2TvNXg> [20210202].
