@@ -96,7 +96,7 @@ We must specify a [vector](/physics/vector) with a magnitude and a direction [[4
 
 \begin{equation}
 \label{eqn:uv-2d-vector}
-\hat{r} = x \hat{x} + y \hat{y} = r\cos\theta \ \hat{x} + r\sin\theta \ \hat{y}
+\vec{r} = x \hat{x} + y \hat{y} = r\cos\theta \ \hat{x} + r\sin\theta \ \hat{y}
 \end{equation}
 
 with
@@ -122,6 +122,16 @@ r = \sqrt{x^2 + y^2},
 \label{eqn:uv-2d-vector-theta}
 \tan\theta = \frac{y}{x}.
 \end{equation}
+
+From Eqns. \eqref{eqn:uv-2d-vector} and {eqn:uv-unit-vector-calculation-unit-vector} we can have that
+
+\begin{equation}
+\label{eqn:uv-2d-unit-vector}
+\hat{r} = \cos\theta \ \hat{x} + \sin\theta \ \hat{y},
+\end{equation}
+
+which shows direction of the vector.
+
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/vector/vector-xy-rtheta.png)
