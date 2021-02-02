@@ -98,6 +98,17 @@ Since $\vec{E}_j = E_j \ \hat{E}_j$, \
 $E_j = \| \vec{E}_j \| = 9\times 10^{12} \ \rm N/C$, \
 $\hat{E}_j = \vec{E}_j / E_j = \left( \frac{3}{13}\hat{x} + \frac{4}{13}\hat{y} + \frac{12}{13}\hat{z} \right)$.
 
+### source charge $q_j$ at origin
+Perhaps you still remember the formula in Fig. <a href="#fig:ef-electric-field-charge-at-origin">4b</a> (right)?
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/electric-field-charge-at-origin.png)
+<br />
+Figure <a name="fig:ef-electric-field-charge-at-origin">4b</a> Electric field $\vec{E}_j$ due to a point charge $q_j$ located at: arbitray position (left) and origin (right).
+{: refdef}
+
+It is a special situation from Eqn. \eqref{eqn:ef-electric-field-point-charge}.
+
 
 ## electric field due to charge distribution
 In real world it is difficult to have a point charge, but group of charges that can assemble a charge distribution $dq_j$, which illustation is given in Fig. <a href="#fig:ef-electric-field-charge-distribution">5</a>.
