@@ -179,3 +179,4 @@ In general $\lambda$, $\sigma$, and $\rho$ are not constant and depend on coordi
 8. <a name="ref6"></a>Kate Becker, "What do 'homogeneity' and 'isotropy' mean? (Intermediate)", Ask an Astronomer, 27 Jun 2015, url <http://curious.astro.cornell.edu/about-us/101-the-universe/cosmology-and-the-big-bang/general-questions/574-what-do-homogeneity-and-isotropy-mean-intermediate> [20210124].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/phys/electrostatics/2021-01-13-electric-field.md)
+
