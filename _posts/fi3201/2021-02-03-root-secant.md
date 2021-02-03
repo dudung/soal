@@ -122,13 +122,18 @@ Nstep = n+2
 
 # Display result
 print("f(x)  0.01x^3 - 0.2192x^2 + 0.3056x + 1.568");
-print("xinit ", xinit, sep="")
+print("x1    ", xinit1, sep="")
+print("x2    ", xinit2, sep="")
 print("ε     ", eps, sep="")
 print("Nstep ", Nstep, sep="")
 print("xroot ", xroot, sep="")
 ```
 
 Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/fi3201/root/root-secant.py)
+
+
+## exercises
+1. Compare the results given by `root-secant.py` and previous `root-newton-raphson.py`. Do they produce similar results with the same steps? Explain the difference.
 
 
 ## references
