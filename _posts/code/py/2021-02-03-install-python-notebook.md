@@ -53,10 +53,11 @@ python -m pip install matplotlib
 python -m pip install jupyter
 ```
 And when there are some errors, repeat the step and it works.
-4. Add `OpenCV` [[7](#ref5)] using the same way.
+4. Add `OpenCV` [[7](#ref5)] using the same way
 ```
 python -m pip install jupyter
 ```
+with the choice of Option 1.
 
 
 ## console output
