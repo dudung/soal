@@ -310,6 +310,49 @@ Installing collected packages: opencv-python
 Successfully installed opencv-python-4.5.1.48
 ``` 
 
+## test the notebook
+Using `cmd.exe`
+```
+L:\home\butiran.github.io\src>py -m notebook
+[W 06:18:16.753 NotebookApp] Terminals not available (error was No module named 'winpty.cywinpty')
+[I 06:18:17.583 NotebookApp] Serving notebooks from local directory: L:\home\butiran.github.io\src
+[I 06:18:17.584 NotebookApp] Jupyter Notebook 6.2.0 is running at:
+[I 06:18:17.585 NotebookApp] http://localhost:8888/?token=205955f36298552a4e79ce258c5eea83d34bfbeea0bbda1a
+[I 06:18:17.585 NotebookApp]  or http://127.0.0.1:8888/?token=205955f36298552a4e79ce258c5eea83d34bfbeea0bbda1a
+[I 06:18:17.586 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 06:18:18.277 NotebookApp]
+
+    To access the notebook, open this file in a browser:
+        file:///C:/Users/Sparisoma%20Viridi/AppData/Roaming/jupyter/runtime/nbserver-11376-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=205955f36298552a4e79ce258c5eea83d34bfbeea0bbda1a
+     or http://127.0.0.1:8888/?token=205955f36298552a4e79ce258c5eea83d34bfbeea0bbda1a
+[I 06:18:40.002 NotebookApp] Creating new directory in /py
+[I 06:19:25.879 NotebookApp] Creating new notebook in /py/nb
+[I 06:19:38.548 NotebookApp] Kernel started: deb5ab1f-b147-4ae6-bd6c-bfca4538db6d, name: python3
+[W 06:19:52.693 NotebookApp] 404 GET /api/contents/py/nb/hello.ipynb?type=notebook&content=0&_=1612394376127 (::1): No such file or directory: py/nb/hello.ipynb
+[W 06:19:52.693 NotebookApp] No such file or directory: py/nb/hello.ipynb
+[W 06:19:52.698 NotebookApp] 404 GET /api/contents/py/nb/hello.ipynb?type=notebook&content=0&_=1612394376127 (::1) 8.000000ms referer=http://localhost:8888/notebooks/py/nb/Untitled.ipynb?kernel_name=python3
+[I 06:19:52.712 NotebookApp] Uploading file to /py/nb/hello.ipynb
+[I 06:20:53.939 NotebookApp] Saving file at /py/nb/hello.ipynb
+[I 06:22:15.740 NotebookApp] Starting buffering for deb5ab1f-b147-4ae6-bd6c-bfca4538db6d:500aa2cfb95e4c7699480f84daaca2b9
+[I 06:25:13.135 NotebookApp] Interrupted...
+[I 06:25:13.135 NotebookApp] Shutting down 1 kernel
+[I 06:25:13.673 NotebookApp] Kernel shutdown: deb5ab1f-b147-4ae6-bd6c-bfca4538db6d
+
+L:\home\butiran.github.io\src>
+```
+
+After logout from the browser you can use `Control+C` in the command line to stop the server and shut down all kernels.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/comp/py/jupyter-hello-for.png)
+<br />
+Figure <a name="fig:ipy-jupyter-hello-for">1</a> Screenshot of Jupyter notebook in Google Chrome browser.
+{: refdef}
+
+Fig. <a href="#fig:ipy-jupyter-hello-for">1</a> shows an example of using `print` and `for` functions. The other features like plotting chart, viewing image, showing video are not tested.
+
 
 ## references
 1. <a name="ref1"></a>The pip developers, "pip 21.0.1", Python Software Foundation, 30 Jan 2021, url <https://pypi.org/project/pip/> [20210204].
