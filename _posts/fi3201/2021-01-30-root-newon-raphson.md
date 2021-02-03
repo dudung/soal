@@ -16,7 +16,6 @@ With a function, its derivative, and a initial guess of a root, root of a real-v
 
 
 ## formula
-
 With initial guess of a root $x_n$, value of the function $f(x_n)$, and its derivative $f'(x_n)$, following iterative formula
 
 \begin{equation}
