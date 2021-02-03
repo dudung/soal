@@ -90,19 +90,10 @@ def test_function(x):
 	return y
 
 
-# Define derivative of the test function
-def derivative_test_function(x):
-	y2 = 3 * 0.01 * x * x;
-	y1 = 2 * -0.2192 * x;
-	y0 = 0.3056;
-	y = y2 + y1 + y0;
-	return y
-
-
 # Define input
 f = test_function
-dfdx = derivative_test_function
-xinit = 2
+xinit1 = 2
+xinit2 = 2
 eps = 1E-10
 n = 0
 maxstep = 40
@@ -113,19 +104,20 @@ xroot = "not found"
 # Do iteration
 Nstep = 0
 x = []
-x.append(xinit)
-froot = np.abs(f(x[n]))
+x.append(xinit1)
+x.append(xinit2)
+froot = np.abs(f(x[n+1]))
 
 while froot > eps and n < maxstep - 1:
-	x.append(x[n] - f(x[n]) / dfdx(x[n]))
+	x.append(x[n+1] - f(x[n+1]) * (x[n+1] - x[n])  / (f(x[n+1]) - f(x[n]))
 	
-	froot = np.abs(f(x[n+1]))
+	froot = np.abs(f(x[n+2]))
 	if froot < eps:
-		xroot = x[n+1]
+		xroot = x[n+2]
 	
 	n += 1
 
-Nstep = n+1
+Nstep = n+2
 
 # Display result
 print("f(x)  0.01x^3 - 0.2192x^2 + 0.3056x + 1.568");
