@@ -12,7 +12,7 @@ tags: ["experiment", "", "", ""]
 date: 2021-02-03 18:19:00 +07
 permalink: /exp/fluid/rescale-beaker-scale
 ---
-We can use a beaker [[1](#ref1)] or a graduated cylinder [[2](#ref2)] to measure fluid volume, where the former has accuracy about 10 percent, while the later about 1 percent of th full scale [[3](#ref3)]. There is procedure to calibrate small volumetric laboratory glassware [[4](#ref4)].
+We can use a beaker [[1](#ref1)] or a graduated cylinder [[2](#ref2)] to measure fluid volume, where the former has accuracy about 10 percent, while the later about 1 percent of the full scale [[3](#ref3)]. There is procedure to calibrate small volumetric laboratory glassware [[4](#ref4)].
 
 
 ## capacity scale
