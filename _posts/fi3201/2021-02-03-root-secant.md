@@ -53,7 +53,7 @@ Algorithm <a name="alg:rs-secant-method-algorithm">1</a> Secant method. \
 1. $n = 1$.
 2. $\displaystyle x_{n+2} \leftarrow x_{n+1} - \frac{f(x_{n+1})(x_{n+1} - x_n)}{f(x_{n+1}) - f(x_n)}$.
 3. $\|f(x_{n+2})\| < \epsilon \Rightarrow \color{blue}{\bf\scriptsize STEP} \ 6$.
-4. $n = n + 2$.
+4. $n = n + 1$.
 5. $\Rightarrow \color{blue}{\bf\scriptsize STEP} \ 2$.
 6. $x_{\rm root} = x_{n+2}$.
 
@@ -94,7 +94,7 @@ def test_function(x):
 # Define input
 f = test_function
 xinit1 = 2
-xinit2 = 2
+xinit2 = 3
 eps = 1E-10
 n = 0
 maxstep = 40
