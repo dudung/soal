@@ -9,10 +9,10 @@ threejs: false
 oo: false
 category: physics
 tags: ["fi3201", "root", "false position"]
-date: 2021-02-03 21:47:00 +07
+date: 2021-02-03 21:49:00 +07
 permalink: /fi3201/root-regula-falsi
 ---
-As part of bracketing method in root-finding algorithms, which can determine successively smaller intervals containing a root [[1](#ref1)]. It is a very old method for solving an equation with one unknown, which is in simple terms the method using trial and error technique [[2](#ref2)]. It is also known as method of false position [[3](#ref3)].
+Regula falsi method is part of bracketing method in root-finding algorithms, which can determine successively smaller intervals containing a root [[1](#ref1)]. It is a very old method for solving an equation with one unknown, which is in simple terms the method using trial and error technique [[2](#ref2)]. It is also known as method of false position [[3](#ref3)].
 
 
 ## formulation
