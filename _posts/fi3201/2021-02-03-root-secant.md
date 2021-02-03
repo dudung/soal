@@ -59,6 +59,84 @@ Algorithm <a name="alg:rs-secant-method-algorithm">1</a> Secant method. \
 
 Notice that different than Newton-Raphson method, $f'(x)$ is not required but we need also $x_2$ instead of only $x_1$ as the initial guess. And as always there might be many another variations of algorithm than shown in Alg. <a href="#alg:rs-secant-method-algorithm">1</a>.
 
+## implementation
+In implementing algorithm in Alg. <a href="#alg:rnr-newton-raphson-method-algorithm">1</a> or flowchart in Fig. <a href="#fig:rnr-newton-raphson-method-flowchart">1</a> a program can have following output
+
+```batch
+f(x)  0.01x^3 - 0.2192x^2 + 0.3056x + 1.568
+xinit 2
+ε     1E-10
+Nstep 6
+xroot 3.920000000000001
+```
+
+where the example is given in Python.
+
+### python
+Following code `root-secant.py` has been tested using Python 3.7.7 through Cygwin version 2.873 on Windows 10 Home.
+
+```python
+# Import necessary libraries
+import numpy as np
+
+
+# Define a test function
+def test_function(x):
+	y3 = 0.01 * x * x * x;
+	y2 = -0.2192 * x * x;
+	y1 = 0.3056 * x;
+	y0 = 1.568;
+	y = y3 + y2 + y1 + y0;
+	return y
+
+
+# Define derivative of the test function
+def derivative_test_function(x):
+	y2 = 3 * 0.01 * x * x;
+	y1 = 2 * -0.2192 * x;
+	y0 = 0.3056;
+	y = y2 + y1 + y0;
+	return y
+
+
+# Define input
+f = test_function
+dfdx = derivative_test_function
+xinit = 2
+eps = 1E-10
+n = 0
+maxstep = 40
+
+# Define default message and parameter
+xroot = "not found"
+
+# Do iteration
+Nstep = 0
+x = []
+x.append(xinit)
+froot = np.abs(f(x[n]))
+
+while froot > eps and n < maxstep - 1:
+	x.append(x[n] - f(x[n]) / dfdx(x[n]))
+	
+	froot = np.abs(f(x[n+1]))
+	if froot < eps:
+		xroot = x[n+1]
+	
+	n += 1
+
+Nstep = n+1
+
+# Display result
+print("f(x)  0.01x^3 - 0.2192x^2 + 0.3056x + 1.568");
+print("xinit ", xinit, sep="")
+print("ε     ", eps, sep="")
+print("Nstep ", Nstep, sep="")
+print("xroot ", xroot, sep="")
+```
+
+Full source code with comments can be accessed [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/fi3201/root/root-secant.py)
+
 
 ## references
 1. <a name="ref1"></a>Wikipedia contributors, "Secant method", Wikipedia, The Free Encyclopedia, 4 January 2021, 18:18 UTC, <https://en.wikipedia.org/w/index.php?oldid=998290429> [20210103].
