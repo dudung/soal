@@ -19,20 +19,20 @@ import numpy as np
 
 # Define a test function
 def test_function(x):
-	y3 = 0.01 * x * x * x;
-	y2 = -0.2192 * x * x;
-	y1 = 0.3056 * x;
-	y0 = 1.568;
-	y = y3 + y2 + y1 + y0;
+	y3 = 0.01 * x * x * x
+	y2 = -0.2192 * x * x
+	y1 = 0.3056 * x
+	y0 = 1.568
+	y = y3 + y2 + y1 + y0
 	return y
 
 
 # Define derivative of the test function
 def derivative_test_function(x):
-	y2 = 3 * 0.01 * x * x;
-	y1 = 2 * -0.2192 * x;
-	y0 = 0.3056;
-	y = y2 + y1 + y0;
+	y2 = 3 * 0.01 * x * x
+	y1 = 2 * -0.2192 * x
+	y0 = 0.3056
+	y = y2 + y1 + y0
 	return y
 
 

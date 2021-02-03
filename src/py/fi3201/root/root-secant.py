@@ -8,6 +8,7 @@
 #	
 #	20210103
 #	1042 Start this program from root-newton-raphton.py.
+# 1351 Remove unecessary semicolons.
 #	
 
 # Import necessary libraries
@@ -16,11 +17,11 @@ import numpy as np
 
 # Define a test function
 def test_function(x):
-	y3 = 0.01 * x * x * x;
-	y2 = -0.2192 * x * x;
-	y1 = 0.3056 * x;
-	y0 = 1.568;
-	y = y3 + y2 + y1 + y0;
+	y3 = 0.01 * x * x * x
+	y2 = -0.2192 * x * x
+	y1 = 0.3056 * x
+	y0 = 1.568
+	y = y3 + y2 + y1 + y0
 	return y
 
 
