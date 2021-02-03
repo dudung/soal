@@ -134,6 +134,7 @@ Full source code with comments can be accessed [here](https://github.com/butiran
 
 ## exercises
 1. Compare the results given by `root-secant.py` and previous `root-newton-raphson.py`. Do they produce similar results with the same steps? Explain the difference.
+2. Change $x_1$ and $x_2$ and see how they influence the results, i.e. $x_{\rm root}$ and also `Nstep`.
 
 
 ## references
