@@ -83,11 +83,11 @@ import numpy as np
 
 # Define a test function
 def test_function(x):
-	y3 = 0.01 * x * x * x;
-	y2 = -0.2192 * x * x;
-	y1 = 0.3056 * x;
-	y0 = 1.568;
-	y = y3 + y2 + y1 + y0;
+	y3 = 0.01 * x * x * x
+	y2 = -0.2192 * x * x
+	y1 = 0.3056 * x
+	y0 = 1.568
+	y = y3 + y2 + y1 + y0
 	return y
 
 
@@ -110,7 +110,7 @@ x.append(xinit2)
 froot = np.abs(f(x[n+1]))
 
 while froot > eps and n < maxstep - 1:
-	x.append(x[n+1] - f(x[n+1]) * (x[n+1] - x[n])  / (f(x[n+1]) - f(x[n]))
+	x.append(x[n+1] - f(x[n+1]) * (x[n+1] - x[n])  / (f(x[n+1]) - f(x[n])))
 	
 	froot = np.abs(f(x[n+2]))
 	if froot < eps:
