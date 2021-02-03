@@ -16,10 +16,32 @@ As part of bracketing method in root-finding algorithms, which can determine suc
 
 
 ## formulation
-Let a function
+Assume that there is
 
 \begin{equation}
-\label{eqn:}
+\label{eqn:rrf-function}
+f(x) = \sum_n c_n x^n
+\end{equation}
+
+as a function, whose root is to be found when
+
+\begin{equation}
+\label{eqn:rrf-function-root}
+f(x_{\rm root}) = 0.
+\end{equation}
+
+Let $x_1$ and $x_2$ which produce
+
+\begin{equation}
+\label{eqn:rrf-function-x1-f1}
+f(x_1) = f_1
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:rrf-function-x2-f2}
+f(x_2) = f_2.
 \end{equation}
 
 
