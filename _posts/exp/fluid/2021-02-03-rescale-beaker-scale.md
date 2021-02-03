@@ -34,7 +34,7 @@ y_1 - y_0 > y_2 - y_1 > y_3 - y_2 = y_4 - y_3 = \dots = y_{14} - y_{13},
 but the every volume between two successive lines are always the same with value $V$.
 
 
-## note
+## notes
 + It was a direction for [Hoshea](https://github.com/hoshea314) after discussion with [Rizqie Arbie](https://github.com/rizqie-arbie) and [me](https://github.com/dudung).
 + An idea came up due to parallex error, which can be avoided by placing observer eyes at the level of appropriate measurement marking [[6](#ref6)]. Unfortunately it can not be performed since fluid height keeps changing while position of the recording apparatus remains at the same vertical position as in the recorded video. Analysis of the form of fluid surface in the beaker might be interested since it will evolve from ellipse to line and back to ellipse
 
