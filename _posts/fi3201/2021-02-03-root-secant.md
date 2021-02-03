@@ -64,10 +64,11 @@ In implementing algorithm in Alg. <a href="#alg:rnr-newton-raphson-method-algori
 
 ```batch
 f(x)  0.01x^3 - 0.2192x^2 + 0.3056x + 1.568
-xinit 2
-ε     1E-10
-Nstep 6
-xroot 3.920000000000001
+x1    2
+x2    3
+ε     1e-10
+Nstep 8
+xroot 3.919999999999999
 ```
 
 where the example is given in Python.
