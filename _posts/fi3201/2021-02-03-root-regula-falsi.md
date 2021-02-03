@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["fi3201", "root", "false position"]
-date: 2021-02-03 15:26:00 +07
+date: 2021-02-03 21:47:00 +07
 permalink: /fi3201/root-regula-falsi
 ---
 As part of bracketing method in root-finding algorithms, which can determine successively smaller intervals containing a root [[1](#ref1)]. It is a very old method for solving an equation with one unknown, which is in simple terms the method using trial and error technique [[2](#ref2)]. It is also known as method of false position [[3](#ref3)].
@@ -30,7 +30,7 @@ as a function, whose root is to be found when
 f(x_{\rm root}) = 0.
 \end{equation}
 
-Let $x_1$ and $x_2$ which produce
+Let $x_1$ and $x_2 > x_1$ which produce
 
 \begin{equation}
 \label{eqn:rrf-function-x1-f1}
@@ -43,6 +43,54 @@ and
 \label{eqn:rrf-function-x2-f2}
 f(x_2) = f_2.
 \end{equation}
+
+Using Eqns. \eqref{eqn:rrf-function-x1-f1} and \eqref{eqn:rrf-function-x2-f2} we can have equation of a line
+
+\begin{equation}
+\label{eqn:rrf-function-equation-of-a-line-1}
+y = \left( \frac{f_2 - f_1}{x_2 - x_1} \right) (x - x_1) + f_1
+\end{equation}
+
+or
+
+\begin{equation}
+\label{eqn:rrf-function-equation-of-a-line-2}
+y = \left( \frac{f_2 - f_1}{x_2 - x_1} \right) (x - x_2) + f_2.
+\end{equation}
+
+Eqns. \eqref{eqn:rrf-function-equation-of-a-line-1} and \eqref{eqn:rrf-function-equation-of-a-line-2} produce $x$ intercept
+
+\begin{equation}
+\label{eqn:rrf-function-equation-of-a-line-1-x-intercept}
+x = x_1 - \left( \frac{x_2 - x_1}{f_2 - f_1} \right) f_1 
+\end{equation}
+
+or
+
+\begin{equation}
+\label{eqn:rrf-function-equation-of-a-line-2-x-intercept}
+x = x_2 - \left( \frac{x_2 - x_1}{f_2 - f_1} \right) f_2 
+\end{equation}
+
+by setting $y = 0$. Both Eqns. \eqref{eqn:rrf-function-equation-of-a-line-1-x-intercept} will produce
+
+\begin{equation}
+\label{eqn:rrf-regula-falsi}
+x = \frac{x_1 f_2 - x_2 f_1}{f_2 - f_1}
+\end{equation}
+
+as in [[1](#ref1)].
+
+
+## iterative formula
+Keep the first point $x_1$ fixed, then set label $2$ as $n-1$ and $n$ for the new $x$ we can have Eqn. \eqref{eqn:rrf-function-equation-of-a-line-1-x-intercept}
+
+\begin{equation}
+\label{eqn:rrf-regula-falsi-iterative-formula}
+x_n = x_1 - \left( \frac{x_{n-1} - x_1}{f_{n-1} - f_1} \right) f_1 
+\end{equation}
+
+as a iterative formula [[2](#ref1)]. Notice that it relates $x_1$, $x_{n-1}$, and $x_n$, where the first point remains the same.
 
 
 ## references
