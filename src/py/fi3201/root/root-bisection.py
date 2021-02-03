@@ -28,11 +28,11 @@ import numpy as np
 
 # Define a test function
 def test_function(x):
-	y3 = 0.025 * x * x * x;
-	y2 = -0.2585 * x * x;
-	y1 = 0.243 * x;
-	y0 = 0.5265;
-	y = y3 + y2 + y1 + y0;
+	y3 = 0.025 * x * x * x
+	y2 = -0.2585 * x * x
+	y1 = 0.243 * x
+	y0 = 0.5265
+	y = y3 + y2 + y1 + y0
 	return y
 
 
