@@ -23,7 +23,7 @@ Following libraries are required to perform a simulation double pendulum with vi
 - matplotlib.pyplot
 - matplotlib.animation
 
-The first library is NumPy that supports for large, multi-dimensional arrays and matrices, accompanied by a large collection of high-level mathematical functions to operate on them, which gives it functionality comparable to MATLAB. The SciPy is library that adds functionality more MATLAB-like. And the last is Matplotlib, a MATLAB-like plotting package that provides functionality for plotting.
+A short information about above libraries is as follow [[6](#ref6)]. The first library is NumPy that supports for large, multi-dimensional arrays and matrices, accompanied by a large collection of high-level mathematical functions to operate on them, which gives it functionality comparable to MATLAB. The SciPy is library that adds functionality more MATLAB-like. And the last is Matplotlib, a MATLAB-like plotting package that provides functionality for plotting.
 
 
 ## references
