@@ -98,7 +98,7 @@ time_text.set_text(time_template % t)
 plt.show()
 ```
 
-where the full code with comment can be obtained [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/anim/plot-trav-wave-x.py).
+where full code with comments can be obtained [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/anim/plot-trav-wave-x.py).
 
 
 ## result
