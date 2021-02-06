@@ -9,10 +9,10 @@
 #	0538 Learn from [2].
 #	0544 Use \pi from [3].
 #	0557 Can draw a sine function.
-# 0604 Learn add_subplot [4].
-# 0618 Just know this one [5].
-# 0639 Read style in plotting [6].
-# 0654 Give comments for clearer reading of the code.
+#	0604 Learn add_subplot [4].
+#	0618 Just know this one [5].
+#	0639 Read style in plotting [6].
+#	0654 Give comments for clearer reading of the code.
 #	0702 Add axis label [7].
 #	
 #	References

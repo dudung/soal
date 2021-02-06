@@ -25,6 +25,30 @@ y(x, t) = A \sin(\omega t - kx + \varphi_0),
 
 which is actually expression of a travelling wave [[2](#ref2)]. We are interested to show the spatial profile at certain time. Then we must have the values of amplitude $A$, angular frequency $\omega$, time $t$, wavenumber $k$, and phase constant $\varphi_0$ [[3](#ref3)].
 
+Let $A = 0.2 \ {\rm m}$, $T = 1 \ {\rm s}$, $\lambda = 1 \ {\rm m}$, $\varphi_0 = \pi \ {\rm rad}$. Then using the relation
+
+\begin{equation}
+\label{eqn:sp-angular-frequency}
+\omega = \frac{2\pi}{T}
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eqn:sp-wavenumber}
+k = \frac{2\pi}{\lambda}
+\end{equation}
+
+we can have $\omega = 2\pi \ {\rm rad/s}$ and $k = 2\pi \ {\rm rad/m}$.
+
+## code
+Following code `plot-trav-wave-x.py` are used to plot Eqn. \eqref{eqn:sp-wave-function}.
+
+```python
+```
+
+where the full code with comment can be obtained [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/anim/plot-trav-wave-x.py).
+
 
 ## references
 1. <a name="ref1"></a>John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the Matplotlib development team, "The double pendulum problem", Matplotlib Version 2.1.2, Feb 2018, url <https://matplotlib.org/gallery/animation/double_pendulum_animated_sgskip.html> [20210205].
