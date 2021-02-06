@@ -12,6 +12,8 @@
 # 0604 Learn add_subplot [4].
 # 0618 Just know this one [5].
 # 0639 Read style in plotting [6].
+# 0654 Give comments for clearer reading of the code.
+#	0702 Add axis label [7].
 #	
 #	References
 #	1. url https://matplotlib.org/gallery/animation
@@ -32,6 +34,10 @@
 #	   and the Matplotlib development team, "matplotlib.axes
 #	   .Axes.plot", 5 Jan 2020, url https://matplotlib.org/3.1.1
 #	   /api/_as_gen/matplotlib.axes.Axes.plot.html [20210206].
+#	7. John Hunter, Darren Dale, Eric Firing, Michael Droettboom,
+#	   and the Matplotlib development team, "Simple axes labels",
+#	   18 May 2019, url https://matplotlib.org/3.1.1/api/_as_gen
+#	   /matplotlib.axes.Axes.plot.html [20210206].
 #	
 
 # Import required libraries
@@ -51,11 +57,12 @@ def travwave(x, t):
 	y = A * sin(_w * t - k * x + _varphi0)
 	return y
 
+
 # Set observation time
-t = 0
+t = 0.50
 
 # Create x and y data
-x = np.arange(0, 2, 0.02)
+x = np.arange(0, 2, 0.04)
 y = travwave(x, t)
 
 # Get figure for plotting
@@ -68,16 +75,19 @@ ax = fig.add_subplot(
 	xlim=(0, 2),
 	ylim=(-0.2, 0.2)
 )
-#ax.set_aspect('equal')
+ax.set_aspect('equal')
 ax.grid()
+ax.set_xlabel('x')
+ax.set_ylabel('y')
 
-line, = ax.plot([], [], 'r.', lw=2, ms=12)
-time_template = 't = %.1f s'
+# Set style for plotting
+line, = ax.plot([], [], 'sr-', lw=1, ms=4)
+time_template = 't = %.2f s'
 time_text = ax.text(0.8, 0.8, '', transform=ax.transAxes)
 
-thisx = x
-thisy = y
-line.set_data(thisx, thisy)
+# Set data and time information
+line.set_data(x, y)
 time_text.set_text(time_template % t)
 
+# Show plotting result
 plt.show()

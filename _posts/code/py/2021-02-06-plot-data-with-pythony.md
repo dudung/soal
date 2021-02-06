@@ -8,15 +8,15 @@ x3dom: false
 threejs: false
 oo: false
 category: code
-tags: ["python", "simulation", "numpy", "scipy", "matplotlib"]
+tags: ["python", "plot", "numpy", "matplotlib"]
 date: 2021-02-06 06:45:00 +07
-permalink: /code/py/simulation-with-python
+permalink: /code/py/plot-data-with-python
 ---
 Inspired by [[1](#ref1)] how to plot a function will be described here in brief. 
 
 
 ## function to be plotted
-Suppose that we have data of a sine function for plotting provied by following function
+Suppose that we have data of a sine function for plotting provided by following function
 
 \begin{equation}
 \label{eqn:sp-wave-function}
