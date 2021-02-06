@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: code
 tags: ["python", "plot", "numpy", "matplotlib"]
-date: 2021-02-06 06:45:00 +07
+date: 2021-02-06 09:00:00 +07
 permalink: /code/py/plot-data-with-python
 ---
 Inspired by [[1](#ref1)] how to plot a function will be described here in brief. 
