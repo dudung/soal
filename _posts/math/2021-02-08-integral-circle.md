@@ -69,7 +69,7 @@ as shown in Fig. <a href="#fig:ic-cs-rtheta-element">2</a> (left).
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/cs/cs-rtheta-element.png)
 <br />
-Figure <a name="fig:ic-cs-rtheta-element">2</a> Cartesian coordinate system (left) and polar coordinate system (righ).
+Figure <a name="fig:ic-cs-rtheta-element">2</a> Elements of length (left) and area (right) in polar coordinate system.
 {: refdef}
 
 Then using Eqns. \eqref{eqn:ic-cs-polar-length-element-radial} and \eqref{eqn:ic-cs-polar-length-element-angular} we can have area element $dA$ for polar coordinate system
@@ -90,7 +90,6 @@ C = \int_0^{2\pi} Rd\theta = R \int_0^{2\pi} d\theta = R[\theta]_0^{2\pi} = R(2\
 \end{equation}
 
 as we know [[4](#ref4)] with $D = 2R$. We use $r = R$ in Eqn. \eqref{eqn:ic-cs-polar-circumference} since $r$ is coordinate variable and $R$ is a value.
-
 
 ### area of circle
 Using Eqn. \eqref{eqn:ic-cs-polar-area-element} we can have area of circle [[5](#ref5)]. To do that we use following equation
@@ -128,14 +127,32 @@ Results in Eqns. \eqref{eqn:ic-cs-polar-circumference} and \eqref{eqn:ic-cs-pola
 Using Eqns. Eqns. \eqref{eqn:ic-cs-polar-length-element-radial}, \eqref{eqn:ic-cs-polar-length-element-angular}, and \eqref{eqn:ic-cs-polar-area-element} we can calculate arc and area of some forms.
 
 ### annulus
-Area of an annulus can be obtained using [[6](#ref6)].
+Area of an annulus can be obtained using [[6](#ref6)]
 
 \begin{equation}
 \label{eqn:ic-cs-polar-area-of-annulus}
 A_{\rm annulus} = \pi (R_2^2 - R_1^2)
 \end{equation}
 
-with $R_1 < R_2$, where $R_1$ is inner radius and $R_2$ is outter radius.
+with $R_1 < R_2$, where $R_1$ is inner radius and $R_2$ is outter radius. Fig. <a href="#fig:ic-cs-area-annulus">3</a> shows area of an annulus and annulus sector, where element of area in polar coordinate system is given in Fig. <a href="#fig:ic-cs-rtheta-element">2</a> (right).
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/math/cs/cs-area-annulus.png)
+<br />
+Figure <a name="fig:ic-cs-area-annulus">3</a> Area of an annulus (left) and annulus sector (right). 
+{: refdef}
+
+Can you see that when $R_1 = 0$ then area of an annulus becomes area of a circle?
+
+### annulus sector
+Use Eqn. \eqref{eqn:ic-cs-polar-area-of-circle} with $R_1$, $R_2$, $\theta_1$, and $\theta_2$
+
+\begin{equation}
+\label{eqn:ic-cs-polar-area-of-annulus-sector}
+A = \int_{R_1}^{R_2} rdr \int_{\theta_1}^{\theta_2} d\theta = \frac12 (\theta_2 - \theta_1) (R_2^2 - R_1^2),
+\end{equation}
+
+which is an annulus sector [[7](#ref7)]. Eqn. \eqref{eqn:ic-cs-polar-area-of-annulus-sector} can turn into Eqn. \eqref{eqn:ic-cs-polar-area-of-annulus} when $\theta_2 - \theta_1 = 2\pi$ as in Eqn. \eqref{eqn:ic-cs-polar-area-of-circle-part-theta}, which is special case with $\theta_2 = 2\pi$ and $\theta_1 = 0$ as lower and upper bounds of the integral.
 
 
 ## exercises
@@ -149,6 +166,7 @@ with $R_1 < R_2$, where $R_1$ is inner radius and $R_2$ is outter radius.
 4. <a name="ref4"></a>Wikipedia contributors, "Area of a circle", Wikipedia, The Free Encyclopedia, 2 Jan 2021, 19:55 UTC, url <https://en.wikipedia.org/w/index.php?oldid=997898869> [20210208].
 5. <a name="ref5"></a>Wikipedia contributors, "Circumference", Wikipedia, The Free Encyclopedia, 1 Jan 2021, 22:56 UTC, url <https://en.wikipedia.org/w/index.php?oldid=997724428> [20210208].
 6. <a name="ref6"></a>-, "Annulus", MathisFun, 2018, url <https://www.mathsisfun.com/geometry/annulus.html> [20210208].
+7. <a name="ref7"></a>Jürgen Kummer, "Annulus Sector Calculator", Jumk.de Webprojects, url <https://rechneronline.de/pi/annulus-sector.php> [20210208].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/math/2021-02-08-integral-circle.md)
 
