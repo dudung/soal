@@ -134,6 +134,13 @@ Area of a semicircle is
 A_{\rm semicircle} = \frac12 \pi R^2.
 \end{equation}
 
+{:refdef: style="text-align: center;"}
+![..](/assets/img/math/cs/cs-circle-semicircle.png)
+<br />
+Figure <a name="fig:ic-cs-circle-semicircle">3</a> Area of an circle (left) and semicircle (right). 
+{: refdef}
+
+Fig. <a href="#fig:ic-cs-circle-semicircle">3</a> shows the area of a circle and a semicircle.
 
 ### annulus
 Area of an annulus can be obtained using [[6](#ref6)]
@@ -143,12 +150,12 @@ Area of an annulus can be obtained using [[6](#ref6)]
 A_{\rm annulus} = \pi (R_2^2 - R_1^2)
 \end{equation}
 
-with $R_1 < R_2$, where $R_1$ is inner radius and $R_2$ is outter radius. Fig. <a href="#fig:ic-cs-area-annulus">3</a> shows area of an annulus and annulus sector, where element of area in polar coordinate system is given in Fig. <a href="#fig:ic-cs-rtheta-element">2</a> (right).
+with $R_1 < R_2$, where $R_1$ is inner radius and $R_2$ is outter radius. Fig. <a href="#fig:ic-cs-area-annulus">4</a> shows area of an annulus and annulus sector, where element of area in polar coordinate system is given in Fig. <a href="#fig:ic-cs-rtheta-element">2</a> (right).
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/cs/cs-area-annulus.png)
 <br />
-Figure <a name="fig:ic-cs-area-annulus">3</a> Area of an annulus (left) and annulus sector (right). 
+Figure <a name="fig:ic-cs-area-annulus">4</a> Area of an annulus (left) and annulus sector (right). 
 {: refdef}
 
 Can you see that when $R_1 = 0$ then area of an annulus becomes area of a circle?
