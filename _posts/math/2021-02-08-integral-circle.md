@@ -49,7 +49,7 @@ r = \sqrt{x^2 + y^2},
 \end{equation}
 
 
-## element of length and area
+## elements of length and area
 Length element $dl$ in polar coordinate system can be
 
 \begin{equation}
@@ -104,17 +104,38 @@ First term from the left in the most right side of Eqn. \eqref{eqn:ic-cs-polar-a
 
 \begin{equation}
 \label{eqn:ic-cs-polar-area-of-circle-part-r}
-\int_0^{R} rdr =
+\int_0^R rdr = \left[ \frac12 r^2 \right]_0^R = \frac12 (R^2 - 0) = \frac12 R^2
 \end{equation}
 
 and the second produces
 
 \begin{equation}
 \label{eqn:ic-cs-polar-area-of-circle-part-theta}
-\int_0^{2\pi} d\theta = 
+\int_0^{2\pi} d\theta = [\theta]_0^{2\pi} = 2\pi - 0 = 2\pi.
 \end{equation}
 
+Substitution of Eqn. \eqref{eqn:ic-cs-polar-area-of-circle-part-r} and \eqref{eqn:ic-cs-polar-area-of-circle-part-theta} into Eqn. \eqref{eqn:ic-cs-polar-area-of-circle} will given
 
+\begin{equation}
+\label{eqn:ic-cs-polar-area-of-circle-proof}
+A = \left( \frac12 R^2 \right) (2\pi) = \pi R^2.
+\end{equation}
+
+Results in Eqns. \eqref{eqn:ic-cs-polar-circumference} and \eqref{eqn:ic-cs-polar-area-of-circle-proof} are only to convince you with the prior knowledge about circumference [[4](#ref4)] and area of circle [[5](#ref5)], that the form of elements of length and area in polar coordinate system are as given in Eqns. \eqref{eqn:ic-cs-polar-length-element-radial}, \eqref{eqn:ic-cs-polar-length-element-angular}, and \eqref{eqn:ic-cs-polar-area-element}.
+
+
+## some forms
+Using Eqns. Eqns. \eqref{eqn:ic-cs-polar-length-element-radial}, \eqref{eqn:ic-cs-polar-length-element-angular}, and \eqref{eqn:ic-cs-polar-area-element} we can calculate arc and area of some forms.
+
+### annulus
+Area of an annulus can be obtained using [[6](#ref6)].
+
+\begin{equation}
+\label{eqn:ic-cs-polar-area-of-annulus}
+A_{\rm annulus} = \pi (R_2^2 - R_1^2)
+\end{equation}
+
+with $R_1 < R_2$, where $R_1$ is inner radius and $R_2$ is outter radius.
 
 
 ## exercises
@@ -127,6 +148,7 @@ and the second produces
 3. <a name="ref3"></a>Justin Ko, " Using Integration to Find Arc Lengths and Surface Areas", MAT186 – Week 12, 26 November 2019, url <https://www.math.toronto.edu/jko/MAT186_week_12.pdf> [20210208].
 4. <a name="ref4"></a>Wikipedia contributors, "Area of a circle", Wikipedia, The Free Encyclopedia, 2 Jan 2021, 19:55 UTC, url <https://en.wikipedia.org/w/index.php?oldid=997898869> [20210208].
 5. <a name="ref5"></a>Wikipedia contributors, "Circumference", Wikipedia, The Free Encyclopedia, 1 Jan 2021, 22:56 UTC, url <https://en.wikipedia.org/w/index.php?oldid=997724428> [20210208].
+6. <a name="ref6"></a>-, "Annulus", MathisFun, 2018, url <https://www.mathsisfun.com/geometry/annulus.html> [20210208].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/math/2021-02-08-integral-circle.md)
 
