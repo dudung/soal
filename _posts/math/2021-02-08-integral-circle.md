@@ -126,6 +126,15 @@ Results in Eqns. \eqref{eqn:ic-cs-polar-circumference} and \eqref{eqn:ic-cs-pola
 ## some forms
 Using Eqns. Eqns. \eqref{eqn:ic-cs-polar-length-element-radial}, \eqref{eqn:ic-cs-polar-length-element-angular}, and \eqref{eqn:ic-cs-polar-area-element} we can calculate arc and area of some forms.
 
+### semicircle
+Area of a semicircle is
+
+\begin{equation}
+\label{eqn:ic-cs-polar-area-of-semicircle}
+A_{\rm semicircle} = \frac12 \pi R^2.
+\end{equation}
+
+
 ### annulus
 Area of an annulus can be obtained using [[6](#ref6)]
 
@@ -149,14 +158,18 @@ Use Eqn. \eqref{eqn:ic-cs-polar-area-of-circle} with $R_1$, $R_2$, $\theta_1$, a
 
 \begin{equation}
 \label{eqn:ic-cs-polar-area-of-annulus-sector}
-A = \int_{R_1}^{R_2} rdr \int_{\theta_1}^{\theta_2} d\theta = \frac12 (\theta_2 - \theta_1) (R_2^2 - R_1^2),
+A_{\rm annulus \ sector} = \int_{R_1}^{R_2} rdr \int_{\theta_1}^{\theta_2} d\theta = \frac12 (\theta_2 - \theta_1) (R_2^2 - R_1^2),
 \end{equation}
 
 which is an annulus sector [[7](#ref7)]. Eqn. \eqref{eqn:ic-cs-polar-area-of-annulus-sector} can turn into Eqn. \eqref{eqn:ic-cs-polar-area-of-annulus} when $\theta_2 - \theta_1 = 2\pi$ as in Eqn. \eqref{eqn:ic-cs-polar-area-of-circle-part-theta}, which is special case with $\theta_2 = 2\pi$ and $\theta_1 = 0$ as lower and upper bounds of the integral.
 
+### annulus with varied thickness
+There is alo another type of annulus with mean radius and nonconstant thickness [[8](#ref8)], but we will not discuss it since it is out of the scope of this discussion.
+
 
 ## exercises
 1. How you can use Eqn. \eqref{eqn:ic-cs-polar-circumference} to calculate perimeter of a semicircle? Do not forget the diameter in this case.
+2. What values of $R_1$, $R_2$, $\theta_1$, and $\theta_2$ that Eqn. \eqref{eqn:ic-cs-polar-area-of-annulus-sector} provides for area of: (a) circle, (b) semicircle, and (c) annulus.
 
 
 ## references
@@ -167,6 +180,7 @@ which is an annulus sector [[7](#ref7)]. Eqn. \eqref{eqn:ic-cs-polar-area-of-ann
 5. <a name="ref5"></a>Wikipedia contributors, "Circumference", Wikipedia, The Free Encyclopedia, 1 Jan 2021, 22:56 UTC, url <https://en.wikipedia.org/w/index.php?oldid=997724428> [20210208].
 6. <a name="ref6"></a>-, "Annulus", MathisFun, 2018, url <https://www.mathsisfun.com/geometry/annulus.html> [20210208].
 7. <a name="ref7"></a>Jürgen Kummer, "Annulus Sector Calculator", Jumk.de Webprojects, url <https://rechneronline.de/pi/annulus-sector.php> [20210208].
+8. <a name="ref8"></a>-, "Question: 3. Figure 3 Shows An Annulus Of Mean Radius A And Thickness T Which Varies With The Angle θ According To The Equation T = To(1 + λ Cos θ) ...", Chegg Study, url <https://www.chegg.com/homework-help/questions-and-answers/3-figure-3-shows-annulus-mean-radius-thickness-t-varies-angle-6-according-equation-t-1-cos-q34709577> [20210208].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/math/2021-02-08-integral-circle.md)
 
