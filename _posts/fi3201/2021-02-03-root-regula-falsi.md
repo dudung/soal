@@ -96,7 +96,7 @@ as a iterative formula [[2](#ref1)]. Notice that it relates $x_1$, $x_{n-1}$, an
 ## algorithm
 We can describe Eqn. \eqref{eqn:rrf-regula-falsi-iterative-formula} in following algorithm with assumption that at least one root does exist for $f(x)$.
 
-Algorithm <a name="alg:rs-regula-falsi-algorithm">1</a> Regula falsi method. \
+Algorithm <a name="alg:rrf-regula-falsi-algorithm">1</a> Regula falsi method. \
 `I`: $f(x)$, $x_1$, $x_2$, $\epsilon$. \
 `O`: $x_{\rm root}$.
 1. $n = 1$.
@@ -106,11 +106,11 @@ Algorithm <a name="alg:rs-regula-falsi-algorithm">1</a> Regula falsi method. \
 5. $\Rightarrow \color{blue}{\bf\scriptsize STEP} \ 2$.
 6. $x_{\rm root} = x_{n+2}$.
 
-Different than [Newton-Raphson method](/fi3201/root-newton-raphson#algorithm) or [secant method](/fi3201/root-secant#algorithm), in this method $x_1$ is always there and used to predict $x_n$ with $x_{n_1}$. And remember as always that another variations of algorithm than shown in Alg. <a href="#alg:rs-secant-method-algorithm">1</a> might exist.
+Different than [Newton-Raphson method](/fi3201/root-newton-raphson#algorithm) or [secant method](/fi3201/root-secant#algorithm), in this method $x_1$ is always there and used to predict $x_n$ with $x_{n_1}$. And remember as always that another variations of algorithm than shown in Alg. <a href="#alg:rrf-secant-method-algorithm">1</a> might exist.
 
 
 ## flowchart
-Fig. <a href="#fig:rrf-regula-falsi-method-flowchart">1</a> shows other alternative to Alg. <a href="#alg:rs-secant-method-algorithm">1</a>.
+Fig. <a href="#fig:rrf-regula-falsi-method-flowchart">1</a> shows other alternative to Alg. <a href="#alg:rrf-regula-falsi-algorithm">1</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/root/root-regula-falsi-flowchart.png)
