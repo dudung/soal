@@ -121,6 +121,11 @@ Figure <a name="fig:rrf-regula-falsi-method-flowchart">1</a> Steps in regula fal
 The result is indicated with $n+2$ in this method as in secant method.
 
 
+## exercises
+1. Draw the values $x_2$, $x_3$, $x_4$, .., $x_n$ during the process of finding the root in a $y-x$ chart.
+2. Compare this method with another ones, e.g. Newton-Raphson method, secant method, and show the steps required for same accuracy.
+
+
 ## references
 1. <a name="ref1"></a>Wikipedia contributors, "Root-finding algorithms", Wikipedia, The Free Encyclopedia, 15 January 2021, 23:25 UTC, <https://en.wikipedia.org/w/index.php?oldid=1000624440> [20210203].
 2. <a name="ref2"></a>Wikipedia contributors, "Regula falsi", Wikipedia, The Free Encyclopedia, 29 January 2021, 23:01 UTC, <https://en.wikipedia.org/w/index.php?oldid=1003635041> [20210203].
