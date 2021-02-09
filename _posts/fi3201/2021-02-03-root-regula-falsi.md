@@ -121,6 +121,45 @@ Figure <a name="fig:rrf-regula-falsi-method-flowchart">1</a> Steps in regula fal
 The result is indicated with $n+2$ in this method as in secant method.
 
 
+## test function
+We would like to examine following function
+
+\begin{equation}
+\label{eqn:rrf-test-function}
+f(x) = 0.01 x^3 - 0.2252 x^2 + 0.4136 x + 1.808,
+\end{equation}
+
+whose roots are $-2$, $4.52$, and $20$. The progress in obtaining prediction of root is given in Fig. <a href="#fig:rrf-regula-falsi-results">2</a>.
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/math/root/root-regula-falsi-2.png)
+![..](/assets/img/math/root/root-regula-falsi-3.png)
+![..](/assets/img/math/root/root-regula-falsi-4.png)
+<br />
+Figure <a name="fig:rrf-regula-falsi-results">2</a> Regula falsi method: $x_1$ and $x_2$ are initial guess (top), $x3$ is predicted using $x_1$ and $x_2$ (middle), and $x_4$ is predicted using $x_1$ and $x_3$ (bottom). 
+{: refdef}
+
+Using a spreadsheet following output is obtained
+
+```
+x	f(x)
+3	1.292
+6	-1.6576
+4.314076485	0.203951017
+4.560395574	-0.040916642
+4.512495995	0.007568713
+4.521408615	-0.001421887
+4.519736097	0.00026635
+4.52004946	-4.99201E-05
+4.519990731	9.35524E-06
+4.520001737	-1.75324E-06
+4.519999674	3.2857E-07
+4.520000061	-6.15763E-08
+```
+
+which leads to $x_{\rm root} = 4.52$.
+
+
 ## exercises
 1. Draw the values $x_2$, $x_3$, $x_4$, .., $x_n$ during the process of finding the root in a $y-x$ chart.
 2. Compare this method with another ones, e.g. Newton-Raphson method, secant method, and show the steps required for same accuracy.
