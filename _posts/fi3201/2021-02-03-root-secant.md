@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["fi3201", "root", "newton", "newton-raphson"]
-date: 2021-02-03 09:20:00 +07
+date: 2021-02-09 18:54:00 +07
 permalink: /fi3201/root-secant
 ---
 Not like the [Newton-Raphson method](/fi3201/root-newton-raphson) that requires a function and its derivative, secant method approximates the derivative with finite-difference method, even it is said that this method actually predates the Newton-Raphson method [[1](#ref1)]. With the approximation it will save large amount of CPU time for machine calculations or considerable amount of effort to do hand calculations if the function has complicated expression, and it gives also a method that converges as fast as the Newton-Raphson method [[2](#ref2)]. This method has still been used in engineering [[3](#ref3)] and improved in mathematics [[4](#ref4)]. This method can be used in Wolfram Languange with `SecantMethodList` [[5](#ref5)] and there is example of implementation of this method in Python [[6](#ref6)].
@@ -57,7 +57,20 @@ Algorithm <a name="alg:rs-secant-method-algorithm">1</a> Secant method. \
 5. $\Rightarrow \color{blue}{\bf\scriptsize STEP} \ 2$.
 6. $x_{\rm root} = x_{n+2}$.
 
-Notice that different than Newton-Raphson method, $f'(x)$ is not required but we need also $x_2$ instead of only $x_1$ as the initial guess. And as always there might be many another variations of algorithm than shown in Alg. <a href="#alg:rs-secant-method-algorithm">1</a>.
+Notice that different than [Newton-Raphson method](/fi3201/root-newton-raphson#algorithm), $f'(x)$ is not required but we need also $x_2$ instead of only $x_1$ as the initial guess. And as always there might be many another variations of algorithm than shown in Alg. <a href="#alg:rs-secant-method-algorithm">1</a>.
+
+
+## flowchart
+Fig. <a href="#fig:rs-secant-method-flowchart">1</a> shows the flowchart of secant method, where in general the steps are similar to the [Newton-Raphson method](/fi3201/root-newton-raphson#flowchart)
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/math/root/root-secant-flowchart.png)
+<br />
+Figure <a name="fig:rs-secant-method-flowchart">1</a> Steps in secant method are described in a flow chart. 
+{: refdef}
+
+In this method the result is indicated with $n+2$, while in Newton-Raphson method with $n+1$.
+
 
 ## implementation
 In implementing algorithm in Alg. <a href="#alg:rnr-newton-raphson-method-algorithm">1</a> or flowchart in Fig. <a href="#fig:rnr-newton-raphson-method-flowchart">1</a> a program can have following output
