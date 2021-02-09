@@ -165,3 +165,25 @@ Since $z$ in Cartesian and cylindrical CSs are actually the same, the relations 
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/math/2021-02-09-intro-coordinate-systems.md)
 
+
+
+{% comment %}
+Diandra
+mengapa arc = r d\theta
+
+KInan
+luas da dr?
+
+Jonathan
+asumsi menghitung luas persegi panjang
+
+084 Dyezahra -- batas R mengapa dari nol
+
+Kinanti --> arah theta koordinat polar.
+
+Dzakwanil batas theta 0 - pi dan 2pi
+
+Siti -- JOanathan sama
+
+0829-an problem. Video tersimpan tapi Zoom putus.
+{% endcomment %}
