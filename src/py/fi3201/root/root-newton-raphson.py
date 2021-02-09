@@ -4,13 +4,15 @@
 #	
 #	Sparisoma Viridi | https://butiran.github.io/
 #	
-#	Execute: node root-newton-raphson.js
+#	Execute: py root-newton-raphson.js
 #	
 #	20210131
 #	1850 Start this program from root-bisection.py.
 #	1954 Continue make test_function and its derivative.
 #	2006 Test it and ok, also for SHOW_PROGRESS.
 #	2009 Correct maxstep to maxstep-1 in while.
+#	20210210
+#	0527 Typo node --> py.
 #	
 
 # Import necessary libraries

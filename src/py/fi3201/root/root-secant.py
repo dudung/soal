@@ -4,11 +4,13 @@
 #	
 #	Sparisoma Viridi | https://butiran.github.io/
 #	
-#	Execute: node root-secant.js
+#	Execute: py root-secant.js
 #	
 #	20210103
 #	1042 Start this program from root-newton-raphton.py.
 # 1351 Remove unecessary semicolons.
+#	20210210
+#	0527 Typo node --> py.
 #	
 
 # Import necessary libraries

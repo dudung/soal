@@ -4,7 +4,7 @@
 #	
 #	Sparisoma Viridi | https://butiran.github.io/
 #	
-#	Execute: node root-scanning.js
+#	Execute: py root-scanning.js
 #	
 #	20210128
 #	1235 Start this program.
@@ -12,6 +12,8 @@
 #	1806 Add reference 1, just now about it.
 #	1828 Test it and ok.
 #	1855 Add reference 2, use it.
+#	20210210
+#	0527 Typo node --> py.
 #	
 #	References
 #	1. Glenn Maynard, "Answer to 'Why are there no ++ and --​

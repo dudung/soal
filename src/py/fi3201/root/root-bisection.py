@@ -4,12 +4,14 @@
 #	
 #	Sparisoma Viridi | https://butiran.github.io/
 #	
-#	Execute: node root-bisection.js
+#	Execute: py root-bisection.js
 #	
 #	20210130
 #	1735 Start this program from root-scanning.py and js codes.
 #	1741 Use list and its append as described in [1].
 #	1805 Test SHOW_PROGRESS, and ok.
+#	20210210
+#	0527 Typo node --> py.
 #	
 #	References
 #	1. pawan_asipu, cffjob, "append() and extend() in Python", 
