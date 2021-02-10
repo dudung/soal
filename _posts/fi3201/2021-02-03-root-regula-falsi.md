@@ -132,8 +132,8 @@ f(x) = 0.01 x^3 - 0.2252 x^2 + 0.4136 x + 1.808,
 whose roots are $-2$, $4.52$, and $20$. The progress in obtaining prediction of root is given in Fig. <a href="#fig:rrf-regula-falsi-results">2</a>.
 
 {:refdef: style="text-align: center;"}
-![..](/assets/img/math/root/root-regula-falsi-2.png)
-![..](/assets/img/math/root/root-regula-falsi-3.png)
+![..](/assets/img/math/root/root-regula-falsi-2.png) \
+![..](/assets/img/math/root/root-regula-falsi-3.png) \
 ![..](/assets/img/math/root/root-regula-falsi-4.png)
 <br />
 Figure <a name="fig:rrf-regula-falsi-results">2</a> Regula falsi method: $x_1$ and $x_2$ are initial guess (top), $x3$ is predicted using $x_1$ and $x_2$ (middle), and $x_4$ is predicted using $x_1$ and $x_3$ (bottom). 
@@ -158,6 +158,43 @@ x	f(x)
 ```
 
 which leads to $x_{\rm root} = 4.52$.
+
+
+## implementation
+Following result can obtained
+```
+n       x       f(x)
+0       3       1.2920000000000005
+0       6       -1.6575999999999984
+1       4.314076484947113       0.2039510165570917
+2       4.560395574452329       -0.040916642034676265
+3       4.512495994584455       0.007568713039659336
+4       4.521408614724482       -0.0014218869629232245
+5       4.519736096966463       0.0002663500357777959
+6       4.520049460146103       -4.992014680826884e-05
+7       4.51999073091976        9.355237911456982e-06
+8       4.520001737094587       -1.7532428879807327e-06
+9       4.519999674456336       3.2856990794805085e-07
+10      4.520000061009185       -6.157632737036067e-08
+11      4.519999988566447       1.1539840194529916e-08
+12      4.520000002142729       -2.1626476165437225e-09
+13      4.519999999598438       4.0529468670058577e-10
+14      4.520000000075255       -7.595479800670546e-11
+
+f(x)  0.01x^3 - 0.2192x^2 + 0.3056x + 1.568
+x1    3
+x2    6
+ε     1e-10
+Nstep 16
+xroot 4.520000000075255
+```
+
+using following code
+
+```
+```
+
+named `root-regula-falsi.py` whose source is available [here]().
 
 
 ## exercises
