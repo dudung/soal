@@ -191,10 +191,61 @@ xroot 4.520000000075255
 
 using following code
 
-```
+```python
+# Import necessary libraries
+import numpy as np
+
+
+# Define a test function
+def test_function(x):
+	y3 = 0.01 * x * x * x
+	y2 = -0.2252 * x * x
+	y1 = 0.4136 * x
+	y0 = 1.808
+	y = y3 + y2 + y1 + y0
+	return y
+
+
+
+# Define input
+f = test_function
+x1 = 3
+x2 = 6
+eps = 1E-10
+n = 0
+maxstep = 40
+
+# Define default message and parameter
+xroot = "not found"
+
+# Do iteration
+Nstep = 0
+x = []
+x.append(x1)
+x.append(x2)
+froot = np.abs(f(x[n]))
+
+while froot > eps and n < maxstep - 1:
+	x.append(x[0] - ((x[n+1] - x[0])/(f(x[n+1]) - f(x[0]))) * f(x[0]))
+	
+	froot = np.abs(f(x[n+2]))
+	if froot < eps:
+		xroot = x[n+2]
+	
+	n += 1
+
+Nstep = n+2
+
+# Display result
+print("f(x)  0.01x^3 - 0.2192x^2 + 0.3056x + 1.568");
+print("x1    ", x1, sep="")
+print("x2    ", x2, sep="")
+print("ε     ", eps, sep="")
+print("Nstep ", Nstep, sep="")
+print("xroot ", xroot, sep="")
 ```
 
-named `root-regula-falsi.py` whose source is available [here]().
+named `root-regula-falsi.py` whose source is available [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/fi3201/root/root-regula-falsi.py).
 
 
 ## exercises
