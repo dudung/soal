@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["fi3201", "linear", "equation", "system"]
-date: 2021-02-11 18:37:00 +07
+date: 2021-02-11 21:11:00 +07
 permalink: /fi3201/sle-examples
 ---
 Even today we can solve system of linear equations (SLE) online, eg. for four equations [[1](#ref1)], it is still interesting to study the SLE especially when you try to find the solution for inconsistent system [[2](#ref2)]. Solution of an SLE must satisfy all equations in the system, which are considered collectively, not individually [[3](#ref3)]. We propose some systems in physics and how we can get the SLE from them.
@@ -171,29 +171,61 @@ loops. Finally, we have
 \label{eqn:slee-dc-er-circuit-3-loops-sle}
 \left(
 \begin{array}{ccc}
-1 & t_1 & \frac12 t_1^2 \newline
-1 & t_2 & \frac12 t_2^2 \newline
-1 & t_3 & \frac12 t_3^2 
+R_{1 + 3 + 4} & R_3 & -R_4 \newline
+R_3 & R_{2 + 3 + 5} & R_5 \newline
+-R_4 & R_5 & R_{4 + 5 + 6 + 7 + 8} 
 \end{array}
 \right)
 \left(
 \begin{array}{c}
-x_0 \newline
-v_0 \newline
-a
+I_1 \newline
+I_2 \newline
+I_3
 \end{array}
 \right)
 =
+\left(
+\begin{array}{c}
+\varepsilon_1 \newline
+\varepsilon_2 \newline
+\varepsilon_3
+\end{array}
+\right),
+\end{equation}
+
+as the SLE matrix representation for uknowns of $I_1$, $I_2$, and $I_3$. Notice that $R_{n \pm m} = R_n \pm R_m$ with $m, n = 1, 2, ..$.
+
+
+## note
+Eqns. \eqref{eqn:slee-non-uniform-linear-motion-sle}, \eqref{eqn:slee-nlm-lm-nlm-sle}, and \eqref{eqn:slee-dc-er-circuit-3-loops-sle} have following form
+
+\begin{equation}
+\label{eqn:slee-general-sle}
+\left(
+\begin{array}{ccc}
+m_{11} & m_{12} & m_{13} \newline
+m_{21} & m_{22} & m_{23} \newline
+m_{31} & m_{32} & m_{33} 
+\end{array}
+\right)
 \left(
 \begin{array}{c}
 x_1 \newline
 x_2 \newline
 x_3
 \end{array}
+\right)
+=
+\left(
+\begin{array}{c}
+y_1 \newline
+y_2 \newline
+y_3
+\end{array}
 \right),
 \end{equation}
 
-as the SLE matrix representation for uknowns of $I_1$, $I_2$, and $I_3$.
+as SLE matrix representation for unknowns $x_1$, $x_2$, and $x_3$.
 
 
 ## references
