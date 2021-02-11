@@ -12,7 +12,36 @@ tags: ["fi3201", "linear", "equation", "system"]
 date: 2021-02-11 14:24:00 +07
 permalink: /fi3201/sle-examples
 ---
-Even today we can solve system of linear equations (SLE) online, eg. for four equations [[1](#ref1)], it is still interesting to study the SLE especially when you try to find the solution for inconsistent system [[2](#ref2)]. Solution of an SLE must satisfy all equations in the system, which are considered collectively, not individually [[3](#ref3)].
+Even today we can solve system of linear equations (SLE) online, eg. for four equations [[1](#ref1)], it is still interesting to study the SLE especially when you try to find the solution for inconsistent system [[2](#ref2)]. Solution of an SLE must satisfy all equations in the system, which are considered collectively, not individually [[3](#ref3)]. We propose some systems in physics and how we can get the SLE from them.
+
+
+## observing non-uniform linear motion
+In a non-uniform linear motion position of particle
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/sle/non-uniform-linear-motion.png)
+<br />
+Figure <a name="fig:slee">1</a> An object drawn as red circle is moving from left to right with initial position and velocity at $t = 0$ are unknown.
+{: refdef}
+
+
+## speed up and slow down in a linear motion
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/sle/kinematics-1d-nlm-lm-nlm.png)
+<br />
+Figure <a name="fig:slee">2</a> .
+{: refdef}
+
+
+## battery resistor dc circuit with three loops
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/sle/dc-er-circuit-3-loops.png)
+<br />
+Figure <a name="fig:slee">3</a> .
+{: refdef}
+
 
 
 ## references
