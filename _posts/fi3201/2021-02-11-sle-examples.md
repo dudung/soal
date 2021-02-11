@@ -74,27 +74,40 @@ which is matrix representation of a LSE [[4](#ref4)].
 
 
 ## speed up and slow down in a linear motion
+Still observing one-dimensional motion, an object can move in three different types of motion. Let make the first is non-uniform linear motion with positive acceleration, the second is linear motion, and the third is non-uniform linear motion but with negative acceleration. Assume that this system represents a block moving on a level ground with kinetic friction $f_s$ and a constant force $F_1$ is applied during $0 < t < t_1$, $F_2$ is applied during $t_1 < t < t_2$, and $F_3$ is applied during $t_2 < t < t_3$, that makes the velocity functions is as in Fig. <a href="#fig:slee-kinematics-1d-nlm-lm-nlm">2</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/sle/kinematics-1d-nlm-lm-nlm.png)
 <br />
-Figure <a name="fig:slee">2</a> .
+Figure <a name="fig:slee-kinematics-1d-nlm-lm-nlm">2</a> Velocity of a block moving on a rough level ground where different horizontal force is applied at different time ranges ($0 < t < t_1$, $t_1 < t < t_2$, and $t_2 < t < t_3$).
 {: refdef}
+
+Since $a_1 = v_{\max} / \Delta t_1$, $a_2 = 0$, and $a_3 = - v_{\max} / \Delta t_3$ with $\Delta t_1 = t_1 - 0$, $\Delta t_2 = t_2 - t_1$, and $\Delta t_3 = t_3 - t_2$, we can have that
+
+\begin{eqnarray}
+\label{eqn:slee-nlm-lm-nlm-1}
+F_1 = , \newline
+\label{eqn:slee-nlm-lm-nlm-2}
+F_2 = , \newline
+\label{eqn:slee-nlm-lm-nlm-3}
+F_3 = ,
+\end{eqnarray}
+
 
 
 ## battery resistor dc circuit with three loops
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/sle/dc-er-circuit-3-loops.png)
-<br />
+<br /> 
 Figure <a name="fig:slee">3</a> .
 {: refdef}
-
 
 
 ## references
 1. <a name="ref1"></a>-, "Online Systems of Equations Solver: Solve equations and systems of equations with Wolfram\|Alpha", Wolfram Alpha, 2021, url <https://www.wolframalpha.com/calculators/system-equation-calculator> [20210211].
 2. <a name="ref2"></a>Elizabeth Stapel, "Systems of Linear Equations" Purple Math, 2020, url <https://www.purplemath.com/modules/systlin1.htm> [20210211].
 3. <a name="ref3"></a>Wikipedia contributors, "System of linear equations", Wikipedia, The Free Encyclopedia, 17 January 2021, 17:30 UTC, url <https://en.wikipedia.org/w/index.php?oldid=1000977892> [20210211].
+4. <a name="ref4"></a>-, "Representing Systems of Linear Equations using Matrices", Hotmath, Varsity Tutors, url <https://www.varsitytutors.com/hotmath/hotmath_help/topics/representing-systems-of-linear-equations-using-matrices> [20210211].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi3201/2021-02-11-sle-examples.md)
