@@ -57,7 +57,7 @@ where `np.pi` is for $\pi$. Since Python has built-in `lambda` function for an a
 
 
 ## code for plotting
-To plot the function and save it in PNG format following code can be used
+To plot the function and save it in PNG format following code named `plot-sine-wave.py` can be used
 
 ```python
 #	Import necessary packages
@@ -136,6 +136,14 @@ plt.show()
 ```
 
 where the full code with comments is available [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/fi3201/vis-anim/plot-sine-wave.py). Actually, the four subfigures in Fig. <a href="#fig:pswp-sine-wave">1</a> are results of the code.
+
+
+## exercises
+1. Investigate the given code `plot-sine-wave.py` and change the sine wave to $y(x, t) = 0.2 \sin(2\pi x - \frac{1}{10}\pi t + \frac14\pi)$.
+2. What is the meaning of `"{:.2f}".format(t)` in converting information of time $t$ represented with variable `t` to a string?
+3. what does happen when you change the string `"seaborn-pastel"` and what other values that you can use?
+4. There are the use of `plt.savefig()` and `plt.show()`. Explain the difference of them.
+5. What is the purpose of `arange()` and `linspace()`? Explain in brief using examples.
 
 
 ## references
