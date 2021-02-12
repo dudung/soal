@@ -60,9 +60,82 @@ where `np.pi` is for $\pi$. Since Python has built-in `lambda` function for an a
 To plot the function and save it in PNG format following code can be used
 
 ```python
+#	Import necessary packages
+import numpy as np
+from matplotlib import pyplot as plt
+from matplotlib.offsetbox import AnchoredText
+
+
+#	Define a function representing a sine wave
+def swave(x, t):
+	A = 1.5
+	_lambda = 1
+	k = 2 * np.pi / _lambda
+	T = 1
+	_omega = 2 * np.pi / T
+	_varphi = 0
+	y = A * np.sin(k * x - _omega *t + _varphi)
+	return y
+
+
+#	Use style
+plt.style.use("seaborn-pastel")
+
+#	Create figure with certain size in inch
+fig = plt.figure(figsize=(2.5, 2.5))
+
+#	Set x range
+xmin = 0
+xmax = 2
+xrange = (xmin, xmax)
+
+#	Set y range
+ymin = -2
+ymax = 2
+yrange = (ymin, ymax)
+
+# Set x and y axes
+ax = plt.axes(xlim=xrange, ylim=yrange)
+
+#	Set axes label
+ax.set_xlabel("x")
+ax.set_ylabel("y")
+
+#	Set xtics
+dx = 0.5
+xtics = np.arange(xmin, xmax + dx, dx)
+ax.set_xticks(xtics)
+
+#	Set ytics
+dy = 1
+ytics = np.arange(ymin, ymax + dy, dy)
+ax.set_yticks(ytics)
+
+#	Get Line2D object representing plotted data
+line, = ax.plot([], [], lw=3)
+
+#	Show grid or with True
+plt.grid()
+
+#	Create data
+t = 0
+x = np.linspace(0, 4, 100)
+y = swave(x, t)
+line.set_data(x, y)
+
+# Add time information
+ts = "{:.2f}".format(t)
+atext = AnchoredText("t = " + ts, loc=1)
+ax.add_artist(atext)
+
+#	Save plot as PNG image
+plt.savefig("sine-t-" + ts + ".png")
+
+# Show plot
+plt.show()
 ```
 
-where the full code with comments is available [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/fi3201/vis-anim/plot-sine-wave.py).
+where the full code with comments is available [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/fi3201/vis-anim/plot-sine-wave.py). Actually, the four subfigures in Fig. <a href="#fig:pswp-sine-wave">1</a> are results of the code.
 
 
 ## references
