@@ -39,7 +39,7 @@ from matplotlib import pyplot as plt
 from matplotlib.offsetbox import AnchoredText
 
 
-#	Define a function representing a wave
+#	Define a function representing a sine wave
 def swave(x, t):
 	A = 1.5
 	_lambda = 1

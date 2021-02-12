@@ -34,10 +34,40 @@ with $A$ is amplitude, $k$ is wavenumber, $\omega$ is angular frequency, and $\v
 Figure <a name="fig:pswp-sine-wave">1</a> A sine wave at four different times showing that it is moving to the right.
 {: refdef}
 
-..
+A sine wave with amplitude $A = 1.5$, period $T = 1$, and phase $\varphi = 0$ for time $t = 0, 0.25, 0.5, 0.75$ are given in Fig. <a href="#fig:pswp-sine-wave">1</a>.
+
+
+## define a function
+We can define a function named `swave` that representing Eqn. \eqref{eqn:pswp-sine-wave} in Python as follow
+
+```python
+#	Define a function representing a sine wave
+def swave(x, t):
+	A = 1.5
+	_lambda = 1
+	k = 2 * np.pi / _lambda
+	T = 1
+	_omega = 2 * np.pi / T
+	_varphi = 0
+	y = A * np.sin(k * x - _omega *t + _varphi)
+	return y
+```
+
+where `np.pi` is for $\pi$. Since Python has built-in `lambda` function for an anonymous function [[2](#ref2)], we will define in the code `_lambda` for $\lambda$, `_omega` for $\omega$, and `_varphi` for $\varphi$. It is for consistency in writing variable name for Greek alphabet and related $\LaTeX$ symbol.
+
+
+## code for plotting
+To plot the function and save it in PNG format following code can be used
+
+```python
+```
+
+where the full code with comments is available [here](https://github.com/butiran/butiran.github.io/blob/master/src/py/fi3201/vis-anim/plot-sine-wave.py).
 
 
 ## references
 1. <a name="ref1"></a>Wikipedia contributors, "Sine wave", Wikipedia, The Free Encyclopedia, 5 February 2021, 14:05 UTC, url <https://en.wikipedia.org/w/index.php?oldid=1005006807> [20210212].
+2. -, "Python Lambda", W3Schools, url https://www.w3schools.com/python/python_lambda.asp [20210212].
+
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi3201/2021-02-12-plot-sine-wave-png.md)
