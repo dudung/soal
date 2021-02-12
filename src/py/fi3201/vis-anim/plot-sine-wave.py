@@ -53,7 +53,7 @@ def swave(x, t):
 plt.style.use("seaborn-pastel")
 
 #	Create figure with certain size in inch
-fig = plt.figure(figsize=(3, 2.5))
+fig = plt.figure(figsize=(2.5, 2.5))
 
 #	Set x range
 xmin = 0
@@ -89,7 +89,7 @@ line, = ax.plot([], [], lw=3)
 plt.grid()
 
 #	Create data
-t = 0.75
+t = 0
 x = np.linspace(0, 4, 100)
 y = swave(x, t)
 line.set_data(x, y)

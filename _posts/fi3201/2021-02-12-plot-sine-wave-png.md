@@ -12,11 +12,14 @@ tags: ["fi3201", "plot", "sine", "python"]
 date: 2021-02-12 20:53:00 +07
 permalink: /fi3201/plot-sine-wave-png
 ---
-..
+How to create a sine function representing a wave, plot it, and save it to a PNG file are discussed here.
 
 
 {:refdef: style="text-align: center;"}
-![..](/assets/img/phys/sle/kinematics-1d-nlm-lm-nlm.png)
+![..](/assets/img/code/py/wave/sine-t-0.00.png)
+![..](/assets/img/code/py/wave/sine-t-0.25.png) \
+![..](/assets/img/code/py/wave/sine-t-0.50.png)
+![..](/assets/img/code/py/wave/sine-t-0.75.png)
 <br />
 Figure <a name="fig:slee-kinematics-1d-nlm-lm-nlm">2</a> Velocity of a block moving on a rough level ground where different horizontal force is applied at different time ranges ($0 < t < t_1$, $t_1 < t < t_2$, and $t_2 < t < t_3$).
 {: refdef}
