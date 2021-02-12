@@ -1,10 +1,10 @@
 #	
-#	plot-sine.py
-#	Produce a PNG file of a sine
+#	plot-sine-wave.py
+#	Produce a PNG file of a sine wave plot
 #	
 #	Sparisoma Viridi | https://butiran.github.io
 #	
-#	Execute: py moving-sine-wave.py
+#	Execute: py plot-sine-wave.py
 #	Output: sine-t-<time>.png
 #	
 #	20210212
