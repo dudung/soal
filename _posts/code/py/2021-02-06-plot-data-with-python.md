@@ -115,6 +115,10 @@ Figure <a name="fig:pdw-travelling-wave">1</a> Travelling wave from Eqn. \eqref{
 Fig. <a href="#fig:pdw-travelling-wave">1</a> show the result of `plot-trav-wave-x.py` by setting `t = 0.0`, `t = 0.25`. and `t = 0.5` after the line `# Set observation time`.
 
 
+## note
+If you prefer to save the result in a file with PNG format or show it using Matplotlib and at the same time save it, plese refer to [plot sine wave png](/fi3201/plot-sine-wave-png).
+
+
 ## exercises
 1. Explain the use of Python function `arange` from `NumPy` in creating an array.
 2. In setting axis using `plot` there is format for mark, line, and color, where we use `sr-` in the code `plot-trav-wave-x.py`. Find the format and what options we can use for them.
