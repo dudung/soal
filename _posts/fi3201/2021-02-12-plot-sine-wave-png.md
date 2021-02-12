@@ -12,14 +12,18 @@ tags: ["fi3201", "plot", "sine", "python"]
 date: 2021-02-12 20:53:00 +07
 permalink: /fi3201/plot-sine-wave-png
 ---
-How to create sine wave [[1](#ref1)], plot it, and save it to a PNG file are discussed here.
+How to create a sine function representing a wave, plot it, and save it to a PNG file are discussed here.
 
+
+## sine wave
+It is a continuous wave that has the form of [[1](#ref1)]
 
 \begin{equation}
-\label{eqn:slee-nlm-lm-nlm-Wext}
-W_{\rm ext} = \frac12 v_{\max} f_1 \Delta t_1 + v_{\max} f_2 \Delta t_2 + \frac12 v_{\max} f_3 \Delta t_3
+\label{eqn:pswp-sine-wave}
+y(x, t) = A \sin(kx - \omega t + \varphi),
 \end{equation}
 
+with $A$ is amplitude, $k$ is wavenumber, $\omega$ is angular frequency, and $\varphi$ is phase, where $y(x, t)$ is displacement of $A$ at position $x$ and time $t$. 
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/code/py/wave/sine-t-0.00.png)
@@ -29,6 +33,8 @@ W_{\rm ext} = \frac12 v_{\max} f_1 \Delta t_1 + v_{\max} f_2 \Delta t_2 + \frac1
 <br />
 Figure <a name="fig:pswp-sine-wave">1</a> A sine wave at four different times showing that it is moving to the right.
 {: refdef}
+
+..
 
 
 ## references

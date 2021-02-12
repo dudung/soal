@@ -19,6 +19,7 @@
 #	2027 Set figure size [8], but in inch?
 #	2038 Convert time with certain precision for output [9].
 #	2024 Change size for Jekyll blog, hopefully better.
+#	2120 Add _varphi to the function wave.
 #	
 #	References
 #	1. Parul Pandey, "Animations with Mathplotlib", Towards Data Science, 14 Apr 2019, url https://towardsdatascience.com/animation-with-matplotlib-d96375c5442c [20210212].
@@ -38,14 +39,15 @@ from matplotlib import pyplot as plt
 from matplotlib.offsetbox import AnchoredText
 
 
-#	Define a function representing a static wave
+#	Define a function representing a wave
 def swave(x, t):
 	A = 1.5
 	_lambda = 1
 	k = 2 * np.pi / _lambda
 	T = 1
 	_omega = 2 * np.pi / T
-	y = A * np.sin(k * x - _omega *t)
+	_varphi = 0
+	y = A * np.sin(k * x - _omega *t + _varphi)
 	return y
 
 
