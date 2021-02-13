@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["coordinate system", "coordinate", "intro"]
-date: 2021-02-08 09:51:00 +07
+date: 2021-02-13 19:09:00 +07
 permalink: /math/intro-coordinate-systems
 ---
 Polar coordinate system [[1](#ref1)] and cylindrical coordinates system [[2](#ref2)] are in brief introduced and discussed here. As comparation cartesian coordinate system [[3](#ref3)] is also mentioned.
@@ -47,7 +47,7 @@ We can compare the Cartesian and polar coordinates systems as shown in Fig. <a h
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/cs/cs-xy-rtheta.png)
 <br />
-Figure <a name="fig:ics-cs-xy-rtheta">2</a> Cartesian coordinate system (left) and polar coordinate system (righ).
+Figure <a name="fig:ics-cs-xy-rtheta">2</a> Cartesian coordinate system (left) and polar coordinate system (right).
 {: refdef}
 
 A position vector $\vec{r}$ in Cartesian coordinate system is defined using two components $x$ and $y$, where they are measured along $x$ and $y$ axes. The projection of $\vec{r}$ along each axis should be perpendicular to the axis. A position vector in polar coordinate is defined using two components $r$ and $\theta$, where the first component is always along the vector itself, while the second one is angle measured from a $x$ axis in counter clockwise direction. There are ome relations
@@ -119,7 +119,7 @@ We can also relate the Cartesian CS with cylindrical cs, where they are illustra
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/cs/cs-cartesian-cylindrical.png)
 <br />
-Figure <a name="fig:ics-cs-cartesian-cylindrical">2</a> Cartesian coordinate system (left) and cylindrical coordinate system (righ).
+Figure <a name="fig:ics-cs-cartesian-cylindrical">2</a> Cartesian coordinate system (left) and cylindrical coordinate system (right).
 {: refdef}
 
 Then there are relations
@@ -150,6 +150,16 @@ y = r \sin\theta.
 \end{equation}
 
 Since $z$ in Cartesian and cylindrical CSs are actually the same, the relations are similar between polar and Cartesian (2-d) coordinate systems.
+
+
+## spherical coordinate system
+..
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/math/cs/cs-cartesian-spherical.png)
+<br />
+Figure <a name="fig:ics-cs-cartesian-spherical">2</a> Cartesian coordinate system (upper left) and spherical coordinate system (upper right).
+{: refdef}
 
 
 ## exercises
