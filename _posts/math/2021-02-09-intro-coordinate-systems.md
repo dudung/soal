@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["coordinate system", "coordinate", "intro"]
-date: 2021-02-13 19:09:00 +07
+date: 2021-02-13 20:08:00 +07
 permalink: /math/intro-coordinate-systems
 ---
 Polar coordinate system [[1](#ref1)] and cylindrical coordinates system [[2](#ref2)] are in brief introduced and discussed here. As comparation cartesian coordinate system [[3](#ref3)] is also mentioned.
@@ -97,12 +97,12 @@ and the concept of [unit vector](/math/unit-vector).
 
 
 ## cylindrical coordinate system
-We can see that the cylindrical coordinate system as extension of polar coordinate system with additional $z$ components as shown in in Fig. <a href="#fig:ics-cs-polar-cylindrical">2</a>. This is similar as illustration in Fig. <a href="#fig:ics-cartesian-cartesian">1</a> that relates 2-d Cartesian coordinate system with its 3-d.
+We can see that the cylindrical coordinate system as extension of polar coordinate system with additional $z$ components as shown in in Fig. <a href="#fig:ics-cs-polar-cylindrical">3</a>. This is similar as illustration in Fig. <a href="#fig:ics-cartesian-cartesian">1</a> that relates 2-d Cartesian coordinate system with its 3-d.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/cs/cs-polar-cylindrical.png)
 <br />
-Figure <a name="fig:ics-cs-polar-cylindrical">2</a> Polar coordinate system (left) and cylindrical coordinate system (righ).
+Figure <a name="fig:ics-cs-polar-cylindrical">3</a> Polar coordinate system (left) and cylindrical coordinate system (righ).
 {: refdef}
 
 A position vector in this coordinate system (CS) is defined as
@@ -114,12 +114,12 @@ A position vector in this coordinate system (CS) is defined as
 
 Component along $\hat{\theta}$ direction does not exist in position vector. It will arise in velocity vector. Do you still remember angular velocity? It is actuallya velocity component in angular or $\hat{\theta}$ direction.
 
-We can also relate the Cartesian CS with cylindrical cs, where they are illustrated in Fig. <a href="#fig:ics-cartesian-cylindrical">3</a>.
+We can also relate the Cartesian CS with cylindrical cs, where they are illustrated in Fig. <a href="#fig:ics-cs-cartesian-cylindrical">4</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/cs/cs-cartesian-cylindrical.png)
 <br />
-Figure <a name="fig:ics-cs-cartesian-cylindrical">2</a> Cartesian coordinate system (left) and cylindrical coordinate system (right).
+Figure <a name="fig:ics-cs-cartesian-cylindrical">4</a> Cartesian coordinate system (left) and cylindrical coordinate system (right).
 {: refdef}
 
 Then there are relations
@@ -153,18 +153,40 @@ Since $z$ in Cartesian and cylindrical CSs are actually the same, the relations 
 
 
 ## spherical coordinate system
-..
+Here we use the convention of $(r, \theta, \varphi)$ for spherical CS, which is frequently encountered in physics instead of in mathematics [[5](#ref5)]. There are also other conventions [[6](#ref6)]. Fig. <a href="#fig:ics-cs-cartesian-spherical">5</a> shows the radial distance $r$, polar angle $\theta$, and azimuthal angle $\varphi$.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/cs/cs-cartesian-spherical.png)
 <br />
-Figure <a name="fig:ics-cs-cartesian-spherical">2</a> Cartesian coordinate system (upper left) and spherical coordinate system (upper right).
+Figure <a name="fig:ics-cs-cartesian-spherical">5</a> Cartesian coordinate system (upper left) and spherical coordinate system (upper right).
 {: refdef}
+
+We can have from previous figure that
+
+\begin{equation}
+\label{eqn:ics-cs-sph-car-x}
+x = r \sin\theta \cos\varphi,
+\end{equation}
+
+\begin{equation}
+\label{eqn:ics-cs-sph-car-y}
+y = r \sin\theta \sin\varphi,
+\end{equation}
+
+\begin{equation}
+\label{eqn:ics-cs-sph-car-z}
+z = r \cos\theta.
+\end{equation}
+
+The lower row in Fig. <a href="#fig:ics-cs-cartesian-spherical">5</a> explains how to obtain Eqns. \eqref{eqn:ics-cs-sph-car-x}, \eqref{eqn:ics-cs-sph-car-y}, and \eqref{eqn:ics-cs-sph-car-z}.
 
 
 ## exercises
 1. Prove Eqn. \eqref{eqn:ics-cs-unit-r} using Eqn. \eqref{eqn:ics-cs-r-vector}, and length of a vector by implementing concept of [unit vector](/math/unit-vector).
 2. Do you have idea how to get Eqn. \eqref{eqn:ics-cs-unit-theta}? Explain in brief.
+3. Find the unit vector in spherical coordinate systems $\hat{r}$, $\hat{\theta}$, and $\hat{\varphi}$.
+4. Using Eqns. \eqref{eqn:ics-cs-sph-car-x}, \eqref{eqn:ics-cs-sph-car-y}, and \eqref{eqn:ics-cs-sph-car-z} show that $r = \sqrt{x^2 + y^2 + z^2}$ for any values of $\theta$ and $\varphi$.
+5. Compare Cartesian, cylindrical, and spherical coordinate systems in a table. Use $\rho$ in cylindrical coordinate system instead of $r$ to differ it from $r$ in spherical coordinate system. Write also the relation between two coordinate systems.
 
 
 ## references
@@ -172,6 +194,8 @@ Figure <a name="fig:ics-cs-cartesian-spherical">2</a> Cartesian coordinate syste
 2. <a name="ref2"></a>Eric W. Weisstein, "Cylindrical Coordinates", from MathWorld--A Wolfram Web Resource, url  <https://mathworld.wolfram.com/CylindricalCoordinates.html> [20210209].
 3. <a name="ref3"></a>Carl R. Nave, "Rectangular Coordinates", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/coord.html#c2> [20210209].
 4. <a name="ref4"></a>Nykamp DQ, "Cartesian coordinates", from Math Insight, url <http://mathinsight.org/cartesian_coordinates> [20210209].
+5. <a name="ref5"></a>Wikipedia contributors, "Spherical coordinate system", Wikipedia, The Free Encyclopedia, 26 Jan 2021, 22:53 UTC, url <https://en.wikipedia.org/w/index.php?oldid=1002982404> [20210213].
+6. <a name="ref6"></a>Eric W. Weisstein, "Spherical Coordinates", from MathWorld--A Wolfram Web Resource, url <https://mathworld.wolfram.com/SphericalCoordinates.html> [20210213].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/math/2021-02-09-intro-coordinate-systems.md)
 
