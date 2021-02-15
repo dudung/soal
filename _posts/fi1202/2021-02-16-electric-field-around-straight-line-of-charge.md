@@ -1,17 +1,23 @@
 ---
 layout: post
 author: viridi
-title: blank
+title: electric field around straight line of charge
 mathjax: true
 ptext: false
 x3dom: false
 threejs: false
 oo: false
 category: physics
-tags: ["", "", "", ""]
-date: 2021-02-08 00:00:00 +07
-permalink: /blank
+tags: ["electric field", "line of charge", "around"]
+date: 2021-02-16 06:36 +07
+permalink: /fi1202/electric-field-around-straight-line-of-charge
 ---
+
+
+
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi1202/2021-02-16-electric-field-around-straight-line-of-charge.md)
+
+
 According to [[1](#ref1)].
 
 http://hyperphysics.phy-astr.gsu.edu/hbase/electric/elelin.html
