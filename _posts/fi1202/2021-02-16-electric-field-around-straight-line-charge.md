@@ -1,7 +1,7 @@
 ---
 layout: post
 author: viridi
-title: electric field around straight line of charge
+title: electric field around straight line charge
 mathjax: true
 ptext: false
 x3dom: false
@@ -12,15 +12,22 @@ tags: ["electric field", "line of charge", "around"]
 date: 2021-02-16 06:36 +07
 permalink: /fi1202/electric-field-around-straight-line-of-charge
 ---
+We can find electric field due to a line 
+According to [[1](#ref1)]
 
 
+## References
+1. <a name="ref1"></a>Carl R. Nave, "Electric Field of Line Charge", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/electric/elelin.html> [20201216].
+2. <a name="ref2"></a>Kenneth H. Carpenter, "Field of a Finite Line Charge", EECE557, Department of Electrical and Computer Engineering, Kansas State University, 3 Sep 2008, url <http://www.ece.k-state.edu//people/faculty/carpenter/documents/finite-line-field.pdf> [20210216]/
+3. <a name="ref3"></a>
+4. <a name="ref4"></a>
 
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi1202/2021-02-16-electric-field-around-straight-line-of-charge.md)
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi1202/2021-02-16-electric-field-around-straight-line-charge.md)
 
 
-According to [[1](#ref1)].
+.
 
-http://hyperphysics.phy-astr.gsu.edu/hbase/electric/elelin.html
+
 
 http://www.ece.k-state.edu//people/faculty/carpenter/documents/finite-line-field.pdf
 
