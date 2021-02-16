@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["electric field", "line of charge", "around"]
-date: 2021-02-16 23:36 +07
+date: 2021-02-16 23:40 +07
 permalink: /fi1202/enclosed-charge
 ---
 Amount of charge enclosed by Gaussian surface is the enclosed charge [[1](#ref1), [2](#ref2)], where it can be assessed by mapping the electric field on a closed surface outside the charge distribution using Gauss's law [[3](#ref3)]. Some illustrations are given and discussed here.
@@ -40,7 +40,7 @@ We can have from Fig. <a href="#fig:ec-qenc-surface-concept">2</a> that enclosed
 Figure <a name="fig:ec-cell-sc-bcc">3</a> Two varieties of the cubic crystal system: simple cubic (left) and body-centered cubic (right).
 {: refdef}
 
-In cubic crystal system there are simple cubic (SC) and body-centered cubic (BCC), whichh area two of three main varieties of the cubic crystal system [[5](#ref5)]. If each single sphere represents a charege $Q$ then in the SC we can have that $q_{\rm enc} = Q$. Can you see that?
+In cubic crystal system there are simple cubic (SC) and body-centered cubic (BCC), whichh area two of three main varieties of the cubic crystal system [[5](#ref5)]. If each single sphere represents a charge $Q$ then in the SC we can have that $q_{\rm enc} = Q$ with cubic Gaussian surface as shown in previous figure. Can you see that?
 
 
 ## spherical charge distribution
@@ -129,7 +129,7 @@ with $r$, $R$, $R_1$, and $R_2$ as in Eqns. \eqref{eqn:ec-solid-sphere-homogeneo
 1. Using cubic Gaussian surface in Fig. <a href="#fig:ec-half-sphere-in-box">1</a>, where is the position of the sphere to get $q_{\rm enc} = \frac18 Q$ exactly? Explain in brief.
 2. Why is it not recommended to get the enclosed charge $q_{\rm enc}$ in Fig. <a href="#fig:ec-half-sphere-in-box">1</a> (center) using a cubic Gaussian surface? See [[4](#ref4)] if necessary to find the answer.
 3. From Fig. <a href="#fig:ec-qenc-surface-concept">2</a> find enclosed charge $q_{\rm enc}$ for Gaussian surface $s_1$ and $s_4$. Show how you come the the answers.
-4. Find the $q_{\rm enc}$ for BCC in Fig. <a href="#fig:ec-cell-sc-bcc">3</a> (right). Explain why you give the answer.
+4. Find the $q_{\rm enc}$ for BCC in Fig. <a href="#fig:ec-cell-sc-bcc">3</a> (right) with the given cubic Gaussian surface. Explain why you give the answer.
 5. Show how to obtain Eqn. \eqref{eqn:ec-solid-sphere-homogeneous-isotropic-rho} using Eqn. \eqref{eqn:ec-enclosed-charge}.
 6. Using Eqn. \eqref{eqn:ec-enclosed-charge}, try to derive Eqn. \eqref{eqn:ec-hollow-sphere-homogeneous-isotropic-rho}.
 7. In Eqns. Eqn. \eqref{eqn:ec-solid-sphere-homogeneous-isotropic-rho} and Eqn. \eqref{eqn:ec-hollow-sphere-homogeneous-isotropic-rho} how the relation between radius range, e.g. $0 \le r \le R$ and lower and upper bounds of the integral? Explain in brief.
