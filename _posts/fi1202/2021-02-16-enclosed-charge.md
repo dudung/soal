@@ -87,7 +87,42 @@ Q, & R < r,
 \right.,
 \end{equation}
 
-where $r$ is radius of the spherical Gaussian surface, $R_1$ and $R_2$ are inner and outter radii of the sphere, respectively.
+where $r$ is radius of the spherical Gaussian surface, $R_1$ and $R_2$ are inner and outter radii of the hollow sphere, respectively.
+
+### formulation
+Enclosed charge can obtained using
+
+\begin{equation}
+\label{eqn:ec-enclosed-charge}
+q_{\rm enc} = \int \rho dV = \int \rho(r) \ r^2 dr \int \sin\theta d\theta \int d\varphi = 4\pi \int \rho(r) \ r^2 dr,
+\end{equation}
+
+where $\rho = \rho(r)$ is volume charge density, which can be function of radius $r$. Then for solid sphere 
+
+\begin{equation}
+\label{eqn:ec-solid-sphere-homogeneous-isotropic-rho}
+\rho(r) = \left\\{
+\begin{array}{lr}
+\displaystyle \frac{Q}{V}, & 0 \le r \le R, \newline
+0, & R < r,
+\end{array}
+\right.,
+\end{equation}
+
+while for hollow sphere
+
+\begin{equation}
+\label{eqn:ec-hollow-sphere-homogeneous-isotropic-rho}
+\rho(r) = \left\\{
+\begin{array}{lr}
+0, & 0 \le r < R_1, \newline
+\displaystyle \frac{3Q}{4\pi (R_2^3 - R_1^3)}, & 0 \le r \le R_2, \newline
+0, & R < r,
+\end{array}
+\right.,
+\end{equation}
+
+with $r$, $R$, $R_1$, and $R_2$ as in Eqns. \eqref{eqn:ec-solid-sphere-homogeneous-isotropic} and \eqref{eqn:ec-hollow-sphere-homogeneous-isotropic}.
 
 
 ## exercises
@@ -95,6 +130,7 @@ where $r$ is radius of the spherical Gaussian surface, $R_1$ and $R_2$ are inner
 2. Why is it not recommended to get the enclosed charge $q_{\rm enc}$ in Fig. <a href="#fig:ec-half-sphere-in-box">1</a> (center) using a cubic Gaussian surface? See [[4](#ref4)] if necessary to find the answer.
 3. From Fig. <a href="#fig:ec-qenc-surface-concept">2</a> find enclosed charge $q_{\rm enc}$ for Gaussian surface $s_1$ and $s_4$. Show how you come the the answers.
 4. Find the $q_{\rm enc}$ for BCC in Fig. <a href="#fig:ec-cell-sc-bcc">3</a> (right). Explain why you give the answer.
+5. Show how to obtain Eqns. \eqref{eqn:ec-solid-sphere-homogeneous-isotropic-rho} and \eqref{eqn:ec-hollow-sphere-homogeneous-isotropic-rho} using Eqn. \eqref{eqn:ec-enclosed-charge}.
 
 
 ## References
