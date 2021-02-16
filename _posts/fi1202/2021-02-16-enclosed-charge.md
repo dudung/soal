@@ -133,7 +133,7 @@ with $r$, $R$, $R_1$, and $R_2$ as in Eqns. \eqref{eqn:ec-solid-sphere-homogeneo
 5. Show how to obtain Eqns. \eqref{eqn:ec-solid-sphere-homogeneous-isotropic-rho} and \eqref{eqn:ec-hollow-sphere-homogeneous-isotropic-rho} using Eqn. \eqref{eqn:ec-enclosed-charge}.
 
 
-## References
+## references
 1. <a name="ref1"></a>OpenStax, "6.4: Applyig Gauss's Law", Physics LibreTexts, 6 Nov 2020, url <https://phys.libretexts.org/Bookshelves/University_Physics/Book%3A_University_Physics_(OpenStax)/Map%3A_University_Physics_II_-_Thermodynamics_Electricity_and_Magnetism_(OpenStax)/06%3A_Gauss's_Law/6.04%3A_Applying_Gausss_Law> [20210216].
 2. <a name="ref2"></a>Wikipedia contributors, "Gaussian surface", Wikipedia, The Free Encyclopedia, 15 Nov 2020, 22:24 UTC, url <https://en.wikipedia.org/w/index.php?oldid=988897483> [20210216].
 3. <a name="ref3"></a>Carl R. Nave, "Gauss's Law", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/electric/gaulaw.html> [20210216].
