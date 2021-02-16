@@ -17,6 +17,7 @@ We can find electric field due to a line charge around the wire (line charge) us
 
 ## overview
 Following figures show the overview of this topic.
+
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/line/straight-line-charge-side-rot-rofs.png)
 <br />
