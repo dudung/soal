@@ -15,6 +15,56 @@ permalink: /fi1202/electric-field-around-straight-line-of-charge
 We can find electric field due to a line charge around the wire (line charge) using scalar [[1](#ref1)] or vector approaches [[2](#ref2)], where there is also another approach using polar coordinate [[3](#ref3)]. One of the application of this system is on the antenna [[4](#ref4)].
 
 
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/line/straight-line-charge-side-rot-rofs.png)
+<br />
+Figure <a name="fig:x">1</a> ...
+{: refdef}
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/line/straight-line-charge-side-alt-rofs.png)
+<br />
+Figure <a name="fig:x">2</a> ...
+{: refdef}
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/line/straight-line-charge-side-e-field-element.png)
+<br />
+Figure <a name="fig:x">3</a> ...
+{: refdef}
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/line/straight-line-charge-side-semi-infinite-length.png)
+<br />
+Figure <a name="fig:x">4</a> ...
+{: refdef}
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/line/straight-line-charge-side-semi-infinite-length.png)
+<br />
+Figure <a name="fig:x">5</a> ...
+{: refdef}
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/line/straight-line-charge-side-infinite-length.png)
+<br />
+Figure <a name="fig:x">6</a> ...
+{: refdef}
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/line/straight-line-charge-side-infinite-length-gauss.png)
+<br />
+Figure <a name="fig:x">7</a> ...
+{: refdef}
+
+{:refdef: style="text-align: center;"}
+![..](/assets/img/phys/electrostatics/line/straight-line-charge-side-infinite-length-gauss-cylinder.png)
+<br />
+Figure <a name="fig:x">8</a> ...
+{: refdef}
+
+
+
 ## References
 1. <a name="ref1"></a>Carl R. Nave, "Electric Field of Line Charge", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/electric/elelin.html> [20201216].
 2. <a name="ref2"></a>Kenneth H. Carpenter, "Field of a Finite Line Charge", EECE557, Department of Electrical and Computer Engineering, Kansas State University, 3 Sep 2008, url <http://www.ece.k-state.edu//people/faculty/carpenter/documents/finite-line-field.pdf> [20210216]
@@ -22,6 +72,8 @@ We can find electric field due to a line charge around the wire (line charge) us
 4. <a name="ref4"></a>Rajeev Thottappillil, Martin A. Uman, "Electric and magnetic fields from a semi-infinite vertical thin-wire antenna above a conducting plane", Progress in Electromagnetic Research Symposium 2004, Pisa, Italy, 28 -31 March 2004, url <http://www.piers.org/piers2k4Pisa/session_62/62_05.pdf> [20210216].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi1202/2021-02-16-electric-field-around-straight-line-charge.md)
+
+
 
 
 
