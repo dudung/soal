@@ -12,22 +12,20 @@ tags: ["electric field", "line of charge", "around"]
 date: 2021-02-16 06:36 +07
 permalink: /fi1202/electric-field-around-straight-line-of-charge
 ---
-We can find electric field due to a line 
-According to [[1](#ref1)]
+We can find electric field due to a line charge around the wire (line charge) using scalar [[1](#ref1)] or vector approaches [[2](#ref2)], where there is also another approach using polar coordinate [[3](#ref3)]. One of the application of this system is on the antenna [[4](#ref4)].
 
 
 ## References
 1. <a name="ref1"></a>Carl R. Nave, "Electric Field of Line Charge", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/electric/elelin.html> [20201216].
-2. <a name="ref2"></a>Kenneth H. Carpenter, "Field of a Finite Line Charge", EECE557, Department of Electrical and Computer Engineering, Kansas State University, 3 Sep 2008, url <http://www.ece.k-state.edu//people/faculty/carpenter/documents/finite-line-field.pdf> [20210216]/
-3. <a name="ref3"></a>
-4. <a name="ref4"></a>
+2. <a name="ref2"></a>Kenneth H. Carpenter, "Field of a Finite Line Charge", EECE557, Department of Electrical and Computer Engineering, Kansas State University, 3 Sep 2008, url <http://www.ece.k-state.edu//people/faculty/carpenter/documents/finite-line-field.pdf> [20210216]
+3. <a name="ref3"></a>Fulin Zuo, "A geometric method to determine the electric field due to a uniformly charged line segment", American Journal of Physics [Am. J. Phys.],  vol. 83, no. 6, p. 567, Jun 2015, url <https://doi.org/10.1119/1.4906421>.
+4. <a name="ref4"></a>Rajeev Thottappillil, Martin A. Uman, "Electric and magnetic fields from a semi-infinite vertical thin-wire antenna above a conducting plane", Progress in Electromagnetic Research Symposium 2004, Pisa, Italy, 28 -31 March 2004, url <http://www.piers.org/piers2k4Pisa/session_62/62_05.pdf> [20210216].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi1202/2021-02-16-electric-field-around-straight-line-charge.md)
 
 
-.
 
-
+{% comment %}
 
 http://www.ece.k-state.edu//people/faculty/carpenter/documents/finite-line-field.pdf
 
@@ -49,7 +47,6 @@ http://www.piers.org/piers2k4Pisa/session_62/62_05.pdf
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/x/2020-12-17-blank.md)
 
-{% comment %}
 Fig. <a href="#fig:x">1</a>.
 
 {:refdef: style="text-align: center;"}
