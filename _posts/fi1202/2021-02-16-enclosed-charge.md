@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["electric field", "line of charge", "around"]
-date: 2021-02-16 23:23 +07
+date: 2021-02-16 23:36 +07
 permalink: /fi1202/enclosed-charge
 ---
 Amount of charge enclosed by Gaussian surface is the enclosed charge [[1](#ref1), [2](#ref2)], where it can be assessed by mapping the electric field on a closed surface outside the charge distribution using Gauss's law [[3](#ref3)]. Some illustrations are given and discussed here.
