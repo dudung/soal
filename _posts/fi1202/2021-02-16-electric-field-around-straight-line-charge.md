@@ -109,4 +109,9 @@ Fig. <a href="#fig:x">1</a>.
 <br />
 Figure <a name="fig:x">1</a> ...
 {: refdef}
+
+20210216
+1. Hakim q menyebar di luar permukaan konduktor di dalam nol.
+2. Syakir perbedaan d, e, i
+3. Kinanti homogen itu apa?
 {% endcomment %}
