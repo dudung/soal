@@ -81,7 +81,7 @@ For this system the enclosed charge is
 q_{\rm enc} = \left\\{
 \begin{array}{lr}
 0, & 0 \le r < R_1, \newline
-\displaystyle \left( \frac{r^3 - R_1^3}{R_2^3 - R_1^3} \right) Q, & 0 \le r \le R_2, \newline
+\displaystyle \left( \frac{r^3 - R_1^3}{R_2^3 - R_1^3} \right) Q, & R_1 \le r \le R_2, \newline
 Q, & R < r,
 \end{array}
 \right.,
@@ -116,7 +116,7 @@ while for hollow sphere
 \rho(r) = \left\\{
 \begin{array}{lr}
 0, & 0 \le r < R_1, \newline
-\displaystyle \frac{3Q}{4\pi (R_2^3 - R_1^3)}, & 0 \le r \le R_2, \newline
+\displaystyle \frac{3Q}{4\pi (R_2^3 - R_1^3)}, & R_1 \le r \le R_2, \newline
 0, & R < r,
 \end{array}
 \right.,
@@ -130,7 +130,12 @@ with $r$, $R$, $R_1$, and $R_2$ as in Eqns. \eqref{eqn:ec-solid-sphere-homogeneo
 2. Why is it not recommended to get the enclosed charge $q_{\rm enc}$ in Fig. <a href="#fig:ec-half-sphere-in-box">1</a> (center) using a cubic Gaussian surface? See [[4](#ref4)] if necessary to find the answer.
 3. From Fig. <a href="#fig:ec-qenc-surface-concept">2</a> find enclosed charge $q_{\rm enc}$ for Gaussian surface $s_1$ and $s_4$. Show how you come the the answers.
 4. Find the $q_{\rm enc}$ for BCC in Fig. <a href="#fig:ec-cell-sc-bcc">3</a> (right). Explain why you give the answer.
-5. Show how to obtain Eqns. \eqref{eqn:ec-solid-sphere-homogeneous-isotropic-rho} and \eqref{eqn:ec-hollow-sphere-homogeneous-isotropic-rho} using Eqn. \eqref{eqn:ec-enclosed-charge}.
+5. Show how to obtain Eqn. \eqref{eqn:ec-solid-sphere-homogeneous-isotropic-rho} using Eqn. \eqref{eqn:ec-enclosed-charge}.
+6. Using Eqn. \eqref{eqn:ec-enclosed-charge}, try to derive Eqn. \eqref{eqn:ec-hollow-sphere-homogeneous-isotropic-rho}.
+7. In Eqns. Eqn. \eqref{eqn:ec-solid-sphere-homogeneous-isotropic-rho} and Eqn. \eqref{eqn:ec-hollow-sphere-homogeneous-isotropic-rho} how the relation between radius range, e.g. $0 \le r \le R$ and lower and upper bounds of the integral? Explain in brief.
+8. How do you obtain the factor $Q/V$ in Eqn. \eqref{eqn:ec-solid-sphere-homogeneous-isotropic-rho}?
+9. In Eqn. \eqref{eqn:ec-hollow-sphere-homogeneous-isotropic-rho} there is a factor $\frac{3Q}{4\pi (R_2^3 - R_1^3)}$. Explain how to produce it.
+10. Why are $\rho = 0$ out of the spherical systems in Figs. <a href="#fig:ec-solid-sphere-in-sphere">4</a> and <a href="#fig:ec-hollow-sphere-in-sphere">5</a>?
 
 
 ## references
