@@ -15,6 +15,8 @@ permalink: /fi1202/electric-field-around-straight-line-of-charge
 We can find electric field due to a line charge around the wire (line charge) using scalar [[1](#ref1)] or vector approaches [[2](#ref2)], where there is also another approach using polar coordinate [[3](#ref3)]. One of the application of this system is on the antenna [[4](#ref4)].
 
 
+## overview
+Following figures show the overview of this topic.
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/line/straight-line-charge-side-rot-rofs.png)
 <br />
