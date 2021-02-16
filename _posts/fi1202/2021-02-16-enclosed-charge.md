@@ -16,7 +16,7 @@ Amount of charge enclosed by Gaussian surface is the enclosed charge [[1](#ref1)
 
 
 {:refdef: style="text-align: center;"}
-![..](/assets/img/phys/electrostatics/line/straight-line-charge-side-rot-rofs.png)
+![..](/assets/img/phys/electrostatics/qenc/half-sphere-in-box.png)
 <br />
 Figure <a name="fig:x">1</a> ...
 {: refdef}
