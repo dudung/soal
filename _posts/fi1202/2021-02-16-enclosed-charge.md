@@ -24,7 +24,7 @@ Enclosed charge can consist of fraction of one charge, one charge, or multiple c
 Figure <a name="fig:ec-half-sphere-in-box">1</a> A charge $Q$ (left), enclosed charge $q_{\rm enc}$ is a whole charge $Q$ (center), and enclosed charge $q_{\rm enc}$ is half of the charge $\frac12 Q$.
 {: refdef}
 
-A whole charge or fraction of one charge enclosed by a Gaussian surface is given in Fig. <a href="#fig:ec-half-sphere-in-box">1</a>, where $q_{\rm enc}$ is simple part of charge that is inside the Gaussian surface (a closed surface). Result of $q_{\rm enc}$ in Fig. <a href="#fig:ec-half-sphere-in-box">1</a> (center) can be obtained using Gauss's law, indeed spherical charge with cubic Gaussian surface, but you will face a very difficult integral, which is not recommended [[4](#ref4)]. We can also draw the Gaussian surfaces in illustrative way to show the concept as given in Fig. <a href="#fig:ec-qenc-surface-concept">2</a>
+A whole charge or fraction of one charge enclosed by a Gaussian surface is given in Fig. <a href="#fig:ec-half-sphere-in-box">1</a>, where $q_{\rm enc}$ is simple part of charge that is inside the Gaussian surface (a closed surface). Result of $q_{\rm enc}$ in Fig. <a href="#fig:ec-half-sphere-in-box">1</a> (center) can be obtained using Gauss's law, indeed spherical charge distribution with cubic Gaussian surface, but you will face a very difficult integral, which is not recommended [[4](#ref4)]. We can also draw the Gaussian surfaces in illustrative way to show the concept as given in Fig. <a href="#fig:ec-qenc-surface-concept">2</a>
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/qenc/qenc-surface-concept.png)
@@ -37,30 +37,64 @@ We can have from Fig. <a href="#fig:ec-qenc-surface-concept">2</a> that enclosed
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/qenc/cell-sc-bcc.png)
 <br />
-Figure <a name="fig:ec-cell-sc-bcc">3</a> .
+Figure <a name="fig:ec-cell-sc-bcc">3</a> Two varieties of the cubic crystal system: simple cubic (left) and body-centered cubic (right).
 {: refdef}
 
-In cubic crystal system there are simple cubic (SC) and body-centered cubic (BCC), whichh area two of three main varieties of the cubic crystal system [[5](#ref5)].
+In cubic crystal system there are simple cubic (SC) and body-centered cubic (BCC), whichh area two of three main varieties of the cubic crystal system [[5](#ref5)]. If each single sphere represents a charege $Q$ then in the SC we can have that $q_{\rm enc} = Q$. Can you see that?
 
 
+## spherical charge distribution
+By choosing a homogeneous and isotropic material [[6](#ref6)] we will illustrate the enclosed charge $q_{\rm enc}$ from a spherical charge distribution when we use a spherical Gaussian surface. Two system are discussed, which are solid and hollow spheres.
 
+### solid sphere
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/qenc/sphere-in-sphere.png)
 <br />
-Figure <a name="fig:x">1</a> ...
+Figure <a name="fig:ec-sphere-in-sphere">4</a> Spherial Gaussian surface of a spherical charge distribution.
 {: refdef}
 
+Enclosed charge of the system is
+
+\begin{equation}
+\label{eqn:ec-solid-sphere-homogeneous-isotropic}
+q_{\rm enc} = \left\\{
+\begin{array}{lr}
+\displaystyle \left( \frac{r^3}{R^3} \right) Q, & 0 \le r \le R, \newline
+Q, & R < r,
+\end{array}
+\right.,
+\end{equation}
+
+where $r$ is radius of the spherical Gaussian surface and $R$ is radius of the sphere.
+
+### hollow sphere
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/phys/electrostatics/qenc/hollow-sphere-in-sphere.png)
 <br />
-Figure <a name="fig:x">1</a> ...
+Figure <a name="fig:ec-hollow-sphere-in-sphere">5</a> Spherial Gaussian surface for charge distribution of hollow sphere.
 {: refdef}
+
+For this system the enclosed charge is
+
+\begin{equation}
+\label{eqn:ec-hollow-sphere-homogeneous-isotropic}
+q_{\rm enc} = \left\\{
+\begin{array}{lr}
+0, & 0 \le r < R_1, \newline
+\displaystyle \left( \frac{r^3 - R_1^3}{R_2^3 - R_1^3} \right) Q, & 0 \le r \le R_2, \newline
+Q, & R < r,
+\end{array}
+\right.,
+\end{equation}
+
+where $r$ is radius of the spherical Gaussian surface, $R_1$ and $R_2$ are inner and outter radii of the sphere, respectively.
 
 
 ## exercises
 1. Using cubic Gaussian surface in Fig. <a href="#fig:ec-half-sphere-in-box">1</a>, where is the position of the sphere to get $q_{\rm enc} = \frac18 Q$ exactly? Explain in brief.
 2. Why is it not recommended to get the enclosed charge $q_{\rm enc}$ in Fig. <a href="#fig:ec-half-sphere-in-box">1</a> (center) using a cubic Gaussian surface? See [[4](#ref4)] if necessary to find the answer.
 3. From Fig. <a href="#fig:ec-qenc-surface-concept">2</a> find enclosed charge $q_{\rm enc}$ for Gaussian surface $s_1$ and $s_4$. Show how you come the the answers.
+4. Find the $q_{\rm enc}$ for BCC in Fig. <a href="#fig:ec-cell-sc-bcc">3</a> (right). Explain why you give the answer.
 
 
 ## References
@@ -69,5 +103,6 @@ Figure <a name="fig:x">1</a> ...
 3. <a name="ref3"></a>Carl R. Nave, "Gauss's Law", HyperPhysics, 2017, url <http://hyperphysics.phy-astr.gsu.edu/hbase/electric/gaulaw.html> [20210216].
 4. <a name="ref4"></a>Michel van Biezen, "Physics - Gauss' Law (11 of 11) Cubic Gaussian Surface", YouTube, 12.03.2014, url <https://www.youtube.com/watch?v=MM-3sgswY9Q> [20210216].
 5. <a name="ref5"></a>Wikipedia contributors, "Cubic crystal system", Wikipedia, The Free Encyclopedia, 31 Jan 2021, 02:31 UTC, url <https://en.wikipedia.org/w/index.php?oldid=1003869020> [20210216].
+6. <a name="ref6"></a>Gregory Hawkins, "2.1 Basics of the Relativistic Cosmology: the Dynamics of the Universe", SlidePlayer, 2019, p. 14, url <https://slideplayer.com/slide/13942333/> [20210216].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi1202/2021-02-16-enclosed-charge.md)
