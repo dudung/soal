@@ -20,6 +20,7 @@ An electric charge $+Q$ is uniformly distributed throughout a non-conducting sol
 [[1](#ref1)].
 
 ## theory
+Some prior knowledge are required to solve the problem.
 
 ### dot product of two unit vectors
 If we have two unit vector $\hat{a}$ and $\hat{b}$ then their dot products is
@@ -48,26 +49,37 @@ where the left side represents "flux of the electric field out of an arbitrary c
 
 by introducing $\varepsilon_0^{-1}$, which is the coefficient of proportionality [[3](#ref3)].
 
-### gaussian surface
-To obtain electric field $E$ from Eqn. \eqref{eqn:efncsp-gauss-law} we must choose Gaussian surface that matched the electric field vector $\vec{E}$. Since it has the form of
+### electric field vector
+Since we are dealing with uniform spherical charge distribution, then the electric field should have the form of
 
 \begin{equation}
 \label{eqn:efncsp-electric-field}
 \vec{E} = E \hat{r},
 \end{equation}
 
-which we assume. Then we chooose
+according to shell theorem [[4](#ref4)].
+
+### gaussian surface
+To obtain electric field $E$ from Eqn. \eqref{eqn:efncsp-gauss-law} we must choose Gaussian surface that matched the electric field vector $\vec{E}$ as in Eqn. \eqref{eqn:efncsp-electric-field}. Then we chooose
 
 \begin{equation}
 \label{eqn:efncsp-area-element}
 d\vec{A} = \hat{r} dA = \hat{r} (rd\theta)(r\sin\theta d\phi) = \hat{r} r^2 \sin\theta d\theta d\phi,
 \end{equation}
 
-as the area element of the Gaussian surface. The $dA$ is surface element in spherical coordinates [[4](#ref4)].
+as the area element of the Gaussian surface. The $dA$ is surface element in spherical coordinates [[5](#ref5)].
 
+### volume element
+In spherical coordinate system
 
-## solution
-### volume chart density
+\begin{equation}
+\label{eqn:efncsp-volume-element}
+dV = (dr)(rd\theta)(r\sin\theta d\varphi) = r^2 dr \ \sin\theta d\theta \ d\varphi,
+\end{equation}
+
+is the volume element.
+
+### volume charge density
 Since the charge is distributed uniformly throughout all parts of the solid sphere then we can have
 
 \begin{equation}
@@ -77,14 +89,39 @@ Since the charge is distributed uniformly throughout all parts of the solid sphe
 
 where $V = \frac43 \pi a^3$ is volume the sphere.
 
-### gaussian surface
+### enclose charge
+On the right side of Eqn. \eqref{eqn:efncsp-gauss-law} that represents the Gauss's law, there is [enclosed charge](enclosed-charge) $q_{\rm enc}$, which is
+
+\begin{equation}
+\label{eqn:efncsp-enclosed-charge}
+q_{\rm enc} = \left\\{
+\begin{array}{lr}
+\displaystyle \left( \frac{r^3}{a^3} \right) Q, & 0 \le r \le a, \newline
+Q, & a < r,
+\end{array}
+\right.,
+\end{equation}
+
+for our case. Eqn. \qref{eqn:efncsp-enclosed-charge} can be found using
+
+\begin{equation}
+\label{eqn:efncsp-enclosed-charge-formula}
+q_{\rm enc} = \int \rho dV,
+\end{equation}
+
+with $\rho$ is from Eqn. \eqref{eqn:efncsp-rho} and $dV$ is from Eqn. \eqref{eqn:efncsp-volume-element}. 
+
+
+## solution
+..
 
 
 ## references
 1. <a name="ref1"></a>Sen-ben Liao, Peter Dourmashkin, John W. Belcher, "Gauss's Law", Physics 8.02, Electricity & Magnetism, ch. 4, p. 13-15, 2004, url <https://web.mit.edu/8.02t/www/802TEAL3D/visualizations/coursenotes/index.htm> [20210217].
 2. <a name="ref2"></a>Hanna Pamula, "Angle Between Two Vectors Calculator", Omni Calculator, 21 Jan 2021, url <https://www.omnicalculator.com/math/angle-between-two-vectors> [20210218].
 3. <a name="ref3"></a>Wikipedia contributors, "Proportionality (mathematics)", Wikipedia, The Free Encyclopedia, 10 Feb 2021, 21:37 UTC, url <https://en.wikipedia.org/w/index.php?oldid=1006068420> [20210218].
-4. <a name="ref4"></a>tentaclenorm, Duck Deux, "Answer to 'Surface Element in Spherical Coordinates'", Mathematics Stack Exchange, 25 Mar 2018 at 22:40, url <https://math.stackexchange.com/a/131747> [20210218].
+4. <a name="ref4"></a>Wikipedia contributors, "Shell theorem", Wikipedia, The Free Encyclopedia, 29 Nov 2021, 20:20 UTC, url <https://en.wikipedia.org/w/index.php?oldid=991269123> [20210218].
+5. <a name="ref5"></a>tentaclenorm, Duck Deux, "Answer to 'Surface Element in Spherical Coordinates'", Mathematics Stack Exchange, 25 Mar 2018 at 22:40, url <https://math.stackexchange.com/a/131747> [20210218].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi1202/2021-02-17-electric-field-nc-solid-sphere.md)
 
