@@ -21,7 +21,7 @@ In $y-x$ diagram, suppose that we have two points $(0, B)$ and $(1, A)$ and we w
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/intrpl/linear-interpolation-0-1.png)
 <br />
-Figure <a name="fig:li-linear-interpolation-0-1">1</a> Linear interpolation to calculate fraction of mixture $x$.
+Figure <a name="fig:li-linear-interpolation-0-1">1</a> Linear interpolation to calculate fraction of mixture $x$ representing substance $A$.
 {: refdef}
 
 We can have that
@@ -47,7 +47,7 @@ Suppose we have two points $(x_1, y_1)$ and $(x_2, y_2)$ and want to have $y$ at
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/intrpl/linear-interpolation-x1-x2.png)
 <br />
-Figure <a name="fig:li-linear-interpolation-x1-x2">2</a> Linear interpolation to calculate fraction of mixture $x$.
+Figure <a name="fig:li-linear-interpolation-x1-x2">2</a> Linear interpolation to calculate $x \in[x_1, x_2]$.
 {: refdef}
 
 Gradient of line passing the two points $(x_1, y_1)$ and $(x_2, y_2)$ is
@@ -77,6 +77,27 @@ Since we will deal with the linear interpolation using numerical approach, Eqn. 
 ## data set
 If there is data set consists of pairs of $(x_1, y_1)$, $(x_2, y_2)$, $\dots$, $(x_N, y_N)$, then we require to perform the linear interpolation in each range $x_{n} \le x \le x_{n+1}$, where there will be only $N-1$ ranges, that is assumed have equal interval for simplicity.
 
+{:refdef: style="text-align: center;"}
+![..](/assets/img/math/intrpl/linear-interpolation-data-set.png)
+<br />
+Figure <a name="fig:li-linear-interpolation-data-set">3</a> Linear interpolation in each range with equal interval of a data set.
+{: refdef}
+
+Fig. <a href="#fig:li-linear-interpolation-data-set">3</a> shows linear interpolation for a data set. With equal interval we can obtain the range using
+
+\begin{equation}
+\label{eqn:li-range-determination}
+n = 1 + \left\lfloor \frac{x - x_1}{\Delta x} \right\rfloor,
+\end{equation}
+
+where $\Delta x$ is the interval of each range. After get the value of $n$, we use
+
+\begin{equation}
+\label{eqn:li-linear-interpolation-data-set}
+y = \left( \frac{y_{n+1} - y_n}{x_{n+1} - x_n} \right) x + \left( \frac{y_n x_{n+1} - x_n y_{n+1}}{x_{n+1} - x_n} \right),
+\end{equation}
+
+which is actually Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2} but for each range indicated with the index $n$.
 
 
 ## exercises
@@ -84,6 +105,7 @@ If there is data set consists of pairs of $(x_1, y_1)$, $(x_2, y_2)$, $\dots$, $
 2. Prove that center and right side of Eqn. {eqn:li-equation-of-a-line-x1-y1-x2-y2-construction} do produce the same results as in Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2}.
 3. Test Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2} that it holds for the two points $(x1, y1)$ and $(x2, y2)$.
 4. If we transform all $x$s to $x - x_1$ we can obtain Eqn. \eqref{eqn:li-in-range-0-1} from Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2} with $y_1 = B$ and $y_2 = A$. Show how to do that in a shortes way you are able to.
+5. Prove that Eqn. \eqref{eqn:li-linear-interpolation-data-set} holds in its range for lower and upper bounds, $(x_n, y_n)$ and $(x_{n+1}, y_{n+1})$, respectively.
 
 
 ## references
