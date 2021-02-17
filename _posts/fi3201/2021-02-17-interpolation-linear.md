@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["fi3201", "linear", "interpolation"]
-date: 2021-02-17 09:08:00 +07
+date: 2021-02-17 17:32:00 +07
 permalink: /fi3201/linear-interpolation
 ---
 If there is a discrete set of data points, to construct new data points within the range of the known data we can use a method of curve fitting using linear polynomials known as linear interpolation [[1](#ref1)]. Due its simplicity this method is still used in may areas nowadays [[2](#ref2)]. In binary diagram of mixture of two substances, where the horizontal axis represents concentration of one substance, it uses linear interpolation [[3](#ref3)]. You can use a spreadsheet, e.g. Microsoft Excel [[4](#ref4)], or an online calculator [[5](#ref5)] to perform an interpolation.
