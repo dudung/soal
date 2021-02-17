@@ -108,7 +108,7 @@ Using common programming language, e.g. C++, JavaScript, or Python you can imple
 1. If $x = 0.25$ find the fraction of $B$ and $A$ using Fig. <a href="#fig:li-linear-interpolation">1</a>.
 2. Prove that center and right side of Eqn. {eqn:li-equation-of-a-line-x1-y1-x2-y2-construction} do produce the same results as in Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2}.
 3. Test Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2} that it holds for the two points $(x1, y1)$ and $(x2, y2)$.
-4. If we transform all $x$s to $x - x_1$ we can obtain Eqn. \eqref{eqn:li-in-range-0-1} from Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2} with $y_1 = B$ and $y_2 = A$. Show how to do that in a shortes way you are able to.
+4. If we transform all $x$s to $x - x_1$ we can obtain Eqn. \eqref{eqn:li-in-range-0-1} from Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2} with $y_1 = B$ and $y_2 = A$. Show how to do that in a shortes way you are able to. You might need to define new $x$, which is dimensionless.
 5. Prove that Eqn. \eqref{eqn:li-linear-interpolation-data-set} holds in its range for lower and upper bounds, $(x_n, y_n)$ and $(x_{n+1}, y_{n+1})$, respectively.
 
 
