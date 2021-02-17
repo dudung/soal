@@ -12,23 +12,58 @@ tags: ["electric field", "sphere", "solid"]
 date: 2021-02-17 18:02 +07
 permalink: /fi1202/electric-field-nc-solid-sphere
 ---
-Electric field of a non-conducting solid sphere will be discussed here.
+Electric field of a non-conducting solid sphere will be discussed here. After read the problem you can proceed to the theory or go directly to the solution.
 
 
 ## problem
 An electric charge $+Q$ is uniformly distributed throughout a non-conducting solid sphere or radius $a$. Determine the electric field everywhere inside and outside the sphere.
 [[1](#ref1)].
 
+## theory
 
-## gauss law
-The law states that flux of the electric field out of an arbitrary closed surface is proportional to the electric charge enclosed by the surface, which can be written in the form of
+### dot product of two unit vectors
+If we have two unit vector $\hat{a}$ and $\hat{b}$ then their dot products is
+
+\begin{equation}
+\label{eqn:efncsp-dot-product-unit-vectors}
+\hat{a} \cdot \hat{b} = \cos\beta
+\end{equation}
+
+where $\beta$ is the angle between this two unit vectors [[2](#ref2)]. Result of Eqn. \eqref{eqn:efncsp-dot-product-unit-vectors} will have value between -1 and 1.
+
+### gauss law
+The law states that flux of the electric field out of an arbitrary closed surface is proportional to the electric charge enclosed by the surface
+
+\begin{equation}
+\label{eqn:efncsp-gauss-law-proportional}
+\oint \vec{E} \cdot d\vec{A} \propto q_{\rm enc},
+\end{equation}
+
+where the left side represents "flux of the electric field out of an arbitrary closed surface" and the right side represents "the electric charge enclosed by the surface". Eqn. \eqref{eqn:efncsp-gauss-law-proportional} can be written in the form of
 
 \begin{equation}
 \label{eqn:efncsp-gauss-law}
 \oint \vec{E} \cdot d\vec{A} = \frac{q_{\rm enc}}{\varepsilon_0},
 \end{equation}
 
-where $\varepsilon_0^{-1}$ is the coefficient of proportionality.
+by introducing $\varepsilon_0^{-1}$, which is the coefficient of proportionality [[3](#ref3)].
+
+### gaussian surface
+To obtain electric field $E$ from Eqn. \eqref{eqn:efncsp-gauss-law} we must choose Gaussian surface that matched the electric field vector $\vec{E}$. Since it has the form of
+
+\begin{equation}
+\label{eqn:efncsp-electric-field}
+\vec{E} = E \hat{r},
+\end{equation}
+
+which we assume. Then we chooose
+
+\begin{equation}
+\label{eqn:efncsp-area-element}
+d\vec{A} = \hat{r} dA = \hat{r} (rd\theta)(r\sin\theta d\phi) = \hat{r} r^2 \sin\theta d\theta d\phi,
+\end{equation}
+
+as the area element of the Gaussian surface. The $dA$ is surface element in spherical coordinates [[4](#ref4)].
 
 
 ## solution
@@ -47,6 +82,9 @@ where $V = \frac43 \pi a^3$ is volume the sphere.
 
 ## references
 1. <a name="ref1"></a>Sen-ben Liao, Peter Dourmashkin, John W. Belcher, "Gauss's Law", Physics 8.02, Electricity & Magnetism, ch. 4, p. 13-15, 2004, url <https://web.mit.edu/8.02t/www/802TEAL3D/visualizations/coursenotes/index.htm> [20210217].
+2. <a name="ref2"></a>Hanna Pamula, "Angle Between Two Vectors Calculator", Omni Calculator, 21 Jan 2021, url <https://www.omnicalculator.com/math/angle-between-two-vectors> [20210218].
+3. <a name="ref3"></a>Wikipedia contributors, "Proportionality (mathematics)", Wikipedia, The Free Encyclopedia, 10 Feb 2021, 21:37 UTC, url <https://en.wikipedia.org/w/index.php?oldid=1006068420> [20210218].
+4. <a name="ref4"></a>tentaclenorm, Duck Deux, "Answer to 'Surface Element in Spherical Coordinates'", Mathematics Stack Exchange, 25 Mar 2018 at 22:40, url <https://math.stackexchange.com/a/131747> [20210218].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi1202/2021-02-17-electric-field-nc-solid-sphere.md)
 
