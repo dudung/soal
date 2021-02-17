@@ -50,8 +50,34 @@ Suppose we have two points $(x1, y1)$ and $(x2, y2)$ and want to have $y$ at cer
 Figure <a name="fig:li-linear-interpolation-x1-x2">2</a> Linear interpolation to calculate fraction of mixture $x$.
 {: refdef}
 
+Gradient of line passing the two points $(x1, y1)$ and $(x2, y2)$ is
+
+\begin{equation}
+\label{eqn:li-gradient-x1-y1-x2-y2}
+m = \frac{y_2 - y_1}{x_2 - x_1}
+\end{equation}
+
+and the equation of a line can be constructed using
+
+\begin{equation}
+\label{eqn:li-equation-of-a-line-x1-y1-x2-y2-construction}
+y = m(x - x_1) + y_1 = m(x - x_2) + y_2,
+\end{equation}
+
+that gives
+
+\begin{equation}
+\label{eqn:li-equation-of-a-line-x1-y1-x2-y2}
+y = \left( \frac{y_2 - y_1}{x_2 - x_1} \right) x + \left( \frac{y_1 x_2 - x_1 y_2}{x_2 - x_1} \right).
+\end{equation}
+
+Since we will deal with the linear interpolation using numerical approach, Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2-construction} is recommended to memorize since it is simpler than Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2}.
+
+
 ## exercises
-1. If $x = 0.25$ find the fraction of $B$ and $A$ using Fig. <a href="#fig:li-linear-interpolation">1</a>. 
+1. If $x = 0.25$ find the fraction of $B$ and $A$ using Fig. <a href="#fig:li-linear-interpolation">1</a>.
+2. Prove that center and right side of Eqn. {eqn:li-equation-of-a-line-x1-y1-x2-y2-construction} do produce the same results as in Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2}.
+3. Test Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2} that it holds for the two points $(x1, y1)$ and $(x2, y2)$.
 
 
 ## references
