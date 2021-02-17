@@ -1,7 +1,7 @@
 ---
 layout: post
 author: viridi
-title: electric field of solid sphere
+title: electric field of non-conducting solid sphere
 mathjax: true
 ptext: false
 x3dom: false
@@ -12,7 +12,37 @@ tags: ["electric field", "sphere", "solid"]
 date: 2021-02-17 18:02 +07
 permalink: /fi1202/electric-field-nc-solid-sphere
 ---
-Electric field of a non-conducting solid sphere [[1](#ref1)] will be discussed here.
+Electric field of a non-conducting solid sphere will be discussed here.
+
+
+## problem
+An electric charge $+Q$ is uniformly distributed throughout a non-conducting solid sphere or radius $a$. Determine the electric field everywhere inside and outside the sphere.
+[[1](#ref1)].
+
+
+## gauss law
+The law states that flux of the electric field out of an arbitrary closed surface is proportional to the electric charge enclosed by the surface, which can be written in the form of
+
+\begin{equation}
+\label{eqn:efncsp-gauss-law}
+\oint \vec{E} \cdot d\vec{A} = \frac{q_{\rm enc}}{\varepsilon_0},
+\end{equation}
+
+where $\varepsilon_0^{-1}$ is the coefficient of proportionality.
+
+
+## solution
+### volume chart density
+Since the charge is distributed uniformly throughout all parts of the solid sphere then we can have
+
+\begin{equation}
+\label{eqn:efncsp-rho}
+\rho = \frac{Q}{V} = \frac{Q}{\frac43 \pi a^3},
+\end{equation}
+
+where $V = \frac43 \pi a^3$ is volume the sphere.
+
+### gaussian surface
 
 
 ## references
