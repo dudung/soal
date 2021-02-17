@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["electric field", "sphere", "solid"]
-date: 2021-02-17 18:02 +07
+date: 2021-02-18 06:38 +07
 permalink: /fi1202/electric-field-nc-solid-sphere
 ---
 Electric field of a non-conducting solid sphere will be discussed here. After read the problem you can proceed to the theory or go directly to the solution.
@@ -74,7 +74,7 @@ In spherical coordinate system
 
 \begin{equation}
 \label{eqn:efncsp-volume-element}
-dV = (dr)(rd\theta)(r\sin\theta d\varphi) = r^2 dr \ \sin\theta d\theta \ d\varphi,
+dV = (dr)(rd\theta)(r\sin\theta d\varphi) = r^2 dr \ \sin\theta d\theta \ \ d\varphi,
 \end{equation}
 
 is the volume element.
@@ -87,7 +87,20 @@ Since the charge is distributed uniformly throughout all parts of the solid sphe
 \rho = \frac{Q}{V} = \frac{Q}{\frac43 \pi a^3},
 \end{equation}
 
-where $V = \frac43 \pi a^3$ is volume the sphere.
+where
+
+\begin{equation}
+\label{eqn:efncsp-sphere-volume}
+V = \frac43 \pi a^3,
+\end{equation}
+
+is volume the sphere, that is obtained from Eqn. \eqref{eqn:efncsp-volume-element} by solving
+
+\begin{equation}
+\label{eqn:efncsp-sphere-volume-integral}
+V = \int_0^a r^2 dr \ \int_0^\pi \sin\theta d\theta \ \int_0^{2\pi} d\varphi.
+\end{equation}
+
 
 ### enclose charge
 On the right side of Eqn. \eqref{eqn:efncsp-gauss-law} that represents the Gauss's law, there is [enclosed charge](enclosed-charge) $q_{\rm enc}$, which is
@@ -102,7 +115,7 @@ Q, & a < r,
 \right.,
 \end{equation}
 
-for our case. Eqn. \qref{eqn:efncsp-enclosed-charge} can be found using
+for our case. Eqn. \eqref{eqn:efncsp-enclosed-charge} can be found using
 
 \begin{equation}
 \label{eqn:efncsp-enclosed-charge-formula}
@@ -113,7 +126,24 @@ with $\rho$ is from Eqn. \eqref{eqn:efncsp-rho} and $dV$ is from Eqn. \eqref{eqn
 
 
 ## solution
+To find the solution we must separate the problem into two different range of radius $r$. The first is inside the sphere ($r \le r \le a$) and the second is outside the sphere ($a < r$).
+
+### case $r \le r \le a$
 ..
+
+### case $a < r$
+For this part $q_{\rm enc} = Q$ according to Eqn. \eqref{eqn:efncsp-enclosed-charge}. Then using similar steps in previous part
+
+\begin{equation}
+\label{eqn:efncsp-solution-outside}
+E = \frac{1}{4\pi\varepsilon_0} \frac{Q}{r^2}
+\end{equation}
+
+can be simply obtained.
+
+
+## exercises
+1. Derive Eqn. \eqref{eqn:efncsp-enclosed-charge} using Eqns. \eqref{eqn:efncsp-enclosed-charge-formula}, \eqref{eqn:efncsp-rho}, and \eqref{eqn:efncsp-volume-element}. Note that $\rho$ has value only for $0 \le r \le a$.
 
 
 ## references
