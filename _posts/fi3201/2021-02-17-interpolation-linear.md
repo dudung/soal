@@ -42,7 +42,7 @@ where $\chi$ can be mass, volume, or other properties of the substances, which g
 
 
 ## in arbitrary range
-Suppose we have two points $(x1, y1)$ and $(x2, y2)$ and want to have $y$ at certain value of $x \in [x_1, y1]$ as given in Fig. <a href="#fig:li-linear-interpolation-x1-x2">2</a>.
+Suppose we have two points $(x_1, y_1)$ and $(x_2, y_2)$ and want to have $y$ at certain value of $x \in [x_1, y1]$ as given in Fig. <a href="#fig:li-linear-interpolation-x1-x2">2</a>.
 
 {:refdef: style="text-align: center;"}
 ![..](/assets/img/math/intrpl/linear-interpolation-x1-x2.png)
@@ -50,7 +50,7 @@ Suppose we have two points $(x1, y1)$ and $(x2, y2)$ and want to have $y$ at cer
 Figure <a name="fig:li-linear-interpolation-x1-x2">2</a> Linear interpolation to calculate fraction of mixture $x$.
 {: refdef}
 
-Gradient of line passing the two points $(x1, y1)$ and $(x2, y2)$ is
+Gradient of line passing the two points $(x_1, y_1)$ and $(x_2, y_2)$ is
 
 \begin{equation}
 \label{eqn:li-gradient-x1-y1-x2-y2}
@@ -74,10 +74,16 @@ y = \left( \frac{y_2 - y_1}{x_2 - x_1} \right) x + \left( \frac{y_1 x_2 - x_1 y_
 Since we will deal with the linear interpolation using numerical approach, Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2-construction} is recommended to memorize since it is simpler than Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2}.
 
 
+## data set
+If there is data set consists of pairs of $(x_1, y_1)$, $(x_2, y_2)$, $\dots$, $(x_N, y_N)$, then we require to perform the linear interpolation in each range $x_{n} \le x \le x_{n+1}$, where there will be only $N-1$ ranges, that is assumed have equal interval for simplicity.
+
+
+
 ## exercises
 1. If $x = 0.25$ find the fraction of $B$ and $A$ using Fig. <a href="#fig:li-linear-interpolation">1</a>.
 2. Prove that center and right side of Eqn. {eqn:li-equation-of-a-line-x1-y1-x2-y2-construction} do produce the same results as in Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2}.
 3. Test Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2} that it holds for the two points $(x1, y1)$ and $(x2, y2)$.
+4. If we transform all $x$s to $x - x_1$ we can obtain Eqn. \eqref{eqn:li-in-range-0-1} from Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2} with $y_1 = B$ and $y_2 = A$. Show how to do that in a shortes way you are able to.
 
 
 ## references
