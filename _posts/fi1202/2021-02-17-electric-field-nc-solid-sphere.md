@@ -10,14 +10,19 @@ oo: false
 category: physics
 tags: ["electric field", "sphere", "solid"]
 date: 2021-02-17 18:02 +07
-permalink: /fi1202/electric-field-solid-sphere
+permalink: /fi1202/electric-field-nc-solid-sphere
 ---
-.. [[1](#ref1)].
+Electric field of a non-conducting solid sphere [[1](#ref1)] will be discussed here.
+
 
 ## references
 1. <a name="ref1"></a>
 
-+ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi1202/2021-02-17-electric-field-solid-sphere.md)
+
+
+p. 13-15, 
+
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi1202/2021-02-17-electric-field-nc-solid-sphere.md)
 
 
 ## references
