@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["fi3201", "polynomial", "interpolation", "lagrange"]
-date: 2021-02-17 09:23:00 +07
+date: 2021-02-17 11:23:00 +07
 permalink: /fi3201/polynomial-interpolation
 ---
 For polynomial interpolation Lagrange polynomial is used [[1](#ref1)], where it passes through all the $N$ given points [[2](#ref2)]. In years 2000-2007 it still discussed in some textbooks [[3](#ref3)]. You can explore it with online calculator [[4](#ref4)] or write the code in C++, Java, Python3, and C# [[5](#ref5)].
