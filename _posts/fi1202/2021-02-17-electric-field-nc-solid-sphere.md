@@ -16,15 +16,12 @@ Electric field of a non-conducting solid sphere [[1](#ref1)] will be discussed h
 
 
 ## references
-1. <a name="ref1"></a>
-
-
-
-p. 13-15, 
+1. <a name="ref1"></a>Sen-ben Liao, Peter Dourmashkin, John W. Belcher, "Gauss's Law", Physics 8.02, Electricity & Magnetism, ch. 4, p. 13-15, 2004, url <https://web.mit.edu/8.02t/www/802TEAL3D/visualizations/coursenotes/index.htm> [20210217].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/fi1202/2021-02-17-electric-field-nc-solid-sphere.md)
 
 
+{% comment %}
 ## references
 1. <a name="ref1"></a>OpenStax, "6.4: Applyig Gauss's Law", Physics LibreTexts, 6 Nov 2020, url <https://phys.libretexts.org/Bookshelves/University_Physics/Book%3A_University_Physics_(OpenStax)/Map%3A_University_Physics_II_-_Thermodynamics_Electricity_and_Magnetism_(OpenStax)/06%3A_Gauss's_Law/6.04%3A_Applying_Gausss_Law> [20210216].
 2. <a name="ref2"></a>Wikipedia contributors, "Gaussian surface", Wikipedia, The Free Encyclopedia, 15 Nov 2020, 22:24 UTC, url <https://en.wikipedia.org/w/index.php?oldid=988897483> [20210216].
@@ -35,7 +32,6 @@ p. 13-15,
 
 
 
-{% comment %}
 Amount of charge enclosed by Gaussian surface is the enclosed charge [[1](#ref1), [2](#ref2)], where it can be assessed by mapping the electric field on a closed surface outside the charge distribution using Gauss's law [[3](#ref3)]. Some illustrations are given and discussed here.
 
 
