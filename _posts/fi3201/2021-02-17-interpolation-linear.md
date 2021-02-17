@@ -100,6 +100,10 @@ y = \left( \frac{y_{n+1} - y_n}{x_{n+1} - x_n} \right) x + \left( \frac{y_n x_{n
 which is actually Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2} but for each range indicated with the index $n$.
 
 
+## implementation
+Using common programming language, e.g. C++, JavaScript, or Python you can implement Eqns. \eqref{eqn:li-range-determination} and \eqref{eqn:li-linear-interpolation-data-set} to do the interpolation. Array for the data set is required.
+
+
 ## exercises
 1. If $x = 0.25$ find the fraction of $B$ and $A$ using Fig. <a href="#fig:li-linear-interpolation">1</a>.
 2. Prove that center and right side of Eqn. {eqn:li-equation-of-a-line-x1-y1-x2-y2-construction} do produce the same results as in Eqn. \eqref{eqn:li-equation-of-a-line-x1-y1-x2-y2}.
