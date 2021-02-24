@@ -38,7 +38,14 @@ for the each data set $i$ with $\\{c_j\\}_{j = 1}^M$ are coefficients to be foun
 
 
 ## least square
-For a linear regression line in the form of $y = c_0 + c_1 x$ we can use least square, where the example data [[7](#ref7)] and code [[8](#ref8)] are available. And the coefficients are
+For a linear regression line in the form of
+
+\begin{equation}
+\label{eqn:mlr-linear-equation-2}
+y = c_0 + c_1 x,
+\end{equation}
+
+we can use least square, where the example data [[7](#ref7)] and code [[8](#ref8)] are available. And the coefficients are
 
 \begin{equation}
 \label{eqn:mlr-linear-equation-2-c0}
@@ -52,7 +59,11 @@ and
 c_1 = \frac{\displaystyle \sum_{i = 1}^N (x_i - \bar{x})(y_i - \bar{y})}{\displaystyle \sum_{i = 1}^N (x_i - \bar{x})^2}
 \end{equation}
 
-for $N$ data sets, where $\bar{x}$ and $\bar{y}$ are average of $x$ and $y$, respectively.
+for $N$ data, where $\bar{x}$ and $\bar{y}$ are average of $x$ and $y$, respectively.
+
+
+## exercises
+1. Statistical unit of a data set $i$ is $\\{y_i, x_i\\}$ and the data are $(3, 0)$, $(5, 1)$, $(7, 2)$, $(9, 3)$, $(11, 4)$, and $(13, 5)$. If the relation between independent variable $x$ and the dependent variable is assumed as in Eqn. \eqref{eqn:mlr-linear-equation-2}, use Eqns. \eqref{eqn:mlr-linear-equation-2-c1} and \eqref{eqn:mlr-linear-equation-2-c0} to find $c_1$ and $c_0$.
 
 
 ## references
