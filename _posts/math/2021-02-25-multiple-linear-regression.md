@@ -34,7 +34,7 @@ From a linear equation of $M$ unknown variables [[6](#ref6)] we can write
 y_i = \sum_{j = 1}^M x_{ij} c_j,
 \end{equation}
 
-for the each data set $i$ with $\\{c_j\\}_{j = 1}^M$ are coefficients to be found. 
+for the each data $i$ with $\\{c_j\\}_{j = 1}^M$ are coefficients to be found. 
 
 
 ## least square
@@ -61,15 +61,33 @@ c_1 = \frac{\displaystyle \sum_{i = 1}^N (x_i - \bar{x})(y_i - \bar{y})}{\displa
 
 for $N$ data, where $\bar{x}$ and $\bar{y}$ are average of $x$ and $y$, respectively.
 
+
 ## model
-From model for one unknown variable in Eqn. \eqref{eqn:mlr-linear-equation-2}, we can extend it to $M$ unknown variables that will turn Eqn. \eqref{eqn:mlr-linear-equation} into
+From model for one unknown variable in Eqn. \eqref{eqn:mlr-linear-equation-2}, we can extend it to $M$ unknown variables
+
+\begin{equation}
+\label{eqn:mlr-linear-equation-M}
+y = c_0 + c_1 x_1 + c_2 x_2 + \dots + c_M x_M,
+\end{equation}
+
+that will turn Eqn. \eqref{eqn:mlr-linear-equation} into
 
 \begin{equation}
 \label{eqn:mlr-linear-equation-model}
-y_i = c_0 + \sum_{j = 1}^M x_{ij} c_j
+p_i = c_0 + \sum_{j = 1}^M x_{ij} c_j
 \end{equation}
 
-with additional term $c_0$.
+with additional term $c_0$. We can see $p_i$ is predicted value of $y_i$ using the model.
+
+
+## quadratic loss function
+To represent the difference between observation data $y_i$ and value $\hat{y}_i$ obtained from the model in Eqn. \eqref{eqn:mlr-linear-equation-model} we can use quadratic loss function
+
+\begin{equation}
+\label{eqn:mlr-loss-function}
+\epsilon_i = (y_i - p_i)^2, 
+\end{equation}
+
 
 
 ## exercises
@@ -86,5 +104,6 @@ with additional term $c_0$.
 6. <a href="#ref6"></a>Wikipedia contributors, "Linear equation", Wikipedia, The Free Encyclopedia, 24 Feb 2021, 14:22 UTC, <https://en.wikipedia.org/w/index.php?oldid=1008679832> [20210225].
 7. <a href="#ref7"></a>Andrew Lee, "Calculating a Least Squares Regression Line: Equation, Example, Explanation", Technology Networks, 21 Aug 2020, url <https://www.technologynetworks.com/informatics/articles/calculating-a-least-squares-regression-line-equation-example-explanation-310265> [20210225].
 8. <a href="#ref8"></a>Adarsh Menon, "Linear Regression Using Least Squares", Towards Data Science, 8 Sep 2018, url <https://towardsdatascience.com/linear-regression-using-least-squares-a4c3456e8570> [20210225].
+9. <a href="#ref9"></a>Wikipedia contributors, "Loss function", Wikipedia, The Free Encyclopedia, 29 Dec 2021, 12:30 UTC, <https://en.wikipedia.org/w/index.php?oldid=996973613> [20210225].
 
 + [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/math/2021-02-25-multiple-linear-regression.md)
