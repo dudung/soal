@@ -61,6 +61,16 @@ c_1 = \frac{\displaystyle \sum_{i = 1}^N (x_i - \bar{x})(y_i - \bar{y})}{\displa
 
 for $N$ data, where $\bar{x}$ and $\bar{y}$ are average of $x$ and $y$, respectively.
 
+## model
+From model for one unknown variable in Eqn. \eqref{eqn:mlr-linear-equation-2}, we can extend it to $M$ unknown variables that will turn Eqn. \eqref{eqn:mlr-linear-equation} into
+
+\begin{equation}
+\label{eqn:mlr-linear-equation-model}
+y_i = c_0 + \sum_{j = 1}^M x_{ij} c_j
+\end{equation}
+
+with additional term $c_0$.
+
 
 ## exercises
 1. Statistical unit of a data set $i$ is $\\{y_i, x_i\\}$ and the data are $(3, 0)$, $(5, 1)$, $(7, 2)$, $(9, 3)$, $(11, 4)$, and $(13, 5)$. If the relation between independent variable $x$ and the dependent variable is assumed as in Eqn. \eqref{eqn:mlr-linear-equation-2}, use Eqns. \eqref{eqn:mlr-linear-equation-2-c1} and \eqref{eqn:mlr-linear-equation-2-c0} to find $c_1$ and $c_0$.
