@@ -77,7 +77,7 @@ that will turn Eqn. \eqref{eqn:mlr-linear-equation} into
 p_i = c_0 + \sum_{j = 1}^M x_{ij} c_j
 \end{equation}
 
-with additional term $c_0$. We can see $p_i$ is predicted value of $y_i$ using the model.
+with additional term $c_0$. We can see $p_i$ as predicted value of $y_i$ using the model.
 
 
 ## quadratic loss function
@@ -88,6 +88,7 @@ To represent the difference between observation data $y_i$ and value $\hat{y}_i$
 \epsilon_i = (y_i - p_i)^2, 
 \end{equation}
 
+..
 
 
 ## exercises
