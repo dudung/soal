@@ -110,11 +110,7 @@ with
 \varepsilon = \sum_{i =1}^N \varepsilon_i
 \end{equation}
 
-is loss error in the model.
-
-
-## coeffients
-Using Eqns. \eqref{eqn:mlr-loss-function-i} and \eqref{eqn:mlr-linear-equation-model}, Eqn. \eqref\eqref{eqn:mlr-loss-function} will be as follow
+is loss error in the model. Using Eqns. \eqref{eqn:mlr-loss-function-i} and \eqref{eqn:mlr-linear-equation-model}, Eqn. \eqref{eqn:mlr-loss-function} will be as follow
 
 \begin{equation}
 \label{eqn:mlr-loss-function-detail}
