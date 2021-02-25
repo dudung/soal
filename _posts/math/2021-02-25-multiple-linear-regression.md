@@ -81,14 +81,36 @@ with additional term $c_0$. We can see $p_i$ as predicted value of $y_i$ using t
 
 
 ## quadratic loss function
-To represent the difference between observation data $y_i$ and value $\hat{y}_i$ obtained from the model in Eqn. \eqref{eqn:mlr-linear-equation-model} we can use quadratic loss function
+To represent the difference between observation data $y_i$ and predicted value $p_i$ obtained from the model in Eqn. \eqref{eqn:mlr-linear-equation-model} we can use quadratic loss function
+
+\begin{equation}
+\label{eqn:mlr-loss-function-i}
+\epsilon_i = (y_i - p_i)^2,
+\end{equation}
+
+for every data $i$ from our data set as in Eqn. \eqref{eqn:mlr-data-set}. Then there are coefficients
+
+
+\begin{equation}
+\label{eqn:mlr-linear-equation-model-coefficients}
+\\{c_j\\}_{j = 0}^M
+\end{equation}
+
+to be determined by minimizing sum of Eqn. \eqref{eqn:mlr-loss-function-i} for all data with respect to the coefficients
+
+\begin{equation}
+\label{eqn:mlr-linear-equation-model-coefficients-minimizing}
+\\left\\{\frac{ \partial \epsilon}{\partial c_j} = 0 \\right\\}_{j = 0}^M
+\end{equation}
+
+with
 
 \begin{equation}
 \label{eqn:mlr-loss-function}
-\epsilon_i = (y_i - p_i)^2, 
+\epsilon = \sum_{i =1}^N \epsilon_i
 \end{equation}
 
-..
+is loss error in the model.
 
 
 ## exercises
