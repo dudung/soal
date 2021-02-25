@@ -113,6 +113,17 @@ with
 is loss error in the model.
 
 
+## coeffients
+Using Eqns. \eqref{eqn:mlr-loss-function-i} and \eqref{eqn:mlr-linear-equation-model}, Eqn. \eqref\eqref{eqn:mlr-loss-function} will be as follow
+
+\begin{equation}
+\label{eqn:mlr-loss-function-detail}
+\varepsilon = \sum_{i =1}^N \left( y_i - c_0 - \sum_{j = 1}^M x_{ij c_j} \right)^2,
+\end{equation}
+
+which will be minimized through Eqn. \eqref{eqn:mlr-linear-equation-model-coefficients-minimizing}.
+
+
 ## exercises
 1. Statistical unit of a data set $i$ is $\\{y_i, x_i\\}$ and the data are $(3, 0)$, $(5, 1)$, $(7, 2)$, $(9, 3)$, $(11, 4)$, and $(13, 5)$. If the relation between independent variable $x$ and the dependent variable is assumed as in Eqn. \eqref{eqn:mlr-linear-equation-2}, use Eqns. \eqref{eqn:mlr-linear-equation-2-c1} and \eqref{eqn:mlr-linear-equation-2-c0} to find $c_1$ and $c_0$.
 
