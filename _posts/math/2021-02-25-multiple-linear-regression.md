@@ -85,7 +85,7 @@ To represent the difference between observation data $y_i$ and predicted value $
 
 \begin{equation}
 \label{eqn:mlr-loss-function-i}
-\epsilon_i = (y_i - p_i)^2,
+\varepsilon_i = (y_i - p_i)^2,
 \end{equation}
 
 for every data $i$ from our data set as in Eqn. \eqref{eqn:mlr-data-set}. Then there are coefficients
@@ -100,14 +100,14 @@ to be determined by minimizing sum of Eqn. \eqref{eqn:mlr-loss-function-i} for a
 
 \begin{equation}
 \label{eqn:mlr-linear-equation-model-coefficients-minimizing}
-\\left\\{\frac{ \partial \epsilon}{\partial c_j} = 0 \\right\\}_{j = 0}^M
+\\left\\{\frac{ \partial \varepsilon}{\partial c_j} = 0 \\right\\}_{j = 0}^M
 \end{equation}
 
 with
 
 \begin{equation}
 \label{eqn:mlr-loss-function}
-\epsilon = \sum_{i =1}^N \epsilon_i
+\varepsilon = \sum_{i =1}^N \varepsilon_i
 \end{equation}
 
 is loss error in the model.
