@@ -9,37 +9,48 @@ threejs: false
 oo: false
 category: physics
 tags: ["matrix", "addition"]
-date: 2021-03-10 19:21:00 +07
+date: 2021-03-10 19:34:00 +07
 permalink: /soal/0018
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/01/2021-03-10-matrix-addition.md
 ref: https://en.wikipedia.org/w/index.php?oldid=1009046077
 ---
-Terdapat vektor $\vec{a} = a_x \ \hat{x} + a_y \ \hat{y} + a_z \ \hat{z}$ dan $\vec{b} = b_x \ \hat{x} + b_y \ \hat{y} + b_z \ \hat{z}$. Operasi perkalian silang atau cross untuk vektor-vektor satuan adalah
+Terdapat dua matriks berdimensi $M \times N$
 
 \begin{equation} \nonumber
-\begin{array}{c}
-\hat{x} \times \hat{y} = \hat{z}, \newline
-\hat{y} \times \hat{z} = \hat{x}, \newline
-\hat{z} \times \hat{x} = \hat{y},
+\mathbf{A} = \left[
+\begin{array}{cccc}
+a_{11} & a_{12} & \dots & a_{1N} \newline
+a_{21} & a_{22} & \dots & a_{2N} \newline
+\vdots & \vdots & \ddots & \vdots \newline
+a_{M1} & a_{M2} & \dots & a_{MN} \newline
 \end{array}
+\right]
 \end{equation}
 
 dan
 
 \begin{equation} \nonumber
-\begin{array}{c}
-\hat{y} \times \hat{x} = -\hat{z}, \newline
-\hat{z} \times \hat{y} = -\hat{x}, \newline
-\hat{x} \times \hat{z} = -\hat{y}.
-\end{array}
+\mathbf{B} = \left[
+\begin{array}{cccc}
+b_{11} & b_{12} & \dots & b_{1N} \newline
+b_{21} & b_{22} & \dots & b_{2N} \newline
+\vdots & \vdots & \ddots & \vdots \newline
+b_{M1} & b_{M2} & \dots & b_{MN} \newline
+\end{array}.
+\right]
 \end{equation}
 
-Dengan menggunakan hubungan-hubungan di atas dapat diperoleh rumusan untuk $\vec{a} \times \vec{b}$, yaitu
+Bila keduanya dijumlahkan atau dikurangkan sehingga menghasilkan
+
+\begin{equation} \nonumber
+\mathbf{C} = \mathbf{A} \pm \mathbf{B},
+\end{equation}
+
+maka untuk setiap elemennya berlaku bahwa
 
 <ol type="A">
-<li>$a_x \  b_y + a_y \ b_z + a_z \ b_x$.
-<li>$a_y \  b_z + a_z \ b_x + a_x \ b_y$.
-<li>$a_x \  b_x + a_y \ b_y + a_z \ b_z$.
-<li>$(a_y b_z - a_z b_y)\hat{x} + (a_z b_x - a_x b_z)\hat{y} + (a_x b_y - a_y b_x)\hat{z}$.
-<li>$(a_z b_y - a_y b_z)\hat{x} + (a_x b_z - a_z b_x)\hat{y} + (a_y b_x - a_x b_y)\hat{z}$.
-
+<li>$c_{ij} = a_{ij} \mp b_{ij}$.
+<li>$c_{ij} = a_{ij} \pm b_{ij}$.
+<li>$c_{ij} = a_{ij} \pm b_{ji}$.
+<li>$c_{ij} = a_{ii} + b_{jj}$.
+<li>$c_{ij} = a_{ji} \mp b_{ij}$.
