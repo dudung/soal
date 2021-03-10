@@ -16,7 +16,7 @@ src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/00/
 Bentuk iteratif dari metode Newton-Raphson untuk mencari akar dari suatu fungsi satu variabel $f(x)$ adalah
 
 <ol type="A">
-<li>$0$
+<li>$\displaystyle x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$
 <li>$-1$
 <li>$x - 2$
 <li>$x - 3$
