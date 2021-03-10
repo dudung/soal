@@ -11,7 +11,7 @@ category: physics
 tags: ["interpolation", "lagrange", "polynomial function"]
 date: 2021-03-10 17:16:00 +07
 permalink: /soal/0015
-src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/01/2021-03-10-list-square-fitting.md
+src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/01/2021-03-10-lagrange-interpolating-polynomial.md
 ref: https://mathworld.wolfram.com/LagrangeInterpolatingPolynomial.html
 ---
 Polinomial $P(x)$ berorde $N-1$ yang melewati semua pasangan data $\\{(x_i, y_i) \ \| \ i = 1, 2, \dots, N \\}$ dapat diperoleh, salah satunya, dengan menggunakan polinomial interpolasi Lagrange
@@ -34,7 +34,6 @@ k \ne j
 Untuk data berupa titik-titik $(0, 0)$, $(1, 3)$, dan $(2, 0)$ polinomial $l_1(x)$, $l_2(x)$, dan $l_3(x)$ adalah
 
 <ol type="A">
-
 <li>$\frac12 x(x - 1)$, $\frac12 (x - 1)(x - 2)$, $-x(x - 2)$.
 <li>$-x(x - 2)$, $\frac12 x(x - 1)$, $\frac12 (x - 1)(x - 2)$.
 <li>$-x(x - 2)$, $\frac12 (x - 1)(x - 2)$, $\frac12 x(x - 1)$.
