@@ -11,7 +11,7 @@ category: physics
 tags: ["linear interpolation", "python"]
 date: 2021-03-10 12:48:00 +07
 permalink: /soal/0011
-src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/00/2021-03-10-linear-interpolation.md
+src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/01/2021-03-10-lerp-python.md
 ref: https://en.wikipedia.org/w/index.php?oldid=1004343292
 ---
 Suatu program sederhana dalam bahasa pemrograman Python berikut
