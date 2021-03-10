@@ -8,7 +8,7 @@ x3dom: false
 threejs: false
 oo: false
 category: physics
-tags: ["series", "taylor", "function"]
+tags: ["linear interpolation"]
 date: 2021-03-10 11:46:00 +07
 permalink: /soal/0010
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/00/2021-03-10-linear-interpolation.md
