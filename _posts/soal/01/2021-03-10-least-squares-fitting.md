@@ -8,7 +8,7 @@ x3dom: false
 threejs: false
 oo: false
 category: physics
-tags: ["fitting", "least squares", "python"]
+tags: ["fitting", "least squares", "regression coefficient", "correlation coefficient"]
 date: 2021-03-10 16:27:00 +07
 permalink: /soal/0013
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/01/2021-03-10-list-square-fitting.md
