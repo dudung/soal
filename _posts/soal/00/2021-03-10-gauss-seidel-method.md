@@ -33,4 +33,4 @@ untuk mencari $x_i^{k+1}$ pada iterasi ke $k+1$ dengan $\\{x_i^1 \| i = 1, 2, \d
 <li>Metode Gauss-Seidel.
 <li>Metode eliminasi Gauss.
 <li>Metode Jacobi.
-<li>Metode Runge-Kutta.
+<li>Metode succesive over-relaxation.
