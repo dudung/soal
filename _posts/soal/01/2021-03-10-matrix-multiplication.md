@@ -50,3 +50,7 @@ maka untuk setiap elemennya pada matriks $\mathbf{C}$ berlaku bahwa
 
 <ol type="A">
 <li>$\displaystyle c_{ij} = \sum_{k = 1}^P a_{ik} \ b_{kj}$.
+<li>$\displaystyle c_{ij} = \sum_{k = 1}^P a_{ki} \ b_{jk}$.
+<li>$\displaystyle c_{ij} = \sum_{k = 1}^P a_{ik} \ b_{kj}$.
+<li>$\displaystyle c_{ij} = \sum_{k = 1}^P a_{ij} \ b_{jk}$.
+<li>$\displaystyle c_{ij} = \sum_{k = 1}^P a_{jk} \ b_{ki}$.
