@@ -15,7 +15,7 @@ def SS(a, b):
 	return ss
 
 x = [1, 2, 3, 4, 5]
-y = [2, 5, 8, 11, 9]
+y = [2, 5, 8, 11, 14]
 print("Data")
 print("x = ", x)
 print("y = ", y)
