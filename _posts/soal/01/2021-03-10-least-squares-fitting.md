@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["fitting", "least squares", "python"]
-date: 2021-03-10 16:02:00 +07
+date: 2021-03-10 16:27:00 +07
 permalink: /soal/0013
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/01/2021-03-10-list-square-fitting.md
 ref: https://mathworld.wolfram.com/LeastSquaresFitting.html
@@ -42,17 +42,17 @@ Dengan $\bar{x}$ dan $\bar{y}$, yang merupakan rata-rata nilai $x$ dan $y$, dapa
 
 \begin{equation} \nonumber
 \begin{array}{c}
-{\rm SS}_{xx} = \sum_{i = 1}^N (x_i - \bar{x})^2, \newline
-{\rm SS}_{yy} = \sum_{i = 1}^N (y_i - \bar{y})^2, \newline
-{\rm SS}_{xy} = \sum_{i = 1}^N (x_i - \bar{x})(y_i - \bar{y}).
+{\rm SS} _{xx} = \sum _{i = 1}^N (x_i - \bar{x})^2, \newline
+{\rm SS} _{yy} = \sum _{i = 1}^N (y_i - \bar{y})^2, \newline
+{\rm SS} _{xy} = \sum _{i = 1}^N (x_i - \bar{x})(y_i - \bar{y}).
 \end{array}
 \end{equation}
 
 Koefisien regresi $b$ dan konstanta $a$ dapat diperoleh melalui
 
 <ol type="A">
-<li>$\displaystyle \frac{{\rm SS}_{xy}}{{\rm SS}_{xx}}$ dan $\bar{y} - b \bar{x}$.
-<li>$\displaystyle \frac{{\rm SS}_{xy}}{{\rm SS}_{xx}}$ dan $\bar{y} + b \bar{x}$.
-<li>$\displaystyle \frac{{\rm SS}_{xx}}{{\rm SS}_{xy}}$ dan $\bar{y} - b \bar{x}$.
-<li>$\displaystyle \frac{{\rm SS}_{yy}}{{\rm SS}_{xx}}$ dan $\bar{y} - b \bar{x}$.
-<li>$\displaystyle \frac{{\rm SS}_{yy}}{{\rm SS}_{xy}}$ dan $\bar{y} + b \bar{x}$.
+<li>$\displaystyle \frac{ {\rm SS} _{xy} }{ {\rm SS} _{xx} }$ dan $\bar{y} - b \bar{x}$.
+<li>$\displaystyle \frac{ {\rm SS} _{xy} }{ {\rm SS} _{xx} }$ dan $\bar{y} + b \bar{x}$.
+<li>$\displaystyle \frac{ {\rm SS} _{xx} }{ {\rm SS} _{xy} }$ dan $\bar{y} - b \bar{x}$.
+<li>$\displaystyle \frac{ {\rm SS} _{yy} }{ {\rm SS} _{xx} }$ dan $\bar{y} - b \bar{x}$.
+<li>$\displaystyle \frac{ {\rm SS} _{yy} }{ {\rm SS} _{xy} }$ dan $\bar{y} + b \bar{x}$.
