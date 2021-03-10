@@ -11,7 +11,7 @@ category: physics
 tags: ["capacitor", "connection", "series", "paralel"]
 date: 2021-03-10 22:52:00 +07
 permalink: /soal/0020
-src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/01/2021-03-10-capacitors-connections.md
+src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/01/2021-03-10-capacitors-connections-2.md
 ref: https://www.tutorialspoint.com/basic_electronics/basic_electronics_circuit_connections_in_capacitors.htm
 ---
 Terdapat dua kapasitor identik dengan kapasitansi $C_0$. Keduanya dapat disusun sedemikian rupa sehingga menghasilkan beberapa konfigurasi. Nilai kapasitansi susunan yang mungkin adalah
