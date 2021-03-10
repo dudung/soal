@@ -8,7 +8,7 @@ x3dom: false
 threejs: false
 oo: false
 category: physics
-tags: ["capacitor", "connection", "series", "paralel"]
+tags: ["capacitor", "charging", "current"]
 date: 2021-03-11 05:11:00 +07
 permalink: /soal/0023
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/01/2021-03-11-charging-a-capacitor-current.md
