@@ -14,7 +14,7 @@ permalink: /soal/0016
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/01/2021-03-10-vector-dot-product.md
 ref: https://en.wikipedia.org/w/index.php?oldid=1011339241
 ---
-Terdapat vektor $\vec{a} = a_x \ \hat{x} + a_y \ \hat{y} + a_z \ \hat{z}$ dan $\vec{b} = b_x \ \hat{x} + b_y \ \hat{y} + b_z \ \hat{z}$. Operasi dot untuk vektor-vektor satuan adalah
+Terdapat vektor $\vec{a} = a_x \ \hat{x} + a_y \ \hat{y} + a_z \ \hat{z}$ dan $\vec{b} = b_x \ \hat{x} + b_y \ \hat{y} + b_z \ \hat{z}$. Operasi perkalian titik atau dot untuk vektor-vektor satuan adalah
 
 \begin{equation} \nonumber
 \begin{array}{c}
