@@ -17,7 +17,6 @@ ref: https://mathworld.wolfram.com/SecantMethod.html
 Bentuk iteratif dari metode secant untuk mencari akar dari suatu fungsi satu variabel $f(x)$ adalah
 
 <ol type="A">
-
 <li>$\displaystyle x_{n+2} = x_{n+1} - \frac{f(x_n) (x_{n+1} - x_n)}{f(x_{n+1}) - f(x_n)}$
 <li>$\displaystyle x_{n+2} = x_{n+1} + \frac{f(x_{n+1}) (x_{n+1} - x_n)}{f(x_{n+1}) - f(x_n)}$
 <li>$\displaystyle x_{n+2} = x_{n+1} + \frac{f(x_n) (x_{n+1} - x_n)}{f(x_{n+1}) - f(x_n)}$

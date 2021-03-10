@@ -9,23 +9,16 @@ threejs: false
 oo: false
 category: physics
 tags: ["root", "regula falsi method", "iterative"]
-date: 2021-03-10 09:47:00 +07
+date: 2021-03-10 09:56:00 +07
 permalink: /soal/0004
-src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/00/2021-03-10-bisection-method.md
-ref: https://en.wikipedia.org/w/index.php?oldid=1007189522
+src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/00/2021-03-10-regula-falsi-method.md
+ref: https://mathworld.wolfram.com/MethodofFalsePosition.html
 ---
-Bentuk iteratif dari metode bisection untuk mencari akar dari suatu fungsi satu variabel $f(x)$ adalah
-
-\begin{equation} \nonumber
-x_{n+2} = \frac{x_{n+1} + x_n}{2},
-\end{equation}
-
-dengan syarat bahwa
+Bentuk iteratif dari metode regula falsi untuk mencari akar dari suatu fungsi satu variabel $f(x)$ adalah
 
 <ol type="A">
-
-<li>$f(x_{n+1})f(x_n) < 0$
-<li>$f(x_{n+1}) < 0$
-<li>$f(x_n) < 0$
-<li>$f(x_{n+1}) > 0$
-<li>$f(x_n) > 0$
+<li>$\displaystyle x_n = x_{n-1} - \frac{f(x_1) (x_{n-1} - x_1)}{f(x_{n-1}) - f(x_1)}$
+<li>$\displaystyle x_n = x_1 - \frac{f(x_1) (x_{n-1} - x_1)}{f(x_{n-1}) - f(x_1)}$
+<li>$\displaystyle x_n = x_{n-1} - \frac{f(x_{n-1}) (x_{n-1} - x_1)}{f(x_{n-1}) - f(x_1)}$
+<li>$\displaystyle x_n = x_{n-1} - \frac{f(x_{n-1}) (x_{n-1} - x_{n-2})}{f(x_{n-1}) - f(x_{n-2})}$
+<li>$\displaystyle x_n = x_{n-1} - \frac{f(x_{n-2}) (x_{n-1} - x_{n-2})}{f(x_{n-1}) - f(x_{n-2})}$

@@ -23,7 +23,6 @@ x_{n+2} = \frac{x_{n+1} + x_n}{2},
 dengan syarat bahwa
 
 <ol type="A">
-
 <li>$f(x_{n+1})f(x_n) < 0$
 <li>$f(x_{n+1}) < 0$
 <li>$f(x_n) < 0$
