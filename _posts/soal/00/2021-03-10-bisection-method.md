@@ -10,7 +10,7 @@ oo: false
 category: physics
 tags: ["root", "bisection method", "iterative"]
 date: 2021-03-10 09:43:00 +07
-permalink: /soal/0002
+permalink: /soal/0003
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/00/2021-03-10-bisection-method.md
 ref: https://en.wikipedia.org/w/index.php?oldid=1007189522
 ---
