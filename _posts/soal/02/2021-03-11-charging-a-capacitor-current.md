@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["capacitor", "connection", "series", "paralel"]
-date: 2021-03-11 05:09:00 +07
+date: 2021-03-11 05:11:00 +07
 permalink: /soal/0023
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/01/2021-03-11-charging-a-capacitor-current.md
 ref: http://hyperphysics.phy-astr.gsu.edu/hbase/electric/capchg.html
@@ -22,6 +22,6 @@ Tepat saat $t = 0$ skalar ditutup dan arus $I = I_0$ mengalir. Pada suatu waktu 
 <li> $I_0 = 0$ dan $I_\infty = 0$.
 <li> $I_0 = 1 \ {\rm mA}$ dan $I_\infty = 0$.
 <li> $I_0 = 0$ dan $I_\infty = 100 \ {\rm mA}$.
+<li> $I_0 = 10 \ {\rm mA}$ dan $I_\infty = 0$.
 <li> $I_0 = 1 \ {\rm mA}$ dan $I_\infty = 100 \ {\rm mA}$.
-<li> $I_0 = 1 \ {\rm mA}$ dan $I_\infty = 100 \ {\rm \mu A}$.
 
