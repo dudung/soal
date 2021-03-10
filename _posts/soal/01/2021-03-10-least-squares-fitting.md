@@ -48,11 +48,11 @@ Dengan $\bar{x}$ dan $\bar{y}$, yang merupakan rata-rata nilai $x$ dan $y$, dapa
 \end{array}
 \end{equation}
 
-Koefisien regresi $b$ dan konstanta $a$ dapat diperoleh melalui
+Koefisien regresi $b$ dan konstanta $a$, serta koefisien korelasi $r^2$ dapat diperoleh melalui
 
 <ol type="A">
-<li>$\displaystyle \frac{ {\rm SS} _{xy} }{ {\rm SS} _{xx} }$ dan $\bar{y} - b \bar{x}$.
-<li>$\displaystyle \frac{ {\rm SS} _{xy} }{ {\rm SS} _{xx} }$ dan $\bar{y} + b \bar{x}$.
-<li>$\displaystyle \frac{ {\rm SS} _{xx} }{ {\rm SS} _{xy} }$ dan $\bar{y} - b \bar{x}$.
-<li>$\displaystyle \frac{ {\rm SS} _{yy} }{ {\rm SS} _{xx} }$ dan $\bar{y} - b \bar{x}$.
-<li>$\displaystyle \frac{ {\rm SS} _{yy} }{ {\rm SS} _{xy} }$ dan $\bar{y} + b \bar{x}$.
+<li>$\displaystyle \frac{ {\rm SS} _{xy} }{ {\rm SS} _{xx} }$ dan $\bar{y} - b \bar{x}$, serta $\displaystyle \frac{ {\rm SS} _{xy}^2}{ {\rm SS} _{xx} {\rm SS} _{yy} }$.
+<li>$\displaystyle \frac{ {\rm SS} _{xy} }{ {\rm SS} _{xx} }$ dan $\bar{y} + b \bar{x}$, serta $\displaystyle \frac{ {\rm SS} _{xy}^2}{ {\rm SS} _{xx} {\rm SS} _{yy} }$.
+<li>$\displaystyle \frac{ {\rm SS} _{xx} }{ {\rm SS} _{xy} }$ dan $\bar{y} - b \bar{x}$, serta $\displaystyle \frac{ {\rm SS} _{xy}^2}{ {\rm SS} _{xx} {\rm SS} _{yy} }$.
+<li>$\displaystyle \frac{ {\rm SS} _{yy} }{ {\rm SS} _{xx} }$ dan $\bar{y} - b \bar{x}$, serta $\displaystyle \frac{ {\rm SS} _{xy}^2}{ {\rm SS} _{xx} {\rm SS} _{yy} }$.
+<li>$\displaystyle \frac{ {\rm SS} _{yy} }{ {\rm SS} _{xy} }$ dan $\bar{y} + b \bar{x}$, serta $\displaystyle \frac{ {\rm SS} _{xy}^2}{ {\rm SS} _{xx} {\rm SS} _{yy} }$.
