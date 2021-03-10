@@ -14,7 +14,7 @@ permalink: /soal/0022
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/01/2021-03-11-capacitors-connections-4.md
 ref: https://www.tutorialspoint.com/basic_electronics/basic_electronics_circuit_connections_in_capacitors.htm
 ---
-Terdapat emmpat buah kapasitor identik dengan kapasitansi $C_0$. Ketiga kepasitor ini dapat disusun sedemikian rupa sehingga menghasilkan beberapa konfigurasi.
+Terdapat empat buah kapasitor identik dengan kapasitansi $C_0$. Ketiga kepasitor ini dapat disusun sedemikian rupa sehingga menghasilkan beberapa konfigurasi.
 
 { %comment% }
 ```
