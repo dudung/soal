@@ -32,8 +32,8 @@ Semua resistor memiliki nilai hambatan yang sama $R_0$ dan semua kapasitor memil
 
 <ol type="A">
 
-<li> $0$ dan $\frac34\varepsilon$.
-<li> $0$ dan $\frac14\varepsilon$.
-<li> $0$ dan $0$.
-<li> $\frac14\varepsilon$ dan $0$.
-<li> $\frac34\varepsilon$ dan $0$.
+<li>$0$ dan $\frac34\varepsilon$.
+<li>$0$ dan $\frac14\varepsilon$.
+<li>$0$ dan $0$.
+<li>$\frac14\varepsilon$ dan $0$.
+<li>$\frac34\varepsilon$ dan $0$.

@@ -32,8 +32,8 @@ Semua resistor memiliki nilai hambatan yang sama $R_0$ dan semua kapasitor memil
 
 <ol type="A">
 
-<li> $\displaystyle \frac{\epsilon}{3R_0}$ dan $\displaystyle \frac{\epsilon}{R_0}$.
-<li> $\displaystyle \frac{\epsilon}{4R_0}$ dan $\displaystyle \frac{\epsilon}{3R_0}$.
-<li> $\displaystyle \frac{\epsilon}{R_0}$ dan $\displaystyle \frac{\epsilon}{R_0}$.
-<li> $\displaystyle \frac{\epsilon}{3R_0}$ dan $\displaystyle \frac{\epsilon}{4R_0}$.
-<li> $\displaystyle \frac{\epsilon}{R_0}$ dan $\displaystyle \frac{\epsilon}{4R_0}$.
+<li>$\displaystyle \frac{\epsilon}{3R_0}$ dan $\displaystyle \frac{\epsilon}{R_0}$.
+<li>$\displaystyle \frac{\epsilon}{4R_0}$ dan $\displaystyle \frac{\epsilon}{3R_0}$.
+<li>$\displaystyle \frac{\epsilon}{R_0}$ dan $\displaystyle \frac{\epsilon}{R_0}$.
+<li>$\displaystyle \frac{\epsilon}{3R_0}$ dan $\displaystyle \frac{\epsilon}{4R_0}$.
+<li>$\displaystyle \frac{\epsilon}{R_0}$ dan $\displaystyle \frac{\epsilon}{4R_0}$.
