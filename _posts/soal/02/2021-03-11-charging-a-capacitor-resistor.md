@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["capacitor", "charging", "resistor"]
-date: 2021-03-11 05:41:00 +07
+date: 2021-03-11 19:46:00 +07
 permalink: /soal/0026
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/01/2021-03-11-charging-a-capacitor-voltage.md
 ref: http://hyperphysics.phy-astr.gsu.edu/hbase/electric/capchg.html
@@ -31,4 +31,9 @@ Pada suatu saat yang lama $t \rightarrow \infty$ kapasitor telah terisi penuh se
 Semua resistor memiliki nilai hambatan yang sama $R_0$ dan semua kapasitor memiliki kapasitansi yang sama $C_0$. Arus yang mengalir melewati $R_6$ saat $t = 0$ dan $t \rightarrow \infty$ adalah
 
 <ol type="A">
+
+<li> $\displaystyle \frac{\epsilon}{3R_0}$ dan $\displaystyle \frac{\epsilon}{R_0}$.
+<li> $\displaystyle \frac{\epsilon}{4R_0}$ dan $\displaystyle \frac{\epsilon}{3R_0}$.
+<li> $\displaystyle \frac{\epsilon}{R_0}$ dan $\displaystyle \frac{\epsilon}{R_0}$.
+<li> $\displaystyle \frac{\epsilon}{3R_0}$ dan $\displaystyle \frac{\epsilon}{4R_0}$.
 <li> $\displaystyle \frac{\epsilon}{R_0}$ dan $\displaystyle \frac{\epsilon}{4R_0}$.
