@@ -11,7 +11,7 @@ category: physics
 tags: ["capacitor", "charging", "resistor"]
 date: 2021-03-11 19:46:00 +07
 permalink: /soal/0026
-src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/01/2021-03-11-charging-a-capacitor-voltage.md
+src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/01/2021-03-11-charging-a-capacitor-resistor.md
 ref: http://hyperphysics.phy-astr.gsu.edu/hbase/electric/capchg.html
 ---
 Terdapat sebuah rangkaian listrik arus searah yang terdiri dari sebuah saklar $S$, enam buah resistor $R_1 \dots R_6$, dua buah kapasitor $C_1 \dots C_2$, dan sebuah baterai $\varepsilon$ seperti pada gambar berikut.
