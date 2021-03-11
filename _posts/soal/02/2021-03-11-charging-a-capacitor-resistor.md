@@ -28,7 +28,7 @@ Pada suatu saat yang lama $t \rightarrow \infty$ kapasitor telah terisi penuh se
 
 ![..](/assets/img/soal/02/0026c.png)
 
-Semua resistor memiliki nilai hambatan yang sama $R_0$ dan semua kapasitor memiliki kapasitansi yang sama $C_0$.
+Semua resistor memiliki nilai hambatan yang sama $R_0$ dan semua kapasitor memiliki kapasitansi yang sama $C_0$. Arus yang mengalir melewati $R_6$ saat $t = 0$ dan $t \rightarrow \infty$ adalah
 
 <ol type="A">
-<li>.
+<li> $\displaystyle \frac{\epsilon}{R_0}$ dan $\displaystyle \frac{\epsilon}{4R_0}$.
