@@ -18,4 +18,11 @@ Terdapat suatu rangkaian seri yang tersusun atas baterai $\varepsilon$, resistor
 
 ![..](/assets/img/soal/02/0028.png)
 
-<li>.
+Dengan sumbu datar merupakan waktu $t$, besaran-besaran $F$, $H$, $G$, dan $K$ pada kedua gambar di atas merupakan
+
+<ol type="A">
+<li> Muatan total $C\varepsilon$, muatan setiap saat $q$, arus setiap saat $I$, dan arus awal $\varepsilon / R$.
+<li> Muatan total $C\varepsilon$, muatan setiap saat $q$, arus awal $\varepsilon / R$, dan arus setiap saat $I$.
+<li> Muatan setiap saat $q$, muatan total $C\varepsilon$, arus setiap saat $I$, dan arus awal $\varepsilon / R$.
+<li> Muatan setiap saat $q$, muatan total $C\varepsilon$, arus awal $\varepsilon / R$, dan arus setiap saat $I$.
+<li> Muatan setiap saat $q$, arus awal $\varepsilon / R$, muatan total $C\varepsilon$, dan arus setiap saat $I$.
