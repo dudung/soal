@@ -16,15 +16,14 @@ ref: https://www.tutorialspoint.com/basic_electronics/basic_electronics_circuit_
 ---
 Terdapat empat buah kapasitor identik dengan kapasitansi $C_0$. Ketiga kepasitor ini dapat disusun sedemikian rupa sehingga menghasilkan beberapa konfigurasi.
 
-{ %comment% }
+{% comment %}
 ```
 4C   = C-C-C-C,       C/4 = C|C|C|C
  C   = (C-C)|(C-C),   C   = (C|C)-(C-C)
 4C/3 = (C-C-C)|C,    3C/4 = (C|C|C)-C
 3C/5 = ((C-C)|C)-C,  5C/3 =((C|C)-C)|C
 ```
-
-{ %endcomment% }
+{% endcomment %}
 
 Nilai kapasitansi konfigurasi yang tidak mungkin adalah
 
