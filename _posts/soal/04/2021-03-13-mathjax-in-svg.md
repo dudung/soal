@@ -14,9 +14,9 @@ permalink: /soal/0040
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-13-mathjax-in-svg.md
 ref: https://stackoverflow.com/a/15973585
 ---
-..
+Persamaan yang ditampilkan dengan menggunakan MathJax dapat disipkan dalam suatu berkas SVG sehingga memberikan hasil sebagai berikut ini.
 
-<svg width="300" height="300">
+<svg width="300" height="300" style="margin:auto; display:block;">
 <path d="M 20,150 a 130,130 0 0,0 260,0 a 130,130 0 0,0 -260,0" fill="none" stroke="#f00" stroke-width="1" />
 
 <foreignObject x="75" y="135" width="200" height="100">
@@ -39,5 +39,13 @@ $x^2 + y^2 + z^2 = R^2$
 
 <circle cx="188" cy="112" r="2" stroke="black" />
 <circle cx="112" cy="188" r="2" stroke="blue" />
-
 </svg>
+
+Untuk menyisipkan persamaan berbentuk $x^2 + y^2 + z^2 = R^2$ tersebut dalam gambar di atas, dapat digunakan elemen tertentu dalam SVG, yaitu
+
+<ol type="A">
+<li><tt>&lt;glyph&gt;</tt>.
+<li><tt>&lt;text&gt;</tt>.
+<li><tt>&lt;image&gt;</tt>.
+<li><tt>&lt;foreignObject&gt;</tt>.
+<li><tt>&lt;g&gt;</tt>.
