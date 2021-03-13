@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["svg", "referencing", "symbol", "html"]
-date: 2021-03-13 18:48:00 +07
+date: 2021-03-13 20:52:00 +07
 permalink: /soal/0043
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-13-svg-symbol-and-use.md
 ref: https://css-tricks.com/svg-symbol-good-choice-icons/
