@@ -8,7 +8,7 @@ x3dom: false
 threejs: false
 oo: false
 category: physics
-tags: ["svg", "referencing", "html"]
+tags: ["svg", "referencing", "defs", "html"]
 date: 2021-03-13 17:55:00 +07
 permalink: /soal/0042
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-13-svg-defs-and-use.md
