@@ -19,7 +19,7 @@ Perhatikan isi suatu berkas SVG
 ```svg
 <svg width="300" height="200">
 <style type="text/css">
-svg{
+svg {
 	background:#f8f8f8;
 	margin:auto; display:block;
 	border:1px #888 dashed;
