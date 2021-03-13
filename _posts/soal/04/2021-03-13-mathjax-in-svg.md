@@ -8,7 +8,7 @@ x3dom: false
 threejs: false
 oo: false
 category: physics
-tags: [""]
+tags: ["svg", "mathjax", "html", "markdown"]
 date: 2021-03-13 12:39:00 +07
 permalink: /soal/0040
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-13-mathjax-in-svg.md
