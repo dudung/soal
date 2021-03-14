@@ -14,7 +14,85 @@ permalink: /soal/0048
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-14-svg-js-spring.md
 ref: 
 ---
-Suatu bentuk didefinisikan dengan elemen SVG `<dev>` sebagaimana diberikan oleh code snippet berikut.
+Suatu bentuk didefinisikan dengan elemen SVG `<defs>` sebagaimana diberikan oleh code snippet berikut.
+
+```html
+<svg>
+	<defs>
+		<g id="h-spring">
+			<desc>w = 120, h = 24</desc>
+			<path d="M0,12 h16 l8,-12 l8,24, l8,-24 l8,24, l8,-24 l8,24, l8,-24 l8,24, l8,-24 l8,24, l8,-12 h16" />
+		</g>
+		<g id="block">
+			<desc>w = 40, h = 40</desc>
+			<path d="M0,0 v40 h40 v-40 z" />
+		</g>
+		<g id="floor">
+			<desc>w = 240, h = 10</desc>
+			<rect x1="0" y1="0" width="240" height="10" stroke="none" fill="#ddd"	/>
+			<line x1="0" y1="0" x2="240" y2="0" stroke="black" />
+		</g>
+		<g id="left-wall">
+			<desc>w = 10, h = 50</desc>
+			<rect x1="0" y1="0" width="10" height="50" stroke="none" fill="#ddd"	/>
+			<line x1="10" y1="0" x2="10" y2="50" stroke="black" />
+		</g>
+	</defs>
+</svg>
+```
+
+yang kemudian dipanggil dengan
+
+```html
+<svg width="250" height="60">
+	<use xlink:href="#h-spring" y="18" class="black-outline" id="spring" transform="translate(10)"/>
+	<use xlink:href="#block" x="130" y="10" class="white" id="moving-block" />
+	<use xlink:href="#floor" x="10" y="50" />
+	<use xlink:href="#left-wall" />
+</svg>
+```
+
+dan digerakkan dengan
+
+```javascript
+<script>
+var proc, t;
+
+function toggle() {
+	var cap = event.target.innerHTML;
+	console.log(cap);
+	if(cap == "Start") {
+		event.target.innerHTML = "Stop";
+		t = 0;
+		proc = setInterval(visualize, 100);
+	} else {
+		event.target.innerHTML = "Start";
+		clearInterval(proc);
+	}
+}
+
+function visualize() {
+	var A = 40;
+	var x0 = 130.0;
+	var T = 2;
+	var dt = 0.1;
+	var omega = 2 * Math.PI / T;
+	var x = A * Math.sin(omega * t) + x0;
+	
+	var mb = document.getElementById("moving-block");
+	var sp = document.getElementById("spring");
+	mb.setAttribute("x", x);
+	
+	var ratio = x / x0;
+	var scale = "scale(" + ratio + ", 1)";
+	sp.setAttribute("transform", "translate(10) " + scale);
+	
+	t += dt;
+}
+</script>
+```
+
+sehingga menghasilkan visualisasi berikut
 
 <svg style="display: none;">
 	<style type="text/css">
@@ -31,9 +109,9 @@ Suatu bentuk didefinisikan dengan elemen SVG `<dev>` sebagaimana diberikan oleh 
 			<path d="M0,0 v40 h40 v-40 z" />
 		</g>
 		<g id="floor">
-			<desc>w = 250, h = 10</desc>
-			<rect x1="0" y1="0" width="200" height="10" stroke="none" fill="#ddd"	/>
-			<line x1="0" y1="0" x2="200" y2="0" stroke="black" />
+			<desc>w = 240, h = 10</desc>
+			<rect x1="0" y1="0" width="240" height="10" stroke="none" fill="#ddd"	/>
+			<line x1="0" y1="0" x2="240" y2="0" stroke="black" />
 		</g>
 		<g id="left-wall">
 			<desc>w = 10, h = 50</desc>
@@ -52,7 +130,6 @@ Suatu bentuk didefinisikan dengan elemen SVG `<dev>` sebagaimana diberikan oleh 
 	<use xlink:href="#block" x="130" y="10" class="white" id="moving-block" />
 	<use xlink:href="#floor" x="10" y="50" />
 	<use xlink:href="#left-wall" />
-	<!--use xlink:href="#h-spring" x="10" y="28" class="black-outline" transform="translate(10) scale(0.5, 1) translate(-10)" /-->
 </svg>
 
 <button onclick="toggle()">Start</button>
@@ -75,7 +152,7 @@ function toggle() {
 
 function visualize() {
 	var A = 40;
-	var x0 = 130;
+	var x0 = 130.0;
 	var T = 2;
 	var dt = 0.1;
 	var omega = 2 * Math.PI / T;
@@ -88,11 +165,20 @@ function visualize() {
 	var ratio = x / x0;
 	var scale = "scale(" + ratio + ", 1)";
 	sp.setAttribute("transform", "translate(10) " + scale);
-	console.log(omega, x, scale);
+	//console.log(omega, x, scale);
 	
 	t += dt;
 }
 </script>
+
+yang memerlukan elemen HTML `<button>` dengan event `onclick` memanggil fungsi `toggle()`. Teks awal dari elemen ini adalah "Start" yang dapat berubah menjadi "Stop" dan kembali. Di sini telah diberikan contoh penggunaan elemen `<defs>` dan `<use>` pada SVG yang kemudian diubah melalui JS menggunakan elemen DOM HTML `<button>`. Penulisan elemen `<button>` yang tepat untuk contoh yang diberikan pada saat awal adalah
+
+<ol type="A">
+<li><tt>&lt;button onclick="toggle()" value="Start"&gt;&lt;/button&gt;</tt>.
+<li><tt>&lt;button onclick="toggle()" value="Start" /&gt;</tt>.
+<li><tt>&lt;button onclick="toggle()"&gt;Stop&lt;/button&gt;</tt>.
+<li><tt>&lt;button click="toggle()"&gt;Start&lt;/button&gt;</tt>.
+<li><tt>&lt;button onclick="toggle()"&gt;Start&lt;/button&gt;</tt>.
 
 
 {% comment %}
@@ -115,4 +201,6 @@ function visualize() {
 	</defs>
 	<use xlink:href="#floor" x="0" y="0" transform="scale(2, 0.5)"/>
 </svg>
+
+<!--use xlink:href="#h-spring" x="10" y="28" class="black-outline" transform="translate(10) scale(0.5, 1) translate(-10)" /-->
 {% endcomment %}
