@@ -9,12 +9,13 @@ threejs: false
 oo: false
 category: physics
 tags: ["svg", "referencing", "defs", "html", "curve"]
-date: 2021-03-14 07:12:00 +07
+date: 2021-03-14 07:57:00 +07
 permalink: /soal/0045
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-14-svg-defs-use-curve.md
 ref: http://tutorials.jenkov.com/svg/defs-element.html
 ---
 Telah didefinisikan beberapa bentuk SVG dengan memanfaatkan elemen `<defs>` agar digunakan untuk menampilkan sumbu koordinat, titik, dan kurva.
+
 
 <svg style="display: none;">
 	<style type="text/css">
