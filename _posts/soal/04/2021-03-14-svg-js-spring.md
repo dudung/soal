@@ -9,7 +9,7 @@ threejs: false
 oo: false
 category: physics
 tags: ["svg", "html", "js", "button", "click"]
-date: 2021-03-14 16:32:00 +07
+date: 2021-03-14 18:42:00 +07
 permalink: /soal/0048
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-14-svg-js-spring.md
 ref: https://www.w3schools.com/jsref/event_onclick.asp
@@ -96,13 +96,13 @@ sehingga menghasilkan visualisasi berikut
 
 <svg style="display: none;">
 	<style type="text/css">
-	.black-outline { stroke: black; fill: none; stroke-width: 1px; }
+	.black-outline { stroke: black; fill: none; stroke-width: 1.5px; }
 	.white { stroke: black; fill: #fff; stroke-width: 2px; }
 	</style>
 	<defs>
 		<g id="h-spring">
 			<desc>w = 120, h = 24</desc>
-			<path d="M0,12 h16 l8,-12 l8,24, l8,-24 l8,24, l8,-24 l8,24, l8,-24 l8,24, l8,-24 l8,24, l8,-12 h16" />
+			<path d="M0,12 h16 l8,-12 l8,24, l8,-24 l8,24, l8,-24 l8,24, l8,-24 l8,24, l8,-24 l8,24, l8,-12 h16" vector-effect="non-scaling-stroke" />
 		</g>
 		<g id="block">
 			<desc>w = 40, h = 40</desc>
