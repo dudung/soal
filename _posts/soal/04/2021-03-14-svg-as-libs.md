@@ -19,8 +19,26 @@ ref: https://vecta.io/blog/best-way-to-embed-svg
 ---
 Beberapa bentuk dalam gambar di bawah ini
 
-<svg width="600" height="300">
+<svg width="500" height="300">
 	<use xlink:href="#sphere-3-circles" transform="scale(0.5)" />
+	<use xlink:href="#xyz-axis" x="170" y="75" class="black" />
+	<g transform="translate(240, 25)">
+		<use xlink:href="#h-spring" x="10" y="18" class="black-outline"/>
+		<use xlink:href="#block" x="130" y="10" class="white" id="moving-block" />
+		<use xlink:href="#floor" x="10" y="50" />
+		<use xlink:href="#left-wall" />
+		<use xlink:href="#arr50px" transform="translate(150,30) rotate(90)" stroke="green" fill="green" />
+		<use xlink:href="#arr50px" transform="translate(160,100) rotate(-90)" stroke="red" fill="red" />
+		<foreignObject x="130" y="80" width="15" height="25">
+		$\vec{w}$
+		</foreignObject>
+		<foreignObject x="165" y="60" width="15" height="25">
+		$\vec{N}$
+		</foreignObject>
+	</g>
+</svg>
+
+
 </svg>
 
 dapat ditampilkan dengan hanya menggunakan code snippet berikut
@@ -31,6 +49,10 @@ dapat ditampilkan dengan hanya menggunakan code snippet berikut
 yang menunjukkan bahwa beberapa bentuk tersebut telah didefinisikan menggunakan elemen SVG `<defs>` dan kemudian dipanggil dengan elemen SVG `<use>`.
 
 <svg width="400" height="200">
+	<style type="text/css">
+	//svg { border: 1px black dashed; }
+	//foreignObject { border: 1px black dashed; }
+	</style>
 	<use xlink:href="#3d-axis" x="20" y="60" class="black" />
 	<use xlink:href="#xyz-axis" x="100" y="120" class="black" />
 	<use xlink:href="#yzx-axis" x="200" y="80" class="black" />
@@ -67,9 +89,3 @@ yang menunjukkan bahwa beberapa bentuk tersebut telah didefinisikan menggunakan 
 	</foreignObject>
 </svg>
 
-<svg width="250" height="60">
-	<use xlink:href="#h-spring" y="18" class="black-outline" id="spring" transform="translate(10)"/>
-	<use xlink:href="#block" x="130" y="10" class="white" id="moving-block" />
-	<use xlink:href="#floor" x="10" y="50" />
-	<use xlink:href="#left-wall" />
-</svg>
