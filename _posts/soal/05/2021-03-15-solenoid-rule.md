@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["right hand rules", "third rule", "solenoid rule"]
-date: 2021-03-15 06:28:00 +07
+date: 2021-03-15 06:41:00 +07
 permalink: /soal/0052
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-15-solenoid-rule.md
 ref: https://www.arborsci.com/blogs/cool/three-right-hand-rules-of-electromagnetism
