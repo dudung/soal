@@ -9,10 +9,10 @@ threejs: false
 oo: false
 category: physics
 tags: ["svg", "html", "js"]
-date: 2021-03-14 14:16:00 +07
+date: 2021-03-14 16:32:00 +07
 permalink: /soal/0048
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-14-svg-js-spring.md
-ref: 
+ref: https://www.w3schools.com/jsref/event_onclick.asp
 ---
 Suatu bentuk didefinisikan dengan elemen SVG `<defs>` sebagaimana diberikan oleh code snippet berikut.
 
