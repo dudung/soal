@@ -3,9 +3,11 @@ layout: soal
 author: viridi
 title: "0049"
 mathjax: true
+chartjs: false
 ptext: false
 x3dom: false
 threejs: false
+3dmol: false
 oo: false
 svgphys: true
 category: physics
@@ -15,6 +17,18 @@ permalink: /soal/0049
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-14-svg-as-libs.md
 ref: https://vecta.io/blog/best-way-to-embed-svg
 ---
+Beberapa bentuk dalam gambar di bawah ini
+
+<svg width="600" height="300">
+	<use xlink:href="#sphere-3-circles" transform="scale(0.5)" />
+</svg>
+
+dapat ditampilkan dengan hanya menggunakan code snippet berikut
+
+```html
+```
+
+yang menunjukkan bahwa beberapa bentuk tersebut telah didefinisikan menggunakan elemen SVG `<defs>` dan kemudian dipanggil dengan elemen SVG `<use>`.
 
 <svg width="400" height="200">
 	<use xlink:href="#3d-axis" x="20" y="60" class="black" />
