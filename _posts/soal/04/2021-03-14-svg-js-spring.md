@@ -18,7 +18,7 @@ Suatu bentuk didefinisikan dengan elemen SVG `<dev>` sebagaimana diberikan oleh 
 
 <svg style="display: none;">
 	<style type="text/css">
-	.black-outline { stroke: black; fill: none; stroke-width: 2px; }
+	.black-outline { stroke: black; fill: none; stroke-width: 1px; }
 	.white { stroke: black; fill: #fff; stroke-width: 2px; }
 	</style>
 	<defs>
@@ -31,7 +31,7 @@ Suatu bentuk didefinisikan dengan elemen SVG `<dev>` sebagaimana diberikan oleh 
 			<path d="M0,0 v40 h40 v-40 z" />
 		</g>
 		<g id="floor">
-			<desc>w = 200, h = 10</desc>
+			<desc>w = 250, h = 10</desc>
 			<rect x1="0" y1="0" width="200" height="10" stroke="none" fill="#ddd"	/>
 			<line x1="0" y1="0" x2="200" y2="0" stroke="black" />
 		</g>
@@ -43,22 +43,57 @@ Suatu bentuk didefinisikan dengan elemen SVG `<dev>` sebagaimana diberikan oleh 
 	</defs>
 </svg>
 
-<svg width="200" height="60">
+<svg width="250" height="60">
 	<style type="text/css">
 	//svg { border: 1px black dashed; }
 	//foreignObject { border: 1px black solid; }
 	</style>
-	<use xlink:href="#h-spring" x="10" y="18" class="black-outline" />
+	<use xlink:href="#h-spring" y="18" class="black-outline" id="spring" transform="translate(10)"/>
 	<use xlink:href="#block" x="130" y="10" class="white" id="moving-block" />
 	<use xlink:href="#floor" x="10" y="50" />
 	<use xlink:href="#left-wall" />
+	<!--use xlink:href="#h-spring" x="10" y="28" class="black-outline" transform="translate(10) scale(0.5, 1) translate(-10)" /-->
 </svg>
 
+<button onclick="toggle()">Start</button>
+
 <script>
-function change(x) {
-	mb = document.getElementById("moving-block");
+var proc, t;
+
+function toggle() {
+	var cap = event.target.innerHTML;
+	console.log(cap);
+	if(cap == "Start") {
+		event.target.innerHTML = "Stop";
+		t = 0;
+		proc = setInterval(visualize, 100);
+	} else {
+		event.target.innerHTML = "Start";
+		clearInterval(proc);
+	}
+}
+
+function visualize() {
+	var A = 40;
+	var x0 = 130;
+	var T = 2;
+	var dt = 0.1;
+	var omega = 2 * Math.PI / T;
+	var x = A * Math.sin(omega * t) + x0;
+	
+	var mb = document.getElementById("moving-block");
+	var sp = document.getElementById("spring");
+	mb.setAttribute("x", x);
+	
+	var ratio = x / x0;
+	var scale = "scale(" + ratio + ", 1)";
+	sp.setAttribute("transform", "translate(10) " + scale);
+	console.log(omega, x, scale);
+	
+	t += dt;
 }
 </script>
+
 
 {% comment %}
 <!-- 20210314.1357 It fails and not understandable -->
