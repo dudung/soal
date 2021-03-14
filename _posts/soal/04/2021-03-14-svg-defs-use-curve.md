@@ -16,7 +16,6 @@ ref: http://tutorials.jenkov.com/svg/defs-element.html
 ---
 Telah didefinisikan beberapa bentuk SVG dengan memanfaatkan elemen `<defs>` agar digunakan untuk menampilkan sumbu koordinat, titik, dan kurva.
 
-
 <svg style="display: none;">
 	<style type="text/css">
 	.black { stroke: #000; fill: #000; stroke-width: 1.25px; }
@@ -85,7 +84,7 @@ Telah didefinisikan beberapa bentuk SVG dengan memanfaatkan elemen `<defs>` agar
 
 Bentuk-bentuk ini kemudian digunakan untuk menghasilkan gambar di atas saat dipanggil dengan cara
 
-```svg
+```html
 <svg width="400" height="200">
 	<use xlink:href="#xyz-axis" x="10" y="190" class="black" />
 	<foreignObject x="30" y="140" width="60" height="25">
