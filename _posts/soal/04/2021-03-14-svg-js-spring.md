@@ -102,7 +102,7 @@ sehingga menghasilkan visualisasi berikut
 	<defs>
 		<g id="h-spring">
 			<desc>w = 120, h = 24</desc>
-			<path d="M0,12 h16 l8,-12 l8,24, l8,-24 l8,24, l8,-24 l8,24, l8,-24 l8,24, l8,-24 l8,24, l8,-12 h16" vector-effect="non-scaling-stroke" />
+			<path d="M0,12 h16 l8,-12 l8,24, l8,-24 l8,24, l8,-24 l8,24, l8,-24 l8,24, l8,-24 l8,24, l8,-12 h16" vector-effect="non-scaling-stroke" stroke-linejoin="bevel" />
 		</g>
 		<g id="block">
 			<desc>w = 40, h = 40</desc>
