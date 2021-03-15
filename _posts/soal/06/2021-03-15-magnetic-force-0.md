@@ -11,10 +11,10 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["kinetic energy", "work", "theorem"]
+tags: ["magnetic force", "tutorial", "fi1202", "2020-1"]
 date: 2021-03-15 20:29:00 +07
 permalink: /soal/0060
-src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-15-magnetic-force.md
+src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-15-magnetic-force-0.md
 ref: https://www.chegg.com/homework-help/questions-and-answers/q70471046
 ---
 Sebuah elektron ($\|q\| = 1.6\times10{-19} \ {\rm C}$, $m = 9.11\times10^{-31} \ {\rm kg}$) dipercepat dari keadaan diam melalui beda potensial $2500 \ {\rm J/C}$ dalam suatu daerah bermedan magnetik seragam $3 \ {\rm T}$. Dengan memisalkan arah medan magnet dan arah kecepatan elektron dapat diperoleh gaya magnet maksimum dan minimum yang bekerja pada elektron tersebut, yaitu
