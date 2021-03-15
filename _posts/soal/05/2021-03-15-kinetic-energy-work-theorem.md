@@ -15,7 +15,7 @@ tags: ["kinetic energy", "work", "theorem"]
 date: 2021-03-15 13:52:00 +07
 permalink: /soal/0058
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-15-kinetic-energy-work-theorem.md
-ref: https://www.youtube.com/watch?v=MGiYJC7k4IU&t=635s
+ref: https://www.google.com/
 ---
 Teorema energi kinetik - usaha mengatakan bahwa
 
