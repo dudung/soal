@@ -11,7 +11,7 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["right hand rules", "first rule", "oersted's demonstration"]
+tags: ["right hand rules", "second rule", "oersted's demonstration"]
 date: 2021-03-15 05:50:00 +07
 permalink: /soal/0050
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-15-oersteds-demonstration.md

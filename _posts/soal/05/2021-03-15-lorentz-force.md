@@ -11,7 +11,7 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["right hand rules", "second rule", "lorentz force"]
+tags: ["right hand rules", "first rule", "lorentz force"]
 date: 2021-03-15 06:00:00 +07
 permalink: /soal/0051
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-15-lorentz-force.md
