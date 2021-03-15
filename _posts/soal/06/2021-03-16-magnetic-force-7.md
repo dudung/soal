@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["magnetic force", "tutorial", "fi1202", "2020-1"]
-date: 2021-03-16 05:21:00 +07
+date: 2021-03-16 05:40:00 +07
 permalink: /soal/0067
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-16-magnetic-force-7.md
 ref: https://www.google.com
