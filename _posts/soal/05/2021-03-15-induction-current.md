@@ -25,3 +25,4 @@ Dalam suatu video yang dibuat oleh Arbor Scientific dapat dilihat alasan mengapa
 <li>magnet permanen diam di dalam kumparan
 <li>magnet permanen bergerak acak jauh dari kumparan.
 <li>magnet permanen keluar dari dan masuk ke dalam kumparan berulang-ulang.
+
