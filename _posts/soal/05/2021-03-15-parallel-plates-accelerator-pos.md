@@ -12,7 +12,7 @@ oo: false
 svgphys: true
 category: physics
 tags: ["parallel plates", "electric field", "accelerator"]
-date: 2021-03-15 12:32:00 +07
+date: 2021-03-15 12:34:00 +07
 permalink: /soal/0055
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-15-parallel-plates-accelerator-pos.md
 ref: https://www.youtube.com/watch?v=MGiYJC7k4IU&t=635s
