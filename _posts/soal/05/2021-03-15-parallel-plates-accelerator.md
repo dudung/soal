@@ -12,7 +12,7 @@ oo: false
 svgphys: true
 category: physics
 tags: ["parallel plates", "electric field", "accelerator"]
-date: 2021-03-15 12:25:00 +07
+date: 2021-03-15 12:32:00 +07
 permalink: /soal/0055
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-15-parallel-plates-accelerator.md
 ref: https://www.youtube.com/watch?v=MGiYJC7k4IU&t=635s
@@ -56,7 +56,7 @@ Terdapat dua pelat konduktor sejajar yang masing-masing memilki potensial listri
 	</defs>
 </svg>
 
-<svg width="110" height="125" style="background: #000;">
+<svg width="110" height="125" style="background: none;">
 	<use xlink:href="#yz-plate-parallel-pos-neg" x="5" />
 	<use xlink:href="#pos-charge" x="20" y="50" class="pos-charge" />
 	<!--use xlink:href="#neg-charge" x="70" y="50" class="neg-charge" /-->
@@ -65,7 +65,7 @@ Terdapat dua pelat konduktor sejajar yang masing-masing memilki potensial listri
 	<foreignObject x="50" y="100" width="20" height="25">$h$</foreignObject>
 </svg>
 
-Sebuah muatan positif $q = +1 \ {\rm \mu C}$ (<x style="color: red;">merah</x>) semua berada di dekat pelat sebelah kiri tanpa kecepatan awal. Perubahan energi kinetik muatan $q$ mulai dari pelat kiri (potensial listrik $V_L$) sampai ke pelat kanan (potensial listrik $V_R$) adalah
+Sebuah muatan positif $q = +1 \ {\rm \mu C}$ (<x style="color: red;">merah</x>) semua berada di dekat pelat sebelah kiri tanpa kecepatan awal. Dengan $\Delta K = K_f - K_i$, energi kinetik akhir ($f$, final) dikurangi energi kinetik awal ($i$, inisial), perubahan energi kinetik $\Delta K$ muatan $q$ mulai dari pelat kiri (potensial listrik $V_L$) sampai ke pelat kanan (potensial listrik $V_R$) adalah
 
 <ol type="A">
 <li>$\Delta K = 10 \ {\rm mJ}$.
