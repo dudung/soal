@@ -65,7 +65,7 @@ Terdapat dua pelat konduktor sejajar yang masing-masing memilki potensial listri
 	<foreignObject x="50" y="100" width="20" height="25">$h$</foreignObject>
 </svg>
 
-Sebuah muatan positif $q = +1 \ {\rm \mu C}$ (<x style="color: red;">merah</x>) semua berada di dekat pelat sebelah kiri tanpa kecepatan awal. Dengan $\Delta K = K_f - K_i$, energi kinetik akhir ($f$, final) dikurangi energi kinetik awal ($i$, inisial), perubahan energi kinetik $\Delta K$ muatan $q$ mulai dari pelat kiri (potensial listrik $V_L$) sampai ke pelat kanan (potensial listrik $V_R$) adalah
+Sebuah muatan positif $q = +1 \ {\rm \mu C}$ (<x style="color: red;">merah</x>) semula berada di dekat pelat sebelah kiri tanpa kecepatan awal. Dengan $\Delta K = K_f - K_i$, energi kinetik akhir ($f$, final) dikurangi energi kinetik awal ($i$, inisial), perubahan energi kinetik $\Delta K$ muatan $q$ mulai dari pelat kiri (potensial listrik $V_L$) sampai ke pelat kanan (potensial listrik $V_R$) adalah
 
 <ol type="A">
 <li>$\Delta K = 10 \ {\rm mJ}$.
