@@ -26,7 +26,6 @@ Proton akan masuk dengan arah kecepatan mendatar dan keluar dengan arah kecepata
 Dengan mengabaikan efek relativistik sudut $\alpha$ dan komponen momentum proton pada arah $y$ adalah
 
 <ol type="A">
-
 <li>$18.96 \ {\rm ^\circ}$ dan $3.1 \times 10^7 \ {\rm kg\cdot m/s}$.
 <li>$18.96 \ {\rm ^\circ}$ dan $4.62 \times 10^{-20} \ {\rm kg\cdot m/s}$.
 <li>$4.62 \ {\rm ^\circ}$ dan $1.68 \times 10^{-20} \ {\rm kg\cdot m/s}$.
