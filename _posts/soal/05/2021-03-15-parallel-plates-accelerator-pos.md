@@ -14,7 +14,7 @@ category: physics
 tags: ["parallel plates", "electric field", "accelerator"]
 date: 2021-03-15 12:32:00 +07
 permalink: /soal/0055
-src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-15-parallel-plates-accelerator.md
+src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-15-parallel-plates-accelerator-pos.md
 ref: https://www.youtube.com/watch?v=MGiYJC7k4IU&t=635s
 ---
 Terdapat dua pelat konduktor sejajar yang masing-masing memilki potensial listrik $V_L = 10 \ {\rm kV}$ untuk pelat sebelah kiri (left, <x style="color: red;">merah</x>) dan $V_R = 8 \ {\rm kV}$ untuk pelat sebelah kanan (right, <x style="color: blue;">biru</x>), serta jarak antar pelat adalah $h = 1 \ {\rm mm}$.
