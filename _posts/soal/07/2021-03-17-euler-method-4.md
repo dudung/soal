@@ -25,3 +25,4 @@ Sebuah partikel bermassa $m$ dan bermuatan $q$ bergerak dengan kepatan $\vec{v} 
 <li>$a_x = (qB/m)v_y$ dan $a_y = -(qB/m)v_x$
 <li>$a_x = -(qB/m)v_y$ dan $a_y = (qB/m)v_x$
 <li>$a_x = -(qB/m)v_y$ dan $a_y = -(qB/m)v_x$
+
