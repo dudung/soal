@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["ode", "ordinary differential equation", "numerical solution", "euler method", "drag force", "fi3201", "2020-1"]
-date: 2021-03-17 11:28:00 +07
+date: 2021-03-17 11:34:00 +07
 permalink: /soal/0078
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/04/2021-03-17-euler-method-3.md
 ref: https://en.wikipedia.org/wiki/Euler_method
