@@ -19,7 +19,9 @@ ref: https://en.wikipedia.org/wiki/Euler_method
 ---
 Sebuah partikel bermassa $m$ dan bermuatan $q$ bergerak dengan kepatan $\vec{v} = v_x \hat{x} + v_y \hat{y}$ dalam ruang bermedan magnetik $\vec{B} = B (-\hat{z})$ yang arah dan besarnya selalu konstan. Bila selalu terpenuh kondisi bahwa $\vec{v} \perp \vec{B}$ maka solusi iteratif untuk percepatannya adalah
 
-
 <ol type="A">
-<li>
-
+<li>$a_x = (qB/m)v_x$ dan $a_y = (qB/m)v_y$
+<li>$a_x = (qB/m)v_y$ dan $a_y = (qB/m)v_x$
+<li>$a_x = (qB/m)v_y$ dan $a_y = -(qB/m)v_x$
+<li>$a_x = -(qB/m)v_y$ dan $a_y = (qB/m)v_x$
+<li>$a_x = -(qB/m)v_y$ dan $a_y = -(qB/m)v_x$
