@@ -26,4 +26,9 @@ Suatu gerak harmonis sederhana memiliki persamaan diferensial biasa linier homog
 dengan syarat awal $x(t_0) = t_0$ dan $v(t_0) = v_0$, serta $\Delta t = t_{n+1} - t_n$. Solusi solusi iteratif dari sistem ini adalah
 
 <ol type="A">
+
+<li>$x(t_{n+1}) = v(t_n) + a(t_n) \Delta t$ dan $v(t_{n+1}) = x(t_n) + v(t_n) \Delta t$.
+<li>$v(t_{n+1}) = x(t_n) + a(t_n) \Delta t$ dan $x(t_{n+1}) = v(t_n) + v(t_n) \Delta t$.
 <li>$v(t_{n+1}) = v(t_n) + a(t_n) \Delta t$ dan $x(t_{n+1}) = x(t_n) + v(t_n) \Delta t$.
+<li>$x(t_{n+1}) = x(t_n) + a(t_n) \Delta t$ dan $v(t_{n+1}) = v(t_n) + x(t_n) \Delta t$.
+<li>$v(t_{n+1}) = v(t_n) + x(t_n) \Delta t$ dan $x(t_{n+1}) = x(t_n) + a(t_n) \Delta t$.
