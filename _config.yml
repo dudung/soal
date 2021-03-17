@@ -1,4 +1,4 @@
-exclude: [README.md, cmd-ruby-x64.lnk, cmd-ruby-x86.lnk]
+exclude: [README.md, cmd-ruby-x64.lnk, cmd-ruby-x86.lnk, src]
 
 collections:
   authors:
@@ -16,9 +16,8 @@ defaults:
       layout: "default"
 
 markdown: kramdown
-highlighter: rouge
 kramdown:
-  syntax_highlighter: rouge
+  highlighter: rouge
 
 plugins:
   - jemoji

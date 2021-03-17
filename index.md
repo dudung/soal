@@ -3,11 +3,11 @@ layout: default
 title: butiran
 ---
 
-# butiran
+# butiran -- physics in plain text
 
 <!-- Html Elements for Search -->
 <div id="search-container">
-<input type="text" id="search-input" placeholder="search...">
+<input type="text" id="search-input"  autocomplete="on" placeholder="search..." />
 <ul id="results-container"></ul>
 </div>
 
@@ -19,8 +19,23 @@ title: butiran
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  searchResultTemplate: '<li><a href="{url}" tabindex="1"><p>{title}</p><span>{url}</span></a></li>',
-  noResultsText: '<li><p>No results found!</p></li>',
-  json: '/search.json',
+  searchResultTemplate: '<tt><a href="{url}" tabindex="1">{title}</a></tt> ',
+  noResultsText: 'No results found!',
+  json: '{{site.baseurl}}/search.json'
 })
 </script>
+
+
+<!--
+20201122
+1112 Try again. Still not.
+20201119
+1818 Still error
+
+simple-jekyll-search.min.js:6 Uncaught Error: SimpleJekyllSearch --- failed to get JSON (/search.json)
+    at S (simple-jekyll-search.min.js:6)
+    at simple-jekyll-search.min.js:6
+    at XMLHttpRequest.<anonymous> (simple-jekyll-search.min.js:6)
+
+Try to see https://blog.webjeda.com/instant-jekyll-search/ later
+-->

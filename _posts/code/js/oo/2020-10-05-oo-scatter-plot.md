@@ -1,0 +1,389 @@
+---
+layout: post
+author: viridi
+title: oo scatter plot
+mathjax: true
+ptext: false
+x3dom: false
+threejs: false
+oo: true
+category: code
+tags: ["js"]
+date: 2020-10-05 18:12:00 +07
+permalink: /code/js/oo-scatter-plot
+---
+A conversion from JavaScript (JS) array to scatter plot [[1](#ref1)], which is displayed using `oo` [[2](#ref2)] is presented in this article.
+
+
+## oo tag
+A scatter plot of $y$ againts $x$ with data (0, 2), (0.5, 2.5), (1, 3), (1.5, 3.125), (2, 3), (2.5, 2.5), and (3, 2) can be illustrate as follow.
+
+<oo>
+svg 200 200 #fafafa fig:osp-yx|Scatter of $y$ againts $x$.
+
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 20 20 180 180 40 40
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+arrow 20 180 180 180
+arrow 20 180 20 20
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 20 180 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 186 183 x
+text 18 12 y
+
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 15 197 0
+text 55 197 1
+text 95 197 2
+text 135 197 3
+text 5 185 0
+text 5 145 1
+text 5 105 2
+text 5 65 3
+
+style lc:#f00 ls:0 lw:1.5 lo:1 fc:#fff
+circle 20 100 3
+circle 40 80 3
+circle 60 60 3
+circle 80 55 3
+circle 100 60 3
+circle 120 80 3
+circle 140 100 3
+</oo>
+
+Following code are required to display Fig. <a href="#fig:osp-yx">1</a> using `oo`
+
+```css
+<oo>
+svg 200 200 #fafafa fig:osp-yx|Scatter of $y$ againts $x$.
+
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 20 20 180 180 40 40
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+arrow 20 180 180 180
+arrow 20 180 20 20
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 20 180 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 186 183 x
+text 18 12 y
+
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 15 197 0
+text 55 197 1
+text 95 197 2
+text 135 197 3
+text 5 185 0
+text 5 145 1
+text 5 105 2
+text 5 65 3
+
+style lc:#f00 ls:0 lw:1.5 lo:1 fc:#fff
+circle 20 100 3
+circle 40 80 3
+circle 60 60 3
+circle 80 55 3
+circle 100 60 3
+circle 120 80 3
+circle 140 100 3
+</oo>
+```
+
+where the point must be determined manually by viewing it repeatedly, switch between texteditor and browser, which is not so efficient.
+
+
+## JS code
+A function using JS can be constructed to automatize the process. First make an array of the data
+
+```batch
+data = `
+0, 2
+0.5, 2.5
+1, 3
+1.5, 3.125
+2, 3
+2.5, 2.5
+3, 2
+`;
+```
+
+then clear blank lines and make arrays of $x$ and $y$
+
+```javascript
+data = data.split("\n");
+data.shift();
+data.pop();
+
+var x = [];
+var y = [];
+for(var i in data) {
+	var cols = data[i].split(" ");
+	x.push(parseFloat(cols[0]));
+	y.push(parseFloat(cols[1]));
+}
+```
+
+For next process we require a JS class named `Conversion`
+
+```javascript
+class Conversion {
+	constructor() {
+		this.min = arguments[0];
+		this.max = arguments[1];
+		this.MIN = arguments[2];
+		this.MAX = arguments[3];
+	}
+	
+	from() {
+		var i = arguments[0];
+		var I = (i - this.min) / (this.max - this.min);
+		I *= (this.MAX - this.MIN);
+		I += this.MIN;
+		return I;
+	}
+};
+```
+
+which is simply as temperature unit conversion [[3](#ref3)]. And we must provide source and target coordinates
+
+```javascript
+var xmin = 0;
+var ymin = 0;
+var xmax = 4;
+var ymax = 4;
+
+var XMIN = 20;
+var YMIN = 180;
+var XMAX = 180;
+var YMAX = 20;
+```
+
+After all preparations we can do the conversion simply as follow
+
+```javascript
+var cx = new Conversion(xmin, xmax, XMIN, XMAX);
+var cy = new Conversion(ymin, ymax, YMIN, YMAX);
+
+var X = [];
+var Y = [];
+for(var i in data) {
+	X.push(cx.from(x[i]));
+	Y.push(cy.from(y[i]));
+}
+```
+
+To produce the points in `oo` we can use following code
+
+```javascript
+var style = "lc:#f00 ls:0 lw:1.5 lo:1 fc:#fff";
+var oot = ooPointTextFromXYPoints(X, Y, 3, style);
+```
+
+which requires
+
+```javascript
+function ooPointTextFromXYPoints() {
+	var X = arguments[0];
+	var Y = arguments[1];
+	var ps = arguments[2];
+	var style = arguments[3];
+	
+	var N = Math.min(X.length, Y.length);
+	var ooText = "";
+	
+	ooText += "style " + style + "\n";	
+	for(var i = 0; i < N; i++) {
+		ooText += "cirlce " + X[i] + " " + Y[i] + " " + ps + "\n";
+	}
+	
+	return ooText;
+}
+```
+
+And to produce connected line or a polyline
+
+```javascript
+var style2 = "lc:#f00 ls:0 lw:1.5 lo:1";
+var oot2 = ooLineTextFromXYPoints(X, Y, style);
+```
+
+which requires
+
+```javascript
+function ooLineTextFromXYPoints() {
+	var X = arguments[0];
+	var Y = arguments[1];
+	var style = arguments[2];
+	
+	var N = Math.min(X.length, Y.length);
+	var ooText = "";
+	
+	ooText += "style " + style + "\n";	
+	for(var i = 0; i < N - 1; i++) {
+		ooText += "line " + X[i] + " " + Y[i] + " "
+		ooText += X[i + 1] + " " + Y[i + 1] + "\n";
+	}
+	
+	return ooText;
+}
+```
+
+and the results, especially the additional lines, is shown in Fig. <a href="#fig:osp-yx-line">2</a>
+
+<oo>
+svg 200 200 #fafafa fig:osp-yx-line|Scatter of $y$ againts $x$ with line.
+
+style lc:#000 ls:6-2 lw:0.3 lo:0.8
+grid 20 20 180 180 40 40
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+arrow 20 180 180 180
+arrow 20 180 20 20
+style lc:#000 ls:0 lw:1 lo:1 fc:#000
+circle 20 180 2
+style lw:0 fc:#000 fo:1 ts:italic tw:normal tf:Times tz:16px
+text 186 183 x
+text 18 12 y
+
+style lw:0 fc:#000 fo:1 ts:normal tw:normal tf:Times tz:16px
+text 15 197 0
+text 55 197 1
+text 95 197 2
+text 135 197 3
+text 5 185 0
+text 5 145 1
+text 5 105 2
+text 5 65 3
+
+style lc:#f00 ls:0 lw:1.5 lo:1 fc:#fff
+line 20 100 40 80
+line 40 80 60 60
+line 60 60 80 55
+line 80 55 100 60
+line 100 60 120 80
+line 120 80 140 100
+
+style lc:#f00 ls:0 lw:1.5 lo:1 fc:#fff
+circle 20 100 3
+circle 40 80 3
+circle 60 60 3
+circle 80 55 3
+circle 100 60 3
+circle 120 80 3
+circle 140 100 3
+</oo>
+
+
+## Note
+Previously given codes are not entirely code snippets, where some are already so obvious and some are for `oo` but also reusable for other purposes.
+
+
+## References
+1. <a name="ref1"></a>Wikipedia contributors, "Scatter plot", Wikipedia, The Free Encyclopedia, 10 Sep 2020, 22:11 UTC, <https://en.wikipedia.org/w/index.php?oldid=977773986> [20201005].
+2. <a name="ref2"></a>Diagram parser `oo` using JS is developed by Sparisoma Viridi and Fiki Taufik Akbar Sobar, url <https://github.com/dudung/oo> [20201005].
+3. <a name="ref3"></a>Wikipedia contributors, "Conversion of units of temperature", Wikipedia, The Free Encyclopedia, 27 Aug 2020, 03:54 UTC, <https://en.wikipedia.org/w/index.php?oldid=975170529> [20201006].
+
++ [Article history](https://github.com/butiran/butiran.github.io/commits/master/_posts/code/js/oo/2020-10-05-oo-scatter-plot.md)
+
+{% comment %}
+<script>
+class Conversion {
+	constructor() {
+		this.min = arguments[0];
+		this.max = arguments[1];
+		this.MIN = arguments[2];
+		this.MAX = arguments[3];
+	}
+	
+	from() {
+		var i = arguments[0];
+		var I = (i - this.min) / (this.max - this.min);
+		I *= (this.MAX - this.MIN);
+		I += this.MIN;
+		return I;
+	}
+};
+
+var data = `
+0.0 2.000
+0.5 2.500
+1.0 3.000
+1.5 3.125
+2.0 3.000
+2.5 2.500
+3.0 2.000
+`;
+
+data = data.split("\n");
+data.shift();
+data.pop();
+
+var x = [];
+var y = [];
+for(var i in data) {
+	var cols = data[i].split(" ");
+	x.push(parseFloat(cols[0]));
+	y.push(parseFloat(cols[1]));
+}
+
+var xmin = 0;
+var ymin = 0;
+var xmax = 4;
+var ymax = 4;
+
+var XMIN = 20;
+var YMIN = 180;
+var XMAX = 180;
+var YMAX = 20;
+
+var cx = new Conversion(xmin, xmax, XMIN, XMAX);
+var cy = new Conversion(ymin, ymax, YMIN, YMAX);
+
+var X = [];
+var Y = [];
+for(var i in data) {
+	X.push(cx.from(x[i]));
+	Y.push(cy.from(y[i]));
+}
+
+var style = "lc:#f00 ls:0 lw:1.5 lo:1 fc:#fff";
+var oot = ooPointTextFromXYPoints(X, Y, 3, style);
+
+function ooPointTextFromXYPoints() {
+	var X = arguments[0];
+	var Y = arguments[1];
+	var ps = arguments[2];
+	var style = arguments[3];
+	
+	var N = Math.min(X.length, Y.length);
+	var ooText = "";
+	
+	ooText += "style " + style + "\n";	
+	for(var i = 0; i < N; i++) {
+		ooText += "cirlce " + X[i] + " " + Y[i] + " " + ps + "\n";
+	}
+	
+	return ooText;
+}
+
+var style2 = "lc:#f00 ls:0 lw:1.5 lo:1";
+var oot2 = ooLineTextFromXYPoints(X, Y, style);
+
+function ooLineTextFromXYPoints() {
+	var X = arguments[0];
+	var Y = arguments[1];
+	var style = arguments[2];
+	
+	var N = Math.min(X.length, Y.length);
+	var ooText = "";
+	
+	ooText += "style " + style + "\n";	
+	for(var i = 0; i < N - 1; i++) {
+		ooText += "line " + X[i] + " " + Y[i] + " "
+		ooText += X[i + 1] + " " + Y[i + 1] + "\n";
+	}
+	
+	return ooText;
+}
+</script>
+{% endcomment %}

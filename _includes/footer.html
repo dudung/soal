@@ -6,15 +6,19 @@
 	{% assign datestr = "" %}
 	{% endif %}
 	
+  {% assign author = site.authors | where: 'short_name', page.author | first %}
+	
 	{% 
 		if page.title != "fisika"
 		and page.title != "butiran"
 		and page.title != "About"
 		and page.title != "Viridi"
+		and page.title != "Butiran"
 	%}
 	<br clear="all">
 	<div class="citation">
-	Cite as: S. Viridi, "{{ page.title }}" in <i>butiran</i>, {{ datestr }} url <a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">{{ site.url }}{{ site.baseurl }}{{ page.url }}</a> [accessed {{ "now" | date: "%d %b %Y" }}].
+	Cite as: {{ author.name }}, "{{ page.title }}" in <i>butiran -- physics in plain text</i>, {{ datestr }} url <a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">{{ site.url }}{{ site.baseurl }}{{ page.url }}</a> [accessed {{ "now" | date: "%d %b %Y" }}].
 	{% endif %}
 	</div>
 </nav>
+
