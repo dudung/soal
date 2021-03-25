@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["finite difference", "nth derivative", "central", "fi3201", "2020-1"]
-date: 2021-03-25 18:42:00 +07
+date: 2021-03-25 18:49:00 +07
 permalink: /soal/0114
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/11/2021-03-25-finite-difference-nth-derivative-c.md
 ref: https://en.wikipedia.org/wiki/Finite_difference
@@ -32,19 +32,14 @@ f{\rm''}(x) \approx \frac{\delta_h^2 [f] (x)}{h} = \frac{f(x+h) - 2f(x) + f(x-h)
 Dengan menggunakan koefisien binomial
 
 \begin{equation}\label{eqn:0114-binomial-coefficient}
-\left(
-\begin{array}{c}
-n \newline
-k
-\end{array}
-\right) = \frac{n!}{k!(n-k)!},
+\binom{n}{k} = \frac{n!}{k!(n-k)!},
 \end{equation}
 
 dapat diperoleh rumusan untuk turunan ke-$n$ dari $f(x)$ dengan beda hingga tengah, yaitu
 
 <ol type="A">
-<li> $\displaystyle \sum_{i=0}^n (-1)^{n-i} \left( \begin{array}{c}n \newline i\end{array} \right) f(x + ih)$.
-<li> $\displaystyle \sum_{i=0}^n (-1)^i \left( \begin{array}{c}n \newline i\end{array} \right) f(x - ih)$.
-<li> $\displaystyle \sum_{i=0}^n (-1)^i \left( \begin{array}{c}n \newline i\end{array} \right) f\left(x + \left(\frac{n}{2} - i\right)h \right)$.
-<li> $\displaystyle \sum_{i=0}^n (-1)^i \left( \begin{array}{c}n \newline i\end{array} \right) f\left(x + \left(\frac{n}{2} + i\right)h \right)$.
-<li> $\displaystyle \sum_{i=0}^n (-1)^i \left( \begin{array}{c}n \newline i\end{array} \right) f\left(x - \left(\frac{n}{2} - i\right)h \right)$.
+<li> $\displaystyle \sum_{i=0}^n (-1)^{n-i} \binom{n}{i} f(x + ih)$.
+<li> $\displaystyle \sum_{i=0}^n (-1)^i \binom{n}{i} f(x - ih)$.
+<li> $\displaystyle \sum_{i=0}^n (-1)^i \binom{n}{i} f\left(x + \left(\frac{n}{2} - i\right)h \right)$.
+<li> $\displaystyle \sum_{i=0}^n (-1)^i \binom{n}{i} f\left(x + \left(\frac{n}{2} + i\right)h \right)$.
+<li> $\displaystyle \sum_{i=0}^n (-1)^i \binom{n}{i} f\left(x - \left(\frac{n}{2} - i\right)h \right)$.
