@@ -14,7 +14,7 @@ category: physics
 tags: ["finite difference", "first derivative", "fi3201", "2020-1"]
 date: 2021-03-25 17:19:00 +07
 permalink: /soal/0111
-src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/11/2021-03-25-finite-difference-first-derivative.md
+src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/11/2021-03-25-finite-difference-second-derivative-c.md
 ref: https://en.wikipedia.org/wiki/Finite_difference
 ---
 Turunan orde pertama dari suatu fungsi $f(x)$ dapat diperoleh pendekatannya menggunakan beda hingga maju
