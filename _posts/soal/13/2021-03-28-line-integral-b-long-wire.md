@@ -10,6 +10,7 @@ threejs: false
 3dmol: false
 oo: false
 svgphys: false
+devlocal: true
 category: physics
 tags: ["ampere law", "mathematics", "integral", "magnetic field", "long wire", "line integral", "fi1202", "2020-1"]
 date: 2021-03-28 05:39:00 +07
@@ -19,8 +20,14 @@ ref: https://mathinsight.org/line_integral_vector_examples
 ---
 Terdapat sebuah kawat lurus panjang yang mengalirkan arus $I$ keluar dari bidang gambar menuju pembaca. Suatu lintasan garis lurus dari $y = -a$ sampai $y = a$ terletak pada jarak $a$ dari kawat tersebut, sebagaimana diberikan dalam gambar di bawah ini.
 
-
+{% if page.devlocal %}
+![](../../../assets/img/soal/13/0131a.png)
+{% else %}
 ![](/assets/img/soal/13/0131a.png)
+{% endif %}
+
+Ingin dihitung $\int \vec{B} \cdot d\vec{l}$ menggunakan lintasan garis lurus tersebut.
+
 
 Dengan mengggunakan bantuan gambar sebelumnya dapat diperoleh solusi dari
 
