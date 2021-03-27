@@ -17,28 +17,30 @@ permalink: /soal/0130
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/12/2021-03-27-integral-datan.md
 ref: http://www.math.com/tables/integrals/tableof.htm
 ---
+Terdapat sebuah segitiga siku-siku yang memberikan hubungan antara alas $a$, tinggi $y$, sisi miring $r$, dan sudut $\theta$ seperti dalam gambar berikut ini.
+
 ![](/assets/img/soal/13/0130.png)
 
-Solusi dari
+Dengan mengggunakan bantuan gambar sebelumnya dapat diperoleh solusi dari
 
 \begin{equation}\nonumber
-\int \frac{a dy}{a^2 + y^2}
+\int \frac{a dy}{a^2 + y^2},
 \end{equation}
 
-adalah
+yaitu
 
 <ol type="A">
-<li>$\tan y $.
-<li>$\tan^{-1} y$.
-<li>$\tan (y/a)$.
-<li>$\tan^{-1} (y/a)$.
-<li>$\tan^{-1}(a/y)$.
+<li>$\tan y + c$.
+<li>$\tan^{-1} y + c$.
+<li>$\tan (y/a) + c$.
+<li>$\tan^{-1} (y/a) + c$.
+<li>$\tan^{-1}(a/y) + c$.
 
 {% comment %}
 \begin{eqnarray}
 y = a \tan \theta \newline
 dy = a \sec^2 \theta \ d\theta \newline
 a^2 + y^2 = a^2 \sec^2 \theta \newline
-\displaystyle \int \frac{a dy}{a^2 + y^2} = \int \frac{a (a\sec^2 \theta \ d\theta)}{a^2 \sec^2 \theta} = \int d\theta = \theta = \tan^{-1} (y/a)
+\displaystyle \int \frac{a dy}{a^2 + y^2} = \int \frac{a (a\sec^2 \theta \ d\theta)}{a^2 \sec^2 \theta} = \int d\theta = \theta = \tan^{-1} \left(\frac{y}{a}\right) + c
 \end{eqnarray}
 {% endcomment %}
