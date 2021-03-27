@@ -10,7 +10,6 @@ threejs: false
 3dmol: false
 oo: false
 svgphys: false
-devlocal: true
 category: physics
 tags: ["ampere law", "mathematics", "integral", "magnetic field", "long wire", "line integral", "fi1202", "2020-1"]
 date: 2021-03-28 05:39:00 +07
