@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["ampere law", "mathematics", "integral", "magnetic field", "long wire", "line integral", "fi1202", "2020-1"]
-date: 2021-03-28 17:21:00 +07
+date: 2021-03-28 17:51:00 +07
 permalink: /soal/0131
 src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/12/2021-03-28-line-integral-b-long-wire.md
 ref: https://mathinsight.org/line_integral_vector_examples
@@ -33,6 +33,7 @@ Beberapa hal yang akan digunakan adalah
 <li>Elemen panjang lintasan $d\vec{l} = \hat{y} dy$.</li>
 <li>Integral dilakukan mulai dari $y = -b$ sampai $y = b$.</li>
 <li>Perlu menggunakan solusi bentuk integral $\displaystyle \int \frac{ady}{a^2 + y^2}$.</li>
+<li>Terdapat hubungan $a = r \cos \theta$, $y = r \sin \theta$, dan $r^2 = a^2 + y^2$</li>
 </ol>
 
 Dengan demikian hasil integral
@@ -44,17 +45,27 @@ Dengan demikian hasil integral
 adalah
 
 <ol type="A">
-<li>$\tan y + c$.
-<li>$\tan^{-1} y + c$.
-<li>$\tan (y/a) + c$.
-<li>$\tan^{-1} (y/a) + c$.
-<li>$\tan^{-1}(a/y) + c$.
+<li>$\displaystyle \frac{\mu_0 I}{\pi} \tan^{-1} \left( \frac{b}{a} \right)$.
+<li>$\displaystyle \frac{\mu_0 I}{\pi} \tan^{-1} \left( \frac{a}{b} \right)$.
+<li>$\displaystyle \frac{\mu_0 I}{\pi}$.
+<li>$\displaystyle \frac{\mu_0 I}{4\pi}$.
+<li>$\displaystyle \frac{\mu_0 I}{4}$.
 
 {% comment %}
 \begin{eqnarray}
-y = a \tan \theta \newline
-dy = a \sec^2 \theta \ d\theta \newline
-a^2 + y^2 = a^2 \sec^2 \theta \newline
-\displaystyle \int \frac{a dy}{a^2 + y^2} = \int \frac{a (a\sec^2 \theta \ d\theta)}{a^2 \sec^2 \theta} = \int d\theta = \theta = \tan^{-1} \left(\frac{y}{a}\right) + c
+\int_{y = -b}^{y = b} \vec{B} \cdot d\vec{l} \newline
+= \int_{y = -b}^{y = b} \left( \frac{\mu_0 I}{2 \pi r} \hat{\theta} \right) \cdot (\hat{y} dy) \newline
+= \int_{y = -b}^{y = b} \left( \frac{\mu_0 I}{2 \pi r} \right) \hat{\theta} \cdot (\hat{y} dy) \newline
+= \int_{y = -b}^{y = b} \left( \frac{\mu_0 I}{2 \pi r} \right) (-\sin\theta \ \hat{x} + \cos\theta \ \hat{y}) \cdot (\hat{y} dy) \newline
+= \int_{y = -b}^{y = b} \left( \frac{\mu_0 I}{2 \pi r} \right) \cos\theta dy \newline
+= \int_{y = -b}^{y = b} \frac{\mu_0 I}{2 \pi r} \cos\theta dy \newline
+= \frac{\mu_0 I}{2 \pi} \int_{y = -b}^{y = b} \left( \frac{\cos\theta}{r} \right) dy \newline
+= \frac{\mu_0 I}{2 \pi} \int_{y = -b}^{y = b} \left( \frac{a}{r^2} \right) dy \newline
+= \frac{\mu_0 I}{2 \pi} \int_{y = -b}^{y = b} \frac{a dy}{a^2 + y^2} \newline
+= \frac{\mu_0 I}{2 \pi} \left[ \tan^{-1} \left( \frac{y}{a} \right) \right]_{y = -b}^{y = b} \newline
+= \frac{\mu_0 I}{2 \pi} \left[ \tan^{-1} \left( \frac{b}{a} \right) - \tan^{-1} \left( \frac{-b}{a} \right) \right] \newline
+= \frac{\mu_0 I}{2 \pi} \left[ \tan^{-1} \left( \frac{b}{a} \right) + \tan^{-1} \left( \frac{b}{a} \right) \right] \newline
+= \frac{\mu_0 I}{2 \pi} \left[ 2 \tan^{-1} \left( \frac{b}{a} \right) \right] \newline
+= \frac{\mu_0 I}{\pi} \tan^{-1} \left( \frac{b}{a} \right).
 \end{eqnarray}
 {% endcomment %}
