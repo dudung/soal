@@ -14,7 +14,7 @@ category: physics
 tags: ["permanent magnet", "magnetic field direction", "fi1202", "2020-1"]
 date: 2021-03-30 05:27:00 +07
 permalink: /0140
-src: https://github.com/dudung/soal/commits/master/_posts/0/13/2021-03-29-permanent-magnet-b-dir.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/14/2021-03-29-permanent-magnet-b-dir.md
 ref: http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/elemag.html
 ---
 Arah medan magnetik yang dibangkitkan oleh kawat berarus dapat dikaitkan dengan arah medan magnetik yang disebabkan oleh magnet permanen, misalnya magnet batang.
