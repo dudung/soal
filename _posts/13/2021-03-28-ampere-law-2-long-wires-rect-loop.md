@@ -19,7 +19,7 @@ ref: https://web.iit.edu/sites/web/files/departments/academic-affairs/academic-r
 ---
 Terdapat dua kawat lurus panjang, dengan kawat pertama mengalirkan arus $I_1$ keluar dari bidang gambar menuju pembaca dan kawat kedua mengalirkan arus $I_2$ masuk ke dalam bidang gambar menjauhi pembaca. Sebuah lintasan tertutup Ampere berbentuk segiempat $a - b - c - d - a$ melingkupi kedua kawat berarus tersebut sebagaimana diberikan dalam gambar berikut.
 
-![](/assets/img/13/0133.png)
+![](/assets/img/013/0133.png)
 
 Arah integral lintasan adalah berlawanan arah dengan arah putar jarum jam. Hasil dari
 

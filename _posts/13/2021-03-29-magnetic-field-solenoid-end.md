@@ -19,6 +19,6 @@ ref: http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/toroid.html
 ---
 Dengan menggunakan medan magnetik di dalam dan di tengah suatu solenoida ideal, yang diperoleh melalui hukum Ampere, dapat dihitung medan magnetik pada ujung solenoida.
 
-![](/assets/img/13/0139.png)
+![](/assets/img/013/0139.png)
 
 Gambar di atas memberikan ilustrasi bagaimana medan magnetik pada ujung suatu solenoida dapat ditentukan.
