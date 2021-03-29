@@ -1,6 +1,6 @@
 ---
 layout: default
-title: butiran
+title: soal
 ---
 
 # butiran -- physics in plain text
