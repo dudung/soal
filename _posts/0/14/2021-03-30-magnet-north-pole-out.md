@@ -14,7 +14,7 @@ category: physics
 tags: ["permanent magnet", "north pole out", "induction current", "fi1202", "2020-1"]
 date: 2021-03-30 05:57:00 +07
 permalink: /0142
-src: https://github.com/dudung/soal/commits/master/_posts/0/13/2021-03-30-magnet-north-pole-out.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/14/2021-03-30-magnet-north-pole-out.md
 ref: http://hyperphysics.phy-astr.gsu.edu/hbase/electric/farlaw.html#c2
 ---
 Terdapat sebuah magnet permanen dengan kutub utaranya (N: north) menghadap kumparan berbentuk lingkaran.
