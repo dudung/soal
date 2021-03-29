@@ -19,7 +19,7 @@ ref: https://web.pa.msu.edu/courses/1997spring/phy232/lectures/ampereslaw/soleno
 ---
 Kawat solenoida yang melewati bidang mediannya dapat digambarkan seperti di bawah ini, dengan pada bagian atas kawat sedang melingkar masuk ke bidang gambar dan pada bagian bawah kawat sedang melingkar keluar dari bidang gambar. Masing-masing kawat mengalirkn arus yang sama yaitu $I$. Panjang solenoida adalah $l$ dan diameternya adalah $D$, sedangkan diameter kawat $d$. Jumlah lilitan kawat adalah $N$, dengan $n$ adalah rapat lilitan atau jumlah lilitan per satuan panjang.
 
-![](/assets/img/013/0137.png)
+![](/assets/img/0/13/0137.png)
 
 Suatu lintasan tertutup Ampere $a - b - c - d - a$ dipilih untuk menentukan medan magnetik $B_{\rm in}$ di dalam dan tengah-tengah solenoida. Dengan menggunakan hukum Ampere
 

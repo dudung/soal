@@ -19,7 +19,7 @@ ref: http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/magcur.html#c3
 ---
 Terdapat suatu kawat lurus panjang yang mengalirkan arus $I$ keluar bidang gambar. Suatu lintasan tertutup Ampere berbentuk keliling lingkaran dengan kawat sebelumnya menembus di tengah-tengahnya, seperti diberikan dalam gambar berikut.
 
-![](/assets/img/013/0135.png)
+![](/assets/img/0/13/0135.png)
 
 Arah integral lintasan $d\vec{l}$ adalah berlawanan arah dengan arah putar jarum jam. Hasil dari
 
