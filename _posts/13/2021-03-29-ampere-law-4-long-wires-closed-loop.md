@@ -12,16 +12,16 @@ oo: false
 svgphys: false
 category: physics
 tags: ["ampere law", "mathematics", "integral", "magnetic field", "long wire", "line integral", "square loop", "fi1202", "2020-1"]
-date: 2021-03-29 11:31:00 +07
+date: 2021-03-29 11:40:00 +07
 permalink: /0134
 src: https://github.com/dudung/soal/commits/master/_posts/13/2021-03-29-ampere-law-4-long-wires-closed-loop.md
 ref: https://web.iit.edu/sites/web/files/departments/academic-affairs/academic-resource-center/pdfs/Amperes_law.pdf
 ---
-Terdapat dua kawat lurus panjang, dengan kawat pertama mengalirkan arus $I_1$ keluar dari bidang gambar menuju pembaca dan kawat kedua mengalirkan arus $I_2$ masuk ke dalam bidang gambar menjauhi pembaca. Sebuah lintasan tertutup Ampere berbentuk segiempat $a - b - c - d - a$ melingkupi kedua kawat berarus tersebut sebagaimana diberikan dalam gambar berikut.
+Terdapat empat kawat lurus panjang, yang masing-masing mengalirkan arus $I_1$, $I_2$, $I_3$, dan $I_4$ dengan masing-masing arahnya, berturut-turut, adalah keluar bidang gambar, masuk bidang gambar, masuk bidang gambar, dan keluar bidang gambar. Terdapat lintasan tertutup Ampere $a - b - c - a$ yang terdiri dari busur seperempat lingkaran dan dua buah garis lurus, seperti diilustrasikan di bawah ini.
 
 ![](/assets/img/13/0134.png)
 
-Arah integral lintasan adalah berlawanan arah dengan arah putar jarum jam. Hasil dari
+Arah integral lintasan $d\vec{l}$ adalah berlawanan arah dengan arah putar jarum jam. Hasil dari
 
 \begin{equation}\nonumber
 \oint \vec{B} \cdot d\vec{l}
@@ -30,8 +30,8 @@ Arah integral lintasan adalah berlawanan arah dengan arah putar jarum jam. Hasil
 pada gambar dia atas adalah
 
 <ol type="A">
+<li>$\mu_0 (I_1 - I_2 - I_3 + I_4)$.
+<li>$\mu_0 (I_1 - I_2 + I_4)$.
+<li>$\mu_0 (I_1 - I_2 - I_3)$.
+<li>$\mu_0 (I_1 + I_4)$.
 <li>$0$.
-<li>$\mu_0 (I_1 - I_2)$.
-<li>$\mu_0 (I_2 - I_1)$.
-<li>$\mu_0 (I_1 + I_2)$.
-<li>$-\mu_0 (I_1 + I_2)$.
