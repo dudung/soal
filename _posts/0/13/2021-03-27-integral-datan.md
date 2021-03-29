@@ -14,7 +14,7 @@ category: physics
 tags: ["ampere law", "mathematics", "integral", "atan result", "fi1202", "2020-1"]
 date: 2021-03-28 05:22:00 +07
 permalink: /0130
-src: https://github.com/dudung/soal/commits/master/_posts/13/2021-03-27-integral-datan.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/13/2021-03-27-integral-datan.md
 ref: http://www.math.com/tables/integrals/tableof.htm
 ---
 Terdapat sebuah segitiga siku-siku yang memberikan hubungan antara alas $a$, tinggi $y$, sisi miring $r$, dan sudut $\theta$ seperti dalam gambar berikut ini.

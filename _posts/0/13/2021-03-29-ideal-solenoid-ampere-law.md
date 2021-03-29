@@ -14,7 +14,7 @@ category: physics
 tags: ["ideal solenoid", "ampere law", "fi1202", "2020-1"]
 date: 2021-03-29 13:36:00 +07
 permalink: /0137
-src: https://github.com/dudung/soal/commits/master/_posts/13/2021-03-29-ideal-solenoid-ampere-law.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/13/2021-03-29-ideal-solenoid-ampere-law.md
 ref: https://web.pa.msu.edu/courses/1997spring/phy232/lectures/ampereslaw/solenoid.html
 ---
 Kawat solenoida yang melewati bidang mediannya dapat digambarkan seperti di bawah ini, dengan pada bagian atas kawat sedang melingkar masuk ke bidang gambar dan pada bagian bawah kawat sedang melingkar keluar dari bidang gambar. Masing-masing kawat mengalirkn arus yang sama yaitu $I$. Panjang solenoida adalah $l$ dan diameternya adalah $D$, sedangkan diameter kawat $d$. Jumlah lilitan kawat adalah $N$, dengan $n$ adalah rapat lilitan atau jumlah lilitan per satuan panjang.

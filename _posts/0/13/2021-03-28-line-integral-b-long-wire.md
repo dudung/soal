@@ -14,7 +14,7 @@ category: physics
 tags: ["ampere law", "mathematics", "integral", "magnetic field", "long wire", "line integral", "fi1202", "2020-1"]
 date: 2021-03-28 17:51:00 +07
 permalink: /0131
-src: https://github.com/dudung/soal/commits/master/_posts/13/2021-03-28-line-integral-b-long-wire.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/13/2021-03-28-line-integral-b-long-wire.md
 ref: https://mathinsight.org/line_integral_vector_examples
 ---
 Terdapat sebuah kawat lurus panjang yang mengalirkan arus $I$ keluar dari bidang gambar menuju pembaca. Suatu lintasan garis lurus dari $y = -b$ sampai $y = b$ terletak pada jarak $a$ dari kawat tersebut, sebagaimana diberikan dalam gambar di bawah ini.

@@ -14,7 +14,7 @@ category: physics
 tags: ["ampere's law", "long straight wire", "magnetic field", "fi1202", "2020-1"]
 date: 2021-03-29 13:09:00 +07
 permalink: /0135
-src: https://github.com/dudung/soal/commits/master/_posts/13/2021-03-29-ampere-law-long-wire.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/13/2021-03-29-ampere-law-long-wire.md
 ref: http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/magcur.html#c3
 ---
 Terdapat suatu kawat lurus panjang yang mengalirkan arus $I$ keluar bidang gambar. Suatu lintasan tertutup Ampere berbentuk keliling lingkaran dengan kawat sebelumnya menembus di tengah-tengahnya, seperti diberikan dalam gambar berikut.

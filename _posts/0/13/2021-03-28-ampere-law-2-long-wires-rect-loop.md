@@ -14,7 +14,7 @@ category: physics
 tags: ["ampere law", "mathematics", "integral", "magnetic field", "long wire", "line integral", "square loop", "fi1202", "2020-1"]
 date: 2021-03-28 20:33:00 +07
 permalink: /0133
-src: https://github.com/dudung/soal/commits/master/_posts/13/2021-03-28-ampere-law-2-long-wires-rect-loop.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/13/2021-03-28-ampere-law-2-long-wires-rect-loop.md
 ref: https://web.iit.edu/sites/web/files/departments/academic-affairs/academic-resource-center/pdfs/Amperes_law.pdf
 ---
 Terdapat dua kawat lurus panjang, dengan kawat pertama mengalirkan arus $I_1$ keluar dari bidang gambar menuju pembaca dan kawat kedua mengalirkan arus $I_2$ masuk ke dalam bidang gambar menjauhi pembaca. Sebuah lintasan tertutup Ampere berbentuk segiempat $a - b - c - d - a$ melingkupi kedua kawat berarus tersebut sebagaimana diberikan dalam gambar berikut.

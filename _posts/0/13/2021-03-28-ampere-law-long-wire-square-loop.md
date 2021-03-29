@@ -14,7 +14,7 @@ category: physics
 tags: ["ampere law", "mathematics", "integral", "magnetic field", "long wire", "line integral", "square loop", "fi1202", "2020-1"]
 date: 2021-03-28 18:48:00 +07
 permalink: /0132
-src: https://github.com/dudung/soal/commits/master/_posts/13/2021-03-28-ampere-law-long-wire-square-loop.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/13/2021-03-28-ampere-law-long-wire-square-loop.md
 ref: https://web.iit.edu/sites/web/files/departments/academic-affairs/academic-resource-center/pdfs/Amperes_law.pdf
 ---
 Terdapat kawat lurus panjang yang mengalirkan arus $I$ keluar dari bidang gambar menuju pembaca. Sebuah lintasan tertutup Ampere $(+a, -a)$ -- $(+a, +a)$ -- $(-a, +a)$ -- $(-a, -a)$ -- $(+a, -a)$ melingkupi kawat berarus sebelumnya yang menembus lintasan berbentuk persegi tepat di tengah-tengahnya secara tegak lurus seperti dalam gambar berikut.

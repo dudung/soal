@@ -14,7 +14,7 @@ category: physics
 tags: ["ideal solenoid", "fi1202", "2020-1"]
 date: 2021-03-29 13:23:00 +07
 permalink: /0136
-src: https://github.com/dudung/soal/commits/master/_posts/13/2021-03-29-ideal-solenoid.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/13/2021-03-29-ideal-solenoid.md
 ref: https://www.usna.edu/Users/physics/mungan/_files/documents/Scholarship/IdealSolenoid1.pdf
 ---
 Kawat solenoida yang melewati bidang mediannya dapat digambarkan seperti di bawah ini.
