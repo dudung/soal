@@ -14,7 +14,7 @@ category: physics
 tags: ["permanent magnet", "north pole out", "induction current", "fi1202", "2020-1"]
 date: 2021-03-30 06:17:00 +07
 permalink: /0144
-src: https://github.com/dudung/soal/commits/master/_posts/0/14/2021-03-30-bext-inducing-loop.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/14/2021-03-30-self-inductance.md
 ref: http://hyperphysics.phy-astr.gsu.edu/hbase/electric/induct.html#c1
 ---
 Terdapat loop (yang mewakili sebuah kumparan dengan $N = 1$) dihubungkan dengan batere $\varepsilon$ dan saklar $S$. Kawat pembentuk loop tidak ideal sehingga masih memiliki hambatan $r$.
