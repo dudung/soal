@@ -11,7 +11,7 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["ideal solenoid", "ampere law", "fi1202", "2020-1"]
+tags: ["toroid", "ampere law", "fi1202", "2020-1"]
 date: 2021-03-29 13:45:00 +07
 permalink: /0138
 src: https://github.com/dudung/soal/commits/master/_posts/13/2021-03-29-ampere-law-toroid.md
