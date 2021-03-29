@@ -21,7 +21,7 @@ Kawat solenoida yang melewati bidang mediannya dapat digambarkan seperti di bawa
 
 ![](/assets/img/13/0136.png)
 
-Dalam gambar pada bagian atas kawat sedang melingkar masuk ke bidang gambar dan pada bagian bawah kawat sedang melingkar keluar dari bidang gambar. Masing-masing kawat mengalirkn arus yang sama yaitu $I$. Panjang solenoida adalah $l$ dan diameternya adalah $D$, sedangkan diameter kawat $d$. Untuk suatu solenoida ideal yang kurang tepat adalah
+Dalam gambar pada bagian atas kawat sedang melingkar masuk ke bidang gambar dan pada bagian bawah kawat sedang melingkar keluar dari bidang gambar. Masing-masing kawat mengalirkan arus yang sama yaitu $I$. Panjang solenoida adalah $l$ dan diameternya adalah $D$, sedangkan diameter kawat $d$. Untuk suatu solenoida ideal yang kurang tepat adalah
 
 <ol type="A">
 <li>$l >> D$.
