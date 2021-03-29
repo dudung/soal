@@ -5,6 +5,7 @@ ans.xlsx
 # Jekyll
 _site
 .jekyll-cache
+.jekyll-metadata
 
 # Python
 *.pyc
