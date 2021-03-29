@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 # fisika
-It a project about fisika -- <i>physics in plain text</i> (id)
+It a project about soal -- <i>physics in plain text</i> (id)
 
 ### Contributor
 <ul>
