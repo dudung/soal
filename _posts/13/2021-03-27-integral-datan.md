@@ -13,13 +13,13 @@ svgphys: false
 category: physics
 tags: ["ampere law", "mathematics", "integral", "atan result", "fi1202", "2020-1"]
 date: 2021-03-28 05:22:00 +07
-permalink: /soal/0130
-src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/13/2021-03-27-integral-datan.md
+permalink: /0130
+src: https://github.com/dudung/soal/commits/master/_posts/13/2021-03-27-integral-datan.md
 ref: http://www.math.com/tables/integrals/tableof.htm
 ---
 Terdapat sebuah segitiga siku-siku yang memberikan hubungan antara alas $a$, tinggi $y$, sisi miring $r$, dan sudut $\theta$ seperti dalam gambar berikut ini.
 
-![](/assets/img/soal/13/0130.png)
+![](/assets/img/13/0130.png)
 
 Dengan mengggunakan bantuan gambar sebelumnya dapat diperoleh solusi dari
 

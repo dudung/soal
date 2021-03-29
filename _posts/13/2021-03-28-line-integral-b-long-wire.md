@@ -13,17 +13,17 @@ svgphys: false
 category: physics
 tags: ["ampere law", "mathematics", "integral", "magnetic field", "long wire", "line integral", "fi1202", "2020-1"]
 date: 2021-03-28 17:51:00 +07
-permalink: /soal/0131
-src: https://github.com/butiran/butiran.github.io/commits/master/_posts/soal/13/2021-03-28-line-integral-b-long-wire.md
+permalink: /0131
+src: https://github.com/dudung/soal/commits/master/_posts/13/2021-03-28-line-integral-b-long-wire.md
 ref: https://mathinsight.org/line_integral_vector_examples
 ---
 Terdapat sebuah kawat lurus panjang yang mengalirkan arus $I$ keluar dari bidang gambar menuju pembaca. Suatu lintasan garis lurus dari $y = -b$ sampai $y = b$ terletak pada jarak $a$ dari kawat tersebut, sebagaimana diberikan dalam gambar di bawah ini.
 
-![](/assets/img/soal/13/0131a.png)
+![](/assets/img/13/0131a.png)
 
 Ingin dihitung $\int \vec{B} \cdot d\vec{l}$ menggunakan lintasan garis lurus tersebut. Untuk memudahkan digunakan sistem koordinat berikut di mana pusat koordinat berda pada tengah kawat (tidak digambarkan demikian agar terlihat lebih sederhana).
 
-![](/assets/img/soal/13/0131b.png)
+![](/assets/img/13/0131b.png)
 
 Beberapa hal yang akan digunakan adalah
 
