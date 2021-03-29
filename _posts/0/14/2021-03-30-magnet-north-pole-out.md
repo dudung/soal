@@ -25,9 +25,9 @@ Beberapa pernyataan berikut terkait dengan gambar di atas.
 
 <ol>
 <li>Pada bagian atas gambar magnet permanen tidak bergerak relatif terhadap kumparan sehingga tidak ada perubahan fluks magnetik pada kumparan, akibatnya tidak muncul arus induksi.</li>
-<li>Saat kutub utara magnet permanen dijauhkan dari kumparan fluks magnetik yang menembus kumparan bertambah ($\otimes$ >>).
+<li>Saat kutub utara magnet permanen dijauhkan dari kumparan fluks magnetik yang menembus kumparan bertambah ($\otimes >>$).
 </li>
-<li>Hukum Lenz menyatakan bila fluks magnetik berkurang ($\otimes <<$) maka akan terbentuk fluks magnetik induksi yang searah ($\otimes$ >>), sehingga jumlah total fluks magnetik relatif tidak berubah.</li>
+<li>Hukum Lenz menyatakan bila fluks magnetik berkurang ($\otimes <<$) maka akan terbentuk fluks magnetik induksi yang searah ($\otimes >>$), sehingga jumlah total fluks magnetik relatif tidak berubah.</li>
 <li>Arah arus induksi $I_{\rm ind}$ ditentukan oleh medan magnetik induksi $B_{\rm ind}$ yang terbentuk.</li>
 </ol>
 
