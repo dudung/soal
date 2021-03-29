@@ -12,13 +12,12 @@ oo: false
 svgphys: false
 category: physics
 tags: ["ampere's law", "long straight wire", "magnetic field", "fi1202", "2020-1"]
-date: 2021-03-29 11:55:00 +07
+date: 2021-03-29 13:09:00 +07
 permalink: /0135
-src: https://github.com/dudung/soal/commits/master/_posts/13/2021-03-29-ideal-solenoid.md
+src: https://github.com/dudung/soal/commits/master/_posts/13/2021-03-29-ampere-law-long-wire.md
 ref: http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/magcur.html#c3
 ---
-Terdapat suatu kawat lurus panjang keluar bidang gambar.
-
+Terdapat suatu kawat lurus panjang yang mengalirkan arus $I$ keluar bidang gambar. Suatu lintasan tertutup Ampere berbentuk keliling lingkaran dengan kawat sebelumnya menembus di tengah-tengahnya, seperti diberikan dalam gambar berikut.
 
 ![](/assets/img/13/0135.png)
 
@@ -28,11 +27,11 @@ Arah integral lintasan $d\vec{l}$ adalah berlawanan arah dengan arah putar jarum
 \oint \vec{B} \cdot d\vec{l}
 \end{equation}
 
-pada gambar dia atas adalah
+pada gambar dia atas dapat digunakan untuk memperoleh nilai besar medan magnetik $B$ dengan asumsi bahwa
 
 <ol type="A">
-<li>$\mu_0 (I_1 - I_2 - I_3 + I_4)$.
-<li>$\mu_0 (I_1 - I_2 + I_4)$.
-<li>$\mu_0 (I_1 - I_2 - I_3)$.
-<li>$\mu_0 (I_1 + I_4)$.
-<li>$0$.
+<li>$\vec{B} = B \hat{r}$.
+<li>$\vec{B} = B \hat{z}$.
+<li>$\vec{B} = B \hat{\theta}$.
+<li>$\vec{B} = B \hat{x}$.
+<li>$\vec{B} = B \hat{y}$.
