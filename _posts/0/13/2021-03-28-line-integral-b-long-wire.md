@@ -19,11 +19,11 @@ ref: https://mathinsight.org/line_integral_vector_examples
 ---
 Terdapat sebuah kawat lurus panjang yang mengalirkan arus $I$ keluar dari bidang gambar menuju pembaca. Suatu lintasan garis lurus dari $y = -b$ sampai $y = b$ terletak pada jarak $a$ dari kawat tersebut, sebagaimana diberikan dalam gambar di bawah ini.
 
-![](/assets/img/0/13/0131a.png)
+![]({{site.baseurl}}/assets/img/0/13/0131a.png)
 
 Ingin dihitung $\int \vec{B} \cdot d\vec{l}$ menggunakan lintasan garis lurus tersebut. Untuk memudahkan digunakan sistem koordinat berikut di mana pusat koordinat berda pada tengah kawat (tidak digambarkan demikian agar terlihat lebih sederhana).
 
-![](/assets/img/0/13/0131b.png)
+![]({{site.baseurl}}/assets/img/0/13/0131b.png)
 
 Beberapa hal yang akan digunakan adalah
 

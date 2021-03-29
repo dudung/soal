@@ -19,7 +19,7 @@ ref: https://web.iit.edu/sites/web/files/departments/academic-affairs/academic-r
 ---
 Terdapat empat kawat lurus panjang, yang masing-masing mengalirkan arus $I_1$, $I_2$, $I_3$, dan $I_4$ dengan masing-masing arahnya, berturut-turut, adalah keluar bidang gambar, masuk bidang gambar, masuk bidang gambar, dan keluar bidang gambar. Terdapat lintasan tertutup Ampere $a - b - c - a$ yang terdiri dari busur seperempat lingkaran dan dua buah garis lurus, seperti diilustrasikan di bawah ini.
 
-![](/assets/img/0/13/0134.png)
+![]({{site.baseurl}}/assets/img/0/13/0134.png)
 
 Arah integral lintasan $d\vec{l}$ adalah berlawanan arah dengan arah putar jarum jam. Hasil dari
 

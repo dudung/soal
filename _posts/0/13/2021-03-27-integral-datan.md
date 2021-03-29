@@ -19,7 +19,7 @@ ref: http://www.math.com/tables/integrals/tableof.htm
 ---
 Terdapat sebuah segitiga siku-siku yang memberikan hubungan antara alas $a$, tinggi $y$, sisi miring $r$, dan sudut $\theta$ seperti dalam gambar berikut ini.
 
-![](/assets/img/0/13/0130.png)
+![]({{site.baseurl}}/assets/img/0/13/0130.png)
 
 Dengan mengggunakan bantuan gambar sebelumnya dapat diperoleh solusi dari
 

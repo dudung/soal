@@ -19,7 +19,7 @@ ref: http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/toroid.html
 ---
 Terdapat suatu toroida dengan jari-jari $r$ dan jumlah lilitannya ada $N$ seperti diberikan pada gambar berikut ini.
 
-![](/assets/img/0/13/0138.png)
+![]({{site.baseurl}}/assets/img/0/13/0138.png)
 
 Sebagai lintasan tertutup Ampere dipilh keliling lingkaran dengan jari-jari $r$. Dengan menggunakan hukum Ampere
 

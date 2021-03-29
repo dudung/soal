@@ -19,7 +19,7 @@ ref: https://web.iit.edu/sites/web/files/departments/academic-affairs/academic-r
 ---
 Terdapat kawat lurus panjang yang mengalirkan arus $I$ keluar dari bidang gambar menuju pembaca. Sebuah lintasan tertutup Ampere $(+a, -a)$ -- $(+a, +a)$ -- $(-a, +a)$ -- $(-a, -a)$ -- $(+a, -a)$ melingkupi kawat berarus sebelumnya yang menembus lintasan berbentuk persegi tepat di tengah-tengahnya secara tegak lurus seperti dalam gambar berikut.
 
-![](/assets/img/0/13/0132.png)
+![]({{site.baseurl}}/assets/img/0/13/0132.png)
 
 Hasil dari
 \begin{equation}\nonumber
