@@ -1,0 +1,64 @@
+---
+layout: soal
+author: viridi
+title: "0128"
+mathjax: true
+chartjs: false
+ptext: false
+x3dom: false
+threejs: false
+3dmol: false
+oo: false
+svgphys: false
+category: physics
+tags: ["pde", "ftcs", "forward time centered space", "heat equation", "fi3201", "2020-1"]
+date: 2021-03-31 06:50:00 +07
+permalink: /0128
+src: https://github.com/dudung/soal/commits/master/_posts/0/12/2021-03-31-pde-ftcs-scheme.md
+ref: https://en.wikipedia.org/wiki/FTCS_scheme
+---
+Persamaan panas dalam satu-dimensi (1-D) memiliki bentuk
+
+\begin{equation}\nonumber
+u_t = \alpha u_xx,
+\end{equation}
+
+dengan $\alpha$ adalah koefisien difusivitas termal
+
+\begin{equation}\nonumber
+\alpha = \frac{\kappa}{\rho c_p}.
+\end{equation}
+
+Dengan $\alpha = \omega/\pi^2$, $x \in [0, 1]$, dan syarat batas Dirichlet $u(0, t) = 0$, $u(1, t) = 0$, serta $u(x, 0) = u_0(x)$, dapat diperoleh solusi eksak berbentuk
+
+\begin{equation}\nonumber
+u(x, t) = \frac{1}{\pi^2} e^{-\omega t} \sin(\pi x).
+\end{equation}
+
+Sedangkan dengan menggunakan beda hingga maju untuk turunan 
+$u$ terhadap waktu $t$ dan beda hingga tengah untuk turunan kedua $u$ terhadap posisi $x$, dengan $\gamma = \Delta t / (\Delta x)^2$, dapat diperoleh solusi numerik
+
+\begin{equation}\nonumber
+\displaystyle u_j^{i+1} = \gamma u_{j+1}^i + (1 - 2\gamma) u_j^i + \gamma u_{j-1}^i,
+\end{equation}
+
+yang dikenal sebagai metode eksplisit. Agar selalu memenuhi syarat batas Dirichlet dapat digunakan tebakan awal $u_0(x) = x(1-x)$. Menggunakan $\omega = 1$, dan $\Delta x = 0.01$ dapat diperoleh hasil berikut ini dengan $N = 400$ dan $\Delta t = 1, 2, 3, 4, 5, 5.1 \times 10^{-5}$, yang memberikan $\gamma = 0.1, 0.2, 0.3, 0.4, 0.5, 0.51$.
+
+--- | ---
+![]({{site.baseurl}}/assets/img/0/12/0127-heat-eqn-explicit-0.000010.png) | ![]({{site.baseurl}}/assets/img/0/12/0127-heat-eqn-explicit-0.000020.png)
+$\gamma = 0.1$ | $\gamma = 0.2$
+--- | ---
+![]({{site.baseurl}}/assets/img/0/12/0127-heat-eqn-explicit-0.000030.png) | ![]({{site.baseurl}}/assets/img/0/12/0127-heat-eqn-explicit-0.000040.png)
+$\gamma = 0.3$ | $\gamma = 0.4$
+--- | ---
+![]({{site.baseurl}}/assets/img/0/12/0127-heat-eqn-explicit-0.000050.png) | ![]({{site.baseurl}}/assets/img/0/12/0127-heat-eqn-explicit-0.000051.png)
+$\gamma = 0.5$ | $\gamma = 0.51$
+
+Kurva berwarna hijau merupakan solusi eksak $u_0(x)$, kurva berwarna biru adalah tebakan $u_0(x)$, dan kurva berwarna merah adalah solusi numerik saat $t = N \Delta t$. Dari hasil-hasil di atas dapat diperoleh bahwa
+
+<ol type="A">
+<li>solusi numerik bebas dari nilai $\Delta t$ yang dipilih terlepas dari nilai $\Delta x$ yang digunakan.
+<li>tebakan $u_0(x)$ harus selalu sama dengan solusi spasial.
+<li>metode eksplisit akan stabil bila $\gamma \le 0.5$.
+<li>metode eksplisit akan stabil untuk semua nilai $\gamma$.
+<li>tebakan $u_x(0)$ tidak akan dapat mencapai solusi eksak $u_0(x)$.
