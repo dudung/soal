@@ -43,3 +43,4 @@ Agar tercapai stabilitas maka perlu terpenuhi kondisi
 <li>$\beta < \frac12$.
 <li>$(\alpha/\beta) < \frac12$.
 <li>$(\beta/\alpha) < \frac12$.
+
