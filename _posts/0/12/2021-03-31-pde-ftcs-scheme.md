@@ -17,6 +17,14 @@ permalink: /0128
 src: https://github.com/dudung/soal/commits/master/_posts/0/12/2021-03-31-pde-ftcs-scheme.md
 ref: https://en.wikipedia.org/wiki/FTCS_scheme
 ---
+FTCS (forward time centered space) merupakan metode beda hingga untuk menyelesaikan persamaan diferensial dengan menggunakan beda hingga maju untuk waktu (forward in time) dan beda hingga tengah untuk ruang (centered in space). Persamaan perambatan panas dala satu-dimensi
+
+\begin{equation}\nonumber
+\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}
+\end{equation}
+
+merupakan contoh yang sering digunakan untuk ilustrasi pemanfaatan FTCS.
+
 Persamaan panas dalam satu-dimensi (1-D) memiliki bentuk
 
 \begin{equation}\nonumber
