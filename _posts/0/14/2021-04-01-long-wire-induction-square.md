@@ -33,9 +33,7 @@ dengan arahnya sesuai dengan penjelasan sebelumnya. Terdapat suatu simpul kawat 
 \Phi_B = \int \vec{B} \cdot d\vec{A},
 \end{equation}
 
-dengan $dA = h dx$, di mana integrasi dilakukan dari $x = a$ sampai $x = b$.
-
-Pernyataan yang tepat terkait gambar di atas adalah
+dengan $dA = h dx$, di mana integrasi dilakukan dari $x = a$ sampai $x = b$. Variabel $x$ perlu digunakan dalam rumusan medan magnetik $B$ oleh kawat lurus panjang. Dengan demikian, dapat diperoleh fluks magnetik pada loop kawat berbentuk persegi panjang $(b-a) \times h$, yaitu
 
 <ol type="A">
 <li>.
