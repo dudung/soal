@@ -11,7 +11,7 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["permanent magnet", "north pole out", "induction current", "fi1202", "2020-1"]
+tags: ["motional emf", "induction current", "moving bar" "fi1202", "2020-1"]
 date: 2021-04-01 10:14:00 +07
 permalink: /0145
 src: https://github.com/dudung/soal/commits/master/_posts/0/14/2021-04-01-motional-emf.md
