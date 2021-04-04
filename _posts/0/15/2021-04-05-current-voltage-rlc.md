@@ -11,7 +11,7 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["current", "voltage", "relation", "ac", "resistor","inductor", "capacitor", "fi1202", "2020-1"]
+tags: ["current", "voltage", "relation", "ac", "resistor","inductor", "capacitor", "impedance", "reactance", "resistance", "fi1202", "2020-1"]
 date: 2021-04-05 06:47:00 +07
 permalink: /0159
 src: https://github.com/dudung/soal/commits/master/_posts/0/15/2021-04-05-current-voltage-rlc.md
