@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["trigonometric function", "sine", "cosine", "relation", "quadrant", "fi1202", "2020-1"]
-date: 2021-04-04 19:48:00 +07
+date: 2021-04-04 20:25:00 +07
 permalink: /0152
 src: https://github.com/dudung/soal/commits/master/_posts/0/15/2021-04-04-sine-cosine-relation-0.md
 ref: https://www.khanacademy.org/math/trigonometry/trigonometry-right-triangles/reciprocal-trig-ratios/a/sine-and-cosine-are-cofunctions
@@ -29,19 +29,26 @@ IV  | $+$ | $-$ | $\frac32 \pi < \theta < 2\pi$ | $-$ | $+$
 Terdapat hubungan antara fungsi sinus dan cosinus
 
 \begin{equation}\nonumber
-\sin (\tfrac{\pi}2 - \theta) = \cos \theta
+\sin (\tfrac12 \pi - \theta) = \cos \theta
 \end{equation}
 
 dan
 
 \begin{equation}\nonumber
-\cos (\tfrac{\pi}2  - \theta) = \sin \theta.
+\cos (\tfrac12 \pi  - \theta) = \sin \theta.
 \end{equation}
 
-Hubungan yang tidak tepat antara fungsi cosinus antar kuadran adalah
+Selanjutnya dapat dituliskan bahwa
+
+\begin{equation}\nonumber
+\cos \theta = \sin (\theta + \gamma\pi),
+\end{equation}
+
+dengan $-1 \le \gamma \le 1$. Pernyataan yang tepat untuk menyatakan $\cos \theta$ adalah
+
 <ol type="A">
-<li>$\cos (\pi - \theta) = -\cos \theta$.
-<li>$\cos (\pi + \theta) = -cos \theta$.
-<li>$\cos (-\theta) = -\cos (\theta)$.
-<li>$\cos (2\pi - \theta) = \cos \theta$.
-<li>$\cos (2\pi + \theta) = \cos \theta$.
+<li>$\sin (\theta + \pi)$.
+<li>$\sin (\theta + \frac12 \pi)$.
+<li>$\sin \theta$.
+<li>$\sin (\theta - \frac12 \pi)$.
+<li>$\sin (\theta - \pi)$.
