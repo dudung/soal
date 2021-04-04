@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["current", "voltage", "relation", "ac", "resistor", "fi1202", "2020-1"]
-date: 2021-04-04 21:15:00 +07
+date: 2021-04-04 21:43:00 +07
 permalink: /0156
 src: https://github.com/dudung/soal/commits/master/_posts/0/15/2021-04-04-current-voltage-resistor.md
 ref: https://www.electronics-tutorials.ws/resistor/res_8.html
