@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["current", "voltage", "relation", "ac", "capacitor", "fi1202", "2020-1"]
-date: 2021-04-04 21:44:00 +07
+date: 2021-04-04 21:45:00 +07
 permalink: /0158
 src: https://github.com/dudung/soal/commits/master/_posts/0/15/2021-04-04-current-voltage-capacitor.md
 ref: https://www.animations.physics.unsw.edu.au/jw/AC.html#capacitors
