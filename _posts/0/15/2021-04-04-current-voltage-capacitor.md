@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["current", "voltage", "relation", "ac", "capacitor", "fi1202", "2020-1"]
-date: 2021-04-04 21:38:00 +07
+date: 2021-04-04 21:44:00 +07
 permalink: /0158
 src: https://github.com/dudung/soal/commits/master/_posts/0/15/2021-04-04-current-voltage-capacitor.md
 ref: https://www.animations.physics.unsw.edu.au/jw/AC.html#capacitors
@@ -35,11 +35,11 @@ di mana $f$ sebagai frekuensi arus bolak-balik. Hubungan antara tegangan antar k
 V_C(t) = \frac1C \int I(t) dt.
 \end{equation}
 
-Bila $V_m = I_m X_C$ dan $X_C = (\omega C)^{-1}$, maka tegangan setiap saat kapasitor adalah
+Bila $V_{C,m} = I_m X_C$ dan $X_C = (\omega C)^{-1}$, maka tegangan setiap saat kapasitor adalah
 
 <ol type="A">
-<li>$V_C(t) = V_m \sin (\omega t + \pi) $.
-<li>$V_C(t) = V_m \sin (\omega t + \tfrac12 \pi)$.
-<li>$V_C(t) = V_m \sin \omega t$.
-<li>$V_C(t) = V_m \sin (\omega t - \tfrac12 \pi)$.
-<li>$V_C(t) = V_m \sin (\omega t - \pi)$.
+<li>$V_C(t) = V_{C,m} \sin (\omega t + \pi) $.
+<li>$V_C(t) = V_{C,m} \sin (\omega t + \tfrac12 \pi)$.
+<li>$V_C(t) = V_{C,m} \sin \omega t$.
+<li>$V_C(t) = V_{C,m} \sin (\omega t - \tfrac12 \pi)$.
+<li>$V_C(t) = V_{C,m} \sin (\omega t - \pi)$.
