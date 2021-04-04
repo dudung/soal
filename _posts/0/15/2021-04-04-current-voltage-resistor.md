@@ -35,11 +35,11 @@ di mana $f$ sebagai frekuensi arus bolak-balik. Hukum Ohm memberikan hubungan ba
 V_R(t) = I(t) R.
 \end{equation}
 
-Bila $V_m = I_m R$, maka tegangan setiap saat resistor adalah
+Bila $V_{R,m} = I_m R$, maka tegangan setiap saat resistor adalah
 
 <ol type="A">
-<li>$V_R(t) = V_m \sin (\omega t + \pi) $.
-<li>$V_R(t) = V_m \sin (\omega t + \tfrac12 \pi)$.
-<li>$V_R(t) = V_m \sin \omega t$.
-<li>$V_R(t) = V_m \sin (\omega t - \tfrac12 \pi)$.
-<li>$V_R(t) = V_m \sin (\omega t - \pi)$.
+<li>$V_R(t) = V_{R,m} \sin (\omega t + \pi) $.
+<li>$V_R(t) = V_{R,m} \sin (\omega t + \tfrac12 \pi)$.
+<li>$V_R(t) = V_{R,m} \sin \omega t$.
+<li>$V_R(t) = V_{R,m} \sin (\omega t - \tfrac12 \pi)$.
+<li>$V_R(t) = V_{R,m} \sin (\omega t - \pi)$.
