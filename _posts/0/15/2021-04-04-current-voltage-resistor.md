@@ -38,8 +38,8 @@ V_R(t) = I(t) R.
 Bila $V_m = I_m R$, maka tegangan setiap saat resistor adalah
 
 <ol type="A">
-<li>$V(t) = V_m \sin (\omega t + \pi) $.
-<li>$V(t) = V_m \sin (\omega t + \tfrac12 \pi)$.
-<li>$V(t) = V_m \sin \omega t$.
-<li>$V(t) = V_m \sin (\omega t - \tfrac12 \pi)$.
-<li>$V(t) = V_m \sin (\omega t - \pi)$.
+<li>$V_R(t) = V_m \sin (\omega t + \pi) $.
+<li>$V_R(t) = V_m \sin (\omega t + \tfrac12 \pi)$.
+<li>$V_R(t) = V_m \sin \omega t$.
+<li>$V_R(t) = V_m \sin (\omega t - \tfrac12 \pi)$.
+<li>$V_R(t) = V_m \sin (\omega t - \pi)$.
