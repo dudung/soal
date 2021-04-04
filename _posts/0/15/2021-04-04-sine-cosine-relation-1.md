@@ -44,7 +44,7 @@ Selanjutnya dapat dituliskan bahwa
 -\cos \theta = \sin (\theta + \gamma\pi),
 \end{equation}
 
-dengan $-1 \le \gamma \le 1$. Pernyataan yang tepat untuk menyatakan $\cos \theta$ adalah
+dengan $-1 \le \gamma \le 1$. Pernyataan yang tepat untuk menyatakan $-\cos \theta$ adalah
 
 <ol type="A">
 <li>$\sin (\theta + \pi)$.
