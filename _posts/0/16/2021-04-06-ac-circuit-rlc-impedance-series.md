@@ -11,8 +11,8 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["phasor", "series", "alternating current", "fi1202", "2020-1"]
-date: 2021-04-06 04:23:00 +07
+tags: ["impedance", "rlc", "ac", "series", "alternating current", "fi1202", "2020-1"]
+date: 2021-04-06 04:27:00 +07
 permalink: /0166
 src: https://github.com/dudung/soal/commits/master/_posts/0/16/2021-04-06-ac-circuit-rlc-impedance-series.md
 ref: https://getcalc.com/electrical-impedence-calculator.htm
