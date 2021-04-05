@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["impedance", "rlc", "ac", "parallel", "alternating current", "fi1202", "2020-1"]
-date: 2021-04-06 04:28:00 +07
+date: 2021-04-06 04:36:00 +07
 permalink: /0167
 src: https://github.com/dudung/soal/commits/master/_posts/0/16/2021-04-06-ac-circuit-rlc-impedance-series.md
 ref: https://getcalc.com/electrical-impedence-calculator.htm
