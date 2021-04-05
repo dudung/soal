@@ -38,8 +38,8 @@ Tegangan pada kapasitor $V_C(t)$ diberikan dalam gambar di bawah ini.
 Fungsi yang menyatakan tegangan pada kapasitor $V_C(t)$ adalah
 
 <ol type="A">
-<li>$20 \sin (100\pi t - \pi) \ {\rm V}$.
-<li>$20 \sin (100\pi t - \tfrac12 \pi) \ {\rm V}$.
-<li>$20 \sin 100\pi t \ {\rm V}$.
-<li>$20 \sin (100\pi t + \tfrac12 \pi) \ {\rm V}$.
-<li>$20 \sin (100\pi t + \pi) \ {\rm V}$.
+<li>$40 \sin (100\pi t - \pi) \ {\rm V}$.
+<li>$40 \sin (100\pi t - \tfrac12 \pi) \ {\rm V}$.
+<li>$40 \sin 100\pi t \ {\rm V}$.
+<li>$40 \sin (100\pi t + \tfrac12 \pi) \ {\rm V}$.
+<li>$40 \sin (100\pi t + \pi) \ {\rm V}$.
