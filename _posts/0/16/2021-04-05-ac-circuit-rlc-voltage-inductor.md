@@ -11,7 +11,7 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["current", "voltage", "relation", "ac", "resistor","inductor", "capacitor", "impedance", "reactance", "resistance", "fi1202", "2020-1"]
+tags: ["series", "current", "voltage", "relation", "ac", "resistor","inductor", "capacitor", "impedance", "reactance", "resistance", "fi1202", "2020-1"]
 date: 2021-04-05 12:28:00 +07
 permalink: /0161
 src: https://github.com/dudung/soal/commits/master/_posts/0/16/2021-04-05-ac-circuit-rlc-voltage-inductor.md
