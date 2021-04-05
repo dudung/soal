@@ -38,8 +38,8 @@ Tegangan pada sumber $V_S(t)$ diberikan dalam gambar di bawah ini.
 Fungsi yang menyatakan tegangan pada sumber $V_S(t)$ adalah
 
 <ol type="A">
-<li>$200 \sin (100\pi t - \pi) \ {\rm V}$.
-<li>$200 \sin (100\pi t - \tfrac12 \pi) \ {\rm V}$.
+<li>$200 \sin (100\pi t - 0.5\pi) \ {\rm V}$.
+<li>$200 \sin (100\pi t - 0.25\pi) \ {\rm V}$.
 <li>$200 \sin (100\pi t + 0.295\pi) \ {\rm V}$.
-<li>$200 \sin (100\pi t + \tfrac12 \pi) \ {\rm V}$.
-<li>$200 \sin (100\pi t + \pi) \ {\rm V}$.
+<li>$200 \sin (100\pi t + 0.25\pi) \ {\rm V}$.
+<li>$200 \sin (100\pi t + 0.25\pi) \ {\rm V}$.
