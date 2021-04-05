@@ -14,7 +14,7 @@ category: physics
 tags: ["current", "voltage", "relation", "ac", "resistor","inductor", "capacitor", "impedance", "reactance", "resistance", "fi1202", "2020-1"]
 date: 2021-04-05 12:08:00 +07
 permalink: /0160
-src: https://github.com/dudung/soal/commits/master/_posts/0/15/2021-04-05-ac-circuit-rlc-voltage-resistor.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/16/2021-04-05-ac-circuit-rlc-voltage-resistor.md
 ref: https://www.electronics-tutorials.ws/accircuits/series-circuit.html
 ---
 Terdapat sebuah rangkaian seri RLC arus bolak-balik, yang terdiri dari resistor $R = 60 \ {\rm \Omega}$, induktor $L = 318.4 \ {\rm mH}$, kapasitor $C = 159.1 \ {\rm \mu F}$, dan sumber tegangan bolak-balik $V_S(t)$, seperti pada gambar berikut ini.
