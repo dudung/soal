@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["phasor", "series", "alternating current", "fi1202", "2020-1"]
-date: 2021-04-05 19:10:00 +07
+date: 2021-04-05 19:59:00 +07
 permalink: /0165
 src: https://github.com/dudung/soal/commits/master/_posts/0/16/2021-04-05-ac-circuit-rlc-voltage-phasor.md
 ref: https://www.electrical4u.com/series-rlc-circuit/
