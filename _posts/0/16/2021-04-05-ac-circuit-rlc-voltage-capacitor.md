@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["current", "voltage", "relation", "ac", "resistor","inductor", "capacitor", "impedance", "reactance", "resistance", "fi1202", "2020-1"]
-date: 2021-04-05 12:30:00 +07
+date: 2021-04-05 12:33:00 +07
 permalink: /0162
 src: https://github.com/dudung/soal/commits/master/_posts/0/16/2021-04-05-ac-circuit-rlc-voltage-capacitor.md
 ref: https://www.electronics-tutorials.ws/accircuits/series-circuit.html
@@ -38,8 +38,8 @@ Tegangan pada kapasitor $V_C(t)$ diberikan dalam gambar di bawah ini.
 Fungsi yang menyatakan tegangan pada kapasitor $V_C(t)$ adalah
 
 <ol type="A">
-<li>$200 \sin (100\pi t - \pi) \ {\rm V}$.
-<li>$200 \sin (100\pi t - \tfrac12 \pi) \ {\rm V}$.
-<li>$200 \sin 100\pi t \ {\rm V}$.
-<li>$200 \sin (100\pi t + \tfrac12 \pi) \ {\rm V}$.
-<li>$200 \sin (100\pi t + \pi) \ {\rm V}$.
+<li>$20 \sin (100\pi t - \pi) \ {\rm V}$.
+<li>$20 \sin (100\pi t - \tfrac12 \pi) \ {\rm V}$.
+<li>$20 \sin 100\pi t \ {\rm V}$.
+<li>$20 \sin (100\pi t + \tfrac12 \pi) \ {\rm V}$.
+<li>$20 \sin (100\pi t + \pi) \ {\rm V}$.
