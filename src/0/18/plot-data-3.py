@@ -11,6 +11,8 @@
 #	2107 Can produce animated sine wave.
 #	2018 Produce also sine wave travels to the left.
 #	2110 Clean lines.
+#	2120 Add v instead of T.
+#	2136 Try tt = t * dt / T, not yet have the reason.
 #
 #  References
 #  1. url https://matplotlib.org/gallery/animation
@@ -30,11 +32,12 @@ p = [0, '0182.png']
 
 # Define wave parameters
 A = 0.1
-T = 1
-_omega = 2 * np.pi / T
 _lambda = 1
 k = 2 * np.pi / _lambda
 _phi = 0
+v = 1
+_omega = k * v
+T = np.abs(2 * np.pi / _omega)
 
 # Create array for x and showing two _lambda
 dx = _lambda / 20
@@ -42,7 +45,7 @@ x = np.arange(0, 2 *_lambda + dx, dx)
 
 #	Define wave
 def wave(t):
-	y = A * sin(k * x + _omega * t + _phi)
+	y = A * sin(k * x - _omega * t + _phi)
 	return y
 
 # Create array for time t from tbed to tend with step dt
@@ -89,12 +92,13 @@ def init():
 	return line, time_text
 
 def animate(i):
-	y = wave(i * dt)
+	tt = i * dt / T
+	y = wave(tt)
 	thisx = [x]
 	thisy = [y]
 	
 	line.set_data(thisx, thisy)
-	time_text.set_text(time_template % (i * dt))
+	time_text.set_text(time_template % tt)
 	return line, time_text
 
 ani = animation.FuncAnimation(
