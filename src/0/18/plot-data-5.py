@@ -8,10 +8,12 @@
 #	0512 Continue from plot-data-4.py program, try [1].
 #	0518 Continue to implement [2].
 #	0538 Can draw ellipse moving with the wave.
+#	0552 Record how to change center of patches [3].
 #
 #	References
 #	1. url https://stackoverflow.com/a/9216646 [20210408].
 #	2. url https://stackoverflow.com/a/18218468 [20210408].
+#	3. url https://stackoverflow.com/a/16528737 [20210408].
 #	
 
 # Import required libraries
