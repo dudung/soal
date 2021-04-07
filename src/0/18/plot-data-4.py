@@ -6,11 +6,13 @@
 #	
 #	20210408
 #	0411 Continue from plot-data-3.py program, try [1].
-#	0419 Find that init(), animate() do not require return value.
+#	0419 Find that init(), animate() [2] not require return value.
 #	0423 Add two series to the animated curve.
 #
 #	References
 #	1. url https://stackoverflow.com/a/60580026 [20210408].
+#	2. url https://matplotlib.org/gallery/animation
+#	   /double_pendulum_animated_sgskip.html [20210205].
 #	
 
 # Import required libraries
