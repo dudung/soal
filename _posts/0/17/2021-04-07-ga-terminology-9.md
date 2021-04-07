@@ -11,8 +11,8 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["genetic algorithm", "terminology", "crossover", "fi3201", "2020-2"]
-date: 2021-04-07 12:38:00 +07
+tags: ["genetic algorithm", "terminology", "crossover", "nonsolution" "fi3201", "2020-2"]
+date: 2021-04-07 12:39:00 +07
 permalink: /0179
 src: https://github.com/dudung/soal/commits/master/_posts/0/17/2021-04-07-ga-terminology-9.md
 ref: https://www.tutorialspoint.com/genetic_algorithms/genetic_algorithms_fundamentals.htm
