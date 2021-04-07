@@ -14,7 +14,7 @@ category: physics
 tags: ["genetic algorithm", "terminology", "fi3201", "2020-2"]
 date: 2021-04-07 09:43:00 +07
 permalink: /0172
-src: https://github.com/dudung/soal/commits/master/_posts/0/17/2021-04-06-ga-terminology-2.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/17/2021-04-07-ga-terminology-2.md
 ref: https://www.tutorialspoint.com/genetic_algorithms/genetic_algorithms_fundamentals.htm
 ---
 Dalam algoritma genetik terdapat proses encoding dan decoding. Kedua proses ini diperlukan apabila fenotip dan genotip tidak berada pada ruang representasi yang sama, dan umumnya tidak berada pada ruang yang sama. Dengan demikian proses encoding dan decoding tidak diperlukan, bila fenotip dan genotip telah berada pada ruang yang sama. Dalam tabel berikut ini terdapat padanan antara fenotip dan genotip untuk dua sistem yang berbeda (baris R1 dan baris R2).
