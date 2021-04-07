@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["genetic algorithm", "terminology", "fi3201", "2020-2"]
-date: 2021-04-06 16:04:00 +07
+date: 2021-04-07 07:52:00 +07
 permalink: /0170
 src: https://github.com/dudung/soal/commits/master/_posts/0/17/2021-04-06-ga-terminology-0.md
 ref: https://www.tutorialspoint.com/genetic_algorithms/genetic_algorithms_fundamentals.htm
@@ -28,4 +28,4 @@ Pernyataan yang tepat adalah
 <li>Populasi J, kromosom H, gen R, dan alel U.
 <li>Populasi J, kromosom H, gen U, dan alel R.
 <li>Populasi U, kromosom J, gen R, dan alel H.
-<li>Populasi H, kromosom R, gen U, dan alel R.
+<li>Populasi H, kromosom R, gen U, dan alel J.
