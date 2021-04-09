@@ -3,7 +3,7 @@ layout: default
 title: soal
 ---
 
-# butiran -- physics in plain text
+# soal -- learning physics by solving problems
 
 <!-- Html Elements for Search -->
 <div id="search-container">
