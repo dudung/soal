@@ -21,9 +21,6 @@ Sistem dua benda, yang dalam hal ini adalah dua koloni berbentuk bola dari genus
 
 ![]({{site.baseurl}}/assets/img/0/18/0186.png)
 
-
-
-
 Dapat didefinisikan posisi pusat massa sistem dua koloni $\vec{R} = (m_1 \vec{r_1} + m_2 \vec{r}_2)/M$, dengan $M = m_1 + m_2$, dan posisi relatif pusat koloni kedua terhadap pusat koloni pertama $\vec{r} = \vec{r}_2 - \vec{r}_1$. Dari gambar di atas dapat diperoleh bahwa $\beta$ adalah
 
 <ol type="A">
@@ -43,4 +40,3 @@ Dapat didefinisikan posisi pusat massa sistem dua koloni $\vec{R} = (m_1 \vec{r_
 1 - \beta = \frac{m_1}{M}
 \end{eqnarray}
 {% endcomment %}
-
