@@ -47,4 +47,3 @@ Bila sistem dua-massa di atas bergerak bergerak dengan mode translasi murni, per
 <li>$\dot{\theta} = 0$, $\dot{\phi} \ne 0$, $\dot{x} = 0$, $\dot{y} = 0$, $\dot{z} = 0$.
 <li>$\dot{\theta} \ne 0$, $\dot{\phi} \ne 0$, $\dot{x} \ne 0$, $\dot{y} \ne 0$, $\dot{z} \ne 0$.
 <li>$\dot{\theta} = 0$, $\dot{\phi} = 0$, $\dot{x} \ne 0$, $\dot{y} \ne 0$, $\dot{z} \ne 0$.
-
