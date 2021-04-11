@@ -20,7 +20,14 @@ ref: http://hyperphysics.phy-astr.gsu.edu/hbase/shm.html
 Sistem pegas-massa merupakan salah satu contoh dari sistem fisis yang menghasilkan gerak harmonik sederhana (GHS) atau simple harmonic motion (SHM). Suatu benda yang ber-GHS memiliki fungsi dalam bentuk
 
 \begin{equation}\label{eqn:0201-shm-function}
-y(t) = A \sin (\ometa t + \phi_0),
-\end{}
+y(t) = A \sin (\omega t + \phi_0),
+\end{equation}
 
-dengan $A$ merupakan amplitudo, $\omega$
+dengan $A$ merupakan amplitudo, $\omega$ frekuensi angular, dan $\phi_0$ adalah fasa awal. Untuk sistem pegas-massa dapat diperoleh dari persamaan geraknya bahwa
+
+\begin{equation}\label{eqn:0201-omega-spring-mass-system}
+\omega = \sqrt{\frac{k}{m}},
+\end{equation}
+
+dengan $k$ konstanta pegas dan $m$ massa benda.
+
