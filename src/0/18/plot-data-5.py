@@ -91,7 +91,7 @@ ax.add_patch(ellipse)
 def init():
 	line.set_data([], [])
 	time_text.set_text('')
-	return line, time_text,
+	return line, time_text
 
 def animate(i):
 	tt = i * dt / T
