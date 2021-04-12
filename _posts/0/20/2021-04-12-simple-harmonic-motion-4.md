@@ -36,3 +36,18 @@ a_y = \frac{d^2y}{dt^2},
 \end{equation}
 
 sebagaimana hubungan antar besaran-besaran kinematika pada gerak satu-dimensi.
+
+Fungsi simpangan suatu GHS adalah
+
+\begin{equation}\label{eqn:0203-3}
+y(t) = 0.06 \sin(\tfrac12 \pi t + \tfrac12 \pi),
+\end{equation}
+
+dengan $t$ dalam $\rm s$ dan $y$ dalam $\rm m$. Fungsi percepatan osilasi GHS di atas adalah
+
+<ol type="A">
+<li>$a_y(t) = 0.03 \sin(\tfrac12 \pi t + \tfrac12\pi)$.
+<li>$a_y(t) = 0.015 \sin(\tfrac12 \pi t + \tfrac12\pi)$.
+<li>$a_y(t) = 0.015 \pi \sin(\tfrac12 \pi t + \tfrac12\pi)$.
+<li>$a_y(t) = 0.015 \pi^2 \cos(\tfrac12 \pi t + \tfrac12\pi)$.
+<li>$a_y(t) = -0.015 \pi^2 \sin(\tfrac12\pi t + \tfrac12\pi)$.
