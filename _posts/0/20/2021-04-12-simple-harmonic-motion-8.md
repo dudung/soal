@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["simple harmonic motion", "torsional pendulum system", "fi1202", "2020-2"]
-date: 2021-04-12 14:47:00 +07
+date: 2021-04-12 14:55:00 +07
 permalink: /0208
 src: https://github.com/dudung/soal/commits/master/_posts/0/20/2021-04-12-simple-harmonic-motion-8.md
 ref: https://scienceworld.wolfram.com/physics/TorsionalPendulum.html
