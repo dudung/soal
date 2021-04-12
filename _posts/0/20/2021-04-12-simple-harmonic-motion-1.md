@@ -11,8 +11,8 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["simple harmonic motion", "fi1202", "2020-2"]
-date: 2021-04-12 06:43:00 +07
+tags: ["simple harmonic motion", "phase shift", "displacement difference", "fi1202", "2020-2"]
+date: 2021-04-12 13:42:00 +07
 permalink: /0201
 src: https://github.com/dudung/soal/commits/master/_posts/0/20/2021-04-12-simple-harmonic-motion-1.md
 ref: http://hyperphysics.phy-astr.gsu.edu/hbase/Sound/wavplt.html#c3
