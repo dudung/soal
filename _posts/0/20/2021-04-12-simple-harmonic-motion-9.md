@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["simple harmonic motion", "torsional pendulum system", "fi1202", "2020-2"]
-date: 2021-04-12 15:31:00 +07
+date: 2021-04-12 15:49:00 +07
 permalink: /0209
 src: https://github.com/dudung/soal/commits/master/_posts/0/20/2021-04-12-simple-harmonic-motion-9.md
 ref: https://www.animations.physics.unsw.edu.au/jw/electricmotors.html#alternator
@@ -32,8 +32,8 @@ V(t) = 220 \cos 110\pi t.
 Satuan $V$ adalah $\rm V$ dan $t$ adalah $\rm s$. Frekuensi $f$, periode $T$, dan tegangan rms $V_{\rm rms}$ dari tegangan keluaran alternator adalah
 
 <ol type="A">
-<li>$55 \ \rm Hz$, $0.01818 \ \rm s$, $15.56 \ \rm V$.
+<li>$55 \ \rm Hz$, $0.01818 \ \rm s$, $155.56 \ \rm V$.
 <li>$110 \ \rm Hz$, $15.56 \ \rm s$, $0.01818 \ \rm V$.
-<li>$15.56 \ \rm Hz$, $0.01818 \ \rm s$, $110 \ \rm V$.
+<li>$155.56 \ \rm Hz$, $0.01818 \ \rm s$, $110 \ \rm V$.
 <li>$220 \ \rm Hz$, $110 \ \rm s$, $15.56 \ \rm V$.
 <li>$110 \ \rm Hz$, $0.01818 \ \rm s$, $22\ \rm V$.
