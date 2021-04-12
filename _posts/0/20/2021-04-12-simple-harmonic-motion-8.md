@@ -23,25 +23,11 @@ Terdapat suatu fungsi yang menggambarkan GHS dalam bentuk
 z(t) = 0.25 \cos \pi(20 t + \tfrac13),
 \end{equation}
 
-dengan $z$ suatu besaran fisis tertentu.
-
-dengan $\kappa$ merupakan konstanta torsional. Dari hukum Newton II (gerak rotasi) dapat diperoleh persamaan
-
-\begin{equation}\label{eqn:0206-0}
-I \alpha = -\kappa\theta,
-\end{equation}
-
-dengan $I$ adalah momen inersia benda dan $\alpha = d^2\theta/dt^2$ dari kinematika gerak rotasi, yang akan memberikan solusi
-
-\begin{equation}\label{eqn:0206-1}
-\theta(t) = A \sin(\omega t + \phi_0).
-\end{equation}
-
-Frekuensi angular $\omega$ untuk sistem ini adalah
+dengan $z$ suatu besaran fisis tertentu. Fasa awal $\phi_0$ dan periode osilasi $T$ dari sistem GHS tersebut adalah
 
 <ol type="A">
-<li>$\displaystyle\sqrt{\frac{m}{k}}$.
-<li>$\displaystyle\sqrt{\frac{k}{m}}$.
-<li>$\displaystyle\sqrt{\frac{g}{l}}$.
-<li>$\displaystyle\sqrt{\frac{l}{g}}$.
-<li>$\displaystyle\sqrt{\frac{\kappa}{I}}$.
+<li>$\tfrac13$ dan $20$.
+<li>$\tfrac13\pi$ dan $20$.
+<li>$\tfrac13\pi$ dan $20\pi$.
+<li>$\tfrac13$ dan $10$.
+<li>$\tfrac13\pi$ dan $0.1$.
