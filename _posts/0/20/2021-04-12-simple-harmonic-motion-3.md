@@ -19,19 +19,19 @@ ref: http://hyperphysics.phy-astr.gsu.edu/hbase/shm.html#c2
 ---
 Suatu gerak harmonik sederhana (GHS) memikii fungsi osilasi
 
-\begin{equation}\label{eqn:0204-0}
+\begin{equation}\label{eqn:0203-0}
 y(t) = A \sin (\omega t + \phi_0),
 \end{equation}
 
 dengan $A$ merupakan amplitudo, $\omega$ frekuensi angular, dan $\phi_0$ adalah fasa awal. Kecepatan osilasi benda yang mengalami GHS adalah
 
-\begin{equation}\label{eqn:0204-1}
+\begin{equation}\label{eqn:0203-1}
 v_y(t) = \omega A \cos (\omega t + \phi_0),
 \end{equation}
 
 yang diperoleh dengan
 
-\begin{equation}\label{eqn:0204-2}
+\begin{equation}\label{eqn:0203-2}
 v_y = \frac{dy}{dt},
 \end{equation}
 

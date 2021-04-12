@@ -32,3 +32,10 @@ y(t) = A \sin (\omega t + \phi_0).
 \end{equation}
 
 Frekuensi angular $\omega$ untuk sistem ini adalah
+
+<ol type="A">
+<li>.
+<li>.
+<li>.
+<li>.
+<li>.

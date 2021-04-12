@@ -19,25 +19,25 @@ ref: http://hyperphysics.phy-astr.gsu.edu/hbase/shm.html
 ---
 Sistem pegas-massa merupakan salah satu contoh dari sistem fisis yang menghasilkan gerak harmonik sederhana (GHS) atau simple harmonic motion (SHM). Suatu benda yang ber-GHS memiliki fungsi dalam bentuk
 
-\begin{equation}\label{eqn:0201-0}
+\begin{equation}\label{eqn:0200-0}
 y(t) = A \sin (\omega t + \phi_0),
 \end{equation}
 
 dengan $A$ merupakan amplitudo, $\omega$ frekuensi angular, dan $\phi_0$ adalah fasa awal. Untuk sistem pegas-massa dapat diperoleh dari persamaan geraknya bahwa
 
-\begin{equation}\label{eqn:0201-1}
+\begin{equation}\label{eqn:0200-1}
 \omega = \sqrt{\frac{k}{m}},
 \end{equation}
 
 dengan $k$ konstanta pegas dan $m$ massa benda. Periode osilasi dinyatakan dengan $T$ yang terkait dengan frekuensi osilasi $f$ dan frekuensi angular osilasi $\omega$ melalui
 
-\begin{equation}\label{eqn:0201-2}
+\begin{equation}\label{eqn:0200-2}
 \omega = 2\pi f = \frac{2\pi}{T}.
 \end{equation}
 
 Fasa awal $\phi_0$ menghubungkan simpangan $y$ dengan amplitudo $A$
 
-\begin{equation}\label{eqn:0201-3}
+\begin{equation}\label{eqn:0200-3}
 y_0 = y(0) = A \sin \phi_0
 \end{equation}
 
