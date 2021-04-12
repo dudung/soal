@@ -11,7 +11,7 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["simple harmonic motion", "fi1202", "2020-2"]
+tags: ["simple harmonic motion", "spring-mass system", "fi1202", "2020-2"]
 date: 2021-04-12 09:27:00 +07
 permalink: /0205
 src: https://github.com/dudung/soal/commits/master/_posts/0/20/2021-04-12-simple-harmonic-motion-5.md
