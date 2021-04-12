@@ -35,7 +35,7 @@ Fungsi yang bukan merupakan solusi dari Persamaan \eqref{eqn:0202-1} adalah
 
 <ol type="A">
 <li>$y(t) = B \cos(\omega t + \phi_0)$.
-<li>$y(t) = A e^{kt} + B e^{-kt}$.
-<li>$y(t) = A e^{ikt} + B e^{-ikt}$.
-<li>$y(t) = A \sin\omega t + \phi_0) + B \cos(\omega t + \phi_0)$.
-<li>$y(t) = A \sin\omega t + \phi_0) + B e^{-ikt}$.
+<li>$y(t) = A e^{\omega t} + B e^{-\omega t}$.
+<li>$y(t) = A e^{i\omega t} + B e^{-i\omega t}$.
+<li>$y(t) = A \sin(\omega t + \phi_0) + B \cos(\omega t + \phi_0)$.
+<li>$y(t) = A \sin(\omega t + \phi_0) + B e^{-i\omega t}$.
