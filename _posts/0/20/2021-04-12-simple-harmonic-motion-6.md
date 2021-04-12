@@ -12,24 +12,26 @@ oo: false
 svgphys: false
 category: physics
 tags: ["simple harmonic motion", "simple pendulum system", "fi1202", "2020-2"]
-date: 2021-04-12 09:50:00 +07
+date: 2021-04-12 10:01:00 +07
 permalink: /0206
 src: https://github.com/dudung/soal/commits/master/_posts/0/20/2021-04-12-simple-harmonic-motion-5.md
 ref: http://hyperphysics.phy-astr.gsu.edu/hbase/shm2.html#c2
 ---
-Suatu benda bermassa $m$ terikat secara vertikal dengan pegas berkonstanta $k$ dan bebas berosilasi pada arah vertikal (paralel dengan percepatan gravitasi $g$) sehingga menghasilkan suatu gerak harmonik sederhana (GHS).
+Terdapat bandul sederhana dengan massa $m$ dapat dianggap sebagai benda titik. Panjang tali bandul adalah $l$ dan percepatan gravitasi lingkungan adalah $g$. Massa $m$ begerak dengan jenis gerak harmonik sederhana (GHS).
 
-Dari hukum Newton II dapat diperoleh persamaan
+Dari hukum Newton II (gerak rotasi) dapat diperoleh persamaan
 
-\begin{equation}\label{eqn:0205-0}
-ma = -ky - mg
+\begin{equation}\label{eqn:0206-0}
+I \alpha = -mgl\sin\theta
 \end{equation}
 
 yang akan memberikan solusi
 
-\begin{equation}\label{eqn:0205-1}
-y(t) = A \sin (\omega t + \phi_0).
+\begin{equation}\label{eqn:0206-1}
+y(t) = A \sin (\omega t + \phi_0),
 \end{equation}
+
+dengan $I = ml^2$ untuk benda titik, $\sin\theta \approx \theta$ menggunakan aproksimasi sudut kecil, dan $\alpha = d^2\theta/dt^2$ dari kinematika gerak melingkar.
 
 Frekuensi angular $\omega$ untuk sistem ini adalah
 

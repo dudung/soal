@@ -19,7 +19,7 @@ ref: http://hyperphysics.phy-astr.gsu.edu/hbase/shm2.html#c2
 ---
 Suatu benda bermassa $m$ terikat secara vertikal dengan pegas berkonstanta $k$ dan bebas berosilasi pada arah vertikal (paralel dengan percepatan gravitasi $g$) sehingga menghasilkan suatu gerak harmonik sederhana (GHS).
 
-Dari hukum Newton II dapat diperoleh persamaan
+Dari hukum Newton II (gerak translasi) dapat diperoleh persamaan
 
 \begin{equation}\label{eqn:0205-0}
 ma = -ky - mg
