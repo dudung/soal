@@ -31,3 +31,11 @@ dengan $A$ merupakan amplitudo, $\omega$ frekuensi angular, dan $\phi_0$ adalah 
 
 yang diperoleh dari hukum II Newton baik untuk gerak translasi (sistem pegas-massa) ataupun rotasi (sistem bandul). Substitusi Persamaan \eqref{eqn:0202-0} ke Persamaan \eqref{eqn:0202-1} akan membuktikan bahwa Persamaan \eqref{eqn:0202-0} merupakan solusi dari Persamaan \eqref{eqn:0202-1}.
 
+Fungsi yang bukan merupakan solusi dari Persamaan \eqref{eqn:0202-1} adalah
+
+<ol type="A">
+<li>$y(t) = B \cos(\omega t + \phi_0)$.
+<li>$y(t) = A e^{kt} + B e^{-kt}$.
+<li>$y(t) = A e^{ikt} + B e^{-ikt}$.
+<li>$y(t) = A \sin\omega t + \phi_0) + B \cos(\omega t + \phi_0)$.
+<li>$y(t) = A \sin\omega t + \phi_0) + B e^{-ikt}$.
