@@ -39,3 +39,17 @@ Frekuensi angular $\omega$ untuk sistem ini adalah
 <li>$\displaystyle\sqrt{\frac{g}{l}}$.
 <li>$\displaystyle\sqrt{\frac{l}{g}}$.
 <li>$\displaystyle\sqrt{\frac{\kappa}{I}}$.
+
+
+{% comment %}
+Dzakwanil Hakim: $\omega = \sqrt{k/m + g/y}$
+
+Misalkan $u = y + mg/k$ sehingga $du/dt = dy/dt$, $d^2u/dt^2 = d^2y/dt^2$.
+
+$
+\displaystyle a + \frac{k}{m} y + g = 0 \newline
+\displaystyle \frac{d^2 y}{dt^2} + \frac{k}{m} y + g = 0 \newline
+\displaystyle \frac{d^2 y}{dt^2} + \frac{k}{m} \left( y + \frac{mg}{k} \right) = 0 \newline
+\displaystyle \frac{d^2 u}{dt^2} + \frac{k}{m} u = 0 \newline
+$
+{% endcomment %}
