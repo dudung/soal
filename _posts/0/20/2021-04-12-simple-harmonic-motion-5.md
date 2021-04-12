@@ -22,7 +22,7 @@ Suatu benda bermassa $m$ terikat secara vertikal dengan pegas berkonstanta $k$ d
 Dari hukum Newton II dapat diperoleh persamaan
 
 \begin{equation}\label{eqn:0205-0}
-ma = -ky - mng
+ma = -ky - mg
 \end{equation}
 
 yang akan memberikan solusi
