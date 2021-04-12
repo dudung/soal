@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["simple harmonic motion", "fi1202", "2020-2"]
-date: 2021-04-12 06:59:00 +07
+date: 2021-04-12 14:38:00 +07
 permalink: /0204
 src: https://github.com/dudung/soal/commits/master/_posts/0/20/2021-04-12-simple-harmonic-motion-2.md
 ref: http://hyperphysics.phy-astr.gsu.edu/hbase/shm.html#c2
