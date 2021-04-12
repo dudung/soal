@@ -28,7 +28,7 @@ I \alpha = -mgl\sin\theta
 yang akan memberikan solusi
 
 \begin{equation}\label{eqn:0206-1}
-y(t) = A \sin (\omega t + \phi_0),
+\theta(t) = A \sin (\omega t + \phi_0),
 \end{equation}
 
 dengan $I = ml^2$ untuk benda titik, $\sin\theta \approx \theta$ menggunakan aproksimasi sudut kecil, dan $\alpha = d^2\theta/dt^2$ dari kinematika gerak melingkar.

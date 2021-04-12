@@ -17,23 +17,23 @@ permalink: /0207
 src: https://github.com/dudung/soal/commits/master/_posts/0/20/2021-04-12-simple-harmonic-motion-7.md
 ref: https://scienceworld.wolfram.com/physics/TorsionalPendulum.html
 ---
-..
+Pendulum torsional, yang merupakan suatu sistem yang dapat menghasilkan gerak harmonik sederhana (GHS), memiliki torsi pemulih berbentuk
 
-Terdapat bandul sederhana dengan massa $m$ dapat dianggap sebagai benda titik. Panjang tali bandul adalah $l$ dan percepatan gravitasi lingkungan adalah $g$. Massa $m$ begerak dengan jenis gerak harmonik sederhana (GHS).
+\begin{equation}\label{eqn:0207-0}
+\tau = -\kappa\theta,
+\end{equation}
 
-Dari hukum Newton II (gerak rotasi) dapat diperoleh persamaan
+dengan $\kappa$ merupakan konstanta torsional. Dari hukum Newton II (gerak rotasi) dapat diperoleh persamaan
 
 \begin{equation}\label{eqn:0206-0}
-I \alpha = -mgl\sin\theta
+I \alpha = -\kappa\theta,
 \end{equation}
 
-yang akan memberikan solusi
+dengan $I$ adalah momen inersia benda dan $\alpha = d^2\theta/dt^2$ dari kinematika gerak rotasi, yang akan memberikan solusi
 
 \begin{equation}\label{eqn:0206-1}
-y(t) = A \sin (\omega t + \phi_0),
+\theta(t) = A \sin(\omega t + \phi_0).
 \end{equation}
-
-dengan $I = ml^2$ untuk benda titik, $\sin\theta \approx \theta$ menggunakan aproksimasi sudut kecil, dan $\alpha = d^2\theta/dt^2$ dari kinematika gerak melingkar.
 
 Frekuensi angular $\omega$ untuk sistem ini adalah
 
