@@ -27,7 +27,7 @@ dengan $A$ merupakan amplitudo, $\omega$ frekuensi angular, dan $\phi_0$ adalah 
 
 \begin{equation}\label{eqn:0203-1}
 v_y(t) = \omega A \cos (\omega t + \phi_0),
-\end{equation}
+\end{equation}0.
 
 yang diperoleh dengan
 
@@ -36,3 +36,18 @@ v_y = \frac{dy}{dt},
 \end{equation}
 
 sebagaimana hubungan antar besaran-besaran kinematika pada gerak satu-dimensi.
+
+Fungsi simpangan suatu GHS adalah
+
+\begin{equation}\label{eqn:0203-3}
+y(t) = 0.04 \sin(\tfrac12 \pi t + \tfrac12 \pi),
+\end{equation}
+
+dengan $t$ dalam $\rm s$ dan $y$ dalam $\rm m$. Fungsi kecepatan osilasi GHS di atas adalah
+
+<ol type="A">
+<li>$v_y(t) = 0.04 \sin(\tfrac12 \pi t + \tfrac12\pi)$.
+<li>$v_y(t) = 0.02 \sin(\tfrac12 \pi t + \tfrac12\pi)$.
+<li>$v_y(t) = 0.02 \pi \sin(\tfrac12 \pi t + \tfrac12\pi)$.
+<li>$v_y(t) = 0.02 \pi \cos(\tfrac12 \pi t + \tfrac12\pi)$.
+<li>$v_y(t) = 0.02 \pi \cos(t + \tfrac12\pi)$.
