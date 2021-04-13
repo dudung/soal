@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["artificial neural network", "ann", "architecture", "fi3201", "2020-2"]
-date: 2021-04-13 13:56:00 +07
+date: 2021-04-13 15:56:00 +07
 permalink: /0220
 src: https://github.com/dudung/soal/commits/master/_posts/0/22/2021-04-13-intro-to-ann-0.md
 ref: https://towardsdatascience.com/a-gentle-introduction-to-neural-networks-series-part-1-2b90b87795bc
@@ -28,7 +28,7 @@ A4  | koneksi, bobot
 A5  | fungsi aktivasi
 A6  | aturan belajar
 
-Hal yang boleh tidak ada adalah
+Hal yang boleh tidak ada pada suatu JST adalah
 
 <ol type="A">
 <li>A1, A3.
