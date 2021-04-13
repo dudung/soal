@@ -11,8 +11,8 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["artificial neural network", "ann", "treshold logic unit", "fi3201", "2020-2"]
-date: 2021-04-14 04:19:00 +07
+tags: ["artificial neural network", "ann", "activation function", "step unit function", "binary step", "bias", "fi3201", "2020-2"]
+date: 2021-04-14 04:39:00 +07
 permalink: /0224
 src: https://github.com/dudung/soal/commits/master/_posts/0/22/2021-04-13-intro-to-ann-4.md
 ref: https://developer.ibm.com/articles/l-neural/
@@ -21,13 +21,28 @@ Langkah pertama untuk memahami jaringan saraf adalah dengan membuat abstraksi da
 
 ![]({{site.baseurl}}/assets/img/0/22/0223.png)
 
+Keluaran SLA di atas adalah $y_i$ yang merupakan hasil dari fungsi aktivasi dengan masukannya adalah 
 
+\begin{equation}\label{eqn:0224-0}
+z_j = b + \sum_i w_{ji} x_i,
+\end{equation}
 
-Dengan $y_i = f(z_i)$, di mana $y_i$ adalah keluaran suatu SLA, formulasi umum untuk memperoleh $z_i$ adalah
+di mana $b$ merupakan bias, $x_i$ adalah nilai pada neuron masukan $i$, dan $w_{ji}$, yang merupakan bobot, menggambarkan kontribusi masukan $i$ terhadap nilai $z_j$. Fungsi aktivasi $f(z_i)$ dapat merupakan fungsi tangga biner (binary step function) atau tangga satuan (unit step funvtion) berbentuk
+
+\begin{equation}\label{eqn:0224-1}
+f(z_i) = \left\\{
+\begin{array}{cc}
+0, & z_i < 0, \newline
+1, & z_i \ge 0.
+\end{array}
+\right.
+\end{equation}
+
+Syarat aktivasi dalam Persamaan \eqref{eqn:0224-1} dapat diubah dari $0$ menjadi $a$ menggunakan bias $b$ pada Persamaan \eqref{eqn:0224-0} dengan menggunakan
 
 <ol type="A">
-<li>$\displaystyle \sum_i w_{ji} x_i$.
-<li>$\displaystyle \prod_i w_{ji} x_i$.
-<li>$\displaystyle \sum_i \frac{w_{ji}}{x_i}$.
-<li>$\displaystyle \prod_i \frac{w_{ji}}{x_i}$.
-<li>$\displaystyle \sum_i e^{w_{ji} x_i}$.
+<li>$b = a$.
+<li>$b = -a$.
+<li>$b = a^{-1}$.
+<li>$b = e^a$.
+<li>$b = \log a$.
