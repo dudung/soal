@@ -14,7 +14,7 @@ category: physics
 tags: ["artificial neural network", "ann", "feed forward", "three layers", "training", "fi3201", "2020-2"]
 date: 2021-04-14 17:32:00 +07
 permalink: /0230
-src: https://github.com/dudung/soal/commits/master/_posts/0/23/2021-04-13-ann-training-0.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/23/2021-04-14-ann-training-0.md
 ref: https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
 ---
 Suatu arsitektur JST berjenis feed forward terdiri dari dua neuron masukan ($\LARGE \color{#ffcc00} \bullet$), dua neuron tersembunyi ($\LARGE \color{#66cc00} \bullet$), dan satu neuron keluaran ($\LARGE \color{#ff6600} \bullet$).
