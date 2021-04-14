@@ -27,7 +27,18 @@ Terdapat pasangan data input $I_1$ dan $I_2$ sejumlah $N$ buah yang akan menghas
 \epsilon = \sum_{i = 1}^N \frac12 \left[ T_1^{(i)} - O_1^{(i)} \right]^2.
 \end{equation}
 
-Kesalahan total dapat diminimumkan dengan mengubah-ubah nilai-nilai bobot $w_{11}$, $w_{12}$, $w_{21}$, $w_{22}$, $u_{11}$, dan $u_{12}$.
+Kesalahan total dapat diminimumkan dengan mengubah-ubah nilai-nilai bobot $w_{11}$, $w_{12}$, $w_{21}$, $w_{22}$, $u_{11}$, dan $u_{12}$ dengan melalui
+
+\begin{eqnarray}
+\frac{\partial \epsilon}{\partial w_{11}} = 0, \newline
+\frac{\partial \epsilon}{\partial w_{12}} = 0, \newline
+\frac{\partial \epsilon}{\partial w_{21}} = 0, \newline
+\frac{\partial \epsilon}{\partial w_{22}} = 0, \newline
+\frac{\partial \epsilon}{\partial u_{11}} = 0, \newline
+\frac{\partial \epsilon}{\partial u_{12}} = 0,
+\end{eqnarray}
+
+bila memungkinan.
 
 <ol type="A">
 <li>$$.
