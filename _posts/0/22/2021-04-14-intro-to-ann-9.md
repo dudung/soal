@@ -11,7 +11,7 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["artificial neural network", "ann", "feed forward", "three layers", "error", "fi3201", "2020-2"]
+tags: ["artificial neural network", "ann", "feed forward", "three layers", "error", "delta rule", "fi3201", "2020-2"]
 date: 2021-04-14 12:00:00 +07
 permalink: /0229
 src: https://github.com/dudung/soal/commits/master/_posts/0/22/2021-04-13-intro-to-ann-9.md
@@ -38,11 +38,12 @@ Kesalahan total dapat diminimumkan dengan mengubah-ubah nilai-nilai bobot $w_{11
 \frac{\partial \epsilon}{\partial u_{12}} = 0,
 \end{eqnarray}
 
-bila memungkinan.
+bila memungkinan. Atau mengubahnya secara iteratif dengan meggunakan aturan delta, yang tak lain adalah penerapan algoritma gradient descent pada aturan pembelajaran JST. Dengan indeks atas $+$ menggambarkan nilai bobot yang telah diubah dan $\eta$ merupakan laju belajar. Bentuk iteratif pengubahan nilai-nilai bobot yang tidak tepat adalah
 
 <ol type="A">
-<li>$$.
-<li>$$.
-<li>$$.
-<li>$$.
-<li>$$.
+<li>$\displaystyle w_{11}^+ = w_{11} - \eta \frac{\partial \epsilon}{\partial w_{11}}$.
+<li>$\displaystyle u_{11}^+ = u_{11} - \eta \frac{\partial \epsilon}{\partial u_{11}}$.
+<li>$\displaystyle w_{12}^+ = w_{12} - \eta \frac{\partial \epsilon}{\partial w_{12}}$.
+<li>$\displaystyle u_{12}^+ = u_{12} - \eta \frac{\partial \epsilon}{\partial u_{12}}$.
+<li>$\displaystyle w_{11}^+ = u_{11} - \eta \frac{\partial \epsilon}{\partial u_{11}}$.
+
