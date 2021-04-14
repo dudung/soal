@@ -42,18 +42,59 @@ dengan $v_{ij}$ adalah suatu bobot dan $v_{ij}^{\rm (new)}$ adalah bobot yang te
 untuk turunannya. Terdapat persamaan-persamaan berikut
 
 \begin{eqnarray}
-\label{eqn:0230-3-e} \varepsilon = \sum_{i = 1}^N \varepsilon_k, \newline
+\label{eqn:0230-3-e} \varepsilon = \sum_{k = 1}^N \varepsilon_k, \newline
 \label{eqn:0230-3-ek} \varepsilon_k = \frac12 \left[ T_1^{(k)} - O_1^{(k)} \right]^2, \newline
 \label{eqn:0230-3-o} O_1^{(k)} = f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}), \newline
 \label{eqn:0230-3-y1} y_1^{(k)} = f(w_{11} x_1^{(k)} + w_{12} x_2^{(k)}), \newline
-\label{eqn:0230-3-y2} y_2^{(k)} = f(w_{21} x_1^{(k)} + w_{22} x_2^{(k)}), \newline
+\label{eqn:0230-3-y2} y_2^{(k)} = f(w_{21} x_1^{(k)} + w_{22} x_2^{(k)}),
 \end{eqnarray}
 
-yang diperlukan untuk menerapkan suku terakhir pada ruas kanan Persamaan \eqref{eqn:0230-1} menggunakan aturan rantai.
+yang diperlukan untuk menerapkan suku terakhir pada ruas kanan Persamaan \eqref{eqn:0230-1} menggunakan aturan rantai. Persamaan yang telah dioperasikan dengan turunan parsial bobot-bobot di atas akan memberikan
+
+\begin{eqnarray}
+\label{eqn:0230-4-de} \frac{\partial \varepsilon}{\partial w_{ij}} = \sum_{k = 1}^N \frac{\partial \varepsilon_k}{\partial w_{ij}}, \newline
+\label{eqn:0230-4-dek} \frac{\partial \varepsilon_k}{\partial w_{ij}} = -\left[ T_1^{(k)} - O_1^{(k)} \right] \frac{\partial O_1^{(k)}}{\partial w_{ij}}, \newline
+\label{eqn:0230-4-dou} \frac{\partial O_1^{(k)}}{\partial u_{ij}} = f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \left[ 1 - f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \right] \left( \delta_{i1} \delta_{j1} y_1^{(k)} + \delta_{i1} \delta_{j2} y_2^{(k)} \right), \newline
+\label{eqn:0230-4-dow} \frac{\partial O_1^{(k)}}{\partial w_{ij}} = f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \left[ 1 - f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \right] \left( u_{11} \frac{\partial y_1^{(k)}}{\partial w_{ij}} + u_{12} \frac{\partial y_2^{(k)}}{\partial w_{ij}} \right), \newline
+\label{eqn:0230-4-dy1} \frac{\partial y_1^{(k)}}{\partial w_{ij}} = f(w_{11} x_1^{(k)} + w_{12} x_2^{(k)}) \left[ 1 - f(w_{11} x_1^{(k)} + w_{12} x_2^{(k)}) \right] \left( \delta_{i1} \delta_{j1} x_1^{(k)} + \delta_{i1} \delta_{j2} x_2^{(k)} \right), \newline
+\label{eqn:0230-4-dy2} \frac{\partial y_2^{(k)}}{\partial w_{ij}} = f(w_{21} x_1^{(k)} + w_{22} x_2^{(k)}) \left[ 1 - f(w_{21} x_1^{(k)} + w_{22} x_2^{(k)}) \right] \left( \delta_{i2} \delta_{j1} x_1^{(k)} + \delta_{i2} \delta_{j2} x_2^{(k)} \right).
+\end{eqnarray}
+
+Dengan demikian dapat diperoleh persamaan-persamaan berikut ini
+
+\begin{equation}\label{eqn:0230-E1}
+-\left[ T_1^{(k)} - O_1^{(k)} \right] f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \left[ 1 - f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \right] y_1^{(k)},
+\end{equation}
+
+\begin{equation}\label{eqn:0230-E2}
+-\left[ T_1^{(k)} - O_1^{(k)} \right] f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \left[ 1 - f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \right] y_2^{(k)},
+\end{equation}
+
+\begin{eqnarray}\nonumber
+-\left[ T_1^{(k)} - O_1^{(k)} \right] f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \left[ 1 - f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \right] \newline\label{eqn:0230-E3}
+u_{11} f(w_{11} x_1^{(k)} + w_{12} x_2^{(k)}) \left[ 1 - f(w_{11} x_1^{(k)} + w_{12} x_2^{(k)}) \right] x_1^{(k)},
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+-\left[ T_1^{(k)} - O_1^{(k)} \right] f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \left[ 1 - f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \right] \newline\label{eqn:0230-E4}
+u_{11} f(w_{11} x_1^{(k)} + w_{12} x_2^{(k)}) \left[ 1 - f(w_{11} x_1^{(k)} + w_{12} x_2^{(k)}) \right] x_2^{(k)},
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+-\left[ T_1^{(k)} - O_1^{(k)} \right] f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \left[ 1 - f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \right] \newline\label{eqn:0230-E5}
+u_{12} f(w_{21} x_1^{(k)} + w_{22} x_2^{(k)}) \left[ 1 - f(w_{21} x_1^{(k)} + w_{22} x_2^{(k)}) \right] x_1^{(k)},
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+-\left[ T_1^{(k)} - O_1^{(k)} \right] f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \left[ 1 - f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}) \right] \newline\label{eqn:0230-E6}
+u_{12} f(w_{21} x_1^{(k)} + w_{22} x_2^{(k)}) \left[ 1 - f(w_{21} x_1^{(k)} + w_{22} x_2^{(k)}) \right] x_2^{(k)}.
+\end{eqnarray}
+
+Pernyataan yang tidak tepat adalah
 
 <ol type="A">
-<li>$$.
-<li>$$.
-<li>$$.
-<li>$$.
-<li>$$.
+<li>$\displaystyle \frac{\partial \varepsilon_k}{\partial u_{11}}$ dihitung menggunakan Persamaan \eqref{eqn:0230-E1}.
+<li>$\displaystyle \frac{\partial \varepsilon_k}{\partial u_{12}}$ dihitung menggunakan Persamaan \eqref{eqn:0230-E2}.
+<li>$\displaystyle \frac{\partial \varepsilon_k}{\partial w_{11}}$ dihitung menggunakan Persamaan \eqref{eqn:0230-E3}.
+<li>$\displaystyle \frac{\partial \varepsilon_k}{\partial w_{12}}$ dihitung menggunakan Persamaan \eqref{eqn:0230-E4}.
+<li>$\displaystyle \frac{\partial \varepsilon_k}{\partial w_{22}}$ dihitung menggunakan Persamaan \eqref{eqn:0230-E5}.
