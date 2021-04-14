@@ -11,7 +11,7 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["artificial neural network", "ann", "feed forward", "three layers", "backpropagation", "fi3201", "2020-2"]
+tags: ["artificial neural network", "ann", "feed forward", "three layers", "fi3201", "2020-2"]
 date: 2021-04-14 11:12:00 +07
 permalink: /0227
 src: https://github.com/dudung/soal/commits/master/_posts/0/22/2021-04-13-intro-to-ann-7.md
