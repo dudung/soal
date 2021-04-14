@@ -38,7 +38,7 @@ f(z_i) = \left\\{
 \right.
 \end{equation}
 
-Syarat aktivasi dalam Persamaan \eqref{eqn:0224-1} dapat diubah dari $0$ menjadi $a$ menggunakan bias $b$ pada Persamaan \eqref{eqn:0224-0} dengan menggunakan
+Syarat aktivasi dalam Persamaan \eqref{eqn:0224-1} dapat diubah dari $0$ menjadi $a$ menggunakan bias $b$ pada Persamaan \eqref{eqn:0224-0} dengan menetapkan
 
 <ol type="A">
 <li>$b = a$.
