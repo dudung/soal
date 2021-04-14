@@ -24,7 +24,7 @@ Suatu arsitektur JST berjenis feed forward terdiri dari dua neuron masukan ($\LA
 Terdapat pasangan data input $I_1$ dan $I_2$ sejumlah $N$ buah yang akan menghasilkan data output $O_1$ dengan jumlah yang sama. Target $T_1$ adalah nilai data sebenarnya yang diharapkan muncul, sehingga dapat didefinisikan kesalahan total untuk seluruh $N$ data dalam bentuk
 
 \begin{equation}\label{eqn:0230-0}
-\varepsilon = \sum_{i = 1}^N \frac12 \left[ T_1^{(i)} - O_1^{(i)} \right]^2.
+\varepsilon = \sum_{k = 1}^N \frac12 \left[ T_1^{(k)} - O_1^{(k)} \right]^2.
 \end{equation}
 
 Kesalahan total dapat diminimumkan dengan mengubah-ubah nilai-nilai bobot $w_{11}$, $w_{12}$, $w_{21}$, $w_{22}$, $u_{11}$, dan $u_{12}$ dengan melalui
@@ -39,13 +39,17 @@ dengan $v_{ij}$ adalah suatu bobot dan $v_{ij}^{\rm (new)}$ adalah bobot yang te
 \frac{\partial f(x)}{\partial x} = f(x) [1 - f(x) ]
 \end{equation}
 
-untuk turunannya. Terkait dengan $w_{ij}$ dan output $O_1^{(k)}$ dapat diperoleh hubungan
+untuk turunannya. Terdapat persamaan-persamaan berikut
 
-\begin{equation}\label{eqn:0230-3}
-O_1^{(k)} = f\left[ u_{11} f(w_{11} I_1^{(k)} + u_{12} I_2^{(k)}) + u_{12} f(w_{21} I_1^{(k)} + w_{22} I_2^{(k)}) \right].
-\end{equation}
+\begin{eqnarray}
+\label{eqn:0230-3-e} \varepsilon = \sum_{i = 1}^N \varepsilon_k, \newline
+\label{eqn:0230-3-ek} \varepsilon_k = \frac12 \left[ T_1^{(k)} - O_1^{(k)} \right]^2, \newline
+\label{eqn:0230-3-o} O_1^{(k)} = f(u_{11} y_1^{(k)} + u_{12} y_2^{(k)}), \newline
+\label{eqn:0230-3-y1} y_1^{(k)} = f(w_{11} x_1^{(k)} + w_{12} x_2^{(k)}), \newline
+\label{eqn:0230-3-y2} y_2^{(k)} = f(w_{21} x_1^{(k)} + w_{22} x_2^{(k)}), \newline
+\end{eqnarray}
 
-
+yang diperlukan untuk menerapkan suku terakhir pada ruas kanan Persamaan \eqref{eqn:0230-1} menggunakan aturan rantai.
 
 <ol type="A">
 <li>$$.
