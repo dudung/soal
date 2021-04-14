@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["artificial neural network", "ann", "feed forward", "three layers", "error", "delta rule", "fi3201", "2020-2"]
-date: 2021-04-14 12:00:00 +07
+date: 2021-04-14 12:33:00 +07
 permalink: /0229
 src: https://github.com/dudung/soal/commits/master/_posts/0/22/2021-04-13-intro-to-ann-9.md
 ref: https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
@@ -46,4 +46,3 @@ bila memungkinan. Atau mengubahnya secara iteratif dengan meggunakan aturan delt
 <li>$\displaystyle w_{12}^+ = w_{12} - \eta \frac{\partial \epsilon}{\partial w_{12}}$.
 <li>$\displaystyle u_{12}^+ = u_{12} - \eta \frac{\partial \epsilon}{\partial u_{12}}$.
 <li>$\displaystyle w_{11}^+ = u_{11} - \eta \frac{\partial \epsilon}{\partial u_{11}}$.
-
