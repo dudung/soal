@@ -23,7 +23,7 @@ Suatu arsitektur JST berjenis feed forward terdiri dari dua neuron masukan ($\LA
 
 Terdapat pasangan data input $I_1$ dan $I_2$ sejumlah $N$ buah yang akan menghasilkan data output $O_1$ dengan jumlah yang sama. Target $T_1$ adalah nilai data sebenarnya yang diharapkan muncul, sehingga dapat didefinisikan kesalahan total untuk seluruh $N$ data dalam bentuk
 
-\begin{equation}\label{eqn:0228-0}
+\begin{equation}\label{eqn:0229-0}
 \epsilon = \sum_{i = 1}^N \frac12 \left[ T_1^{(i)} - O_1^{(i)} \right]^2.
 \end{equation}
 
