@@ -24,29 +24,32 @@ Suatu arsitektur JST berjenis feed forward terdiri dari dua neuron masukan ($\LA
 Terdapat pasangan data input $I_1$ dan $I_2$ sejumlah $N$ buah yang akan menghasilkan data output $O_1$ dengan jumlah yang sama. Target $T_1$ adalah nilai data sebenarnya yang diharapkan muncul, sehingga dapat didefinisikan kesalahan total untuk seluruh $N$ data dalam bentuk
 
 \begin{equation}\label{eqn:0230-0}
-\epsilon = \sum_{i = 1}^N \frac12 \left[ T_1^{(i)} - O_1^{(i)} \right]^2.
+\varepsilon = \sum_{i = 1}^N \frac12 \left[ T_1^{(i)} - O_1^{(i)} \right]^2.
 \end{equation}
 
 Kesalahan total dapat diminimumkan dengan mengubah-ubah nilai-nilai bobot $w_{11}$, $w_{12}$, $w_{21}$, $w_{22}$, $u_{11}$, dan $u_{12}$ dengan melalui
 
-\begin{equation}\label{eqn:0230-0}
-w_{11}^+ = w_{11} - \eta \frac{\partial \epsilon}{\partial w_{11}}
+\begin{equation}\label{eqn:0230-1}
+v_{ij}^{\rm (new)} = v_{ij} - \eta \frac{\partial \varepsilon}{\partial v_{ij}},
 \end{equation}
 
-\begin{eqnarray}
-\frac{\partial \epsilon}{\partial w_{11}} = 0, \newline
-\frac{\partial \epsilon}{\partial w_{12}} = 0, \newline
-\frac{\partial \epsilon}{\partial w_{21}} = 0, \newline
-\frac{\partial \epsilon}{\partial w_{22}} = 0, \newline
-\frac{\partial \epsilon}{\partial u_{11}} = 0, \newline
-\frac{\partial \epsilon}{\partial u_{12}} = 0,
-\end{eqnarray}
+dengan $v_{ij}$ adalah suatu bobot dan $v_{ij}^{\rm (new)}$ adalah bobot yang telah diubah agar nilai error total $\varepsilon$ berkurang. Selanjutnya untuk memudahkan dipilih fungsi aktivasi $f(x)$ yang memiliki bentuk
 
-bila memungkinan. Atau mengubahnya secara iteratif dengan meggunakan aturan delta, yang tak lain adalah penerapan algoritma gradient descent pada aturan pembelajaran JST. Dengan indeks atas $+$ menggambarkan nilai bobot yang telah diubah dan $\eta$ merupakan laju belajar. Bentuk iteratif pengubahan nilai-nilai bobot yang tidak tepat adalah
+\begin{equation}\label{eqn:0230-2}
+\frac{\partial f(x)}{\partial x} = f(x) [1 - f(x) ]
+\end{equation}
+
+untuk turunannya. Terkait dengan $w_{ij}$ dan output $O_1^{(k)}$ dapat diperoleh hubungan
+
+\begin{equation}\label{eqn:0230-3}
+O_1^{(k)} = f\left[ u_{11} f(w_{11} I_1^{(k)} + u_{12} I_2^{(k)}) + u_{12} f(w_{21} I_1^{(k)} + w_{22} I_2^{(k)}) \right].
+\end{equation}
+
+
 
 <ol type="A">
-<li>$\displaystyle w_{11}^+ = w_{11} - \eta \frac{\partial \epsilon}{\partial w_{11}}$.
-<li>$\displaystyle u_{11}^+ = u_{11} - \eta \frac{\partial \epsilon}{\partial u_{11}}$.
-<li>$\displaystyle w_{12}^+ = w_{12} - \eta \frac{\partial \epsilon}{\partial w_{12}}$.
-<li>$\displaystyle u_{12}^+ = u_{12} - \eta \frac{\partial \epsilon}{\partial u_{12}}$.
-<li>$\displaystyle w_{11}^+ = u_{11} - \eta \frac{\partial \epsilon}{\partial u_{11}}$.
+<li>$$.
+<li>$$.
+<li>$$.
+<li>$$.
+<li>$$.
