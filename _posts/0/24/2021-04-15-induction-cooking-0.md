@@ -12,9 +12,9 @@ oo: false
 svgphys: false
 category: physics
 tags: ["research report", "conference draft", "induction cooking"]
-date: 2021-04-14 17:32:00 +07
+date: 2021-04-15 04:00:00 +07
 permalink: /0240
-src: https://github.com/dudung/soal/commits/master/_posts/0/24/2021-04-14-induction-cooking-0.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/24/2021-04-15-induction-cooking-0.md
 ref: https://cutt.ly/uvpqgLT
 ---
 Medan magnetik pada suatu solenoida ideal memiliki nilai
