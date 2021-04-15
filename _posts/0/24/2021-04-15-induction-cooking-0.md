@@ -30,3 +30,7 @@ B_{\rm end} = \frac12 \mu_0 n I
 \end{equation}
 
 di ujung-ujungnya, dengan $n = N/l$ jumlah lilitan $N$ per satuan panjang $l$, $I$ arus yang mengalir dan $\mu_0$ adalah permeabilitas magnetik (dalam vakum klasik).
+
+{% comment %}
+url https://en.wikipedia.org/w/index.php?oldid=1016694988#Design [20210415]
+{% endcomment %}
