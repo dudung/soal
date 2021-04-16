@@ -11,6 +11,8 @@
 #	2008 Can produce GIF, animation not work with plot().
 #	2121 Find [3] for removing warning.
 #	2156 Can not install ffmpeg, user GIF Scrubber [4].
+#	20210416
+#	1927 Change image size.
 #	
 #	References
 #	1. url https://pypi.org/project/butiran/ [20210411].
@@ -29,7 +31,7 @@ from matplotlib.patches import Ellipse
 from butiran.vect3 import Vect3
 
 # Set parameters for plotting
-p = ['0195.gif', '0195.mp4']
+p = ['0195.gif']
 
 # Create array for time t from tbed to tend with step dt
 tbeg = 0
@@ -62,13 +64,13 @@ def sizep(d, x):
 	return d
 
 # Set range of x and y
-rx = [-2, 2, 0.25]
-ry = [-2, 2, 0.25]
+rx = [-2, 2, 0.5]
+ry = [-2, 2, 0.5]
 xmt = np.arange(rx[0], rx[1] + rx[2], rx[2])
 ymt = np.arange(ry[0], ry[1] + ry[2], ry[2])
 
 # Get figure for plotting and set it
-fig = plt.figure(figsize=[4.4, 4])
+fig = plt.figure(figsize=[2.4, 2.2])
 
 # Configure axes
 ax = fig.add_subplot()
@@ -81,21 +83,21 @@ ax.set_xticks(xmt, minor=True)
 ax.set_yticks(ymt, minor=True)
 
 # It must be set after configuring axis to give the effect
-fig.tight_layout(rect=[-0.02, -0.02, 1.02, 1.02])
+fig.tight_layout(rect=[-0.04, -0.04, 1.03, 1.04])
 
 # Prepare curve
 line, = ax.plot([], [], 'or-', lw=2, ms=0)
 time_template = '$t$ = %.1f s'
-time_text = ax.text(0.01, 0.95, '', transform=ax.transAxes)
+time_text = ax.text(0.02, 0.90, '', transform=ax.transAxes)
 
 g1 = Ellipse(
 	(r1.y, r1.z), 2 * R1, 2 * R1,
-	edgecolor='g', fc='#cfc', lw=2
+	edgecolor='g', fc='#cfc', lw=1
 )
 ax.add_patch(g1)
 g2 = Ellipse(
 	(r2.y, r2.z), 2 * R2, 2 * R2,
-	edgecolor='g', fc='#cfc', lw=2
+	edgecolor='g', fc='#cfc', lw=1
 )
 ax.add_patch(g2)
 
@@ -103,7 +105,7 @@ ax.add_patch(g2)
 X0 = R.x
 Y0 = R.y
 Z0 = R.z
-theta0 = np.pi / 4 * 0
+theta0 = 0
 phi0 = np.pi / 4 * 2
 r0 = r
 
@@ -111,8 +113,8 @@ r0 = r
 Xdot = 0
 Ydot = 0
 Zdot = 0
-thetadot = 2 * np.pi / T * 1
-phidot = 2 * np.pi / T * 0
+thetadot = 2 * np.pi / T
+phidot = 0
 
 # Perform animation
 def init():
@@ -122,8 +124,6 @@ def init():
 
 def animate(i):
 	tt = (i - 1) * dt
-	
-	print(i)
 	
 	X = X0 + Xdot * tt
 	Y = Y0 + Ydot * tt
