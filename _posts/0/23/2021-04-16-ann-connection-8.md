@@ -49,7 +49,7 @@ weight = [
 ]
 ```
 
-yang terkait dengan gambar arsitektur JST di atas. Bila $w_{2111} = 0.1$, $w_{3524} = 0.9$, dan $w_{5143} = 0.3$, maka $w_{3322}$ adalah
+yang merupakan salah satu cara menuliskan bobot terkait dengan gambar arsitektur JST di atas. Bila $w_{2111} = 0.1$, $w_{3524} = 0.9$, dan $w_{5143} = 0.3$, maka $w_{3322}$ adalah
 
 <ol type="A">
 <li>$0.9$.
