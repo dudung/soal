@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["artificial neural network", "ann", "feed forward", "connection", "weight", "layer", "node", "neuron", "fi3201", "2020-2"]
-date: 2021-04-16 08:59:00 +07
+date: 2021-04-16 09:05:00 +07
 permalink: /0234
 src: https://github.com/dudung/soal/commits/master/_posts/0/23/2021-04-16-ann-connection-3.md
 ref: https://hackernoon.com/everything-you-need-to-know-about-neural-networks-8988c3ee4491
