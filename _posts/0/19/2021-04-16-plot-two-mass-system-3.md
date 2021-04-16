@@ -1,7 +1,7 @@
 ---
 layout: soal
 author: viridi
-title: "0199"
+title: "0198"
 mathjax: true
 chartjs: false
 ptext: false
@@ -13,7 +13,7 @@ svgphys: false
 category: physics
 tags: ["python", "plot", "mathplotlit", "numpy", "two-mass", "volvox", "ellipse", "fi3201", "2020-2"]
 date: 2021-04-16 20:47:00 +07
-permalink: /0199
+permalink: /0198
 src: https://github.com/dudung/soal/commits/master/_posts/0/19/2021-04-16-plot-two-mass-system-3.md
 ref: https://arxiv.org/abs/2001.02825
 ---
