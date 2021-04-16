@@ -21,7 +21,7 @@ Suatu arsitektur jaringan saraf tiruan (JST) berjenis feed forward terdiri beber
 
 ![]({{site.baseurl}}/assets/img/0/23/0231.png)
 
-Garis <b style="color:#00b0f0">biru</b> yang menghubungkan neuron-neuron dan bobotnya adalah
+Garis <b style="color:#00b0f0">biru</b> menghubungkan neuron-neuron dan bobotnya adalah
 
 <ol type="A">
 <li>$x_{51}$, $x_{41}$, $w_{5141}$.
