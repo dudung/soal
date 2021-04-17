@@ -11,8 +11,8 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["wave", "doppler effect", "intensity", "distance", "tutorial-6", "fi1202", "2020-2"]
-date: 2021-04-17 19:33:00 +07
+tags: ["wave", "sine wave", "solution to wave equation", "propagation direction", "tutorial-6", "fi1202", "2020-2"]
+date: 2021-04-17 21:44:00 +07
 permalink: /0251
 src: https://github.com/dudung/soal/commits/master/_posts/0/25/2021-04-17-elementary-physics-tutorial-6-1.md
 ref: http://hyperphysics.phy-astr.gsu.edu/hbase/Waves/wavsol.html#c4
