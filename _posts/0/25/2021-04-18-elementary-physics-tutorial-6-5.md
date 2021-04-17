@@ -19,11 +19,11 @@ ref: http://hyperphysics.phy-astr.gsu.edu/hbase/Sound/db.html
 ---
 Seekor nyamuk pada jarak $5 \ \rm m$ menghasilkan suara dengan intensitas mendekati batas ambang pendengaran manusia ($0 \ \rm dB$). Tingkat intensitas (dalam $\rm dB$) dari $200$ nyamuk sejenis adalah
 
-A | $\ \rm dB$.
-B | $\ \rm dB$.
-C | $\ \rm dB$.
-D | $\ \rm dB$.
-E | $\ \rm dB$.
+A | $20\ \rm dB$.
+B | $21\ \rm dB$.
+C | $22\ \rm dB$.
+D | $23\ \rm dB$.
+E | $24\ \rm dB$.
 
 
 ## &nbsp;
@@ -94,8 +94,6 @@ sehingga untuk $N_2 = 200$ nyamuk akan menjadi
 I_2 = \frac{N_2 P_0}{4\pi r_1^2} = \left( \frac{N_2}{N_1} \right) I_0,
 \end{equation}
 
-yang dengan Persamaan \eqref{eqn:0255-6} akan menjadi
+yang dengan Persamaan \eqref{eqn:0255-0} akan menjadi \eqref{eqn:0255-7} dengan $r_2 = r_1$. Menggunakan kode Python berikut dapat diperoleh nilai $\rm TI_2$ (untuk $200$ ekor nyamuk).
 
-{\rm TI}\_2 = {\rm TI}\_1 + 10 \log_{10} (N).
-
-
+<iframe src="https://trinket.io/embed/python/5c26522a08" width="100%" height="230" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
