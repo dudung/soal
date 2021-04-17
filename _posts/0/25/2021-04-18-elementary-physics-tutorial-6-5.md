@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["wave", "sound intensity", "dB", "treshold of hearing", "tutorial-6", "fi1202", "2020-2"]
-date: 2021-04-18 03:05:00 +07
+date: 2021-04-18 05:26:00 +07
 permalink: /0255
 src: https://github.com/dudung/soal/commits/master/_posts/0/25/2021-04-18-elementary-physics-tutorial-6-5.md
 ref: http://hyperphysics.phy-astr.gsu.edu/hbase/Sound/db.html
