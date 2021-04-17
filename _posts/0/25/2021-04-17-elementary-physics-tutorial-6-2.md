@@ -21,43 +21,42 @@ Osilasi pada posisi $x = 0$ dari sebuah gelombang transversal yang merambat pada
 
 ![]({{site.baseurl}}/assets/img/0/25/0252.png)
 
-Gambar berikut menunjukkan sebuah grafik yang menggambarkan sebuah gelombang transversal pada tali. Gelombang tersebut bergerak ke arah sumbu x positif dengan kelajuan 0.15 m/s. dengan memanfaatkan informasi yang terdapat pada grafik, nyatakan persamaan matematis dari gelombang tersebut
+Gelombang tersebut merambat ke arah sumbu $x$ positif dengan kelajuan $0.15 \ \rm m/s$. Dengan menggunakan informasi dari gambar di atas dapat diperoleh persamaan matematis gelombang tersebut dalam bentuk
 
-
-{% comment %}
-
-Sebuah gelombang merambat di sepanjang sumbu $x$ menurut persaman
-
-\begin{equation}\label{eqn:0251-0}
-y = A \sin(\omega t + kx + \phi),
-\end{equation}
-
-dengan $y$ menyatakan simpangan dalam $\rm m$, $A$ amplitudoo dalam $\rm m$, $t$ waktu dalam $\rm s$, $x$ posisi dalam $\rm m$, dan $\phi$ dalam $\rm rad$. Bila $A = 0.17 \ \rm m$, $\omega = 8.2\pi \ \rm rad/s$, $k = 0.54\pi \ \rm rad/m$, dan $\phi = 0$, besar dan arah kecepatan gelombang tersebut adalah
-
-A | $18.5185 \ \rm m/s$ dan ke arah kanan.
-B | $18.5185 \ \rm m/s$ dan ke arah kiri.
-C | $15.1852 \ \rm m/s$ dan ke arah kanan.
-D | $15.1852 \ \rm m/s$ dan ke arah kiri.
-E | $5.18518 \ \rm m/s$ dan ke arah kanan.
+A | $y(x, t) = 0.01 \sin \left( 10\pi t - \frac{200}{3}\pi x + \phi \right)$.
+B | $y(x, t) = 0.01 \sin \left( 10\pi t + \frac{200}{3}\pi x + \phi \right)$.
+C | $y(x, t) = 0.01 \sin \left( -31.4159 t - 209.4395 x + \phi \right)$.
+D | $y(x, t) = 0.01 \sin \left( 209.4395 t - 31.4159 x + \phi \right)$.
+E | $y(x, t) = 0.01 \sin \left( -209.4395 t + 31.4159 x + \phi \right)$.
 
 
 ## &nbsp;
-Laju rambat gelombang diberikan oleh
+Gelombang sinus memiliki persamaan
 
-\begin{equation}\label{eqn:0251-1}
-v = \frac{\omega}{k}
+\begin{equation}\label{eqn:0252-0}
+y(x, t) = A \sin(\pm kx \pm \omega t + \phi), 
 \end{equation}
 
-dan
+dengan $y$ simpangan ($\rm m$), $A$ amplitudo ($\rm m$), $k$ bilangan gelombang ($\rm rad/m$), $x$ posisi ($\rm m$), $\omega$ frekuensi angular ($\rm rad/s$), $t$ waktu ($\rm s$), dan $\phi$ fasa awal ($\rm rad$). Arah perambatan gelombang diberikan ($\thicksim\rightarrow$) ditentukan menurut
 
-$k$ | $\omega$ | $\thicksim\rightarrow$
-$+$ | $+$ | $x-$
-$+$ | $-$ | $x+$
-$-$ | $+$ | $x+$
-$-$ | $-$ | $x-$
+$\thicksim\rightarrow$ | $k$ | $\omega$
+$x+$ | $+$ | $-$
+$x-$ | $+$ | $+$
+$x+$ | $-$ | $+$
+$x-$ | $-$ | $-$
 
-memberikan arahnya untuk Persamaan \eqref{eqn:0251-0}. Terkait dengan Persaman \eqref{eqn:0250-0} terdapat kode Python yang dapat dijalankan secara online sebagai berikut ini.
+untuk gelombang sinus pada Persamaan \eqref{eqn:0252-0}. Dari grafik osilasi pada suatu posisi tertentu, misalnya $x = x_0$, dapat diperoleh $y(t) = y(x_0, t)$ yang akan memberikan amplitudo $A$ dan periode osilasi $T$, yang kemudian dapat digunakan untuk menghitung
 
-<iframe src="https://trinket.io/embed/python/b309ab7105" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+\begin{equation}\label{eqn:0252-1}
+\omega = \frac{2\pi}{T},
+\end{equation}
 
-{% endcomment %}
+yang merupakan frekuensi angular. Bilangan gelombang dapat diperoleh dengan
+
+\begin{equation}\label{eqn:0252-2}
+k = \frac{\omega}{v},
+\end{equation}
+
+dengan $v$ merupakan laju perambatan gelombang. Selanjutnya, menggunakan grafik yang diberikan dan Persamaan \eqref{eqn:0252-1} dan \eqref{eqn:0252-2} dapat dihitung $\omega$ dan $k$ menggunakan kode Python berikut.
+
+<iframe src="https://trinket.io/embed/python/027e6599bc" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
