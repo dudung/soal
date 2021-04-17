@@ -45,7 +45,7 @@ di mana $P$ adalah daya sumber bunyi dan $A$ adalah luas permukaan pemancar buny
 A = 4\pi r^2.
 \end{equation}
 
-Intensitas bunyi pada jarak $r_1$ dari suatu sumber bunyi adalah $I_1$
+Untuk intesitas ambang pendengaran $I_0$ akan terdapat $P_0$ dengan menggunakan Persamaan \eqref{eqn:0255-1}. Intensitas bunyi pada jarak $r_1$ dari suatu sumber bunyi adalah $I_1$
 
 \begin{equation}\label{eqn:0255-3}
 I_1 = \frac{P}{4\pi r_1^2},
@@ -81,3 +81,21 @@ Kemungkinan lain adalah pengamat mengubah jaraknya dari $r_1$ menjadi $r_2$ deng
 \end{equation}
 
 Dengan demikian bila jumlah $N > >$ maka $\rm TI > >$, akan tetapi bila jarak $r > >$ maka $\rm TI < <$.
+
+Selanjutnya untuk seekor nyamuk $N_1 = 1$ dengan $r_1 = 5 \ \rm m$ dapat diperoleh
+
+\begin{equation}\label{eqn:0255-8}
+I_0 = I_1 = \frac{N_1 P_0}{4\pi r_1^2},
+\end{equation}
+
+sehingga untuk $N_2 = 200$ nyamuk akan menjadi
+
+\begin{equation}\label{eqn:0255-9}
+I_2 = \frac{N_2 P_0}{4\pi r_1^2} = \left( \frac{N_2}{N_1} \right) I_0,
+\end{equation}
+
+yang dengan Persamaan \eqref{eqn:0255-6} akan menjadi
+
+{\rm TI}\_2 = {\rm TI}\_1 + 10 \log_{10} (N).
+
+
