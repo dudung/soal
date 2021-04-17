@@ -50,14 +50,6 @@ Dengan menggunakan Persamaan \eqref{eqn:0250-0}, \eqref{eqn:0250-1}, dan \eqref{
 \tau = \mu v^2 = \frac{m}{L} \left( \frac{L}{t} \right)^2 = \frac{mL}{t^2},
 \end{equation}
 
-yang satuannya telah sama dengan satuan tegangan tali atau gaya, yaitu $\rm N$ atau $\rm kg \cdot m / s^2$.
+yang satuannya telah sama dengan satuan tegangan tali atau gaya, yaitu $\rm N$ atau $\rm kg \cdot m / s^2$. Terkait dengan Persaman \eqref{eqn:0250-3} terdapat kode Python yang dapat dijalankan secara online sebagai berikut ini.
 
-{% comment %}
-```javascript
-m = 0.4;
-L = 8.7;
-t = 8.85;
-tau = (m * L) / (t * t);
-console.log(tau);
-```
-{% endcomment %}
+<iframe src="https://trinket.io/embed/python/e1d54a4a0e" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
