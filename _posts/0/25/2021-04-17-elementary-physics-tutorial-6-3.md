@@ -75,6 +75,6 @@ Dari Persamaan \eqref{eqn:0253-4} dan \eqref{eqn:0253-5} dapat diperoleh
 \label{eqn:0253-6} L_1 = \frac{v^2(\Delta t)^2 + H^2}{2v\Delta t}.
 \end{eqnarray}
 
-Dengan menggunakan gambar yang telah diberikan sebelumnya dan Persamaan \eqref{eqn:0253-6} serta \eqref{eqn:0253-4} atau \eqref{eqn:0253-6} dapat dihitung $L1$ dan $L_2$ menggunakan kode Python berikut.
+Dengan menggunakan gambar yang telah diberikan sebelumnya dan Persamaan \eqref{eqn:0253-6} serta \eqref{eqn:0253-4} atau \eqref{eqn:0253-5} dapat dihitung $L1$ dan $L_2$ menggunakan kode Python berikut.
 
 <iframe src="https://trinket.io/embed/python/773e9ef63b" width="100%" height="230" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
