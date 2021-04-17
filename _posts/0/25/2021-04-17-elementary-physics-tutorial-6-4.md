@@ -46,3 +46,5 @@ $-$ | $+$ | Sumber $S$ dan observer $O$ saling mendekat | $f_O > f_S$
 $+$ | $0$ | Sumber $S$ menjauhi observer $O$ yang diam  | $f_O < f_S$
 $0$ | $-$ | Sumber $S$ diam dan dijauhi oleh observer $O$ | $f_O < f_S$
 $+$ | $-$ | Sumber $S$ dan observer $O$ saling menjauh | $f_O < f_S$
+$-$ | $-$ | Sumber $S$ mendekati observer $O$ yang menjauh | $f_O \gtrsim f_S$
+$+$ | $+$ | Sumber $S$ menjauhi observer $O$ yang mendekat | $f_O \lesssim f_S$
