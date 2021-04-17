@@ -15,7 +15,7 @@ tags: ["wave", "doppler effect", "intensity", "distance", "tutorial-6", "fi1202"
 date: 2021-04-17 20:37:00 +07
 permalink: /0252
 src: https://github.com/dudung/soal/commits/master/_posts/0/25/2021-04-17-elementary-physics-tutorial-6-2.md
-ref: http://hyperphysics.phy-astr.gsu.edu/hbase/Waves/string.html#c2
+ref: http://hyperphysics.phy-astr.gsu.edu/hbase/Waves/wavsol.html#c4
 ---
 Osilasi pada posisi $x = 0$ dari sebuah gelombang transversal yang merambat pada tali diberikan dalam gambar berikut ini.
 
