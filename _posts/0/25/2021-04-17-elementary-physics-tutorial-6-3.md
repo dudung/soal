@@ -21,46 +21,60 @@ Terdapat dua buah mikrofon $M_1$ dan $M_2$ yang diletakkan pada jarak $L_1$ dan 
 
 ![]({{site.baseurl}}/assets/img/0/25/0253.png)
 
-Jarak pisah kedua mikrofon adalah $1.5 \ \rm m$. Cepat rambat bunyi di udara pada suatu keadaaan adalah $343 \ \rm m/s$. Mikrofon $M_2$ menangkap terlebih dahulu bunyi yang berasal sumber bunyi $S$ dan baru $1.46 \ \rm ms$ kemudian bunyi yang sama mencapai mikrofon $M_1$.
+Jarak pisah kedua mikrofon adalah $1.5 \ \rm m$. Cepat rambat bunyi di udara pada suatu keadaaan adalah $343 \ \rm m/s$. Mikrofon $M_2$ menangkap terlebih dahulu bunyi yang berasal sumber bunyi $S$ dan baru $1.46 \ \rm ms$ kemudian bunyi yang sama mencapai mikrofon $M_1$. Besarnya $L_2$ dan $L_1$ adalah
 
-
-Pada gambar berikut, sebuah mikrofon ditempatkan pada titik (0,0) sebuah koordinat kartesius. Sedangkan mikrofon kedua ditempatkan pada sumbu-y. kedua mikrofon tersebut terpisah sejauh D=1.5 m. Sebuah sumber suara kemudian ditemparkan pada sumbu +x dengan jarak terhadap mikrofon 1 dan 2 berturut-turut dinyatakan dengan L1 dan L2. Besar cepat rambat bunyi di udara adalah 343 m/s. Suara yang dihasilkan sumber mencapai mikrofon 1 terlebih dahulu, kemudian 1.46 ms kemudian mencapat mikrofon 2. Tentukan besarnya L1 dan L2.
-
-
-A | $y(x, t) = 0.01 \sin \left( 10\pi t - \frac{200}{3}\pi x + \phi \right)$.
-B | $y(x, t) = 0.01 \sin \left( 10\pi t + \frac{200}{3}\pi x + \phi \right)$.
-C | $y(x, t) = 0.01 \sin \left( -31.4159 t - 209.4395 x + \phi \right)$.
-D | $y(x, t) = 0.01 \sin \left( 209.4395 t - 31.4159 x + \phi \right)$.
-E | $y(x, t) = 0.01 \sin \left( -209.4395 t + 31.4159 x + \phi \right)$.
+A | $4.297\ \rm m$ dan $9.196\ \rm m$.
+B | $2.497\ \rm m$ dan $1.996\ \rm m$.
+C | $1.996\ \rm m$ dan $2.497\ \rm m$.
+D | $2.497\ \rm m$ dan $4.297\ \rm m$.
+E | $1.996\ \rm m$ dan $4.297\ \rm m$.
 
 
 ## &nbsp;
-Gelombang sinus memiliki persamaan
+Gelombang bunyi dengan laju $v$ akan menempuh jarak
 
-\begin{equation}\label{eqn:0252-0}
-y(x, t) = A \sin(\pm kx \pm \omega t + \phi), 
+\begin{equation}\label{eqn:0253-0}
+s = v t
 \end{equation}
 
-dengan $y$ simpangan ($\rm m$), $A$ amplitudo ($\rm m$), $k$ bilangan gelombang ($\rm rad/m$), $x$ posisi ($\rm m$), $\omega$ frekuensi angular ($\rm rad/s$), $t$ waktu ($\rm s$), dan $\phi$ fasa awal ($\rm rad$). Arah perambatan gelombang diberikan ($\thicksim\rightarrow$) ditentukan menurut
+dalam waktu $t$. Bila terdapat dua pendengar (pengamat, mikrofon) yang terletak pada jarak $s_1$ dan $s_2 > s_1$ maka pada masing-masing pendengar gelombang bunyi akan sampai pada waktu
 
-$\thicksim\rightarrow$ | $k$ | $\omega$
-$x+$ | $+$ | $-$
-$x-$ | $+$ | $+$
-$x+$ | $-$ | $+$
-$x-$ | $-$ | $-$
-
-untuk gelombang sinus pada Persamaan \eqref{eqn:0252-0}. Dari grafik osilasi pada suatu posisi tertentu, misalnya $x = x_0$, dapat diperoleh $y(t) = y(x_0, t)$ yang akan memberikan amplitudo $A$ dan periode osilasi $T$, yang kemudian dapat digunakan untuk menghitung
-
-\begin{equation}\label{eqn:0252-1}
-\omega = \frac{2\pi}{T},
+\begin{equation}\label{eqn:0253-1}
+t_1 = \frac{s_1}{v}
 \end{equation}
 
-yang merupakan frekuensi angular. Bilangan gelombang dapat diperoleh dengan
+dan
 
-\begin{equation}\label{eqn:0252-2}
-k = \frac{\omega}{v},
+\begin{equation}\label{eqn:0253-2}
+t_2 = \frac{s_2}{v},
 \end{equation}
 
-dengan $v$ merupakan laju perambatan gelombang. Selanjutnya, menggunakan grafik yang diberikan dan Persamaan \eqref{eqn:0252-1} dan \eqref{eqn:0252-2} dapat dihitung $\omega$ dan $k$ menggunakan kode Python berikut.
+selisih waktu terdengarnya gelombang tersebut pada kedua pendengar adalah
 
-<iframe src="https://trinket.io/embed/python/027e6599bc" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+\begin{equation}\label{eqn:0253-3}
+\Delta t = t_2 - t_1 = \frac{s_2}{v} - \frac{s_1}{v} = \frac{s_2 - s_1}{v}.
+\end{equation}
+
+Untuk kasus pada gambar di atas $L_1 > L_2$ sehingga $t_1 > t_2$ yang akan memberikan
+
+\begin{equation}\label{eqn:0253-4}
+\Delta t = t_1 - t_2 = \frac{L_1 - L_2}{v}
+\end{equation}
+
+dan dari posisi $M_1$, $M_2$, dan $S$ dapat diperoleh
+
+\begin{equation}\label{eqn:0253-5}
+L_1^2 = L_2^2 + H^2.
+\end{equation}
+
+Dari Persamaan \eqref{eqn:0253-4} dan \eqref{eqn:0253-5} dapat diperoleh
+
+\begin{eqnarray}
+\nonumber L_1^2 = \left( L_1 - v\Delta t  \right)^2 + H^2, \newline
+\nonumber 2L_1v\Delta t = v^2(\Delta t)^2 + H^2, \newline
+\label{eqn:0253-6} L_1 = \frac{v^2(\Delta t)^2 + H^2}{2v\Delta t}.
+\end{eqnarray}
+
+Dengan menggunakan gambar yang telah diberikan sebelumnya dan Persamaan \eqref{eqn:0253-6} serta \eqref{eqn:0253-4} atau \eqref{eqn:0253-6} dapat dihitung $L1$ dan $L_2$ menggunakan kode Python berikut.
+
+<iframe src="https://trinket.io/embed/python/773e9ef63b" width="100%" height="230" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
