@@ -29,10 +29,20 @@ E | $0\ \rm m/s$.
 
 
 ## &nbsp;
-Suatu sumber $S$ memancarkan gelombang bunyi dengan frekuensi $f_s$, frekuensi yang didengar oleh seorang observer (pendengar) $O$ akan menjadi
+Suatu sumber $S$ memancarkan gelombang bunyi dengan frekuensi $f_S$, frekuensi yang didengar oleh seorang observer (pendengar) $O$ akan menjadi
 
 \begin{equation}\label{eqn:0254-0}
-f_o = \left( \frac{c \pm v_o}{c \mp v_s} \right) f_s 
+f_O = \left( \frac{c \pm v_O}{c \mp v_S} \right) f_S 
 \end{equation}
 
-bila terdapat sumber, pendengar, atau sumber dan pendengar bergerak dengan laju $v_s$ untuk sumber dan $v_o$ untuk observer.
+bila sumber, pendengar, atau sumber dan pendengar bergerak. Laju $v_S$ untuk sumber dan $v_O$ untuk observer. Laju rambat rambat bunyi dalam medium (udara) diberikan oleh $c$. Tanda $v_O$ dan $v_S$ disarikan dalam tabel berikut ini.
+
+$v_S$ | $v_O$ | Keadaan | Konsekuensi
+:-: | :-: | :--
+$0$ | $0$ | Sumber $S$ dan observer $O$ diam | $f_O = f_S$
+$-$ | $0$ | Sumber $S$ mendekati observer $O$ yang diam  | $f_O > f_S$
+$0$ | $+$ | Sumber $S$ diam dan didekati oleh observer $O$ | $f_O > f_S$
+$-$ | $+$ | Sumber $S$ dan observer $O$ saling mendekat | $f_O > f_S$
+$+$ | $0$ | Sumber $S$ menjauhi observer $O$ yang diam  | $f_O < f_S$
+$0$ | $-$ | Sumber $S$ diam dan dijauhi oleh observer $O$ | $f_O < f_S$
+$+$ | $-$ | Sumber $S$ dan observer $O$ saling menjauh | $f_O < f_S$
