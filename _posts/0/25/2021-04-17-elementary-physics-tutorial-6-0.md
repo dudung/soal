@@ -52,4 +52,4 @@ Dengan menggunakan Persamaan \eqref{eqn:0250-0}, \eqref{eqn:0250-1}, dan \eqref{
 
 yang satuannya telah sama dengan satuan tegangan tali atau gaya, yaitu $\rm N$ atau $\rm kg \cdot m / s^2$. Terkait dengan Persaman \eqref{eqn:0250-3} terdapat kode Python yang dapat dijalankan secara online sebagai berikut ini.
 
-<iframe src="https://trinket.io/embed/python/e1d54a4a0e" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python/56ce1a928e" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
