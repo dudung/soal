@@ -11,8 +11,8 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["wave", "doppler effect", "intensity", "distance", "tutorial-6", "fi1202", "2020-2"]
-date: 2021-04-17 18:27:00 +07
+tags: ["wave", "string tension", "mass density", "wave velocity", "transversal wave", "tutorial-6", "fi1202", "2020-2"]
+date: 2021-04-17 21:41:00 +07
 permalink: /0250
 src: https://github.com/dudung/soal/commits/master/_posts/0/25/2021-04-17-elementary-physics-tutorial-6-0.md
 ref: http://hyperphysics.phy-astr.gsu.edu/hbase/Waves/string.html#c2
