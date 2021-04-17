@@ -17,7 +17,7 @@ permalink: /0254
 src: https://github.com/dudung/soal/commits/master/_posts/0/25/2021-04-17-elementary-physics-tutorial-6-4.md
 ref: https://en.wikipedia.org/wiki/Doppler_effect#General
 ---
-a
+..
 
 Frekuensi sebuah peluit kereta uap Ketika mencapai pendengaran pengamat ialah 565 Hz. Setelah kereta tersebut melewati pengamat, frekuensi yang terdengar menjadi 486 Hz. Seberapa cepat kereta tersebut bergerak (asumsikan kereta bergerak dengan kecepatan konstan).
 
