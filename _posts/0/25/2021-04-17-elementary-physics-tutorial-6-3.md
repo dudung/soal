@@ -17,12 +17,15 @@ permalink: /0253
 src: https://github.com/dudung/soal/commits/master/_posts/0/25/2021-04-17-elementary-physics-tutorial-6-3.md
 ref: http://hyperphysics.phy-astr.gsu.edu/hbase/Sound/souspe.html#c1
 ---
-
-Osilasi pada posisi $x = 0$ dari sebuah gelombang transversal yang merambat pada tali diberikan dalam gambar berikut ini.
+Terdapat dua buah mikrofon $M_1$ dan $M_2$ yang diletakkan pada jarak $L_1$ dan $L_2$ dari suatu sumber bunyi $S$ berupa speaker sebagaimana diilustrasikan dalam gambar berikut ini.
 
 ![]({{site.baseurl}}/assets/img/0/25/0253.png)
 
-Gelombang tersebut merambat ke arah sumbu $x$ positif dengan kelajuan $0.15 \ \rm m/s$. Dengan menggunakan informasi dari gambar di atas dapat diperoleh persamaan matematis gelombang tersebut dalam bentuk
+Jarak pisah kedua mikrofon adalah $1.5 \ \rm m$. Cepat rambat bunyi di udara pada suatu keadaaan adalah $343 \ \rm m/s$. Mikrofon $M_2$ menangkap terlebih dahulu bunyi yang berasal sumber bunyi $S$ dan baru $1.46 \ \rm ms$ kemudian bunyi yang sama mencapai mikrofon $M_1$.
+
+
+Pada gambar berikut, sebuah mikrofon ditempatkan pada titik (0,0) sebuah koordinat kartesius. Sedangkan mikrofon kedua ditempatkan pada sumbu-y. kedua mikrofon tersebut terpisah sejauh D=1.5 m. Sebuah sumber suara kemudian ditemparkan pada sumbu +x dengan jarak terhadap mikrofon 1 dan 2 berturut-turut dinyatakan dengan L1 dan L2. Besar cepat rambat bunyi di udara adalah 343 m/s. Suara yang dihasilkan sumber mencapai mikrofon 1 terlebih dahulu, kemudian 1.46 ms kemudian mencapat mikrofon 2. Tentukan besarnya L1 dan L2.
+
 
 A | $y(x, t) = 0.01 \sin \left( 10\pi t - \frac{200}{3}\pi x + \phi \right)$.
 B | $y(x, t) = 0.01 \sin \left( 10\pi t + \frac{200}{3}\pi x + \phi \right)$.
