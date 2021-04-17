@@ -29,8 +29,10 @@ E | $0\ \rm m/s$.
 
 
 ## &nbsp;
-Gelombang bunyi dengan laju $v$ akan menempuh jarak
+Suatu sumber $S$ memancarkan gelombang bunyi dengan frekuensi $f_s$, frekuensi yang didengar oleh seorang observer (pendengar) $O$ akan menjadi
 
 \begin{equation}\label{eqn:0254-0}
-s = v t
+f_o = \left( \frac{c \pm v_o}{c \mp v_s} \right) f_s 
 \end{equation}
+
+bila terdapat sumber, pendengar, atau sumber dan pendengar bergerak dengan laju $v_s$ untuk sumber dan $v_o$ untuk observer.
