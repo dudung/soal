@@ -57,7 +57,7 @@ akan menjadi $I_2$ pada jarak $r_2$
 I_2 = \frac{P}{4\pi r_2^2}.
 \end{equation}
 
-Dengan menggunakan Persamaan \eqref{eqn:0255-0} dan \eqref{eqn:0255-2} dapat dituliskan
+Dengan menggunakan Persamaan \eqref{eqn:0255-0}, \eqref{eqn:0255-1}, dan \eqref{eqn:0255-2} dapat dituliskan
 
 \begin{eqnarray}
 \nonumber {\rm TI}\_1 = 10 \log_{10} \left( \frac{I_1}{I_0} \right) = 10 \log_{10} \left( \frac{P}{4\pi I_0} \right) - 20 \log_{10} (r_1), \newline
@@ -88,12 +88,12 @@ Selanjutnya untuk seekor nyamuk $N_1 = 1$ dengan $r_1 = 5 \ \rm m$ dapat diperol
 I_0 = I_1 = \frac{N_1 P_0}{4\pi r_1^2},
 \end{equation}
 
-sehingga untuk $N_2 = 200$ nyamuk akan menjadi
+sehingga untuk $N_2 = 200$ nyamuk intensitas bunyi akan menjadi
 
 \begin{equation}\label{eqn:0255-9}
 I_2 = \frac{N_2 P_0}{4\pi r_1^2} = \left( \frac{N_2}{N_1} \right) I_0,
 \end{equation}
 
-yang dengan Persamaan \eqref{eqn:0255-0} akan menjadi \eqref{eqn:0255-7} dengan $r_2 = r_1$. Menggunakan kode Python berikut dapat diperoleh nilai $\rm TI_2$ (untuk $200$ ekor nyamuk).
+yang dengan Persamaan \eqref{eqn:0255-0} akan menjadi \eqref{eqn:0255-7}, di mana $r_2 = r_1$. Menggunakan kode Python berikut dapat diperoleh nilai $\rm TI_2$ (untuk $200$ ekor nyamuk).
 
 <iframe src="https://trinket.io/embed/python/5c26522a08" width="100%" height="230" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
