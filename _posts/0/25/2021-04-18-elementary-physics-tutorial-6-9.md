@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["wave", "electromagnetic", "light", "polarizer", "intensity", "malus law", "analyzer", "tutorial-6", "fi1202", "2020-2"]
-date: 2021-04-19 03:25:00 +07
+date: 2021-04-19 03:58:00 +07
 permalink: /0259
 src: https://github.com/dudung/soal/commits/master/_posts/0/25/2021-04-18-elementary-physics-tutorial-6-9.md
 ref: https://en.wikipedia.org/wiki/Polarizer#Malus's_law_and_other_properties
@@ -52,7 +52,7 @@ I_2 = I_1 \cos^2 (\theta_2 - \theta_1).
 
 menurut hukum Malus. Untuk ketiga kasus sebelumnya dapat diresumekan.
 
-Kasus | $\theta_1$ | $\theta_2$
+ID | $\theta_1$ | $\theta_2$
 :-: | :-: | :-:
 TOP | $30 \rm ^\circ$ | $30 \rm ^\circ$
 MID | $-30 \rm ^\circ$ | $60 \rm ^\circ$
