@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["wave", "electromagnetic", "energy", "average power", "laser", "pulse", "magnetic field", "electric field", "tutorial-6", "fi1202", "2020-2"]
-date: 2021-04-18 17:33:00 +07
+date: 2021-04-18 19:57:00 +07
 permalink: /0257
 src: https://github.com/dudung/soal/commits/master/_posts/0/25/2021-04-18-elementary-physics-tutorial-6-7.md
 ref: https://en.wikipedia.org/wiki/Laser#Examples_by_power
