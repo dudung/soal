@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["wave", "electromagnetic", "energy", "average power", "intensity", "magnetic field", "electric field", "tutorial-6", "fi1202", "2020-2"]
-date: 2021-04-18 19:59:00 +07
+date: 2021-04-18 21:16:00 +07
 permalink: /0258
 src: https://github.com/dudung/soal/commits/master/_posts/0/25/2021-04-18-elementary-physics-tutorial-6-8.md
 ref: https://courses.lumenlearning.com/physics/chapter/24-4-energy-in-electromagnetic-waves/
