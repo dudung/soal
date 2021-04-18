@@ -27,19 +27,25 @@ E | $\ \rm N/C$, $\ \rm T$, $\ \rm J$.
 
 
 ## &nbsp;
-Daya rata-rata $P_{\rm avg}$ adalah energi $U$ per selang waktu $\Delta t$
+Luas suatu penampang lingkaran berdiameter $D$ adalah
 
-\begin{equation}\label{eqn:257-0}
-P_{\rm avg} = \frac{U}{\Delta t},
+\begin{equation}\label{eqn:258-0}
+A = \tfrac14 \pi D^2.
 \end{equation}
 
-dengan satuannya masing-masing adalah $\rm W$, $\rm J$, dan $\rm s$. Untuk medan elektromagnetik (EM), di mana laser termasuk di dalamnya, intensitas rata-ratanya diberikan oleh
+Hubungan antara energi total $U_{\rm total}$ dan daya rata-rata $P_{\rm avg}$ adalah
 
-\begin{equation}\label{eqn:257-1}
+\begin{equation}\label{eqn:258-1}
+U_{\rm total} = P_{\rm avg} \Delta t,
+\end{equation}
+
+dengan $\Delta t$ adalah durasi pengamatan. Untuk medan EM, di mana gelombang sinyal TV termasuk di dalamnya, intensitas rata-ratanya diberikan oleh
+
+\begin{equation}\label{eqn:258-2}
 I_{\rm avg} = \frac{P_{\rm avg}}{A},
 \end{equation}
 
-dengan $A$ adalah luas area yang dilalui gelombang EM tersebut. Selain itu, terkait dengan amplitudo medan listrik $E_0$ dan amplitudo medan magnetiknya $B_0$, terdapat pula rumusan intensitas rata-rata dalam bentuk
+dengan $A$ adalah luas area yang dilalui gelombang EM tersebut atau dalam kasus ini adalah luas penampang antena penerima sinyal TV. Selain itu, terkait dengan amplitudo medan listrik $E_0$ dan amplitudo medan magnetiknya $B_0$, terdapat pula rumusan intensitas rata-rata dalam bentuk
 
 \begin{equation}\label{eqn:0257-2}
 I_{\rm avg} = \frac12 c \epsilon_0 E_0^2,
@@ -55,25 +61,4 @@ atau
 I_{\rm avg} = \frac12 \frac{1}{\mu_0} B_0 E_0,
 \end{equation}
 
-dengan permitivitas vakum $\epsilon_0 = 8.8542 \times 10^{-12} \ \rm F/m$ dan permeabilitas vakume $\mu_0 = 1.2566 \times 10^{-6} \ \rm H/m$. Hubungan antara amplitudo dan besaran rms adalah melalui
-
-\begin{equation}\label{eqn:0257-5}
-E_{\rm rms} = \tfrac12\sqrt{2} E_0,
-\end{equation}
-
-misalnya untuk amplituoda medan listrik $E_0$, yang berlalu juga untuk amplitudo medan magnetik $B_0$. Dengan demikian
-
-\begin{eqnarray}
-\label{eqn:0257-6} U_{\rm laser} = P_{\rm avg} \Delta t, \newline
-\label{eqn:0257-7} E_{\rm rms} = \tfrac12\sqrt{2} E_0 = \tfrac12\sqrt{2} \sqrt{\frac{2 I_{\rm avg}}{c \epsilon_0}} = \sqrt{\frac{P_{\rm avg}}{c \epsilon_0 A}} = \sqrt{\frac{P_{\rm avg}}{c \epsilon_0 \pi R^2}},
-\end{eqnarray}
-
-dengan luas penampang
-
-\begin{equation}\label{eqn:0257-8}
-A = \pi R^2.
-\end{equation}
-
-Kode Python berikut, Persamaan \eqref{eqn:0257-6} dan \eqref{eqn:0257-7} dapat digunakan untuk mendapatkan energi laser dan rms medan listriknya.
-
-<iframe src="https://trinket.io/embed/python/7ea9458717" width="100%" height="260" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+dengan permitivitas vakum $\epsilon_0 = 8.8542 \times 10^{-12} \ \rm F/m$ dan permeabilitas vakume $\mu_0 = 1.2566 \times 10^{-6} \ \rm H/m$.
