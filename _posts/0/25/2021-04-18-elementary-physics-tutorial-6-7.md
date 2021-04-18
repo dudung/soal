@@ -19,11 +19,11 @@ ref: https://en.wikipedia.org/wiki/Laser#Examples_by_power
 ---
 Selama selang waktu $\Delta t$ sebuah laser bernergi tinggi mengeluarkan pulsa dengan daya rata-rata $P_{\rm avg}$. Sinar yang keluar dapat dianggap berbentuk silinder dengan jari-jari $R$. Bila $\Delta t = 1 \ \rm ns$, $P_{\rm avg} = 1.5 \times 10^{11} \ \rm W$, dan $R = 2.2 \times 10^{-3} \ \rm m$ dapat dihitung energi tiap pulsa $U_{\rm laser}$ dan nilai rms medan listriknya $E_{\rm rms}$, yaitu
 
-A | $\ \rm J$ dan $\ \rm N/C$.
-B | $\ \rm J$ dan $\ \rm N/C$.
-C | $\ \rm J$ dan $\ \rm N/C$.
-D | $\ \rm J$ dan $\ \rm N/C$.
-E | $\ \rm J$ dan $\ \rm N/C$.
+A | $150 \ \rm J$ dan $1.7219 \times 10^9 \ \rm N/C$.
+B | $192 \ \rm J$ dan $1.2971 \times 10^9 \ \rm N/C$.
+C | $150 \ \rm J$ dan $1.9271 \times 10^9 \ \rm N/C$.
+D | $192 \ \rm J$ dan $1.9271 \times 10^9 \ \rm N/C$.
+E | $150 \ \rm J$ dan $2.9171 \times 10^9 \ \rm N/C$.
 
 
 ## &nbsp;
@@ -61,4 +61,19 @@ dengan permitivitas vakum $\epsilon_0 = 8.8542 \times 10^{-12} \ \rm F/m$ dan pe
 E_{\rm rms} = \tfrac12\sqrt{2} E_0,
 \end{equation}
 
-misalnya untuk amplituoda medan listrik $E_0$, yang berlalu juga untuk amplitudo medan magnetik $B_0$.
+misalnya untuk amplituoda medan listrik $E_0$, yang berlalu juga untuk amplitudo medan magnetik $B_0$. Dengan demikian
+
+\begin{eqnarray}
+\label{eqn:0257-6} U_{\rm laser} = P_{\rm avg} \Delta t, \newline
+\label{eqn:0257-7} E_{\rm rms} = \tfrac12\sqrt{2} E_0 = \tfrac12\sqrt{2} \sqrt{\frac{2 I_{\rm avg}}{c \epsilon_0}} = \sqrt{\frac{P_{\rm avg}}{c \epsilon_0 A}} = \sqrt{\frac{P_{\rm avg}}{c \epsilon_0 \pi R^2}},
+\end{eqnarray}
+
+dengan luas penampang
+
+\begin{equation}\label{eqn:0257-8}
+A = \pi R^2.
+\end{equation}
+
+Kode Python berikut, Persamaan \eqref{eqn:0257-6} dan \eqref{eqn:0257-7} dapat digunakan untuk mendapatkan energi laser dan rms medan listriknya.
+
+<iframe src="https://trinket.io/embed/python/7ea9458717" width="100%" height="260" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
