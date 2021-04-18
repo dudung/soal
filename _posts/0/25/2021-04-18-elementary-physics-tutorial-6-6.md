@@ -11,22 +11,19 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["wave", "electromagnetic", "amplitude", "magnetic field", "electric field", "tutorial-6", "fi1202", "2020-2"]
-date: 2021-04-18 05:40:00 +07
+tags: ["wave", "electromagnetic", "energy", "amplitude", "magnetic field", "electric field", "tutorial-6", "fi1202", "2020-2"]
+date: 2021-04-18 08:19:00 +07
 permalink: /0256
 src: https://github.com/dudung/soal/commits/master/_posts/0/25/2021-04-18-elementary-physics-tutorial-6-5.md
-ref: http://hyperphysics.phy-astr.gsu.edu/hbase/Sound/db.html
+ref: https://courses.lumenlearning.com/physics/chapter/24-4-energy-in-electromagnetic-waves/
 ---
-Jika amplitude medan magnet B dari sebuah gelombang EM adalah 2.2×10−7T, (a) berapakah amplitude medan listrik E? (b) Berapakah daya rata-rata pada sebuah luas penampang akibat gelombang EM tersebut?
+Terdapat suatu gelombang elektromagnetik (EM) dengan amplitudo medan magnetik $B$ adalah $B_0 = 2.2 \times 10^{-7} \ \rm T$. Amplitudo medan listrik $E$ dan daya rata-rata $P_{\rm avg}$ pada suatu luas penampang akibat gelombang EM ini adalah
 
-
-Seekor nyamuk pada jarak $5 \ \rm m$ menghasilkan suara dengan intensitas mendekati batas ambang pendengaran manusia ($0 \ \rm dB$). Tingkat intensitas (dalam $\rm dB$) dari $200$ nyamuk sejenis adalah
-
-A | $20\ \rm dB$.
-B | $21\ \rm dB$.
-C | $22\ \rm dB$.
-D | $23\ \rm dB$.
-E | $24\ \rm dB$.
+A | $\ \rm N/C$ dan $\ \rm WC$.
+B | $\ \rm N/C$ dan $\ \rm WC$.
+C | $\ \rm N/C$ dan $\ \rm WC$.
+D | $\ \rm N/C$ dan $\ \rm WC$.
+E | $\ \rm N/C$ dan $\ \rm WC$.
 
 
 ## &nbsp;
