@@ -19,11 +19,11 @@ ref: https://courses.lumenlearning.com/physics/chapter/24-4-energy-in-electromag
 ---
 Saat tiba pada sebuah antena TV berdiameter $D$ intensitas rata-rata suatu sinyal TV dalah $I_{\rm avg}$, di mana sinyal TV merupakan suatu gelombang elektromagnetik (EM). Dalam selang waktu $\Delta t$ dapat diperoleh total energi $U_{\rm total}$ yang diterima oleh antena dari sinyal tersebut. Pengamatan dilakukan selama $\Delta t =  4 \ \rm jam$ untuk gelombang sinyal TV dengan intensitas rata-rata $I_{\rm avg} = 1.0 \times 10^{−13} \ \rm W/m^2$ dan diameter antena $D = 33 \ \rm cm$. Amplitudo medan listrik $E_0$ dan amplitudo medan magnetik $B_0$ dari gelombang EM tersebut, serta energi total yang diterima antena TV adalah
 
-A | $\ \rm N/C$, $\ \rm T$, $\ \rm J$.
-B | $\ \rm N/C$, $\ \rm T$, $\ \rm J$.
-C | $\ \rm N/C$, $\ \rm T$, $\ \rm J$.
-D | $\ \rm N/C$, $\ \rm T$, $\ \rm J$.
-E | $\ \rm N/C$, $\ \rm T$, $\ \rm J$.
+A | $2.8924 \times 10^{-6} \ \rm N/C$, $8.6772 \times 10^{-14} \ \rm T$, $1.2316 \times 10^{-10}\ \rm J$.
+B | $8.6772 \times 10^{-6} \ \rm N/C$, $2.8924 \times 10^{-14} \ \rm T$, $1.2316 \times 10^{-10}\ \rm J$.
+C | $8.6772 \times 10^{-6} \ \rm N/C$, $1.2316 \times 10^{-14} \ \rm T$, $2.8924 \times 10^{-10}\ \rm J$.
+D | $1.2316 \times 10^{-6} \ \rm N/C$, $2.8924 \times 10^{-14} \ \rm T$, $8.6772 \times 10^{-10}\ \rm J$.
+E | $1.2316 \times 10^{-6} \ \rm N/C$, $8.6772 \times 10^{-14} \ \rm T$, $2.8924 \times 10^{-10}\ \rm J$.
 
 
 ## &nbsp;
