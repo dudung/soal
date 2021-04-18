@@ -34,7 +34,7 @@ E | $24 \ \rm W/m^2$, $0 \ \rm W/m^2$, $18 \ \rm W/m^2$.
 
 
 ## &nbsp;
-Terdapat pasangan susuna keping polarisator-analisator sebagai berikut ini.
+Terdapat pasangan susunan keping polarisator-analisator sebagai berikut ini.
 
 ![]({{site.baseurl}}/assets/img/0/25/0259.png)
 
