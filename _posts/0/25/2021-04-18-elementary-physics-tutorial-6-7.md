@@ -55,7 +55,7 @@ atau
 I_{\rm avg} = \frac12 \frac{1}{\mu_0} B_0 E_0,
 \end{equation}
 
-dengan permitivitas vakum $\epsilon_0 = 8.8542 \times 10^{-12} \ \rm F/m$ dan permeabilitas vakume $\mu_0 = 1.2566 \times 10^{-6} \ \rm H/m$. Hubungan antara amplitudo dan besaran rms adalah melalui
+dengan permitivitas vakum $\epsilon_0 = 8.8542 \times 10^{-12} \ \rm F/m$ dan permeabilitas vakum $\mu_0 = 1.2566 \times 10^{-6} \ \rm H/m$. Hubungan antara amplitudo dan besaran rms adalah melalui
 
 \begin{equation}\label{eqn:0257-5}
 E_{\rm rms} = \tfrac12\sqrt{2} E_0,
