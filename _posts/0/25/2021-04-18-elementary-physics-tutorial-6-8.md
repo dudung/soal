@@ -17,7 +17,7 @@ permalink: /0258
 src: https://github.com/dudung/soal/commits/master/_posts/0/25/2021-04-18-elementary-physics-tutorial-6-8.md
 ref: https://courses.lumenlearning.com/physics/chapter/24-4-energy-in-electromagnetic-waves/
 ---
-Saat tiba pada sebuah antena TV berdiameter $D$ intensitas rata-rata suatu sinyal TV dalah $I_{\rm avg}$, di mana sinyal TV merupakan suatu gelombang elektromagnetik (EM). Dalam selang waktu $\Delta t$ dapat diperoleh total energi $U_{\rm total}$ yang diterima oleh antena dari sinyal tersebut. Pengamatan dilakukan untuk $\Delta t =  4 \ \rm jam$. Amplitudo medan listrik $E_0$ dan amplitudo medan magnetik $B_0$ dari gelombang EM tersebut, serta energi total yang diterima antena TV adalah
+Saat tiba pada sebuah antena TV berdiameter $D$ intensitas rata-rata suatu sinyal TV dalah $I_{\rm avg}$, di mana sinyal TV merupakan suatu gelombang elektromagnetik (EM). Dalam selang waktu $\Delta t$ dapat diperoleh total energi $U_{\rm total}$ yang diterima oleh antena dari sinyal tersebut. Pengamatan dilakukan selama $\Delta t =  4 \ \rm jam$ untuk gelombang sinyal TV dengan intensitas rata-rata $I_{\rm avg} = 1.0 \times 10^{−13} \ \rm W/m^2$ dan diameter antena $D = 33 \ \rm cm$. Amplitudo medan listrik $E_0$ dan amplitudo medan magnetik $B_0$ dari gelombang EM tersebut, serta energi total yang diterima antena TV adalah
 
 A | $\ \rm N/C$, $\ \rm T$, $\ \rm J$.
 B | $\ \rm N/C$, $\ \rm T$, $\ \rm J$.
@@ -47,18 +47,28 @@ I_{\rm avg} = \frac{P_{\rm avg}}{A},
 
 dengan $A$ adalah luas area yang dilalui gelombang EM tersebut atau dalam kasus ini adalah luas penampang antena penerima sinyal TV. Selain itu, terkait dengan amplitudo medan listrik $E_0$ dan amplitudo medan magnetiknya $B_0$, terdapat pula rumusan intensitas rata-rata dalam bentuk
 
-\begin{equation}\label{eqn:0257-2}
+\begin{equation}\label{eqn:0258-3}
 I_{\rm avg} = \frac12 c \epsilon_0 E_0^2,
 \end{equation}
 
-\begin{equation}\label{eqn:0257-3}
+\begin{equation}\label{eqn:0258-4}
 I_{\rm avg} = \frac12 \frac{c}{\mu_0} B_0^2,
 \end{equation}
 
 atau 
 
-\begin{equation}\label{eqn:0257-4}
+\begin{equation}\label{eqn:0258-5}
 I_{\rm avg} = \frac12 \frac{1}{\mu_0} B_0 E_0,
 \end{equation}
 
-dengan permitivitas vakum $\epsilon_0 = 8.8542 \times 10^{-12} \ \rm F/m$ dan permeabilitas vakume $\mu_0 = 1.2566 \times 10^{-6} \ \rm H/m$.
+dengan permitivitas vakum $\epsilon_0 = 8.8542 \times 10^{-12} \ \rm F/m$ dan permeabilitas vakum $\mu_0 = 1.2566 \times 10^{-6} \ \rm H/m$. Dengan demikian dapat diperoleh
+
+\begin{eqnarray}
+\label{eqn:0258-6} E_0 = \sqrt{\frac{2 I_{\rm avg}}{c \epsilon_0}}, \newline
+\label{eqn:0258-7} B_0 = \frac{E_0}{c}, \newline
+\label{eqn:0258-8} U_{\rm total} = P_{\rm avg} \Delta t = I_{\rm avg} A \Delta t.
+\end{eqnarray}
+
+Dengan Persamaan \eqref{eqn:0258-6}, \eqref{eqn:0258-7}, dan \eqref{eqn:0258-8} serta kode Python berikut, dapat diperoleh amplitudo medan listrik, amplitudo medan magnetik, dan energi total yang diterima antena.
+
+<iframe src="https://trinket.io/embed/python/dbdb36ffc6" width="100%" height="280" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
