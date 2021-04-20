@@ -9,12 +9,11 @@
 # 0335 Copy something from plot-two-mass-system-0.py code.
 # 0340 Can work as previous one.
 # 0503 Can show step, a, b; plot not work for data and curve.
+# 0527 Convert Python list to numpy Array [1].
 # 
 # References
-# 1. url https://matplotlib.org/gallery/animation
-#    /double_pendulum_animated_sgskip.html [20210205].
-# 2. url https://stackoverflow.com/a/37121201/9475509
-#    [20210407].
+# 1. url https://www.geeksforgeeks.org/convert-python-list
+#    -to-numpy-arrays/ [20210421].
 # 
 
 # Import required libraries
@@ -23,33 +22,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-xdata = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-ydata = [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6]
+xdata = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+ydata = np.array([1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6])
 a = 1
 b = 1
 
-# Define wave parameters
-A = 0.1
-_lambda = 1
-k = 2 * np.pi / _lambda
-_phi = 0
-v = 1
-_omega = k * v
-T = np.abs(2 * np.pi / _omega)
-
-# Create array for x and showing two _lambda
-dx = _lambda / 20
-x = np.arange(0, 2 *_lambda + dx, dx)
-print(x)
-print(xdata)
-
 def curve(a, b):
-	y = a + b * x
-	return y
-
-#	Define wave
-def wave(t):
-	y = A * sin(k * x - _omega * t + _phi)
+	y = a + b * xdata
 	return y
 
 # Create array for time t from tbed to tend with step dt
@@ -99,17 +78,14 @@ def init():
 	return line, mark, time_text
 
 def animate(i):
-	tt = i * dt / T
 	a = 0.5 * i
 	b = 0.5 * i
 	y = curve(a, b)
-	thisx = [x]
-	thisy = [y]
 	
-	line.set_data([x], [y])
+	line.set_data([xdata], [y])
 	mark.set_data([xdata], [ydata])
 	time_text.set_text(time_template % (i, a, b))
-	return line, time_text
+	return line, mark, time_text
 
 ani = animation.FuncAnimation(
 	fig, animate, np.arange(1, len(t)),
