@@ -14,7 +14,7 @@ category: physics
 tags: ["machine learning", "tutorial-6", "fi3201", "2020-2"]
 date: 2021-04-17 22:55:00 +07
 permalink: /0260
-src: https://github.com/dudung/soal/commits/master/_posts/0/25/2021-04-18-machine-learning-0.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/25/2021-04-20-machine-learning-0.md
 ref: https://www.digitalocean.com/community/tutorials/an-introduction-to-machine-learning
 ---
 Terdapat dua metoda yang paling sering diadopsi dalam pembelajaran mesin atau machine learning (ML), yaitu
