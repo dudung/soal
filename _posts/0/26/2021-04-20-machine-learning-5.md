@@ -11,8 +11,8 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["machine learning", "regression", "learning type", "learning model", "tutorial-6", "fi3201", "2020-2"]
-date: 2021-04-20 19:54:00 +07
+tags: ["machine learning", "regression", "analytical solution", "learning type", "learning model", "tutorial-6", "fi3201", "2020-2"]
+date: 2021-04-20 20:47:00 +07
 permalink: /0265
 src: https://github.com/dudung/soal/commits/master/_posts/0/26/2021-04-20-machine-learning-5.md
 ref: https://www.toptal.com/machine-learning/machine-learning-theory-an-introductory-primer
@@ -61,10 +61,15 @@ b^+ = b - \eta \frac{\partial \varepsilon}{\partial a}
 
 dengan $\eta$ adalah laju belajar. Indeks atas $+$ menunjukkan nilai baru dari kedua parameter, yang diubah agar kesalahan $\varepsilon$ berkurang. Idealnya akan tercapai nilai $a$ dan $b$ seperti pada Persamaan \eqref{eqn:0265-1} dan \eqref{eqn:0265-2}, yang tak lain adalah $a^+$ dan $b^+$ pada Persamaan \eqref{eqn:0265-5} dan \eqref{eqn:0265-6} saat Persamaan \eqref{eqn:0265-4} terpenuhi. Selanjutnya, Persamaan \eqref{eqn:0265-1} dan \eqref{eqn:0265-2} dapat dihitung menggunakan kode Python berikut.
 
-<iframe src="https://trinket.io/embed/python/88f72aa1fb" width="100%" height="460" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python/d7335e9ae0" width="100%" height="460" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-A | semi-supervised learning.
-B | unsupervised learning.
-C | supervised learning.
-D | deductive learning.
-E | inductive learning.
+x | 0 | 1 | 2 | 3 | 4 | 5
+y | 0.5 | 2.5 | 4.5 | 6.5 | 8.5 | 10.5
+
+Nilai $R^2$, $b$, dan $a$ untuk data di atas adalah
+
+A | $2$, $0.5$, $1.0$.
+B | $2$, $1.0$, $0.5$.
+C | $0.5$, $1.0$, $2$.
+D | $0.5$, $2$, $1.0$.
+E | $1.0$, $2$, $0.5$.
