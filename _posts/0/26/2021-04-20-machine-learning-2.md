@@ -1,7 +1,7 @@
 ---
 layout: soal
 author: viridi
-title: "0261"
+title: "0262"
 mathjax: true
 chartjs: false
 ptext: false
@@ -13,7 +13,7 @@ svgphys: false
 category: physics
 tags: ["machine learning", "learning type", "learning model", "tutorial-6", "fi3201", "2020-2"]
 date: 2021-04-17 14:55:00 +07
-permalink: /0261
+permalink: /0262
 src: https://github.com/dudung/soal/commits/master/_posts/0/26/2021-04-20-machine-learning-1.md
 ref: https://machinelearningmastery.com/types-of-learning-in-machine-learning/
 ---
@@ -21,7 +21,7 @@ Misalkan terdapat suatu permainan komputer, di mana pemain (seorang manusia) dap
 
 A | multi-instance learning.
 B | deductive learning.
-C | reinforcement learning.
+C | unsupervised learning.
 D | supervised learning.
-E | unsupervised learning.
+E | reinforcement learning.
 
