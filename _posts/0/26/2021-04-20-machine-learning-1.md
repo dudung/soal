@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["machine learning", "learning type", "learning model", "tutorial-6", "fi3201", "2020-2"]
-date: 2021-04-17 14:55:00 +07
+date: 2021-04-20 14:55:00 +07
 permalink: /0261
 src: https://github.com/dudung/soal/commits/master/_posts/0/26/2021-04-20-machine-learning-1.md
 ref: https://machinelearningmastery.com/types-of-learning-in-machine-learning/

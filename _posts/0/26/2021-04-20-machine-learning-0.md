@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["machine learning", "learning method", "tutorial-6", "fi3201", "2020-2"]
-date: 2021-04-17 14:32:00 +07
+date: 2021-04-20 14:32:00 +07
 permalink: /0260
 src: https://github.com/dudung/soal/commits/master/_posts/0/26/2021-04-20-machine-learning-0.md
 ref: https://www.digitalocean.com/community/tutorials/an-introduction-to-machine-learning
