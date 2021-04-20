@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["machine learning", "regression", "learning type", "learning model", "tutorial-6", "fi3201", "2020-2"]
-date: 2021-04-20 19:13:00 +07
+date: 2021-04-20 19:54:00 +07
 permalink: /0265
 src: https://github.com/dudung/soal/commits/master/_posts/0/26/2021-04-20-machine-learning-5.md
 ref: https://towardsdatascience.com/types-of-machine-learning-algorithms-you-should-know-953a08248861
@@ -44,10 +44,22 @@ Kesalahan antara data dan prediktor diberikan oleh
 Persamaan \ref{eqn:0265-1} dan \ref{eqn:0265-2} diperoleh dengan menggunakan Persamaan \eqref{eqn:0265-3} melalui
 
 \begin{equation}\label{eqn:0265-4}
-\frac{\partial \varepsilon}{\partial a} = 0, \ \ \frac{\partial \varepsilon}{\partial b} = 0.
+\frac{\partial \varepsilon}{\partial a} = 0, \ \ \ \ \frac{\partial \varepsilon}{\partial b} = 0.
 \end{equation}
 
+Untuk ML nilai $a$ dan $b$ diubah dengan gradient descent melalui
 
+\begin{equation}\label{eqn:0265-5}
+a^+ = a - \eta \frac{\partial \varepsilon}{\partial a}
+\end{equation}
+
+dan
+
+\begin{equation}\label{eqn:0265-6}
+b^+ = b - \eta \frac{\partial \varepsilon}{\partial a}
+\end{equation}
+
+dengan $\eta$ adalah laju belajar. Indeks atas $+$ menunjukkan nilai baru dari kedua parameter, yang diubah agar kesalahan $\varepsilon$ berkurang. Idealnya akan tercapai nilai $a$ dan $b$ seperti pada Persamaan \eqref{eqn:0265-1} dan \eqref{eqn:0265-2}, yang tak lain adalah $a^+$ dan $b^+$ pada Persamaan \eqref{eqn:0265-5} dan \eqref{eqn:0265-6} saat Persamaan \eqref{eqn:0265-4} terpenuhi.
 
 A | semi-supervised learning.
 B | unsupervised learning.
