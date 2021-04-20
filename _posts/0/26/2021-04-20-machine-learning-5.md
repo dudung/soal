@@ -61,6 +61,10 @@ b^+ = b - \eta \frac{\partial \varepsilon}{\partial a}
 
 dengan $\eta$ adalah laju belajar. Indeks atas $+$ menunjukkan nilai baru dari kedua parameter, yang diubah agar kesalahan $\varepsilon$ berkurang. Idealnya akan tercapai nilai $a$ dan $b$ seperti pada Persamaan \eqref{eqn:0265-1} dan \eqref{eqn:0265-2}, yang tak lain adalah $a^+$ dan $b^+$ pada Persamaan \eqref{eqn:0265-5} dan \eqref{eqn:0265-6} saat Persamaan \eqref{eqn:0265-4} terpenuhi.
 
+Persamaan \eqref{eqn:0265-1} dan \eqref{eqn:0265-2} dapat dihitung menggunakan kode Python berikut.
+
+<iframe src="https://trinket.io/embed/python/80cb55497e" width="100%" height="320" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 A | semi-supervised learning.
 B | unsupervised learning.
 C | supervised learning.
