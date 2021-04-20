@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["machine learning", "regression", "numerical solution", "learning type", "learning model", "fi3201", "2020-2"]
-date: 2021-04-20 21:26:00 +07
+date: 2021-04-20 21:29:00 +07
 permalink: /0266
 src: https://github.com/dudung/soal/commits/master/_posts/0/26/2021-04-20-machine-learning-6.md
 ref: https://www.toptal.com/machine-learning/machine-learning-theory-an-introductory-primer
