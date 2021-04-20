@@ -56,7 +56,7 @@ a^+ = a - \eta \frac{\partial \varepsilon}{\partial a}
 dan
 
 \begin{equation}\label{eqn:0265-6}
-b^+ = b - \eta \frac{\partial \varepsilon}{\partial a}
+b^+ = b - \eta \frac{\partial \varepsilon}{\partial b}
 \end{equation}
 
 dengan $\eta$ adalah laju belajar. Indeks atas $+$ menunjukkan nilai baru dari kedua parameter, yang diubah agar kesalahan $\varepsilon$ berkurang. Idealnya akan tercapai nilai $a$ dan $b$ seperti pada Persamaan \eqref{eqn:0265-1} dan \eqref{eqn:0265-2}, yang tak lain adalah $a^+$ dan $b^+$ pada Persamaan \eqref{eqn:0265-5} dan \eqref{eqn:0265-6} saat Persamaan \eqref{eqn:0265-4} terpenuhi. Selanjutnya, Persamaan \eqref{eqn:0265-1} dan \eqref{eqn:0265-2} dapat dihitung menggunakan kode Python berikut.
