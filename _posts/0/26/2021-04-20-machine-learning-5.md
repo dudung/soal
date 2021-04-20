@@ -15,7 +15,7 @@ tags: ["machine learning", "regression", "learning type", "learning model", "tut
 date: 2021-04-20 19:54:00 +07
 permalink: /0265
 src: https://github.com/dudung/soal/commits/master/_posts/0/26/2021-04-20-machine-learning-5.md
-ref: https://towardsdatascience.com/types-of-machine-learning-algorithms-you-should-know-953a08248861
+ref: https://www.toptal.com/machine-learning/machine-learning-theory-an-introductory-primer
 ---
 Regresi merupakan salah satu permasalahan dalam machine learning (ML) dengan cara belajar supervised learning. Untuk satu variabel bebas $x$ dan satu variabel terikat $y$ suatu prediktor dalam bentuk
 
