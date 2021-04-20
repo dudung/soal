@@ -11,16 +11,16 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["machine learning", "tutorial-6", "fi3201", "2020-2"]
-date: 2021-04-17 14:32:00 +07
+tags: ["machine learning", "learning type", "learning model", "tutorial-6", "fi3201", "2020-2"]
+date: 2021-04-17 14:54:00 +07
 permalink: /0261
 src: https://github.com/dudung/soal/commits/master/_posts/0/26/2021-04-20-machine-learning-0.md
 ref: https://machinelearningmastery.com/types-of-learning-in-machine-learning/
 ---
-Terdapat dua metoda belajar yang paling sering diadopsi dalam pembelajaran mesin atau machine learning (ML), yaitu
+Misalkan terdapat suatu permainan komputer, di mana pemain (seorang manusia) dapat turut serta dan belajar berinteraksi dengan lingkungannya untuk bertahan (hidup), mengumpulkan angka, atau bahkan sampai menamatkan permainan tersebut. Selanjutnya dapat digunakan pemain yang merupakan suatu sistem pembelajaran mesin atau machine learning (ML). Untuk ML ini tidak terdapat dataset yang tetap untuk belajar karena saat pemain bergerak lingkungannya akan selalu berubah. Sebagai pengganti dataset tersebut terdapat suatu tujuan (nilai tinggi) yang akan dicapai oleh agen (sebagai pengganti pemain manusia). Cara belajar atau metode belajar yang tepat untuk kasus ini adalah
 
-A | reinforcement learning dan multi-instance learning.
-B | inductive learning dan deductive learning.
-C | active learning dan transfer learning.
-D | ensemble learning dan multi-task learning.
-E | supervised learning dan unsupervised learning.
+A | multi-instance learning.
+B | deductive learning.
+C | reinforcement learning.
+D | supervised learning.
+E | unsupervised learning.
