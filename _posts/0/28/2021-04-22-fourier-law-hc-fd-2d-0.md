@@ -29,7 +29,7 @@ dengan $\vec{q}$ rapat fluks panas lokal ($\rm W \cdot m^{-2}$), $k$ konduktivit
 T = T(x, y, z).
 \end{equation}
 
-Selanjutnya, dengan $\\vec{nabla}$
+Selanjutnya, dengan gradien
 
 \begin{equation}\label{eqn:0280-2}
 \vec{\nabla} = \hat{x} \frac{\partial}{\partial x} + \hat{y} \frac{\partial}{\partial y} + \hat{z} \frac{\partial}{\partial z}
