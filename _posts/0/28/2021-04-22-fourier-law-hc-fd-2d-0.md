@@ -23,13 +23,13 @@ Bentuk diferensial dari hukum Fourier tentang konduksi panas berbentuk
 \vec{q} = -k \vec{\nabla}T,
 \end{equation}
 
-dengan $\vec{q}$ rapat fluks panas lokal ($\rm W \cdot m^{-2}$), $k$ konduktivitas bahan ($\rm W \cdot m^{-1} \cdot K^{-1}$), dan $\vec{\nabla}T$ gradien temperatur ($\rm K \cdot m^{-1}$), di  mana secara umum
+dengan $\vec{q}$ rapat fluks panas lokal ($\rm W \cdot m^{-2}$), $k$ konduktivitas bahan ($\rm W \cdot m^{-1} \cdot K^{-1}$), dan $\vec{\nabla}T$ gradien temperatur ($\rm K \cdot m^{-1}$), yang  mana secara umum
 
 \begin{equation}\label{eqn:0280-1}
 T = T(x, y, z).
 \end{equation}
 
-Dengan $\nabla$
+Selanjutnya, dengan $\nabla$
 
 \begin{equation}\label{eqn:0280-2}
 \vec{\nabla} = \hat{x} \frac{\partial}{\partial x} + \hat{y} \frac{\partial}{\partial y} + \hat{z} \frac{\partial}{\partial z}
