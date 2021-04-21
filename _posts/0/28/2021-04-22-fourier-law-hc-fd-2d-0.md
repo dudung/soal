@@ -14,7 +14,7 @@ category: physics
 tags: ["heat conduction", "fourier's law", "fi3201", "2020-2"]
 date: 2021-04-22 05:10:00 +07
 permalink: /0280
-src: https://github.com/dudung/soal/commits/master/_posts/0/27/2021-04-22-fourier-law-hc-fd-2d-0.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/28/2021-04-22-fourier-law-hc-fd-2d-0.md
 ref: https://en.wikipedia.org/wiki/Thermal_conduction#Differential_form
 ---
 Bentuk diferensial dari hukum Fourier tentang konduksi panas berbentuk
