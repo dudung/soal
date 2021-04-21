@@ -12,9 +12,9 @@ oo: false
 svgphys: false
 category: physics
 tags: ["heat conduction", "fourier's law", "fi3201", "2020-2"]
-date: 2021-04-22 05:20:00 +07
+date: 2021-04-22 06:57:00 +07
 permalink: /0281
-src: https://github.com/dudung/soal/commits/master/_posts/0/28/2021-04-22-fourier-law-hc-fd-2d-0.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/28/2021-04-22-fourier-law-hc-fd-2d-1.md
 ref: https://dx.doi.org/10.1615/AtoZ.c.conduction
 ---
 Laju perubahan energi yang diperoleh (atau hilang) pada arah $x$ yang menembus suatu luasan $dA = dydz$ diberikan oleh
