@@ -20,9 +20,20 @@ ref: https://en.wikipedia.org/wiki/Thermal_conduction#Differential_form
 Laju perubahan energi yang diperoleh (atau hilang) pada arah $x$ yang menembus suatu luasan $dA = dydz$ diberikan oleh
 
 \begin{equation}\label{eqn:0281-1}
-\frac{\partial U}{\partial t} = (q_x - q_{x + dx}) (dy dz)
+\frac{\Delta Q}{\Delta t} = (q_x - q_{x + dx}) (dy dz).
 \end{equation}
 
+Ekspansi deret Fourier memberikan
+
+\begin{equation}\label{eqn:0281-2}
+f(x + dx) \approx f(x) + \frac{\partial f}{\partial x} dx,
+\end{equation}
+
+yang dapat membuat Persamaan \eqref{eqn:0281-1} menjadi
+
+\begin{equation}\label{eqn:0281-3}
+f(x + dx) \approx f(x) + \frac{\partial f}{\partial x} dx,
+\end{equation}
 
 
 
