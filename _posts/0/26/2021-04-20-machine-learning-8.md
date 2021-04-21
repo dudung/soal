@@ -11,7 +11,7 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["machine learning", "regression", "numerical solution", "learning type", "learning model", "fi3201", "2020-2"]
+tags: ["machine learning", "classification", "tensor flow", "fi3201", "2020-2"]
 date: 2021-04-21 11:36:00 +07
 permalink: /0268
 src: https://github.com/dudung/soal/commits/master/_posts/0/26/2021-04-20-machine-learning-8.md
