@@ -20,10 +20,10 @@ ref: https://en.wikipedia.org/wiki/Thermal_conduction#Differential_form
 Bentuk diferensial dari hukum Fourier tentang konduksi panas berbentuk
 
 \begin{equation}\label{eqn:0280-0}
-\vec{q} = -k \vec{\nabla}T,
+\vec{q} = -\kappa \vec{\nabla}T,
 \end{equation}
 
-dengan $\vec{q}$ rapat fluks panas lokal ($\rm W \cdot m^{-2}$), $k$ konduktivitas bahan ($\rm W \cdot m^{-1} \cdot K^{-1}$), dan $\vec{\nabla}T$ gradien temperatur ($\rm K \cdot m^{-1}$), yang  mana secara umum
+dengan $\vec{q}$ rapat fluks panas lokal ($\rm W \cdot m^{-2}$), $\kappa$ konduktivitas termal bahan ($\rm W \cdot m^{-1} \cdot K^{-1}$), dan $\vec{\nabla}T$ gradien temperatur ($\rm K \cdot m^{-1}$), yang  mana secara umum
 
 \begin{equation}\label{eqn:0280-1}
 T = T(x, y, z).
@@ -43,8 +43,8 @@ dan rapat fluks panas
 
 dapat diperoleh hubungan berikut, kecuali
 
-A | $\displaystyle q_y = -k \frac{\partial T}{\partial y}$.
-B | $\displaystyle q_x = -k \frac{\partial T}{\partial x}$.
-C | $\displaystyle q_z = -k \frac{\partial T}{\partial z}$.
-D | $\displaystyle q = -k \left( \frac{\partial T}{\partial x} + \frac{\partial T}{\partial y} + \frac{\partial T}{\partial z} \right)$.
-E | $\displaystyle \vec{q} = -k \left( \hat{x}\frac{\partial T}{\partial x} + \hat{y}\frac{\partial T}{\partial y} + \hat{z}\frac{\partial T}{\partial z} \right)$.
+A | $\displaystyle q_y = -\kappa \frac{\partial T}{\partial y}$.
+B | $\displaystyle q_x = -\kappa \frac{\partial T}{\partial x}$.
+C | $\displaystyle q_z = -\kappa \frac{\partial T}{\partial z}$.
+D | $\displaystyle q = -\kappa \left( \frac{\partial T}{\partial x} + \frac{\partial T}{\partial y} + \frac{\partial T}{\partial z} \right)$.
+E | $\displaystyle \vec{q} = -\kappa \left( \hat{x}\frac{\partial T}{\partial x} + \hat{y}\frac{\partial T}{\partial y} + \hat{z}\frac{\partial T}{\partial z} \right)$.
