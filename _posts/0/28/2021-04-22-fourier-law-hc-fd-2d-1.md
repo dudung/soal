@@ -50,10 +50,10 @@ di mana $dV = dA dx = dx dy dz$. Dengan demikian untuk suatu volume kontrol $dV$
 Hukum Fourier tentang konduksi panas memberikan
 
 \begin{equation}\label{eqn:0281-6}
-q_x = - \kappa \frac{\partial T}{\partial x}, \ \ \ \ q_y = - \kappa \frac{\partial T}{\partial y}, \ \ \ \ q_z = - \kappa \frac{\partial T}{\partial z}.
+q_x = - \kappa \frac{\partial T}{\partial x}, \ \ \ \ q_y = - \kappa \frac{\partial T}{\partial y}, \ \ \ \ q_z = - \kappa \frac{\partial T}{\partial z},
 \end{equation}
 
-Substitusi ketiga persamaan dalam Persamaan \eqref{eqn:0281-6} ke Persamaan \eqref{eqn:0281-5} akan memberikan
+dengan $\kappa$ konduktivitas termal bahan ($\rm W \cdot m^{-1} \cdot K^{-1}$). Substitusi ketiga persamaan dalam Persamaan \eqref{eqn:0281-6} ke Persamaan \eqref{eqn:0281-5} akan memberikan
 
 \begin{equation}\label{eqn:0281-7}
 \begin{array}{rcl}
@@ -78,10 +78,17 @@ dengan $m$ massa ($\rm kg$), $c$ kalor jenis ($\rm J \cdot kg^{-1} \cdot K^{-1}$
 \end{array}
 \end{equation}
 
-yang untuk pengamatan setiap selang waktu kecil akan mejadi
+yang untuk pengamatan dalam setiap selang waktu $\Delta t $ kecil akan mejadi
 
 \begin{equation}\label{eqn:0281-A}
 \frac{\partial T}{\partial t} = \alpha \nabla^2 T, 
 \end{equation}
 
-dengan $\alpha$ termal difusivitas ($\rm m^2 \cdot s^{-1}$).
+dengan $\alpha$ termal difusivitas ($\rm m^2 \cdot s^{-1}$). Secara umum $T = T(x, y, z, t)$. Untuk keadaan tunak Persamaan \eqref{eqn:0281-A} akan menjadi
+
+A | $\displaystyle \frac{\partial^2 T}{\partial x^2} = 0$.
+B | $\displaystyle \frac{\partial^2 T}{\partial y^2} = 0$.
+C | $\displaystyle \frac{\partial^2 T}{\partial z^2} = 0$.
+D | $\displaystyle \frac{\partial^2 T}{\partial x^2} +  \frac{\partial^2 T}{\partial y^2} +  \frac{\partial^2 T}{\partial x^z} = 0$.
+E | bukan salah satu dari persamaan di atas.
+
