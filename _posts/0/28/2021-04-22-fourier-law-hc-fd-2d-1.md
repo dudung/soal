@@ -20,7 +20,7 @@ ref: https://dx.doi.org/10.1615/AtoZ.c.conduction
 Laju perubahan energi yang diperoleh (atau hilang) pada arah $x$ yang menembus suatu luasan $dA = dydz$ diberikan oleh
 
 \begin{equation}\label{eqn:0281-1}
-\left( \frac{\Delta Q}{\Delta t} \right) \_x = (q_x - q_{x + dx}) (dy dz).
+\left( \frac{Q}{\Delta t} \right) \_x = (q_x - q_{x + dx}) (dy dz).
 \end{equation}
 
 Ekspansi deret Fourier memberikan
@@ -38,13 +38,13 @@ f(x) - f(x + dx) \approx  - \frac{\partial f}{\partial x} dx,
 sehingga membuat Persamaan \eqref{eqn:0281-1} menjadi
 
 \begin{equation}\label{eqn:0281-4}
-\left( \frac{\Delta Q}{\Delta t} \right)_x = \left( - \frac{\partial q_x}{\partial x} dx \right) (dy dz) = - \frac{\partial q_x}{\partial x} dV,
+\left( \frac{Q}{\Delta t} \right)_x = \left( - \frac{\partial q_x}{\partial x} dx \right) (dy dz) = - \frac{\partial q_x}{\partial x} dV,
 \end{equation}
 
 di mana $dV = dA dx = dx dy dz$. Dengan demikian untuk suatu volume kontrol $dV$ kontribusi dari ketiga arah $x$, $y$, dan $z$ akan menjadi
 
 \begin{equation}\label{eqn:0281-5}
-\frac{\Delta Q}{\Delta t} = - \left( \frac{\partial q_x}{\partial x} + \frac{\partial q_y}{\partial y} + \frac{\partial q_z}{\partial z} \right) dV.
+\frac{Q}{\Delta t} = - \left( \frac{\partial q_x}{\partial x} + \frac{\partial q_y}{\partial y} + \frac{\partial q_z}{\partial z} \right) dV.
 \end{equation}
 
 Hukum Fourier tentang konduksi panas memberikan
@@ -57,7 +57,7 @@ Substitusi ketiga persamaan dalam Persamaan \eqref{eqn:0281-6} ke Persamaan \eqr
 
 \begin{equation}\label{eqn:0281-7}
 \begin{array}{rcl}
-\displaystyle \frac{\Delta Q}{\Delta t} & = & \displaystyle - \left[ \frac{\partial}{\partial x} \left( -\kappa \frac{\partial T}{\partial x} \right) + \frac{\partial}{\partial y} \left( -\kappa \frac{\partial T}{\partial y} \right) + \frac{\partial}{\partial z} \left( -\kappa \frac{\partial T}{\partial z} \right) \right] dV \newline
+\displaystyle \frac{Q}{\Delta t} & = & \displaystyle - \left[ \frac{\partial}{\partial x} \left( -\kappa \frac{\partial T}{\partial x} \right) + \frac{\partial}{\partial y} \left( -\kappa \frac{\partial T}{\partial y} \right) + \frac{\partial}{\partial z} \left( -\kappa \frac{\partial T}{\partial z} \right) \right] dV \newline
 & = & \displaystyle \kappa \left( \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} + \frac{\partial^2 T}{\partial z^2} \right) dV,
 \end{array}
 \end{equation}
@@ -65,7 +65,23 @@ Substitusi ketiga persamaan dalam Persamaan \eqref{eqn:0281-6} ke Persamaan \eqr
 dengan asumsi konduktivitas termal bahan $\kappa$ invarian terhadap arah atau isotropik. Selanjutnya, suatu bahan yang akan mendapatkan (atau melepas) energi panas bila temperaturnya berubah sebesar $\Delta T$, perubahan energi bahan adalah
 
 \begin{equation}\label{eqn:0281-8}
-\Delta Q \approx m c \Delta T = (\rho dV) c \Delta T,
+Q = m c \Delta T \approx (\rho dV) c \Delta T,
 \end{equation}
 
-dengan $m$ massa ($\rm kg$), $c$ kalor jenis ($\rm J \cdot kg^{-1} \cdot K^{-1}$), $\rho$ rapat massa per satuan volume ($\rm kg \cdot m^{-3}$), dan $dV$ elemen volume kontrol ($\rm m^3$) yang bermassa $m$.
+dengan $m$ massa ($\rm kg$), $c$ kalor jenis ($\rm J \cdot kg^{-1} \cdot K^{-1}$), $\rho$ rapat massa per satuan volume ($\rm kg \cdot m^{-3}$), dan $dV$ elemen volume kontrol ($\rm m^3$) yang bermassa $m$. Substitusi Persamaan \eqr{eqn:0281-8} ke \eqref{eqn:0281-7} akan memberikan
+
+\begin{equation}\label{eqn:0281-9}
+\begin{array}{rcl}
+\displaystyle \frac{\Delta T}{\Delta t} \rho c \ dV & = & \displaystyle \kappa \left( \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} + \frac{\partial^2 T}{\partial z^2} \right) dV, \newline
+\displaystyle \frac{\Delta T}{\Delta t} & = & \displaystyle \frac{\kappa}{\rho c} \left( \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} + \frac{\partial^2 T}{\partial z^2} \right), \newline
+& = & \alpha \nabla^2 T,
+\end{array}
+\end{equation}
+
+yang untuk pengamatan setiap selang waktu kecil akan mejadi
+
+\begin{equation}\label{eqn:0281-A}
+\frac{\partial T}{\partial t} = \alpha \nabla^2 T, 
+\end{equation}
+
+dengan $\alpha$ termal difusivitas ($\rm m^2 \cdot s^{-1}$).
