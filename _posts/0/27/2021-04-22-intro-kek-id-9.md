@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["kek", "kawasan ekonomi khusus", "industrial park zone", "free zone", "special economic zone"]
-date: 2021-04-21 03:20:00 +07
+date: 2021-04-22 03:20:00 +07
 permalink: /0279
 src: https://github.com/dudung/soal/commits/master/_posts/0/27/2021-04-22-intro-kek-id-9.md
 ref: https://journal.unsika.ac.id/index.php/jurnalilmiahhukumdejure/article/view/3498
