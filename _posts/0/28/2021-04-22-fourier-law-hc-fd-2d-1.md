@@ -62,5 +62,10 @@ Substitusi ketiga persamaan dalam Persamaan \eqref{eqn:0281-6} ke Persamaan \eqr
 \end{array}
 \end{equation}
 
-dengan asumsi konduktivitas termal bahan $\kappa$ invarian terhadap arah atau isotropik.
+dengan asumsi konduktivitas termal bahan $\kappa$ invarian terhadap arah atau isotropik. Selanjutnya, suatu bahan yang akan mendapatkan (atau melepas) energi panas bila temperaturnya berubah sebesar $\Delta T$, perubahan energi bahan adalah
 
+\begin{equation}\label{eqn:0281-8}
+\Delta Q \approx m c \Delta T = (\rho dV) c \Delta T,
+\end{equation}
+
+dengan $m$ massa ($\rm kg$), $c$ kalor jenis ($\rm J \cdot kg^{-1} \cdot K^{-1}$), $\rho$ rapat massa per satuan volume ($\rm kg \cdot m^{-3}$), dan $dV$ elemen volume kontrol ($\rm m^3$) yang bermassa $m$.
