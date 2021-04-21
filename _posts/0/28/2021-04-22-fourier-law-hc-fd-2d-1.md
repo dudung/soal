@@ -15,7 +15,7 @@ tags: ["heat conduction", "fourier's law", "fi3201", "2020-2"]
 date: 2021-04-22 05:20:00 +07
 permalink: /0281
 src: https://github.com/dudung/soal/commits/master/_posts/0/28/2021-04-22-fourier-law-hc-fd-2d-0.md
-ref: https://en.wikipedia.org/wiki/Thermal_conduction#Differential_form
+ref: https://dx.doi.org/10.1615/AtoZ.c.conduction
 ---
 Laju perubahan energi yang diperoleh (atau hilang) pada arah $x$ yang menembus suatu luasan $dA = dydz$ diberikan oleh
 
@@ -29,44 +29,16 @@ Ekspansi deret Fourier memberikan
 f(x + dx) \approx f(x) + \frac{\partial f}{\partial x} dx,
 \end{equation}
 
-yang dapat membuat Persamaan \eqref{eqn:0281-1} menjadi
+yang dapat memberikan
 
 \begin{equation}\label{eqn:0281-3}
-f(x + dx) \approx f(x) + \frac{\partial f}{\partial x} dx,
+f(x) - f(x + dx) \approx  - \frac{\partial f}{\partial x} dx,
 \end{equation}
 
+sehingga membuat Persamaan \eqref{eqn:0281-1} menjadi
 
-
-
-
-Bentuk diferensial dari hukum Fourier tentang konduksi panas berbentuk
-
-\begin{equation}\label{eqn:0280-0}
-\vec{q} = -k \vec{\nabla}T,
+\begin{equation}\label{eqn:0281-4}
+\frac{\Delta Q}{\Delta t} = \left( - \frac{\partial q}{\partial x} dx \right) (dy dz) = - \frac{\partial q}{\partial x} dV,
 \end{equation}
 
-dengan $\vec{q}$ rapat fluks panas lokal ($\rm W \cdot m^{-2}$), $k$ konduktivitas bahan ($\rm W \cdot m^{-1} \cdot K^{-1}$), dan $\vec{\nabla}T$ gradien temperatur ($\rm K \cdot m^{-1}$), yang  mana secara umum
-
-\begin{equation}\label{eqn:0280-1}
-T = T(x, y, z).
-\end{equation}
-
-Selanjutnya, dengan gradien
-
-\begin{equation}\label{eqn:0280-2}
-\vec{\nabla} = \hat{x} \frac{\partial}{\partial x} + \hat{y} \frac{\partial}{\partial y} + \hat{z} \frac{\partial}{\partial z}
-\end{equation}
-
-dan rapat fluks panas
-
-\begin{equation}\label{eqn:0280-3}
-\vec{q} = \hat{x} q_x + \hat{y} q_y + \hat{z} q_z,
-\end{equation}
-
-dapat diperoleh hubungan berikut, kecuali
-
-A | $\displaystyle q_y = -k \frac{\partial T}{\partial y}$.
-B | $\displaystyle q_x = -k \frac{\partial T}{\partial x}$.
-C | $\displaystyle q_z = -k \frac{\partial T}{\partial z}$.
-D | $\displaystyle q = -k \left( \frac{\partial T}{\partial x} + \frac{\partial T}{\partial y} + \frac{\partial T}{\partial z} \right)$.
-E | $\displaystyle \vec{q} = -k \left( \hat{x}\frac{\partial T}{\partial x} + \hat{y}\frac{\partial T}{\partial y} + \hat{z}\frac{\partial T}{\partial z} \right)$.
+di mana $dV = dA dx = dx dy dz$.
