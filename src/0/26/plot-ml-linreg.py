@@ -10,6 +10,9 @@
 # 0340 Can work as previous one.
 # 0503 Can show step, a, b; plot not work for data and curve.
 # 0527 Convert Python list to numpy Array [1].
+# 0820 Try merging with 2021-04-20-machine-learning-6.md soal.
+# 0845 Can animate with previous code in soal.
+# 0911 Continue after restarting (?).
 # 
 # References
 # 1. url https://www.geeksforgeeks.org/convert-python-list
@@ -24,8 +27,10 @@ import matplotlib.animation as animation
 
 xdata = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 ydata = np.array([1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6])
-a = 1
-b = 1
+N = min(len(xdata), len(ydata))
+a = 6
+b = 0
+eta = 0.001
 
 def curve(a, b):
 	y = a + b * xdata
@@ -33,7 +38,7 @@ def curve(a, b):
 
 # Create array for time t from tbed to tend with step dt
 tbeg = 0
-tend = 10
+tend = 1000
 dt = 1
 t = np.arange(tbeg, tend, dt)
 
@@ -69,29 +74,44 @@ mark, = ax.plot([], [], 'sr', lw=1, ms=4)
 line, = ax.plot([], [], '-b', lw=2)
 time_template = 's = %i, a = %.3f, b = %.3f'
 time_text = ax.text(0.03, 0.93, '', transform=ax.transAxes)
+err_template = 'err = %.4f'
+err_text = ax.text(0.03, 0.83, '', transform=ax.transAxes)
 
 # Perform animation
 def init():
 	line.set_data([], [])
 	mark.set_data([], [])
 	time_text.set_text('')
+	err_text.set_text('')
 	return line, mark, time_text
 
 def animate(i):
-	a = 0.5 * i
-	b = 0.5 * i
-	y = curve(a, b)
+	global a, b
+	eps = 0
+	depsda = 0
+	depsdb = 0
+	for j in range(0, N):
+		f = a + b * xdata[j]
+		eps += (f - ydata[j]) * (f - ydata[j])
+		depsda += 2 * (f - ydata[j]) * 1
+		depsdb += 2 * (f - ydata[j]) * xdata[j]
+	a = a - eta * depsda
+	b = b - eta * depsdb
 	
-	line.set_data([xdata], [y])
-	mark.set_data([xdata], [ydata])
-	time_text.set_text(time_template % (i, a, b))
+	s = i - 1
+	if s % 40 == 0:
+		y = curve(a, b)
+		line.set_data([xdata], [y])
+		mark.set_data([xdata], [ydata])
+		time_text.set_text(time_template % (s, a, b))
+		err_text.set_text(err_template % eps)
 	return line, mark, time_text
 
 ani = animation.FuncAnimation(
 	fig, animate, np.arange(1, len(t)),
-	interval=70, blit=True, init_func=init
+	interval=5, blit=True, init_func=init
 )
 
 # Write to to a GIF animation
-writergif = animation.PillowWriter(fps=10)
-ani.save('0268.gif', writer=writergif)
+writergif = animation.PillowWriter(fps=40)
+ani.save('0267.gif', writer=writergif)
