@@ -32,16 +32,6 @@ Sementara itu, perbedaan utama KEK dengan kawasan ekonomi lainnya, selain kemuda
 
 
 
-Dengan menggunakan suatu platform sumber terbuka TensorFlow cara kerja dan hasil dari suatu arsitektur pembelajaran mesin atau machine learning (ML) dapat dipelajari. Beberapa hasil diperoleh seperti dalam tabel berikut ini.
-
-ID | Inisial | Final | Neuron masukan | Layer tersembunyi (neuron)
-:-: | :-: | :-: | :-: | :-:
-A1 | ![]({{site.baseurl}}/assets/img/0/26/0269a.png) | ![]({{site.baseurl}}/assets/img/0/26/0269b.png) | $x_1$, $x_2$ | 2 (4, 2)
-A2 | ![]({{site.baseurl}}/assets/img/0/26/0269c.png) | ![]({{site.baseurl}}/assets/img/0/26/0269d.png) | $x_1$, $x_2$ | 3 (3, 2, 2)
-A3 | ![]({{site.baseurl}}/assets/img/0/26/0269e.png) | ![]({{site.baseurl}}/assets/img/0/26/0269f.png) | $x_1^2$, $x_2^2$ | 1 (2)
-A4 | ![]({{site.baseurl}}/assets/img/0/26/0269g.png) | ![]({{site.baseurl}}/assets/img/0/26/0269h.png) | $x_1$, $x_2$ | 0 (0)
-A5 | ![]({{site.baseurl}}/assets/img/0/26/0269i.png) | ![]({{site.baseurl}}/assets/img/0/26/0269j.png) | $x_1$, $\sin x_2$ | 2 (5, 2)
-
 Pernyataan yang salah adalah pada ID
 
 A | A1. 
