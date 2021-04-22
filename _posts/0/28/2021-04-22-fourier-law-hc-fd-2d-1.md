@@ -11,7 +11,7 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["heat conduction", "fourier's law", "fi3201", "2020-2"]
+tags: ["heat conduction", "fourier's law", "steady state", "fi3201", "2020-2"]
 date: 2021-04-22 06:57:00 +07
 permalink: /0281
 src: https://github.com/dudung/soal/commits/master/_posts/0/28/2021-04-22-fourier-law-hc-fd-2d-1.md
