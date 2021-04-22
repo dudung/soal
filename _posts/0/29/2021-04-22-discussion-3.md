@@ -14,7 +14,7 @@ category: physics
 tags: ["discussion", "aidi", "kultum"]
 date: 2021-04-22 20:11:00 +07
 permalink: /0293
-src: https://github.com/dudung/soal/commits/master/_posts/0/28/2021-04-22-discussion-3.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/29/2021-04-22-discussion-3.md
 ref: https://bit.ly/3toR2Pr
 ---
 Indonesia memiliki berbagai sektor yang dapat berkontribusi pada devisa negara. Salah satu sektor yang dapat bersaing dengan luar negeri karena kekhasannya, akan tetapi paling terkena dampak pandemi, adalah sektor
