@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["discussion", "sanny", "liquefaction"]
-date: 2021-04-22 12:07:00 +07
+date: 2021-04-22 19:21:00 +07
 permalink: /0291
 src: https://github.com/dudung/soal/commits/master/_posts/0/29/2021-04-22-discussion-1.md
 ref: https://us04web.zoom.us/j/71510966446
