@@ -39,7 +39,7 @@ akan menjadi
 \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} = 0,
 \end{equation}
 
-untuk keadaan tunak (steady state) dengan syarat batas pada Persamaan \eqref{eqn:0283-0}. Koefisien $\alpha$ dalam Persamaan \eqref{eqn:0284-1} adalah difusivitas termal yang tersusun atas konduktivitas termal $\kappa$, massa jenis $\rho$, dan kalor jenis $c$. Agar dapat menggunakan separasi variabel temperatur $T(x, y)$ diasumsikan dapat berbentuk
+untuk keadaan tunak (steady state) dengan syarat batas pada Persamaan \eqref{eqn:0284-0}. Koefisien $\alpha$ dalam Persamaan \eqref{eqn:0284-1} adalah difusivitas termal yang tersusun atas konduktivitas termal $\kappa$, massa jenis $\rho$, dan kalor jenis $c$. Agar dapat menggunakan separasi variabel temperatur $T(x, y)$ diasumsikan dapat berbentuk
 
 \begin{equation}\label{eqn:0284-3}
 T(x, y) = X(x) Y(y).
