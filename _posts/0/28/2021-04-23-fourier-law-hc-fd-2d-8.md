@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["heat conduction", "fourier's law", "steady state", "separation of variable", "numerical solution", "grid", "2-d", "fi3201", "2020-2"]
-date: 2021-04-23 10:55:00 +07
+date: 2021-04-23 16:50:00 +07
 permalink: /0288
 src: https://github.com/dudung/soal/commits/master/_posts/0/28/2021-04-23-fourier-law-hc-fd-2d-8.md
 ref: https://www.eng.auburn.edu/~dmckwski/mech7210/condbook.pdf#page=94
@@ -41,8 +41,8 @@ y_j = j \Delta y, \ \ \ \ j = 0, \dots, M.
 
 Perumusan $\Delta x$ dan $\Delta y$ adalah
 
-A | $\displaystyle \frac{L}{N-1}$ dan $\displaystyle \frac{H}{M-1}$
-B | $\displaystyle $.
-C | $\displaystyle $.
-D | $\displaystyle $.
-E | $\displaystyle $.
+A | $\displaystyle \frac{L}{N+1}$ dan $\displaystyle \frac{H}{M+1}$
+B | $\displaystyle \frac{L}{N-1}$ dan $\displaystyle \frac{H}{M-1}$
+C | $\displaystyle \frac{L}{N-1}$ dan $\displaystyle \frac{H}{M}$
+D | $\displaystyle \frac{L}{N}$ dan $\displaystyle \frac{H}{M-1}$
+E | $\displaystyle \frac{L}{N}$ dan $\displaystyle \frac{H}{M}$
