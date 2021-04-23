@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["interference", "double-slit", "tutorial-7", "fi1202", "2020-2"]
-date: 2021-04-23 19:44:00 +07
+date: 2021-04-23 20:33:00 +07
 permalink: /0300
 src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-23-elementary-physics-tutorial-7-0.md
 ref: https://www.google.com
@@ -35,9 +35,13 @@ sehingga Persamaan \eqref{eqn:0300-0} akan menjadi
 y_n = \frac{L \lambda}{d} n, \ \ \ \ n = 1, 2, \dots.
 \end{equation}
 
-Suatu celah ganda dengan jarak celah $d$ dapat dilewati oleh cahaya dengan dua panjang gelombang berbeda. Untuk $\lambda_A = 480 \ \rm nm$ diperoleh $y_{A,3} = 16 \ \rm mm$, maka untuk $\lambda_B = 650 \ \rm nm$ akan diperoleh $y_{B,2}$ yang bernilai
+Suatu celah ganda dengan jarak celah $d$ dilewati oleh cahaya monokromatik dengan dua panjang gelombang berbeda pada suatu waktu. Pola-pola interferensi tertangkap pada layar yang terletak pada jarak $L = 1.6 \ \rm m$ dari celah. Untuk $\lambda_A = 480 \ \rm nm$ diperoleh $y_{A,3} = 16 \ \rm mm$, maka untuk $\lambda_B = 650 \ \rm nm$ akan diperoleh $y_{B,2}$ yang bernilai
 
-
+A | $14.44 \ \rm mm$.
+B | $32.50 \ \rm mm$.
+C | $7.88 \ \rm mm$.
+D | $17.72 \ \rm mm$.
+E | selain dari semua jawaban di atas.
 
 
 ## &nbsp;
@@ -56,9 +60,9 @@ d = \frac{L \lambda_B}{y_{B,2}} n_B
 untuk $\lambda = \lambda_B$, $n_B = 2$, sehingga
 
 \begin{equation}\label{eqn:0300-5}
-y_{B,2} = \frac{n_B L \lambda_B}{n_A L \lambda_A} y_{A,3}.
+y_{B,2} = \frac{n_B L \lambda_B}{n_A L \lambda_A} y_{A,3} = \frac{n_B \lambda_B}{n_A \lambda_A} y_{A,3}
 \end{equation}
 
+Persamaan \eqref{eqn:0300-5} dan data dalam soal dapat digunakan untuk menghitung $y_{B,2}$ menggunakan kode Python berikut.
 
-
-
+<iframe src="https://trinket.io/embed/python/513b3181bd" width="100%" height="220" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
