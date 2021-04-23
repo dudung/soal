@@ -14,7 +14,7 @@ category: physics
 tags: ["heat conduction", "fourier's law", "steady state", "separation of variable", "harmonic", "exponential", "solution", "2-d", "fi3201", "2020-2"]
 date: 2021-04-23 10:43:00 +07
 permalink: /0286
-src: https://github.com/dudung/soal/commits/master/_posts/0/28/2021-04-23-fourier-law-hc-fd-2d-5.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/28/2021-04-23-fourier-law-hc-fd-2d-6.md
 ref: https://www.eng.auburn.edu/~dmckwski/mech7210/condbook.pdf#page=94
 ---
 Terdapat segiempat yang memiiki distribusi temperatur $T(x, y)$ yang bersyarat batasnya adalah

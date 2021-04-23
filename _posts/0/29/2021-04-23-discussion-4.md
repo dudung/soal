@@ -12,9 +12,9 @@ oo: false
 svgphys: false
 category: physics
 tags: ["discussion", "ta", "imago", "ph meter"]
-date: 2021-04-22 20:11:00 +07
+date: 2021-04-23 11:05:00 +07
 permalink: /0294
-src: https://github.com/dudung/soal/commits/master/_posts/0/29/2021-04-22-discussion-3.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/29/2021-04-23-discussion-4.md
 ref: http://meet.google.com/cuj-ixec-cth
 ---
 ..
