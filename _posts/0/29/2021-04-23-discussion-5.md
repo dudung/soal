@@ -12,12 +12,13 @@ oo: false
 svgphys: false
 category: physics
 tags: ["discussion", "ppm", "landslide", "water"]
-date: 2021-04-23 20:11:00 +07
+date: 2021-04-23 16:31:00 +07
 permalink: /0296
 src: https://github.com/dudung/soal/commits/master/_posts/0/29/2021-04-23-discussion-5.md
 ref: https://us02web.zoom.us/j/7411794940
 ---
 
+1645 selesai.
 ## Dua kegiatan besar
 1. Penggunaan geofisika untuk longsor
 Randi Rusdiana (Fisika Batuan, Geolistrik)
@@ -36,12 +37,17 @@ Uji di Fisika Tanah Unpad, Fapert.
 Kemas terbuka (butiran tidak saling bersentuha), kemas tertutup (saling bersentuhan butirannya)
 
 - slide diberi nomor halaman
-- Tortuositas perlu? selain porositas dan permeabilitas
+-- kriteria keamanan lereng?
+
+- Tortuositas perlu? selain porositas dan permeabilitas --> di Fapert belum ada, mungkin ke BSC-A
 - program komputer yang digunakan, ada berkas standar untuk kalibrasi / tes?
-- bagaimana cara menentukan bidang keras / bidang gelincirnya? Kedalaman 1-2 meter cukup?
-- gamma = gaya / luas? Tekanan?
-sigma tegangan permukaan = gaya / panjang
--- gamma dan gamma_sat lebih besar mana?
+- bagaimana cara menentukan bidang keras / bidang gelincirnya? Kedalaman 1-2 meter cukup? --> dari geolistrik
+- gamma = gaya / luas? Tekanan? ya
+sigma tegangan permukaan = gaya / panjang? ya
+-- gamma dan gamma_sat lebih besar mana? belum tahu, akan dicari
+
+NH: sangat sensitif, perlu komunikasikan dengan bijak ke masyarakat
+
 
 
 {% comment %}
