@@ -11,10 +11,10 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["heat conduction", "fourier's law", "steady state", "diffusivity", "2-d", "fi3201", "2020-2"]
-date: 2021-04-23 09:32:00 +07
+tags: ["heat conduction", "fourier's law", "steady state", "separation of variable", "2-d", "fi3201", "2020-2"]
+date: 2021-04-23 09:37:00 +07
 permalink: /0284
-src: https://github.com/dudung/soal/commits/master/_posts/0/28/2021-04-22-fourier-law-hc-fd-2d-4.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/28/2021-04-23-fourier-law-hc-fd-2d-4.md
 ref: https://www.eng.auburn.edu/~dmckwski/mech7210/condbook.pdf#page=94
 ---
 Terdapat segiempat yang memiiki distribusi temperatur $T(x, y)$ yang bersyarat batasnya adalah
@@ -52,7 +52,6 @@ Substitusi Persamaan \eqref{eqn:0284-3} ke \eqref{eqn:0284-2} dan menyusun ulang
 \end{equation}
 
 Salah satu cara termudah untuk mencari solusi dari Persamaan \eqref{eqn:0284-4}, dan masih memberikan hasil yang bermakna, adalah dengan
-
 
 A | memisalkan ruas kiri $f(z)$ dan ruas kanan $g(z), dengan z = z(x, y)$.
 B | memisalkan ruas kiri $f(x, y)$ dan ruas kanan $g(x, y)$.
