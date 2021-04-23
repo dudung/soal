@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["interference", "double-slit", "tutorial-7", "fi1202", "2020-2"]
-date: 2021-04-24 04:42:00 +07
+date: 2021-04-24 04:44:00 +07
 permalink: /0301
 src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-23-elementary-physics-tutorial-7-1.md
 ref: https://www.google.com
