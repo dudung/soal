@@ -17,7 +17,7 @@ permalink: /0301
 src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-23-elementary-physics-tutorial-7-1.md
 ref: https://www.google.com
 ---
-Order maksimum interferensi maksimum dan jumlah garis terang yang dapat terbentuk saat cahaya monokromatik dengan panjang gelombang $500 \ \rm nm$ melewati celah ganda dengan jarak antar celah $2.5 \ \rm \mu m$ adalah
+Orde tertinggi interferensi maksimum dan jumlah garis terang yang dapat terbentuk saat cahaya monokromatik dengan panjang gelombang $500 \ \rm nm$ melewati celah ganda dengan jarak antar celah $2.5 \ \rm \mu m$ adalah
 
 A | $5$ dan $11$.
 B | $4$ dan $9$.
