@@ -14,7 +14,7 @@ category: physics
 tags: ["interference", "double-slit", "tutorial-7", "fi1202", "2020-2"]
 date: 2021-04-24 06:43:00 +07
 permalink: /0302
-src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-23-elementary-physics-tutorial-7-2.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-24-elementary-physics-tutorial-7-2.md
 ref: https://www.google.com
 ---
 Sebuah lensa kamera berindeks bias $n_{\rm cam} = 1.52$ dilapisi dengan lapisan tak-reflektif magnesium flourida berindeks biar $n_{\rm MgF} = 1.38$ untuk mencegah pantulan cahaya kuning-hijau dengan panjang gelombang dalam vakum $\lambda = 565 \ \rm nm$. Ketebalan minimum, yang bukan nol, lapisan tak-reflektif tersebut adalah
