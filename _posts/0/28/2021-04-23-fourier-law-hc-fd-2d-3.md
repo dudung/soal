@@ -15,7 +15,7 @@ tags: ["heat conduction", "fourier's law", "steady state", "diffusivity", "2-d",
 date: 2021-04-23 09:20:00 +07
 permalink: /0283
 src: https://github.com/dudung/soal/commits/master/_posts/0/28/2021-04-22-fourier-law-hc-fd-2d-3.md
-ref: https://www.eng.auburn.edu/~dmckwski/mech7210/condbook.pdf#page=93
+ref: https://www.eng.auburn.edu/~dmckwski/mech7210/condbook.pdf#page=94
 ---
 Terdapat segiempat yang memiiki distribusi temperatur $T(x, y)$ yang bersyarat batasnya adalah
 
