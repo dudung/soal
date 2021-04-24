@@ -90,10 +90,34 @@ Persamaan \eqref{eqn:0302-5} akan selalu bernilai nol atau interferensi minimum 
 
 \begin{equation}\label{eqn:0302-6}
 \begin{array}{rcl}
-\frac12 \Delta \phi_{61} & = & (n + \frac12) \pi \newline
-\displaystyle \frac{4\pi}{\lambda} n_2 L & = & (n + \frac12) \pi \newline
+\frac12 \Delta \phi_{61} & = & (m + \frac12) \pi \newline
+\displaystyle \tfrac12 \frac{4\pi}{\lambda} n_2 L & = & (m + \frac12) \pi \newline
+2 L_m & = & (m + \frac12) \displaystyle \frac{\lambda}{n_2}.
 \end{array}
 \end{equation}
+
+Tebal minimum tercapai saat $m = 0$ sehingga diperoleh
+
+\begin{equation}\label{eqn:0302-7}
+L_0 = \frac14 \frac{\lambda}{n_2} = \frac14 \lambda_2.
+\end{equation}
+
+Ketebalan lapisan tipis (film) sebenarnya adalah
+
+\begin{equation}\label{eqn:0302-8}
+t = L \cos \theta_2 = L \cos \sin^{-1} \left( \frac{n_1}{n_2} \sin \theta_1 \right).
+\end{equation}
+
+Bila digunakan asumsi bahwa $\theta \approx 0$ yang menggambarkan pengamatan hampir tegak lurus lapisan tipis, maka akan diperoleh
+
+\begin{equation}\label{eqn:0302-9}
+t = (2m + \tfrac14) \frac{\lambda}{n_2}, \ \ \ \ m = 0, 1, 2, \dots,
+\end{equation}
+
+untuk interferensi minimum pada lapisan tipis.
+Bila indeks bias kaca kamera adalah $1.55$ dan indeks bias lapisan tipis di atas kaca adalah $1.45$, agar pantulan cahaya monokromatik $580 \ \rm nm$ dapat dicegah ketebalan minium yang bukan nol dapat dihitung menggunakan kode Python berikut.
+
+
 
 
 {% comment %}
