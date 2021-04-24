@@ -44,41 +44,41 @@ $i$ | $j$ | $\Delta \phi_{ji}$ | Catatan
 
 Untuk interferensi lapisan tipis diperlukan informasi $\Delta \phi_{61}$. Untuk itu diperlukan
 
-\begin{equation}\label{eqn:0302-0}
+\begin{equation}\label{eqn:0303-0}
 \Delta \phi_{10} = \pi
 \end{equation}
 
 dan
 
-\begin{equation}\label{eqn:0302-1}
+\begin{equation}\label{eqn:0303-1}
 \begin{array}{rcl}
 \Delta \phi_{60} & = & \Delta \phi_{65} + \Delta \phi_{54} + \Delta \phi_{43} + \Delta \phi_{32} + \Delta \phi_{20} \newline
-& = & \displaystyle 0 + \frac{2\pi}{\lambda} n_2 L_2 + \pi + \frac{2\pi}{\lambda} n_2 L + 0 \newline
-& = & \displaystyle \pi + \frac{4\pi}{\lambda} n_2 L,
+& = & \displaystyle 0 + \frac{2\pi}{\lambda} n_2 L_2 + 0 + \frac{2\pi}{\lambda} n_2 L + 0 \newline
+& = & \displaystyle \frac{4\pi}{\lambda} n_2 L,
 \end{array}
 \end{equation}
 
 sehingga
 
-\begin{equation}\label{eqn:0302-2}
+\begin{equation}\label{eqn:0303-2}
 \Delta \phi_{61} = \Delta \phi_{60} - \Delta \phi_{10} = \frac{4\pi}{\lambda} n_2 L.
 \end{equation}
 
 Kembali ke bentuk fungsi medan listrik untuk berkas $1$
 
-\begin{equation}\label{eqn:0302-3}
+\begin{equation}\label{eqn:0303-3}
 E_1(x, t) = E_0 \sin \omega t
 \end{equation}
 
 dan berkas $6$
 
-\begin{equation}\label{eqn:0302-4}
+\begin{equation}\label{eqn:0303-4}
 E_6(x, t) = E_0 \sin (\omega t + \Delta \phi_{61}),
 \end{equation}
 
 yang akan memberikan hasil superposisi
 
-\begin{equation}\label{eqn:0302-5}
+\begin{equation}\label{eqn:0303-5}
 \begin{array}{rcl}
 E(x, t) & = & E_1(x, t) + E_6(x, t) \newline
 & = & E_0 \sin \omega t + E_0 \sin (\omega t + \Delta \phi_{61}) \newline
@@ -86,9 +86,9 @@ E(x, t) & = & E_1(x, t) + E_6(x, t) \newline
 \end{array}
 \end{equation}
 
-Persamaan \eqref{eqn:0302-5} akan selalu bernilai nol atau interferensi minimum bila
+Persamaan \eqref{eqn:0303-5} akan selalu bernilai nol atau interferensi minimum bila
 
-\begin{equation}\label{eqn:0302-6}
+\begin{equation}\label{eqn:0303-6}
 \begin{array}{rcl}
 \frac12 \Delta \phi_{61} & = & (m + \frac12) \pi \newline
 \displaystyle \tfrac12 \frac{4\pi}{\lambda} n_2 L & = & (m + \frac12) \pi \newline
@@ -98,19 +98,19 @@ Persamaan \eqref{eqn:0302-5} akan selalu bernilai nol atau interferensi minimum 
 
 Tebal minimum tercapai saat $m = 0$ sehingga diperoleh
 
-\begin{equation}\label{eqn:0302-7}
+\begin{equation}\label{eqn:0303-7}
 L_0 = \frac14 \frac{\lambda}{n_2} = \frac14 \lambda_2.
 \end{equation}
 
 Ketebalan lapisan tipis (film) sebenarnya adalah
 
-\begin{equation}\label{eqn:0302-8}
+\begin{equation}\label{eqn:0303-8}
 t = L \cos \theta_2 = L \cos \sin^{-1} \left( \frac{n_1}{n_2} \sin \theta_1 \right).
 \end{equation}
 
 Bila digunakan asumsi bahwa $\theta \approx 0$ yang menggambarkan pengamatan hampir tegak lurus lapisan tipis, maka akan diperoleh tebal
 
-\begin{equation}\label{eqn:0302-9}
+\begin{equation}\label{eqn:0303-9}
 t = (2m + \tfrac14) \frac{\lambda}{n_2}, \ \ \ \ m = 0, 1, 2, \dots,
 \end{equation}
 
