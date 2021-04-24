@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["interference", "double-slit", "tutorial-7", "fi1202", "2020-2"]
-date: 2021-04-24 06:43:00 +07
+date: 2021-04-24 11:13:00 +07
 permalink: /0302
 src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-24-elementary-physics-tutorial-7-2.md
 ref: https://www.google.com
@@ -108,7 +108,7 @@ Ketebalan lapisan tipis (film) sebenarnya adalah
 t = L \cos \theta_2 = L \cos \sin^{-1} \left( \frac{n_1}{n_2} \sin \theta_1 \right).
 \end{equation}
 
-Bila digunakan asumsi bahwa $\theta \approx 0$ yang menggambarkan pengamatan hampir tegak lurus lapisan tipis, maka akan diperoleh
+Bila digunakan asumsi bahwa $\theta \approx 0$ yang menggambarkan pengamatan hampir tegak lurus lapisan tipis, maka akan diperoleh tebal
 
 \begin{equation}\label{eqn:0302-9}
 t = (2m + \tfrac14) \frac{\lambda}{n_2}, \ \ \ \ m = 0, 1, 2, \dots,
