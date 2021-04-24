@@ -19,11 +19,11 @@ ref: https://www.google.com
 ---
 Sebuah lensa kamera berindeks bias $n_{\rm cam} = 1.52$ dilapisi dengan lapisan tak-reflektif magnesium flourida berindeks biar $n_{\rm MgF} = 1.38$ untuk mencegah pantulan cahaya kuning-hijau dengan panjang gelombang dalam vakum $\lambda = 565 \ \rm nm$. Ketebalan minimum, yang bukan nol, lapisan tak-reflektif tersebut adalah
 
-A | $\ \rm nm$.
-B | $\ \rm nm$.
-C | $\ \rm nm$.
-D | $\ \rm nm$.
-E | $\ \rm nm$.
+A | $99\ \rm nm$.
+B | $100\ \rm nm$.
+C | $101\ \rm nm$.
+D | $102\ \rm nm$.
+E | $103\ \rm nm$.
 
 
 ## &nbsp;
@@ -115,10 +115,9 @@ t = (2m + \tfrac14) \frac{\lambda}{n_2}, \ \ \ \ m = 0, 1, 2, \dots,
 \end{equation}
 
 untuk interferensi minimum pada lapisan tipis.
-Bila indeks bias kaca kamera adalah $1.55$ dan indeks bias lapisan tipis di atas kaca adalah $1.45$, agar pantulan cahaya monokromatik $580 \ \rm nm$ dapat dicegah ketebalan minium yang bukan nol dapat dihitung menggunakan kode Python berikut.
+Bila indeks bias kaca kamera adalah $1.55$ dan indeks bias lapisan tipis di atas kaca adalah $1.45$, agar pantulan cahaya monokromatik $580 \ \rm nm$ dari udara ke kaca kamera dapat dicegah, ketebalan minium yang bukan nol dapat dihitung menggunakan kode Python berikut dengan bantuan Persamaan \eqref{eqn:0302-9}.
 
-
-
+<iframe src="https://trinket.io/embed/python/66e9a4e38c" width="100%" height="210" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 {% comment %}
 Lapisan nonreflektif magnesium fluorida (n=1,38) menutupi kaca (n=1,52) lensa kamera. Dengan asumsi
