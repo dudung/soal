@@ -12,18 +12,18 @@ oo: false
 svgphys: false
 category: physics
 tags: ["interference", "thin film", "tutorial-7", "fi1202", "2020-2"]
-date: 2021-04-24 18:14:00 +07
+date: 2021-04-24 18:29:00 +07
 permalink: /0303
-src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-24-elementary-physics-tutorial-7-2.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-24-elementary-physics-tutorial-7-3.md
 ref: https://www.google.com
 ---
-Sebuah lensa kamera berindeks bias $n_{\rm cam} = 1.52$ dilapisi dengan lapisan tak-reflektif magnesium flourida berindeks biar $n_{\rm MgF} = 1.38$ untuk mencegah pantulan cahaya kuning-hijau dengan panjang gelombang dalam vakum $\lambda = 565 \ \rm nm$. Ketebalan minimum, yang bukan nol, lapisan tak-reflektif tersebut adalah
+Terdapat lapisan tipis sabun berketebalan berbeda pada lokasi berbeda. Indeks bias lapisan tipis tersebut adalah $n$ dan nilainya tidak diketahui. Lapisan tipis tersebut diapit oleh udara di kedua sisinya. Cahaya polikromatik jatuh pada lapisan tipis sabun tersebut dan permukaan lapisan sabun teramati beraneka warna. Suatu daerah terlihat berwarna kuning karena terjadi interferensi destruktif untuk warna biru (dalam vakum $\lambda_{\rm blue} = 469 \ \rm nm$), sementara daerah lain terlihat berwarna ungu karena terjadi interferensi destruktif untuk warna hijau (dalam vakum $\lambda_{\rm green} = 555 \ \rm nm$). Lapisan tipis tersebut memiliki ketebalan minimum $t$ yang bukan nol agar dapat menghasilkan interferensi destruktif lapisan tipis. Rasio ketebalan daerah bewarna ungu $t_{\rm purple}$ terhadap ketebalan daerah berwarna kuning $t_{\rm yellow}$ adalah
 
-A | $99\ \rm nm$.
-B | $100\ \rm nm$.
-C | $101\ \rm nm$.
-D | $102\ \rm nm$.
-E | $103\ \rm nm$.
+A | $1.318$.
+B | $1.813$.
+C | $0.854$.
+D | $0.845$.
+E | $1.183$.
 
 
 ## &nbsp;
@@ -120,10 +120,5 @@ Bila indeks bias kaca kamera adalah $1.55$ dan indeks bias lapisan tipis di atas
 <iframe src="https://trinket.io/embed/python/66e9a4e38c" width="100%" height="210" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 {% comment %}
-Lapisan nonreflektif magnesium fluorida (n=1,38) menutupi kaca (n=1,52) lensa kamera. Dengan asumsi
-bahwa lapisan mencegah pantulan cahaya kuning-hijau (panjang gelombang dalam vakum = 565 nm),
-tentukan ketebalan minimum (bukan nol) pelapis yang dapat dimiliki.
-A nonreflective coating of magnesium fluoride (n = 1.38) covers the glass (n = 1.52) of a camera lens.
-Assuming that the coating prevents reflection of yellow-green light (wavelength in vacuum = 565 nm),
-determine the minimum nonzero thickness that the coating can have.
-{% endcomment %}
+Lapisan sabun dengan ketebalan berbeda di tempat berbeda memiliki indeks bias n yang tidak diketahui dan udara di kedua sisinya. Cahaya pantul terlihat beraneka warna. Satu area tampak kuning karena interferensi destruktif telah menghilangkan warna biru (vakum 469 nm) dari cahaya pantul, sedangkan area lain tampak ungu karena interferensi destruktif telah menghilangkan warna hijau (vakum 555 nm). Lapisan memiliki ketebalan minimun t (bukan nol) untuk terjadinya interferensi destruktif. Tentukan rasio t ungu /t kuning?
+A soap film with different thicknesses at different places has an unknown refractive index n and air on both sides. In reflected light it looks multicolored. One region looks yellow because destructive interference has removed blue (vacuum 469 nm) from the reflected light, while another looks magenta because destructive interference has removed green (vacuum 555 nm). In these regions the film has the minimum nonzero thickness t required for the destructive interference to occur. Find the ratio t magenta/ t yellow?{% endcomment %}
