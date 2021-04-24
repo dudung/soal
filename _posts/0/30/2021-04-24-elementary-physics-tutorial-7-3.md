@@ -27,7 +27,7 @@ E | $1.183$.
 
 
 ## &nbsp;
-Untuk mengurangi efek pantulan pada lensa kamera dapat digunakan fenomena interferensi lapisan tipis. Interferensi yang terjadi merupakan hasil superposisi dari berkas datang yang dipantulkan oleh berbagai lapisan dengan indeks bias berbeda.
+Lapisan tipis pada gelembung sabun merupakan suatu lapisan tipis dengan susunan bahan udara, cairan sabun, dan udara. Interferensi yang terjadi merupakan hasil superposisi dari berkas datang yang dipantulkan oleh berbagai lapisan dengan indeks bias berbeda. Untuk lapisan tipis (gelembung) sabun indeks bias $n_1 = n_3 = 1$ yang merupakan udara dan indeks bias $n_2$ yang merupakan gelembung sabun. Nilai $n_2 > 1$.
 
 ![]({{site.baseurl}}/assets/img/0/30/0302.png)
 
@@ -38,7 +38,7 @@ $i$ | $j$ | $\Delta \phi_{ji}$ | Catatan
 0 | 1 | $\pi$ | $n_1 < n_2$
 0 | 2 | 0 | -
 2 | 3 | $k_2 L$ | $\displaystyle k_2 = \frac{2\pi}{\lambda} n_2$
-3 | 4 | $\pi$ | $n_2 < n_3$
+3 | 4 | 0 | $n_2 > n_3 = n_1$
 4 | 5 | $k_2 L$ | $\displaystyle k_2 = \frac{2\pi}{\lambda} n_2$
 5 | 6 | 0 | -
 
