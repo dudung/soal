@@ -89,6 +89,6 @@ dengan $\alpha$ termal difusivitas ($\rm m^2 \cdot s^{-1}$). Secara umum $T = T(
 A | $\displaystyle \frac{\partial^2 T}{\partial x^2} = 0$.
 B | $\displaystyle \frac{\partial^2 T}{\partial y^2} = 0$.
 C | $\displaystyle \frac{\partial^2 T}{\partial z^2} = 0$.
-D | $\displaystyle \frac{\partial^2 T}{\partial x^2} +  \frac{\partial^2 T}{\partial y^2} +  \frac{\partial^2 T}{\partial x^z} = 0$.
+D | $\displaystyle \frac{\partial^2 T}{\partial x^2} +  \frac{\partial^2 T}{\partial y^2} +  \frac{\partial^2 T}{\partial z^2} = 0$.
 E | bukan salah satu dari persamaan di atas.
 
