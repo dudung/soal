@@ -61,7 +61,7 @@ dan
 sehingga
 
 \begin{equation}\label{eqn:0303-2}
-\Delta \phi_{61} = \Delta \phi_{60} - \Delta \phi_{10} = \frac{4\pi}{\lambda} n_2 L.
+\Delta \phi_{61} = \Delta \phi_{60} - \Delta \phi_{10} = \frac{4\pi}{\lambda} n_2 L - \pi.
 \end{equation}
 
 Kembali ke bentuk fungsi medan listrik untuk berkas $1$
@@ -91,7 +91,7 @@ Persamaan \eqref{eqn:0303-5} akan selalu bernilai nol atau interferensi minimum 
 \begin{equation}\label{eqn:0303-6}
 \begin{array}{rcl}
 \frac12 \Delta \phi_{61} & = & (m + \frac12) \pi \newline
-\displaystyle \tfrac12 \frac{4\pi}{\lambda} n_2 L & = & (m + \frac12) \pi \newline
+\displaystyle \tfrac12 \left( \frac{4\pi}{\lambda} n_2 L - \pi \right) & = & (m + \frac12) \pi \newline
 2 L_m & = & (m + \frac12) \displaystyle \frac{\lambda}{n_2}.
 \end{array}
 \end{equation}
