@@ -119,7 +119,7 @@ t_m = \left( \frac{2m}{4} \right) \frac{\lambda}{n_2}, \ \ \ \ m = 0, 1, 2, \dot
 
 untuk interferensi minimum pada lapisan tipis.
 
-Bila indeks bias kaca kamera adalah $1.55$ dan indeks bias lapisan tipis di atas kaca adalah $1.45$, agar pantulan cahaya monokromatik $580 \ \rm nm$ dari udara ke kaca kamera dapat dicegah, ketebalan minium yang bukan nol dapat dihitung menggunakan kode Python berikut dengan bantuan Persamaan \eqref{eqn:0303-9}.
+..
 
 <iframe src="https://trinket.io/embed/python/657b7bee0b" width="100%" height="410" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
