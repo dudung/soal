@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["interference", "thin film", "tutorial-7", "fi1202", "2020-2"]
-date: 2021-04-26 10:59:00 +07
+date: 2021-04-26 11:09:00 +07
 permalink: /0303
 src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-24-elementary-physics-tutorial-7-3.md
 ref: https://www.google.com
@@ -121,7 +121,7 @@ untuk interferensi minimum pada lapisan tipis.
 
 Bila indeks bias kaca kamera adalah $1.55$ dan indeks bias lapisan tipis di atas kaca adalah $1.45$, agar pantulan cahaya monokromatik $580 \ \rm nm$ dari udara ke kaca kamera dapat dicegah, ketebalan minium yang bukan nol dapat dihitung menggunakan kode Python berikut dengan bantuan Persamaan \eqref{eqn:0303-9}.
 
-<iframe src="https://trinket.io/embed/python/af043ac6aa" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python/657b7bee0b" width="100%" height="410" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 {% comment %}
 Lapisan sabun dengan ketebalan berbeda di tempat berbeda memiliki indeks bias n yang tidak diketahui dan udara di kedua sisinya. Cahaya pantul terlihat beraneka warna. Satu area tampak kuning karena interferensi destruktif telah menghilangkan warna biru (vakum 469 nm) dari cahaya pantul, sedangkan area lain tampak ungu karena interferensi destruktif telah menghilangkan warna hijau (vakum 555 nm). Lapisan memiliki ketebalan minimun t (bukan nol) untuk terjadinya interferensi destruktif. Tentukan rasio t ungu /t kuning?
