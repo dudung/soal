@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["diffraction", "gratings", "tutorial-7", "fi1202", "2020-2"]
-date: 2021-04-26 22:00:00 +07
+date: 2021-04-27 03:16:00 +07
 permalink: /0306
 src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-26-elementary-physics-tutorial-7-6.md
 ref: https://www.google.com
@@ -41,6 +41,7 @@ d \sin \theta = m \lambda, \ \ \ \ m = 0, 1, 2, \dots.
 
 Terdapat sebuah kisi yang berisi celah sejumlah $8000 / \rm cm$. Posisi sudut garis terang orde pertama dan kedua untuk cahaya berpanjang gelombang $500 \ \rm nm$ dan $800 \ \rm nm$ dapat diperoleh menggunakan kode Python berikut.
 
+<iframe src="https://trinket.io/embed/python/2c33c52fed" width="100%" height="360" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 {% comment %}
 tutorial-7 problem-7
