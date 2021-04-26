@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["diffraction", "double-slit", "tutorial-7", "fi1202", "2020-2"]
-date: 2021-04-27 05:41:00 +07
+date: 2021-04-27 06:16:00 +07
 permalink: /0308
 src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-27-elementary-physics-tutorial-7-8.md
 ref: https://www.google.com
