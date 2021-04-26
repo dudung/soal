@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["diffraction", "gratings", "tutorial-7", "fi1202", "2020-2"]
-date: 2021-04-27 03:18:00 +07
+date: 2021-04-27 04:36:00 +07
 permalink: /0307
 src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-27-elementary-physics-tutorial-7-7.md
 ref: https://www.google.com
@@ -46,10 +46,16 @@ Untuk sudut kecil dapat didekati dengan
 sehingga dapat diperoleh
 
 \begin{equation}\label{eqn:0307-2}
-\theta_{\rm min} \aprox \frac{y}{f}.
+\theta_{\rm min} \approx \frac{y}{f}.
 \end{equation}
 
+Dengan demikian jarak terdekat $y$ dapat diperoleh dengan melakukan menyamakan Persamaan \eqref{eqn:0307-0} dengan Persamaan \eqref{eqn:0307-2} yang akan memberikan
 
+\begin{equation}\label{eqn:0307-3}
+y = 1.22 \frac{f \lambda}{D}.
+\end{equation}
+
+Dalam beberapa kasus sering (atau dapat) diasumsikan bahwa $f = D$. Selanjutnya dapat segera terlihat dengan menggunakan asumsi tesebut bahwa $\lambda < y$.
 
 {% comment %}
 Anda menggunakan mikroskop untuk memeriksa sel darah. (a) tentukan jarak terdekat antara dua sel darah yang dapat dipisahkan, (b) Apakah anda menggunakan cahaya dengan panjang gelombang yang lebih panjang atau lebih pendek untuk bisa melihat dua sel darah yang lebih berdekatan?
