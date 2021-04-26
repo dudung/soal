@@ -35,7 +35,7 @@ d = \frac{1}{N},
 
 dengan posisi terang orde ke-$m$ diberikan oleh
 
-\begin{equation}\label{eqn:0306-0}
+\begin{equation}\label{eqn:0306-1}
 d \sin \theta = m \lambda, \ \ \ \ m = 0, 1, 2, \dots.
 \end{equation}
 
