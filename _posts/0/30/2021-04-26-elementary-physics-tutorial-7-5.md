@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["interference", "thin film", "tutorial-7", "fi1202", "2020-2"]
-date: 2021-04-26 19:58:00 +07
+date: 2021-04-26 21:27:00 +07
 permalink: /0305
 src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-26-elementary-physics-tutorial-7-5.md
 ref: https://www.google.com
@@ -49,8 +49,7 @@ Angka $1$ pada Persamaan \eqref{eqn:0305-1} dan \eqref{eqn:0305-2} sengaja masih
 
 Pita gelap pertama di kedua sisi terang pusat dipisahkan oleh sudut $51.0 ^\circ$ pada layar akibat difraksi oleh suatu celah pada cahaya hijau berpanjang gelombang $555 \ \rm nm$. Lebar celah dan lebar sudut difraksi pusat untuk cahaya biru berpanjang gelombang $440 \ \rm nm$ dapat dihitung menggunakan kode Python berikut.
 
-<iframe src="https://trinket.io/embed/python/f0ccb4879a" width="100%" height="340" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
+<iframe src="https://trinket.io/embed/python/f0ccb4879a" width="100%" height="350" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 {% comment %}
 tutorial-7 problem-6
