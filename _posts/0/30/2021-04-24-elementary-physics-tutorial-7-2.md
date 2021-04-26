@@ -111,7 +111,7 @@ t = L \cos \theta_2 = L \cos \sin^{-1} \left( \frac{n_1}{n_2} \sin \theta_1 \rig
 Bila digunakan asumsi bahwa $\theta \approx 0$ yang menggambarkan pengamatan hampir tegak lurus lapisan tipis, maka akan diperoleh tebal
 
 \begin{equation}\label{eqn:0302-9}
-t = (2m + \tfrac14) \frac{\lambda}{n_2}, \ \ \ \ m = 0, 1, 2, \dots,
+t = (2m + 1) \tfrac14) \frac{\lambda}{n_2}, \ \ \ \ m = 0, 1, 2, \dots,
 \end{equation}
 
 untuk interferensi minimum pada lapisan tipis.

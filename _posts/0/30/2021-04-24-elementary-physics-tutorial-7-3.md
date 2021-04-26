@@ -90,16 +90,19 @@ Persamaan \eqref{eqn:0303-5} akan selalu bernilai nol atau interferensi minimum 
 
 \begin{equation}\label{eqn:0303-6}
 \begin{array}{rcl}
-\frac12 \Delta \phi_{61} & = & (m + \frac12) \pi \newline
-\displaystyle \tfrac12 \left( \frac{4\pi}{\lambda} n_2 L - \pi \right) & = & (m + \frac12) \pi \newline
-2 L_m & = & (m + \frac12) \displaystyle \frac{\lambda}{n_2}.
+\frac12 \Delta \phi_{61} & = & (m' + \frac12) \pi \newline
+\displaystyle \tfrac12 \left( \frac{4\pi}{\lambda} n_2 L - \pi \right) & = & (m' + \frac12) \pi \newline
+\displaystyle \frac{2\pi}{\lambda} n_2 L - \tfrac12 \pi & = & m' \pi + \frac12 \pi \newline
+\displaystyle \frac{2\pi}{\lambda} n_2 L & = & m' \pi + \pi \newline
+2 L_m & = & (m' + 1) \displaystyle \frac{\lambda}{n_2}. \newline
+2 L_m & = & m \displaystyle \frac{\lambda}{n_2}.
 \end{array}
 \end{equation}
 
-Tebal minimum tercapai saat $m = 0$ sehingga diperoleh
+Perhatikan bahwa dapat diubah $m' + 1 = m$, di mana untuk $m' = 0, 1, 2, \dots$ dan untuk $m = 1, 2, 3, \dots$ untuk tebal minimum tidak nol. Dengan demikian, tebal minimum tercapai saat $m = 1$ sehingga diperoleh
 
 \begin{equation}\label{eqn:0303-7}
-L_0 = \frac14 \frac{\lambda}{n_2} = \frac14 \lambda_2.
+L_1 = \frac12 \frac{\lambda}{n_2}.
 \end{equation}
 
 Ketebalan lapisan tipis (film) sebenarnya adalah
@@ -115,7 +118,7 @@ t = (2m + \tfrac14) \frac{\lambda}{n_2}, \ \ \ \ m = 0, 1, 2, \dots,
 \end{equation}
 
 untuk interferensi minimum pada lapisan tipis.
-Bila indeks bias kaca kamera adalah $1.55$ dan indeks bias lapisan tipis di atas kaca adalah $1.45$, agar pantulan cahaya monokromatik $580 \ \rm nm$ dari udara ke kaca kamera dapat dicegah, ketebalan minium yang bukan nol dapat dihitung menggunakan kode Python berikut dengan bantuan Persamaan \eqref{eqn:0302-9}.
+Bila indeks bias kaca kamera adalah $1.55$ dan indeks bias lapisan tipis di atas kaca adalah $1.45$, agar pantulan cahaya monokromatik $580 \ \rm nm$ dari udara ke kaca kamera dapat dicegah, ketebalan minium yang bukan nol dapat dihitung menggunakan kode Python berikut dengan bantuan Persamaan \eqref{eqn:0303-9}.
 
 <iframe src="https://trinket.io/embed/python/66e9a4e38c" width="100%" height="210" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
