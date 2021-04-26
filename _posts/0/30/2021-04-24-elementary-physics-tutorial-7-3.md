@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["interference", "thin film", "tutorial-7", "fi1202", "2020-2"]
-date: 2021-04-26 17:27:00 +07
+date: 2021-04-26 17:49:00 +07
 permalink: /0303
 src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-24-elementary-physics-tutorial-7-3.md
 ref: https://www.google.com
@@ -131,9 +131,9 @@ W $\color{#000}\square$ | R $\color{#f00}\blacksquare$ | B $\color{#00f}\blacksq
 W $\color{#000}\square$ | G $\color{#0f0}\blacksquare$ | R $\color{#f00}\blacksquare$ + B $\color{#00f}\blacksquare$ | M $\color{#f0f}\blacksquare$
 W $\color{#000}\square$ | B $\color{#00f}\blacksquare$ | R $\color{#f00}\blacksquare$ + G $\color{#0f0}\blacksquare$ | Y $\color{#ff0}\blacksquare$
 
-Terdapat lapisan tipis sabun berketebalan berbeda pada lokasi berbeda. Indeks bias lapisan tipis tersebut adalah $n$ dan nilainya tidak diketahui. Lapisan tipis tersebut diapit oleh udara di kedua sisinya. Cahaya polikromatik jatuh pada lapisan tipis sabun tersebut dan permukaan lapisan sabun teramati beraneka warna. Suatu daerah terlihat berwarna kuning karena terjadi interferensi destruktif untuk warna biru (dalam vakum $\lambda_{\rm blue} = 480 \ \rm nm$), sementara daerah lain terlihat berwarna sian karena terjadi interferensi destruktif untuk warna merah (dalam vakum $\lambda_{\rm red} = 700 \ \rm nm$). Lapisan tipis tersebut memiliki ketebalan minimum $t$ yang bukan nol agar dapat menghasilkan interferensi destruktif lapisan tipis. Rasio ketebalan daerah bewarna kuning $t_{\rm yellow}$ terhadap ketebalan daerah berwarna sian $t_{\rm sian}$ adalah
+Terdapat lapisan tipis sabun berketebalan berbeda pada lokasi berbeda. Indeks bias lapisan tipis tersebut adalah $n$ dan nilainya tidak diketahui. Lapisan tipis tersebut diapit oleh udara di kedua sisinya. Cahaya polikromatik jatuh pada lapisan tipis sabun tersebut dan permukaan lapisan sabun teramati beraneka warna. Suatu daerah terlihat berwarna kuning karena terjadi interferensi destruktif untuk warna biru (dalam vakum $\lambda_{\rm blue} = 480 \ \rm nm$), sementara daerah lain terlihat berwarna sian karena terjadi interferensi destruktif untuk warna merah (dalam vakum $\lambda_{\rm red} = 700 \ \rm nm$). Lapisan tipis tersebut memiliki ketebalan minimum $t$ yang bukan nol agar dapat menghasilkan interferensi destruktif lapisan tipis. Rasio ketebalan daerah bewarna kuning $t_{\rm yellow}$ terhadap ketebalan daerah berwarna sian $t_{\rm cyan}$ adalah
 
-<iframe src="https://trinket.io/embed/python/657b7bee0b" width="100%" height="410" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python/c9d21be80c" width="100%" height="410" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 {% comment %}
 tutorial problem-3
