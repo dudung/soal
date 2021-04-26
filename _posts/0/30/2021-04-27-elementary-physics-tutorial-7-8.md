@@ -27,7 +27,20 @@ C | Tidak dapat ditentunakan dari informasi yang diberikan.
 
 
 ## &nbsp;
-..
+Pada interferensi oleh dua celah (sempit) dengan jarak antar kedua celah adalah $d$, posisi angular garis terang diberikan oleh
+
+\begin{equation}\label{eqn:0308-0}
+d \sin \theta = m_{\rm int} \lambda, \ \ \ \ m_{\rm int} = 0, 1, 2, 3, \dots,
+\end{equation}
+
+yang menggambarkan interferensi konstruktif (interferensi maksimum). Pada difraksi oleh celah tunggal dengan lebar celah $a$ posisi garis angular gelap diberikan oleh
+
+\begin{equation}\label{eqn:0308-1}
+a \sin \theta = m_{\rm dif} \lambda, \ \ \ \ m_{\rm dif} = 1, 2, 3, 4, \dots,
+\end{equation}
+
+di mana pada difraksi pada pusat terdapat terang (pusat). Difraki oleh dua celah (jarak antar tengah kedua celah $d$ dan lebar masing-masing celah $a$) kedua Persamaan \eqref{eqn:0308-0} dan \eqref{eqn:0308-1} berlaku. Hal yang menarik dan umumnya disinggung adalah saat garis terang interferensi bertepatan dengan garis gelap difraksi (keduanya pada $\theta$ yang sama) sehingga membuat hilangnya beberapa garis terang yang seharusnya ada.
+
 
 {% comment %}
 Dalam sebuah percobaan celah ganda (a) berapakah perbandingan d yang menyebabkan difraksi menghilangkan garis terang ke-tiga? (b) Apakah garis-garis terang lainnya juga hilang?
