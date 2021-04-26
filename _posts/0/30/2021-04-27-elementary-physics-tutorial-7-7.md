@@ -14,7 +14,7 @@ category: physics
 tags: ["diffraction", "gratings", "tutorial-7", "fi1202", "2020-2"]
 date: 2021-04-27 03:18:00 +07
 permalink: /0307
-src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-26-elementary-physics-tutorial-7-7.md
+src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-27-elementary-physics-tutorial-7-7.md
 ref: https://www.google.com
 ---
 Salah satu pemanfaatan mikroskop adalah untuk memeriksa sel darah. Asumsikan bahwa diameter lensa obyektif sama dengan jarak fokusnya. Jarak terdekat antara dua sel yang dapat dipisahkan (resolved) dan panjang gelombang yang digunakan untuk dapat melihat dua sel yang darah yang bedekatan (apakah lebih panjang / pendek dari atau sama dengan jarak antar dua sel) adalah
