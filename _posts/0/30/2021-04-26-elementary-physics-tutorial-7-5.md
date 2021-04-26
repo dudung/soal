@@ -11,7 +11,7 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["interference", "thin film", "tutorial-7", "fi1202", "2020-2"]
+tags: ["diffraction", "single slit", "tutorial-7", "fi1202", "2020-2"]
 date: 2021-04-26 21:27:00 +07
 permalink: /0305
 src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-26-elementary-physics-tutorial-7-5.md

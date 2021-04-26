@@ -11,7 +11,7 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["interference", "gratings", "tutorial-7", "fi1202", "2020-2"]
+tags: ["diffraction", "gratings", "tutorial-7", "fi1202", "2020-2"]
 date: 2021-04-26 22:00:00 +07
 permalink: /0306
 src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-26-elementary-physics-tutorial-7-6.md
