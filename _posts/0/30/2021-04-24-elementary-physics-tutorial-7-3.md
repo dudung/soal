@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["interference", "thin film", "tutorial-7", "fi1202", "2020-2"]
-date: 2021-04-26 11:09:00 +07
+date: 2021-04-26 17:27:00 +07
 permalink: /0303
 src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-24-elementary-physics-tutorial-7-3.md
 ref: https://www.google.com
@@ -119,7 +119,17 @@ t_m = \left( \frac{2m}{4} \right) \frac{\lambda}{n_2}, \ \ \ \ m = 0, 1, 2, \dot
 
 untuk interferensi minimum pada lapisan tipis.
 
-..
+Cahaya polikromatik akan berwarna putih (W: white) di mana terdapat semua warna, sebagaimana disajikan dalam gambar berikut ini, dengan merah (R: red $\color{#f00}\blacksquare$), biru (B: blue $\color{#00f}\blacksquare$), hijau (G: green $\color{#0f0}\blacksquare$), kuning (Y: yellow $\color{#ff0}\blacksquare$), ungu (M: magenta, purple $\color{#f0f}\blacksquare$), sian (C: cyan $\color{#0ff}\blacksquare$).
+
+![]({{site.baseurl}}/assets/img/0/30/0303.png)
+
+Bila terdapat warna tertentu yang hilang karena interferensi destruktif yang tersisa adalah warna komplementernya untuk membentuk warna putih.
+
+Cahaya asal | Interferensi desktruktif | Warna tersisa | Warna tampak
+:-: | :-: | :-: | :-:
+W $\color{#000}\square$ | R $\color{#f00}\blacksquare$ | B $\color{#00f}\blacksquare$ + G $\color{#0f0}\blacksquare$ | C $\color{#0ff}\blacksquare$
+W $\color{#000}\square$ | G $\color{#0f0}\blacksquare$ | R $\color{#f00}\blacksquare$ + B $\color{#00f}\blacksquare$ | M $\color{#f0f}\blacksquare$
+W $\color{#000}\square$ | B $\color{#00f}\blacksquare$ | R $\color{#f00}\blacksquare$ + G $\color{#0f0}\blacksquare$ | Y $\color{#ff0}\blacksquare$
 
 <iframe src="https://trinket.io/embed/python/657b7bee0b" width="100%" height="410" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
@@ -138,4 +148,7 @@ yellow: 580 nm
 green: 550 nm
 cyan: 500 nm
 *Typical values only.
+
+url https://www.quora.com/What-colour-will-form-when-red-yellow-and-blue-are-mixed
+
 {% endcomment %}
