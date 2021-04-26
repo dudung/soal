@@ -41,6 +41,28 @@ a \sin \theta = m_{\rm dif} \lambda, \ \ \ \ m_{\rm dif} = 1, 2, 3, 4, \dots,
 
 di mana pada difraksi pada pusat terdapat terang (pusat). Difraki oleh dua celah (jarak antar tengah kedua celah $d$ dan lebar masing-masing celah $a$) kedua Persamaan \eqref{eqn:0308-0} dan \eqref{eqn:0308-1} berlaku. Hal yang menarik dan umumnya disinggung adalah saat garis terang interferensi bertepatan dengan garis gelap difraksi (keduanya pada $\theta$ yang sama) sehingga membuat hilangnya beberapa garis terang yang seharusnya ada.
 
+Bila terang interferensi ke-lima hilang, maka $m_{\rm int} = 5$ akan bertepatan dengan $m_{\rm dif} = 1$ dan dengan keduanya memiliki posisi angular ($\sin \theta$) yang sama, akan diperoleh
+
+\begin{equation}\label{eqn:0308-2}
+\begin{array}{rcl}
+\sin \theta & = & \sin \theta \newline
+\displaystyle \frac{m_{\rm dif} \lambda}{a} & = & \displaystyle \frac{m_{\rm int} \lambda}{d} \newline
+\displaystyle \frac{d}{a} & = & \displaystyle \frac{m_{\rm int}}{m_{\rm dif}} \newline,
+\end{array}
+\end{equation}
+
+di mana $\lambda$ pada kedua ruas juga sama karena digunakan sumber cahaya yang sama. Perhatikan bahwa $d/a$ akan berlaku pula untuk nilai-nilai $m_{\rm int}$ dan $m_{\rm dif}$ yang lain selama memenuhi Persamaan \eqref{eqn:0308-2}.
+
+$m_{\rm dif}$ | 0 | | | | | 1 | | | | | 2
+$I_{\rm dif}$ | max| | | | | min | | | | | min
+$m_{\rm int}$ | 0 | 1 | 2  | 3 | 4 | 5 | 6 |7 | 8 | 9 | 10
+$I_{\rm int}$ | max | max | max | max | max | max | max | max | max | max | max
+$I_{\rm int-dif}$ | max | max | max | max | max | $\bf\tt\color{#00f}{min}$  | max | max | max | max | $\bf\tt\color{#00f}{min}$
+
+Untuk kasus di atas $\bf\tt\color{#00f}{min}$ menggambarkan terang interferensi yang hilang karena posisinya bertepatan dengan minimum difraksi.
+
+Dalam suatu percobaan difraksi celah ganda (lebar celah $a$ dan jarak antar celah $d$) diamati hilangnya garis terang keempat yang sebelumnya muncul pada interferensi dua celah sempit (jarak antar celah $d$). Perbandingn $d$ terhadap $a$ dan orde garis-garis terang interferensi $m$ yang hilang telah dapat ditentukan.
+
 
 {% comment %}
 Dalam sebuah percobaan celah ganda (a) berapakah perbandingan d yang menyebabkan difraksi menghilangkan garis terang ke-tiga? (b) Apakah garis-garis terang lainnya juga hilang?
