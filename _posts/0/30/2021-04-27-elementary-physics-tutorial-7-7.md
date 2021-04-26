@@ -11,7 +11,7 @@ threejs: false
 oo: false
 svgphys: false
 category: physics
-tags: ["diffraction", "gratings", "tutorial-7", "fi1202", "2020-2"]
+tags: ["microscope", "rayleigh criterion", "tutorial-7", "fi1202", "2020-2"]
 date: 2021-04-27 04:36:00 +07
 permalink: /0307
 src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-27-elementary-physics-tutorial-7-7.md
