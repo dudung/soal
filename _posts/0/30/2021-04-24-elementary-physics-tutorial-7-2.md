@@ -12,7 +12,7 @@ oo: false
 svgphys: false
 category: physics
 tags: ["interference", "thin film", "tutorial-7", "fi1202", "2020-2"]
-date: 2021-04-24 11:13:00 +07
+date: 2021-04-26 10:33:00 +07
 permalink: /0302
 src: https://github.com/dudung/soal/commits/master/_posts/0/30/2021-04-24-elementary-physics-tutorial-7-2.md
 ref: https://www.google.com
@@ -108,16 +108,16 @@ Ketebalan lapisan tipis (film) sebenarnya adalah
 t = L \cos \theta_2 = L \cos \sin^{-1} \left( \frac{n_1}{n_2} \sin \theta_1 \right).
 \end{equation}
 
-Bila digunakan asumsi bahwa $\theta \approx 0$ yang menggambarkan pengamatan hampir tegak lurus lapisan tipis, maka akan diperoleh tebal
+Bila digunakan asumsi bahwa $\theta_1 \approx 0$ yang menggambarkan pengamatan hampir tegak lurus lapisan tipis, maka akan diperoleh tebal
 
 \begin{equation}\label{eqn:0302-9}
-t = (2m + 1) \tfrac14) \frac{\lambda}{n_2}, \ \ \ \ m = 0, 1, 2, \dots,
+t_m = \left( \frac{2m + 1}{4} \right) \frac{\lambda}{n_2}, \ \ \ \ m = 0, 1, 2, \dots,
 \end{equation}
 
 untuk interferensi minimum pada lapisan tipis.
 Bila indeks bias kaca kamera adalah $1.55$ dan indeks bias lapisan tipis di atas kaca adalah $1.45$, agar pantulan cahaya monokromatik $580 \ \rm nm$ dari udara ke kaca kamera dapat dicegah, ketebalan minium yang bukan nol dapat dihitung menggunakan kode Python berikut dengan bantuan Persamaan \eqref{eqn:0302-9}.
 
-<iframe src="https://trinket.io/embed/python/66e9a4e38c" width="100%" height="210" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python/bcff1b24e7" width="100%" height="210" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 {% comment %}
 Lapisan nonreflektif magnesium fluorida (n=1,38) menutupi kaca (n=1,52) lensa kamera. Dengan asumsi
