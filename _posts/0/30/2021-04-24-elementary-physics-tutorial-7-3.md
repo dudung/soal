@@ -124,5 +124,18 @@ untuk interferensi minimum pada lapisan tipis.
 <iframe src="https://trinket.io/embed/python/657b7bee0b" width="100%" height="410" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 {% comment %}
+tutorial problem-3
 Lapisan sabun dengan ketebalan berbeda di tempat berbeda memiliki indeks bias n yang tidak diketahui dan udara di kedua sisinya. Cahaya pantul terlihat beraneka warna. Satu area tampak kuning karena interferensi destruktif telah menghilangkan warna biru (vakum 469 nm) dari cahaya pantul, sedangkan area lain tampak ungu karena interferensi destruktif telah menghilangkan warna hijau (vakum 555 nm). Lapisan memiliki ketebalan minimun t (bukan nol) untuk terjadinya interferensi destruktif. Tentukan rasio t ungu /t kuning?
-A soap film with different thicknesses at different places has an unknown refractive index n and air on both sides. In reflected light it looks multicolored. One region looks yellow because destructive interference has removed blue (vacuum 469 nm) from the reflected light, while another looks magenta because destructive interference has removed green (vacuum 555 nm). In these regions the film has the minimum nonzero thickness t required for the destructive interference to occur. Find the ratio t magenta/ t yellow?{% endcomment %}
+A soap film with different thicknesses at different places has an unknown refractive index n and air on both sides. In reflected light it looks multicolored. One region looks yellow because destructive interference has removed blue (vacuum 469 nm) from the reflected light, while another looks magenta because destructive interference has removed green (vacuum 555 nm). In these regions the film has the minimum nonzero thickness t required for the destructive interference to occur. Find the ratio t magenta/ t yellow?
+
+url https://scied.ucar.edu/image/wavelength-blue-and-red-light-image [20210426]
+This diagram shows the relative wavelengths of blue light and red light waves. Blue light has shorter waves, with wavelengths between about 450 and 495 nanometers. Red light has longer waves, with wavelengths around 620 to 750 nm. Blue light has a higher frequency and carries more energy than red light. The wavelengths of light waves are very, very short, just a few 1/100,000ths of an inch.
+blue: 450-495 nm
+red: 620-750 nm
+
+url https://www.britannica.com/science/color/The-visible-spectrum
+yellow: 580 nm
+green: 550 nm
+cyan: 500 nm
+*Typical values only.
+{% endcomment %}
