@@ -21,8 +21,8 @@ Dalam suatu percobaan difraksi celah ganda (lebar celah $a$ dan jarak antar cela
 
 A | $\frac13$ dan $1, 2, 3, \dots$.
 B | $\frac13$ dan $3, 6, 9, \dots$.
-C | $3$ dan $1, 2, 3, \dots$.
-D | $3$ dan $3, 6, 9, \dots$.
+C | $3$ dan $3, 6, 9, \dots$.
+D | $3$ dan $1, 2, 3, \dots$.
 C | Tidak dapat ditentunakan dari informasi yang diberikan.
 
 
