@@ -39,3 +39,8 @@ simple-jekyll-search.min.js:6 Uncaught Error: SimpleJekyllSearch --- failed to g
 
 Try to see https://blog.webjeda.com/instant-jekyll-search/ later
 -->
+
+<!-- 20210501 Try twitter plugin -->
+<div class='jekyll-twitter-plugin' align="justify">
+    {% twitter https://twitter.com/6unpnp maxwidth=400 limit=5 %}
+</div>
