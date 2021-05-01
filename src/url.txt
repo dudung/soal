@@ -1,0 +1,26 @@
+Jekyll Showcase! - Share your sites built with Jekyll
+https://talk.jekyllrb.com/t/jekyll-showcase-share-your-sites-built-with-jekyll/44
+
+The Programming Historian
+https://programminghistorian.org/
+
+My blogging stack and publishing process
+https://blog.frankel.ch/my-blogging-stack-publishing-process/
+
+Medium sucks for programming articles.
+https://blog.nakam.in/posts/medium-sucks/
+
+Various ways to include comments on your static site
+https://darekkay.com/blog/static-site-comments/
+
+Overview of the best commenting systems for your static website
+https://averagelinuxuser.com/static-website-commenting/
+
+comment parade: Anonymous web comments for the indieweb.https://commentpara.de/
+
+Staticman
+https://staticman.net/docs/getting-started
+
+Jekyll
+https://jekyllrb.com/docs/plugins/installation/
+
