@@ -1,6 +1,9 @@
 # Proxy
 proxy
 
+# tweeter
+.tweet-cache
+
 # Soal
 ans.md
 ans.xlsx
